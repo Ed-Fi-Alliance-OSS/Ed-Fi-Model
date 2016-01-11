@@ -1,0 +1,11 @@
+Enumeration LanguageUse
+    documentation 'The category denoting how a language is used.
+    item Home language
+    item Spoken language
+    item Written language
+    item Correspondence language
+    item Dominant language
+    item Native language
+    item Other language proficiency
+    item Other
+

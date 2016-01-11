@@ -1,0 +1,10 @@
+Descriptor ReporterDescription
+    documentation 'This descriptor defines the type of individual who reported an incident. 
+    with optional map type
+        item Parent/guardian
+        item Staff
+        item Student
+        item Non-school personnel
+        item Law enforcement officer
+        item Other
+

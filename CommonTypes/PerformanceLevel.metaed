@@ -1,0 +1,9 @@
+Common Type PerformanceLevel
+    documentation 'A performance level value that describes student proficiency.
+    bool PerformanceLevelMet
+        documentation 'Optional indicator of whether the performance level was met.
+        is required
+    descriptor PerformanceLevel
+        documentation 'A specification of which performance level value describes the student proficiency.
+        is part of identity
+

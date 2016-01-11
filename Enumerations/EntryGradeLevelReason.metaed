@@ -1,0 +1,17 @@
+Enumeration EntryGradeLevelReason
+    documentation 'The primary reason as to why a staff member determined that a student should be 
+    'promoted or not (or be demoted) at the end of a given school term.
+    item Promotion - Accelerated promotion
+    item Promotion - Continuous promotion
+    item Promotion - Probationary promotion
+    item Promotion - Regular promotion
+    item Promotion - Variable progress
+    item Promotion - Other
+    item Nonpromotion - Failed to meet testing requirements
+    item Nonpromotion - Illness
+    item Nonpromotion - Immaturity
+    item Nonpromotion - Inadequate performance
+    item Nonpromotion - Insufficient credits
+    item Nonpromotion - Prolonged absence
+    item Nonpromotion - Other
+

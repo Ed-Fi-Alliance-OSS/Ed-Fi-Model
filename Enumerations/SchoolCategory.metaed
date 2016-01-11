@@ -1,0 +1,18 @@
+Enumeration SchoolCategory
+    documentation 'The category of school. For example: High School, Middle School, Elementary 
+    'School
+    item Elementary/Secondary School
+    item Elementary School
+    item High School
+    item Middle School
+    item Junior High School
+    item SecondarySchool
+    item Ungraded
+    item Adult School
+    item Infant/toddler School
+    item Preschool/early childhood
+    item Primary School
+    item Intermediate School
+    item All Levels
+	item Other Secondary
+	item Other Combination

@@ -1,0 +1,9 @@
+Interchange EducationOrgCalendar
+    documentation 'The Education Organization Calendar interchange carries school calendar 
+    'information. It can be used to exchange school calendar data, including 
+    'instructional days, sessions, and grading periods.
+    element Session
+    element GradingPeriod
+    element CalendarDate
+    element AcademicWeek
+

@@ -1,0 +1,7 @@
+Enumeration ElectronicMailType
+    documentation 'The type of email listed for an individual or organization.
+    item Home/Personal
+    item Organization
+    item Other
+    item Work
+

@@ -1,0 +1,14 @@
+Descriptor CalendarEvent
+    documentation 'This descriptor holds the types of scheduled or unscheduled event for the day 
+    '(e.g., Instructional day, Teacher only day, Holiday, Make-up day, Weather day, 
+    'Student late arrival/early dismissal day).
+    with map type
+        item Instructional day
+        item Teacher only day
+        item Holiday
+        item Make-up day
+        item Weather day
+        item Student late arrival/early dismissal
+        item Emergency day
+        item Strike
+        item Other

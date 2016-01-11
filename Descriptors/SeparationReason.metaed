@@ -1,0 +1,15 @@
+Descriptor SeparationReason
+    documentation 'This descriptor defines the reasons for terminating the employment.
+    with optional map type
+        item Employment elsewhere
+        item Retirement
+        item Family/personal relocation
+        item Change of assignment
+        item Formal study or research
+        item Illness/disability/death
+        item Layoff
+        item Discharge
+        item Personal reason
+        item Unknown
+        item Other
+

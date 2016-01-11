@@ -1,0 +1,5 @@
+Interchange Parent
+    documentation 'This interchange defines parents and captures the familial relationship between the student and the parent as well as indicators for the parent for residence, primary parental contact, and emergency contact.
+    element Parent
+    element StudentParentAssociation
+

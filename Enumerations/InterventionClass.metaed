@@ -1,0 +1,6 @@
+Enumeration InterventionClass
+    documentation 'The way in which an intervention is used: curriculum, supplement, or practice.
+    item Curriculum
+    item Supplement
+    item Practice
+	item Other

@@ -1,0 +1,30 @@
+Domain Entity RestraintEvent
+    documentation 'This event entity represents the instances where a special education student was 
+                  'physically or mechanically restrained due to imminent serious physical harm to 
+                  'themselves or others, imminent serious property destruction or a combination of 
+                  'both imminent serious physical harm to themselves or others and imminent serious 
+                  'property destruction.
+    string RestraintEventIdentifier
+        documentation 'A unique number or alphanumeric code assigned to a restraint event by a school, 
+                      'school system, state, or other agency or entity.
+        is part of identity
+        min length 1
+        max length 20
+    date EventDate
+        documentation 'Month, day, and year of the RestraintEvent.
+        is part of identity
+    enumeration EducationalEnvironment
+        documentation 'The setting where the RestraintEvent was exercised.
+        is optional
+    enumeration RestraintEventReason
+        documentation 'A categorization of the circumstances or reason for the RestraintEvent.
+        is optional collection
+    reference Student
+        documentation 'Reference to student that was restrained.
+        is part of identity
+    reference Program
+        documentation 'The special education program associated with the RestraintEvent.
+        is optional collection
+    reference School
+        documentation 'The school where the RestraintEvent occurred.
+        is part of identity

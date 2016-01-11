@@ -1,0 +1,10 @@
+Choice Common Type CitizenshipDocumentationChoice
+    documentation 'NEEDS DOCUMENTATION
+    enumeration Visa
+        documentation 'An indicator of a non-US citizen's Visa type.
+        is required collection
+    include IdentificationDocument
+        documentation 'Describe the probationary documentation of US citizenship.
+        is required collection
+        with context USCitizenship
+

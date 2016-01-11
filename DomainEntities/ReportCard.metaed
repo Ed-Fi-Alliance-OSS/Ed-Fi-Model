@@ -1,0 +1,49 @@
+Domain Entity ReportCard
+    documentation 'This educational entity represents the collection of student grades for courses 
+                  'taken during a grading period.
+    reference Grade
+        documentation 'Grades for the classes attended by the Student for this grading period.
+        is optional collection
+    reference StudentCompetencyObjective
+        documentation 'The Student competency evaluations associated for this grading period.
+        is optional collection
+    reference StudentLearningObjective
+        documentation 'The StudentLearningObjective evaluations associated for this grading period.
+        is optional collection
+    shared decimal GPA named GPAGivenGradingPeriod
+        documentation 'A measure of average performance in all courses taken by an individual for the 
+                      'current grading period.
+        is optional
+    shared decimal GPA named GPACumulative
+        documentation 'A measure of cumulative average performance in all courses taken by an 
+                      'individual from the beginning of the school year through the current grading 
+                      'period.
+        is optional
+    decimal NumberOfDaysAbsent
+        documentation 'The number of days an individual is absent when school is in session during a 
+                      'given reporting period. 
+        is optional
+        total digits 18
+        decimal places 4
+        min value 0
+    decimal NumberOfDaysInAttendance
+        documentation 'The number of days an individual is present when school is in session during a 
+                      'given reporting period. 
+        is optional
+        total digits 18
+        decimal places 4
+        min value 0
+    integer NumberOfDaysTardy
+        documentation 'The number of days an individual is tardy during a given reporting period.
+        is optional
+        min value 0
+    reference Student
+        documentation 'Identifies the student that is associated with the ReportCard.
+        is part of identity
+    reference EducationOrganization
+        documentation 'Identifies the EducationOrganization that issued the ReportCard.
+        is part of identity
+    reference GradingPeriod
+        documentation 'Identifies the grading period for this report card.
+        is part of identity
+        with context GradingPeriod

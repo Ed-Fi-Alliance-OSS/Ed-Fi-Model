@@ -1,0 +1,20 @@
+Common Type MeetingTime
+    documentation 'This entity represents the set of elements defining the meeting time for a class 
+    'period.
+    reference ClassPeriod
+        documentation 'The class period associated with the meeting time for a bell schedule.
+        is part of identity
+    string AlternateDayName
+        documentation 'An alternate name for the day (e.g., Red, Blue).
+        is optional
+        min length 1
+        max length 20
+    time StartTime
+        documentation 'An indication of the time of day the class begins.
+        is part of identity
+    time EndTime
+        documentation 'An indication of the time of day the class ends.
+        is required
+    bool OfficialAttendancePeriod
+        documentation 'Indicator of whether this meeting time is used for official daily attendance.
+        is optional

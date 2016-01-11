@@ -1,0 +1,13 @@
+Descriptor CourseIdentificationSystem
+	documentation 'This descriptor defines a standard code that identifies the organization of subject matter 
+	'and related learning experiences provided for the instruction of students.
+    with optional map type
+		item CSSC course code
+		item Intermediate agency course code
+		item LEA course code
+		item NCES Pilot SNCCS course code
+		item Other
+		item SCED course code
+		item School course code
+		item State course code
+		item University course code

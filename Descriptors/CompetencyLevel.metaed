@@ -1,0 +1,7 @@
+Descriptor CompetencyLevel
+    documentation 'This descriptor defines various levels for assessed competencies.
+    enumeration PerformanceBaseConversion
+        documentation 'A conversion of the level to a standard set of competency levels.
+        is optional
+
+

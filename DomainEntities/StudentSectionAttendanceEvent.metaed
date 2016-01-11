@@ -1,0 +1,12 @@
+Domain Entity StudentSectionAttendanceEvent
+    documentation 'This event entity represents the recording of whether a student is in attendance 
+                  'for a section.
+    include AttendanceEvent
+        documentation 'Details of the AttendanceEvent.
+        is required
+    reference Student
+        documentation 'Relates the Student associated with the AttendanceEvent.
+        is part of identity
+    reference Section
+        documentation 'Relates the Section associated with the AttendanceEvent.
+        is part of identity

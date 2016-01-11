@@ -1,0 +1,7 @@
+Descriptor Language
+    documentation 'This descriptor defines the language(s) that are spoken or written.
+    with optional map type
+        item Spanish
+        item English
+        item Other
+

@@ -1,0 +1,20 @@
+Common Type Telephone
+    documentation 'The 10-digit telephone number, including the area code, for the person.
+    string TelephoneNumber
+        documentation 'The telephone number including the area code, and extension, if applicable.
+        is required
+        min length 1
+        max length 24
+    enumeration TelephoneNumberType
+        documentation 'The type of communication number listed for an individual or organization.
+        is part of identity
+    integer OrderOfPriority
+        documentation 'The order of priority assigned to telephone numbers to define which number to 
+        'attempt first, second, etc.
+        is optional
+        min value 1
+    bool TextMessageCapabilityIndicator
+        documentation 'An indication that the telephone number is technically capable of sending and 
+        'receiving Short Message Service (SMS) text messages.
+        is optional
+

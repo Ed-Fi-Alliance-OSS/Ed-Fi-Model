@@ -1,0 +1,18 @@
+Descriptor StaffIdentificationSystem
+    documentation 'This descriptor defines the originating record system and code that is used for record-keeping purposes of the staff.
+    with optional map type
+		item Drivers License
+		item Health Record
+		item Medicaid
+		item Professional Certificate
+		item School
+		item District
+		item State
+		item Federal
+		item Other Federal
+		item Selective Service
+		item SSN
+		item US Visa
+		item PIN
+		item Canadian SIN
+		item Other

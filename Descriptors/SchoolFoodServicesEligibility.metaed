@@ -1,0 +1,9 @@
+Descriptor SchoolFoodServicesEligibility
+	documentation 'This descriptor defines indications of a student's level of eligibility for 
+	'breakfast, lunch, snack, supper, and milk programs.
+    with optional map type
+        item Free
+        item Full price
+        item Reduced price
+        item Unknown
+

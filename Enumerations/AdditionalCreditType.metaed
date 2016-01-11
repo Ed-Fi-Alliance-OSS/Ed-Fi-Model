@@ -1,0 +1,16 @@
+Enumeration AdditionalCreditType
+    documentation 'The type of additional credits or units of value awarded for the completion of a 
+    'course.
+    item Advanced Placement
+        documentation 'Additional credits from a high school course that offers college credit if 
+        'successfully completed.
+    item Dual credit
+        documentation 'Additional credits from a postsecondary course that offers a dual-enrolled high 
+        'school student high school credit if successfully completed.
+    item International Baccalaureate
+        documentation 'Additional credits earned based on completion of an International Baccalaureate 
+        'program.
+    item Other
+        documentation 'Additional credits earned by other means.
+    item Career and Technical Education
+        documentation 'Additional credits earned through successful completion off a CTE program.

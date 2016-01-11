@@ -1,0 +1,5 @@
+Interchange PostSecondaryEvent
+    documentation 'This interchange loads student post-secondary institution events such as 
+    'application, admission, and enrollment.
+    element PostSecondaryEvent
+

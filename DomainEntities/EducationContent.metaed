@@ -1,0 +1,23 @@
+Domain Entity EducationContent
+    documentation 'This entity represents materials for students or teachers that can be used for 
+                  'teaching, learning, research, and more. Education content includes full courses, 
+                  'course materials, modules, intervention descriptions, textbooks, streaming 
+                  'videos, tests, software, and any other tools, materials, or techniques used to 
+                  'support access to knowledge.
+    string ContentIdentifier
+        documentation 'A unique identifier for the EducationContent.
+        is part of identity
+        min length 1
+        max length 225
+    include LearningResourceContentChoice
+        documentation 'NEEDS DOCUMENTATION
+        is required
+    currency Cost
+        documentation 'An amount that has to be paid or spent to buy or obtain the EducationContent.
+        is optional
+    enumeration CostRate
+        documentation 'The rate by which the cost applies.
+        is optional
+    shared string URI named Namespace
+        documentation 'Namespace for the EducationContent.
+        is required

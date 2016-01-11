@@ -1,0 +1,15 @@
+Enumeration RetestIndicator
+    documentation 'Indicator if the test was retaken.  For example:
+    '
+    'Primary administration
+    '
+    'First retest
+    '
+    'Second retest
+    '
+    '...
+    item Primary Administration
+    item 1st Retest
+    item 2nd Retest
+    item 3nd or more Retest
+

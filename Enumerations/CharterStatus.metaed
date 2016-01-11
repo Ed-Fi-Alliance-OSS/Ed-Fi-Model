@@ -1,0 +1,8 @@
+Enumeration CharterStatus
+    documentation 'The category of charter school. For example: School Charter, Open Enrollment 
+    'Charter
+    item School Charter
+    item College/University Charter
+    item Open Enrollment
+    item Not a Charter School
+

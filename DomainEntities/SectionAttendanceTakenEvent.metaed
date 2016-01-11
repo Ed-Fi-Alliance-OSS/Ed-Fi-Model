@@ -1,0 +1,15 @@
+Domain Entity SectionAttendanceTakenEvent
+    documentation 'Captures attendance taken event for given section.
+    reference Section
+        documentation 'NEEDS DOCUMENTATION
+        is part of identity
+    reference CalendarDate
+        documentation 'NEEDS DOCUMENTATION
+        is part of identity
+    date EventDate
+        documentation 'The date the SectionAttendanceTakenEvent was submitted, which could be a 
+                      'different date than the instructional day.
+        is required
+    reference Staff
+        documentation 'NEEDS DOCUMENTATION
+        is optional

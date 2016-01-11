@@ -1,0 +1,9 @@
+Descriptor ClassroomPosition
+    documentation 'This descriptor defines the type of position the staff member holds in a 
+    'specific class/section.
+    with optional map type
+        item Teacher of Record
+        item Assistant Teacher
+        item Support Teacher
+        item Substitute Teacher
+

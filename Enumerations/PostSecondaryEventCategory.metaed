@@ -1,0 +1,15 @@
+Enumeration PostSecondaryEventCategory
+    documentation 'A code describing the type of post-secondary event (e.g., college application or 
+    'acceptance).
+    item Certification Received
+    item College Application
+    item College Acceptance
+    item College Degree Received
+    item College Enrollment
+    item College Selection
+    item FAFSA Application
+    item Student Interest
+    item Remedial Enrollment - ELA
+    item Remedial Enrollment - Math
+    item College Exit Date
+

@@ -1,0 +1,18 @@
+Descriptor StudentCharacteristic
+    documentation 'This descriptor defines the set of important characteristics of the student.
+    with optional map type
+        item Asylee
+        item Displaced Homemaker
+        item Foster Care
+        item Homeless
+        item Immigrant
+        item Neglected or Delinquent
+        item Migrant
+        item Parent in Military
+        item Pregnant
+        item Refugee
+        item Runaway
+        item Section 504 Handicapped
+        item Single Parent
+        item Unaccompanied Youth
+		item Other

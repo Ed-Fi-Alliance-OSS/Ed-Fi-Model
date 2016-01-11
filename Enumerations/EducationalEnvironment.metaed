@@ -1,0 +1,16 @@
+Enumeration EducationalEnvironment
+    documentation 'The setting in which a child receives education and related services.
+    item Classroom
+    item Homebound
+    item Hospital class
+    item In-school suspension
+    item Laboratory
+    item Mainstream (Special Education)
+    item Off-school center
+    item Pull-out class
+    item Resource room
+    item Single sex classroom
+    item Self-contained (Special Education)
+    item Self-study
+    item Shop
+

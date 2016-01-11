@@ -1,0 +1,52 @@
+Enumeration AcademicHonorCategory
+    documentation 'A designation of the type of academic distinctions earned by or awarded to the 
+    'student.
+    item Honor roll
+        documentation 'A category of students who achieve high grades during a session or year.
+    item Honor society
+        documentation 'A rank organization that recognizes students who excel academically or as 
+        'leaders among their peers, often within a specific academic discipline.
+    item Honorable mention
+        documentation 'A commendation given to a candidate in an examination or competition who is not 
+        'awarded a prize.
+    item Honors program
+        documentation 'A designation awarding participation in an organization's honors program, which 
+        'is specifically designed to give exceptionally able students additional and 
+        'appropriate educational challenges beyond standard curriculum.
+    item Prize awards
+    item Scholarships
+        documentation 'An award of financial aid for a student to further his or her education.
+    item Awarding of units of value
+        documentation 'Awards or recognition given to a student for the completion of course or 
+        'activity requirements in a form of pre-determined set of numeric values.
+    item Citizenship award/recognition
+        documentation 'Awards or recognition given to a student for the demonstration of good 
+        'citizenship (e.g., voluntary community services).
+    item Completion of requirement, but no units of value awarded
+        documentation 'Recognition of a student's completion of the requirement for a course or an 
+        'activity; no unit of value awarded.
+    item Attendance award
+        documentation 'Recognition of a student's superior attendance record.
+    item Certificate
+        documentation 'Certificate given to a student in recognition of his/her achievements (e.g., an 
+        'award for perfect attendance during the school year).
+    item Honor award
+    item Letter of student commendation
+        documentation 'A written letter, usually prepared and signed by the senior management of an 
+        'organization, commending the employee for his or her contribution to and/or 
+        'achievement in an organization.
+    item Medals
+        documentation 'Medal given to a student in recognition of his/her achievements (e.g., academic 
+        'medals, athletic medals, and citizenship medals).
+    item National Merit Scholar
+        documentation 'Designation as one of the highest achieving students out of those who were 
+        'awarded a competitive scholarship from the National Merit Scholarship 
+        'Corporation. Less than 1% of entrants qualify as National Merit Scholars.
+    item Points
+        documentation 'Points awarded to a student in recognition of his or her achievements.
+    item Promotion or advancement
+        documentation 'Promotion or advancement awarded to a student in recognition of his/her 
+        'achievements (e.g., advancement from regular to honors class, and promotion from 
+        'junior varsity to varsity).
+    item Other
+        documentation 'Other academic honors.

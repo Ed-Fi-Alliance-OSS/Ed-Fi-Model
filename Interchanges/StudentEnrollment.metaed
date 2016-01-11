@@ -1,0 +1,9 @@
+Interchange StudentEnrollment
+    documentation 'The Student Enrollment interchange describes student enrollments in schools and 
+    'in sections.
+    identity template Section
+    element StudentSchoolAssociation
+    element StudentSectionAssociation
+    element GraduationPlan
+    element StudentEducationOrganizationAssociation
+

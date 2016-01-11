@@ -1,0 +1,10 @@
+Common Type Language
+    documentation 'A method of written or spoken communication.
+    descriptor Language
+        documentation 'A specification of which written or spoken communication is being used.
+        is part of identity
+    enumeration LanguageUse
+        documentation 'A description of how the language is used (e.g. Home Language, Native Language, 
+        'Spoken Language).
+        is optional collection
+

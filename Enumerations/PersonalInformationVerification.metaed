@@ -1,0 +1,19 @@
+Enumeration PersonalInformationVerification
+    documentation 'The evidence presented to verify one's personal identity; for example: driver's 
+    'license, passport, birth certificate, etc.
+    item Baptismal or church certificate
+    item Birth certificate
+    item Drivers license
+    item Entry in family Bible
+    item Hospital certificate
+    item Immigration document/visa
+    item Life insurance policy
+    item Other
+    item Other non-official document
+    item Other official document
+    item Parents affidavit
+    item Passport
+    item Physicians certificate
+    item Previously verified school records
+    item State-issued ID
+

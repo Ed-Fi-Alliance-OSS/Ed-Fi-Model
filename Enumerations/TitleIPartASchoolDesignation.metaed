@@ -1,0 +1,10 @@
+Enumeration TitleIPartASchoolDesignation
+    documentation 'Denotes the Title I Part A designation for the school.
+    item Not designated as a Title I Part A school
+    item Title I Part A Schoolwide Assistance Program School
+    item Title I Part A Targeted Assistance School
+    item Title I targeted eligible school - no program
+    item Title I targeted school
+    item Title I school wide eligible - Title I targeted program
+    item Title I school wide eligible school - no program
+

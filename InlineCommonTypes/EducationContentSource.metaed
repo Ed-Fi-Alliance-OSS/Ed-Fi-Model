@@ -1,0 +1,14 @@
+Inline Common Type EducationContentSource
+    documentation 'Published papers, reports, or other educational documents.
+    reference EducationContent
+        documentation 'Relates the education content source to the education content.
+        is optional collection
+    string LearningResourceMetadataURI
+        documentation 'The URI (typical a URL) pointing to the metadata entry in a LRMI metadata 
+        'repository, which describes this content item.
+        is optional collection
+        min length 5
+        max length 255
+    shared string URI named URI
+        documentation 'The URI (typical a URL) pointing to an education content item.
+        is optional collection

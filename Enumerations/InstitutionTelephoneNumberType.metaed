@@ -1,0 +1,10 @@
+Enumeration InstitutionTelephoneNumberType
+    documentation 'The type of communication number listed for an organization.
+    item Main
+    item Administrative
+    item Health Clinic
+    item Attendance
+    item Other
+    item Fax
+    item Food Service
+

@@ -1,0 +1,21 @@
+Common Type AcademicHonor
+    documentation 'Academic distinctions earned by or awarded to the student.
+    include Achievement
+        documentation 'NEEDS DOCUMENTATION
+        is required
+    enumeration AcademicHonorCategory
+        documentation 'A designation of the type of academic distinctions earned by or awarded to the 
+        'student.
+        is part of identity
+    string HonorDescription
+        documentation 'A description of the type of academic distinctions earned by or awarded to the 
+        'individual.
+        is optional
+        min length 1
+        max length 80
+    date HonorAwardDate
+        documentation 'The date the honor was awarded or earned.
+        is optional
+    date HonorAwardExpiresDate
+        documentation 'Date on which the award expires.
+        is optional

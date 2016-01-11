@@ -1,0 +1,6 @@
+Interchange StudentDiscipline
+    documentation 'This interchange defines discipline incidents and discipline actions.
+    element DisciplineIncident
+    element StudentDisciplineIncidentAssociation
+    element DisciplineAction
+

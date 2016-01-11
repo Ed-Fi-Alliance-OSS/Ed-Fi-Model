@@ -1,0 +1,6 @@
+Enumeration DisabilityCategory
+    documentation 'The type of disability designation (e.g., IDEA, Section 504)
+    item Individuals with Disabilities Education Act
+    item Section 504
+    item Other
+

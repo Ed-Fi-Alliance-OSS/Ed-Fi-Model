@@ -1,0 +1,45 @@
+Domain Entity Program
+    documentation 'This entity represents any program designed to work in conjunction with, or as a 
+                  'supplement to, the main academic program. Programs may provide instruction, 
+                  'training, services, or benefits through federal, state, or local agencies. 
+                  'Programs may also include organized extracurricular activities for students.
+    reference EducationOrganization
+        documentation 'Relates the program to an EducationOrganization.
+        is part of identity
+        is queryable field
+    string ProgramId
+        documentation 'A unique number or alphanumeric code assigned to a program by a school, school 
+                      'system, a state, or other agency or entity.
+        is optional
+        is queryable field
+        min length 1
+        max length 20
+    string ProgramName
+        documentation 'The formal name of the Program of instruction, training, services, or benefits 
+                      'available through federal, state, or local agencies.
+        is part of identity
+        is queryable field
+        min length 1
+        max length 60
+    enumeration ProgramType
+        documentation 'The type of program.
+        is part of identity
+        is queryable field
+    descriptor ProgramCharacteristic
+        documentation 'Reflects important characteristics of the Program, such as categories or 
+                      'particular indications.
+        is optional collection
+    enumeration ProgramSponsor
+        documentation 'Ultimate and intermediate providers of funds for a particular educational 
+                      'or service program or activity, or for an individual's participation in the program 
+                      'or activity (e.g., Federal, State, ESC, District, School, Private Organization).
+        is optional
+    descriptor Service
+        documentation 'Defines the services this program provides to students.
+        is optional collection
+    reference LearningObjective
+        documentation 'References the LearningObjective(s) with which the Program is associated.
+        is optional collection
+    reference LearningStandard
+        documentation 'LearningStandard followed by this program.
+        is optional collection

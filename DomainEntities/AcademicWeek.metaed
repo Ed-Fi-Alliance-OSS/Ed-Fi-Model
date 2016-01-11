@@ -1,0 +1,21 @@
+Domain Entity AcademicWeek
+    documentation 'This entity represents the academic weeks for a school year, optionally captured 
+                  'to support analyses.
+    reference School
+        documentation 'Relates the academic week to an existing School.
+        is part of identity
+    string WeekIdentifier
+        documentation 'The school label for the week.
+        is part of identity
+        min length 5
+        max length 80
+    date BeginDate
+        documentation 'The start date for the academic week.
+        is required
+    date EndDate
+        documentation 'The end date for the academic week.
+        is required
+    integer TotalInstructionalDays
+        documentation 'The total instructional days during the academic week.
+        is required
+        min value 0

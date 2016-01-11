@@ -1,0 +1,9 @@
+Interchange StudentProgram
+    documentation 'This interchange loads students' participation in programs.
+    element StudentProgramAssociation
+    element StudentSpecialEducationProgramAssociation
+    element RestraintEvent
+    element StudentCTEProgramAssociation
+    element StudentTitleIPartAProgramAssociation
+    element StudentMigrantEducationProgramAssociation
+

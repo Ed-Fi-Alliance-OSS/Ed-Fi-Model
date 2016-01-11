@@ -1,0 +1,9 @@
+Interchange StudentAssessment
+    documentation 'The Student Assessment interchange describes test scores, quiz results, and 
+    'other information related to student assessments. The interchange schema can 
+    'carry results for many students or a single student.
+    identity template Assessment
+    identity template AssessmentItem
+    identity template ObjectiveAssessment
+    element StudentAssessment
+

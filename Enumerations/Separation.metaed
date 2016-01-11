@@ -1,0 +1,8 @@
+Enumeration Separation
+    documentation 'Type of employment separation; for example:  Voluntary separation, Involuntary 
+    'separation, Mutual agreement. Other, etc.
+    item Voluntary separation
+    item Involuntary separation
+    item Mutual agreement
+    item Other
+

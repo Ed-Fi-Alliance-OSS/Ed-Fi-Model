@@ -1,0 +1,76 @@
+Enumeration Relation
+    documentation 'The nature of an individual's relationship to a student.
+    item Aunt
+        documentation 'The person is the learner's Aunt.
+    item Brother
+        documentation 'The person is the learner's Brother.
+    item BrotherInLaw
+        documentation 'The person is the learner's BrotherInLaw
+    item CourtAppointedGuardian
+        documentation 'The person is the learner's court appointed guardian
+    item Cousin
+        documentation 'The person is the learner's cousin
+    item Daughter
+        documentation 'The person is the learner's daughter
+    item DaughterInLaw
+        documentation 'The person is the learner's daughterinlaw
+    item Employer
+        documentation 'The person is the learner's employer
+    item Father
+        documentation 'The person is the learner's father
+    item Father, step
+        documentation 'The person is the learner's father, step
+    item FathersSignificantOther
+        documentation 'The person is the learner's father significant other
+    item FathersCivilPartner
+        documentation 'The person is the learner's father civil partner
+    item FatherInLaw
+        documentation 'The person is the learner's father in law
+    item Fiance
+        documentation 'The person is the learner's fiance
+    item Fiancee
+        documentation 'The person is the learner's fiancee
+    item Foster parent
+        documentation 'The person is the learner's foster parent
+    item Friend
+        documentation 'The person is the learner's friend
+    item Grandfather
+        documentation 'The person is the learner's grandfather
+    item Grandmother
+        documentation 'The person is the learner's grandmother
+    item Great aunt
+        documentation 'The person is the learner's great aunt
+    item Great uncle
+        documentation 'The person is the learner's great uncle
+    item Great Grandparent
+        documentation 'The person is the learner's great grandparent
+    item Husband
+        documentation 'The person is the learner's husband
+    item MothersSignificantOther
+        documentation 'The person is the learner's mother significant other
+    item Mother
+        documentation 'The person is the learner's mother
+    item Mother, step
+        documentation 'The person is the learner's step mother
+    item MothersCivilPartner
+        documentation 'The person is the learner's mother's civil partner
+    item Nephew
+        documentation 'The person is the learner's nephew
+    item Niece
+        documentation 'The person is the learner's niece
+    item Other
+        documentation 'The person is the learner's other
+    item SignificantOther
+        documentation 'The person is the learner's significant other
+    item Sister
+        documentation 'The person is the learner's sister
+    item Son
+        documentation 'The person is the learner's son
+    item Unknown
+        documentation 'The person is the learner's unknown
+    item Uncle
+        documentation 'The person is the learner's uncle
+    item Ward
+        documentation 'The person is the learner's ward
+    item Wife
+        documentation 'The person is the learner's wife

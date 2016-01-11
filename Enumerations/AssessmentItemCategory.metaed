@@ -1,0 +1,25 @@
+Enumeration AssessmentItemCategory
+    documentation 'Category or type of the assessment item (e.g., Multiple Choice, Analytic, 
+    'Prose).
+    item Analytic
+    item Essay
+    item Fill-in-the-blank
+    item Innovative
+    item Labeling
+    item List Question
+    item Math Matrix
+    item Matching
+    item Multiple-choice
+    item Other
+    item Other constructed response
+    item Other extended response
+    item Performance task
+    item Prose
+    item Reordering
+    item Rubric
+    item Short answer
+    item Show your work
+    item Substitution
+    item True-False
+    item Visual representation
+

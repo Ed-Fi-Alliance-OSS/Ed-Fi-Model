@@ -1,0 +1,11 @@
+Enumeration GradeType
+    documentation 'The type of grade in a report card or transcript (e.g., Final, Exam, Grading 
+    'Period, ...)
+    item Conduct
+    item Exam
+    item Final
+    item Grading Period
+    item Mid-Term Grade
+    item Progress Report
+    item Semester
+

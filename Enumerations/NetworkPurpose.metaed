@@ -1,0 +1,6 @@
+Enumeration NetworkPurpose
+    documentation 'The purpose(s) of the network, e.g. shared services, collective procurement, 
+    'etc.
+    item Shared Services
+    item Collective Procurement
+

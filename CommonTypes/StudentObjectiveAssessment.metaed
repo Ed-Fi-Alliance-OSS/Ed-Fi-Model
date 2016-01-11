@@ -1,0 +1,16 @@
+Common Type StudentObjectiveAssessment
+	documentation 'This entity holds the score and or performance levels earned for an ObjectiveAssessment 
+	'by a student.
+    include ScoreResult
+        documentation 'A meaningful score or statistical expression of the performance of an 
+        'individual. The results can be expressed as a number, percentile, range, level, 
+        'etc.
+        is required collection
+    include PerformanceLevel
+        documentation 'The PerformanceLevel(s) achieved for the ObjectiveAssessment.
+        is optional collection
+    reference ObjectiveAssessment
+        documentation 'Reference to the test objective that is being measured by the objective-level 
+        'assessment.
+        is part of identity
+

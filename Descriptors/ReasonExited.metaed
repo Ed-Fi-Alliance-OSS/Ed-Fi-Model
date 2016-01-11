@@ -1,0 +1,15 @@
+Descriptor ReasonExited
+    documentation 'This descriptor defines the reason a student exited a program.
+    with optional map type
+        item Died or is permanently incapacitated
+        item Reached maximum age
+        item Discontinued schooling
+        item Suspended or expelled from school
+        item Graduated with a high school diploma
+        item Received certificate of completion, modified diploma, or finished IEP requirements
+        item Transferred to another district or school
+        item Moved out of state
+        item Withdrawal by a parent (or guardian)
+        item Other
+        item Unknown reason
+

@@ -1,0 +1,29 @@
+Domain Entity AccountabilityRating
+    documentation 'An accountability rating for a school or district.
+    reference EducationOrganization
+        documentation 'Relates the AccountabilityRating to an Education Organization.
+        is part of identity
+    shared string RatingTitleType named RatingTitle
+        documentation 'The title of the rating (e.g., School Rating, Safety Score)
+        is part of identity
+    string Rating
+        documentation 'An accountability rating level, designation, or assessment.
+        is required
+        min length 1
+        max length 35
+    date RatingDate
+        documentation 'The date the rating was awarded.
+        is optional
+    enumeration SchoolYear
+        documentation 'The school year for which the AccountabilityRating is assessed.
+        is part of identity
+    string RatingOrganization
+        documentation 'The organization that assessed the rating.
+        is optional
+        min length 1
+        max length 35
+    string RatingProgram
+        documentation 'The program associated with the AccountabilityRating (e.g., NCLB, AEIS)
+        is optional
+        min length 1
+        max length 30

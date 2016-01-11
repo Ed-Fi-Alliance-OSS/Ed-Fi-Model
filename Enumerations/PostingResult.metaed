@@ -1,0 +1,5 @@
+Enumeration PostingResult
+    documentation 'Indication of whether the position was filled or retired without filling.
+    item Position Filled
+    item Posting Cancelled
+

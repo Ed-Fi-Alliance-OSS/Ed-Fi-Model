@@ -1,0 +1,12 @@
+Enumeration GradebookEntryType
+    documentation 'The type of the gradebook entry; for example, homework, assignment, quiz, unit 
+    'test, oral presentation, etc. 
+    item Activity
+    item Assignment
+    item Classroom Assessment
+    item Homework
+    item Lesson
+    item Oral Presentation
+    item Quiz
+    item Unit Test
+

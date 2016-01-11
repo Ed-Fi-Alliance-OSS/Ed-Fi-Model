@@ -1,0 +1,4 @@
+Common Decimal NumericGrade
+    documentation 'The numeric grade expressed as whole and fractional units.
+    total digits 9
+    decimal places 2

@@ -1,0 +1,39 @@
+Domain Entity InterventionPrescription
+    documentation 'This entity represents a formal prescription of an instructional approach 
+                  'focusing on the specific techniques and materials used to teach a given subject. 
+                  'This can be prescribed by academic research, an interventions vendor, or another 
+                  'entity.
+    include EducationContentSource
+        documentation 'Resources related to or used in this intervention prescription, including any 
+                      'documentation around the InterventionPrescription itself. Since an intervention 
+                      'prescription is intended to be a published intervention, an intervention 
+                      'prescription should have at least one such resource.
+        is required
+    enumeration InterventionClass
+        documentation 'The way in which an intervention is used: curriculum, supplement, or practice.
+        is required
+    descriptor Diagnosis
+        documentation 'Targeted purpose of the InterventionPrescription (e.g., attendance issue, dropout risk).
+        is optional collection
+    enumeration PopulationServed
+        documentation 'A subset of students that are the focus of the InterventionPrescription. 
+        is optional collection
+    enumeration Sex
+        documentation 'Sexes for the InterventionPrescription. If omitted, considered generally applicable.
+        is optional collection
+        with context Appropriate
+    descriptor GradeLevel
+        documentation 'Grade levels for the prescribed intervention. If omitted, considered generally applicable.
+        is optional collection
+        with context Appropriate
+    enumeration DeliveryMethod
+        documentation 'The way in which an intervention was implemented: individual, small group, whole 
+                      'class, or whole school.
+        is required
+    reference EducationOrganization
+        documentation 'Relates the Education Organization which is sponsoring the InterventionPrescription.
+        is part of identity
+    shared string IdentificationCode named IdentificationCode
+        documentation 'A unique number or alphanumeric code assigned to an intervention prescription.
+        is part of identity
+        with context InterventionPrescription

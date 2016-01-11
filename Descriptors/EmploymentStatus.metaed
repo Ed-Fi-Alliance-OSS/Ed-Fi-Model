@@ -1,0 +1,14 @@
+Descriptor EmploymentStatus
+    documentation 'This descriptor defines the type of employment or contract.
+    with map type
+        item Probationary
+        item Contractual
+        item Substitute/temporary
+        item Tenured or permanent
+        item Volunteer/no contract
+        item Employed or affiliated with outside organization
+        item Non-contractual
+        item Employed part-time
+        item Employed or affiliated with outside agency part-time
+        item Other
+

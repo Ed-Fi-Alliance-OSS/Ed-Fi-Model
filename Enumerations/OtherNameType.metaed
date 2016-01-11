@@ -1,0 +1,7 @@
+Enumeration OtherNameType
+    documentation 'The types of alternate names for a person.
+    item Alias
+    item Nickname
+    item Other Name
+    item Previous Legal Name
+

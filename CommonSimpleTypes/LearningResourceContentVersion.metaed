@@ -1,0 +1,4 @@
+Common String LearningResourceContentVersion
+    documentation 'The version identifier for the content.
+    min length 1
+    max length 10

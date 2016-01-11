@@ -1,0 +1,11 @@
+Enumeration TelephoneNumberType
+    documentation 'The type of communication number listed for an individual.
+    item Fax
+    item Emergency 1
+    item Emergency 2
+    item Home
+    item Mobile
+    item Other
+    item Unlisted
+    item Work
+

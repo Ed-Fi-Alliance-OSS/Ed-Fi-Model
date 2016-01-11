@@ -1,0 +1,32 @@
+Common Type OtherName
+    documentation 'Other names (e.g., alias, nickname, previous legal name) associated with a 
+    'person.
+    string PersonalTitlePrefix
+        documentation 'A prefix used to denote the title, degree, position, or seniority of the person.
+        is optional
+        min length 1
+        max length 30
+    string FirstName
+        documentation 'A name given to an individual at birth, baptism, or during another naming 
+        'ceremony, or through legal change.
+        is required
+        min length 1
+        max length 75
+    string MiddleName
+        documentation 'A secondary name given to an individual at birth, baptism, or during another 
+        'naming ceremony.
+        is optional
+        min length 1
+        max length 75
+    shared string LastSurname named LastSurname
+        documentation 'The name borne in common by members of a family.
+        is required
+    string GenerationCodeSuffix
+        documentation 'An appendage, if any, used to denote an individual's generation in his family 
+        '(e.g., Jr., Sr., III).
+        is optional
+        min length 1
+        max length 10
+    enumeration OtherNameType
+        documentation 'The types of alternate names for a person.
+        is part of identity

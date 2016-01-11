@@ -1,0 +1,18 @@
+Enumeration AddressType
+    documentation 'The type of address listed for an individual or organization.
+    item Billing
+    item Father Address
+    item Home
+    item Guardian Address
+    item Mailing
+    item Mother Address
+    item Other
+    item Physical
+    item Shipping
+    item Temporary
+    item Work
+    item Shelters, Transitional housing, Awaiting Foster Care
+    item Doubled - up (i.e., living with another family)
+    item Unsheltered (e.g. cars, parks, campgrounds, temporary trailers including FEMA trailers, or abandoned buildings)
+    item Hotels/Motels
+

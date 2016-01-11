@@ -1,0 +1,41 @@
+Common Type Diploma
+	documentation 'This educational entity represents the conferring or certification by an 
+	'educational organization that the student has successfully completed a 
+	'particular course of study. It represents the electronic version of its 
+	'physical document counterpart.
+    include Achievement
+        documentation 'An entity that includes information about achievement earned by a learner 
+		'upon fulfilling a specified criteria.
+        is required
+    date DiplomaAwardDate
+        documentation 'The month, day, and year on which the student met  graduation requirements and 
+        'was awarded a diploma.
+        is part of identity
+    enumeration DiplomaLevel
+		documentation 'The level of diploma/credential that is awarded to a student in recognition of 
+		'his/her completion of the curricular requirements.
+        '
+        'Minimum high school program
+        '
+        'Recommended high school program
+        '
+        'Distinguished Achievement Program.
+        is optional
+    enumeration DiplomaType
+        documentation 'The type of diploma/credential that is awarded to a student in recognition of 
+        'his/her completion of the curricular requirements.
+        is part of identity
+    bool CTECompleter
+        documentation 'Indicated a student who reached a state-defined threshold of vocational 
+        'education and who attained a high school diploma or its recognized state 
+        'equivalent or GED.
+        is optional
+    string DiplomaDescription
+        documentation 'The description of diploma given to the student for accomplishments.
+        is optional
+        min length 1
+        max length 80
+    date DiplomaAwardExpiresDate
+        documentation 'Date on which the award expires.
+        is optional
+

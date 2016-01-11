@@ -1,0 +1,19 @@
+Common Type StudentCharacteristic
+    documentation 'Reflects important characteristics of the student's home situation: Displaced 
+	'Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, 
+	'Single Parent, Unaccompanied Youth.
+    descriptor StudentCharacteristic
+        documentation 'The characteristic designated for the Student.
+        is part of identity
+    date BeginDate
+        documentation 'The date the characteristic was designated.
+        is optional
+    date EndDate
+        documentation 'The date the characteristic was removed.
+        is optional
+    string DesignatedBy
+        documentation 'The person, organization, or department that designated the characteristic.
+        is optional
+        min length 1
+        max length 60
+

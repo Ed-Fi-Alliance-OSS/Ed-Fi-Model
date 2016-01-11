@@ -1,0 +1,21 @@
+Enumeration LeaveEventCategory
+    documentation 'A code describing the type of the leave event.
+    item Vacation
+    item Jury duty
+    item Professional development
+    item Flex time
+    item Work compensation
+    item Administrative
+    item Annual leave
+    item Bereavement
+    item Compensatory leave time
+    item Family and medical leave
+    item Government-requested
+    item Military leave
+    item Personal
+    item Release time
+    item Sabbatical leave
+    item Sick leave
+    item Suspension
+    item Other
+

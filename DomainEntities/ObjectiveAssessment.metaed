@@ -1,0 +1,54 @@
+Domain Entity ObjectiveAssessment
+    documentation 'This entity represents subtests that assess specific learning objectives.
+    shared string IdentificationCode named IdentificationCode
+        documentation 'A unique number or alphanumeric code assigned to a space, room, site, building, 
+                      'individual, organization, program, or institution by a school, school system, 
+                      'a state, or other agency or entity.
+        is part of identity
+    integer MaxRawScore
+        documentation 'The maximum raw score achievable across all assessment items that are correct 
+                      'and scored at the maximum.
+        is optional
+    include AssessmentPerformanceLevel
+        documentation 'Definition of the performance levels and the associated cut scores. 
+                      'Three styles are supported:
+                      '
+                      '1. Specification of performance level by minimum and maximum score    
+                      '
+                      '2. Specification of performance level by cut score, using only minimum score    
+                      '
+                      '3. Specification of performance level without any mapping to scores.
+        is optional collection
+    percent PercentOfAssessment
+        documentation 'The percentage of the Assessment that tests this objective.
+        is optional
+    string Nomenclature
+        documentation 'Reflects the specific nomenclature used for this level of ObjectiveAssessment.
+        is optional
+        min length 1
+        max length 35
+    shared string Description named Description
+        documentation 'The description of the ObjectiveAssessment (e.g., vocabulary, measurement, 
+                      'or geometry).
+        is optional
+    reference AssessmentItem
+        documentation 'References individual test items, if appropriate.
+        is optional collection
+        with context AssessmentItem
+        merge AssessmentItem.Assessment with Assessment
+    reference LearningObjective
+        documentation 'References the LearningObjective(s) the ObjectiveAssessment tests.
+        is optional collection
+        merge LearningObjective.GradeLevel with Assessment.GradeLevel
+    reference LearningStandard
+        documentation 'LearningStandard tested by this ObjectiveAssessment.
+        is optional collection
+    reference ObjectiveAssessment
+        documentation 'Provide user information to lookup and link to the parent 
+                      'ObjectiveAssessment containing this ObjectiveAssessment.
+        is optional
+        with context Parent
+        merge ObjectiveAssessment.Assessment with Assessment
+    reference Assessment
+        documentation 'Provide user information to lookup and link to an existing assessment.
+        is part of identity

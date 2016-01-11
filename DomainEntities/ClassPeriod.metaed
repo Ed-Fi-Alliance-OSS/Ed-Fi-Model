@@ -1,0 +1,14 @@
+Domain Entity ClassPeriod
+    documentation 'This entity represents the designation of a regularly scheduled series of class 
+                  'meetings at designated times and days of the week.
+    allow primary key updates
+    reference School
+        documentation 'Relates the ClassPeriod to the school.
+        is part of identity
+    string ClassPeriodName
+        documentation 'An indication of the portion of a typical daily session in which students 
+                      'receive instruction in a specified subject (e.g., morning, sixth period, block 
+                      'period, or AB schedules). 
+        is part of identity
+        min length 1
+        max length 20

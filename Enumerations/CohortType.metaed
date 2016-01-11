@@ -1,0 +1,14 @@
+Enumeration CohortType
+    documentation 'The type of the cohort (e.g., academic intervention, classroom breakout, etc.)
+    item Academic Intervention
+    item Attendance Intervention
+    item Discipline Intervention
+    item Classroom Pullout
+    item Extracurricular Activity
+    item Field Trip
+    item Principal Watch List
+    item Counselor List
+    item In-school Suspension
+    item Study Hall
+    item Other
+

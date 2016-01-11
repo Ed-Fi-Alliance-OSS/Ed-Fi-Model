@@ -1,0 +1,27 @@
+Enumeration CourseLevelCharacteristic
+    documentation 'The item for indication of the nature and difficulty of instruction: Remedial, 
+    'Basic, Honors, Ap, IB, Dual Credit, CTE. etc. 
+    item Accepted as high school equivalent
+    item Advanced
+    item Advanced Placement
+    item Basic
+    item College-level
+    item Core Subject
+    item Correspondence
+    item Career and Technical Education
+    item Distance Learning
+    item Dual Credit
+    item English Language Learner
+    item General
+    item Gifted and Talented
+    item Graduation Credit
+    item Honors
+    item International Baccalaureate
+    item Magnet
+    item Pre-AP
+    item Pre-IB
+    item Remedial
+    item Students with disabilities
+    item Untracked
+    item Other
+

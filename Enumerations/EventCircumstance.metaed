@@ -1,0 +1,36 @@
+Enumeration EventCircumstance
+    documentation 'An unusual event occurred during the administration of the assessment. This 
+    'could include fire alarm, student became ill, etc.
+    item Long-term suspension - non-special education
+    item Short-term suspension - non-special education
+    item Suspension - special education
+    item Truancy - paperwork filed
+    item Truancy - no paperwork filed
+    item Earlier truancy
+    item Chronic absences
+    item Catastrophic illness or accident
+    item Home schooled for assessed subjects
+    item Student took this grade level assessment last year
+    item Incarcerated at adult facility
+    item Special treatment center
+    item Special detention center
+    item Parent refusal
+    item Cheating
+    item Psychological factors of emotional trauma
+    item Student not showing adequate effort
+    item Homebound
+    item Foreign exchange student
+    item Student refusal
+    item Reading passage read to student (IEP)
+    item Non-special education student used calculator on non-calculator items
+    item Student used math journal (non-IEP)
+    item Other reason for ineligibility
+    item Other reason for nonparticipation
+    item Left testing
+    item Cross-enrolled
+    item Only for writing
+    item Administration or system failure
+    item Teacher cheating or mis-admin
+    item Fire alarm
+    item Other
+

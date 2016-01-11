@@ -1,0 +1,12 @@
+Descriptor Discipline
+    documentation 'This descriptor defines the type of action or removal from the classroom used to 
+    'discipline the student involved as a perpetrator in a discipline incident.
+    with optional map type
+        item Removal from Classroom
+        item In School Suspension
+        item Out of School Suspension
+        item Expulsion
+        item Expulsion with Services
+        item Community Service
+        item Other
+

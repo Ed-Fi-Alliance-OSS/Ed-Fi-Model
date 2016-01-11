@@ -1,0 +1,12 @@
+Common Type LearningStandardIdentificationCode
+    documentation 'A coding scheme that is used for identification and record-keeping purposes by 
+    'schools, social services, or other agencies to refer to a learning Standard.
+    shared string IdentificationCode named IdentificationCode
+        documentation 'A unique number or alphanumeric code assigned to a Learning Standard.
+        is part of identity
+    string ContentStandardName
+        documentation 'The name of the content standard, for example Common Core.
+        is part of identity
+        min length 1
+        max length 65
+

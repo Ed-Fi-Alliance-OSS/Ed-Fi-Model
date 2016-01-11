@@ -1,0 +1,5 @@
+Enumeration CostRate
+    documentation 'The rate by which a cost applies (e.g. $1 per student).
+    item Flat Fee
+    item Per Student
+

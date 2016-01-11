@@ -1,0 +1,29 @@
+Enumeration IncidentLocation
+    documentation 'Identifies where the incident occurred and whether or not it occurred on school 
+    'property.
+    item On campus
+    item Administrative offices area
+    item Cafeteria area
+    item Classroom
+    item Hallway or stairs
+    item Locker room or gym areas
+    item Restroom
+    item Library/media center
+    item Computer lab
+    item Auditorium
+    item On-campus other inside area
+    item Athletic field or playground
+    item Stadium
+    item Parking lot
+    item On-campus other outside area
+    item Off campus
+    item Bus stop
+    item School bus
+    item Walking to or from school
+    item Off-campus at other school
+    item Off-campus at other school district facility
+    item Off-campus at a school sponsored activity
+    item Off-campus at another location unrelated to school
+    item Online
+    item Unknown
+

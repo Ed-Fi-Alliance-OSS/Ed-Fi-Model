@@ -1,0 +1,49 @@
+Descriptor Disability
+    documentation 'This descriptor defines a student's impairment.
+    enumeration DisabilityCategory
+        documentation 'Whether the disability code is IDEA, Section 504, or other disability 
+        'designation.
+        is required
+
+    with optional map type
+        item Autism Spectrum Disorders
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Deaf-Blindness
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Hearing Impairment, including Deafness
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Intellectual Disability
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Infant/Toddler with a Disability
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Medical condition
+            documentation 'This disability falls in the DisabilityCategory of Section 504
+        item Mental impairment
+            documentation 'This disability falls in the DisabilityCategory of Section 504
+        item Motor impairment
+            documentation 'This disability falls in the DisabilityCategory of Section 504
+        item Multiple Disabilities
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Orthopedic Impairment
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Other
+            documentation 'This disability falls in the DisabilityCategory of Section 504
+        item Other Health Impairment
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Physical Disability
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Preschooler with a Disability
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Sensory impairment
+            documentation 'This disability falls in the DisabilityCategory of Section 504
+        item Serious Emotional Disability
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Speech or Language Impairment
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Specific Learning Disability
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Traumatic Brain Injury
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+        item Visual Impairment, including Blindness
+            documentation 'This disability falls in the DisabilityCategory of IDEA
+			

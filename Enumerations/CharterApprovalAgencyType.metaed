@@ -1,0 +1,6 @@
+Enumeration CharterApprovalAgencyType
+    documentation 'The type of agency that approved the establishment or continuation of a charter school.
+	item State board of education
+	item Public charter school board
+	item University
+	item Other

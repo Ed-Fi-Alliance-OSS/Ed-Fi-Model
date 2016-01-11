@@ -1,0 +1,4 @@
+Common String City
+    documentation 'The name of the city in which an address is located.
+    min length 2
+    max length 30

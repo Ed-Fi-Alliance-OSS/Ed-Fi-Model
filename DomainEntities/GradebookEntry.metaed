@@ -1,0 +1,36 @@
+Domain Entity GradebookEntry
+    documentation 'This entity represents an assignment, homework, or classroom assessment to be 
+                  'recorded in a gradebook.
+    allow primary key updates
+    string GradebookEntryTitle
+        documentation 'The name or title of the activity to be recorded in the GradebookEntry.
+        is part of identity
+        is queryable field
+        min length 1
+        max length 60
+    enumeration GradebookEntryType
+        documentation 'The type of the GradebookEntry; for example, homework, assignment, quiz, unit 
+                      'test, oral presentation, etc. 
+        is optional
+        is queryable field
+    date DateAssigned
+        documentation 'The date the assignment, homework, or assessment was assigned or executed.
+        is part of identity
+        is queryable field
+    shared string Description named Description
+        documentation 'A description of the assignment, homework, or classroom assessment.
+        is optional
+    reference LearningStandard
+        documentation 'LearningStandard(s) associated with the GradebookEntry.
+        is optional collection
+    reference LearningObjective
+        documentation 'LearningObjectives associated with the GradebookEntry.
+        is optional collection
+    reference Section
+        documentation 'The Section associated with the GradebookEntry.
+        is part of identity
+        is queryable field
+    reference GradingPeriod
+        documentation 'Identifies the grading period for the GradebookEntry.
+        is optional
+        is queryable field

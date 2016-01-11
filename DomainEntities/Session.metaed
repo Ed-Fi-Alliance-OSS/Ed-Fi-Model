@@ -1,0 +1,38 @@
+Domain Entity Session
+    documentation 'This entity represents the prescribed span of time when an education institution 
+                  'is open, instruction is provided and students are under the direction and 
+                  'guidance of teachers and/or education institution administration. A session may 
+                  'be interrupted by one or more vacations.
+    shared string IdentificationCode named SessionName
+        documentation 'The identifier for the calendar for the academic session (e.g., 2010/11, 2011 
+                      'Summer).
+        is required
+        is queryable field
+    enumeration SchoolYear
+        documentation 'The identifier for the school year.
+        is part of identity
+        is queryable field
+    descriptor Term
+        documentation 'The term for the Session during the school year.
+        is part of identity
+        is queryable field
+    date BeginDate
+        documentation 'Month, day, and year of the first day of the Session.
+        is required
+    date EndDate
+        documentation 'Month, day and year of the last day of the Session.
+        is required
+    integer TotalInstructionalDays
+        documentation 'The total number of instructional days in the school calendar.
+        is required
+        min value 0
+    reference School
+        documentation 'Relates the Session to the school.
+        is part of identity
+        is queryable field
+    reference GradingPeriod
+        documentation 'Grading periods associated with the calendar.
+        is required collection
+    reference AcademicWeek
+        documentation 'The academic weeks associated with the school year.
+        is optional collection

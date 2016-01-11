@@ -1,0 +1,113 @@
+Domain Entity StudentAssessment
+    documentation 'This entity represents the analysis or scoring of a student's response on an 
+                  'assessment. The analysis results in a value that represents a student's 
+                  'performance on a set of items on a test.
+    date AdministrationDate
+        documentation 'The month(s), day(s), and year on which an assessment is administered or first 
+                      'day of administration if over multiple days.
+        is part of identity
+    date AdministrationEndDate
+        documentation 'Assessment Administration End Date, if administered over multiple days.
+        is optional
+    shared string IdentificationCode named SerialNumber
+        documentation 'The unique number for the assessment form or answer document.
+        is optional
+    descriptor Language
+        documentation 'The language in which an assessment is written and/or administered. 
+        is optional
+        with context Administration
+    enumeration AdministrationEnvironment
+        documentation 'The environment in which the test was administered. For example:
+                      '
+                      'Electronic
+                      '
+                      'Classroom
+                      '
+                      'Testing Center
+                      '
+                      '...
+        is optional
+    descriptor Accommodation
+        documentation 'The specific type of special variation used in how an examination is presented, 
+                      'how it is administered, or how the test taker is allowed to respond. This 
+                      'generally refers to changes that do not substantially alter what the examination
+                      'measures. The proper use of accommodations does not substantially change 
+                      'academic level or performance criteria. For example:
+                      '
+                      'Braille
+                      '
+                      'Enlarged monitor view
+                      '
+                      'Extra time
+                      '
+                      'Large Print
+                      '
+                      'Setting
+                      '
+                      'Oral Administration
+                      '
+                      '...
+        is optional collection
+    enumeration RetestIndicator
+        documentation 'Indicator if the test was retaken. For example:
+                      '
+                      'Primary administration
+                      '
+                      'First retest
+                      '
+                      'Second retest
+                      '
+                      '...
+        is optional
+    enumeration ReasonNotTested
+        documentation 'The primary reason student is not tested. For example:
+                      '
+                      'Absent
+                      '
+                      'Refusal by parent
+                      '
+                      'Refusal by student
+                      '
+                      'Medical waiver
+                      '
+                      'Illness
+                      '
+                      'Disruptive behavior
+                      '
+                      'LEP Exempt
+                      '
+                      '...
+        is optional
+    include ScoreResult
+        documentation 'A meaningful score or statistical expression of the performance of an 
+                      'individual. The results can be expressed as a number, percentile, range, level, 
+        'etc.
+        is optional collection
+    descriptor GradeLevel
+        documentation 'The grade level of a student when assessed.
+        is optional
+        with context WhenAssessed
+    include PerformanceLevel
+        documentation 'The performance level(s) achieved for the StudentAssessment.
+        is optional collection
+    enumeration EventCircumstance
+        documentation 'An unusual event occurred during the administration of the assessment. This 
+                      'could include fire alarm, student became ill, etc.
+        is optional
+    shared string Description named Description
+        documentation 'Describes special events that occur before during or after the assessment 
+                      'session that may impact use of results.
+        is optional
+        with context Event
+    reference Student
+        documentation 'Reference to the Student associated with the Assessment.
+        is part of identity
+    reference Assessment
+        documentation 'Reference to the Assessment taken by the student.
+        is part of identity
+    include StudentAssessmentItem
+        documentation 'NEEDS DOCUMENTATION 
+        is optional collection
+    include StudentObjectiveAssessment
+        documentation 'NEEDS DOCUMENTATION
+        is optional collection

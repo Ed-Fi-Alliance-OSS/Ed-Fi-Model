@@ -1,0 +1,36 @@
+Common Type InternationalAddress
+    documentation 'Addresses located outside of the United States.
+    enumeration AddressType
+        documentation 'The type of address listed for an individual or organization. For example:  Physical 
+        'Address, Mailing Address, Home Address, etc.)
+        is part of identity
+    shared string AddressLine named AddressLine1
+        documentation 'The first line of the address.
+        is required
+    shared string AddressLine named AddressLine2
+        documentation 'The second line of the address.
+        is optional
+    shared string AddressLine named AddressLine3
+        documentation 'The third line of the address.
+        is optional
+    shared string AddressLine named AddressLine4
+        documentation 'The fourth line of the address.
+        is optional
+    descriptor Country
+        documentation 'The name of the country.
+        is required
+    shared string Coordinate named Latitude
+        documentation 'The geographic latitude of the physical address.
+        is optional
+    shared string Coordinate named Longitude
+        documentation 'The geographic longitude of the physical address.
+        is optional
+    date BeginDate
+		documentation 'The first date the address is valid. For physical addresses, the date the 
+		'person moved to that address.
+        is optional
+    date EndDate
+		documentation 'The last date the address is valid. For physical addresses, this would be the date 
+		'the person moved from that address.
+        is optional
+

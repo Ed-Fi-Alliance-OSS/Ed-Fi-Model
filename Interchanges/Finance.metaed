@@ -1,0 +1,8 @@
+Interchange Finance
+    documentation 'This interchange describes financial data related to an Education Organization.
+    element Account
+    element Actual
+    element Budget
+    element ContractedStaff
+    element Payroll
+

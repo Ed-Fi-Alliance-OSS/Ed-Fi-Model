@@ -1,0 +1,8 @@
+Enumeration ContentClass
+    documentation 'The predominate type or kind characterizing the learning resource.
+    item Presentation
+    item Education Research
+    item Vendor Intervention Offering
+    item Written Activity
+    item Video
+

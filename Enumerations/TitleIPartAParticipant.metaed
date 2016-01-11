@@ -1,0 +1,9 @@
+Enumeration TitleIPartAParticipant
+    documentation 'An indication of the type of Title I program, if any, in which the student is 
+    'participating and served.
+    item Public Targeted Assistance Program
+    item Public Schoolwide Program
+    item Private school students participating
+    item Local Neglected Program
+    item Was not served
+

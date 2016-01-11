@@ -1,0 +1,12 @@
+Descriptor Responsibility
+    documentation 'This descriptor defines types of responsibility an education organization may 
+    'have for a student (e.g., accountability, attendance, funding).
+    with optional map type
+        item Accountability
+        item Attendance
+		item Discipline
+        item Funding
+        item Graduation
+        item Individualized Education Program
+        item Transportation
+

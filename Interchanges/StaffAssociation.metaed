@@ -1,0 +1,13 @@
+Interchange StaffAssociation
+    documentation 'This interchange defines staff and teacher information. It can be used to define 
+    'employment, assignment, and teaching associations, as well as staff positions 
+    'and staff leave events.
+    element Staff
+    element StaffEducationOrganizationEmploymentAssociation
+    element StaffEducationOrganizationAssignmentAssociation
+    element StaffSchoolAssociation
+    element StaffSectionAssociation
+    element LeaveEvent
+    element OpenStaffPosition
+    element StaffProgramAssociation
+

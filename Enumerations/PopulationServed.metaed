@@ -1,0 +1,14 @@
+Enumeration PopulationServed
+    documentation 'The type of students the section is offered and tailored to.
+    item Regular Students
+    item Bilingual Students
+    item Compensatory/Remedial Education Students
+    item Gifted and Talented Students
+    item Career and Technical Education Students
+    item Special Education Students
+    item ESL Students
+    item Adult Basic Education Students
+    item Honors Students
+    item Migrant Students
+    item Economic Disadvantaged
+

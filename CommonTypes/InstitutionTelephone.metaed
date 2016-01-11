@@ -1,0 +1,11 @@
+Common Type InstitutionTelephone
+    documentation 'The 10-digit telephone number, including the area code, for the organization.
+    string TelephoneNumber
+        documentation 'The telephone number including the area code, and extension, if applicable.
+        is required
+        min length 1
+        max length 24
+    enumeration InstitutionTelephoneNumberType
+        documentation 'The type of communication number listed for an individual or organization.
+        is part of identity
+

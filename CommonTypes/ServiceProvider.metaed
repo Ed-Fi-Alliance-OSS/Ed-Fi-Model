@@ -1,0 +1,9 @@
+Common Type ServiceProvider
+    documentation 'The student's special education ServiceProvider.
+    reference Staff
+        documentation 'Relates the ServiceProvider to the Staff.
+        is part of identity
+    bool PrimaryProvider
+        documentation 'Primary ServiceProvider.
+        is optional
+

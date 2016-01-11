@@ -1,0 +1,20 @@
+Domain Entity Account
+    documentation 'This financial entity represents a funding source combined with its purpose and
+                  'type of transaction. It provides a formal record of the debits and credits 
+                  'relating to the specific account.
+    string AccountNumber
+        documentation 'The alphanumeric string that identifies the account.
+        is part of identity
+        min length 1
+        max length 50
+    descriptor AccountCode
+        documentation 'The set of account codes defined for the education accounting system organized 
+                      'by account code type (e.g., fund, function, object) that map to the 
+                      'account.
+        is required collection
+    integer FiscalYear
+        documentation 'The financial accounting year.
+        is part of identity
+    reference EducationOrganization
+        documentation 'Relates the account to an Education Organization.
+        is part of identity

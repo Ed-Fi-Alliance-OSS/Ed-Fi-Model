@@ -1,0 +1,16 @@
+Enumeration RecognitionType
+    documentation 'The nature of recognition given to the student for accomplishments in a 
+    'co-curricular, or extra-curricular activity.
+    item Athletic awards
+    item Awarding of units of value
+    item Citizenship award/recognition
+    item Completion of requirement, but no units of value awarded
+    item Certificate
+    item Honor award
+    item Letter of commendation
+    item Medals
+    item Monogram/letter
+    item Points
+    item Promotion or advancement
+    item Other
+

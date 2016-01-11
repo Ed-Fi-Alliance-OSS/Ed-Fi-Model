@@ -1,0 +1,12 @@
+Enumeration CohortScope
+    documentation 'The scope of cohort (e.g., school, district, classroom, etc.)
+    item District
+    item School
+    item Network
+    item Classroom
+    item Teacher
+    item Principal
+    item Counselor
+    item Statewide
+    item Other
+

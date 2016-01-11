@@ -1,0 +1,46 @@
+Domain Entity InterventionStudy
+    documentation 'An experimental or quasi-experimental study of an intervention technique.
+    include EducationContentSource
+        documentation 'Reference to any published papers, reports, or other documents about this intervention 
+                      'study.
+        is optional
+    reference InterventionPrescription
+        documentation 'Reference to the InterventionPrescription being studied.
+        is required
+        with context InterventionPrescription
+    include InterventionEffectiveness
+        documentation 'Measurement of the effectiveness of the InterventionStudy per diagnosis.
+        is optional collection
+    integer Participants
+        documentation 'The number of participants observed in the study.
+        is required
+    enumeration DeliveryMethod
+        documentation 'The way in which an intervention was implemented: individual, small group, whole 
+                      'class, or whole school.
+        is required
+    enumeration InterventionClass
+        documentation 'The way in which an intervention is used: curriculum, supplement, or practice.
+        is required
+    descriptor GradeLevel
+        documentation 'Grade levels participating in this study.
+        is optional collection
+        with context Appropriate
+    enumeration PopulationServed
+        documentation 'A subset of students that are the focus of the InterventionStudy.
+        is optional collection
+    enumeration Sex
+        documentation 'Sexes participating in this study. If omitted, considered generally applicable.
+        is optional collection
+        with context Appropriate
+    enumeration StateAbbreviation
+        documentation 'The abbreviation for the state (within the United States) or outlying area, the 
+                      'school system of which the participants of the study are considered to be a 
+                      'part.
+        is optional collection
+    reference EducationOrganization
+        documentation 'Relates the EducationOrganization which is sponsoring the intervention study.
+        is part of identity
+    shared string IdentificationCode named IdentificationCode
+        documentation 'A unique number or alphanumeric code assigned to an intervention study.
+        is part of identity
+        with context InterventionStudy

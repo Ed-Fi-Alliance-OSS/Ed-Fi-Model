@@ -1,0 +1,15 @@
+Enumeration CohortYearType
+    documentation 'The enumeration items for the set of cohort years.
+    item Eighth grade
+    item Eleventh grade
+    item Fifth grade
+    item First grade
+    item Fourth grade
+    item Ninth grade
+    item Second grade
+    item Seventh grade
+    item Sixth grade
+    item Tenth grade
+    item Third grade
+    item Twelfth grade
+

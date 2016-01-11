@@ -1,0 +1,4 @@
+Common String Description
+    documentation 'A detailed description of the entity.
+    min length 1
+    max length 1024 

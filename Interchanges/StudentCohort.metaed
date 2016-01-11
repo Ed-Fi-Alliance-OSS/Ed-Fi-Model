@@ -1,0 +1,11 @@
+Interchange StudentCohort
+    documentation 'Cohorts are used to designate groups of students outside of class rosters, 
+    'enrollment lists, or program participation.
+    '
+    'The Student Cohort interchange describes student cohort information. It can be 
+    'used to exchange information regarding any named group of students, or cohort, 
+    'for tracking, analysis, or intervention.
+    element Cohort
+    element StudentCohortAssociation
+    element StaffCohortAssociation
+

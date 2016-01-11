@@ -1,0 +1,33 @@
+Enumeration ReasonNotTested
+    documentation 'The primary reason student is not tested. For example:
+    '
+    'Absent
+    '
+    'Refusal by parent
+    '
+    'Refusal by student
+    '
+    'Medical waiver
+    '
+    'Illness
+    '
+    'Disruptive behavior
+    '
+    'LEP Exempt
+    '
+    '...
+    item Absent
+    item LEP exempt
+    item LEP postponement
+    item Not appropriate (ARD decision)
+    item Not tested (ARD decision)
+    item Alternate assessment administered
+    item Parental waiver
+    item Foreign exchange student waiver
+    item Refusal by parent
+    item Refusal by student
+    item Medical waiver
+    item Disruptive behavior
+    item Previously passed the examination
+    item Other
+

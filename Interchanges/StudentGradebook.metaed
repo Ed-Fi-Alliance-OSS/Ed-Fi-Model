@@ -1,0 +1,7 @@
+Interchange StudentGradebook
+    documentation 'This interchange is for student gradebook entries.
+    identity template Section
+    element GradebookEntry
+    element StudentGradebookEntry
+    element LearningObjective
+

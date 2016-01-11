@@ -1,0 +1,12 @@
+Enumeration CurriculumUsed
+    documentation 'The type of curriculum used in an early learning classroom or group.
+    item Creative curriculum infants/toddlers
+    item Creative curriculum preschool
+    item Creative curriculum family child care
+    item Highscope preschoolers
+    item Highscope infants/toddlers
+    item Montessori curriculum
+    item Locally designed curriculum
+    item Other curriculum
+    item None
+

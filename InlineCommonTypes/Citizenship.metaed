@@ -1,0 +1,14 @@
+Inline Common Type Citizenship
+    documentation 'Describes  information relative to identity and citizenship of a person.
+    enumeration CitizenshipStatus
+        documentation 'An indicator of whether or not the person is a U.S. citizen.
+        is required
+    include CitizenshipDocumentationChoice
+        documentation 'Describe the probationary documentation of U.S. citizenship.
+        is optional
+    include IdentificationDocument
+        documentation 'Describe the probationary documentation of citizenship of an alien or a foreign 
+		'nationality of a U.S. citizen.
+        is optional collection
+        with context ForeignCitizenship
+

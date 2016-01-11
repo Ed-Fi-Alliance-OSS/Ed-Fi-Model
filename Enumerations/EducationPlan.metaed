@@ -1,0 +1,19 @@
+Enumeration EducationPlan
+    documentation 'The type of education plan(s) the student is following, if appropriate.  For 
+    'example:
+    '
+    'Special education
+    '
+    'Vocational
+    item 504 Plan
+    item Career Pathways
+    item Career Suggestions
+    item Completion and Reach Age 22
+    item Full Time Employment
+    item Employability Skills
+    item High School Education Plan
+    item IDEA IEP
+    item Outside Service Access
+    item Personal Graduation Plan
+    item Student Success Plan
+	item Other

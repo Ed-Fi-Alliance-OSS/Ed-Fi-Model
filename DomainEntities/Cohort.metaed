@@ -1,0 +1,29 @@
+Domain Entity Cohort
+    documentation 'This entity represents any type of list of designated students for tracking, 
+                  'analysis, or intervention.
+    string CohortIdentifier
+        documentation 'The name or ID for the Cohort.
+        is part of identity
+        min length 1
+        max length 20
+    string CohortDescription
+        documentation 'The description of the Cohort and its purpose.
+        is optional
+        min length 1
+        max length 1024
+    enumeration CohortType
+        documentation 'The type of cohort (e.g., academic intervention, classroom breakout).
+        is required
+    enumeration CohortScope
+        documentation 'The scope of cohort (e.g., school, district, classroom).
+        is optional
+    descriptor AcademicSubject
+        documentation 'The academic subject associated with an academic intervention.
+        is optional
+    reference EducationOrganization
+        documentation 'The education organization associated with and owner of the Cohort.
+        is part of identity
+    reference Program
+        documentation 'The (optional) program associated with this Cohort (e.g., special education).
+        is optional collection
+        with context Program

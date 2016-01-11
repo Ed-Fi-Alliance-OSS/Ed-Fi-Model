@@ -1,0 +1,20 @@
+Descriptor ExitWithdrawType
+    documentation 'This descriptor defines the circumstances under which the student exited from 
+    'membership in an educational institution.
+    with optional map type
+        item Transferred
+        item Graduated
+        item Completed
+        item Died or is permanently incapacitated
+        item Withdrawn
+        item Expelled
+        item Reached maximum age
+        item Enrolled in a high school diploma program
+        item Involuntarily Removed
+        item Incarcerated
+        item Dropout
+        item End of school year
+        item Invalid enrollment
+        item No show
+        item Other
+

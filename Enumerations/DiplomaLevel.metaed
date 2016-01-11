@@ -1,0 +1,11 @@
+Enumeration DiplomaLevel
+    documentation 'The level of diploma/credential that is awarded to a student in recognition of 
+    'his/her completion of the curricular requirements.
+    item Minimum
+    item Recommended
+    item Distinguished
+    item Open Enrollment
+    item Cum laude
+    item Magna cum laude
+    item Summa cum laude
+

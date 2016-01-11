@@ -1,0 +1,8 @@
+Enumeration OldEthnicity
+    documentation 'Previous definition of Ethnicity combining Hispanic/Latino and Race.  
+    item American Indian Or Alaskan Native
+    item Asian Or Pacific Islander
+    item Black, Not Of Hispanic Origin
+    item Hispanic
+    item White, Not Of Hispanic Origin
+

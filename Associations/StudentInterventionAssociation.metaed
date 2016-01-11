@@ -1,0 +1,26 @@
+Association StudentInterventionAssociation
+    documentation 'This association indicates the students participating in an intervention.
+    domain entity Student
+        documentation 'Relates the Student associated with the Intervention.
+    domain entity Intervention
+        documentation 'An implementation of an instructional approach focusing on the specific 
+        'techniques and materials used to teach a given subject.
+    reference Cohort
+        documentation 'Relates the cohort, if the student's membership in this cohort is the reason he 
+        'or she is participating in this intervention.
+        is optional
+        with context Cohort
+    include InterventionEffectiveness
+        documentation 'A measure of the effects of an intervention in each outcome domain. The rating 
+        'of effectiveness takes into account four factors: the quality of the research on 
+        'the intervention, the statistical significance of the research findings, the 
+        'size of the differences between participants in the intervention and comparison 
+        'groups and the consistency in results.
+        is optional collection
+    string DiagnosticStatement
+        documentation 'A statement provided by the assigner that provides information regarding why the 
+        'student was assigned to this intervention.
+        is optional
+        min length 1
+        max length 1024
+

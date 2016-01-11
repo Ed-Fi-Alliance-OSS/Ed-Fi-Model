@@ -1,0 +1,27 @@
+Domain Entity StudentCompetencyObjective
+    documentation 'This entity represents the competency assessed or evaluated for the student 
+                  'against a specific learning  objective.
+    reference CompetencyObjective
+        documentation 'The CompetencyObjective evaluated for the student.
+        is part of identity
+        with context CompetencyObjective shorten to Objective
+    descriptor CompetencyLevel
+        documentation 'The CompetencyLevel assessed for the student for the referenced 
+                      'LearningObjective..
+        is required
+    string DiagnosticStatement
+        documentation 'A statement provided by the teacher that provides information in addition to the 
+                      'grade or assessment score.
+        is optional
+        min length 1
+        max length 1024
+    reference GradingPeriod
+        documentation 'Relates the CompetencyObjective to a grading period.
+        is part of identity
+        with context GradingPeriod
+    reference Student
+        documentation 'Relates the student associated with the CompetencyObjective.
+        is part of identity
+    include StudentCompetencyObjectiveSectionOrProgramChoice
+        documentation 'Relates the student and the Section or Program with the CompetencyObjective.
+        is optional

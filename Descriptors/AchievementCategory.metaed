@@ -1,0 +1,16 @@
+Descriptor AchievementCategory
+    documentation 'This descriptor defines the category of achievement attributed to the learner.
+    with optional map type
+        item Competency Mastered
+        item Competency Retained
+        item Course Completed
+        item Level Completed
+        item Certificate Earned
+        item Diploma Earned
+        item License Earned
+        item License Endorsement Earned
+        item Participation
+        item Academic Honor
+        item Non-Academic Honor
+        item Recognition
+

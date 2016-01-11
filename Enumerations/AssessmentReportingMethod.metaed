@@ -1,0 +1,51 @@
+Enumeration AssessmentReportingMethod
+    documentation 'The method that the instructor of the class uses to report the performance and 
+    'achievement of all students. It may be a qualitative method such as 
+    'individualized teacher comments or a quantitative method such as a letter or a 
+    'numerical grade. In some cases, more than one type of reporting method may be 
+    'used.
+    item Achievement/proficiency level
+    item ACT score
+    item Adaptive scale score
+    item Age score
+    item C-scaled scores
+    item College Board examination scores
+    item Composite Score
+    item Composite Rating
+    item Composition Score
+    item Grade equivalent or grade-level indicator
+    item Graduation score
+    item Growth/value-added/indexing
+    item International Baccalaureate score
+    item Letter grade/mark
+    item Mastery level
+    item Normal curve equivalent
+    item Normalized standard score
+    item Number score
+    item Pass-fail
+    item Percentile
+    item Percentile rank
+    item Proficiency level
+    item Promotion score
+    item Ranking
+    item Ratio IQ's
+    item Raw score
+    item RIT scale score
+    item Scale score
+    item Standard age score
+    item Standard error measurement
+    item Stanine score
+    item Sten score
+    item Theta
+    item T-score
+    item Vertical score
+    item Workplace readiness score
+    item Z-score
+    item Other
+    item Not applicable
+    item Quantile Measure
+    item Lexile Measure
+    item Vertical Scale Score
+    item National College-Bound Percentile
+    item State College-Bound Percentile
+

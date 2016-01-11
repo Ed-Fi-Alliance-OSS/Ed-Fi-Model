@@ -1,0 +1,21 @@
+Enumeration DiplomaType
+    documentation 'The type of diploma/credential that is awarded to a student in recognition of 
+    'his/her completion of the curricular requirements.
+    item Regular diploma
+    item Endorsed/advanced diploma
+    item Regents diploma
+    item International Baccalaureate
+    item Modified diploma
+    item Other diploma
+    item Alternative credential
+    item Certificate of attendance
+    item Certificate of completion
+    item High school equivalency credential, other than GED
+    item General Educational Development (GED) credential
+    item Post graduate certificate (grade 13)
+    item Career and Technical Education certificate
+    item Other
+    item Occupational License
+    item Industry-recognized Certification
+    item Apprenticeship Certificate
+

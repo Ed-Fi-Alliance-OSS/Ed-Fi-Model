@@ -1,0 +1,31 @@
+Domain Entity StudentGradebookEntry
+    documentation 'This entity holds a student's grade or competency level for a gradebook entry.
+    date DateFulfilled
+        documentation 'The date an assignment was turned in or the date of an assessment.
+        is optional
+    string GradeEarned
+        documentation 'A final or interim (grading period) indicator of student performance in a class 
+                      'as submitted by the instructor.
+        is optional
+        with context Letter
+        min length 1
+        max length 20
+    shared decimal NumericGrade named NumericGradeEarned
+        documentation 'A final or interim (grading period) indicator of student performance in a class 
+                      'as submitted by the instructor.
+        is optional
+    descriptor CompetencyLevel
+        documentation 'The CompetencyLevel assessed for the student for the referenced LearningObjective.
+        is optional
+    string DiagnosticStatement
+        documentation 'A statement provided by the teacher that provides information in addition to the 
+                      'grade or assessment score.
+        is optional
+        min length 1
+        max length 1024
+    reference StudentSectionAssociation
+        documentation 'Relates the student associated with the GradebookEntry.
+        is part of identity
+    reference GradebookEntry
+        documentation 'The GradebookEntry associated with the student grade or score.
+        is part of identity

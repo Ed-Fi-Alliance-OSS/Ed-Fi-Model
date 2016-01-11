@@ -1,0 +1,18 @@
+Domain Entity PostSecondaryEvent
+    documentation 'This entity captures significant postsecondary events during a student's high 
+                  'school tenure (e.g., FAFSA application or college application, acceptance, and 
+                  'enrollment) or during a student's enrollment at a post-secondary institution.
+    date EventDate
+        documentation 'The date the event occurred or was recorded.
+        is part of identity
+    enumeration PostSecondaryEventCategory
+        documentation 'The PostSecondaryEvent that is logged (e.g., FAFSA application, college 
+                      'application, college acceptance).
+        is part of identity
+    include PostSecondaryInstitution
+        documentation 'An organization that provides educational programs for individuals who have 
+                      'completed or otherwise left educational programs in secondary school(s).
+        is optional
+    reference Student
+        documentation 'The student associated with the PostSecondaryEvent.
+        is part of identity

@@ -1,0 +1,9 @@
+Choice Common Type PublicationDateChoice
+    documentation 'NEEDS DOCUMENTATION
+    date PublicationDate
+        documentation 'The date on which this content was first published.
+        is required
+    year PublicationYear
+        documentation 'The year at which this content was first published.
+        is required
+

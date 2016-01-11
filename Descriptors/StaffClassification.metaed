@@ -1,0 +1,42 @@
+Descriptor StaffClassification
+    documentation 'This descriptor defines an individual's title of employment, official status or 
+    'rank.
+    with optional map type
+        item Teacher
+        item Other
+        item Counselor
+        item School Administrator
+        item LEA Administrator
+        item School Specialist
+        item LEA Specialist
+        item Operational Support
+        item Support Services Staff
+            documentation 'Professional and supervisory staff providing non-instructional services to 
+            'students including attendance officers; staff providing health, psychology, 
+            'speech pathology, audiology, or social services; and supervisors of the 
+            'preceding staff and of health, transportation, and food service workers.
+        item School Leader
+        item Instructional Coordinator
+            documentation 'Staff supervising instructional programs including professional staff members or 
+            'supervisors in an early learning program assigned specific duties related to 
+            'instruction , or supervisors at a school district or sub-district level 
+            'including curriculum coordinators or supervisors; in-service training staff; 
+            'Title I supervisors; home economics supervisors; educational television staff; 
+            'coordinators and supervisors of audiovisual services; and staff engaged in 
+            'development of computer-assisted instruction.
+        item Instructional Aide
+        item Librarians/Media Specialists
+            documentation 'A professional staff member or supervisor assigned specific duties and school time 
+            'for professional library and media service activities. Activities include: 
+            'selecting, acquiring, preparing, cataloging, and circulating books and other 
+            'printed materials; planning the use of library and media services by students, 
+            'teachers and other members of the instructional staff; and guiding individuals 
+            'in their use of media services and library materials, (whether maintained 
+            'separately or as part of an instructional materials center).
+        item State Administrator
+        item Substitute Teacher
+        item Principal
+        item Assistant Principal
+        item Superintendent
+        item Assistant Superintendent
+

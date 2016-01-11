@@ -1,0 +1,20 @@
+Enumeration CreditType
+    documentation 'The type of credits or units of value awarded for the completion of a course.
+    item Adult education credit
+    item Career and Technical Education credit
+    item Carnegie unit
+    item Converted occupational experience credit
+    item Correspondence credit
+    item Credit by examination
+    item Intersession hour credit
+    item Long session hour credit
+    item Mini-term hour credit
+    item Nine month year hour credit
+    item Quarter hour credit
+    item Quinmester hour credit
+    item Semester hour credit
+    item Summer term hour credit
+    item Trimester hour credit
+    item Twelve month year hour credit
+    item Other
+

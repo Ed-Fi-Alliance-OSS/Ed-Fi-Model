@@ -1,0 +1,16 @@
+Common Type StudentIdentificationCode
+    documentation 'A coding scheme that is used for identification and record-keeping purposes by 
+    'schools, social services or other agencies to refer to a student.
+    shared string IdentificationCode named IdentificationCode
+        documentation 'A unique number or alphanumeric code assigned to a student by a school, school 
+        'system, a state, or other agency or entity.
+        is required
+    descriptor StudentIdentificationSystem
+        documentation 'A coding scheme that is used for identification and record-keeping purposes by 
+        'schools, social services, or other agencies to refer to a student.
+        is part of identity
+    shared string IdentificationCode named IdentificationCode
+        documentation 'The organization code or name assigning the StudentIdentificationCode.
+        is part of identity
+        with context AssigningOrganization
+

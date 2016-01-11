@@ -1,0 +1,8 @@
+Enumeration CitizenshipStatus
+    documentation 'An indicator of whether or not the person is a U.S. citizen.
+    item US Citizen
+    item Permanent resident
+    item Resident alien
+    item Non-resident alien
+    item Refugee
+

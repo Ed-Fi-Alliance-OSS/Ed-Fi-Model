@@ -1,0 +1,14 @@
+Descriptor StudentIdentificationSystem
+    documentation 'This descriptor defines the originating record system and code that is used for record-keeping purposes of the student.
+    with optional map type
+		item Canadian SIN
+		item District
+		item Family
+		item Federal
+		item Local
+		item National Migrant
+		item Other
+		item School
+		item SSN
+		item State
+		item State Migrant

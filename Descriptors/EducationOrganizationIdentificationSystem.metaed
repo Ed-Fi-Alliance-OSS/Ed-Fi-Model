@@ -1,0 +1,14 @@
+Descriptor EducationOrganizationIdentificationSystem
+    documentation 'This descriptor defines the originating record system and code that is used for record-keeping purposes by education organizations.
+    with optional map type
+		item ACT
+		item DUNS
+		item Federal
+		item IPEDS
+		item LEA
+		item NCES
+		item Other
+		item Other Federal
+		item School
+		item SEA
+		item USDE - OPE

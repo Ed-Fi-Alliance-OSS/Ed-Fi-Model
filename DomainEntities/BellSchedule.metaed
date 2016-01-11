@@ -1,0 +1,19 @@
+Domain Entity BellSchedule
+    documentation 'This entity represents the schedule of class period meeting times.
+    string BellScheduleName
+        documentation 'Name or title of the BellSchedule.
+        is part of identity
+        min length 1
+        max length 60
+    descriptor GradeLevel
+        documentation 'The grade levels the particular BellSchedule applies to.
+        is part of identity
+    reference School
+        documentation 'The school for which the BellSchedule is defined.
+        is part of identity
+    include MeetingTime
+        documentation 'The times at which this BellSchedule is intended to meet.
+        is required collection
+    reference CalendarDate
+        documentation 'The first calendar date of the BellSchedule.
+        is part of identity

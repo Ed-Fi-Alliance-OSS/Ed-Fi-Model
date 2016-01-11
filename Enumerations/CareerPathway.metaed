@@ -1,0 +1,21 @@
+Enumeration CareerPathway
+    documentation 'The career cluster or pathway representing the career path of the 
+    'Vocational/Career Tech concentrator.
+    item Agriculture, Food and Natural Resources
+    item Architecture and Construction
+    item Arts, A/V Technology and Communications
+    item Business, Management and Administration
+    item Education and Training
+    item Finance
+    item Government and Public Administration
+    item Health Science
+    item Hospitality and Tourism
+    item Human Services
+    item Information Technology
+    item Law, Public Safety, Corrections and Security
+    item Manufacturing
+    item Marketing, Sales and Service
+    item Science, Technology, Engineering and Mathematics
+    item Transportation, Distribution and Logistics
+	item Other
+

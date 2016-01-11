@@ -1,0 +1,31 @@
+Domain Entity CourseOffering
+    documentation 'This entity represents an entry in the course catalog of available courses 
+                  'offered by the school during a session.
+    shared string LocalCourseCode named LocalCourseCode
+        documentation 'The local code assigned by the School that identifies the course offering 
+                      'provided for the instruction of students.
+        is part of identity
+    string CourseTitle
+        documentation 'The descriptive name given to a course of study offered in the school, if 
+                      'different from the CourseTitle. 
+        is optional
+        with context Local
+        min length 1
+        max length 60
+    shared integer Duration named InstructionalTimePlanned
+        documentation 'The planned total number of clock minutes of instruction for this course 
+                      'offering. Generally, this should be at least as many minutes as is required for 
+                      'completion by the related state- or district-defined course.
+        is optional
+    enumeration CurriculumUsed
+        documentation 'The type of curriculum used in an early learning classroom or group.
+        is optional collection
+    reference School
+        documentation 'The school that offers the course.
+        is part of identity
+    reference Session
+        documentation 'The session in which the course is offered at the school.
+        is part of identity
+    reference Course
+        documentation 'The course being offered by the school.
+        is required

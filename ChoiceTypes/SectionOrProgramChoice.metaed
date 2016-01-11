@@ -1,0 +1,9 @@
+Choice Common Type SectionOrProgramChoice
+    documentation 'NEEDS DOCUMENTATION
+    reference Section
+        documentation 'The Section(s) to which the Assessment is associated.
+        is required collection
+    reference Program
+        documentation 'The programs associated with the Assessment.
+        is required collection
+

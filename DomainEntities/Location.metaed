@@ -1,0 +1,20 @@
+Domain Entity Location
+    documentation 'This entity represents the physical space where students gather for a particular 
+                  'class/section. The Location may be an indoor or outdoor area designated for the 
+                  'purpose of meeting the educational needs of students.
+    allow primary key updates
+    reference School
+        documentation 'Relates the Location to the school.
+        is part of identity
+    string ClassroomIdentificationCode
+        documentation 'A unique number or alphanumeric code assigned to a room by a school, school 
+                      'system, state, or other agency or entity.
+        is part of identity
+        min length 1
+        max length 20
+    integer MaximumNumberOfSeats
+        documentation 'The most number of seats the class can maintain.
+        is optional
+    integer OptimalNumberOfSeats
+        documentation 'The number of seats that is most favorable to the class.
+        is optional

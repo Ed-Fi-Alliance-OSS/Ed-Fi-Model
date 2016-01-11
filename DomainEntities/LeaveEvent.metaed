@@ -1,0 +1,31 @@
+Domain Entity LeaveEvent
+    documentation 'This event entity represents the recording of the dates of staff leave (e.g., 
+                  'sick leave, personal time, vacation).
+    date EventDate
+        documentation 'Date for this leave event.
+        is part of identity
+    enumeration LeaveEventCategory
+        documentation 'The code describing the type of leave taken, for example:
+                      '
+                      'Sick
+                      '
+                      'Personal
+                      '
+                      'Vacation.
+        is part of identity
+    string LeaveEventReason
+        documentation 'Expanded reason for the staff leave.
+        is optional
+        min length 1
+        max length 40
+    decimal HoursOnLeave
+        documentation 'The hours the staff was absent, if not the entire working day.
+        is optional
+        total digits 18
+        decimal places 2
+    bool SubstituteAssigned
+        documentation 'Indicator of whether a substitute was assigned during the period of staff leave.
+        is optional
+    reference Staff
+        documentation 'The staff associated with this leave event.
+        is part of identity

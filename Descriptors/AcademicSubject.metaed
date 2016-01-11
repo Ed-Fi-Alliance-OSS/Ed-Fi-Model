@@ -1,0 +1,23 @@
+Descriptor AcademicSubject
+    documentation 'This descriptor holds the description of the content or subject area (e.g., 
+    'arts, mathematics, reading, stenography, or a foreign language).
+    with map type
+        item Composite
+        item Critical Reading
+        item English
+        item English Language Arts
+        item Reading
+        item Mathematics
+        item Life and Physical Sciences
+        item Social Sciences and History
+        item Social Studies
+        item Science
+        item Fine and Performing Arts
+        item Foreign Language and Literature
+        item Writing
+        item Physical, Health, and Safety Education
+        item Career and Technical Education
+        item Religious Education and Theology
+        item Military Science
+        item Other
+
