@@ -1,6 +1,6 @@
 Inline Common Type BirthData
     documentation 'The set of elements that capture relevant data regarding a person's birth, 
-    'including birth date and place of birth.
+                  'including birth date and place of birth.
     date BirthDate
         documentation 'The month, day, and year on which an individual was born.
         is required
@@ -9,12 +9,12 @@ Inline Common Type BirthData
         is optional
     enumeration StateAbbreviation
         documentation 'The abbreviation for the name of the state (within the United States) or 
-        'extra-state jurisdiction in which an individual was born.
+                      'extra-state jurisdiction in which an individual was born.
         is optional
         with context Birth
     string BirthInternationalProvince
         documentation 'For students born outside of the U.S., the Province or jurisdiction in which 
-		'an individual is born.
+                      'an individual is born.
         is optional
         min length 1
         max length 150
@@ -27,6 +27,5 @@ Inline Common Type BirthData
         is optional
     bool MultipleBirthStatus
         documentation 'Indicator of whether the student was born with other siblings (i.e., twins, 
-        'triplets, etc.)
+                      'triplets, etc.)
         is optional
-

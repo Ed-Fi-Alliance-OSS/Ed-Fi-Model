@@ -1,10 +1,10 @@
 Enumeration EducationPlan
     documentation 'The type of education plan(s) the student is following, if appropriate.  For 
-    'example:
-    '
-    'Special education
-    '
-    'Vocational
+                  'example:
+                  '
+                  'Special education
+                  '
+                  'Vocational
     item 504 Plan
     item Career Pathways
     item Career Suggestions
@@ -16,4 +16,4 @@ Enumeration EducationPlan
     item Outside Service Access
     item Personal Graduation Plan
     item Student Success Plan
-	item Other
+    item Other

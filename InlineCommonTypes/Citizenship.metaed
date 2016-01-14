@@ -8,7 +8,6 @@ Inline Common Type Citizenship
         is optional
     include IdentificationDocument
         documentation 'Describe the probationary documentation of citizenship of an alien or a foreign 
-		'nationality of a U.S. citizen.
+                      'nationality of a U.S. citizen.
         is optional collection
         with context ForeignCitizenship
-

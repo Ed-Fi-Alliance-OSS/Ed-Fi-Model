@@ -1,13 +1,13 @@
 Common Type StaffIdentificationCode
     documentation 'A coding scheme that is used for identification and record-keeping purposes by 
-    'schools, social services or other agencies to refer to a staff member.
+                  'schools, social services or other agencies to refer to a staff member.
     shared string IdentificationCode named IdentificationCode
         documentation 'A unique number or alphanumeric code assigned to a staff member by a school, 
-        'school system, a state, or other agency or entity.
+                      'school system, a state, or other agency or entity.
         is required
     descriptor StaffIdentificationSystem
         documentation 'A coding scheme that is used for identification and record-keeping purposes by 
-        'schools, social services, or other agencies to refer to a staff member.
+                      'schools, social services, or other agencies to refer to a staff member.
         is part of identity
     shared string IdentificationCode named IdentificationCode
         documentation 'The organization code or name assigning the staff Identification Code.

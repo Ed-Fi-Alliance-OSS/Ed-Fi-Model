@@ -1,11 +1,10 @@
 Interchange StudentIntervention
     documentation 'This interchange describes prescribed interventions available, implementations 
-    'of interventions, studies of intervention effectiveness, and education content 
-    'used in the course of interventions.
+                  'of interventions, studies of intervention effectiveness, and education content 
+                  'used in the course of interventions.
     element EducationContent
     element InterventionPrescription
     element Intervention
     element InterventionStudy
     element StudentInterventionAssociation
     element EducationOrganizationInterventionPrescriptionAssociation
-

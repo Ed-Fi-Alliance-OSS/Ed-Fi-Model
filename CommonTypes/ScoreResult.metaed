@@ -1,20 +1,19 @@
 Common Type ScoreResult
     documentation 'A meaningful raw score or statistical expression of the performance of an 
-    'individual. The results can be expressed as a number, percentile, range, level, 
-    'etc.
+                  'individual. The results can be expressed as a number, percentile, range, level, 
+                  'etc.
     shared string Result named Result
         documentation 'The value of a meaningful raw score or statistical expression of the performance 
-        'of an individual. The results can be expressed as a number, percentile, range, 
-        'level, etc.
+                      'of an individual. The results can be expressed as a number, percentile, range, 
+                      'level, etc.
         is required
     enumeration ResultDatatypeType
         documentation 'The datatype of the result. The results can be expressed as a number, percentile, 
-        'range, level, etc.
+                      'range, level, etc.
         is required
     enumeration AssessmentReportingMethod
-		documentation 'The method that the administrator of the assessment uses to report the 
-		'performance and achievement of all students. It may be a qualitative method such 
-		'as performance level descriptors or a quantitative method such as a numerical 
-		'grade or cut score. More than one type of reporting method may be used.
+        documentation 'The method that the administrator of the assessment uses to report the 
+                      'performance and achievement of all students. It may be a qualitative method such 
+                      'as performance level descriptors or a quantitative method such as a numerical 
+                      'grade or cut score. More than one type of reporting method may be used.
         is part of identity
-

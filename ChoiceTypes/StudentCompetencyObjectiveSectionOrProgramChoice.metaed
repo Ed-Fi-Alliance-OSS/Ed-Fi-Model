@@ -6,4 +6,3 @@ Choice Common Type StudentCompetencyObjectiveSectionOrProgramChoice
     reference StudentProgramAssociation
         documentation 'Relates the Student and Program associated with the CompetencyObjective.
         is required
-

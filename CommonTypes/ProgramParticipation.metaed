@@ -5,7 +5,7 @@ Common Type ProgramParticipation
         is part of identity
     descriptor ProgramCharacteristic
         documentation 'Reflects important characteristics of the Program, such as categories or 
-        'particular indications.
+                      'particular indications.
         is optional collection
     date BeginDate
         documentation 'The date the Student was associated with the Program or service.
@@ -18,4 +18,3 @@ Common Type ProgramParticipation
         is optional
         min length 1
         max length 60
-

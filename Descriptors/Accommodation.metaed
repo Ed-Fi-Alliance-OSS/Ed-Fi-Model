@@ -1,6 +1,6 @@
 Descriptor Accommodation
     documentation 'This descriptor defines variations used in how an assessment is presented or 
-    'taken.
+                  'taken.
     with optional map type
         item Scheduling accommodation
         item Settings accommodation
@@ -11,4 +11,3 @@ Descriptor Accommodation
         item English language learner accommodation
         item 504 accommodation
         item Other
-

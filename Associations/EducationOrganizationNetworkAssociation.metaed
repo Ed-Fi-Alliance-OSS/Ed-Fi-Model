@@ -1,6 +1,6 @@
 Association EducationOrganizationNetworkAssociation
     documentation 'Properties of the association between the EducationOrganization and its 
-    'network(s).
+                  'network(s).
     domain entity EducationOrganizationNetwork
         documentation 'A reference to the EducationOrganizationNetwork to which this education organization is a member.
     domain entity EducationOrganization
@@ -12,4 +12,3 @@ Association EducationOrganizationNetworkAssociation
     date EndDate
         documentation 'The date on which the EducationOrganization left this network.
         is optional
-

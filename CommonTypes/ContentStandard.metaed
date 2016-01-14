@@ -1,14 +1,14 @@
 Common Type ContentStandard
     documentation 'An indication as to whether an assessment conforms to a standard (e.g., local standard,
-	'statewide standard, regional standard, association standard).
-    '
-    '...
+                  'statewide standard, regional standard, association standard).
+                  '
+                  '...
     shared string ContentStandardTitle named Title
         documentation 'The name of the content standard, for example Common Core.
         is required
     string Author
         documentation 'The person or organization chiefly responsible for the intellectual content of 
-        'the standard.
+                      'the standard.
         is optional collection
         min length 1
         max length 255
@@ -23,7 +23,7 @@ Common Type ContentStandard
         is optional
     enumeration PublicationStatus
         documentation 'The publication status of the document (i.e., Adopted, Draft, Published, 
-		'Deprecated, Unknown).
+                      'Deprecated, Unknown).
         is optional
     reference EducationOrganization
         documentation 'Optionally relates the entity mandating the use of the content standard.
@@ -31,10 +31,9 @@ Common Type ContentStandard
         with context Mandating
     date BeginDate
         documentation 'The beginning of the period during which this learning standard document is intended 
-        'for use.
+                      'for use.
         is optional
     date EndDate
         documentation 'The end of the period during which this learning standard document is intended 
-        'for use.
+                      'for use.
         is optional
-

@@ -27,4 +27,3 @@ Common Type IdentificationDocument
     enumeration IdentificationDocumentUse
         documentation 'The primary function of the document used for establishing identity.
         is part of identity
-

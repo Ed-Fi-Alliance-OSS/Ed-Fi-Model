@@ -1,9 +1,8 @@
 Descriptor Behavior
     documentation 'This descriptor holds the categories of behavior describing a discipline 
-    'incident.
+                  'incident.
     with optional map type
         item State Offense
         item School Violation
         item School Code of Conduct
         item Other
-

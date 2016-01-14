@@ -1,6 +1,6 @@
 Enumeration PersonalInformationVerification
     documentation 'The evidence presented to verify one's personal identity; for example: driver's 
-    'license, passport, birth certificate, etc.
+                  'license, passport, birth certificate, etc.
     item Baptismal or church certificate
     item Birth certificate
     item Drivers license
@@ -16,4 +16,3 @@ Enumeration PersonalInformationVerification
     item Physicians certificate
     item Previously verified school records
     item State-issued ID
-

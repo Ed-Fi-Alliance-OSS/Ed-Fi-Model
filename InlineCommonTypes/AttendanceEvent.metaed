@@ -1,19 +1,19 @@
 Inline Common Type AttendanceEvent
     documentation 'This event entity represents the recording of whether a student is in attendance 
-    'for a class or in attendance to receive or participate in program services.
+                  'for a class or in attendance to receive or participate in program services.
     date EventDate
         documentation 'Date for this attendance event.
         is part of identity
     descriptor AttendanceEventCategory
         documentation 'A code describing the attendance event, for example:
-        '
-        'Present
-        '
-        'Unexcused absence
-        '
-        'Excused absence
-        '
-        'Tardy.
+                      '
+                      'Present
+                      '
+                      'Unexcused absence
+                      '
+                      'Excused absence
+                      '
+                      'Tardy.
         is part of identity
     string AttendanceEventReason
         documentation 'The reported reason for a student's absence.
@@ -21,9 +21,8 @@ Inline Common Type AttendanceEvent
         min length 1
         max length 40
     enumeration EducationalEnvironment
-		documentation 'The setting in which a child receives education and related services. This 
-		'attribute is only used if it differs from the EducationalEnvironment of the 
-		'Section. This is only used in the AttendanceEvent if different from the 
-		'associated Section.
+        documentation 'The setting in which a child receives education and related services. This 
+                      'attribute is only used if it differs from the EducationalEnvironment of the 
+                      'Section. This is only used in the AttendanceEvent if different from the 
+                      'associated Section.
         is optional
-

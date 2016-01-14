@@ -2,10 +2,9 @@ Common Type Behavior
     documentation 'Describes behavior by category and provides a detailed description.
     shared string Description named Description
         documentation 'Specifies a more granular level of detail of a behavior involved in the 
-        'incident.
+                      'incident.
         is optional
         with context BehaviorDetailed
     descriptor Behavior
         documentation 'Describes behavior by category and provides a detailed description.
         is part of identity
-

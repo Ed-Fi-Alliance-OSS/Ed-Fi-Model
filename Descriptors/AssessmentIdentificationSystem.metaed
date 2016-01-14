@@ -1,12 +1,11 @@
 Descriptor AssessmentIdentificationSystem
     documentation 'This descriptor holds a coding scheme that is used for identification and record-keeping 
-	'purposes by schools, social services or other agencies to refer to an assessment.
+                  'purposes by schools, social services or other agencies to refer to an assessment.
     with map type
-		item District
-		item Federal
-		item Other
-		item Other Federal
-		item School
-		item State
-		item Test Contractor
-
+        item District
+        item Federal
+        item Other
+        item Other Federal
+        item School
+        item State
+        item Test Contractor

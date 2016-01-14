@@ -1,13 +1,13 @@
 Enumeration AssessmentItemResult
     documentation 'The analyzed result of a student's response to an assessment item.. For example:
-    '
-    'Correct
-    '
-    'Incorrect
-    '
-    'Met standard
-    '
-    '...
+                  '
+                  'Correct
+                  '
+                  'Incorrect
+                  '
+                  'Met standard
+                  '
+                  '...
     item Correct
     item Incorrect
     item Above Standard

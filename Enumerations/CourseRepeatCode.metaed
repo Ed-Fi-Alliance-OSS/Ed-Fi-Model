@@ -1,10 +1,9 @@
 Enumeration CourseRepeatCode
     documentation 'Indicates that an academic course has been repeated by a student and how that 
-    'repeat is to be computed in the student's academic grade average.
+                  'repeat is to be computed in the student's academic grade average.
     item Repeat Counted
     item Repeat NotCounted
     item Replacement Counted
     item Replaced NotCounted
     item Repeat Other Institution
     item Not Counted Other
-

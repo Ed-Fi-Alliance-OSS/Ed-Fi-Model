@@ -1,9 +1,8 @@
 Enumeration IntegratedTechnologyStatus
     documentation 'An indication of the extent to which the district has effectively and fully integrated 
-    'technology, as defined by the state.
+                  'technology, as defined by the state.
     item Developing
     item Approaching
     item Meets
     item Fully integrated
     item Not required to report
-

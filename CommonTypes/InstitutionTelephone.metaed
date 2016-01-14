@@ -8,4 +8,3 @@ Common Type InstitutionTelephone
     enumeration InstitutionTelephoneNumberType
         documentation 'The type of communication number listed for an individual or organization.
         is part of identity
-

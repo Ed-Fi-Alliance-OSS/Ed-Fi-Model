@@ -1,8 +1,7 @@
 Enumeration SchoolChoiceImplementStatus
     documentation 'An indication of whether the LEA was able to implement the provisions for public 
-    'school choice under Title I, Part A, Section 1116 of ESEA, as amended.
+                  'school choice under Title I, Part A, Section 1116 of ESEA, as amended.
     item Implemented at all grade levels
     item Implemented at some but not all grade levels
     item Unable to implement at any grades levels
     item Not required to implement public school choice
-

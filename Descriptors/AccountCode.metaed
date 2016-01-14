@@ -1,6 +1,6 @@
 Descriptor AccountCode
     documentation 'This descriptor holds the set of account codes defined for the education 
-    'accounting system organized by account code type (e.g., fund, function, object).
+                  'accounting system organized by account code type (e.g., fund, function, object).
     string AccountCodeCategory
         documentation 'The type of the account code (e.g., fund, function, object)
         is required

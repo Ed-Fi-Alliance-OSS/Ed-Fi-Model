@@ -3,5 +3,3 @@ Descriptor Level
     descriptor GradeLevel
         documentation 'The mapping to known grade levels for which certification exists.
         is optional collection
-
-

@@ -1,8 +1,7 @@
 Enumeration DeliveryMethod
     documentation 'The way in which an intervention was implemented: individual, small group, whole 
-    'class, or whole school.
+                  'class, or whole school.
     item Individual
     item Small Group
     item Whole Class
     item Whole School
-

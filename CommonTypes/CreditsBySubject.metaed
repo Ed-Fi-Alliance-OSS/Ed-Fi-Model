@@ -1,11 +1,10 @@
 Common Type CreditsBySubject
-	documentation 'The total credits required in subject to graduate. Only those courses 
-	'identified as a high school course requirement are eligible to meet subject 
-	'credit requirements.
+    documentation 'The total credits required in subject to graduate. Only those courses 
+                  'identified as a high school course requirement are eligible to meet subject 
+                  'credit requirements.
     descriptor AcademicSubject
         documentation 'The intended major subject area of the graduation requirement.
         is part of identity
     include Credits
         documentation 'The value of credits or units of value awarded for the completion of a course.
         is required
-

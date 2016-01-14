@@ -5,6 +5,5 @@ Common Type Language
         is part of identity
     enumeration LanguageUse
         documentation 'A description of how the language is used (e.g. Home Language, Native Language, 
-        'Spoken Language).
+                      'Spoken Language).
         is optional collection
-

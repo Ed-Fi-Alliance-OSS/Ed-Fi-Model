@@ -1,6 +1,6 @@
 Association StaffEducationOrganizationAssignmentAssociation
     documentation 'This association indicates the education organization to which a staff member 
-    'provides services; also known as school of service.
+                  'provides services; also known as school of service.
     domain entity Staff
         documentation 'The Staff assigned to the EducationOrganization.
     domain entity EducationOrganization
@@ -14,20 +14,19 @@ Association StaffEducationOrganizationAssignmentAssociation
         min length 1
         max length 100
     date BeginDate
-		documentation 'Month, day, and year of the start or effective date of a staff member's 
-		'employment, contract, or relationship with the LEA.
+        documentation 'Month, day, and year of the start or effective date of a staff member's 
+                      'employment, contract, or relationship with the LEA.
         is part of identity
-	date EndDate
-		documentation 'Month, day, and year of the end or termination date of a staff member's 
-		'employment, contract, or relationship with the LEA.
+    date EndDate
+        documentation 'Month, day, and year of the end or termination date of a staff member's 
+                      'employment, contract, or relationship with the LEA.
         is optional
     integer OrderOfAssignment
-		documentation 'Describes whether the assignment is this the staff member's primary assignment, 
-		'secondary assignment, etc.
+        documentation 'Describes whether the assignment is this the staff member's primary assignment, 
+                      'secondary assignment, etc.
         is optional
     reference StaffEducationOrganizationEmploymentAssociation
         documentation 'A reference to the employment association.
         is optional
         with context StaffEducationOrganizationEmploymentAssociation shorten to Employment
         merge StaffEducationOrganizationEmploymentAssociation.Staff with Staff
-

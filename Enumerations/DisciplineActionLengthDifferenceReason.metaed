@@ -1,6 +1,6 @@
 Enumeration DisciplineActionLengthDifferenceReason
     documentation 'Indicates the reason for the difference, if any, between the official and actual 
-    'lengths of a student's disciplinary assignment.
+                  'lengths of a student's disciplinary assignment.
     item No Difference
     item Term Modified By District
     item Term Modified By Court Order
@@ -13,4 +13,3 @@ Enumeration DisciplineActionLengthDifferenceReason
     item Continuation Of Previous Year's Disciplinary Action Assignment
     item Term Modified By Placement Program Due To Student Behavior While In The Placement
     item Other
-

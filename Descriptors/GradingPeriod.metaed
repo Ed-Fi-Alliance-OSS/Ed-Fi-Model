@@ -1,6 +1,6 @@
 Descriptor GradingPeriod
     documentation 'This descriptor defines the name of the period for which grades are reported. 
-    'The mapping of descriptor values to known Ed-Fi enumeration values is required.
+                  'The mapping of descriptor values to known Ed-Fi enumeration values is required.
     with map type
         item First Six Weeks
         item Second Six Weeks
@@ -22,4 +22,3 @@ Descriptor GradingPeriod
         item Second Trimester
         item Third Trimester
         item End of Year
-

@@ -1,6 +1,6 @@
 Enumeration EventCircumstance
     documentation 'An unusual event occurred during the administration of the assessment. This 
-    'could include fire alarm, student became ill, etc.
+                  'could include fire alarm, student became ill, etc.
     item Long-term suspension - non-special education
     item Short-term suspension - non-special education
     item Suspension - special education
@@ -33,4 +33,3 @@ Enumeration EventCircumstance
     item Teacher cheating or mis-admin
     item Fire alarm
     item Other
-

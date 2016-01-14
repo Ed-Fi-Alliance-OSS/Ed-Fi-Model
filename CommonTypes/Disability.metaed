@@ -1,7 +1,7 @@
 Common Type Disability
-	documentation 'This type represents an impairment of body structure or function, a limitation 
-	'in activities, or a restriction in participation, as ordered by severity of 
-	'impairment.
+    documentation 'This type represents an impairment of body structure or function, a limitation 
+                  'in activities, or a restriction in participation, as ordered by severity of 
+                  'impairment.
     descriptor Disability
         documentation 'A disability category that describes a child's impairment.
         is part of identity
@@ -12,9 +12,8 @@ Common Type Disability
         max length 80
     integer OrderOfDisability
         documentation 'The order by severity of student's disabilities: 1- Primary, 2 -  Secondary, 3 - 
-        'Tertiary, etc.
+                      'Tertiary, etc.
         is optional
-	enumeration DisabilityDeterminationSourceType
-		documentation 'The source that provided the disability determination.
-		is optional
-
+    enumeration DisabilityDeterminationSourceType
+        documentation 'The source that provided the disability determination.
+        is optional

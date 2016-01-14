@@ -1,6 +1,6 @@
 Association StudentProgramAssociation
     documentation 'This association represents the Program(s) that a student participates in or is 
-	'served by.
+                  'served by.
     domain entity Student
         documentation 'The Student associated with the Program.
     domain entity Program
@@ -14,17 +14,16 @@ Association StudentProgramAssociation
         is part of identity
     date EndDate
         documentation 'The month, day, and year on which the Student exited the Program or stopped 
-		'receiving services.
+                      'receiving services.
         is optional
     descriptor ReasonExited
         documentation 'The reason the child left the Program within a school or district.
         is optional
     reference EducationOrganization
         documentation 'The EducationOrganization where the Student is participating in or receiving 
-		'the Program services.
+                      'the Program services.
         is part of identity
     bool ServedOutsideOfRegularSession
         documentation 'Indicates whether the Student received services during the summer session or 
-		'between sessions.
+                      'between sessions.
         is optional
-

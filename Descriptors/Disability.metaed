@@ -2,9 +2,8 @@ Descriptor Disability
     documentation 'This descriptor defines a student's impairment.
     enumeration DisabilityCategory
         documentation 'Whether the disability code is IDEA, Section 504, or other disability 
-        'designation.
+                      'designation.
         is required
-
     with optional map type
         item Autism Spectrum Disorders
             documentation 'This disability falls in the DisabilityCategory of IDEA
@@ -46,4 +45,3 @@ Descriptor Disability
             documentation 'This disability falls in the DisabilityCategory of IDEA
         item Visual Impairment, including Blindness
             documentation 'This disability falls in the DisabilityCategory of IDEA
-			

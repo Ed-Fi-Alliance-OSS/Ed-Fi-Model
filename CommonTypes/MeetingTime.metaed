@@ -1,6 +1,6 @@
 Common Type MeetingTime
     documentation 'This entity represents the set of elements defining the meeting time for a class 
-    'period.
+                  'period.
     reference ClassPeriod
         documentation 'The class period associated with the meeting time for a bell schedule.
         is part of identity

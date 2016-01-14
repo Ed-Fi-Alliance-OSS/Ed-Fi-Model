@@ -1,6 +1,6 @@
 Common Type LocalEducationAgencyFederalFunds
     documentation 'Contains the information about the reception and use of federal funds for 
-    'reporting purposes.
+                  'reporting purposes.
     integer FiscalYear
         documentation 'The school year for which the accountability is reported.
         is part of identity
@@ -9,7 +9,7 @@ Common Type LocalEducationAgencyFederalFunds
         is optional
     currency InnovativeDollarsSpentStrategicPriorities
         documentation 'The total amount of Title V, Part A funds expended by LEAs for the four 
-        'strategic priorities.
+                      'strategic priorities.
         is optional
     currency InnovativeProgramsFundsReceived
         documentation 'The total Title V, Part A funds received by LEAs.
@@ -19,21 +19,21 @@ Common Type LocalEducationAgencyFederalFunds
         is optional
     percent SchoolImprovementReservedFundsPercentage
         documentation 'An indication of the percentage of the Title I, Part A allocation that the SEA 
-        'reserved in accordance with Section 1003(a) of ESEA and §200.100(a) of ED's 
-        'regulations governing the reservation of funds for school improvement under 
-        'Section 1003(a) of ESEA.
+                      'reserved in accordance with Section 1003(a) of ESEA and §200.100(a) of ED's 
+                      'regulations governing the reservation of funds for school improvement under 
+                      'Section 1003(a) of ESEA.
         is optional
     currency SupplementalEducationalServicesFundsSpent
         documentation 'The dollar amount spent on supplemental educational services during the school year 
-        'under Title I, Part A, Section 1116 of ESEA as amended.
+                      'under Title I, Part A, Section 1116 of ESEA as amended.
         is optional
     currency SupplementalEducationalServicesPerPupilExpenditure
         documentation 'The maximum dollar amount that may be spent per child for expenditures related 
-        'to supplemental educational services under Title I of the ESEA.
+                      'to supplemental educational services under Title I of the ESEA.
         is optional
     percent StateAssessmentAdministrationFunding
-		documentation 'The percentage of funds used to administer assessments required by Section 
-		'1111(b) or to carry out other activities described in Section 6111 and other 
-		'activities related to ensuring that the state's schools and LEAs are held 
-		'accountable for results.
+        documentation 'The percentage of funds used to administer assessments required by Section 
+                      '1111(b) or to carry out other activities described in Section 6111 and other 
+                      'activities related to ensuring that the state's schools and LEAs are held 
+                      'accountable for results.
         is optional

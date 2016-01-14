@@ -1,7 +1,6 @@
 Descriptor SectionCharacteristic
     documentation 'This descriptor defines characteristics of a Section, such as whether attendance 
-	'is taken and the Section is graded.
+                  'is taken and the Section is graded.
     with optional map type
         item Attendance Tracked
         item Graded Credit Available
-

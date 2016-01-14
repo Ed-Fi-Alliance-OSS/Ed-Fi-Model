@@ -7,4 +7,3 @@ Choice Common Type CitizenshipDocumentationChoice
         documentation 'Describe the probationary documentation of US citizenship.
         is required collection
         with context USCitizenship
-

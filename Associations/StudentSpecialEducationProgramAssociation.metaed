@@ -1,14 +1,14 @@
 Association StudentSpecialEducationProgramAssociation based on StudentProgramAssociation
-	documentation 'This association represents the special education program(s) that a student 
-	'participates in or receives services from. The association is an extension of 
-	'the StudentProgramAssociation particular for special education programs.
-	bool IdeaEligibility
+    documentation 'This association represents the special education program(s) that a student 
+                  'participates in or receives services from. The association is an extension of 
+                  'the StudentProgramAssociation particular for special education programs.
+    bool IdeaEligibility
         documentation 'Indicator of the eligibility of the student to receive special education 
-        'services according to the Individuals with Disabilities Education Act (IDEA).
+                      'services according to the Individuals with Disabilities Education Act (IDEA).
         is optional
     descriptor SpecialEducationSetting
         documentation 'The major instructional setting (more than 50 percent of a student's special 
-        'education program).
+                      'education program).
         is optional
     include ServiceProvider
         documentation 'The Staff providing special education services to the Student.
@@ -18,31 +18,31 @@ Association StudentSpecialEducationProgramAssociation based on StudentProgramAss
         is optional
     shared decimal HoursPerWeek named SchoolHoursPerWeek
         documentation 'Indicate the total number of hours of instructional time per week for the school 
-        'that the student attends.
+                      'that the student attends.
         is optional
     bool MultiplyDisabled
-		documentation 'Indicates whether the Student receiving special education and related services 
-		'has been designated as multiply disabled by the admission, review, and dismissal 
-		'committee as aligned with federal requirements.
+        documentation 'Indicates whether the Student receiving special education and related services 
+                      'has been designated as multiply disabled by the admission, review, and dismissal 
+                      'committee as aligned with federal requirements.
         is optional
     bool MedicallyFragile
         documentation 'Indicates whether the Student receiving special education and related services is:
-        '
-        '1) in the age range of birth to 22 years, and
-        '
-		'2) has a serious, ongoing illness or a chronic condition that has lasted or is 
-		'anticipated to last at least 12 or more months or has required at least one 
-		'month of hospitalization, and that requires daily, ongoing medical treatments 
-		'and monitoring by appropriately trained personnel which may include parents or 
-		'other family members, and
-        '
-		'3) requires the routine use of medical device or of assistive technology to 
-		'compensate for the loss of usefulness of a body function needed to participate 
-		'in activities of daily living, and
-        '
-        '4) lives with ongoing threat to his or her continued well-being.
-        '
-        'Aligns with federal requirements.
+                      '
+                      '1) in the age range of birth to 22 years, and
+                      '
+                      '2) has a serious, ongoing illness or a chronic condition that has lasted or is 
+                      'anticipated to last at least 12 or more months or has required at least one 
+                      'month of hospitalization, and that requires daily, ongoing medical treatments 
+                      'and monitoring by appropriately trained personnel which may include parents or 
+                      'other family members, and
+                      '
+                      '3) requires the routine use of medical device or of assistive technology to 
+                      'compensate for the loss of usefulness of a body function needed to participate 
+                      'in activities of daily living, and
+                      '
+                      '4) lives with ongoing threat to his or her continued well-being.
+                      '
+                      'Aligns with federal requirements.
         is optional
     date LastEvaluationDate
         documentation 'The date of the last special education evaluation.
@@ -56,4 +56,3 @@ Association StudentSpecialEducationProgramAssociation based on StudentProgramAss
     date IEPEndDate
         documentation 'The end date of the most recent IEP.
         is optional
-

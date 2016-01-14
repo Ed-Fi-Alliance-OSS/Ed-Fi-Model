@@ -1,10 +1,9 @@
 Common Type AdditionalCredits
     documentation 'Additional credits or units of value awarded for the completion of a course 
-    '(e.g., AP, IB, Dual Credits).
+                  '(e.g., AP, IB, Dual Credits).
     shared decimal CreditsValue named Credits
         documentation 'The value of credits or units of value awarded for the completion of a course
         is required
     enumeration AdditionalCreditType
         documentation 'The type of credits or units of value awarded for the completion of a course.
         is part of identity
-

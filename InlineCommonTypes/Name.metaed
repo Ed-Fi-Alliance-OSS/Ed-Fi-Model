@@ -7,13 +7,13 @@ Inline Common Type Name
         max length 30
     string FirstName
         documentation 'A name given to an individual at birth, baptism, or during another naming 
-        'ceremony, or through legal change.
+                      'ceremony, or through legal change.
         is required
         min length 1
         max length 75
     string MiddleName
         documentation 'A secondary name given to an individual at birth, baptism, or during another 
-        'naming ceremony.
+                      'naming ceremony.
         is optional
         min length 1
         max length 75
@@ -22,7 +22,7 @@ Inline Common Type Name
         is required
     string GenerationCodeSuffix
         documentation 'An appendage, if any, used to denote an individual's generation in his family 
-        '(e.g., Jr., Sr., III).
+                      '(e.g., Jr., Sr., III).
         is optional
         min length 1
         max length 10
@@ -31,7 +31,6 @@ Inline Common Type Name
         is optional
     include IdentificationDocument
         documentation 'The documents presented as evident to verify one's personal identity; for 
-        'example: drivers license, passport, birth certificate, etc.
+                      'example: drivers license, passport, birth certificate, etc.
         is optional collection
         with context Personal
-

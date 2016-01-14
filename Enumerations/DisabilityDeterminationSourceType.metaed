@@ -1,11 +1,11 @@
 Enumeration DisabilityDeterminationSourceType
     documentation 'The source that provided the disability determination.
-	item By physician
-	item By health care provider
-	item By school psychologist or other psychologist
-	item By licensed physical therapist
-	item Self-reported
-	item By social service or other type of agency
-	item Not applicable to the student
-	item Unknown or Unreported
-	item Other
+    item By physician
+    item By health care provider
+    item By school psychologist or other psychologist
+    item By licensed physical therapist
+    item Self-reported
+    item By social service or other type of agency
+    item Not applicable to the student
+    item Unknown or Unreported
+    item Other

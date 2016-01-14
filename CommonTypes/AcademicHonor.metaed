@@ -5,11 +5,11 @@ Common Type AcademicHonor
         is required
     enumeration AcademicHonorCategory
         documentation 'A designation of the type of academic distinctions earned by or awarded to the 
-        'student.
+                      'student.
         is part of identity
     string HonorDescription
         documentation 'A description of the type of academic distinctions earned by or awarded to the 
-        'individual.
+                      'individual.
         is optional
         min length 1
         max length 80

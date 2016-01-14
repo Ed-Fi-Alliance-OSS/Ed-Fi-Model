@@ -1,6 +1,6 @@
 Common Type StudentIndicator
     documentation 'An indicator or metric computed for the student (e.g., at risk) to influence 
-    'more effective education or direct specific interventions.
+                  'more effective education or direct specific interventions.
     shared string IndicatorName named IndicatorGroup
         documentation 'The name for a group of indicators.
         is optional
@@ -23,4 +23,3 @@ Common Type StudentIndicator
         is optional
         min length 1
         max length 60
-

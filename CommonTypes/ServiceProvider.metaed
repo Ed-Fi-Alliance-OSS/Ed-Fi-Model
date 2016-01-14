@@ -6,4 +6,3 @@ Common Type ServiceProvider
     bool PrimaryProvider
         documentation 'Primary ServiceProvider.
         is optional
-

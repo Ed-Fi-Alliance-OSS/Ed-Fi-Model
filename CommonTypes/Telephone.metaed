@@ -10,11 +10,10 @@ Common Type Telephone
         is part of identity
     integer OrderOfPriority
         documentation 'The order of priority assigned to telephone numbers to define which number to 
-        'attempt first, second, etc.
+                      'attempt first, second, etc.
         is optional
         min value 1
     bool TextMessageCapabilityIndicator
         documentation 'An indication that the telephone number is technically capable of sending and 
-        'receiving Short Message Service (SMS) text messages.
+                      'receiving Short Message Service (SMS) text messages.
         is optional
-

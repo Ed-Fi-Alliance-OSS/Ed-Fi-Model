@@ -11,8 +11,8 @@ Association StaffCohortAssociation
         documentation 'End date for the association of staff to this cohort.
         is optional
     bool StudentRecordAccess
-		documentation 'Indicator of whether the staff has access to the student records of the cohort 
-		'per district interpretation of FERPA and other privacy laws, regulations, and 
-		'policies.
+        documentation 'Indicator of whether the staff has access to the student records of the cohort 
+        'per district interpretation of FERPA and other privacy laws, regulations, and 
+        'policies.
         is optional
 

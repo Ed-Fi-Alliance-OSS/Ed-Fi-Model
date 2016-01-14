@@ -1,18 +1,18 @@
 Abstract Entity EducationOrganization
-	documentation 'This entity represents any public or private institution, organization, or agency 
-	'that provides instructional or support services to students or staff at any level.
+    documentation 'This entity represents any public or private institution, organization, or agency 
+                  'that provides instructional or support services to students or staff at any level.
     integer EducationOrganizationId
         documentation 'The identifier assigned to an education agency by the State Education Agency 
-        '(SEA).  Also known as the State LEA ID.
+                      '(SEA).  Also known as the State LEA ID.
         is part of identity
         is queryable field
     shared string IdentificationCode named StateOrganizationId
         documentation 'The identifier assigned to an education organization by the StateEducationAgency 
-		'(SEA).
+                      '(SEA).
         is required
     include EducationOrganizationIdentificationCode
         documentation 'A unique number or alphanumeric code assigned to an education organization by a 
-        'school, school system, a state, or other agency or entity.
+                      'school, school system, a state, or other agency or entity.
         is optional collection
         is queryable field
     string NameOfInstitution
@@ -29,27 +29,26 @@ Abstract Entity EducationOrganization
         max length 75
     enumeration EducationOrganizationCategory
         documentation 'The classification of the education agency within the geographic boundaries of a 
-        'state according to the level of administrative and operational control granted 
-        'by the state.
+                      'state according to the level of administrative and operational control granted 
+                      'by the state.
         is required collection
         is queryable field
     include Address
         documentation 'The set of elements that describes the physical location of the education 
-        'entity, including the street address, city, state, ZIP code, and ZIP code + 4.
+                      'entity, including the street address, city, state, ZIP code, and ZIP code + 4.
         is required collection
     include InternationalAddress
         documentation 'The set of elements that describes the international physical location of the 
-        'education entity.
+                      'education entity.
         is optional collection
     include InstitutionTelephone
         documentation 'The 10-digit telephone number, including the area code, for the education 
-        'entity.
+                      'entity.
         is optional collection
     shared string URI named WebSite
         documentation 'The public web site address (URL) for the EducationOrganization.
         is optional
     enumeration OperationalStatus
         documentation 'The current operational status of the EducationOrganization (e.g., 
-		'active, inactive). 
+                      'active, inactive). 
         is optional
-

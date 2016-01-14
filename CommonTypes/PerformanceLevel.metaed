@@ -6,4 +6,3 @@ Common Type PerformanceLevel
     descriptor PerformanceLevel
         documentation 'A specification of which performance level value describes the student proficiency.
         is part of identity
-

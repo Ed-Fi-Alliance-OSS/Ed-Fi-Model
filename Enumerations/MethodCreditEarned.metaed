@@ -1,6 +1,6 @@
 Enumeration MethodCreditEarned
     documentation 'The method the credits were earned, for example:  Classroom, Examination, 
-    'Transfer
+                  'Transfer
     item Classroom credit
     item Converted occupational experience credit
     item Correspondence credit
@@ -8,4 +8,4 @@ Enumeration MethodCreditEarned
     item Credit recovery
     item Online credit
     item Transfer credit
-	item Other
+    item Other

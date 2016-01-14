@@ -1,6 +1,6 @@
 Descriptor GradeLevel
     documentation 'This descriptor defines the set of grade levels. The map to known Ed-Fi enumeration 
-    'values is required.
+                  'values is required.
     with map type
         item Adult Education
         item Early Education
@@ -23,4 +23,3 @@ Descriptor GradeLevel
         item Third grade
         item Twelfth grade
         item Ungraded
-

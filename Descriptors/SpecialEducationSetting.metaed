@@ -1,6 +1,6 @@
 Descriptor SpecialEducationSetting
     documentation 'This descriptor defines the major instructional setting (more than 50 percent of 
-    'a student's special education program).
+                  'a student's special education program).
     with optional map type
         item Inside regular class 80% or more of the day
         item Inside regular class no more than 79% of day and no less than 40% of the day
@@ -10,4 +10,3 @@ Descriptor SpecialEducationSetting
         item Homebound/Hospital
         item Correctional Facilities
         item Parentally-placed in Private Schools
-

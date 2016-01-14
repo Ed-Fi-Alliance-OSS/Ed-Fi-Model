@@ -1,11 +1,10 @@
 Common Type EducationOrganizationIdentificationCode
-	documentation 'A unique number or alphanumeric code that is assigned to an education 
-	'organization by a school, school system, state, or other agency or entity.
+    documentation 'A unique number or alphanumeric code that is assigned to an education 
+                  'organization by a school, school system, state, or other agency or entity.
     shared string IdentificationCode named IdentificationCode
-		documentation 'A unique number or alphanumeric code that is assigned to an education 
-		'organization by a school, school system, state, or other agency or entity.
+        documentation 'A unique number or alphanumeric code that is assigned to an education 
+                      'organization by a school, school system, state, or other agency or entity.
         is required
     descriptor EducationOrganizationIdentificationSystem
         documentation 'The school system, state, or agency assigning the identification code.
         is part of identity
-

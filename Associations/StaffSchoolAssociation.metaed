@@ -1,6 +1,6 @@
 Association StaffSchoolAssociation
     documentation 'This association indicates the School(s) to which a staff member provides 
-	'instructional services.
+                  'instructional services.
     domain entity Staff
         documentation 'The Staff member providing services to the School.
     domain entity School
@@ -10,22 +10,21 @@ Association StaffSchoolAssociation
         is optional
     descriptor ProgramAssignment
         documentation 'The name of the program for which the individual is assigned; for example:
-        '
-        'Regular education
-        '
-        'Title I-Academic
-        '
-        'Title I-Non-Academic
-        '
-        'Special Education
-        '
-        'Bilingual/English as a Second Language.
+                      '
+                      'Regular education
+                      '
+                      'Title I-Academic
+                      '
+                      'Title I-Non-Academic
+                      '
+                      'Special Education
+                      '
+                      'Bilingual/English as a Second Language.
         is part of identity
     descriptor GradeLevel
         documentation 'The set of grade levels for which the individual's assignment is responsible.
         is optional collection
     descriptor AcademicSubject
         documentation 'The teaching field taught by an individual, for example English/Language Arts, 
-        'Reading, Mathematics, Science, Social Sciences, etc.
+                      'Reading, Mathematics, Science, Social Sciences, etc.
         is optional collection
-

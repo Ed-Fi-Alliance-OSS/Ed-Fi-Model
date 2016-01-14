@@ -6,4 +6,3 @@ Choice Common Type SectionOrProgramChoice
     reference Program
         documentation 'The programs associated with the Assessment.
         is required collection
-

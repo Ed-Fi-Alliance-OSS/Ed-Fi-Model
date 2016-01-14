@@ -1,6 +1,6 @@
 Enumeration DiplomaType
     documentation 'The type of diploma/credential that is awarded to a student in recognition of 
-    'his/her completion of the curricular requirements.
+                  'his/her completion of the curricular requirements.
     item Regular diploma
     item Endorsed/advanced diploma
     item Regents diploma
@@ -18,4 +18,3 @@ Enumeration DiplomaType
     item Occupational License
     item Industry-recognized Certification
     item Apprenticeship Certificate
-

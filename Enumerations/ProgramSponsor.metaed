@@ -1,7 +1,7 @@
 Enumeration ProgramSponsor
     documentation 'Ultimate and intermediate providers of funds for a particular educational or 
-    'service program or activity or for an individual's participation in the program 
-    'or activity (e.g., Federal, State, ESC, District, School, Private Org).
+                  'service program or activity or for an individual's participation in the program 
+                  'or activity (e.g., Federal, State, ESC, District, School, Private Org).
     item Business
     item Federal government
     item State Education Agency
@@ -14,4 +14,3 @@ Enumeration ProgramSponsor
     item Religious organization
     item Education organization network
     item Other
-

@@ -1,6 +1,6 @@
 Enumeration CareerPathway
     documentation 'The career cluster or pathway representing the career path of the 
-    'Vocational/Career Tech concentrator.
+                  'Vocational/Career Tech concentrator.
     item Agriculture, Food and Natural Resources
     item Architecture and Construction
     item Arts, A/V Technology and Communications
@@ -17,5 +17,4 @@ Enumeration CareerPathway
     item Marketing, Sales and Service
     item Science, Technology, Engineering and Mathematics
     item Transportation, Distribution and Logistics
-	item Other
-
+    item Other

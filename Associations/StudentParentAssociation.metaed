@@ -6,9 +6,9 @@ Association StudentParentAssociation
         documentation 'The Parent associated with the Student.
     enumeration Relation
         documentation 'The nature of an individual's relationship to a student; for example:
-        '
-        'Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian, 
-		'etc.
+                      '
+                      'Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian, 
+                      'etc.
         is optional
     bool PrimaryContactStatus
         documentation 'Indicator of whether the person is a primary parental contact for the Student.
@@ -18,15 +18,14 @@ Association StudentParentAssociation
         is optional
     bool EmergencyContactStatus
         documentation 'Indicator of whether the person is a designated emergency contact for the 
-		'Student.
+                      'Student.
         is optional
     integer ContactPriority
         documentation 'The numeric order of the preferred sequence or priority of contact.
         is optional
     string ContactRestrictions
-		documentation 'Restrictions for student and/or teacher contact with the individual (e.g., the 
-		'student may not be picked up by the individual).
+        documentation 'Restrictions for student and/or teacher contact with the individual (e.g., the 
+                      'student may not be picked up by the individual).
         is optional
         min length 1
         max length 250
-

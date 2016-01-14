@@ -2,7 +2,7 @@ Common Type InternationalAddress
     documentation 'Addresses located outside of the United States.
     enumeration AddressType
         documentation 'The type of address listed for an individual or organization. For example:  Physical 
-        'Address, Mailing Address, Home Address, etc.)
+                      'Address, Mailing Address, Home Address, etc.)
         is part of identity
     shared string AddressLine named AddressLine1
         documentation 'The first line of the address.
@@ -26,11 +26,10 @@ Common Type InternationalAddress
         documentation 'The geographic longitude of the physical address.
         is optional
     date BeginDate
-		documentation 'The first date the address is valid. For physical addresses, the date the 
-		'person moved to that address.
+        documentation 'The first date the address is valid. For physical addresses, the date the 
+                      'person moved to that address.
         is optional
     date EndDate
-		documentation 'The last date the address is valid. For physical addresses, this would be the date 
-		'the person moved from that address.
+        documentation 'The last date the address is valid. For physical addresses, this would be the date 
+                      'the person moved from that address.
         is optional
-

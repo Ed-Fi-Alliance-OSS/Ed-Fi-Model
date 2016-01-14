@@ -1,6 +1,6 @@
 Enumeration PerformanceBaseConversion
     documentation 'Defines standard levels of competency or performance that can be used for 
-    'dashboard visualizations: advanced, proficient, basic and below basic.
+                  'dashboard visualizations: advanced, proficient, basic and below basic.
     item Advanced
     item Proficient
     item Basic
@@ -8,4 +8,3 @@ Enumeration PerformanceBaseConversion
     item Well Below Basic
     item Pass
     item Fail
-

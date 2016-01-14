@@ -1,9 +1,9 @@
 Enumeration AssessmentReportingMethod
     documentation 'The method that the instructor of the class uses to report the performance and 
-    'achievement of all students. It may be a qualitative method such as 
-    'individualized teacher comments or a quantitative method such as a letter or a 
-    'numerical grade. In some cases, more than one type of reporting method may be 
-    'used.
+                  'achievement of all students. It may be a qualitative method such as 
+                  'individualized teacher comments or a quantitative method such as a letter or a 
+                  'numerical grade. In some cases, more than one type of reporting method may be 
+                  'used.
     item Achievement/proficiency level
     item ACT score
     item Adaptive scale score
@@ -48,4 +48,3 @@ Enumeration AssessmentReportingMethod
     item Vertical Scale Score
     item National College-Bound Percentile
     item State College-Bound Percentile
-

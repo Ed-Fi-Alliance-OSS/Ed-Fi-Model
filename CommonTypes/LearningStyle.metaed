@@ -1,6 +1,6 @@
 Common Type LearningStyle
-	documentation 'The student's relative preference to visual, auditory, and tactile learning 
-	'expressed as percentages.
+    documentation 'The student's relative preference to visual, auditory, and tactile learning 
+                  'expressed as percentages.
     decimal Learning
         documentation 'The student's relative preference expressed as a percent to visual learning.
         is required
@@ -15,9 +15,8 @@ Common Type LearningStyle
         decimal places 4
     decimal Learning
         documentation 'The student's relative preference expressed as a percent to kinesthetic or 
-        'tactile learning.
+                      'tactile learning.
         is required
         with context Tactile
         total digits 5
         decimal places 4
-

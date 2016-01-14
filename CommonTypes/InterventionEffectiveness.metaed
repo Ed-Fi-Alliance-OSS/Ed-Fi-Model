@@ -2,7 +2,7 @@ Common Type InterventionEffectiveness
     documentation 'Measurement of the effectiveness of the intervention per diagnosis.
     descriptor Diagnosis
         documentation 'Targeted purpose of the intervention (e.g., attendance issue, dropout risk) for 
-        'which the effectiveness is measured.
+                      'which the effectiveness is measured.
         is part of identity
     enumeration PopulationServed
         documentation 'Population for which effectiveness is measured.
@@ -12,13 +12,12 @@ Common Type InterventionEffectiveness
         is part of identity
     integer ImprovementIndex
         documentation 'Along a percentile distribution of students, the improvement index represents 
-        'the change in an average student's percentile rank that is considered to be due 
-        'to the intervention.
+                      'the change in an average student's percentile rank that is considered to be due 
+                      'to the intervention.
         is optional
     enumeration InterventionEffectivenessRating
         documentation 'An intervention demonstrates effectiveness if the research has shown that the 
-        'program caused an improvement in outcomes. Values: positive effects, potentially 
-        'positive effects, mixed effects, potentially negative effects, negative effects, 
-        'and no discernible effects.
+                      'program caused an improvement in outcomes. Values: positive effects, potentially 
+                      'positive effects, mixed effects, potentially negative effects, negative effects, 
+                      'and no discernible effects.
         is required
-

@@ -2,22 +2,22 @@ Common Type CalendarEvent
     documentation 'the calendar event associated with a calendar date.
     decimal EventDuration
         documentation 'The amount of time for the event as recognized by the school: 1 day = 1, 
-		'1/2 day = 0.5, 1/3 day = 0.33.
+                      '1/2 day = 0.5, 1/3 day = 0.33.
         is required
         total digits 3
         decimal places 2
     descriptor CalendarEvent
         documentation 'The type of scheduled or unscheduled event for the day. For example:
-        '
-        'Instructional day
-        '
-        'Teacher only day
-        '
-        'Holiday
-        '
-        'Make-up day
-        '
-        'Weather day
-        '
-        'Student late arrival/early dismissal.
+                      '
+                      'Instructional day
+                      '
+                      'Teacher only day
+                      '
+                      'Holiday
+                      '
+                      'Make-up day
+                      '
+                      'Weather day
+                      '
+                      'Student late arrival/early dismissal.
         is part of identity

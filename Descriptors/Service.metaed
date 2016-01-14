@@ -1,10 +1,8 @@
 Descriptor Service
     documentation 'This descriptor defines the services provided by an education organization to 
-    'populations of students associated with a program.
+                  'populations of students associated with a program.
     string ServiceCategory
         documentation 'A classification of the behavior for reporting types.
         is optional
         min length 1
         max length 50
-
-

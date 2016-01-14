@@ -1,10 +1,9 @@
 Descriptor AttendanceEventCategory
     documentation 'This descriptor holds the category of the attendance event (e.g., tardy). The 
-    'map to known enumeration values is required.
+                  'map to known enumeration values is required.
     with map type
         item In Attendance
         item Excused Absence
         item Unexcused Absence
         item Tardy
         item Early departure
-

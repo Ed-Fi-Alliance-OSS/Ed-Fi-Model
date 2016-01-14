@@ -1,16 +1,16 @@
 Common Type ClassRanking
     documentation 'The academic rank information of a student in relation to his or her graduating 
-	'class. 
+                  'class. 
     integer ClassRank
         documentation 'The academic rank of a student in relation to his or her graduating class (e.g., 
-        '1st, 2nd, 3rd).
+                      '1st, 2nd, 3rd).
         is required
     integer TotalNumberInClass
         documentation 'The total number of students in the student's graduating class.
         is required
     integer PercentageRanking
         documentation 'The academic percentage rank of a student in relation to his or her graduating 
-        'class (e.g., 95%, 80%, 50%).
+                      'class (e.g., 95%, 80%, 50%).
         is optional
     date ClassRankingDate
         documentation 'Date class ranking was determined.

@@ -5,4 +5,3 @@ Association EducationOrganizationPeerAssociation
     domain entity EducationOrganization
         documentation 'The associated peer organization(s) for the EducationOrganization.
         with context Peer
-

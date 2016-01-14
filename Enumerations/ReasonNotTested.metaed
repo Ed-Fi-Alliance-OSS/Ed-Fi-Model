@@ -1,21 +1,21 @@
 Enumeration ReasonNotTested
     documentation 'The primary reason student is not tested. For example:
-    '
-    'Absent
-    '
-    'Refusal by parent
-    '
-    'Refusal by student
-    '
-    'Medical waiver
-    '
-    'Illness
-    '
-    'Disruptive behavior
-    '
-    'LEP Exempt
-    '
-    '...
+                  '
+                  'Absent
+                  '
+                  'Refusal by parent
+                  '
+                  'Refusal by student
+                  '
+                  'Medical waiver
+                  '
+                  'Illness
+                  '
+                  'Disruptive behavior
+                  '
+                  'LEP Exempt
+                  '
+                  '...
     item Absent
     item LEP exempt
     item LEP postponement
@@ -30,4 +30,3 @@ Enumeration ReasonNotTested
     item Disruptive behavior
     item Previously passed the examination
     item Other
-

@@ -1,8 +1,7 @@
 Enumeration StudentParticipationCode
     documentation 'The role or type of participation of a student in a discipline incident; for 
-    'example: Victim, Perpetrator, Witness, Reporter
+                  'example: Victim, Perpetrator, Witness, Reporter
     item Victim
     item Perpetrator
     item Witness
     item Reporter
-

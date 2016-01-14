@@ -1,10 +1,10 @@
 Enumeration EducationOrganizationCategory
     documentation 'The classification of the education agency within the geographic boundaries of a 
-    'state according to the level of administrative and operational control granted 
-    'by the state.
+                  'state according to the level of administrative and operational control granted 
+                  'by the state.
     item State Education Agency
     item Education Service Center
     item Local Education Agency
     item School
     item Education Organization Network
-	item Other
+    item Other

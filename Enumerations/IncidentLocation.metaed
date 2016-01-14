@@ -1,6 +1,6 @@
 Enumeration IncidentLocation
     documentation 'Identifies where the incident occurred and whether or not it occurred on school 
-    'property.
+                  'property.
     item On campus
     item Administrative offices area
     item Cafeteria area
@@ -26,4 +26,3 @@ Enumeration IncidentLocation
     item Off-campus at another location unrelated to school
     item Online
     item Unknown
-

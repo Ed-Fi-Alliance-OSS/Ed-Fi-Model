@@ -1,6 +1,6 @@
 Common Type StudentAssessmentItem
-	documentation 'This entity represents the student's response to an assessment item and the item-level 
-	'scores such as correct, incorrect, or met standard.
+    documentation 'This entity represents the student's response to an assessment item and the item-level 
+                  'scores such as correct, incorrect, or met standard.
     string AssessmentResponse
         documentation 'A student's response to a stimulus on a test.
         is optional
@@ -8,31 +8,31 @@ Common Type StudentAssessmentItem
         max length 60
     shared string Description named DescriptiveFeedback
         documentation 'The formative descriptive feedback that was given to a learner in response to 
-        'the results from a scored/evaluated assessment item.
+                      'the results from a scored/evaluated assessment item.
         is optional
     enumeration ResponseIndicator
         documentation 'Indicator of the response. For example:
-        '
-        'Nonscorable response
-        '
-        'Ineffective response
-        '
-        'Effective response
-        '
-        'Partial response
-        '
-        '...
+                      '
+                      'Nonscorable response
+                      '
+                      'Ineffective response
+                      '
+                      'Effective response
+                      '
+                      'Partial response
+                      '
+                      '...
         is optional
     enumeration AssessmentItemResult
         documentation 'The analyzed result of a student's response to an assessment item. For example:
-        '
-        'Correct
-        '
-        'Incorrect
-        '
-        'Met standard
-        '
-        '...
+                      '
+                      'Correct
+                      '
+                      'Incorrect
+                      '
+                      'Met standard
+                      '
+                      '...
         is required
     integer RawScoreResult
         documentation 'A meaningful raw score of the performance of an individual on an assessment item.
@@ -43,4 +43,3 @@ Common Type StudentAssessmentItem
     reference AssessmentItem
         documentation 'The AssessmentItem responded to by the Student.
         is part of identity
-

@@ -2,4 +2,4 @@ Enumeration InternetAccess
     documentation 'The type of Internet access available.
     item High Speed
     item Less Than High Speed
-	item None
+    item None

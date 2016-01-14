@@ -1,12 +1,11 @@
 Enumeration Race
     documentation 'The enumeration items defining the racial categories which most clearly reflects 
-    'the individual's recognition of his or her community or with which the 
-    'individual most identifies.
+                  'the individual's recognition of his or her community or with which the 
+                  'individual most identifies.
     item American Indian - Alaskan Native
     item Asian
     item Black - African American
-	item Choose Not to Respond
+    item Choose Not to Respond
     item Native Hawaiian - Pacific Islander
-	item Other
+    item Other
     item White
-

@@ -5,7 +5,7 @@ Inline Common Type EducationContentSource
         is optional collection
     string LearningResourceMetadataURI
         documentation 'The URI (typical a URL) pointing to the metadata entry in a LRMI metadata 
-        'repository, which describes this content item.
+                      'repository, which describes this content item.
         is optional collection
         min length 5
         max length 255

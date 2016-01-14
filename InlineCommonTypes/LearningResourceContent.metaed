@@ -15,7 +15,7 @@ Inline Common Type LearningResourceContent
         max length 255
     bool AdditionalAuthorsIndicator
         documentation 'Indicates whether there are additional un-named authors. In a research report, 
-        'this is often marked by the abbreviation "et al".
+                      'this is often marked by the abbreviation "et al".
         is optional
     string Publisher
         documentation 'The organization credited with publishing the resource.
@@ -24,11 +24,11 @@ Inline Common Type LearningResourceContent
         max length 50
     duration TimeRequired
         documentation 'Approximate or typical time it takes to work with or through this learning 
-        'resource for the typical intended target audience.
+                      'resource for the typical intended target audience.
         is optional
     enumeration InteractivityStyle
         documentation 'The predominate mode of learning supported by the learning resource. Acceptable 
-        'values are active, expositive, or mixed.
+                      'values are active, expositive, or mixed.
         is optional
     enumeration ContentClass
         documentation 'The predominate type or kind characterizing the learning resource.
@@ -40,7 +40,7 @@ Inline Common Type LearningResourceContent
         max length 255
     include EducationContentSource
         documentation 'A reference or URL pointing to education content from which this education 
-        'content was derived.
+                      'content was derived.
         is optional
         with context DerivativeSource
     include PublicationDateChoice
@@ -48,12 +48,12 @@ Inline Common Type LearningResourceContent
         is optional
     enumeration Sex
         documentation 'Sexes for which this education content is applicable. If omitted, considered 
-        'generally applicable.
+                      'generally applicable.
         is optional collection
         with context Appropriate
     descriptor GradeLevel
         documentation 'Grade levels for which this education content is applicable-if omitted, 
-        'considered generally applicable.
+                      'considered generally applicable.
         is optional collection
         with context Appropriate
     descriptor Language
@@ -64,5 +64,5 @@ Inline Common Type LearningResourceContent
         is optional
     reference LearningStandard
         documentation 'Relates the competency, learning standard, skill and/or text complexity to which 
-        'the learning resource is aligned.
+                      'the learning resource is aligned.
         is optional

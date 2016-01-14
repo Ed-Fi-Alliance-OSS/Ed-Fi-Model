@@ -1,11 +1,10 @@
 Common Type StateEducationAgencyAccountability
     documentation 'This entity maintains information about federal reporting and accountability for 
-    'StateEducationAgency(s).
+                  'StateEducationAgency(s).
     enumeration SchoolYear
         documentation 'The school year for which the accountability is reported.
         is part of identity
     bool CTEGraduationRateInclusion
         documentation 'An indication of whether CTE concentrators are included in the state's 
-        'computation of its graduation rate.
+                      'computation of its graduation rate.
         is optional
-

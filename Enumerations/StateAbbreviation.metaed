@@ -1,6 +1,6 @@
 Enumeration StateAbbreviation
     documentation 'The abbreviation for the state (within the United States) or outlying area in 
-    'which an address is located. 
+                  'which an address is located. 
     item AL
     item AK
     item AZ
@@ -63,4 +63,3 @@ Enumeration StateAbbreviation
     item MP
     item PW
     item VI
-

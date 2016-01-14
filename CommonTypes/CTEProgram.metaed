@@ -1,9 +1,9 @@
 Common Type CTEProgram
     documentation 'The career cluster or pathway representing the career path of the 
-    'Vocational/Career Tech concentrator.
+                  'Vocational/Career Tech concentrator.
     enumeration CareerPathway
         documentation 'A sequence of courses within an area of interest that is a student's educational 
-        'road map to a chosen career.
+                      'road map to a chosen career.
         is part of identity
     string CIPCode
         documentation 'Number and description of the CIP Code associated with the student's CTEProgram..
@@ -16,4 +16,3 @@ Common Type CTEProgram
     bool CTEProgramCompletionIndicator
         documentation 'A boolean indicator of whether the Student has completed the CTEProgram.
         is optional
-

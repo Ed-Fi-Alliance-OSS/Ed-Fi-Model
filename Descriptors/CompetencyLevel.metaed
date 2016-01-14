@@ -3,5 +3,3 @@ Descriptor CompetencyLevel
     enumeration PerformanceBaseConversion
         documentation 'A conversion of the level to a standard set of competency levels.
         is optional
-
-

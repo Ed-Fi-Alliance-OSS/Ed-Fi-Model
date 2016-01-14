@@ -1,6 +1,6 @@
 Enumeration MediumOfInstruction
     documentation 'The media through which teachers provide instruction to students and students 
-    'and teachers communicate about instructional matters.  
+                  'and teachers communicate about instructional matters.  
     item Televised
     item Telepresence/video conference
     item Videotaped/prerecorded video
@@ -8,17 +8,16 @@ Enumeration MediumOfInstruction
     item Technology-based instruction in classroom
     item Correspondence instruction
         documentation 'Course is taught via hard or electronic copy or other media (CD, DVD, video 
-        'cassette) and student works at own pace usually without an instructor present, 
-        'but generally under supervision of LEA. Includes "packet" programs.
+                      'cassette) and student works at own pace usually without an instructor present, 
+                      'but generally under supervision of LEA. Includes "packet" programs.
     item Face-to-face instruction
         documentation 'Course is taught primarily in person and usually in a conventional classroom or 
-        'lecture hall.
+                      'lecture hall.
     item Virtual/On-line Distance learning
     item Center-based instruction
     item Independent study
         documentation 'Structured learning experience is recognized for credit but is not under 
-        'supervision of the LEA.
+                      'supervision of the LEA.
     item Internship
     item Other
     item Distance Learning (other than online)
-

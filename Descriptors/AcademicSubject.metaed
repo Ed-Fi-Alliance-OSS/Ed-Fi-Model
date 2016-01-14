@@ -1,6 +1,6 @@
 Descriptor AcademicSubject
     documentation 'This descriptor holds the description of the content or subject area (e.g., 
-    'arts, mathematics, reading, stenography, or a foreign language).
+                  'arts, mathematics, reading, stenography, or a foreign language).
     with map type
         item Composite
         item Critical Reading
@@ -20,4 +20,3 @@ Descriptor AcademicSubject
         item Religious Education and Theology
         item Military Science
         item Other
-

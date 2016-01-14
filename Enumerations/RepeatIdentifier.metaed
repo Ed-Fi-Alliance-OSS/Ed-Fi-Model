@@ -1,5 +1,5 @@
 Enumeration RepeatIdentifier
-    documentation 'An indication as to whether a student has previously taken a given course. 
+    documentation 'An indication as to whether a student has previously taken a given course.
     item Repeated, counted in grade point average
     item Repeated, not counted in grade point average
     item Replacement counted
@@ -8,4 +8,3 @@ Enumeration RepeatIdentifier
     item Not repeated
     item Other, not counted in GPA
     item Other
-

@@ -1,6 +1,6 @@
 Enumeration ProgramType
     documentation 'The formal name of the program of instruction, training, services or benefits 
-    'available through federal, state, or local agencies.
+                  'available through federal, state, or local agencies.
     item Adult/Continuing Education
     item Alternative Education
     item Athletics
@@ -21,7 +21,7 @@ Enumeration ProgramType
     item Expelled Education
     item Extended Day/Child Care Services
     item Fee For Service
-	item Foreign Exchange
+    item Foreign Exchange
     item Gifted and Talented
     item Head Start
     item Health Services Program
@@ -59,4 +59,3 @@ Enumeration ProgramType
     item Title I Part D Subpart 1
     item Title I Part D Subpart 2
     item Vocational Education
-

@@ -1,6 +1,6 @@
 Descriptor ExitWithdrawType
     documentation 'This descriptor defines the circumstances under which the student exited from 
-    'membership in an educational institution.
+                  'membership in an educational institution.
     with optional map type
         item Transferred
         item Graduated
@@ -17,4 +17,3 @@ Descriptor ExitWithdrawType
         item Invalid enrollment
         item No show
         item Other
-

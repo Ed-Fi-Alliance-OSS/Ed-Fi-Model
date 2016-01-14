@@ -1,11 +1,10 @@
 Interchange StudentAttendance
     documentation 'The Student Attendance interchange describes student attendance events. It can 
-    'be used to exchange daily attendance or section-level attendance. It may be used 
-    'in cases where only absences are reported (attendance is assumed if no absence 
-    'is reported), or where both attendance and absences are reported.
+                  'be used to exchange daily attendance or section-level attendance. It may be used 
+                  'in cases where only absences are reported (attendance is assumed if no absence 
+                  'is reported), or where both attendance and absences are reported.
     element StudentInterventionAttendanceEvent
     element StudentProgramAttendanceEvent
     element StudentSchoolAttendanceEvent
     element StudentSectionAttendanceEvent
     element SectionAttendanceTakenEvent
-

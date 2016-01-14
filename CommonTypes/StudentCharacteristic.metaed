@@ -1,7 +1,7 @@
 Common Type StudentCharacteristic
     documentation 'Reflects important characteristics of the student's home situation: Displaced 
-	'Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, 
-	'Single Parent, Unaccompanied Youth.
+                  'Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, 
+                  'Single Parent, Unaccompanied Youth.
     descriptor StudentCharacteristic
         documentation 'The characteristic designated for the Student.
         is part of identity
@@ -16,4 +16,3 @@ Common Type StudentCharacteristic
         is optional
         min length 1
         max length 60
-

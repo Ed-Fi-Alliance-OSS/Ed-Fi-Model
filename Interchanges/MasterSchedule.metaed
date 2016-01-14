@@ -1,9 +1,8 @@
 Interchange MasterSchedule
     documentation 'This interchange loads education course offerings and their schedule.
-    '
-    'The interchange can be used to exchange data regarding the course offerings, 
-    'sections, and bell schedule for a school.
+                  '
+                  'The interchange can be used to exchange data regarding the course offerings, 
+                  'sections, and bell schedule for a school.
     element CourseOffering
     element Section
     element BellSchedule
-

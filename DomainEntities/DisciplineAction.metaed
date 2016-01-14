@@ -46,4 +46,3 @@ Domain Entity DisciplineAction
         documentation 'Optional school where student is transferred for discipline.
         is optional
         with context Assignment
-

@@ -1,47 +1,47 @@
 Descriptor AssessmentCategory
     documentation 'This descriptor holds the category of an assessment based on format and content.
-     with optional map type
-		item Achievement test
-		item Advanced Placement
-		item Alternate assessment/ELL
-		item Alternate assessment/grade-level standards
-		item Alternative assessment/modified standards
-		item Aptitude test
-		item Attitudinal test
-		item Benchmark test
-		item Class test
-		item Class quiz
-		item College entrance exam
-		item Cognitive and perceptual skills test
-		item Developmental observation
-		item Diagnostic
-		item Early Learning - Approaches toward learning
-		item Early Learning - Cognition and general knowledge
-		item Early Learning - Language and literacy development
-		item Early Learning - Physical well-being and motor development
-		item Early Learning - Social and emotional development
-		item English proficiency screening test
-		item Foreign language proficiency test
-		item Formative
-		item Interest inventory
-		item Interim
-		item International Baccalaureate
-		item Language proficiency test
-		item Manual dexterity test
-		item Mental ability (intelligence) test
-		item Performance assessment
-		item Personality test
-		item Portfolio assessment
-		item Prekindergarten Readiness
-		item Psychological test
-		item Psychomotor test
-		item Reading readiness test
-		item State assessment
-		item State summative assessment 3-8 general
-		item State high school subject assessment
-		item State high school course assessment
-		item State alternative assessment/grade-level standards
-		item State alternative assessment/modified standards
-		item State alternate assessment/ELL
-		item State English proficiency test
-		item Other
+    with optional map type
+        item Achievement test
+        item Advanced Placement
+        item Alternate assessment/ELL
+        item Alternate assessment/grade-level standards
+        item Alternative assessment/modified standards
+        item Aptitude test
+        item Attitudinal test
+        item Benchmark test
+        item Class test
+        item Class quiz
+        item College entrance exam
+        item Cognitive and perceptual skills test
+        item Developmental observation
+        item Diagnostic
+        item Early Learning - Approaches toward learning
+        item Early Learning - Cognition and general knowledge
+        item Early Learning - Language and literacy development
+        item Early Learning - Physical well-being and motor development
+        item Early Learning - Social and emotional development
+        item English proficiency screening test
+        item Foreign language proficiency test
+        item Formative
+        item Interest inventory
+        item Interim
+        item International Baccalaureate
+        item Language proficiency test
+        item Manual dexterity test
+        item Mental ability (intelligence) test
+        item Performance assessment
+        item Personality test
+        item Portfolio assessment
+        item Prekindergarten Readiness
+        item Psychological test
+        item Psychomotor test
+        item Reading readiness test
+        item State assessment
+        item State summative assessment 3-8 general
+        item State high school subject assessment
+        item State high school course assessment
+        item State alternative assessment/grade-level standards
+        item State alternative assessment/modified standards
+        item State alternate assessment/ELL
+        item State English proficiency test
+        item Other

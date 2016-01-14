@@ -1,8 +1,6 @@
 Descriptor PerformanceLevel
     documentation 'This descriptor defines various levels or thresholds for performance on the 
-    'assessment.  
+                  'assessment.
     enumeration PerformanceBaseConversion
         documentation 'A conversion of the level to a standard set of performance levels.
         is optional
-
-

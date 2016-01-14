@@ -1,14 +1,13 @@
 Enumeration AdministrationEnvironment
     documentation 'The environment in which the test was administered.  For example:
-    '
-    'Electronic
-    '
-    'Classroom
-    '
-    'Testing Center
-    '
-    '...
+                  '
+                  'Electronic
+                  '
+                  'Classroom
+                  '
+                  'Testing Center
+                  '
+                  '...
     item Classroom
     item School
     item Testing Center
-

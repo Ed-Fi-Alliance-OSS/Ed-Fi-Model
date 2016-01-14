@@ -6,4 +6,3 @@ Choice Common Type PublicationDateChoice
     year PublicationYear
         documentation 'The year at which this content was first published.
         is required
-

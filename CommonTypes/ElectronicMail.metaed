@@ -1,17 +1,16 @@
 Common Type ElectronicMail
     documentation 'The numbers, letters, and symbols used to identify an electronic mail (e-mail) 
-    'user within the network to which the individual or organization belongs.
+                  'user within the network to which the individual or organization belongs.
     string ElectronicMailAddress
         documentation 'The electronic mail (e-mail) address listed for an individual or organization.
         is required
         min length 7
         max length 128
     enumeration ElectronicMailType
-		documentation 'The type of email listed for an individual or organization. For example: 
-		'Home/Personal, Work, etc.)
+        documentation 'The type of email listed for an individual or organization. For example: 
+                      'Home/Personal, Work, etc.)
         is part of identity
     bool PrimaryEmailAddressIndicator
         documentation 'An indication that the electronic mail address should be used as the principal 
-        'electronic mail address for an individual or organization.
+                      'electronic mail address for an individual or organization.
         is optional
-

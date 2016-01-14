@@ -1,13 +1,13 @@
 Enumeration CourseAttemptResult
     documentation 'The result from the student's attempt to take the course, for example:
-    '
-    'Pass
-    ' 
-    'Fail
-    '
-    'Incomplete
-    '
-    'Withdrawn
+                  '
+                  'Pass
+                  ' 
+                  'Fail
+                  '
+                  'Incomplete
+                  '
+                  'Withdrawn
     item Pass
     item Fail
     item Incomplete

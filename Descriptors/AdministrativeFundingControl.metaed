@@ -1,11 +1,11 @@
 Descriptor AdministrativeFundingControl
     documentation 'This descriptor holds the type of education institution as classified by its 
-    'funding source (e.g., public or private).
+                  'funding source (e.g., public or private).
     with optional map type
         item Public School
             documentation 'A school supported wholly or largely by public funds.
         item Private School
             documentation 'A school supported wholly or largely by private organizations or private 
-            'individuals.
+                          'individuals.
         item Other
             documentation 'Other funding classification.

@@ -1,10 +1,9 @@
 Descriptor EntryType
     documentation 'This descriptor defines the process by which a student enters a school during a 
-    'given academic session.
+                  'given academic session.
     with optional map type
         item Transfer
         item Re-entry
         item Next year school
         item New to education system
         item Other
-

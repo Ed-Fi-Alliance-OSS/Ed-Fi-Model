@@ -1,6 +1,5 @@
 Enumeration LocalEducationAgencyCategory
     documentation 'The category of local education agency/district. For example: Independent or 
-    'Charter
+                  'Charter
     item Independent
     item Charter
-
