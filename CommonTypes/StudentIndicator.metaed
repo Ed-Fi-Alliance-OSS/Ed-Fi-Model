@@ -1,24 +1,24 @@
-Common Type StudentIndicator
+Common Type StudentIndicator [533]
     documentation 'An indicator or metric computed for the student (e.g., at risk) to influence 
                   'more effective education or direct specific interventions.
-    shared string IndicatorName named IndicatorGroup
+    shared string IndicatorName named IndicatorGroup [944]
         documentation 'The name for a group of indicators.
         is optional
-    shared string IndicatorName named IndicatorName
+    shared string IndicatorName named IndicatorName [945]
         documentation 'The name of the indicator or metric.
         is part of identity
-    string Indicator
+    string Indicator [943]
         documentation 'The value of the indicator or metric.
         is required
         min length 1
         max length 35
-    date BeginDate
+    date BeginDate [940]
         documentation 'The date when the indicator was assigned or computed.
         is optional
-    date EndDate
+    date EndDate [942]
         documentation 'The date the indicator or metric was sunset or removed.
         is optional
-    string DesignatedBy
+    string DesignatedBy [941]
         documentation 'The person, organization, or department that designated the program association.
         is optional
         min length 1

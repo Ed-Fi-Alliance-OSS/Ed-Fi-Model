@@ -1,6 +1,6 @@
-Interchange StudentTranscript
+Interchange StudentTranscript [2535]
     documentation 'This interchange defines transcript information for a course and student 
                   'academic records for a given session. Course transcripts link to the student 
                   'academic record for the session in which the course was taken.
-    element StudentAcademicRecord
-    element CourseTranscript
+    element StudentAcademicRecord [2535-001]
+    element CourseTranscript [2535-002]

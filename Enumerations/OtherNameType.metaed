@@ -1,6 +1,6 @@
-Enumeration OtherNameType
+Enumeration OtherNameType [202]
     documentation 'The types of alternate names for a person.
-    item Alias
-    item Nickname
-    item Other Name
-    item Previous Legal Name
+    item Alias [202-001]
+    item Nickname [202-002]
+    item Other Name [202-003]
+    item Previous Legal Name [202-004]

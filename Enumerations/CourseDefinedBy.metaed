@@ -1,7 +1,7 @@
-Enumeration CourseDefinedBy
+Enumeration CourseDefinedBy [150]
     documentation 'Specifies whether the course was defined by the state education agency, local 
                   'education agency, school, or national organization.
-    item LEA
-    item National Organization
-    item SEA
-    item School
+    item LEA [150-001]
+    item National Organization [150-002]
+    item SEA [150-004]
+    item School [150-003]

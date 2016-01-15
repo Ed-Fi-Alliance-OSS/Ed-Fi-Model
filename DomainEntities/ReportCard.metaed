@@ -1,49 +1,49 @@
-Domain Entity ReportCard
+Domain Entity ReportCard [577]
     documentation 'This educational entity represents the collection of student grades for courses 
                   'taken during a grading period.
-    reference Grade
+    reference Grade [1585]
         documentation 'Grades for the classes attended by the Student for this grading period.
         is optional collection
-    reference StudentCompetencyObjective
+    reference StudentCompetencyObjective [1590]
         documentation 'The Student competency evaluations associated for this grading period.
         is optional collection
-    reference StudentLearningObjective
+    reference StudentLearningObjective [1591]
         documentation 'The StudentLearningObjective evaluations associated for this grading period.
         is optional collection
-    shared decimal GPA named GPAGivenGradingPeriod
+    shared decimal GPA named GPAGivenGradingPeriod [1584]
         documentation 'A measure of average performance in all courses taken by an individual for the 
                       'current grading period.
         is optional
-    shared decimal GPA named GPACumulative
+    shared decimal GPA named GPACumulative [1583]
         documentation 'A measure of cumulative average performance in all courses taken by an 
                       'individual from the beginning of the school year through the current grading 
                       'period.
         is optional
-    decimal NumberOfDaysAbsent
+    decimal NumberOfDaysAbsent [1587]
         documentation 'The number of days an individual is absent when school is in session during a 
                       'given reporting period. 
         is optional
         total digits 18
         decimal places 4
         min value 0
-    decimal NumberOfDaysInAttendance
+    decimal NumberOfDaysInAttendance [1588]
         documentation 'The number of days an individual is present when school is in session during a 
                       'given reporting period. 
         is optional
         total digits 18
         decimal places 4
         min value 0
-    integer NumberOfDaysTardy
+    integer NumberOfDaysTardy [1589]
         documentation 'The number of days an individual is tardy during a given reporting period.
         is optional
         min value 0
-    reference Student
+    reference Student [1592]
         documentation 'Identifies the student that is associated with the ReportCard.
         is part of identity
-    reference EducationOrganization
+    reference EducationOrganization [1582]
         documentation 'Identifies the EducationOrganization that issued the ReportCard.
         is part of identity
-    reference GradingPeriod
+    reference GradingPeriod [1586]
         documentation 'Identifies the grading period for this report card.
         is part of identity
         with context GradingPeriod

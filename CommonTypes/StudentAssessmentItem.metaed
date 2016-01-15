@@ -1,16 +1,16 @@
-Common Type StudentAssessmentItem
+Common Type StudentAssessmentItem [530]
     documentation 'This entity represents the student's response to an assessment item and the item-level 
                   'scores such as correct, incorrect, or met standard.
-    string AssessmentResponse
+    string AssessmentResponse [928]
         documentation 'A student's response to a stimulus on a test.
         is optional
         min length 1
         max length 60
-    shared string Description named DescriptiveFeedback
+    shared string Description named DescriptiveFeedback [929]
         documentation 'The formative descriptive feedback that was given to a learner in response to 
                       'the results from a scored/evaluated assessment item.
         is optional
-    enumeration ResponseIndicator
+    enumeration ResponseIndicator [931]
         documentation 'Indicator of the response. For example:
                       '
                       'Nonscorable response
@@ -23,7 +23,7 @@ Common Type StudentAssessmentItem
                       '
                       '...
         is optional
-    enumeration AssessmentItemResult
+    enumeration AssessmentItemResult [927]
         documentation 'The analyzed result of a student's response to an assessment item. For example:
                       '
                       'Correct
@@ -34,12 +34,12 @@ Common Type StudentAssessmentItem
                       '
                       '...
         is required
-    integer RawScoreResult
+    integer RawScoreResult [930]
         documentation 'A meaningful raw score of the performance of an individual on an assessment item.
         is optional
-    duration TimeAssessed
+    duration TimeAssessed [932]
         documentation 'The overall time a student actually spent during the AssessmentItem.
         is optional
-    reference AssessmentItem
+    reference AssessmentItem [926]
         documentation 'The AssessmentItem responded to by the Student.
         is part of identity

@@ -1,4 +1,4 @@
-Interchange PostSecondaryEvent
+Interchange PostSecondaryEvent [2522]
     documentation 'This interchange loads student post-secondary institution events such as 
                   'application, admission, and enrollment.
-    element PostSecondaryEvent
+    element PostSecondaryEvent [2522-001]

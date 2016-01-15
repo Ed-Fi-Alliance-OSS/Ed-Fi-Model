@@ -1,5 +1,5 @@
-Interchange StudentDiscipline
+Interchange StudentDiscipline [2529]
     documentation 'This interchange defines discipline incidents and discipline actions.
-    element DisciplineIncident
-    element StudentDisciplineIncidentAssociation
-    element DisciplineAction
+    element DisciplineIncident [2529-001]
+    element StudentDisciplineIncidentAssociation [2529-002]
+    element DisciplineAction [2529-003]

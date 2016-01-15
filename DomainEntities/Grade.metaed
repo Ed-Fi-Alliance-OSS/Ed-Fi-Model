@@ -1,35 +1,35 @@
-Domain Entity Grade
+Domain Entity Grade [559]
     documentation 'This educational entity represents an overall score or assessment tied to a 
                   'course over a period of time (i.e., the grading period). Student grades are 
                   'usually a compilation of marks and other scores.
     allow primary key updates
-    string GradeEarned
+    string GradeEarned [1418]
         documentation 'A final or interim (grading period) indicator of student performance in a class 
                       'as submitted by the instructor.
         is optional
         with context Letter
         min length 1
         max length 20
-    shared decimal NumericGrade named NumericGradeEarned
+    shared decimal NumericGrade named NumericGradeEarned [1419]
         documentation 'A final or interim (grading period) indicator of student performance in a class 
                       'as submitted by the instructor.
         is optional
-    string DiagnosticStatement
+    string DiagnosticStatement [1415]
         documentation 'A statement provided by the teacher that provides information in addition to the 
                       'grade or assessment score.
         is optional
         min length 1
         max length 1024
-    enumeration GradeType
+    enumeration GradeType [1416]
         documentation 'The type of grade reported (e.g., Exam, Final, Grading Period). 
         is part of identity
-    enumeration PerformanceBaseConversion
+    enumeration PerformanceBaseConversion [1420]
         documentation 'A conversion of the level to a standard set of performance levels.
         is optional
-    reference StudentSectionAssociation
+    reference StudentSectionAssociation [1421]
         documentation 'Relates the student and Section associated with the Grade.
         is part of identity
-    reference GradingPeriod
+    reference GradingPeriod [1417]
         documentation 'Identifies the grading period for the Grade.
         is part of identity
         with context GradingPeriod

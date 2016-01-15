@@ -1,4 +1,4 @@
-Enumeration RetestIndicator
+Enumeration RetestIndicator [226]
     documentation 'Indicator if the test was retaken.  For example:
                   '
                   'Primary administration
@@ -8,7 +8,7 @@ Enumeration RetestIndicator
                   'Second retest
                   '
                   '...
-    item Primary Administration
-    item 1st Retest
-    item 2nd Retest
-    item 3nd or more Retest
+    item Primary Administration [226-004]
+    item 1st Retest [226-001]
+    item 2nd Retest [226-002]
+    item 3nd or more Retest [226-003]

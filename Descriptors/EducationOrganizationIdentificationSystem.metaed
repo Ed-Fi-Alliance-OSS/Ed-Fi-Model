@@ -1,14 +1,14 @@
-Descriptor EducationOrganizationIdentificationSystem
+Descriptor EducationOrganizationIdentificationSystem [167]
     documentation 'This descriptor defines the originating record system and code that is used for record-keeping purposes by education organizations.
     with optional map type
-        item ACT
-        item DUNS
-        item Federal
-        item IPEDS
-        item LEA
-        item NCES
-        item Other
-        item Other Federal
-        item School
-        item SEA
-        item USDE - OPE
+        item ACT [167-001]
+        item DUNS [167-002]
+        item Federal [167-003]
+        item IPEDS [167-004]
+        item LEA [167-005]
+        item NCES [167-006]
+        item Other [167-007]
+        item Other Federal [167-008]
+        item School [167-009]
+        item SEA [167-010]
+        item USDE - OPE [167-011]

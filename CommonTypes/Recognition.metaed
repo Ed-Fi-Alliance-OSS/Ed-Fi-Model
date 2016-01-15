@@ -1,23 +1,23 @@
-Common Type Recognition
+Common Type Recognition [523]
     documentation 'Recognition given to the student for accomplishments in a co-curricular, or 
                   'extra-curricular activity.
-    include Achievement
+    include Achievement [717]
         documentation 'An entity that includes information about achievement earned by a learner upon 
                       'fulfilling a specified criteria.
         is required
-    enumeration RecognitionType
+    enumeration RecognitionType [908]
         documentation 'The nature of recognition given to the student for accomplishments in a 
                       'co-curricular, or extra-curricular activity.
         is part of identity
-    string RecognitionDescription
+    string RecognitionDescription [907]
         documentation 'A description of the type of academic distinctions earned by or awarded to the 
                       'individual.
         is optional
         min length 1
         max length 80
-    date RecognitionAwardDate
+    date RecognitionAwardDate [905]
         documentation 'The date the recognition was awarded or earned.
         is optional
-    date RecognitionAwardExpiresDate
+    date RecognitionAwardExpiresDate [906]
         documentation 'Date on which the award expires.
         is optional

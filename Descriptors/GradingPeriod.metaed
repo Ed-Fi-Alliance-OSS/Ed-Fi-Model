@@ -1,24 +1,24 @@
-Descriptor GradingPeriod
+Descriptor GradingPeriod [178]
     documentation 'This descriptor defines the name of the period for which grades are reported. 
                   'The mapping of descriptor values to known Ed-Fi enumeration values is required.
     with map type
-        item First Six Weeks
-        item Second Six Weeks
-        item Third Six Weeks
-        item Fourth Six Weeks
-        item Fifth Six Weeks
-        item Sixth Six Weeks
-        item First Semester
-        item Second Semester
-        item First Summer Session
-        item Second Summer Session
-        item Third Summer Session
-        item Summer Semester
-        item First Nine Weeks
-        item Second Nine Weeks
-        item Third Nine Weeks
-        item Fourth Nine Weeks
-        item First Trimester
-        item Second Trimester
-        item Third Trimester
-        item End of Year
+        item First Six Weeks [178-005]
+        item Second Six Weeks [178-012]
+        item Third Six Weeks [178-018]
+        item Fourth Six Weeks [178-009]
+        item Fifth Six Weeks [178-002]
+        item Sixth Six Weeks [178-015]
+        item First Semester [178-004]
+        item Second Semester [178-011]
+        item First Summer Session [178-006]
+        item Second Summer Session [178-013]
+        item Third Summer Session [178-019]
+        item Summer Semester [178-016]
+        item First Nine Weeks [178-003]
+        item Second Nine Weeks [178-010]
+        item Third Nine Weeks [178-017]
+        item Fourth Nine Weeks [178-008]
+        item First Trimester [178-007]
+        item Second Trimester [178-014]
+        item Third Trimester [178-020]
+        item End of Year [178-001]

@@ -1,66 +1,66 @@
-Domain Entity Student
+Domain Entity Student [585]
     documentation 'This entity represents an individual for whom instruction, services, and/or care 
                   'are provided in an early childhood, elementary, or secondary educational program 
                   'under the jurisdiction of a school, education agency or other institution or 
                   'program. A student is a person who has been enrolled in a school or other 
                   'educational institution.
-    string UniqueId
+    string UniqueId [1705]
         documentation 'A unique alphanumeric code assigned to a student.
         is part of identity
         with context Student
         is queryable field
         min length 1
         max length 32
-    include StudentIdentificationCode
+    include StudentIdentificationCode [1703]
         documentation 'A coding scheme that is used for identification and record-keeping purposes by 
                       'schools, social services, or other agencies to refer to a student.
         is optional collection
         is queryable field
-    include Name
+    include Name [1694]
         documentation 'Full legal name of the person.
         is required
         is queryable field
-    include OtherName
+    include OtherName [1696]
         documentation 'Other names (e.g., alias, nickname, previous legal name) associated with a 
                       'person.
         is optional collection
         is queryable field
-    enumeration Sex
+    enumeration Sex [1701]
         documentation 'A person's gender.
         is required
         is queryable field
-    include BirthData
+    include BirthData [1681]
         documentation 'The set of elements that capture relevant data regarding a person's birth, 
                       'including birth date and place of birth.
         is required
         is queryable field
-    include Address
+    include Address [1680]
         documentation 'The set of elements that describes an address, including the street address, 
                       'city, state, and ZIP code.
         is optional collection
-    include InternationalAddress
+    include InternationalAddress [1689]
         documentation 'The set of elements that describes an international address.
         is optional collection
-    include Telephone
+    include Telephone [1706]
         documentation 'The 10-digit telephone number, including the area code, for the person.
         is optional collection
-    include ElectronicMail
+    include ElectronicMail [1687]
         documentation 'The numbers, letters, and symbols used to identify an electronic mail (e-mail) 
                       'user within the network to which the individual or organization belongs.
         is optional collection
-    string ProfileThumbnail
+    string ProfileThumbnail [1697]
         documentation 'Locator for the student photo.
         is optional
         min length 1
         max length 59
-    bool HispanicLatinoEthnicity
+    bool HispanicLatinoEthnicity [1688]
         documentation 'An indication that the individual traces his or her origin or descent to Mexico, 
                       'Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, 
                       'regardless of race. The term, "Spanish origin," can be used in addition to 
                       '"Hispanic or Latino."
         is required
         is queryable field
-    enumeration OldEthnicity
+    enumeration OldEthnicity [1695]
         documentation 'Previous definition of Ethnicity combining Hispanic/Latino and race:
                       '
                       '1 - American Indian or Alaskan Native
@@ -73,67 +73,67 @@ Domain Entity Student
                       '
                       '5 - White, not of Hispanic origin.
         is optional
-    enumeration Race
+    enumeration Race [1699]
         documentation 'The general racial category which most clearly reflects the individual's 
                       'recognition of his or her community or with which the individual most 
                       'identifies. The data model allows for multiple entries so that each individual 
                       'can specify all appropriate races.
         is optional collection
         is queryable field
-    include Citizenship
+    include Citizenship [1682]
         documentation 'Contains information relative to citizenship status and its associated 
                       'probationary documentation.
         is optional
-    bool EconomicDisadvantaged
+    bool EconomicDisadvantaged [1686]
         documentation 'An indication of inadequate financial condition of an individual's family, as 
                       'determined by family income, number of family members/dependents, participation 
                       'in public assistance programs, and/or other characteristics considered relevant 
                       'by federal, state, and local policy.
         is optional
-    descriptor SchoolFoodServicesEligibility
+    descriptor SchoolFoodServicesEligibility [1700]
         documentation 'An indication of a student's level of eligibility for breakfast, lunch, snack, 
                       'supper, and milk programs.
         is optional
-    include StudentCharacteristic
+    include StudentCharacteristic [1702]
         documentation 'Reflects important characteristics of the student's home situation:
                       '
                       'Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, 
                       'Single Parent, and Unaccompanied Youth.
         is optional collection
-    descriptor LimitedEnglishProficiency
+    descriptor LimitedEnglishProficiency [1692]
         documentation 'An indication that the student has been identified as limited English proficient 
                       'by the Language Proficiency Assessment Committee (LPAC), or English proficient.
         is optional
-    include Language
+    include Language [1690]
         documentation 'The language(s) the individual uses to communicate.
         is optional collection
-    include Disability
+    include Disability [1684]
         documentation 'The disability condition(s) that best describes an individual's impairment.
         is optional collection
-    string DisplacementStatus
+    string DisplacementStatus [1685]
         documentation 'Indicates a state health or weather related event that displaces a group of 
                       'students, and may require additional funding, educational, or social services.
         is optional
         min length 1
         max length 30
-    include ProgramParticipation
+    include ProgramParticipation [1698]
         documentation 'Key programs the student is participating in or receives services from.
         is optional collection
-    include LearningStyle
+    include LearningStyle [1691]
         documentation 'The student's relative preference to visual, auditory, and tactile learning 
                       'expressed as percentages.
         is optional
-    include CohortYear
+    include CohortYear [1683]
         documentation 'The type and year of a cohort (e.g., 9th grade) the student belongs to as 
                       'determined by the year that student entered a specific grade.
         is optional collection
-    include StudentIndicator
+    include StudentIndicator [1704]
         documentation 'Indicator(s) or metric(s) computed for the student (e.g., at risk) to influence 
                       'more effective education or direct specific interventions.
         is optional collection
-    shared string IdentificationCode named LoginId
+    shared string IdentificationCode named LoginId [1693]
         documentation 'The login ID for the user; used for security access control interface.
         is optional
-    reference EducationOrganization
+    reference EducationOrganization [2371]
         documentation 'Provide user information to lookup and link to an existing educational organization record in the receiving system.
         is queryable only

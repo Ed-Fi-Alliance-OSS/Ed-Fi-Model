@@ -1,10 +1,10 @@
-Enumeration EducationOrganizationCategory
+Enumeration EducationOrganizationCategory [166]
     documentation 'The classification of the education agency within the geographic boundaries of a 
                   'state according to the level of administrative and operational control granted 
                   'by the state.
-    item State Education Agency
-    item Education Service Center
-    item Local Education Agency
-    item School
-    item Education Organization Network
-    item Other
+    item State Education Agency [166-005]
+    item Education Service Center [166-002]
+    item Local Education Agency [166-003]
+    item School [166-004]
+    item Education Organization Network [166-001]
+    item Other [166-006]

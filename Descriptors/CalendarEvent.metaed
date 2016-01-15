@@ -1,14 +1,14 @@
-Descriptor CalendarEvent
+Descriptor CalendarEvent [135]
     documentation 'This descriptor holds the types of scheduled or unscheduled event for the day 
                   '(e.g., Instructional day, Teacher only day, Holiday, Make-up day, Weather day, 
                   'Student late arrival/early dismissal day).
     with map type
-        item Instructional day
-        item Teacher only day
-        item Holiday
-        item Make-up day
-        item Weather day
-        item Student late arrival/early dismissal
-        item Emergency day
-        item Strike
-        item Other
+        item Instructional day [135-005]
+        item Teacher only day [135-011]
+        item Holiday [135-004]
+        item Make-up day [135-006]
+        item Weather day [135-012]
+        item Student late arrival/early dismissal [135-010]
+        item Emergency day [135-003]
+        item Strike [135-009]
+        item Other [135-007]

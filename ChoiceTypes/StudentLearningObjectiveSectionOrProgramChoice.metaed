@@ -1,8 +1,8 @@
-Choice Common Type StudentLearningObjectiveSectionOrProgramChoice
+Choice Common Type StudentLearningObjectiveSectionOrProgramChoice [2506]
     documentation 'NEEDS DOCUMENTATION
-    reference StudentSectionAssociation
+    reference StudentSectionAssociation [1766]
         documentation 'Relates the Student and Section associated with the LearningObjective.
         is required
-    reference StudentProgramAssociation
+    reference StudentProgramAssociation [1764]
         documentation 'Relates the Student and Program associated with the LearningObjective.
         is required

@@ -1,11 +1,11 @@
-Interchange StudentGrade
+Interchange StudentGrade [2531]
     documentation 'This interchange defines grades for a grading period or group of grading 
                   'periods. Grades are defined for groups of grading periods in the case where the 
                   'grade is cumulative over a semester or academic year (also referred to as "final 
                   'grades").
-    element ReportCard
-    element Grade
-    element CompetencyObjective
-    element LearningObjective
-    element StudentCompetencyObjective
-    element StudentLearningObjective
+    element ReportCard [2531-001]
+    element Grade [2531-002]
+    element CompetencyObjective [2531-003]
+    element LearningObjective [2531-004]
+    element StudentCompetencyObjective [2531-005]
+    element StudentLearningObjective [2531-006]

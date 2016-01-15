@@ -1,5 +1,5 @@
-Enumeration Sex
+Enumeration Sex [235]
     documentation 'A person's gender.
-    item Female
-    item Male
-    item Not Selected
+    item Female [235-001]
+    item Male [235-002]
+    item Not Selected [235-003]

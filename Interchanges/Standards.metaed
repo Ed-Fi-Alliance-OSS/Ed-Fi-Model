@@ -1,4 +1,4 @@
-Interchange Standards
+Interchange Standards [2524]
     documentation 'NEEDS DOCUMENTATION
-    element LearningObjective
-    element LearningStandard
+    element LearningObjective [2524-001]
+    element LearningStandard [2524-002]

@@ -1,14 +1,14 @@
-Enumeration CohortYearType
+Enumeration CohortYearType [142]
     documentation 'The enumeration items for the set of cohort years.
-    item Eighth grade
-    item Eleventh grade
-    item Fifth grade
-    item First grade
-    item Fourth grade
-    item Ninth grade
-    item Second grade
-    item Seventh grade
-    item Sixth grade
-    item Tenth grade
-    item Third grade
-    item Twelfth grade
+    item Eighth grade [142-001]
+    item Eleventh grade [142-002]
+    item Fifth grade [142-003]
+    item First grade [142-004]
+    item Fourth grade [142-005]
+    item Ninth grade [142-006]
+    item Second grade [142-007]
+    item Seventh grade [142-008]
+    item Sixth grade [142-009]
+    item Tenth grade [142-010]
+    item Third grade [142-011]
+    item Twelfth grade [142-012]

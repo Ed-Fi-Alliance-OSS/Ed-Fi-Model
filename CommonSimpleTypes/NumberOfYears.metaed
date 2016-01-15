@@ -1,4 +1,4 @@
-Common Decimal NumberOfYears
+Common Decimal NumberOfYears [620]
     documentation 'Grade Point Average computed for a grading period or cumulatively.
     total digits 5
     decimal places 2

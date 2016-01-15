@@ -1,22 +1,22 @@
-Domain Entity StudentAssessment
+Domain Entity StudentAssessment [587]
     documentation 'This entity represents the analysis or scoring of a student's response on an 
                   'assessment. The analysis results in a value that represents a student's 
                   'performance on a set of items on a test.
-    date AdministrationDate
+    date AdministrationDate [1727]
         documentation 'The month(s), day(s), and year on which an assessment is administered or first 
                       'day of administration if over multiple days.
         is part of identity
-    date AdministrationEndDate
+    date AdministrationEndDate [1728]
         documentation 'Assessment Administration End Date, if administered over multiple days.
         is optional
-    shared string IdentificationCode named SerialNumber
+    shared string IdentificationCode named SerialNumber [1738]
         documentation 'The unique number for the assessment form or answer document.
         is optional
-    descriptor Language
+    descriptor Language [1730]
         documentation 'The language in which an assessment is written and/or administered. 
         is optional
         with context Administration
-    enumeration AdministrationEnvironment
+    enumeration AdministrationEnvironment [1729]
         documentation 'The environment in which the test was administered. For example:
                       '
                       'Electronic
@@ -27,7 +27,7 @@ Domain Entity StudentAssessment
                       '
                       '...
         is optional
-    descriptor Accommodation
+    descriptor Accommodation [1726]
         documentation 'The specific type of special variation used in how an examination is presented, 
                       'how it is administered, or how the test taker is allowed to respond. This 
                       'generally refers to changes that do not substantially alter what the examination
@@ -48,7 +48,7 @@ Domain Entity StudentAssessment
                       '
                       '...
         is optional collection
-    enumeration RetestIndicator
+    enumeration RetestIndicator [1736]
         documentation 'Indicator if the test was retaken. For example:
                       '
                       'Primary administration
@@ -59,7 +59,7 @@ Domain Entity StudentAssessment
                       '
                       '...
         is optional
-    enumeration ReasonNotTested
+    enumeration ReasonNotTested [1735]
         documentation 'The primary reason student is not tested. For example:
                       '
                       'Absent
@@ -78,36 +78,36 @@ Domain Entity StudentAssessment
                       '
                       '...
         is optional
-    include ScoreResult
+    include ScoreResult [1737]
         documentation 'A meaningful score or statistical expression of the performance of an 
                       'individual. The results can be expressed as a number, percentile, range, level, 
         'etc.
         is optional collection
-    descriptor GradeLevel
+    descriptor GradeLevel [1742]
         documentation 'The grade level of a student when assessed.
         is optional
         with context WhenAssessed
-    include PerformanceLevel
+    include PerformanceLevel [1734]
         documentation 'The performance level(s) achieved for the StudentAssessment.
         is optional collection
-    enumeration EventCircumstance
+    enumeration EventCircumstance [1732]
         documentation 'An unusual event occurred during the administration of the assessment. This 
                       'could include fire alarm, student became ill, etc.
         is optional
-    shared string Description named Description
+    shared string Description named Description [1733]
         documentation 'Describes special events that occur before during or after the assessment 
                       'session that may impact use of results.
         is optional
         with context Event
-    reference Student
+    reference Student [1741]
         documentation 'Reference to the Student associated with the Assessment.
         is part of identity
-    reference Assessment
+    reference Assessment [1731]
         documentation 'Reference to the Assessment taken by the student.
         is part of identity
-    include StudentAssessmentItem
+    include StudentAssessmentItem [1739]
         documentation 'NEEDS DOCUMENTATION 
         is optional collection
-    include StudentObjectiveAssessment
+    include StudentObjectiveAssessment [1740]
         documentation 'NEEDS DOCUMENTATION
         is optional collection

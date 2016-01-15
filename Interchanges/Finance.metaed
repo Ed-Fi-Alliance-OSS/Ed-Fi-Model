@@ -1,7 +1,7 @@
-Interchange Finance
+Interchange Finance [2519]
     documentation 'This interchange describes financial data related to an Education Organization.
-    element Account
-    element Actual
-    element Budget
-    element ContractedStaff
-    element Payroll
+    element Account [2519-001]
+    element Actual [2519-002]
+    element Budget [2519-003]
+    element ContractedStaff [2519-004]
+    element Payroll [2519-005]

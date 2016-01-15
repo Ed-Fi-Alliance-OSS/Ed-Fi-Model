@@ -1,21 +1,21 @@
-Domain Entity GradingPeriod
+Domain Entity GradingPeriod [561]
     documentation 'This entity represents the time span for which grades are reported.
-    reference School
+    reference School [2425]
         documentation 'Provide user information to lookup and link to an existing school record.
         is part of identity
-    descriptor GradingPeriod
+    descriptor GradingPeriod [1433]
         documentation 'The name of the period for which grades are reported.
         is part of identity
-    date BeginDate
+    date BeginDate [1430]
         documentation 'Month, day, and year of the first day of the GradingPeriod.
         is part of identity
-    date EndDate
+    date EndDate [1432]
         documentation 'Month, day, and year of the last day of the GradingPeriod.
         is required
-    integer TotalInstructionalDays
+    integer TotalInstructionalDays [1435]
         documentation 'Total days available for educational instruction during the GradingPeriod.
         is required
         min value 0
-    integer PeriodSequence
+    integer PeriodSequence [1434]
         documentation 'The sequential order of this period relative to other periods.
         is optional

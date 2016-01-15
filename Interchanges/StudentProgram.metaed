@@ -1,8 +1,8 @@
-Interchange StudentProgram
+Interchange StudentProgram [2534]
     documentation 'This interchange loads students' participation in programs.
-    element StudentProgramAssociation
-    element StudentSpecialEducationProgramAssociation
-    element RestraintEvent
-    element StudentCTEProgramAssociation
-    element StudentTitleIPartAProgramAssociation
-    element StudentMigrantEducationProgramAssociation
+    element StudentProgramAssociation [2534-001]
+    element StudentSpecialEducationProgramAssociation [2534-002]
+    element RestraintEvent [2534-003]
+    element StudentCTEProgramAssociation [2534-004]
+    element StudentTitleIPartAProgramAssociation [2534-005]
+    element StudentMigrantEducationProgramAssociation [2534-006]

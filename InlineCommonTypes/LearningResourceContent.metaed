@@ -1,68 +1,68 @@
-Inline Common Type LearningResourceContent
+Inline Common Type LearningResourceContent [2514]
     documentation 'NEEDS DOCUMENTATION
-    string ShortDescription
+    string ShortDescription [1377]
         documentation 'A short description or name of the entity.
         is required
         min length 1
         max length 75
-    shared string Description named Description
+    shared string Description named Description [1369]
         documentation 'An extended written representation of the education content.
         is optional
-    string Author
+    string Author [1363]
         documentation 'The individual credited with the creation of the resource.
         is optional collection
         min length 1
         max length 255
-    bool AdditionalAuthorsIndicator
+    bool AdditionalAuthorsIndicator [1360]
         documentation 'Indicates whether there are additional un-named authors. In a research report, 
                       'this is often marked by the abbreviation "et al".
         is optional
-    string Publisher
+    string Publisher [1376]
         documentation 'The organization credited with publishing the resource.
         is optional
         min length 1
         max length 50
-    duration TimeRequired
+    duration TimeRequired [1378]
         documentation 'Approximate or typical time it takes to work with or through this learning 
                       'resource for the typical intended target audience.
         is optional
-    enumeration InteractivityStyle
+    enumeration InteractivityStyle [1370]
         documentation 'The predominate mode of learning supported by the learning resource. Acceptable 
                       'values are active, expositive, or mixed.
         is optional
-    enumeration ContentClass
+    enumeration ContentClass [1364]
         documentation 'The predominate type or kind characterizing the learning resource.
         is required
-    string UseRightsURL
+    string UseRightsURL [1379]
         documentation 'The URL where the owner specifies permissions for using the resource.
         is optional
         min length 5
         max length 255
-    include EducationContentSource
+    include EducationContentSource [1368]
         documentation 'A reference or URL pointing to education content from which this education 
                       'content was derived.
         is optional
         with context DerivativeSource
-    include PublicationDateChoice
+    include PublicationDateChoice [2515]
         documentation 'NEEDS DOCUMENTATION
         is optional
-    enumeration Sex
+    enumeration Sex [1362]
         documentation 'Sexes for which this education content is applicable. If omitted, considered 
                       'generally applicable.
         is optional collection
         with context Appropriate
-    descriptor GradeLevel
+    descriptor GradeLevel [1361]
         documentation 'Grade levels for which this education content is applicable-if omitted, 
                       'considered generally applicable.
         is optional collection
         with context Appropriate
-    descriptor Language
+    descriptor Language [1371]
         documentation 'An indication of the languages in which the Education Content is designed.
         is optional collection
-    shared string LearningResourceContentVersion named Version
+    shared string LearningResourceContentVersion named Version [1380]
         documentation 'The version identifier for the content.
         is optional
-    reference LearningStandard
+    reference LearningStandard [1373]
         documentation 'Relates the competency, learning standard, skill and/or text complexity to which 
                       'the learning resource is aligned.
         is optional

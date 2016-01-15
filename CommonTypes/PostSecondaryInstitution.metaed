@@ -1,29 +1,29 @@
-Common Type PostSecondaryInstitution
+Common Type PostSecondaryInstitution [520]
     documentation 'An organization that provides educational programs for individuals who have 
                   'completed or otherwise left educational programs in secondary school(s).
-    string PostSecondaryInstitutionId
+    string PostSecondaryInstitutionId [895]
         documentation 'The ID of the post secondary institution.
         is optional
         min length 1
         max length 30
-    include PostSecondaryInstitutionIdentificationCode
+    include PostSecondaryInstitutionIdentificationCode [897]
         documentation 'A unique number or alphanumeric code assigned to an education organization by a 
                       'school, school system, a state, or other agency or entity.
         is optional collection
-    string NameOfInstitution
+    string NameOfInstitution [894]
         documentation 'The postsecondary institution associated with the event.
         is required
         min length 1
         max length 75
-    enumeration MediumOfInstruction
+    enumeration MediumOfInstruction [893]
         documentation 'The categories in which an institution serves the students.
         is optional collection
-    enumeration PostSecondaryInstitutionLevel
+    enumeration PostSecondaryInstitutionLevel [896]
         documentation 'A classification of whether a post secondary institution's highest level of 
                       'offering is a program of 4-years or higher (4 year), 2-but-less-than 4-years (2 year), 
                       'or less than 2-years.
         is optional
-    descriptor AdministrativeFundingControl
+    descriptor AdministrativeFundingControl [892]
         documentation 'A classification of whether a postsecondary institution is operated by publicly 
                       'elected or appointed officials (public control) or by privately elected or 
                       'appointed officials and derives its major source of funds from private sources 

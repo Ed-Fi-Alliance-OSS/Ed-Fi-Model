@@ -1,8 +1,8 @@
-Choice Common Type SectionOrProgramChoice
+Choice Common Type SectionOrProgramChoice [2504]
     documentation 'NEEDS DOCUMENTATION
-    reference Section
+    reference Section [1239]
         documentation 'The Section(s) to which the Assessment is associated.
         is required collection
-    reference Program
+    reference Program [1237]
         documentation 'The programs associated with the Assessment.
         is required collection

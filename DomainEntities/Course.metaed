@@ -1,12 +1,12 @@
-Domain Entity Course
+Domain Entity Course [550]
     documentation 'This educational entity represents the organization of subject matter and 
                   'related learning experiences provided for the instruction of students on a 
                   'regular or systematic basis.
-    shared string IdentificationCode named CourseCode
+    shared string IdentificationCode named CourseCode [1294]
         documentation 'A unique alphanumeric code assigned to a course.
         is part of identity
         is queryable field
-    string CourseTitle
+    string CourseTitle [1300]
         documentation 'The descriptive name given to a course of study offered in a school or other 
                       'institution or organization. In departmentalized classes at the elementary, 
                       'secondary, and postsecondary levels (and for staff development activities), this 
@@ -18,78 +18,78 @@ Domain Entity Course
         is queryable field        
         min length 1
         max length 60
-    integer NumberOfParts
+    integer NumberOfParts [1309]
         documentation 'The number of parts identified for a course.
         is required
         min value 1
         max value 8
-    include CourseIdentificationCode
+    include CourseIdentificationCode [1298]
         documentation 'The code that identifies the organization of subject matter and related learning 
                       'experiences provided for the instruction of students.
         is required collection
         is queryable field        
-    enumeration CourseLevelCharacteristic
+    enumeration CourseLevelCharacteristic [1299]
         documentation 'The type of specific program or designation with which the course is associated 
                       '(e.g., AP, IB, Dual Credit, CTE).
         is optional collection
-    descriptor GradeLevel
+    descriptor GradeLevel [1303]
         documentation 'The grade levels in which the course is offered.
         is optional collection
         with context Offered
-    descriptor AcademicSubject
+    descriptor AcademicSubject [1291]
         documentation 'The intended major subject area of the course.
         is optional
-    shared string Description named Description
+    shared string Description named Description [1296]
         documentation 'A description of the content standards and goals covered in the course. 
                       'Reference may be made to state or national content standards.
         is optional
         with context Course
-    shared integer Duration named TimeRequiredForCompletion
+    shared integer Duration named TimeRequiredForCompletion [1310]
         documentation 'The actual or estimated number of clock minutes required for class completion.  
                       'This number is especially important for career and technical education classes 
                       'and may represent (in minutes) the clock hour requirement of the class.
         is optional
-    date DateCourseAdopted
+    date DateCourseAdopted [1301]
         documentation 'Date the course was adopted by the education agency.
         is optional
-    bool HighSchoolCourseRequirement
+    bool HighSchoolCourseRequirement [1304]
         documentation 'An indication that this course may satisfy high school graduation requirements 
                       'in the course's subject area.
         is optional
-    enumeration CourseGPAApplicability
+    enumeration CourseGPAApplicability [1297]
         documentation 'An indicator of whether or not the course being described is included in the 
                       'computation of the student's Grade Point Average, and if so, if it is weighted 
                       'differently from regular courses.
         is optional
-    enumeration CourseDefinedBy
+    enumeration CourseDefinedBy [1295]
         documentation 'Specifies whether the course was defined by the SEA, LEA, School, or national 
                       'organization.  
         is optional
-    include Credits
+    include Credits [1308]
         documentation 'The minimum amount of credit available to a student who successfully completes 
                       'the course.
         is optional
         with context MinimumAvailable
-    include Credits
+    include Credits [1307]
         documentation 'The maximum amount of credit available to a student who successfully completes 
                       'the course.
         is optional
         with context MaximumAvailable
-    enumeration CareerPathway
+    enumeration CareerPathway [1292]
         documentation 'Indicates the career cluster or pathway the course is associated with as part of 
                       'a CTE curriculum.
         is optional
-    descriptor CompetencyLevel
+    descriptor CompetencyLevel [1293]
         documentation 'The competency levels defined to rate the student for the course.
         is optional collection
-    reference EducationOrganization
+    reference EducationOrganization [1302]
         documentation 'The Education Organization that defines the curriculum and courses offered - 
                       'often the LEA or school.
         is part of identity
         is queryable field        
-    reference LearningStandard
+    reference LearningStandard [1306]
         documentation 'Learning Standard(s) to be taught by the course.
         is optional collection
-    reference LearningObjective
+    reference LearningObjective [1305]
         documentation 'Learning Objectives to be mastered in the course.
         is optional collection

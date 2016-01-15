@@ -1,7 +1,7 @@
-Enumeration CitizenshipStatus
+Enumeration CitizenshipStatus [138]
     documentation 'An indicator of whether or not the person is a U.S. citizen.
-    item US Citizen
-    item Permanent resident
-    item Resident alien
-    item Non-resident alien
-    item Refugee
+    item US Citizen [138-005]
+    item Permanent resident [138-002]
+    item Resident alien [138-004]
+    item Non-resident alien [138-001]
+    item Refugee [138-003]

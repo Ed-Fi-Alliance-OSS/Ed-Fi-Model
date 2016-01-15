@@ -1,8 +1,8 @@
-Descriptor GraduationPlanType
+Descriptor GraduationPlanType [179]
     documentation 'This descriptor defines the set of graduation plan types.
     with optional map type
-        item Career and Technical Education
-        item Distinguished
-        item Minimum
-        item Recommended
-        item Standard
+        item Career and Technical Education [179-001]
+        item Distinguished [179-002]
+        item Minimum [179-003]
+        item Recommended [179-004]
+        item Standard [179-005]

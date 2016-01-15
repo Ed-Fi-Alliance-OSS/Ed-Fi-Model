@@ -1,4 +1,4 @@
-Enumeration AdministrationEnvironment
+Enumeration AdministrationEnvironment [126]
     documentation 'The environment in which the test was administered.  For example:
                   '
                   'Electronic
@@ -8,6 +8,6 @@ Enumeration AdministrationEnvironment
                   'Testing Center
                   '
                   '...
-    item Classroom
-    item School
-    item Testing Center
+    item Classroom [126-001]
+    item School [126-002]
+    item Testing Center [126-003]

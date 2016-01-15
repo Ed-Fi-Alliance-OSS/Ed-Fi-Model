@@ -1,4 +1,4 @@
-Enumeration ReasonNotTested
+Enumeration ReasonNotTested [216]
     documentation 'The primary reason student is not tested. For example:
                   '
                   'Absent
@@ -16,17 +16,17 @@ Enumeration ReasonNotTested
                   'LEP Exempt
                   '
                   '...
-    item Absent
-    item LEP exempt
-    item LEP postponement
-    item Not appropriate (ARD decision)
-    item Not tested (ARD decision)
-    item Alternate assessment administered
-    item Parental waiver
-    item Foreign exchange student waiver
-    item Refusal by parent
-    item Refusal by student
-    item Medical waiver
-    item Disruptive behavior
-    item Previously passed the examination
-    item Other
+    item Absent [216-001]
+    item LEP exempt [216-005]
+    item LEP postponement [216-006]
+    item Not appropriate (ARD decision) [216-008]
+    item Not tested (ARD decision) [216-009]
+    item Alternate assessment administered [216-002]
+    item Parental waiver [216-011]
+    item Foreign exchange student waiver [216-004]
+    item Refusal by parent [216-013]
+    item Refusal by student [216-014]
+    item Medical waiver [216-007]
+    item Disruptive behavior [216-003]
+    item Previously passed the examination [216-012]
+    item Other [216-010]

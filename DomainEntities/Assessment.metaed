@@ -1,18 +1,18 @@
-Domain Entity Assessment
+Domain Entity Assessment [540]
     documentation 'This entity represents a tool, instrument, process, or exhibition composed of a 
                   'systematic sampling of behavior for measuring a student's competence, knowledge,
                   'skills, or behavior. An assessment can be used to measure differences in
                   'individuals or groups and changes in performance from one occasion to the next.
-    shared string AssessmentTitle named AssessmentTitle
+    shared string AssessmentTitle named AssessmentTitle [1228]
         documentation 'The title or name of the Assessment.
         is part of identity
         is queryable field
-    include AssessmentIdentificationCode
+    include AssessmentIdentificationCode [1224]
         documentation 'A unique number or alphanumeric code assigned to an assessment by a school, 
                       'school system, a state, or other agency or entity.
         is required collection
         is queryable field
-    descriptor AssessmentCategory
+    descriptor AssessmentCategory [1221]
         documentation 'The category of an assessment based on format and content. For example:
                       '
                       'Achievement test
@@ -28,12 +28,12 @@ Domain Entity Assessment
                       '...
         is optional
         is queryable field
-    descriptor AcademicSubject
+    descriptor AcademicSubject [1219]
         documentation 'The description of the content or subject area (e.g., arts, mathematics, 
                       'reading, stenography, or a foreign language) of an assessment.
         is part of identity
         is queryable field
-    descriptor GradeLevel
+    descriptor GradeLevel [1220]
         documentation 'The typical grade level for which an assessment is designed. If the assessment 
                       'spans a range of grades, then this attribute holds the highest grade assessed. 
                       'If only one grade level is assessed then only this attribute is used. For 
@@ -51,7 +51,7 @@ Domain Entity Assessment
         is part of identity
         with context Assessed
         is queryable field
-    descriptor GradeLevel
+    descriptor GradeLevel [1234]
         documentation 'If the assessment spans a range of grades, then this attribute holds the 
                       'lowest grade assessed. If only one grade level is assessed, then this 
                       'attribute is omitted. For example:
@@ -67,10 +67,10 @@ Domain Entity Assessment
                       '...
         is optional
         with context LowestAssessed
-    include AssessmentScore
+    include AssessmentScore [1227]
         documentation 'Definition of the scores to be expected from this assessment.
         is optional collection
-    include AssessmentPerformanceLevel
+    include AssessmentPerformanceLevel [1225]
         documentation 'Definition of the performance levels and the associated cut scores. Three styles 
                       'are supported:
                       '
@@ -80,46 +80,46 @@ Domain Entity Assessment
                       '
                       '3. Specification of performance level without any mapping to scores.
         is optional collection
-    include ContentStandard
+    include ContentStandard [1229]
         documentation 'An indication as to whether an assessment conforms to a standard (e.g., 
                       'local standard, statewide standard, regional standard, association standard).
         is optional
-    string AssessmentForm
+    string AssessmentForm [1223]
         documentation 'Identifies the form of the assessment, for example a regular versus makeup form, 
                       'multiple choice versus constructed response, etc.
         is optional
         min length 1
         max length 60
-    descriptor Language
+    descriptor Language [1230]
         documentation 'An indication of the languages in which the assessment is designed.
         is optional collection
-    shared integer Version named AssessmentVersion
+    shared integer Version named AssessmentVersion [1240]
         documentation 'The version identifier for the assessment.
         is part of identity
         is queryable field
-    date RevisionDate
+    date RevisionDate [1238]
         documentation 'The month, day, and year that the conceptual design for the assessment was most 
                       'recently revised substantially.
         is optional
-    integer MaxRawScore
+    integer MaxRawScore [1235]
         documentation 'The maximum raw score achievable across all assessment items that are correct 
                       'and scored at the maximum.
         is optional
-    string Nomenclature
+    string Nomenclature [1236]
         documentation 'Reflects the specific nomenclature used for Assessment.
         is optional
         min length 1
         max length 35
-    descriptor AssessmentPeriod
+    descriptor AssessmentPeriod [1226]
         documentation 'The period or window in which an assessment is supposed to be administered.
         is optional
-    reference AssessmentFamily
+    reference AssessmentFamily [1222]
         documentation 'References the AssessmentFamily this Assessment is a member of.
         is optional
         is queryable field
-    include SectionOrProgramChoice
+    include SectionOrProgramChoice [2509]
         documentation 'The Section(s) to which the Assessment is associated.
         is optional
-    shared string URI named Namespace
+    shared string URI named Namespace [2300]
         documentation 'Namespace for the Assessment.
         is optional

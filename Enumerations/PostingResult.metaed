@@ -1,4 +1,4 @@
-Enumeration PostingResult
+Enumeration PostingResult [206]
     documentation 'Indication of whether the position was filled or retired without filling.
-    item Position Filled
-    item Posting Cancelled
+    item Position Filled [206-001]
+    item Posting Cancelled [206-002]

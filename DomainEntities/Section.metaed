@@ -1,16 +1,16 @@
-Domain Entity Section
+Domain Entity Section [580]
     documentation 'This entity represents a setting in which organized instruction of course 
                   'content is provided, in-person or otherwise, to one or more students for a given 
                   'period of time. A course offering may be offered to more than one section.
     allow primary key updates
-    string UniqueSectionCode
+    string UniqueSectionCode [1632]
         documentation 'A unique identifier for the Section that is defined by the classroom, 
                       'the subjects taught, and the instructors who are assigned.
         is part of identity
         is queryable field
         min length 1
         max length 255
-    integer SequenceOfCourse
+    integer SequenceOfCourse [1631]
         documentation 'When a section is part of a sequence of parts for a course, the number of the 
                       'sequence. If the course has only one part, the value of this section attribute 
                       'should be 1.
@@ -18,7 +18,7 @@ Domain Entity Section
         is queryable field
         min value 1
         max value 8
-    enumeration EducationalEnvironment
+    enumeration EducationalEnvironment [1623]
         documentation 'The setting in which a child receives education and related services; 
                       'for example:
                       '
@@ -34,7 +34,7 @@ Domain Entity Section
                       '
                       '...
         is optional
-    enumeration MediumOfInstruction
+    enumeration MediumOfInstruction [1626]
         documentation 'The media through which teachers provide instruction to students and students 
                       'and teachers communicate about instructional matters; for example:
                       '
@@ -50,7 +50,7 @@ Domain Entity Section
                       '
                       '...
         is optional
-    enumeration PopulationServed
+    enumeration PopulationServed [1627]
         documentation 'The type of students the Section is offered and tailored to; for example:
                       '
                       'Bilingual students
@@ -65,7 +65,7 @@ Domain Entity Section
                       '
                       '...
         is optional
-    include Credits
+    include Credits [1620]
         documentation 'The amount of credit available to a student who successfully meets the 
                       'objectives of the course. AvailableCredits are measured in Carnegie units, A 
                       'course meeting every day for one period of the school day over the span of a 
@@ -74,30 +74,30 @@ Domain Entity Section
                       'Codes for the Exchange of Data (SCED).
         is optional
         with context Available
-    descriptor SectionCharacteristic
+    descriptor SectionCharacteristic [1630]
         documentation 'Reflects important characteristics of the Section, such as whether or not 
                       'attendance is taken and the Section is graded.
         is optional collection
-    descriptor Language
+    descriptor Language [1624]
         documentation 'The primary language of instruction, if omitted English is assumed.
         is optional
         with context Instruction
-    reference CourseOffering
+    reference CourseOffering [1622]
         documentation 'The course offering taught in the Section.
         is part of identity
         is queryable field
-    reference School
+    reference School [1629]
         documentation 'The school where the Section is taught.
         is required
         is queryable field
-    reference Location
+    reference Location [1625]
         documentation 'The location, typically a classroom, where the Section meets.
         is part of identity
         is queryable field
-    reference ClassPeriod
+    reference ClassPeriod [1621]
         documentation 'The class period during which the Section meets.
         is part of identity
         is queryable field
-    reference Program
+    reference Program [1628]
         documentation 'Optional reference to program (e.g., CTE) to which the Section is associated.
         is optional collection

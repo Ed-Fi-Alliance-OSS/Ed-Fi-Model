@@ -1,29 +1,29 @@
-Common Type IdentificationDocument
+Common Type IdentificationDocument [491]
     documentation 'Represents the valid document that a person uses for identification.
-    string DocumentTitle
+    string DocumentTitle [829]
         documentation 'The title of the document given by the issuer.
         is optional
         min length 1
         max length 60
-    enumeration PersonalInformationVerification
+    enumeration PersonalInformationVerification [834]
         documentation 'The category of the document relative to its purpose.
         is part of identity
-    date DocumentExpirationDate
+    date DocumentExpirationDate [828]
         documentation 'The day when the document  expires, if null then never expires.
         is optional
-    shared string IdentificationCode named IdentificationCode
+    shared string IdentificationCode named IdentificationCode [832]
         documentation 'The unique identifier on the issuer's identification system.
         is optional
         with context IssuerDocument
-    string IssuerName
+    string IssuerName [833]
         documentation 'Name of the entity or institution that issued the document.
         is optional
         min length 1
         max length 150
-    descriptor Country
+    descriptor Country [831]
         documentation 'Country of origin of the document.
         is optional
         with context Issuer
-    enumeration IdentificationDocumentUse
+    enumeration IdentificationDocumentUse [830]
         documentation 'The primary function of the document used for establishing identity.
         is part of identity

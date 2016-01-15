@@ -1,15 +1,15 @@
-Enumeration EducationalEnvironment
+Enumeration EducationalEnvironment [165]
     documentation 'The setting in which a child receives education and related services.
-    item Classroom
-    item Homebound
-    item Hospital class
-    item In-school suspension
-    item Laboratory
-    item Mainstream (Special Education)
-    item Off-school center
-    item Pull-out class
-    item Resource room
-    item Single sex classroom
-    item Self-contained (Special Education)
-    item Self-study
-    item Shop
+    item Classroom [165-001]
+    item Homebound [165-002]
+    item Hospital class [165-003]
+    item In-school suspension [165-004]
+    item Laboratory [165-005]
+    item Mainstream (Special Education) [165-006]
+    item Off-school center [165-007]
+    item Pull-out class [165-008]
+    item Resource room [165-009]
+    item Single sex classroom [165-013]
+    item Self-contained (Special Education) [165-010]
+    item Self-study [165-011]
+    item Shop [165-012]

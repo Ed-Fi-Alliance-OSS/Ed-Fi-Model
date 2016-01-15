@@ -1,14 +1,14 @@
-Common Type Service
+Common Type Service [525]
     documentation 'The student's program service information.
-    descriptor Service
+    descriptor Service [914]
         documentation 'Indicates the Service being provided to the student by the Program.
         is part of identity
-    bool PrimaryIndicator
+    bool PrimaryIndicator [913]
         documentation 'True if service is a primary service.
         is optional
-    date ServiceBeginDate
+    date ServiceBeginDate [915]
         documentation 'First date the Student was in this option for the current school year.
         is optional
-    date ServiceEndDate
+    date ServiceEndDate [916]
         documentation 'Last date the Student was in this option for the current school year.
         is optional

@@ -1,48 +1,48 @@
-Domain Entity DisciplineAction
+Domain Entity DisciplineAction [553]
     documentation 'This event entity represents actions taken by an education organization after a 
                   'disruptive event that is recorded as a discipline incident.
-    string DisciplineActionIdentifier
+    string DisciplineActionIdentifier [1337]
         documentation 'Identifier assigned by the education organization to the DisciplineAction.
         is part of identity
         min length 1
         max length 20
-    descriptor Discipline
+    descriptor Discipline [1336]
         documentation 'Type of action, such as removal from the classroom, used to discipline the 
                       'student involved as a perpetrator in a discipline incident.
         is required collection
-    date DisciplineDate
+    date DisciplineDate [1340]
         documentation 'The date of the DisciplineAction.
         is part of identity
-    integer DisciplineActionLength
+    integer DisciplineActionLength [1338]
         documentation 'The length of time in school days for the DisciplineAction (e.g. removal, 
                       'detention), if applicable.
         is optional
-    integer ActualDisciplineActionLength
+    integer ActualDisciplineActionLength [1334]
         documentation 'Indicates the actual length in school days of a student's disciplinary 
                       'assignment.
         is optional
-    enumeration DisciplineActionLengthDifferenceReason
+    enumeration DisciplineActionLengthDifferenceReason [1339]
         documentation 'Indicates the reason for the difference, if any, between the official and actual 
                       'lengths of a student's disciplinary assignment.
         is optional
-    bool RelatedToZeroTolerancePolicy
+    bool RelatedToZeroTolerancePolicy [1342]
         documentation 'An indication of whether or not this disciplinary action taken against a student 
                       'was imposed as a consequence of state or local zero tolerance policies.
         is optional
-    reference Student
+    reference Student [1345]
         documentation 'The student(s) disciplined by the DisciplineAction.
         is part of identity
-    reference DisciplineIncident
+    reference DisciplineIncident [1341]
         documentation 'Reference to the DisciplineIncident associated with the DisciplineAction.
         is required collection
-    reference Staff
+    reference Staff [1344]
         documentation 'The staff responsible for enforcing the DisciplineAction.
         is optional collection
-    reference School
+    reference School [1343]
         documentation 'School responsible for student's discipline.
         is required
         with context Responsibility
-    reference School
+    reference School [1335]
         documentation 'Optional school where student is transferred for discipline.
         is optional
         with context Assignment

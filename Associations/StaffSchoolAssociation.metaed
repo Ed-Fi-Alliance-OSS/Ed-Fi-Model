@@ -1,14 +1,14 @@
-Association StaffSchoolAssociation
+Association StaffSchoolAssociation [603]
     documentation 'This association indicates the School(s) to which a staff member provides 
                   'instructional services.
-    domain entity Staff
+    domain entity Staff [1046]
         documentation 'The Staff member providing services to the School.
-    domain entity School
+    domain entity School [1044]
         documentation 'The School where the Staff member provides services.
-    enumeration SchoolYear
+    enumeration SchoolYear [1045]
         documentation 'Identifier for a school year.
         is optional
-    descriptor ProgramAssignment
+    descriptor ProgramAssignment [1043]
         documentation 'The name of the program for which the individual is assigned; for example:
                       '
                       'Regular education
@@ -21,10 +21,10 @@ Association StaffSchoolAssociation
                       '
                       'Bilingual/English as a Second Language.
         is part of identity
-    descriptor GradeLevel
+    descriptor GradeLevel [1042]
         documentation 'The set of grade levels for which the individual's assignment is responsible.
         is optional collection
-    descriptor AcademicSubject
+    descriptor AcademicSubject [1041]
         documentation 'The teaching field taught by an individual, for example English/Language Arts, 
                       'Reading, Mathematics, Science, Social Sciences, etc.
         is optional collection

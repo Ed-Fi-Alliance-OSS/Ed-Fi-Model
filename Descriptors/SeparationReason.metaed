@@ -1,14 +1,14 @@
-Descriptor SeparationReason
+Descriptor SeparationReason [233]
     documentation 'This descriptor defines the reasons for terminating the employment.
     with optional map type
-        item Employment elsewhere
-        item Retirement
-        item Family/personal relocation
-        item Change of assignment
-        item Formal study or research
-        item Illness/disability/death
-        item Layoff
-        item Discharge
-        item Personal reason
-        item Unknown
-        item Other
+        item Employment elsewhere [233-003]
+        item Retirement [233-010]
+        item Family/personal relocation [233-004]
+        item Change of assignment [233-001]
+        item Formal study or research [233-005]
+        item Illness/disability/death [233-006]
+        item Layoff [233-007]
+        item Discharge [233-002]
+        item Personal reason [233-009]
+        item Unknown [233-011]
+        item Other [233-008]

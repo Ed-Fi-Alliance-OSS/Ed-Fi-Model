@@ -1,8 +1,8 @@
-Choice Common Type StudentCompetencyObjectiveSectionOrProgramChoice
+Choice Common Type StudentCompetencyObjectiveSectionOrProgramChoice [2505]
     documentation 'NEEDS DOCUMENTATION
-    reference StudentSectionAssociation
+    reference StudentSectionAssociation [1749]
         documentation 'Relates the Student and Section associated with the CompetencyObjective.
         is required
-    reference StudentProgramAssociation
+    reference StudentProgramAssociation [1747]
         documentation 'Relates the Student and Program associated with the CompetencyObjective.
         is required
