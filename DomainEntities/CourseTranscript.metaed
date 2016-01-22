@@ -48,13 +48,15 @@ Domain Entity CourseTranscript [552]
         documentation 'Indicates that an academic course has been repeated by a student and how that 
                       'repeat is to be computed in the student's academic grade average.
         is optional
-    weak reference Course [1320]
+    reference Course [1320]
         documentation 'The course recorded in the course transcript entry.
         is part of identity
         with context Course
-    weak reference School [1332]
+        is weak
+    reference School [1332]
         documentation 'The School that provided the reported instruction.
         is optional
+        is weak
     reference StudentAcademicRecord [1333]
         documentation 'Link to the student's academic record for a semester/school year.
         is part of identity
