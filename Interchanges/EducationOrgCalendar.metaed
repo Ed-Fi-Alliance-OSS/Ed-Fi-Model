@@ -2,6 +2,11 @@ Interchange EducationOrgCalendar [2518]
     documentation 'The Education Organization Calendar interchange carries school calendar 
                   'information. It can be used to exchange school calendar data, including 
                   'instructional days, sessions, and grading periods.
+    use case documentation '1. Exchange dates indicating which days are instructional days, holidays, or teacher-only days.
+                           '
+                           '2. Exchange session start dates and end dates.
+                           '
+                           '3. Exchange grading period definitions.
     element Session [2518-001]
     element GradingPeriod [2518-002]
     element CalendarDate [2518-003]

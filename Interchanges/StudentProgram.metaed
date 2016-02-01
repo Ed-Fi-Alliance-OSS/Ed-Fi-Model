@@ -1,5 +1,10 @@
 Interchange StudentProgram [2534]
     documentation 'This interchange loads students' participation in programs.
+    use case documentation '1. Exchange School or Local Education Agency student lists of program participation.
+                           '
+                           '2. Exchange a program’s services offered to students.
+                           '
+                           '3. Exchange the services provided to a student during his or her participation in a program.
     element StudentProgramAssociation [2534-001]
     element StudentSpecialEducationProgramAssociation [2534-002]
     element RestraintEvent [2534-003]
