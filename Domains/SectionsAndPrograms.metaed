@@ -1,0 +1,22 @@
+Subdomain SectionsAndPrograms of TeachingAndLearning
+    documentation 'A school will have one or more Sections for each CourseOffering.
+                  'Students are enrolled in specific Sections. Each Section will
+                  'have one or more assigned Staff, will typically meet in a
+                  'specific location in the school, and be assigned a ClassPeriod
+                  'for the Session.
+    domain item ClassPeriod
+    domain item CourseOffering
+    domain item EducationOrganization
+    domain item Location
+    domain item Program
+    domain item School
+    domain item Section
+    domain item Session
+    domain item Staff
+    domain item StaffProgramAssociation
+    domain item StaffSchoolAssociation
+    domain item StaffSectionAssociation
+    domain item Student
+    domain item StudentProgramAssociation
+    domain item StudentSchoolAssociation
+    domain item StudentSectionAssociation
