@@ -4,7 +4,7 @@ Interchange Finance [2519]
                            '
                            '2. Exchange actuals against a budget for an education organization.
                            '
-                           '3. Exchange an education organization’s payroll data.
+                           '3. Exchange an education organization's payroll data.
     element Account [2519-001]
     element Actual [2519-002]
     element Budget [2519-003]

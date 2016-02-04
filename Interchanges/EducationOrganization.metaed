@@ -14,7 +14,7 @@ Interchange EducationOrganization [2517]
                   'using LocationReference and ClassPeriodReference within other domain entities in 
                   'the interchange.
     extended documentation 'Accountability Ratings can be assigned to a school or LEA through this interchange.
-    use case documentation '1. Exchange a state’s full or partial hierarchy of education organizations.
+    use case documentation '1. Exchange a state's full or partial hierarchy of education organizations.
                            '
                            '2. Exchange new or updated education organization information (e.g., change of address).
                            '

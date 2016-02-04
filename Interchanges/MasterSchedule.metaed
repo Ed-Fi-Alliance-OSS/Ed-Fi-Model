@@ -3,7 +3,7 @@ Interchange MasterSchedule [2520]
                   '
                   'The interchange can be used to exchange data regarding the course offerings, 
                   'sections, and bell schedule for a school.
-    use case documentation '1. Exchange the school’s course catalog to be offered during a session.
+    use case documentation '1. Exchange the school's course catalog to be offered during a session.
                            '
                            '2. Exchange of the specific sections to be offered in each class period.
                            '

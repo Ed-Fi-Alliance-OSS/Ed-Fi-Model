@@ -5,11 +5,11 @@ Interchange StudentEnrollment [2530]
                            '
                            '2. Exchange school enrollment accountability information.
                            '
-                           '3. Exchange an individual student’s enrollment history.
+                           '3. Exchange an individual student's enrollment history.
                            '
-                           '4. Exchange students’ class section enrollments.
+                           '4. Exchange students' class section enrollments.
                            '
-                           '5. Exchange students’ graduation plans.
+                           '5. Exchange students' graduation plans.
     identity template Section [2530-001]
     element StudentSchoolAssociation [2530-002]
     element StudentSectionAssociation [2530-003]
