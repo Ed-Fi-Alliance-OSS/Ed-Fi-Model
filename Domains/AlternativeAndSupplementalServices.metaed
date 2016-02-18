@@ -22,3 +22,18 @@ Domain AlternativeAndSupplementalServices
     domain item Student
     domain item StudentProgramAssociation
     domain item StudentSectionAssociation
+    footer documentation '# Alternative and Supplemental Services Subdomains
+                         '
+                         '---
+                         '
+                         'Four additional subdomains have been pre-defined in the Ed-Fi UDM
+                         'for specific and relatively common instances of
+                         'Alternative and Supplemental Services:
+                         '
+                         '* Career and Technical Education
+                         '
+                         '* Migrant Education
+                         '
+                         '* Special Education
+                         '
+                         '* Title I Part A Services

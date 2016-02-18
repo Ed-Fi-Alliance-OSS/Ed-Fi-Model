@@ -45,3 +45,4 @@ Subdomain StudentAssessment of Assessment
     domain item StudentAssessment
     domain item StudentAssessmentItem
     domain item StudentObjectiveAssessment
+    position 3

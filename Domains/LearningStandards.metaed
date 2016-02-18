@@ -12,10 +12,11 @@ Subdomain LearningStandards of Assessment
                   'SuccessCriteria attribute captures the criterion that teacher and students
                   'use to check for attainment of the objective.
                   '
-				  '
+                  '
                   'LearningStandard may also be hierarchically organized to support the use
                   'case that adopters of the Common Core often decompose a standard into lower
                   'level standards in their curriculum. The HasAssociatedPrerequisite association
                   'captures prerequisites for a LearningStandard as would be specified in a learning map.
     domain item LearningObjective
     domain item LearningStandard
+    position 1

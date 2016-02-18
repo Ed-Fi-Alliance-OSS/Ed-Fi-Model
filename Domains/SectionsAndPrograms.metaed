@@ -20,3 +20,4 @@ Subdomain SectionsAndPrograms of TeachingAndLearning
     domain item StudentProgramAssociation
     domain item StudentSchoolAssociation
     domain item StudentSectionAssociation
+    position 2

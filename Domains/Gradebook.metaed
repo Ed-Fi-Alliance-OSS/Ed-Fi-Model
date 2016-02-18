@@ -11,4 +11,5 @@ Subdomain Gradebook of StudentAcademicRecord
     domain item Student
     domain item StudentGradebookEntry
     domain item StudentSectionAssociation
+    position 3
 

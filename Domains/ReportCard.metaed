@@ -19,4 +19,5 @@ Subdomain ReportCard of StudentAcademicRecord
     domain item StudentLearningObjective
     domain item StudentProgramAssociation
     domain item StudentSectionAssociation
+    position 2
 

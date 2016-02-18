@@ -8,4 +8,5 @@ Subdomain StudentTranscript of StudentAcademicRecord
     domain item Session
     domain item Student
     domain item StudentAcademicRecord
+    position 1
 
