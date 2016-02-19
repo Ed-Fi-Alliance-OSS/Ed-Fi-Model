@@ -59,7 +59,7 @@ Inline Common Type LearningResourceContent [2514]
     descriptor Language [1371]
         documentation 'An indication of the languages in which the Education Content is designed.
         is optional collection
-    shared string LearningResourceContentVersion named Version [1380]
+    shared string ContentVersion named Version [1380]
         documentation 'The version identifier for the content.
         is optional
     reference LearningStandard [1373]
