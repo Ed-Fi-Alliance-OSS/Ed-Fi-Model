@@ -33,11 +33,9 @@ Inline Common Type LearningResourceContent [2514]
     enumeration ContentClass [1364]
         documentation 'The predominate type or kind characterizing the learning resource.
         is required
-    string UseRightsURL [1379]
+    shared string URI named UseRightsURL [1379]
         documentation 'The URL where the owner specifies permissions for using the resource.
         is optional
-        min length 5
-        max length 255
     include EducationContentSource [1368]
         documentation 'A reference or URL pointing to education content from which this education 
                       'content was derived.

@@ -1,5 +1,5 @@
 Enumeration CohortScope [140]
-    documentation 'The scope of cohort (e.g., school, district, classroom, etc.)
+    documentation 'The scope of cohort (e.g., school, district, classroom).
     item District [140-003]
     item School [140-007]
     item Network [140-004]

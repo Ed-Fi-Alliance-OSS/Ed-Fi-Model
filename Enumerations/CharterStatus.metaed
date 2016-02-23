@@ -1,6 +1,5 @@
 Enumeration CharterStatus [137]
-    documentation 'The category of charter school. For example: School Charter, Open Enrollment 
-                  'Charter
+    documentation 'The category of charter school. For example: School Charter, Open Enrollment Charter.
     item School Charter [137-004]
     item College/University Charter [137-001]
     item Open Enrollment [137-003]

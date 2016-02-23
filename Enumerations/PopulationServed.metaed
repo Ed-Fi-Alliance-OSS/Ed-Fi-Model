@@ -1,5 +1,5 @@
 Enumeration PopulationServed [205]
-    documentation 'The type of students the section is offered and tailored to.
+    documentation 'The type of students the Section is offered and tailored to.
     item Regular Students [205-010]
     item Bilingual Students [205-002]
     item Compensatory/Remedial Education Students [205-004]

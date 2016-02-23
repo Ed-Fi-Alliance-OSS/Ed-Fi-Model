@@ -19,7 +19,7 @@ Descriptor Weapon [250]
                           'an explosive to fire only a single projectile through a rifled bore for each 
                           'single pull of the trigger.
         item Other Firearm [250-005]
-            documentation 'Other type of firearm
+            documentation 'Other type of firearm.
         item Club [250-001]
         item Other Sharp Objects [250-007]
             documentation 'The weapon involved was another type of sharp object, (e.g., razor blade, ice 

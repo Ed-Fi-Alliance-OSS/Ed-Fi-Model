@@ -3,7 +3,7 @@ Inline Common Type Achievement [479]
                   'fulfilling a specified criteria, which may be defined by a related competency 
                   'set.
    string AchievementTitle [707]
-        documentation 'The title assigned to the Achievement.
+        documentation 'The title assigned to the achievement.
         is optional
         min length 1
         max length 60

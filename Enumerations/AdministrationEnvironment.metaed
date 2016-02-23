@@ -1,5 +1,5 @@
 Enumeration AdministrationEnvironment [126]
-    documentation 'The environment in which the test was administered.  For example:
+    documentation 'The environment in which the test was administered. For example:
                   '
                   'Electronic
                   '

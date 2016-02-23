@@ -1,5 +1,5 @@
 Enumeration CohortType [141]
-    documentation 'The type of the cohort (e.g., academic intervention, classroom breakout, etc.)
+    documentation 'The type of the cohort (e.g., academic intervention, classroom breakout).
     item Academic Intervention [141-001]
     item Attendance Intervention [141-002]
     item Discipline Intervention [141-005]
