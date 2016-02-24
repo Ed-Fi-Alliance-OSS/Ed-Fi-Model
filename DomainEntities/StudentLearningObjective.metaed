@@ -1,6 +1,6 @@
 Domain Entity StudentLearningObjective [591]
     documentation 'This entity represents the competency assessed or evaluated for the student 
-                  'against a specific Learning Objective.
+                  'against a specific LearningObjective.
     reference LearningObjective [1763]
         documentation 'The  LearningObjective evaluated or assessed for the student.
         is part of identity

@@ -7,7 +7,7 @@ Domain Entity StudentCompetencyObjective [588]
         with context CompetencyObjective shorten to Objective
     descriptor CompetencyLevel [1743]
         documentation 'The CompetencyLevel assessed for the student for the referenced 
-                      'LearningObjective..
+                      'LearningObjective.
         is required
     string DiagnosticStatement [1745]
         documentation 'A statement provided by the teacher that provides information in addition to the 
