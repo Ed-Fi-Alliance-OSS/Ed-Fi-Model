@@ -1,5 +1,5 @@
-Inline Common Type LearningResourceContent [2514]
-    documentation 'NEEDS DOCUMENTATION
+Inline Common Type LearningResource [2514]
+    documentation 'This entity maintains information that describes content, materials, or informational resources that support learning.
     string ShortDescription [1377]
         documentation 'A short description or name of the entity.
         is required

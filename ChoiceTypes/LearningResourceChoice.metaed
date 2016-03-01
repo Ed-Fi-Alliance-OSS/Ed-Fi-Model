@@ -1,4 +1,4 @@
-Choice Common Type LearningResourceContentChoice [2501]
+Choice Common Type LearningResourceChoice [2501]
     documentation 'NEEDS DOCUMENTATION
     string LearningResourceMetadataURI [1372]
         documentation 'The URI (typical a URL) pointing to the metadata entry in a LRMI metadata 
@@ -6,6 +6,6 @@ Choice Common Type LearningResourceContentChoice [2501]
         is required
         min length 5
         max length 255
-    include LearningResourceContent [2502]
-        documentation 'NEEDS DOCUMENTATION
+    include LearningResource [2502]
+        documentation 'This entity maintains information that describes content, materials, and informational resources that support learning.
         is required

@@ -9,7 +9,7 @@ Domain Entity EducationContent [555]
         is part of identity
         min length 1
         max length 225
-    include LearningResourceContentChoice [2510]
+    include LearningResourceChoice [2510]
         documentation 'NEEDS DOCUMENTATION
         is required
     currency Cost [1366]
