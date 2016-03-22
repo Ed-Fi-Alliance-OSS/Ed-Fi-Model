@@ -13,11 +13,11 @@ Domain Entity DisciplineAction [553]
     date DisciplineDate [1340]
         documentation 'The date of the DisciplineAction.
         is part of identity
-    integer DisciplineActionLength [1338]
+    shared integer DisciplineActionLength named DisciplineActionLength [1338]
         documentation 'The length of time in school days for the DisciplineAction (e.g. removal, 
                       'detention), if applicable.
         is optional
-    integer ActualDisciplineActionLength [1334]
+    shared integer DisciplineActionLength named ActualDisciplineActionLength [1334]
         documentation 'Indicates the actual length in school days of a student's disciplinary 
                       'assignment.
         is optional
