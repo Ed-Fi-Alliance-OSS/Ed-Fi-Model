@@ -1,6 +1,9 @@
 Descriptor SeparationReason [233]
     documentation 'This descriptor defines the reasons for terminating the employment.
     with optional map type
+        documentation 'Reason for terminating the employment; for example:  Employment 
+                      'in education, Employment outside of education, Retirement, 
+                      'Family/personal relocation, Change of assignment.
         item Employment elsewhere [233-003]
         item Retirement [233-010]
         item Family/personal relocation [233-004]

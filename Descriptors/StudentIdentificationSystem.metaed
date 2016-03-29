@@ -1,6 +1,7 @@
 Descriptor StudentIdentificationSystem [241]
     documentation 'This descriptor defines the originating record system and code that is used for record-keeping purposes of the student.
     with optional map type
+        documentation 'A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a student.
         item Canadian SIN [241-001]
         item District [241-002]
         item Family [241-003]

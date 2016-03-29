@@ -5,6 +5,7 @@ Descriptor Disability [162]
                       'designation.
         is required
     with optional map type
+        documentation 'A disability condition that describes a child's impairment.
         item Autism Spectrum Disorders [162-001]
             documentation 'This disability falls in the DisabilityCategory of IDEA.
         item Deaf-Blindness [162-002]

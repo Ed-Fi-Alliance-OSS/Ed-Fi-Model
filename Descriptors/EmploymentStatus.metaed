@@ -1,6 +1,7 @@
 Descriptor EmploymentStatus [170]
     documentation 'This descriptor defines the type of employment or contract.
     with map type
+        documentation 'Reflects the type of employment or contract.
         item Probationary [170-007]
         item Contractual [170-001]
         item Substitute/temporary [170-008]

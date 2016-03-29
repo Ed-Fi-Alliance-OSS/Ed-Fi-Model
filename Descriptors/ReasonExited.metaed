@@ -1,6 +1,7 @@
 Descriptor ReasonExited [215]
     documentation 'This descriptor defines the reason a student exited a program.
     with optional map type
+        documentation 'The reason the child left the program within a school or district.
         item Died or is permanently incapacitated [215-005]
         item Reached maximum age [215-006]
         item Discontinued schooling [215-002]

@@ -1,6 +1,19 @@
 Descriptor AssessmentCategory [128]
     documentation 'This descriptor holds the category of an assessment based on format and content.
     with optional map type
+        documentation 'The category of an assessment based on format and content. For example:
+                      '
+                      'Achievement test
+                      '
+                      'Advanced placement test
+                      '
+                      'Alternate assessment/grade-level standards
+                      '
+                      'Attitudinal test
+                      '
+                      'Cognitive and perceptual skills test
+                      '
+                      '...
         item Achievement test [128-001]
         item Advanced Placement [128-002]
         item Alternate assessment/ELL [128-003]

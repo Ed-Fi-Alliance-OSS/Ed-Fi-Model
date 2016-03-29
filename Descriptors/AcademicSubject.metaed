@@ -2,6 +2,8 @@ Descriptor AcademicSubject [121]
     documentation 'This descriptor holds the description of the content or subject area (e.g., 
                   'arts, mathematics, reading, stenography, or a foreign language).
     with map type
+        documentation 'The description of the content or subject area (e.g., arts, mathematics, 
+                      'reading, stenography, or a foreign language) of an assessment.
         item Composite [121-002]
         item Critical Reading [121-003]
         item English [121-004]
