@@ -52,11 +52,9 @@ Domain Entity CourseTranscript [552]
         documentation 'The course recorded in the course transcript entry.
         is part of identity
         with context Course
-        is weak
     reference School [1332]
         documentation 'The School that provided the reported instruction.
         is optional
-        is weak
     reference StudentAcademicRecord [1333]
         documentation 'Link to the student's academic record for a semester/school year.
         is part of identity
