@@ -11,6 +11,7 @@ Domain Entity BellSchedule [543]
     reference School [1266]
         documentation 'The school for which the BellSchedule is defined.
         is part of identity
+        is weak
     include MeetingTime [1265]
         documentation 'The times at which this BellSchedule is intended to meet.
         is required collection
