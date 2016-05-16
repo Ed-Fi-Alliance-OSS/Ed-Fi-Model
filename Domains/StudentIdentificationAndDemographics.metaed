@@ -1,4 +1,4 @@
-Domain StudentIdentificationAndDiagnostics
+Domain StudentIdentificationAndDemographics
     documentation 'The Student Identification and Demographics domain represents
                   'the core information about students and parents.
                   '
