@@ -7,12 +7,10 @@ Common Type AcademicHonor [478]
         documentation 'A designation of the type of academic distinctions earned by or awarded to the 
                       'student.
         is part of identity
-    string HonorDescription [704]
+    shared string HonorDescription named HonorDescription [704]
         documentation 'A description of the type of academic distinctions earned by or awarded to the 
                       'individual.
         is optional
-        min length 1
-        max length 80
     date HonorAwardDate [702]
         documentation 'The date the honor was awarded or earned.
         is optional

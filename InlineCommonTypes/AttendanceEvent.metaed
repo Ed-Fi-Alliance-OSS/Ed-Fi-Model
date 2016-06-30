@@ -15,11 +15,9 @@ Inline Common Type AttendanceEvent [486]
                       '
                       'Tardy.
         is part of identity
-    string AttendanceEventReason [747]
+    shared string AttendanceEventReason named AttendanceEventReason [747]
         documentation 'The reported reason for a student's absence.
         is optional
-        min length 1
-        max length 40
     enumeration EducationalEnvironment [748]
         documentation 'The setting in which a child receives education and related services. This 
                       'attribute is only used if it differs from the EducationalEnvironment of the 

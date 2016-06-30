@@ -1,0 +1,4 @@
+Common String PostSecondaryInstitutionId
+    documentation 'A unique number or alphanumeric code assigned to the postsecondary organization.
+    min length 1
+    max length 30

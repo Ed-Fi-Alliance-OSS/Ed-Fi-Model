@@ -1,0 +1,4 @@
+Common String DisabilityDiagnosis
+    documentation 'A description of the disability diagnosis.
+    min length 1
+    max length 80

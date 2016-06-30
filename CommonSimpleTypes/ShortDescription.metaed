@@ -1,0 +1,4 @@
+Common String ShortDescription
+    documentation 'A shortened description for reference.
+    min length 1
+    max length 75

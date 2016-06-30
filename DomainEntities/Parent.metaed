@@ -1,13 +1,11 @@
 Domain Entity Parent [573]
     documentation 'This entity represents a parent or guardian of a student, such as mother, father, 
                   'or caretaker.
-    string UniqueId [1562]
+    shared string UniqueId named UniqueId [1562]
         documentation 'A unique alphanumeric code assigned to a parent.
         is part of identity
         with context Parent
         is queryable field
-        min length 1
-        max length 32
     include Name [1560]
         documentation 'Full legal name of the person.
         is required

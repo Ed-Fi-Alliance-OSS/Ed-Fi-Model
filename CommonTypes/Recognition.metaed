@@ -9,12 +9,10 @@ Common Type Recognition [523]
         documentation 'The nature of recognition given to the student for accomplishments in a 
                       'co-curricular, or extra-curricular activity.
         is part of identity
-    string RecognitionDescription [907]
+    shared string RecognitionDescription named RecognitionDescription [907]
         documentation 'A description of the type of academic distinctions earned by or awarded to the 
                       'individual.
         is optional
-        min length 1
-        max length 80
     date RecognitionAwardDate [905]
         documentation 'The date the recognition was awarded or earned.
         is optional

@@ -1,0 +1,4 @@
+Common String AchievementTitle
+    documentation 'The title assigned to the achievement.
+    min length 1
+    max length 60

@@ -1,0 +1,4 @@
+Common String AccountNumber
+    documentation 'The alphanumeric string that identifies the account.
+    min length 1
+    max length 50

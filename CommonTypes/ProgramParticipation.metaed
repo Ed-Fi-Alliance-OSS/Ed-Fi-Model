@@ -13,8 +13,6 @@ Common Type ProgramParticipation [522]
     date EndDate [902]
         documentation 'The date the Program participation ended.
         is optional
-    string DesignatedBy [901]
+    shared string DesignatedBy named DesignatedBy [901]
         documentation 'The person, organization, or department that designated the program association.
         is optional
-        min length 1
-        max length 60

@@ -8,11 +8,9 @@ Association StaffEducationOrganizationAssignmentAssociation [600]
     descriptor StaffClassification [1025]
         documentation 'The titles of employment, official status, or rank of education staff.
         is part of identity
-    string PositionTitle [1024]
+    shared string PositionTitle named PositionTitle [1024]
         documentation 'The descriptive name of an individual's position.
         is optional
-        min length 1
-        max length 100
     date BeginDate [1020]
         documentation 'Month, day, and year of the start or effective date of a staff member's 
                       'employment, contract, or relationship with the LEA.

@@ -6,24 +6,18 @@ Domain Entity AccountabilityRating [538]
     shared string RatingTitleType named RatingTitle [1214]
         documentation 'The title of the rating (e.g., School Rating, Safety Score).
         is part of identity
-    string Rating [1210]
+    shared string Rating named Rating [1210]
         documentation 'An accountability rating level, designation, or assessment.
         is required
-        min length 1
-        max length 35
     date RatingDate [1211]
         documentation 'The date the rating was awarded.
         is optional
     enumeration SchoolYear [1215]
         documentation 'The school year for which the AccountabilityRating is assessed.
         is part of identity
-    string RatingOrganization [1212]
+    shared string RatingOrganization named RatingOrganization [1212]
         documentation 'The organization that assessed the rating.
         is optional
-        min length 1
-        max length 35
-    string RatingProgram [1213]
+    shared string RatingProgram named RatingProgram [1213]
         documentation 'The program associated with the AccountabilityRating (e.g., NCLB, AEIS).
         is optional
-        min length 1
-        max length 30

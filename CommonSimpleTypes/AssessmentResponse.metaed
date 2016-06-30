@@ -1,0 +1,4 @@
+Common String AssessmentResponse
+    documentation 'A student's response to a stimulus on a test.
+    min length 1
+    max length 60

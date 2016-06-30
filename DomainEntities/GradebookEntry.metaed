@@ -2,12 +2,10 @@ Domain Entity GradebookEntry [560]
     documentation 'This entity represents an assignment, homework, or classroom assessment to be 
                   'recorded in a gradebook.
     allow primary key updates
-    string GradebookEntryTitle [1424]
+    shared string GradebookEntryTitle named GradebookEntryTitle [1424]
         documentation 'The name or title of the activity to be recorded in the GradebookEntry.
         is part of identity
         is queryable field
-        min length 1
-        max length 60
     enumeration GradebookEntryType [1425]
         documentation 'The type of the GradebookEntry; for example, homework, assignment, quiz, unit 
                       'test, oral presentation, etc. 

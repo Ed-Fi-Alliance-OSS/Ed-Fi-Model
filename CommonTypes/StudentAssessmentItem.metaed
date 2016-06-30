@@ -1,11 +1,9 @@
 Common Type StudentAssessmentItem [530]
     documentation 'This entity represents the student's response to an assessment item and the item-level 
                   'scores such as correct, incorrect, or met standard.
-    string AssessmentResponse [928]
+    shared string AssessmentResponse named AssessmentResponse [928]
         documentation 'A student's response to a stimulus on a test.
         is optional
-        min length 1
-        max length 60
     shared string Description named DescriptiveFeedback [929]
         documentation 'The formative descriptive feedback that was given to a learner in response to 
                       'the results from a scored/evaluated assessment item.

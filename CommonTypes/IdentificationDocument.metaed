@@ -1,10 +1,8 @@
 Common Type IdentificationDocument [491]
     documentation 'Represents the valid document that a person uses for identification.
-    string DocumentTitle [829]
+    shared string DocumentTitle named DocumentTitle [829]
         documentation 'The title of the document given by the issuer.
         is optional
-        min length 1
-        max length 60
     enumeration PersonalInformationVerification [834]
         documentation 'The category of the document relative to its purpose.
         is part of identity
@@ -15,11 +13,9 @@ Common Type IdentificationDocument [491]
         documentation 'The unique identifier on the issuer's identification system.
         is optional
         with context IssuerDocument
-    string IssuerName [833]
+    shared string IssuerName named IssuerName [833]
         documentation 'Name of the entity or institution that issued the document.
         is optional
-        min length 1
-        max length 150
     descriptor Country [831]
         documentation 'Country of origin of the document.
         is optional

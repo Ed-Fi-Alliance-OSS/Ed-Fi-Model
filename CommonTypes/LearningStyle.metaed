@@ -1,22 +1,13 @@
 Common Type LearningStyle [513]
     documentation 'The student's relative preference to visual, auditory, and tactile learning 
                   'expressed as percentages.
-    decimal Learning [858]
+    shared decimal Learning named VisualLearning [858]
         documentation 'The student's relative preference expressed as a percent to visual learning.
         is required
-        with context Visual
-        total digits 5
-        decimal places 4
-    decimal Learning [856]
+    shared decimal Learning named AuditoryLearning [856]
         documentation 'The student's relative preference expressed as a percent to auditory learning.
         is required
-        with context Auditory
-        total digits 5
-        decimal places 4
-    decimal Learning [857]
+    shared decimal Learning named TactileLearning [857]
         documentation 'The student's relative preference expressed as a percent to kinesthetic or 
                       'tactile learning.
         is required
-        with context Tactile
-        total digits 5
-        decimal places 4

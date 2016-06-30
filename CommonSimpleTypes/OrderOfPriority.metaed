@@ -1,0 +1,2 @@
+Common Integer OrderOfPriority
+    documentation 'The order of priority assigned to telephone numbers to define which number to attempt first, second, etc.

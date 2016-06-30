@@ -22,11 +22,9 @@ Domain Entity ObjectiveAssessment [571]
     percent PercentOfAssessment [1544]
         documentation 'The percentage of the Assessment that tests this objective.
         is optional
-    string Nomenclature [1542]
+    shared string Nomenclature named Nomenclature [1542]
         documentation 'Reflects the specific nomenclature used for this level of ObjectiveAssessment.
         is optional
-        min length 1
-        max length 35
     shared string Description named Description [1537]
         documentation 'The description of the ObjectiveAssessment (e.g., vocabulary, measurement, 
                       'or geometry).

@@ -6,7 +6,7 @@ Domain Entity Course [550]
         documentation 'A unique alphanumeric code assigned to a course.
         is part of identity
         is queryable field
-    string CourseTitle [1300]
+    shared string CourseTitle named CourseTitle [1300]
         documentation 'The descriptive name given to a course of study offered in a school or other 
                       'institution or organization. In departmentalized classes at the elementary, 
                       'secondary, and postsecondary levels (and for staff development activities), this 
@@ -16,13 +16,9 @@ Domain Entity Course [550]
                       'reading, composition, spelling, and language arts).
         is required
         is queryable field        
-        min length 1
-        max length 60
-    integer NumberOfParts [1309]
+    shared integer NumberOfParts named NumberOfParts [1309]
         documentation 'The number of parts identified for a course.
         is required
-        min value 1
-        max value 8
     include CourseIdentificationCode [1298]
         documentation 'The code that identifies the organization of subject matter and related learning 
                       'experiences provided for the instruction of students.

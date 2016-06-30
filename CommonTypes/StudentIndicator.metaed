@@ -7,19 +7,15 @@ Common Type StudentIndicator [533]
     shared string IndicatorName named IndicatorName [945]
         documentation 'The name of the indicator or metric.
         is part of identity
-    string Indicator [943]
+    shared string Indicator named Indicator [943]
         documentation 'The value of the indicator or metric.
         is required
-        min length 1
-        max length 35
     date BeginDate [940]
         documentation 'The date when the indicator was assigned or computed.
         is optional
     date EndDate [942]
         documentation 'The date the indicator or metric was sunset or removed.
         is optional
-    string DesignatedBy [941]
+    shared string DesignatedBy named DesignatedBy [941]
         documentation 'The person, organization, or department that designated the program association.
         is optional
-        min length 1
-        max length 60

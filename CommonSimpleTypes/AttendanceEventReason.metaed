@@ -1,0 +1,4 @@
+Common String AttendanceEventReason
+    documentation 'The reason for the absence or tardy.
+    min length 1
+    max length 40

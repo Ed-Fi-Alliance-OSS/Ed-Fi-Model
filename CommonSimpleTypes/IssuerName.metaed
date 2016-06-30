@@ -1,0 +1,4 @@
+Common String IssuerName
+    documentation 'The name of the agent issuing the award.
+    min length 1
+    max length 150

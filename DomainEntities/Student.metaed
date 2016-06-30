@@ -4,13 +4,11 @@ Domain Entity Student [585]
                   'under the jurisdiction of a school, education agency or other institution or 
                   'program. A student is a person who has been enrolled in a school or other 
                   'educational institution.
-    string UniqueId [1705]
+    shared string UniqueId named UniqueId [1705]
         documentation 'A unique alphanumeric code assigned to a student.
         is part of identity
         with context Student
         is queryable field
-        min length 1
-        max length 32
     include StudentIdentificationCode [1703]
         documentation 'A coding scheme that is used for identification and record-keeping purposes by 
                       'schools, social services, or other agencies to refer to a student.
@@ -48,11 +46,9 @@ Domain Entity Student [585]
         documentation 'The numbers, letters, and symbols used to identify an electronic mail (e-mail) 
                       'user within the network to which the individual or organization belongs.
         is optional collection
-    string ProfileThumbnail [1697]
+    shared string ProfileThumbnail named ProfileThumbnail [1697]
         documentation 'Locator for the student photo.
         is optional
-        min length 1
-        max length 59
     bool HispanicLatinoEthnicity [1688]
         documentation 'An indication that the individual traces his or her origin or descent to Mexico, 
                       'Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, 
@@ -110,12 +106,10 @@ Domain Entity Student [585]
     include Disability [1684]
         documentation 'The disability condition(s) that best describes an individual's impairment.
         is optional collection
-    string DisplacementStatus [1685]
+    shared string DisplacementStatus named DisplacementStatus [1685]
         documentation 'Indicates a state health or weather related event that displaces a group of 
                       'students, and may require additional funding, educational, or social services.
         is optional
-        min length 1
-        max length 30
     include ProgramParticipation [1698]
         documentation 'Key programs the student is participating in or receives services from.
         is optional collection

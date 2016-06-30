@@ -1,0 +1,4 @@
+Common String Rating
+    documentation 'An accountability rating level, designation, or assessment.
+    min length 1
+    max length 35

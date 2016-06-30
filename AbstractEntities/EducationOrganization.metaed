@@ -15,18 +15,14 @@ Abstract Entity EducationOrganization [556]
                       'school, school system, a state, or other agency or entity.
         is optional collection
         is queryable field
-    string NameOfInstitution [1386]
+    shared string NameOfInstitution named NameOfInstitution [1386]
         documentation 'The full, legally accepted name of the institution.
         is required
         is queryable field
-        min length 1
-        max length 75
-    string NameOfInstitution [1388]
+    shared string NameOfInstitution named NameOfInstitution [1388]
         documentation 'A short name for the institution.
         is optional
         with context Short
-        min length 1
-        max length 75
     enumeration EducationOrganizationCategory [1382]
         documentation 'The classification of the education agency within the geographic boundaries of a 
                       'state according to the level of administrative and operational control granted 

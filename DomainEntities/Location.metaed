@@ -6,12 +6,10 @@ Domain Entity Location [570]
     reference School [1533]
         documentation 'Relates the Location to the school.
         is part of identity
-    string ClassroomIdentificationCode [1530]
+    shared string ClassroomIdentificationCode named ClassroomIdentificationCode [1530]
         documentation 'A unique number or alphanumeric code assigned to a room by a school, school 
                       'system, state, or other agency or entity.
         is part of identity
-        min length 1
-        max length 20
     integer MaximumNumberOfSeats [1531]
         documentation 'The most number of seats the class can maintain.
         is optional

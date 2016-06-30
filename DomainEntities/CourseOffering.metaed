@@ -5,13 +5,10 @@ Domain Entity CourseOffering [551]
         documentation 'The local code assigned by the School that identifies the course offering 
                       'provided for the instruction of students.
         is part of identity
-    string CourseTitle [1315]
+    shared string CourseTitle named LocalCourseTitle [1315]
         documentation 'The descriptive name given to a course of study offered in the school, if 
                       'different from the CourseTitle. 
         is optional
-        with context Local
-        min length 1
-        max length 60
     shared integer Duration named InstructionalTimePlanned [1313]
         documentation 'The planned total number of clock minutes of instruction for this course 
                       'offering. Generally, this should be at least as many minutes as is required for 

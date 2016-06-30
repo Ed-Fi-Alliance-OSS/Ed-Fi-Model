@@ -1,0 +1,4 @@
+Common String DisciplineActionIdentifier
+    documentation 'Identifier assigned by the education organization to the discipline action.
+    min length 1
+    max length 20

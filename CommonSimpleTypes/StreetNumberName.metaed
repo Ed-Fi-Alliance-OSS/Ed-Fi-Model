@@ -1,0 +1,4 @@
+Common String StreetNumberName
+    documentation 'The street number and street name or post office box number of an address.
+    min length 1
+    max length 150

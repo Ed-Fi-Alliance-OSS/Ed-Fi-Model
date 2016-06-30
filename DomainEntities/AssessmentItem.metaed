@@ -20,19 +20,15 @@ Domain Entity AssessmentItem [542]
         documentation 'The maximum raw score achievable across all assessment items that are correct and scored 
                       'at the maximum.
         is optional
-    string CorrectResponse [1256]
+    shared string CorrectResponse named CorrectResponse [1256]
         documentation 'The correct response for the AssessmentItem.
         is optional
-        min length 1
-        max length 20
     duration ExpectedTimeAssessed [1257]
         documentation 'The duration of time allotted for the AssessmentItem.
         is optional
-    string Nomenclature [1261]
+    shared string Nomenclature named Nomenclature [1261]
         documentation 'Reflects the specific nomenclature used for AssessmentItem.
         is optional
-        min length 1
-        max length 35
     reference LearningStandard [1259]
         documentation 'LearningStandard tested by this item.
         is optional collection

@@ -16,13 +16,11 @@ Domain Entity Staff [583]
                   '4. An in-kind service provider
                   '
                   '5. An independent contractor or businessperson working at a school site.
-    string UniqueId [1663]
+    shared string UniqueId named UniqueId [1663]
         documentation 'A unique alphanumeric code assigned to a staff.
         is part of identity
         with context Staff
         is queryable field
-        min length 1
-        max length 32
     include StaffIdentificationCode [1662]
         documentation 'A unique number or alphanumeric code assigned to a staff member by a school, 
                       'school system, a state, or other agency or entity.

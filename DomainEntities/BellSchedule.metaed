@@ -1,10 +1,8 @@
 Domain Entity BellSchedule [543]
     documentation 'This entity represents the schedule of class period meeting times.
-    string BellScheduleName [1262]
+    shared string BellScheduleName named BellScheduleName [1262]
         documentation 'Name or title of the BellSchedule.
         is part of identity
-        min length 1
-        max length 60
     descriptor GradeLevel [1264]
         documentation 'The grade levels the particular BellSchedule applies to.
         is part of identity

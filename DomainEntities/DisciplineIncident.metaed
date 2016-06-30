@@ -5,14 +5,12 @@ Domain Entity DisciplineIncident [554]
                   'enforcement official (such as robbery). A single event (e.g., a fight) is one 
                   'incident regardless of how many perpetrators or victims are involved. 
                   'Discipline incidents are events classified as warranting discipline action.
-    string IncidentIdentifier [1351]
+    shared string IncidentIdentifier named IncidentIdentifier [1351]
         documentation 'A locally assigned unique identifier (within the school or school district) to 
                       'identify each specific DisciplineIncident or occurrence. The same identifier should 
                       'be used to document the entire DisciplineIncident even if it included multiple 
                       'offenses and multiple offenders.
         is part of identity
-        min length 1
-        max length 20
     date IncidentDate [1349]
         documentation 'The month, day, and year on which the DisciplineIncident occurred. 
         is required
@@ -56,11 +54,9 @@ Domain Entity DisciplineIncident [554]
                       '
                       '...
         is optional
-    string ReporterName [1356]
+    shared string ReporterName named ReporterName [1356]
         documentation 'Identifies the reporter of the DisciplineIncident by name.
         is optional
-        min length 1
-        max length 75
     include Behavior [1346]
         documentation 'Describes behavior by category and provides a detailed description.
         is optional collection
@@ -72,12 +68,10 @@ Domain Entity DisciplineIncident [554]
     bool ReportedToLawEnforcement [1354]
         documentation 'Indicator of whether the incident was reported to law enforcement.
         is optional
-    string CaseNumber [1347]
+    shared string CaseNumber named CaseNumber [1347]
         documentation 'The case number assigned to the DisciplineIncident by law enforcement or 
                       'other organization.
         is optional
-        min length 1
-        max length 20
     currency IncidentCost [1348]
         documentation 'The value of any quantifiable monetary loss directly resulting from the 
                       'DisciplineIncident. Examples include the value of repairs necessitated by 

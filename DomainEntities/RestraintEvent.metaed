@@ -4,12 +4,10 @@ Domain Entity RestraintEvent [578]
                   'themselves or others, imminent serious property destruction or a combination of 
                   'both imminent serious physical harm to themselves or others and imminent serious 
                   'property destruction.
-    string RestraintEventIdentifier [1596]
+    shared string RestraintEventIdentifier named RestraintEventIdentifier [1596]
         documentation 'A unique number or alphanumeric code assigned to a restraint event by a school, 
                       'school system, state, or other agency or entity.
         is part of identity
-        min length 1
-        max length 20
     date EventDate [1594]
         documentation 'Month, day, and year of the RestraintEvent.
         is part of identity

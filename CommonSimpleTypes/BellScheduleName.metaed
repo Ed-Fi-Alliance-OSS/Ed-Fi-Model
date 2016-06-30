@@ -1,0 +1,4 @@
+Common String BellScheduleName
+    documentation 'The title or name of the bell schedule.
+    min length 1
+    max length 60

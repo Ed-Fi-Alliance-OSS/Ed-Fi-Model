@@ -19,24 +19,17 @@ Domain Entity ReportCard [577]
                       'individual from the beginning of the school year through the current grading 
                       'period.
         is optional
-    decimal NumberOfDaysAbsent [1587]
+    shared decimal NumberOfDaysAbsent named NumberOfDaysAbsent [1587]
         documentation 'The number of days an individual is absent when school is in session during a 
                       'given reporting period. 
         is optional
-        total digits 18
-        decimal places 4
-        min value 0
-    decimal NumberOfDaysInAttendance [1588]
+    shared decimal NumberOfDaysInAttendance named NumberOfDaysInAttendance [1588]
         documentation 'The number of days an individual is present when school is in session during a 
                       'given reporting period. 
         is optional
-        total digits 18
-        decimal places 4
-        min value 0
-    integer NumberOfDaysTardy [1589]
+    shared integer NumberOfDaysTardy named NumberOfDaysTardy [1589]
         documentation 'The number of days an individual is tardy during a given reporting period.
         is optional
-        min value 0
     reference Student [1592]
         documentation 'Identifies the student that is associated with the ReportCard.
         is part of identity

@@ -4,8 +4,6 @@ Common Type LearningStandardIdentificationCode [512]
     shared string IdentificationCode named IdentificationCode [855]
         documentation 'A unique number or alphanumeric code assigned to a Learning Standard.
         is part of identity
-    string ContentStandardName [854]
+    shared string ContentStandardName named ContentStandardName [854]
         documentation 'The name of the content standard, for example Common Core.
         is part of identity
-        min length 1
-        max length 65

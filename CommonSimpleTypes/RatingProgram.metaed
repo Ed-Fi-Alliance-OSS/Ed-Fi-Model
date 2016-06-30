@@ -1,0 +1,4 @@
+Common String RatingProgram
+    documentation 'The rating program (e.g., NCLB).
+    min length 1
+    max length 30

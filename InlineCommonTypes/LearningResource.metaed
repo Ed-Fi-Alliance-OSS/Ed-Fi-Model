@@ -1,27 +1,21 @@
 Inline Common Type LearningResource [2514]
     documentation 'This entity maintains information that describes content, materials, or informational resources that support learning.
-    string ShortDescription [1377]
+    shared string ShortDescription named ShortDescription [1377]
         documentation 'A short description or name of the entity.
         is required
-        min length 1
-        max length 75
     shared string Description named Description [1369]
         documentation 'An extended written representation of the education content.
         is optional
-    string Author [1363]
+    shared string Author named Author [1363]
         documentation 'The individual credited with the creation of the resource.
         is optional collection
-        min length 1
-        max length 255
     bool AdditionalAuthorsIndicator [1360]
         documentation 'Indicates whether there are additional un-named authors. In a research report, 
                       'this is often marked by the abbreviation "et al".
         is optional
-    string Publisher [1376]
+    shared string Publisher named Publisher [1376]
         documentation 'The organization credited with publishing the resource.
         is optional
-        min length 1
-        max length 50
     duration TimeRequired [1378]
         documentation 'Approximate or typical time it takes to work with or through this learning 
                       'resource for the typical intended target audience.

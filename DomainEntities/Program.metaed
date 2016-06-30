@@ -7,20 +7,16 @@ Domain Entity Program [576]
         documentation 'Relates the program to an EducationOrganization.
         is part of identity
         is queryable field
-    string ProgramId [1577]
+    shared string ProgramId named ProgramId [1577]
         documentation 'A unique number or alphanumeric code assigned to a program by a school, school 
                       'system, a state, or other agency or entity.
         is optional
         is queryable field
-        min length 1
-        max length 20
-    string ProgramName [1578]
+    shared string ProgramName named ProgramName [1578]
         documentation 'The formal name of the Program of instruction, training, services, or benefits 
                       'available through federal, state, or local agencies.
         is part of identity
         is queryable field
-        min length 1
-        max length 60
     enumeration ProgramType [1580]
         documentation 'The type of program.
         is part of identity

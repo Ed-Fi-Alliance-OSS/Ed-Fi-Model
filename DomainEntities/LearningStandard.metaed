@@ -37,20 +37,15 @@ Domain Entity LearningStandard [567]
         documentation 'Subject area for the LearningStandard.
         is required
         is queryable field
-    string CourseTitle [1496]
+    shared string CourseTitle named CourseTitle [1496]
         documentation 'The official Course Title with which this learning standard is associated.
         is optional
-        min length 1
-        max length 60
-    string Criteria [1504]
+    shared string Criteria named SuccessCriteria [1504]
         documentation 'One or more statements that describes the criteria used by teachers and students 
                       'to check for attainment of a learning standard. This criteria gives clear 
                       'indications as to the degree to which learning is moving through the Zone or 
                       'Proximal Development toward independent achievement of the LearningStandard.
         is optional
-        with context Success
-        min length 1
-        max length 150
     reference LearningStandard [1503]
         documentation 'The unique identifier of a prerequisite learning standard item, a competency 
                       'needed prior to learning this one. (Some items may have no prerequisites others 

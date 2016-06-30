@@ -3,23 +3,18 @@ Domain Entity Grade [559]
                   'course over a period of time (i.e., the grading period). Student grades are 
                   'usually a compilation of marks and other scores.
     allow primary key updates
-    string GradeEarned [1418]
+    shared string GradeEarned named LetterGradeEarned [1418]
         documentation 'A final or interim (grading period) indicator of student performance in a class 
                       'as submitted by the instructor.
         is optional
-        with context Letter
-        min length 1
-        max length 20
     shared decimal NumericGrade named NumericGradeEarned [1419]
         documentation 'A final or interim (grading period) indicator of student performance in a class 
                       'as submitted by the instructor.
         is optional
-    string DiagnosticStatement [1415]
+    shared string DiagnosticStatement named DiagnosticStatement [1415]
         documentation 'A statement provided by the teacher that provides information in addition to the 
                       'grade or assessment score.
         is optional
-        min length 1
-        max length 1024
     enumeration GradeType [1416]
         documentation 'The type of grade reported (e.g., Exam, Final, Grading Period). 
         is part of identity

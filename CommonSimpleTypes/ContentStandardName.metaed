@@ -1,0 +1,4 @@
+Common String ContentStandardName
+    documentation 'The name of the content standard, for example Common Core.
+    min length 1
+    max length 65

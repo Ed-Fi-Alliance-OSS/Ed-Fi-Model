@@ -3,13 +3,10 @@ Domain Entity StudentGradebookEntry [589]
     date DateFulfilled [1751]
         documentation 'The date an assignment was turned in or the date of an assessment.
         is optional
-    string GradeEarned [1754]
+    shared string GradeEarned named LetterGradeEarned [1754]
         documentation 'A final or interim (grading period) indicator of student performance in a class 
                       'as submitted by the instructor.
         is optional
-        with context Letter
-        min length 1
-        max length 20
     shared decimal NumericGrade named NumericGradeEarned [1755]
         documentation 'A final or interim (grading period) indicator of student performance in a class 
                       'as submitted by the instructor.
@@ -17,12 +14,10 @@ Domain Entity StudentGradebookEntry [589]
     descriptor CompetencyLevel [1750]
         documentation 'The CompetencyLevel assessed for the student for the referenced LearningObjective.
         is optional
-    string DiagnosticStatement [1752]
+    shared string DiagnosticStatement named DiagnosticStatement [1752]
         documentation 'A statement provided by the teacher that provides information in addition to the 
                       'grade or assessment score.
         is optional
-        min length 1
-        max length 1024
     reference StudentSectionAssociation [1756]
         documentation 'Relates the student associated with the GradebookEntry.
         is part of identity

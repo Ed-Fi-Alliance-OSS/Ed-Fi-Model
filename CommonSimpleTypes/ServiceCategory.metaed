@@ -1,0 +1,4 @@
+Common String ServiceCategory
+    documentation 'The category of service provided by a program.
+    min length 1
+    max length 50

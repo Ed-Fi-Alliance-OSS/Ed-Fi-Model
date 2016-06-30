@@ -51,11 +51,9 @@ Domain Entity AssessmentFamily [541]
         documentation 'The month, day, and year that the conceptual design for the AssessmentFamily 
                       'was most recently revised substantially.
         is optional
-    string Nomenclature [1250]
+    shared string Nomenclature named Nomenclature [1250]
         documentation 'Reflects the specific nomenclature used for this level of AssessmentFamily.
         is optional
-        min length 1
-        max length 35
     descriptor AssessmentPeriod [1246]
         documentation 'The periods or windows defined in which an assessment is supposed to be 
                       'administered.

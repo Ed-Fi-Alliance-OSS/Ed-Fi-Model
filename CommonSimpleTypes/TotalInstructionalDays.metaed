@@ -1,0 +1,3 @@
+Common Integer TotalInstructionalDays
+    documentation 'Total days available for educational instruction during the grading period.
+	min value 0

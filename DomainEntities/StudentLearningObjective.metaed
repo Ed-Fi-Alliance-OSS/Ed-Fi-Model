@@ -7,12 +7,10 @@ Domain Entity StudentLearningObjective [591]
     descriptor CompetencyLevel [1760]
         documentation 'The CompetencyLevel assessed for the student for the referenced LearningObjective.
         is required
-    string DiagnosticStatement [1761]
+    shared string DiagnosticStatement named DiagnosticStatement [1761]
         documentation 'A statement provided by the teacher that provides information in addition to the 
                       'grade or assessment score.
         is optional
-        min length 1
-        max length 1024
     reference GradingPeriod [1762]
         documentation 'Relates the LearningObjective to a grading period.
         is part of identity

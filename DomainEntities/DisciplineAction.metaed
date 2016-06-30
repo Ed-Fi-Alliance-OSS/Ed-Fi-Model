@@ -1,11 +1,9 @@
 Domain Entity DisciplineAction [553]
     documentation 'This event entity represents actions taken by an education organization after a 
                   'disruptive event that is recorded as a discipline incident.
-    string DisciplineActionIdentifier [1337]
+    shared string DisciplineActionIdentifier named DisciplineActionIdentifier [1337]
         documentation 'Identifier assigned by the education organization to the DisciplineAction.
         is part of identity
-        min length 1
-        max length 20
     descriptor Discipline [1336]
         documentation 'Type of action, such as removal from the classroom, used to discipline the 
                       'student involved as a perpetrator in a discipline incident.

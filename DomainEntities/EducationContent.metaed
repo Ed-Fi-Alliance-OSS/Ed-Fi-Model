@@ -4,11 +4,9 @@ Domain Entity EducationContent [555]
                   'course materials, modules, intervention descriptions, textbooks, streaming 
                   'videos, tests, software, and any other tools, materials, or techniques used to 
                   'support access to knowledge.
-    string ContentIdentifier [1365]
+    shared string ContentIdentifier named ContentIdentifier [1365]
         documentation 'A unique identifier for the EducationContent.
         is part of identity
-        min length 1
-        max length 225
     include LearningResourceChoice [2510]
         documentation 'NEEDS DOCUMENTATION
         is required

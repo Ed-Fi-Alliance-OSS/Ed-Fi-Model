@@ -5,10 +5,8 @@ Domain Entity ClassPeriod [546]
     reference School [1274]
         documentation 'Relates the ClassPeriod to the school.
         is part of identity
-    string ClassPeriodName [1273]
+    shared string ClassPeriodName named ClassPeriodName [1273]
         documentation 'An indication of the portion of a typical daily session in which students 
                       'receive instruction in a specified subject (e.g., morning, sixth period, block 
                       'period, or AB schedules). 
         is part of identity
-        min length 1
-        max length 20

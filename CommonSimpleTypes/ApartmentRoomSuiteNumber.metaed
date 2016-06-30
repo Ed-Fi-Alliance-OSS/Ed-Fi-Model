@@ -1,0 +1,4 @@
+Common String ApartmentRoomSuiteNumber
+    documentation 'The apartment, room, or suite number of an address.
+    min length 1
+    max length 50

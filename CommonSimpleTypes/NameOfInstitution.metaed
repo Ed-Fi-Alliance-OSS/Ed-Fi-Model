@@ -1,0 +1,4 @@
+Common String NameOfInstitution
+    documentation 'The full, legally accepted name of the institution.
+    min length 1
+    max length 75

@@ -33,13 +33,10 @@ Domain Entity CourseTranscript [552]
     enumeration MethodCreditEarned [1331]
         documentation 'The method the credits were earned (e.g., Classroom, Examination, Transfer).
         is optional
-    string GradeEarned [1326]
+    shared string GradeEarned named FinalLetterGradeEarned [1326]
         documentation 'The final indicator of student performance in a class as submitted by the 
                       'instructor.
         is optional
-        with context FinalLetter
-        min length 1
-        max length 20
     shared decimal NumericGrade named FinalNumericGradeEarned [1327]
         documentation 'The final indicator of student performance in a class as submitted by the 
                       'instructor.
@@ -58,7 +55,7 @@ Domain Entity CourseTranscript [552]
     reference StudentAcademicRecord [1333]
         documentation 'Link to the student's academic record for a semester/school year.
         is part of identity
-    string CourseTitle [1322]
+    shared string CourseTitle named CourseTitle [1322]
         documentation 'The descriptive name given to a course of study offered in a school or other 
                       'institution or organization. In departmentalized classes at the elementary, 
                       'secondary, and postsecondary levels (and for staff development activities), 
@@ -67,15 +64,10 @@ Domain Entity CourseTranscript [552]
                       'to any portion of the instruction for which a grade or report is assigned (e.g., 
                       'reading, composition, spelling, language arts).
         is optional
-        min length 1
-        max length 60
-    string CourseTitle [1330]
+    shared string CourseTitle named AlternativeCourseTitle [1330]
         documentation 'The descriptive name given to a course of study offered in the school, if 
                       'different from the CourseTitle. 
         is optional
-        with context Alternative
-        min length 1
-        max length 60
     shared string LocalCourseCode named CourseCode [1329]
         documentation 'The local code assigned by the school that identifies the course offering, the code 
                       'from an external educational organization, or other alternate course code.
