@@ -1,4 +1,4 @@
-Common String CorrectResponse
+Common String CorrectResponse [29]
     documentation 'The correct response for the assessment item.
     min length 1
     max length 20

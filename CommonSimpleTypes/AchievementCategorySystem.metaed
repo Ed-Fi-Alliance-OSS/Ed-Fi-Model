@@ -1,4 +1,4 @@
-Common String AchievementCategorySystem
+Common String AchievementCategorySystem [3]
     documentation 'The system that defines the categories by which an achievement is attributed to the learner.
     min length 1
     max length 60
