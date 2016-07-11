@@ -36,6 +36,9 @@ Domain Entity Student [585]
         documentation 'The set of elements that describes an address, including the street address, 
                       'city, state, and ZIP code.
         is optional collection
+    include AddressHistory [9902]
+        documentation 'The address history for a student. Typically contains past addresses, but may contain current and future addresses.
+        is optional collection         
     include InternationalAddress [1689]
         documentation 'The set of elements that describes an international address.
         is optional collection
@@ -100,6 +103,9 @@ Domain Entity Student [585]
         documentation 'An indication that the student has been identified as limited English proficient 
                       'by the Language Proficiency Assessment Committee (LPAC), or English proficient.
         is optional
+    include LimitedEnglishProficiencyHistory [9903]
+        documentation 'The history of the Limited English Proficiency indicator for the student. Generally only contains past, non-current statuses and the effective date range for the status.
+        is optional collection         
     include Language [1690]
         documentation 'The language(s) the individual uses to communicate.
         is optional collection

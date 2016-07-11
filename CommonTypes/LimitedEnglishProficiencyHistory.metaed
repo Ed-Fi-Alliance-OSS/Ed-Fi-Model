@@ -1,0 +1,13 @@
+Common Type LimitedEnglishProficiencyHistory [99533]
+    documentation 'An indicator or metric computed for the student (e.g., at risk) to influence
+                  'more effective education or direct specific interventions.
+    date BeginDate [99940]
+        documentation 'The date when the indicator was assigned or computed.
+        is part of identity
+    date EndDate [99942]
+        documentation 'The date the indicator or metric was sunset or removed.
+        is optional
+    descriptor LimitedEnglishProficiency [991692]
+        documentation 'An indication that the student has been identified as limited English
+                      'proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.
+        is optional

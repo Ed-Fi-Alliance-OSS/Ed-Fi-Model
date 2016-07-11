@@ -23,6 +23,9 @@ Domain Entity Parent [573]
         documentation 'Parent's address, if different from the student address.
         is optional collection
         is queryable field
+    include AddressHistory [9900]
+        documentation 'The address history for a parent. Typically contains past addresses, but may contain current and future addresses.
+        is optional collection        
     include InternationalAddress [1558]
         documentation 'The set of elements that describes an international address.
         is optional collection

@@ -39,14 +39,6 @@ Common Type Address [481]
     shared string Coordinate named Longitude [726]
         documentation 'The geographic longitude of the physical address.
         is optional
-    date BeginDate [720]
-        documentation 'The first date the address is valid. For physical addresses, the date 
-                      'the person moved to that address.
-        is optional
-    date EndDate [724]
-        documentation 'The last date the address is valid. For physical addresses, this would be the date 
-                      'the person moved from that address.
-        is optional
     enumeration AddressType [718]
         documentation 'The type of address listed for an individual or organization.    
                       'For example:  Physical Address, Mailing Address, Home Address, etc.)

@@ -47,6 +47,9 @@ Domain Entity Staff [583]
         documentation 'The set of elements that describes an address, including the street address, 
                       'city, state, and ZIP code.
         is optional collection
+    include AddressHistory [9901]
+        documentation 'The address history for a staff member. Typically contains past addresses, but may contain current and future addresses.
+        is optional collection        
     include InternationalAddress [1654]
         documentation 'The set of elements that describes an international address.
         is optional collection
