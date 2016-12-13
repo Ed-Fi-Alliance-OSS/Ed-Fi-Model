@@ -3,7 +3,6 @@ Domain SchoolCalendar
                   'sessions, and grading periods defined for a school year. The
                   'defined sessions for a school year are associated with the education
                   'organization (e.g., SEA, LEA) or school that defines the calendar.
-    domain item AcademicWeek
     domain item CalendarDate
     domain item EducationOrganization
     domain item GradingPeriod
