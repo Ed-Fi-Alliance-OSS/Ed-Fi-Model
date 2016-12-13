@@ -17,7 +17,8 @@ Inline Common Type BirthData [488]
                       'an individual is born.
         is optional
     descriptor Country [752]
-        documentation 'The country in which an individual is born.
+        documentation 'The country in which an individual is born. It is strongly recommended that 
+                      'entries use only ISO 3166 2-letter country codes.
         is optional
         with context Birth
     date DateEnteredUS [756]
