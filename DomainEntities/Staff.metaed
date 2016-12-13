@@ -64,7 +64,7 @@ Domain Entity Staff [583]
                       'Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, 
                       'regardless of race. The term, "Spanish origin," can be used in addition to 
                       '"Hispanic or Latino."
-        is required
+        is optional
         is queryable field
     enumeration OldEthnicity [1658]
         documentation 'Previous definition of Ethnicity combining Hispanic/Latino and race:
