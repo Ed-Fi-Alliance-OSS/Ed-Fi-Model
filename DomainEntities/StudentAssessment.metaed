@@ -111,3 +111,8 @@ Domain Entity StudentAssessment [587]
     include StudentObjectiveAssessment [1740]
         documentation 'NEEDS DOCUMENTATION
         is optional collection
+    enumeration SchoolYear [2538]
+        documentation 'The school year for which the assessment was administered to a student. 
+                      'Among other uses, handles cases in which a student takes a prior-year 
+                      'exam in a subsequent school year during an exam re-test.
+        is optional
