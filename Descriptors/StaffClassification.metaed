@@ -2,7 +2,7 @@ Descriptor StaffClassification [237]
     documentation 'This descriptor defines an individual's title of employment, official status or 
                   'rank.
     with optional map type
-        documentation 'An individual's title of employment, official status or rank.
+        documentation 'The mapping to a known StaffClassification.
         item Assistant Principal [237-001]
         item Assistant Superintendent [237-002]
         item Counselor [237-003]

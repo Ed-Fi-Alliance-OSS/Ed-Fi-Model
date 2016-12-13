@@ -2,8 +2,7 @@ Descriptor Responsibility [223]
     documentation 'This descriptor defines types of responsibility an education organization may 
                   'have for a student (e.g., accountability, attendance, funding).
     with optional map type
-        documentation 'Indications of an education organization's responsibility for a student, 
-                      'such as accountability, attendance, funding, etc.
+        documentation 'The mapping to a known Responsibility.
         item Accountability [223-001]
         item Attendance [223-002]
         item Discipline [223-007]
