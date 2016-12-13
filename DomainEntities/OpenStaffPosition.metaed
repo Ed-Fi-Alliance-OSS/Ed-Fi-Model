@@ -16,10 +16,10 @@ Domain Entity OpenStaffPosition [572]
                       'Volunteer/no contract
                       '
                       '...
-        is part of identity
+        is required
     descriptor StaffClassification [1555]
         documentation 'The titles of employment, official status, or rank of education staff.
-        is part of identity
+        is required
     shared string PositionTitle named PositionTitle [1551]
         documentation 'The descriptive name of an individual's position.
         is optional
@@ -50,7 +50,7 @@ Domain Entity OpenStaffPosition [572]
         is optional collection
     date DatePosted [1546]
         documentation 'Date the OpenStaffPosition was posted.
-        is part of identity
+        is required
     date DatePostingRemoved [1547]
         documentation 'The date the posting was removed or filled.
         is optional
