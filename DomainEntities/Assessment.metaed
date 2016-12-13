@@ -91,7 +91,7 @@ Domain Entity Assessment [540]
     descriptor Language [1230]
         documentation 'An indication of the languages in which the assessment is designed.
         is optional collection
-    shared integer Version named Version [1240]
+    shared integer AssessmentVersion named Version [1240]
         documentation 'The version identifier for the assessment.
         is part of identity
         is queryable field
