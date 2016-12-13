@@ -11,7 +11,7 @@ Common Type ScoreResult [524]
         documentation 'The datatype of the result. The results can be expressed as a number, percentile, 
                       'range, level, etc.
         is required
-    enumeration AssessmentReportingMethod [909]
+    descriptor AssessmentReportingMethod [2542]
         documentation 'The method that the administrator of the assessment uses to report the 
                       'performance and achievement of all students. It may be a qualitative method such 
                       'as performance level descriptors or a quantitative method such as a numerical 

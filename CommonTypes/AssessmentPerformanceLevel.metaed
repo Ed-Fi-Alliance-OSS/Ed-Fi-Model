@@ -10,7 +10,7 @@ Common Type AssessmentPerformanceLevel [484]
     descriptor PerformanceLevel [740]
         documentation 'The performance level(s) defined for the assessment.
         is part of identity
-    enumeration AssessmentReportingMethod [737]
+    descriptor AssessmentReportingMethod [2540]
         documentation 'The method that the instructor of the class uses to report the performance and 
                       'achievement of all students. It may be a qualitative method such as 
                       'individualized teacher comments or a quantitative method such as a letter or 
