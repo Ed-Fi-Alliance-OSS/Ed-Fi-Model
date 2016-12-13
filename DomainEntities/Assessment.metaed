@@ -109,13 +109,12 @@ Domain Entity Assessment [540]
     descriptor AssessmentPeriod [1226]
         documentation 'The period or window in which an assessment is supposed to be administered.
         is optional
-    reference AssessmentFamily [1222]
-        documentation 'References the AssessmentFamily this Assessment is a member of.
+    shared string AssessmentFamily named AssessmentFamily [2544]
+        documentation 'The AssessmentFamily this Assessment is a member of.
         is optional
-        is queryable field
     include SectionOrProgramChoice [2509]
         documentation 'The Section(s) to which the Assessment is associated.
         is optional
     shared string URI named Namespace [2300]
         documentation 'Namespace for the Assessment.
-        is optional
+        is required
