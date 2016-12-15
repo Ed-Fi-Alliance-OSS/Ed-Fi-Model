@@ -33,6 +33,3 @@ Domain Entity Session [582]
     reference GradingPeriod [1640]
         documentation 'Grading periods associated with the calendar.
         is required collection
-    reference AcademicWeek [1637]
-        documentation 'The academic weeks associated with the school year.
-        is optional collection
