@@ -1,7 +1,7 @@
 Descriptor Weapon [250]
     documentation 'This descriptor defines the types of weapon used during an incident.
     with optional map type
-        documentation 'The category for the types of weapon used during an incident.
+        documentation 'The mapping to a known Weapon.
         item Handgun [250-002]
             documentation 'Any firearm which has a short stock and is designed to be held and fired by the 
                           'use of a single hand.

@@ -1,7 +1,7 @@
 Descriptor EducationOrganizationIdentificationSystem [167]
     documentation 'This descriptor defines the originating record system and code that is used for record-keeping purposes by education organizations.
     with optional map type
-        documentation 'A coding scheme that is used for identification and record-keeping purposes by education organizations, social services or other agencies to refer to an education organization.
+        documentation 'The mapping to a known EducationOrganizationIdentificationSystem.
         item ACT [167-001]
         item DUNS [167-002]
         item Federal [167-003]

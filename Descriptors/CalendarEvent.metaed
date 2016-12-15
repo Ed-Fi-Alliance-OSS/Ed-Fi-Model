@@ -3,21 +3,7 @@ Descriptor CalendarEvent [135]
                   '(e.g., Instructional day, Teacher only day, Holiday, Make-up day, Weather day, 
                   'Student late arrival/early dismissal day).
     with map type
-        documentation 'The type of scheduled or unscheduled event for the day. For example:
-                      '
-                      'Instructional day
-                      '
-                      'Teacher only day
-                      '
-                      'Holiday
-                      '
-                      'Make-up day
-                      '
-                      'Weather day
-                      '
-                      'Student late arrival/early dismissal
-                      '
-                      '...
+        documentation 'The mapping to a known CalendarEvent.
         item Emergency day [135-003]
         item Holiday [135-004]
         item Instructional day [135-005]
