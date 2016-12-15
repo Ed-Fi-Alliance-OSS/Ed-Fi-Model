@@ -89,3 +89,6 @@ Domain Entity Course [550]
     reference LearningObjective [1305]
         documentation 'Learning Objectives to be mastered in the course.
         is optional collection
+    shared integer MaxCompletionsForCredit named MaxCompletionsForCredit [2546]
+        documentation 'Designates how many times the course may be taken with credit received by the student.
+        is optional
