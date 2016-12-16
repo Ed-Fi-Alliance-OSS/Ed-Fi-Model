@@ -29,7 +29,7 @@ Domain Entity Program [576]
         documentation 'Ultimate and intermediate providers of funds for a particular educational 
                       'or service program or activity, or for an individual's participation in the program 
                       'or activity (e.g., Federal, State, ESC, District, School, Private Organization).
-        is optional
+        is optional collection
     descriptor Service [1581]
         documentation 'Defines the services this program provides to students.
         is optional collection
