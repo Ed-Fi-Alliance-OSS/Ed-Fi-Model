@@ -14,6 +14,8 @@ Enumeration Relation [218]
         documentation 'The person is the learner's daughter.
     item DaughterInLaw [218-007]
         documentation 'The person is the learner's daughterinlaw.
+    item Emergency [218-046]
+        documentation 'The person is the learner's emergency.
     item Employer [218-008]
         documentation 'The person is the learner's employer.
     item Father [218-009]
@@ -34,10 +36,14 @@ Enumeration Relation [218]
         documentation 'The person is the learner's foster parent.
     item Friend [218-017]
         documentation 'The person is the learner's friend.
+    item Godparent [218-049]
+        documentation 'The person is the learner's godparent.
     item Grandfather [218-018]
         documentation 'The person is the learner's grandfather.
     item Grandmother [218-019]
         documentation 'The person is the learner's grandmother.
+    item Grandparent [218-042]
+        documentation 'The person is the learner's grandparent.
     item Great aunt [218-020]
         documentation 'The person is the learner's great aunt.
     item Great uncle [218-022]
@@ -52,20 +58,38 @@ Enumeration Relation [218]
         documentation 'The person is the learner's mother.
     item Mother, step [218-025]
         documentation 'The person is the learner's step mother.
+    item MotherInLaw [218-040]
+        documentation 'The person is the learner's mother in law.
     item MothersCivilPartner [218-026]
         documentation 'The person is the learner's mother's civil partner.
+    item Neighbor [218-048]
+        documentation 'The person is the learner's neighbor.
     item Nephew [218-028]
         documentation 'The person is the learner's nephew.
     item Niece [218-029]
         documentation 'The person is the learner's niece.
     item Other [218-030]
         documentation 'The person is the learner's other.
+    item Parent [218-041]
+        documentation 'The person is the learner's parent.
+    item Parent, step [218-044]
+        documentation 'The person is the learner's parent, step.
+    item Relative [218-043]
+        documentation 'The person is the learner's relative.
+    item Sibling [218-045]
+        documentation 'The person is the learner's sibling.
     item SignificantOther [218-031]
         documentation 'The person is the learner's significant other.
     item Sister [218-032]
         documentation 'The person is the learner's sister.
+    item SisterInLaw [218-038]
+        documentation 'The person is the learner's sister in law.
     item Son [218-033]
         documentation 'The person is the learner's son.
+    item SonInLaw [218-039]
+        documentation 'The person is the learner's son in law.
+    item Spouse [218-047]
+        documentation 'The person is the learner's spouse.
     item Unknown [218-035]
         documentation 'The person is the learner's unknown.
     item Uncle [218-034]
