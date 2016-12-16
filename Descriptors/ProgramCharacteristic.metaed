@@ -1,6 +1,3 @@
 Descriptor ProgramCharacteristic [210]
     documentation 'This descriptor defines important characteristics of the Program, such as 
                   'categories or particular indications.
-    with optional map type
-        documentation 'The mapping to a known ProgramCharacteristic.
-        item A McKinney-Vento Program for Homelessness [210-001]
