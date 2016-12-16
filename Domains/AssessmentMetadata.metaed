@@ -17,7 +17,6 @@ Subdomain AssessmentMetadata of Assessment
                   'to assess the Developmental Domains by an Early Learning program,
                   'then the association shall be with Program.
     domain item Assessment
-    domain item AssessmentFamily
     domain item AssessmentItem
     domain item ObjectiveAssessment
     domain item Program

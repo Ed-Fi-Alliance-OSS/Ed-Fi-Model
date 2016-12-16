@@ -15,7 +15,6 @@ Interchange AssessmentMetadata [2516]
     use case documentation '1. Exchange metadata for standardized state or local assessment(s).
                            '
                            '2. Exchange metadata for classroom or benchmark assessment(s).
-    element AssessmentFamily [2516-001]
     element Assessment [2516-002]
     element ObjectiveAssessment [2516-003]
     element AssessmentItem [2516-004]

@@ -10,7 +10,6 @@ Domain Assessment
                   '* Student Assessment Results that follow a parallel structure of StudentAssessment,
                   'StudentObjectiveAssessment, and StudentAssessmentItem
     domain item Assessment
-    domain item AssessmentFamily
     domain item AssessmentItem
     domain item LearningObjective
     domain item LearningStandard
