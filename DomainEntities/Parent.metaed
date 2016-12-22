@@ -41,3 +41,6 @@ Domain Entity Parent [573]
     reference EducationOrganization [2404]
         documentation 'Provide user information to lookup and link to an existing educational organization record in the receiving system.
         is queryable only
+    include Language [2547]
+        documentation 'The language(s) the individual uses to communicate.
+        is optional collection
