@@ -5,6 +5,7 @@ Descriptor AcademicSubject [121]
         documentation 'The mapping to a known AcademicSubject.
         item Composite [121-002]
         item Critical Reading [121-003]
+        item Cross Subject [121-019]
         item English [121-004]
         item English Language Arts [121-005]
         item Reading [121-013]
