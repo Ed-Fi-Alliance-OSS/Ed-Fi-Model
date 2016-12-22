@@ -12,3 +12,6 @@ Common Type ElectronicMail [505]
         documentation 'An indication that the electronic mail address should be used as the principal 
                       'electronic mail address for an individual or organization.
         is optional
+    bool DoNotPublishIndicator [2551]
+        documentation 'An indication that the electronic email address should not be published.
+        is optional

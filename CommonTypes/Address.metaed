@@ -51,3 +51,6 @@ Common Type Address [481]
         documentation 'The type of address listed for an individual or organization.    
                       'For example:  Physical Address, Mailing Address, Home Address, etc.)
         is part of identity
+    bool DoNotPublishIndicator [2552]
+        documentation 'An indication that the address should not be published.
+        is optional
