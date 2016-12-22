@@ -1,7 +1,4 @@
 Descriptor Language [189]
-    documentation 'This descriptor defines the language(s) that are spoken or written.
-    with optional map type
-        documentation 'The mapping to a known Language.
-        item Spanish [189-003]
-        item English [189-001]
-        item Other [189-002]
+    documentation 'This descriptor defines the language(s) that are spoken or written. 
+                  'It is strongly recommended that entries use only ISO 639-3 language codes: 
+                  'for CodeValue, use the 3 character code; for ShortDescription and Description use the full language name.

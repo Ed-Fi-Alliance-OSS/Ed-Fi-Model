@@ -101,8 +101,8 @@ Domain Entity Student [585]
                       'by the Language Proficiency Assessment Committee (LPAC), or English proficient.
         is optional
     include Language [1690]
-        documentation 'The language(s) the individual uses to communicate.
-        is optional collection
+        documentation 'The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.
+        is optional collection 
     include Disability [1684]
         documentation 'The disability condition(s) that best describes an individual's impairment.
         is optional collection
