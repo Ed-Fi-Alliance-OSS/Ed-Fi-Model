@@ -47,7 +47,7 @@ Domain Entity Student [585]
                       'user within the network to which the individual or organization belongs.
         is optional collection
     shared string ProfileThumbnail named ProfileThumbnail [1697]
-        documentation 'Locator for the student photo.
+        documentation 'Locator reference for the student photo. The specification for that reference is left to local definition.
         is optional
     bool HispanicLatinoEthnicity [1688]
         documentation 'An indication that the individual traces his or her origin or descent to Mexico, 
