@@ -121,3 +121,7 @@ Domain Entity Staff [583]
     reference EducationOrganization [2357]
         documentation 'Provide user information to lookup and link to an existing educational organization record in the receiving system.
         is queryable only
+    include Recognition [2550]
+        documentation 'Recognitions given to the staff for accomplishments in a co-curricular 
+                      'or extracurricular activity.
+        is optional collection
