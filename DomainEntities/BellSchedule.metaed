@@ -11,7 +11,7 @@ Domain Entity BellSchedule [543]
         is part of identity
         is weak
     include MeetingTime [1265]
-        documentation 'The times at which this BellSchedule is intended to meet.
+        documentation 'The MeetingTimes that compose this BellSchedule.
         is required collection
     date CalendarDate [1263]
         documentation 'The calendar dates for which the BellSchedule applies.
