@@ -42,5 +42,5 @@ Domain Entity Parent [573]
         documentation 'Provide user information to lookup and link to an existing educational organization record in the receiving system.
         is queryable only
     include Language [2547]
-        documentation 'The language(s) the individual uses to communicate.
+        documentation 'The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.
         is optional collection
