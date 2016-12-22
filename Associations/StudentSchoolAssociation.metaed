@@ -9,8 +9,7 @@ Association StudentSchoolAssociation [613]
     domain entity School [1125]
         documentation 'School enrolling the Student.
     bool PrimarySchool [1121]
-        documentation 'Indicates if a given enrollment record should be considered the primary record 
-                      'for a student. If omitted, the default is true.
+        documentation 'Indicates if a given enrollment record should be considered the primary record for a student.
         is optional
     enumeration SchoolYear [1126]
         documentation 'The school year associated with the student's enrollment.
