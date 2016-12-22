@@ -10,7 +10,7 @@ Domain Entity RestraintEvent [578]
         is part of identity
     date EventDate [1594]
         documentation 'Month, day, and year of the RestraintEvent.
-        is part of identity
+        is required
     enumeration EducationalEnvironment [1593]
         documentation 'The setting where the RestraintEvent was exercised.
         is optional
