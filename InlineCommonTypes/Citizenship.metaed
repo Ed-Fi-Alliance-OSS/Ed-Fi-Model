@@ -1,5 +1,5 @@
 Inline Common Type Citizenship [490]
-    documentation 'Describes  information relative to identity and citizenship of a person.
+    documentation 'Contains information relative to U.S. citizenship status and its associated probationary documentation.
     enumeration CitizenshipStatus [761]
         documentation 'An indicator of whether or not the person is a U.S. citizen.
         is required

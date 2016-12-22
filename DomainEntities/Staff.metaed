@@ -87,8 +87,7 @@ Domain Entity Staff [583]
         is optional collection
         is queryable field
     include Citizenship [1648]
-        documentation 'Contains information relative to citizenship status and its associated 
-                      'probationary documentation.
+        documentation 'Contains information relative to U.S. citizenship status and its associated probationary documentation.
         is optional
     include Language [1655]
         documentation 'The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.

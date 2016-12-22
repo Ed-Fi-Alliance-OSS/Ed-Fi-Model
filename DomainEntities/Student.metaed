@@ -77,8 +77,7 @@ Domain Entity Student [585]
         is optional collection
         is queryable field
     include Citizenship [1682]
-        documentation 'Contains information relative to citizenship status and its associated 
-                      'probationary documentation.
+        documentation 'Contains information relative to U.S. citizenship status and its associated probationary documentation.
         is optional
     bool EconomicDisadvantaged [1686]
         documentation 'An indication of inadequate financial condition of an individual's family, as 
