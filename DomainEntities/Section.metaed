@@ -90,7 +90,7 @@ Domain Entity Section [580]
         is optional
     reference ClassPeriod [1621]
         documentation 'The class period during which the Section meets.
-        is optional
+        is optional collection
     reference Program [1628]
         documentation 'Optional reference to program (e.g., CTE) to which the Section is associated.
         is optional collection
