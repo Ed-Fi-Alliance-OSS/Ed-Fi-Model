@@ -83,8 +83,7 @@ Domain Entity Section [580]
         is queryable field
     reference School [1629]
         documentation 'The school where the Section is taught.
-        is required
-        is queryable field
+        is optional
     reference Location [1625]
         documentation 'The location, typically a classroom, where the Section meets.
         is optional
