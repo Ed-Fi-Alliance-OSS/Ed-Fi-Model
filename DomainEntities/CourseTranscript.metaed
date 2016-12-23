@@ -47,7 +47,7 @@ Domain Entity CourseTranscript [552]
         is optional
     reference Course [1320]
         documentation 'The course recorded in the course transcript entry.
-        is part of identity
+        is optional
         with context Course
     reference School [1332]
         documentation 'The School that provided the reported instruction.
@@ -73,3 +73,7 @@ Domain Entity CourseTranscript [552]
                       'from an external educational organization, or other alternate course code.
         is optional
         with context Alternative
+    reference ExternalEducationOrganization
+        documentation 'Optional association between CourseTranscript and ExternalEdOrg is designed to 
+                      'capture cases in which the student takes a course via an ExternalEducationOrganization (like an enrolled student taking a Khan Academy course).
+        is optional
