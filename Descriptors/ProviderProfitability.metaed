@@ -1,0 +1,7 @@
+Descriptor ProviderProfitability [2585]
+    documentation 'This descriptor indicates the profitability status of the provider.
+    with map type
+        documentation 'The mapping to a known ProviderProfitability.
+        item Government Run [2585-001]
+        item ForProfit [2585-002]
+        item Nonprofit [2585-003]
