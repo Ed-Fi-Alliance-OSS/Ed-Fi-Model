@@ -1,0 +1,15 @@
+Domain Entity Calendar [545]
+    documentation 'A set of dates associated with an organization. 
+    string CalendarName
+        documentation 'A description or identification of the calendar.
+        is part of identity
+        
+    date Date [1271]
+        documentation 'The month, day, and year of the CalendarDate.
+        is part of identity
+    reference School [2426]
+        documentation 'The school for which the calendar event is defined.
+        is part of identity
+    include CalendarEvent [1270]
+        documentation 'Additional description of the date such as date classification and duration of the event.
+        is required collection
