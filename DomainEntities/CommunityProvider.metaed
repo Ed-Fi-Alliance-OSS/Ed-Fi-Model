@@ -1,7 +1,7 @@
 Domain Entity CommunityProvider based on EducationOrganization [2577]
     documentation 'This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.
     integer CommunityProviderIdentifier [2585]
-        documentation 'The identifier assigned to a school by the State Education Agency (SEA).
+        documentation 'The identifier assigned to a CommunityProvider.
         renames identity property EducationOrganizationId
         is queryable field
     reference CommunityOrganization [2578]
