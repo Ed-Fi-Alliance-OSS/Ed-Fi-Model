@@ -17,8 +17,8 @@ Domain Entity CommunityProvider based on EducationOrganization [2577]
         documentation 'Indicates the category of the provier.
         is required
     bool SchoolIndicator [2582]
-        documentation 'An indication whether or not the community provider is a school.
+        documentation 'An indication of whether the community provider is a school.
         is optional
     bool LicenseExemptIndicator [2583]
-        documentation 'An indication as to whether or not the provider is exempt from having a license.
+        documentation 'An indication of whether the provider is exempt from having a license.
         is optional
