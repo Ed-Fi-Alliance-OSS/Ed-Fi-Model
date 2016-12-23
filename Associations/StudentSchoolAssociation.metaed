@@ -74,3 +74,6 @@ Association StudentSchoolAssociation [613]
                       'profession, or farm and at the same time is enrolled in secondary, 
                       'postsecondary, or adult education.
         is optional
+    reference Calendar [2621]
+        documentation 'Reference to the Calendar associated with the StudentSchoolAssociation.
+        is optional collection

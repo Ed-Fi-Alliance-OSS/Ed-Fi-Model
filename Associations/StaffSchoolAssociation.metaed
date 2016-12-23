@@ -28,3 +28,6 @@ Association StaffSchoolAssociation [603]
         documentation 'The teaching field taught by an individual, for example English/Language Arts, 
                       'Reading, Mathematics, Science, Social Sciences, etc.
         is optional collection
+    reference Calendar [2620]
+        documentation 'Reference to the Calendar associated with the StaffSchoolAssociation.
+        is optional

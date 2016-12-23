@@ -18,7 +18,6 @@ Domain BellSchedule
                   '* A School may have multiple BellSchedules defined, and may have different
                   'BellSchedules on the same calendar time period (e.g., for different grades).
     domain item BellSchedule
-    domain item CalendarDate
     domain item ClassPeriod
     domain item EducationOrganization
     domain item MeetingTime
