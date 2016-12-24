@@ -9,4 +9,5 @@ Interchange EducationOrgCalendar [2518]
                            '3. Exchange grading period definitions.
     element Session [2518-001]
     element GradingPeriod [2518-002]
-    element CalendarDate [2518-003]
+    element Calendar [2518-004]
+    element CalendarEvent [2518-0505

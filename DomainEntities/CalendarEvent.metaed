@@ -1,0 +1,15 @@
+Domain Entity CalendarEvent [2610]
+    documentation 'The type of scheduled or unscheduled event for the day.
+    date Date [2611]
+        documentation 'The month, day, and year of the CalendarEvent.
+        is part of identity
+    descriptor CalendarEventCategory [2612]
+        documentation 'The type of scheduled or unscheduled event for the day. 
+        is part of identity
+    shared decimal EventDuration named EventDuration [2613]
+        documentation 'The amount of time for the event as recognized by the school: 1 day = 1, 
+                      '1/2 day = 0.5, 1/3 day = 0.33.
+        is required
+    reference Calendar [2614]
+        documentation 'Reference to the Calendar associatied to the CalendarEvent.
+        is part of identity

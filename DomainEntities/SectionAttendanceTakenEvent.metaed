@@ -3,8 +3,8 @@ Domain Entity SectionAttendanceTakenEvent [581]
     reference Section [1635]
         documentation 'NEEDS DOCUMENTATION
         is part of identity
-    reference CalendarDate [1633]
-        documentation 'NEEDS DOCUMENTATION
+    reference CalendarEvent [2625]
+        documentation 'Reference to the instructional day associated with SectionAttendanceEvent.
         is part of identity
     date EventDate [1634]
         documentation 'The date the SectionAttendanceTakenEvent was submitted, which could be a 

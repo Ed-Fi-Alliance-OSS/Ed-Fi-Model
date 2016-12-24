@@ -13,6 +13,6 @@ Domain Entity BellSchedule [543]
     include MeetingTime [1265]
         documentation 'The MeetingTimes that compose this BellSchedule.
         is required collection
-    date CalendarDate [1263]
-        documentation 'The calendar dates for which the BellSchedule applies.
+    date Date [1263]
+        documentation 'The dates for which the BellSchedule applies.
         is optional collection
