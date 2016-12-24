@@ -33,3 +33,5 @@ Domain EducationOrganization
     domain item LocalEducationAgency
     domain item School
     domain item StateEducationAgency
+    domain item CommunityOrganization
+    domain item CommunityProvider

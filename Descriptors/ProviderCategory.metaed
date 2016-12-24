@@ -1,0 +1,11 @@
+Descriptor ProviderCategory [2560]
+    documentation 'This descriptor holds the category of the provider.
+    with map type
+        documentation 'The mapping to a known ProviderCategory.
+        item Center-EC with SA [2560-001]
+        item Center-EC [2560-002]
+        item Center-SA Only [2560-003]
+        item Licensed Day Care Center [2560-004]
+        item Licensed Family Child Care [2560-005]
+        item Licensed Large Family Child Care [2560-006]
+        item Not Applicable [2560-007]
