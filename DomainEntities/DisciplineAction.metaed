@@ -41,6 +41,6 @@ Domain Entity DisciplineAction [553]
         is required
         with context Responsibility
     reference School [1335]
-        documentation 'Optional school where student is transferred for discipline.
+        documentation 'School where student is transferred for discipline.
         is optional
         with context Assignment
