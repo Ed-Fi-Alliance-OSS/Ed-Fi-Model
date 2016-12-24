@@ -14,3 +14,6 @@ Common Type Telephone [535]
         documentation 'An indication that the telephone number is technically capable of sending and 
                       'receiving Short Message Service (SMS) text messages.
         is optional
+    bool DoNotPublishIndicator [2553]
+        documentation 'An indication that the telephone number should not be published.
+        is optional
