@@ -1,4 +1,4 @@
 Common String ProfileThumbnail [86]
-    documentation 'ProfileThumbnail.
+    documentation 'Locator reference for the student photo. The specification for that reference is left to local definition.
     min length 1
-    max length 59
+    max length 255
