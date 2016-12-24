@@ -30,6 +30,3 @@ Domain Entity Session [582]
         documentation 'Relates the Session to the school.
         is part of identity
         is queryable field
-    reference GradingPeriod [1640]
-        documentation 'Grading periods associated with the calendar.
-        is required collection
