@@ -4,8 +4,7 @@ Domain Entity Section [580]
                   'period of time. A course offering may be offered to more than one section.
     allow primary key updates
     shared string SectionIdentifier named SectionIdentifier [1632]
-        documentation 'A unique identifier for the Section that is defined by the classroom, 
-                      'the subjects taught, and the instructors who are assigned.
+        documentation 'The local identifier assigned to a section.
         is part of identity
         is queryable field
     shared integer SequenceOfCourse named SequenceOfCourse [1631]
