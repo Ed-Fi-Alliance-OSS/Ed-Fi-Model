@@ -10,4 +10,4 @@ Interchange EducationOrgCalendar [2518]
     element Session [2518-001]
     element GradingPeriod [2518-002]
     element Calendar [2518-004]
-    element CalendarEvent [2518-0505
+    element CalendarEvent [2518-0505]

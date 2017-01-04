@@ -15,7 +15,6 @@ Domain Entity Calendar [2600]
     enumeration SchoolYear [2604]
         documentation 'The identifier for the school year associated with the Calendar.
         is part of identity
-        is queryable field 
     reference Session [2608]
         documentation 'Reference to the Session associated with the Calendar.
         is optional collection
