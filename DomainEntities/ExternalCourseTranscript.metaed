@@ -11,7 +11,7 @@ Domain Entity ExternalCourseTranscript [2740]
                       'Incomplete
                       '
                       'Withdrawn.
-        is optional
+        is required
     include Credits [2744]
         documentation 'The number of credits a student attempted and could earn for successfully 
                       'completing a given course.
