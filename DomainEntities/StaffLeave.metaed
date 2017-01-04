@@ -1,7 +1,7 @@
 Domain Entity StaffLeave [568]
     documentation 'This entity represents the recording of the dates of staff leave (e.g., 
                   'sick leave, personal time, vacation).
-    date BegintDate [2690]
+    date BeginDate [2690]
         documentation 'The begin date of the staff leave.
         is part of identity
     date EndDate [2691]
