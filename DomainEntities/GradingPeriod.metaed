@@ -2,7 +2,7 @@ Domain Entity GradingPeriod [561]
     documentation 'This entity represents the time span for which grades are reported.
     descriptor GradingPeriod [1433]
         documentation 'The name of the period for which grades are reported.
-        is required
+        is part of identity
     date BeginDate [1430]
         documentation 'Month, day, and year of the first day of the GradingPeriod.
         is required
