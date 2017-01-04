@@ -9,10 +9,10 @@ Association StaffEducationOrganizationContactAssociation [2675]
         is optional
     shared string ContactTitle named ContactTitle [2677]
         documentation 'The title of the contact in the context of the EducationOrganization
-        is optional
+        is part of identity
     descriptor ContactType [2678]
         documentation 'Indicates the type for the contact information.
-        is part of identity
+        is optional
     include ElectronicMail [2679]
         documentation 'The optional email for the contact associated with the EducationOrganization.
         is required
