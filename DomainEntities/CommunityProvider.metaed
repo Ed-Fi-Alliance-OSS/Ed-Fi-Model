@@ -14,7 +14,7 @@ Domain Entity CommunityProvider based on EducationOrganization [2577]
         documentation 'Indicates the status of the provider.
         is required
     descriptor ProviderCategory [2581]
-        documentation 'Indicates the category of the provier.
+        documentation 'Indicates the category of the provider.
         is required
     bool SchoolIndicator [2582]
         documentation 'An indication of whether the community provider is a school.
