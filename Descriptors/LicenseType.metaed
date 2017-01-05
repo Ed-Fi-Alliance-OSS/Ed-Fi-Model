@@ -1,0 +1,19 @@
+Descriptor LicenseType [2562]
+    documentation 'This descriptor defines the type of a license.
+    with map type
+        documentation 'The mapping to a known LicenseType.
+        item Before- and After-School Programs	[2562-001]
+        item Child Care Center	[2562-002]
+        item Child Care Program	[2562-003]
+        item Child Placing Agency	[2562-004]
+        item Day Treatment Program	[2562-005]
+        item Family Child Care Home	[2562-006]
+        item Independent Foster Home	[2562-007]
+        item Large Family Child Care Home	[2562-008]
+        item Night Care	[2562-009]
+        item Purchase of Care	[2562-010]
+        item Residential Child Care	[2562-011]
+        item School Age Program	[2562-012]
+        item Shelter Care	[2562-013]
+        item Specialized Day Care	[2562-014]
+        item Temporary Shelter Care	[2562-015]
