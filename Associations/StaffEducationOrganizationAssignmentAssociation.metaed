@@ -28,3 +28,6 @@ Association StaffEducationOrganizationAssignmentAssociation [600]
         is optional
         with context StaffEducationOrganizationEmploymentAssociation shorten to Employment
         merge StaffEducationOrganizationEmploymentAssociation.Staff with Staff
+    reference StaffCredential [2645]
+        documentation 'Reference to the StaffCredential that is the basis for this assignment.
+        is optional
