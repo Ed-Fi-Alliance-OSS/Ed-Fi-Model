@@ -3,10 +3,9 @@ Domain Entity LocalEducationAgency based on EducationOrganization [569]
                   'primarily to operate schools or to contract for educational services. It includes 
                   'school districts, charter schools, charter management organizations, or other 
                   'local administrative organizations.
-    integer LocalEducationAgencyId [1522]
-        documentation 'The identifier assigned to a local education agency by the State Education 
-                      'Agency (SEA).
-        renames identity property EducationOrganizationId
+    shared string IdentificationCode named EducationOrganizationIdentifier [1522]
+        documentation 'The identifier assigned to a LocalEducationAgency.
+        renames identity property EducationOrganizationIdentifier
         is queryable field
     enumeration LocalEducationAgencyCategory [1520]
         documentation 'The category of local education agency/district. For example: Independent or 

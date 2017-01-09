@@ -1,9 +1,9 @@
 Domain Entity School based on EducationOrganization [579]
     documentation 'This entity represents an educational organization that includes staff and 
                   'students who participate in classes and educational activity groups.
-    integer SchoolId [1614]
-        documentation 'The identifier assigned to a school by the State Education Agency (SEA).
-        renames identity property EducationOrganizationId
+    shared string IdentificationCode named EducationOrganizationIdentifier [1614]
+        documentation 'The identifier assigned to a School.
+        renames identity property EducationOrganizationIdentifier
         is queryable field
     descriptor GradeLevel [1605]
         documentation 'The grade levels served at the school.
