@@ -4,7 +4,7 @@ Domain Entity LocalEducationAgency based on EducationOrganization [569]
                   'school districts, charter schools, charter management organizations, or other 
                   'local administrative organizations.
     shared string IdentificationCode named EducationOrganizationIdentifier [1522]
-        documentation ' The identifier assigned to a LocalEducationAgency.
+        documentation 'The identifier assigned to a LocalEducationAgency.
         renames identity property EducationOrganizationIdentifier
         is queryable field
     enumeration LocalEducationAgencyCategory [1520]
