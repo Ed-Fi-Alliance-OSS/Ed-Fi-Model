@@ -1,15 +1,10 @@
 Abstract Entity EducationOrganization [556]
     documentation 'This entity represents any public or private institution, organization, or agency 
                   'that provides instructional or support services to students or staff at any level.
-    integer EducationOrganizationId [2321]
-        documentation 'The identifier assigned to an education agency by the State Education Agency 
-                      '(SEA).  Also known as the State LEA ID.
+    shared string IdentificationCode named EducationOrganizationIdentifier [1389]
+        documentation 'The identifier assigned to an education organization. 
         is part of identity
         is queryable field
-    shared string IdentificationCode named StateOrganizationId [1389]
-        documentation 'The identifier assigned to an education organization by the StateEducationAgency 
-                      '(SEA).
-        is required
     include EducationOrganizationIdentificationCode [1383]
         documentation 'A unique number or alphanumeric code assigned to an education organization by a 
                       'school, school system, a state, or other agency or entity.
