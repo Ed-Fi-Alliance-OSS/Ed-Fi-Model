@@ -3,7 +3,7 @@ Domain Entity EducationServiceCenter based on EducationOrganization [558]
                   'state law to develop, manage and provide services, programs, or other support 
                   'options (e.g., construction, food services, and technology services) to LEAs.
     shared string IdentificationCode named EducationOrganizationIdentifier [1406]
-        documentation ' The identifier assigned to an EducationServiceCenter.
+        documentation 'The identifier assigned to an EducationServiceCenter.
         renames identity property EducationOrganizationIdentifier
         is queryable field
     reference StateEducationAgency [1412]
