@@ -5,7 +5,7 @@ Domain Entity CommunityProvider based on EducationOrganization [2577]
         renames identity property EducationOrganizationId
         is queryable field
     reference CommunityOrganization [2578]
-        documentation 'CommunityOrganziation of which the CommunityProvider is an organizational component.
+        documentation 'CommunityOrganization of which the CommunityProvider is an organizational component.
         is optional
     descriptor ProviderProfitability [2579]
         documentation 'Indicates the profitability status of the provider.
