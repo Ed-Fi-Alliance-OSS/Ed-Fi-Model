@@ -1,0 +1,16 @@
+Domain Entity CommunityOrganization based on EducationOrganization [2575]
+    documentation 'This entity represents an administrative unit at the state level which exists primarily to operate local community providers.
+<<<<<<< 2240b9ab8e46a854a990c183457207f5341895b1
+    integer CommunityOrganizationId [2576]
+        documentation 'The identifier assigned to a CommunityOrganization.
+        renames identity property EducationOrganizationId
+||||||| merged common ancestors
+    integer CommunityOrganiztionId [2576]
+        documentation 'The identifier assigned to a CommunityOrganization.
+        renames identity property EducationOrganizationId
+=======
+    shared string IdentificationCode named EducationOrganizationIdentifier [2576]
+        documentation ' The identifier assigned to a CommunityOrganization.
+        renames identity property EducationOrganizationIdentifier
+>>>>>>> [MODL-56] Redesigned EducationOrganizationID system to resolve and remove ambiguity and allow the ID system to support non-state/SEA use cases more easily.
+        is queryable field
