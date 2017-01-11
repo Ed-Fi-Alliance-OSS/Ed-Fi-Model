@@ -39,3 +39,6 @@ Domain StudentAcademicRecord
     domain item StudentLearningObjective
     domain item StudentProgramAssociation
     domain item StudentSectionAssociation
+    domain item ExternalEducationOrganization
+    domain item ExternalStudentAcademicRecord
+    domain item ExternalCourseTranscript 

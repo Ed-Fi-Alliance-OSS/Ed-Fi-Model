@@ -5,7 +5,7 @@ Association StaffEducationOrganizationContactAssociation [2675]
     domain entity EducationOrganization [2682]
         documentation 'The EducationalOrganization to which the Staff member provides services.
     include Address [2676]
-        documentation 'The optional address for the contact associated with the EducationOrganizationunique.
+        documentation 'The optional address for the contact associated with the EducationOrganization.
         is optional
     shared string ContactTitle named ContactTitle [2677]
         documentation 'The title of the contact in the context of the EducationOrganization.
@@ -18,4 +18,4 @@ Association StaffEducationOrganizationContactAssociation [2675]
         is required
     include Telephone [2680]
         documentation 'The optional telephone for the contact associated with the EducationOrganization.
-        is optional
+        is optional collection

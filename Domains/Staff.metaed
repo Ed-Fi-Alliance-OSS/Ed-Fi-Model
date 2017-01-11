@@ -27,7 +27,6 @@ Domain Staff
                   'education organization and captures the result of that posting.
     domain item EducationOrganization
     domain item EducationServiceCenter
-    domain item LeaveEvent
     domain item LocalEducationAgency
     domain item OpenStaffPosition
     domain item School
@@ -37,4 +36,7 @@ Domain Staff
     domain item StateEducationAgency
     domain item StaffSchoolAssociation
     domain item StaffEducationOrganizationContactAssociation
+    domain item StaffAbsenceEvent
+    domain item StaffCredential
+    domain item StaffLeave
 
