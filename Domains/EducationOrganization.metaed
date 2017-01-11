@@ -35,3 +35,4 @@ Domain EducationOrganization
     domain item StateEducationAgency
     domain item CommunityOrganization
     domain item CommunityProvider
+    domain item CommunityProviderLicense

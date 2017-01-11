@@ -7,3 +7,5 @@ Interchange StudentTranscript [2535]
                            '2. Exchange a transcript for a course or set of courses.
     element StudentAcademicRecord [2535-001]
     element CourseTranscript [2535-002]
+    element ExternalEducationOrganization [2535-003]
+    element ExternalStudentAcademicRecord [2535-004]
