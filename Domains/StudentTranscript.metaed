@@ -9,7 +9,6 @@ Subdomain StudentTranscript of StudentAcademicRecord
     domain item Student
     domain item ExternalEducationOrganization
     domain item ExternalStudentAcademicRecord
+    domain item ExternalCourseTranscript 
     domain item StudentAcademicRecord
     position 1
-
-
