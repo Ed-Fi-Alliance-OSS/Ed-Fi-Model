@@ -36,4 +36,5 @@ Domain Staff
     domain item StaffEducationOrganizationEmploymentAssociation
     domain item StateEducationAgency
     domain item StaffSchoolAssociation
+    domain item StaffEducationOrganizationContactAssociation
 
