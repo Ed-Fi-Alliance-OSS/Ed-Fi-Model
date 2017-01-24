@@ -82,10 +82,12 @@ Domain Entity Section [580]
         documentation 'The course offering taught in the Section.
         is part of identity
         is queryable field
+        merge CourseOffering.School with Location.School
     reference School [1629]
         documentation 'The school where the Section is taught.
         is required
         is queryable field
+        merge School with Location.School
     reference Location [1625]
         documentation 'The location, typically a classroom, where the Section meets.
         is part of identity
@@ -94,6 +96,7 @@ Domain Entity Section [580]
         documentation 'The class period during which the Section meets.
         is part of identity
         is queryable field
+        merge ClassPeriod.School with Location.School
     reference Program [1628]
         documentation 'Optional reference to program (e.g., CTE) to which the Section is associated.
         is optional collection

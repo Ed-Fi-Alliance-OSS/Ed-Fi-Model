@@ -23,6 +23,7 @@ Domain Entity CourseOffering [551]
     reference Session [1317]
         documentation 'The session in which the course is offered at the school.
         is part of identity
+        merge Session.School with School
     reference Course [1311]
         documentation 'The course being offered by the school.
         is required

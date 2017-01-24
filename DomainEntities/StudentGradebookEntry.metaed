@@ -24,3 +24,4 @@ Domain Entity StudentGradebookEntry [589]
     reference GradebookEntry [1753]
         documentation 'The GradebookEntry associated with the student grade or score.
         is part of identity
+        merge GradebookEntry.Section with StudentSectionAssociation.Section

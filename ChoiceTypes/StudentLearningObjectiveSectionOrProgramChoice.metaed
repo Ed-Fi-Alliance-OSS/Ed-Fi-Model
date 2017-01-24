@@ -6,3 +6,4 @@ Choice Common Type StudentLearningObjectiveSectionOrProgramChoice [2506]
     reference StudentProgramAssociation [1764]
         documentation 'Relates the Student and Program associated with the LearningObjective.
         is required
+        merge StudentProgramAssociation.Student with StudentSectionAssociation.Student

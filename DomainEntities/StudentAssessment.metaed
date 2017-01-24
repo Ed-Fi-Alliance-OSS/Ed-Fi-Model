@@ -108,6 +108,8 @@ Domain Entity StudentAssessment [587]
     include StudentAssessmentItem [1739]
         documentation 'NEEDS DOCUMENTATION 
         is optional collection
+        merge StudentAssessmentItem.AssessmentItem.Assessment with Assessment
     include StudentObjectiveAssessment [1740]
         documentation 'NEEDS DOCUMENTATION
         is optional collection
+        merge StudentObjectiveAssessment.ObjectiveAssessment.Assessment with Assessment

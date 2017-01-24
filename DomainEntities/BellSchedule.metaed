@@ -13,6 +13,7 @@ Domain Entity BellSchedule [543]
     include MeetingTime [1265]
         documentation 'The times at which this BellSchedule is intended to meet.
         is required collection
+        merge MeetingTime.ClassPeriod.School with School
     reference CalendarDate [1263]
         documentation 'The first calendar date of the BellSchedule.
         is part of identity

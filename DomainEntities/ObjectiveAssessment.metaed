@@ -37,6 +37,7 @@ Domain Entity ObjectiveAssessment [571]
     reference LearningObjective [1539]
         documentation 'References the LearningObjective(s) the ObjectiveAssessment tests.
         is optional collection
+        merge LearningObjective.AcademicSubject with Assessment.AcademicSubject
         merge LearningObjective.ObjectiveGradeLevel with Assessment.AssessedGradeLevel
     reference LearningStandard [1540]
         documentation 'LearningStandard tested by this ObjectiveAssessment.

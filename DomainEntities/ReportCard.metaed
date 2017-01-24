@@ -4,12 +4,18 @@ Domain Entity ReportCard [577]
     reference Grade [1585]
         documentation 'Grades for the classes attended by the Student for this grading period.
         is optional collection
+        merge Grade.GradingPeriod with GradingPeriod
+        merge Grade.StudentSectionAssociation.Student with Student
     reference StudentCompetencyObjective [1590]
         documentation 'The Student competency evaluations associated for this grading period.
         is optional collection
+        merge StudentCompetencyObjective.GradingPeriod with GradingPeriod
+        merge StudentCompetencyObjective.Student with Student
     reference StudentLearningObjective [1591]
         documentation 'The StudentLearningObjective evaluations associated for this grading period.
         is optional collection
+        merge StudentLearningObjective.GradingPeriod with GradingPeriod
+        merge StudentLearningObjective.Student with Student
     shared decimal GPA named GPAGivenGradingPeriod [1584]
         documentation 'A measure of average performance in all courses taken by an individual for the 
                       'current grading period.
