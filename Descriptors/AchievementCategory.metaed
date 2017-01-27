@@ -1,7 +1,7 @@
 Descriptor AchievementCategory [123]
-    documentation 'This descriptor defines the category of achievement attributed to the learner.
+    documentation "This descriptor defines the category of achievement attributed to the learner."
     with optional map type
-        documentation 'The category of achievement attributed to the learner.
+        documentation "The category of achievement attributed to the learner."
         item Competency Mastered [123-003]
         item Competency Retained [123-004]
         item Course Completed [123-005]

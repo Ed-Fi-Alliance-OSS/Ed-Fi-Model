@@ -1,4 +1,4 @@
 Common String GenerationCodeSuffix [50]
-    documentation 'An appendage, if any, used to denote an individual's generation in his family (e.g., Jr., Sr., III).
+    documentation "An appendage, if any, used to denote an individual's generation in his family (e.g., Jr., Sr., III)."
     min length 1
     max length 10

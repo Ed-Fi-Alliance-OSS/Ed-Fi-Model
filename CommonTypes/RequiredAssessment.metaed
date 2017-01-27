@@ -1,13 +1,13 @@
 Common Type RequiredAssessment [658]
-    documentation 'The assessments and associated required score and performance level.
+    documentation "The assessments and associated required score and performance level."
     reference Assessment [952]
-        documentation 'Provide user information to lookup and link to an existing assessment.
+        documentation "Provide user information to lookup and link to an existing assessment."
         is part of identity
     include AssessmentScore [954]
-        documentation 'Score required to be met or exceeded.
+        documentation "Score required to be met or exceeded."
         is optional collection
         with context Required
     include AssessmentPerformanceLevel [953]
-        documentation 'Performance level required to be met or exceeded.
+        documentation "Performance level required to be met or exceeded."
         is optional
         with context Required

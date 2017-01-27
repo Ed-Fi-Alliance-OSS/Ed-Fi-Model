@@ -1,8 +1,7 @@
 Descriptor Discipline [164]
-    documentation 'This descriptor defines the type of action or removal from the classroom used to 
-                  'discipline the student involved as a perpetrator in a discipline incident.
+    documentation "This descriptor defines the type of action or removal from the classroom used to discipline the student involved as a perpetrator in a discipline incident."
     with optional map type
-        documentation 'The category of discipline action.
+        documentation "The category of discipline action."
         item Removal from Classroom [164-007]
         item In School Suspension [164-004]
         item Out of School Suspension [164-006]

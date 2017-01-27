@@ -1,17 +1,8 @@
 Domain AlternativeAndSupplementalServices
-    documentation 'This domain defines the model for a wide range of programs,
-                  'including education programs, alternative programs,
-                  'extracurricular programs, supplemental programs, and early
-                  'learning programs.
-                  '
-                  '* A Program entity defines programs with services offered
-                  'by an education organization.
-                  '
-                  '* A StudentProgramAssociation links Program entities to
-                  'participating students.
-                  '
-                  '* A StaffProgramAssociation links Program entities to assigned
-                  'staff.
+    documentation "This domain defines the model for a wide range of programs, including education programs, alternative programs, extracurricular programs, supplemental programs, and early learning programs.
+    * A Program entity defines programs with services offered by an education organization.
+    * A StudentProgramAssociation links Program entities to participating students.
+    * A StaffProgramAssociation links Program entities to assigned staff."
     domain item AttendanceEvent
     domain item EducationOrganization
     domain item Program
@@ -22,7 +13,7 @@ Domain AlternativeAndSupplementalServices
     domain item Student
     domain item StudentProgramAssociation
     domain item StudentSectionAssociation
-    footer documentation '# Alternative and Supplemental Services Subdomains
+    footer documentation "# Alternative and Supplemental Services Subdomains
                          '
                          '---
                          '

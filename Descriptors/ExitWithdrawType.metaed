@@ -1,9 +1,7 @@
 Descriptor ExitWithdrawType [174]
-    documentation 'This descriptor defines the circumstances under which the student exited from 
-                  'membership in an educational institution.
+    documentation "This descriptor defines the circumstances under which the student exited from membership in an educational institution."
     with optional map type
-        documentation 'The circumstances under which the student exited from membership in an 
-                      'educational institution.
+        documentation "The circumstances under which the student exited from membership in an educational institution."
         item Transferred [174-014]
         item Graduated [174-007]
         item Completed [174-001]

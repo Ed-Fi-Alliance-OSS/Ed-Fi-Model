@@ -1,12 +1,11 @@
 Domain Entity StudentInterventionAttendanceEvent [590]
-    documentation 'This event entity represents the recording of whether a student is in attendance 
-                  'for an intervention service.
+    documentation "This event entity represents the recording of whether a student is in attendance for an intervention service."
     include AttendanceEvent [1757]
-        documentation 'Details of the AttendanceEvent.
+        documentation "Details of the AttendanceEvent."
         is required
     reference Student [1759]
-        documentation 'Relates the Student associated with the AttendanceEvent.
+        documentation "Relates the Student associated with the AttendanceEvent."
         is part of identity
     reference Intervention [1758]
-        documentation 'Relates the Intervention associated with the AttendanceEvent.
+        documentation "Relates the Intervention associated with the AttendanceEvent."
         is part of identity

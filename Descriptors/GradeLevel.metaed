@@ -1,8 +1,7 @@
 Descriptor GradeLevel [176]
-    documentation 'This descriptor defines the set of grade levels. The map to known Ed-Fi enumeration 
-                  'values is required.
+    documentation "This descriptor defines the set of grade levels. The map to known Ed-Fi enumeration values is required."
     with map type
-        documentation 'The enumeration items for the set of grade levels.
+        documentation "The enumeration items for the set of grade levels."
         item Adult Education [176-001]
         item Early Education [176-002]
         item Eighth grade [176-003]

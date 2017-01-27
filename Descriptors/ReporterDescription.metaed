@@ -1,7 +1,7 @@
 Descriptor ReporterDescription [220]
-    documentation 'This descriptor defines the type of individual who reported an incident. 
+    documentation "This descriptor defines the type of individual who reported an incident."
     with optional map type
-        documentation 'Information on the type of individual who reported the incident.
+        documentation "Information on the type of individual who reported the incident."
         item Parent/guardian [220-004]
         item Staff [220-005]
         item Student [220-006]

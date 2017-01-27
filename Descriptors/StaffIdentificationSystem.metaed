@@ -1,7 +1,7 @@
 Descriptor StaffIdentificationSystem [238]
-    documentation 'This descriptor defines the originating record system and code that is used for record-keeping purposes of the staff.
+    documentation "This descriptor defines the originating record system and code that is used for record-keeping purposes of the staff."
     with optional map type
-        documentation 'A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a staff member.
+        documentation "A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a staff member."
         item Canadian SIN [238-001]
         item District [238-002]
         item Drivers License [238-003]

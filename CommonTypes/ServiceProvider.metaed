@@ -1,8 +1,8 @@
 Common Type ServiceProvider [526]
-    documentation 'The student's special education ServiceProvider.
+    documentation "The student's special education ServiceProvider."
     reference Staff [918]
-        documentation 'Relates the ServiceProvider to the Staff.
+        documentation "Relates the ServiceProvider to the Staff."
         is part of identity
     bool PrimaryProvider [917]
-        documentation 'Primary ServiceProvider.
+        documentation "Primary ServiceProvider."
         is optional

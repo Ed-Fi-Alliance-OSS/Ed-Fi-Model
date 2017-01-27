@@ -1,4 +1,4 @@
 Common String CohortDescription [21]
-    documentation 'Description of the student cohort.
+    documentation "Description of the student cohort."
     min length 1
     max length 1024
