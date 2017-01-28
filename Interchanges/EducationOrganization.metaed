@@ -1,28 +1,13 @@
 Interchange EducationOrganization [2517]
-    documentation 'The Education Organization interchange describes education organizations, their 
-                  'structure, and their education offerings. It is used to exchange education 
-                  'organization information about a state's schools, local education agencies 
-                  '(LEAs), education service centers (ESCs), and others. 
-                  '
-                  'In addition, the interchange (optionally) supports the definition of the 
-                  'education offerings provided by schools, specifically the available courses and 
-                  'alternative/supplemental programs offered. Courses in this context refer to 
-                  '"course catalog" information. As such, this interchange may define current as 
-                  'well as past courses.
-                  '
-                  'Locations and ClassPeriods can be re-used across Schools, if they are the same, 
-                  'using LocationReference and ClassPeriodReference within other domain entities in 
-                  'the interchange.
-    extended documentation 'Accountability Ratings can be assigned to a school or LEA through this interchange.
-    use case documentation '1. Exchange a state's full or partial hierarchy of education organizations.
-                           '
-                           '2. Exchange new or updated education organization information (e.g., change of address).
-                           '
-                           '3. Exchange available courses.
-                           '
-                           '4. Exchange available program offerings.
-                           '
-                           '5. Exchange accountability rating information.
+    documentation "The Education Organization interchange describes education organizations, their structure, and their education offerings. It is used to exchange education organization information about a state's schools, local education agencies (LEAs), education service centers (ESCs), and others. 
+    In addition, the interchange (optionally) supports the definition of the education offerings provided by schools, specifically the available courses and alternative/supplemental programs offered. Courses in this context refer to ""course catalog"" information. As such, this interchange may define current as well as past courses.
+    Locations and ClassPeriods can be re-used across Schools, if they are the same, using LocationReference and ClassPeriodReference within other domain entities in the interchange."
+    extended documentation "Accountability Ratings can be assigned to a school or LEA through this interchange."
+    use case documentation "1. Exchange a state's full or partial hierarchy of education organizations.
+    2. Exchange new or updated education organization information (e.g., change of address).
+    3. Exchange available courses.
+    4. Exchange available program offerings.
+    5. Exchange accountability rating information."
     element StateEducationAgency [2517-001]
     element EducationServiceCenter [2517-002]
     element FeederSchoolAssociation [2517-003]
