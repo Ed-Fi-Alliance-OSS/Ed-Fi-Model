@@ -1,7 +1,7 @@
 Association StaffEducationOrganizationAssignmentAssociation [600]
     documentation "This association indicates the education organization to which a staff member provides services; also known as school of service."
     domain entity Staff [1027]
-        documentation "The Staff assigned to the EducationOrganization.
+        documentation "The Staff assigned to the EducationOrganization."
     domain entity EducationOrganization [1021]
         documentation "The EducationalOrganization to which the Staff member provides services."
     descriptor StaffClassification [1025]

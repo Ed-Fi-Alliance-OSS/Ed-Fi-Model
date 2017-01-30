@@ -1,6 +1,6 @@
 Descriptor Disability [162]
     documentation "This descriptor defines a student's impairment."
-    enumeration DisabilityCategory" [294]
+    enumeration DisabilityCategory [294]
         documentation "Whether the disability code is IDEA, Section 504, or other disability designation."
         is required
     with optional map type

@@ -1,5 +1,5 @@
 Enumeration AssessmentItemCategory [130]
-    documentation "Category or type of the assessment item "(e.g., Multiple Choice, Analytic, Prose)."
+    documentation "Category or type of the assessment item (e.g., Multiple Choice, Analytic, Prose)."
     item "Analytic" [130-001]
     item "Essay" [130-002]
     item "Fill-in-the-blank" [130-003]

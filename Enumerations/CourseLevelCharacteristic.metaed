@@ -1,5 +1,5 @@
 Enumeration CourseLevelCharacteristic [152]
-    documentation "The item "for indication of the nature and difficulty of instruction: Remedial, Basic, Honors, Ap, IB, Dual Credit, CTE. etc." 
+    documentation "The item for indication of the nature and difficulty of instruction: Remedial, Basic, Honors, Ap, IB, Dual Credit, CTE. etc." 
     item "Accepted as high school equivalent" [152-001]
     item "Advanced" [152-002]
     item "Advanced Placement" [152-003]
