@@ -3,7 +3,7 @@ Inline Common Type Citizenship [490]
     enumeration CitizenshipStatus [761]
         documentation "An indicator of whether or not the person is a U.S. citizen."
         is required
-    include CitizenshipDocumentationChoice [2513]
+    choice CitizenshipDocumentationChoice [2513]
         documentation "Describe the probationary documentation of U.S. citizenship."
         is optional
     include IdentificationDocument [824]

@@ -79,7 +79,7 @@ Domain Entity Assessment [540]
         documentation "References the AssessmentFamily this Assessment is a member of."
         is optional
         is queryable field
-    include SectionOrProgramChoice [2509]
+    choice SectionOrProgramChoice [2509]
         documentation "The Section(s) to which the Assessment is associated."
         is optional
     shared string URI named Namespace [2300]

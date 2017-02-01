@@ -16,7 +16,7 @@ Domain Entity StudentLearningObjective [591]
     domain entity Student [1765]
         documentation "Relates the Student associated with the LearningObjective."
         is part of identity
-    include StudentLearningObjectiveSectionOrProgramChoice [2512]
+    choice StudentLearningObjectiveSectionOrProgramChoice [2512]
         documentation "Relates the student and the Section or Program with the LearningObjective."
         is optional
         merge StudentLearningObjectiveSectionOrProgramChoice.StudentSectionAssociation.Section.Location.School with GradingPeriod.School

@@ -3,7 +3,7 @@ Domain Entity EducationContent [555]
     shared string ContentIdentifier [1365]
         documentation "A unique identifier for the EducationContent."
         is part of identity
-    include LearningResourceChoice [2510]
+    choice LearningResourceChoice [2510]
         documentation "NEEDS DOCUMENTATION"
         is required
     currency Cost [1366]

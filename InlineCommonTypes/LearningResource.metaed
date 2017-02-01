@@ -31,7 +31,7 @@ Inline Common Type LearningResource [2514]
         documentation "A reference or URL pointing to education content from which this education content was derived."
         is optional
         with context DerivativeSource
-    include PublicationDateChoice [2515]
+    choice PublicationDateChoice [2515]
         documentation "NEEDS DOCUMENTATION"
         is optional
     enumeration Sex [1362]

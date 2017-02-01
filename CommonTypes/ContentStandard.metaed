@@ -13,7 +13,7 @@ Common Type ContentStandard [494]
     shared string URI [777]
         documentation "An unambiguous reference to the standards using a network-resolvable URI."
         is optional
-    include PublicationDateChoice [2508]
+    choice PublicationDateChoice [2508]
         documentation "NEEDS DOCUMENTATION"
         is optional
     enumeration PublicationStatus [774]
