@@ -1,6 +1,6 @@
 Domain Entity Parent [573]
     documentation "This entity represents a parent or guardian of a student, such as mother, father, or caretaker."
-    shared string UniqueId named UniqueId [1562]
+    shared string UniqueId [1562]
         documentation "A unique alphanumeric code assigned to a parent."
         is part of identity
         with context Parent

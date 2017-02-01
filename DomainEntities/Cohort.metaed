@@ -1,9 +1,9 @@
 Domain Entity Cohort [547]
     documentation "This entity represents any type of list of designated students for tracking, analysis, or intervention."
-    shared string CohortIdentifier named CohortIdentifier [1778]
+    shared string CohortIdentifier [1778]
         documentation "The name or ID for the Cohort."
         is part of identity
-    shared string CohortDescription named CohortDescription [1276]
+    shared string CohortDescription [1276]
         documentation "The description of the Cohort and its purpose."
         is optional
     enumeration CohortType [1278]

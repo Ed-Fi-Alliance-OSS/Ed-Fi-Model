@@ -9,6 +9,6 @@ Common Type StudentCharacteristic [531]
     date EndDate [935]
         documentation "The date the characteristic was removed."
         is optional
-    shared string DesignatedBy named DesignatedBy [934]
+    shared string DesignatedBy [934]
         documentation "The person, organization, or department that designated the characteristic."
         is optional

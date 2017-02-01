@@ -5,7 +5,7 @@ Domain Entity Staff [583]
     3. A ""volunteer"" who performs services on a voluntary and uncompensated basis
     4. An in-kind service provider
     5. An independent contractor or businessperson working at a school site."
-    shared string UniqueId named UniqueId [1663]
+    shared string UniqueId [1663]
         documentation "A unique alphanumeric code assigned to a staff."
         is part of identity
         with context Staff

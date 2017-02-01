@@ -18,7 +18,7 @@ Common Type Diploma [501]
     bool CTECompleter [803]
         documentation "Indicated a student who reached a state-defined threshold of vocational education and who attained a high school diploma or its recognized state equivalent or GED."
         is optional
-    shared string DiplomaDescription named DiplomaDescription [806]
+    shared string DiplomaDescription [806]
         documentation "The description of diploma given to the student for accomplishments."
         is optional
     date DiplomaAwardExpiresDate [805]

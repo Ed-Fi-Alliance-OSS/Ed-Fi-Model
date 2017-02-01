@@ -1,6 +1,6 @@
 Common Type PostSecondaryInstitutionIdentificationCode [521]
     documentation "A unique number or alphanumeric code that is assigned to an education organization by a school, school system, state, or other agency or entity."
-    shared string IdentificationCode named IdentificationCode [899]
+    shared string IdentificationCode [899]
         documentation "A unique number or alphanumeric code that is assigned to an education organization by a school, school system, state, or other agency or entity."
         is required
     descriptor EducationOrganizationIdentificationSystem [898]

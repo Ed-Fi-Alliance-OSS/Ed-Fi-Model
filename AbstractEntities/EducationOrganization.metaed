@@ -11,11 +11,11 @@ Abstract Entity EducationOrganization [556]
         documentation "A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity."
         is optional collection
         is queryable field
-    shared string NameOfInstitution named NameOfInstitution [1386]
+    shared string NameOfInstitution [1386]
         documentation "The full, legally accepted name of the institution."
         is required
         is queryable field
-    shared string NameOfInstitution named NameOfInstitution [1388]
+    shared string NameOfInstitution [1388]
         documentation "A short name for the institution."
         is optional
         with context Short

@@ -12,10 +12,10 @@ Domain Entity OpenStaffPosition [572]
     descriptor StaffClassification [1555]
         documentation "The titles of employment, official status, or rank of education staff."
         is part of identity
-    shared string PositionTitle named PositionTitle [1551]
+    shared string PositionTitle [1551]
         documentation "The descriptive name of an individual's position."
         is optional
-    shared string RequisitionNumber named RequisitionNumber [1554]
+    shared string RequisitionNumber [1554]
         documentation "The number or identifier assigned to an open staff position, typically a requisition number assigned by Human Resources."
         is part of identity
     descriptor ProgramAssignment [1553]

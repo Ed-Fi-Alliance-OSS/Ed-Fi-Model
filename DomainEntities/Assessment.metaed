@@ -1,6 +1,6 @@
 Domain Entity Assessment [540]
     documentation "This entity represents a tool, instrument, process, or exhibition composed of a systematic sampling of behavior for measuring a student's competence, knowledge,skills, or behavior. An assessment can be used to measure differences inindividuals or groups and changes in performance from one occasion to the next."
-    shared string AssessmentTitle named AssessmentTitle [1228]
+    shared string AssessmentTitle [1228]
         documentation "The title or name of the Assessment."
         is part of identity
         is queryable field
@@ -53,13 +53,13 @@ Domain Entity Assessment [540]
     include ContentStandard [1229]
         documentation "An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard)."
         is optional
-    shared string AssessmentForm named AssessmentForm [1223]
+    shared string AssessmentForm [1223]
         documentation "Identifies the form of the assessment, for example a regular versus makeup form, multiple choice versus constructed response, etc."
         is optional
     descriptor Language [1230]
         documentation "An indication of the languages in which the assessment is designed."
         is optional collection
-    shared integer Version named Version [1240]
+    shared integer Version [1240]
         documentation "The version identifier for the assessment."
         is part of identity
         is queryable field
@@ -69,7 +69,7 @@ Domain Entity Assessment [540]
     integer MaxRawScore [1235]
         documentation "The maximum raw score achievable across all assessment items that are correct and scored at the maximum."
         is optional
-    shared string Nomenclature named Nomenclature [1236]
+    shared string Nomenclature [1236]
         documentation "Reflects the specific nomenclature used for Assessment."
         is optional
     descriptor AssessmentPeriod [1226]

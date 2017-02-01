@@ -1,6 +1,6 @@
 Domain Entity Account [537]
     documentation "This financial entity represents a funding source combined with its purpose and type of transaction. It provides a formal record of the debits and credits relating to the specific account."
-    shared string AccountNumber named AccountNumber [1206]
+    shared string AccountNumber [1206]
         documentation "The alphanumeric string that identifies the account."
         is part of identity
     descriptor AccountCode [1205]

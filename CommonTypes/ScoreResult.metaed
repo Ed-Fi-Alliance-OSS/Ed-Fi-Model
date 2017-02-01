@@ -1,6 +1,6 @@
 Common Type ScoreResult [524]
     documentation "A meaningful raw score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
-    shared string Result named Result [910]
+    shared string Result [910]
         documentation "The value of a meaningful raw score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
         is required
     enumeration ResultDatatypeType [911]

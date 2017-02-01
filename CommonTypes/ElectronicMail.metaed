@@ -1,6 +1,6 @@
 Common Type ElectronicMail [505]
     documentation "The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs."
-    shared string ElectronicMailAddress named ElectronicMailAddress [817]
+    shared string ElectronicMailAddress [817]
         documentation "The electronic mail (e-mail) address listed for an individual or organization."
         is required
     enumeration ElectronicMailType [818]

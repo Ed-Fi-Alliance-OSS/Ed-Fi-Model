@@ -61,7 +61,7 @@ Domain Entity StudentAssessment [587]
     enumeration EventCircumstance [1732]
         documentation "An unusual event occurred during the administration of the assessment. This could include fire alarm, student became ill, etc."
         is optional
-    shared string Description named Description [1733]
+    shared string Description [1733]
         documentation "Describes special events that occur before during or after the assessment session that may impact use of results."
         is optional
         with context Event

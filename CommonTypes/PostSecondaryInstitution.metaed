@@ -1,12 +1,12 @@
 Common Type PostSecondaryInstitution [520]
     documentation "An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s)."
-    shared string PostSecondaryInstitutionId named PostSecondaryInstitutionId [895]
+    shared string PostSecondaryInstitutionId [895]
         documentation "The ID of the post secondary institution."
         is optional
     include PostSecondaryInstitutionIdentificationCode [897]
         documentation "A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity."
         is optional collection
-    shared string NameOfInstitution named NameOfInstitution [894]
+    shared string NameOfInstitution [894]
         documentation "The postsecondary institution associated with the event."
         is required
     enumeration MediumOfInstruction [893]

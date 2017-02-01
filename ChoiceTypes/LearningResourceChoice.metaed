@@ -1,6 +1,6 @@
 Choice Common Type LearningResourceChoice [2501]
     documentation "NEEDS DOCUMENTATION"
-    shared string LearningResourceMetadataURI named LearningResourceMetadataURI [1372]
+    shared string LearningResourceMetadataURI [1372]
         documentation "The URI (typical a URL) pointing to the metadata entry in a LRMI metadata repository, which describes this content item."
         is required
     include LearningResource [2502]

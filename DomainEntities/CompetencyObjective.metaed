@@ -3,10 +3,10 @@ Domain Entity CompetencyObjective [548]
     shared string IdentificationCode named CompetencyObjectiveId [1281]
         documentation "The Identifier for the CompetencyObjective."
         is optional
-    shared string Objective named Objective [1284]
+    shared string Objective [1284]
         documentation "The designated title of the CompetencyObjective."
         is part of identity
-    shared string Description named Description [1282]
+    shared string Description [1282]
         documentation "The description of the student competency objective."
         is optional
     descriptor GradeLevel [1285]

@@ -4,13 +4,13 @@ Common Type ContentStandard [494]
     shared string ContentStandardTitle named Title [776]
         documentation "The name of the content standard, for example Common Core."
         is required
-    shared string Author named Author [769]
+    shared string Author [769]
         documentation "The person or organization chiefly responsible for the intellectual content of the standard."
         is optional collection
     shared string ContentStandardVersion named Version [778]
         documentation "The version identifier for the content."
         is optional
-    shared string URI named URI [777]
+    shared string URI [777]
         documentation "An unambiguous reference to the standards using a network-resolvable URI."
         is optional
     include PublicationDateChoice [2508]

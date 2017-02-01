@@ -12,7 +12,7 @@ Domain Entity StudentGradebookEntry [589]
     descriptor CompetencyLevel [1750]
         documentation "The CompetencyLevel assessed for the student for the referenced LearningObjective."
         is optional
-    shared string DiagnosticStatement named DiagnosticStatement [1752]
+    shared string DiagnosticStatement [1752]
         documentation "A statement provided by the teacher that provides information in addition to the grade or assessment score."
         is optional
     reference StudentSectionAssociation [1756]

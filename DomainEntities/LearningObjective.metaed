@@ -6,10 +6,10 @@ Domain Entity LearningObjective [566]
     include ContentStandard [1485]
         documentation "A reference to the type of content standard (e.g., state, national)"
         is optional
-    shared string Objective named Objective [1490]
+    shared string Objective  [1490]
         documentation "The designated title of the LearningObjective."
         is part of identity
-    shared string Description named Description [1486]
+    shared string Description [1486]
         documentation "The description of the LearningObjective."
         is optional
     descriptor AcademicSubject [1484]
@@ -19,7 +19,7 @@ Domain Entity LearningObjective [566]
         documentation "The grade level for which the LearningObjective is targeted."
         is part of identity
         with context Objective
-    shared string Nomenclature named Nomenclature [1489]
+    shared string Nomenclature [1489]
         documentation "Reflects the specific nomenclature used for the LearningObjective."
         is optional
     shared string Criteria named SuccessCriteria [1493]

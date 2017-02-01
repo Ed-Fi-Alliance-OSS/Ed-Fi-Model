@@ -1,21 +1,21 @@
 Inline Common Type Achievement [479]
     documentation "An entity that includes information about achievement earned by a learner upon fulfilling a specified criteria, which may be defined by a related competency set."
-    shared string AchievementTitle named AchievementTitle [707]
+    shared string AchievementTitle [707]
         documentation "The title assigned to the achievement."
         is optional
     descriptor AchievementCategory [705]
         documentation "The category of achievement attributed to the learner."
         is optional
-    shared string AchievementCategorySystem named AchievementCategorySystem [706]
+    shared string AchievementCategorySystem [706]
         documentation "The system that defines the categories by which an achievement is attributed to the learner."
         is optional
-    shared string IssuerName named IssuerName [712]
+    shared string IssuerName [712]
         documentation "The name of the agent, entity, or institution issuing the element."
         is optional
     shared string URI named IssuerOriginURL [713]
         documentation "The Uniform Resource Locator (URL) from which the award was issued."
         is optional
-    shared string Criteria named Criteria [708]
+    shared string Criteria [708]
         documentation "The criteria for competency-based completion of the achievement/award."
         is optional
     shared string URI named CriteriaURL [709]

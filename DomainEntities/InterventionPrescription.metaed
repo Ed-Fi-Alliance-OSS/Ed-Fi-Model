@@ -26,7 +26,7 @@ Domain Entity InterventionPrescription [564]
     reference EducationOrganization [1465]
         documentation "Relates the Education Organization which is sponsoring the InterventionPrescription."
         is part of identity
-    shared string IdentificationCode named IdentificationCode [1467]
+    shared string IdentificationCode [1467]
         documentation "A unique number or alphanumeric code assigned to an intervention prescription."
         is part of identity
         with context InterventionPrescription

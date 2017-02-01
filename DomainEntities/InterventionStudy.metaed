@@ -36,7 +36,7 @@ Domain Entity InterventionStudy [565]
     reference EducationOrganization [1475]
         documentation "Relates the EducationOrganization which is sponsoring the intervention study."
         is part of identity
-    shared string IdentificationCode named IdentificationCode [1479]
+    shared string IdentificationCode [1479]
         documentation "A unique number or alphanumeric code assigned to an intervention study."
         is part of identity
         with context InterventionStudy

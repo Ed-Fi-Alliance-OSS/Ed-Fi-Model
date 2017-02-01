@@ -16,7 +16,7 @@ Association StaffEducationOrganizationEmploymentAssociation [601]
     include EmploymentPeriod [1030]
         documentation "The set of elements defining and characterizing a person's period of employment including start and end dates and the type and reason for separation."
         is required
-    shared string Department named Department [1028]
+    shared string Department [1028]
         documentation "The department or suborganization the employee/contractor is associated with in the EducationOrganization."
         is optional
     percent FullTimeEquivalency [1032]

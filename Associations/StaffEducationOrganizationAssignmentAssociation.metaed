@@ -7,7 +7,7 @@ Association StaffEducationOrganizationAssignmentAssociation [600]
     descriptor StaffClassification [1025]
         documentation "The titles of employment, official status, or rank of education staff."
         is part of identity
-    shared string PositionTitle named PositionTitle [1024]
+    shared string PositionTitle [1024]
         documentation "The descriptive name of an individual's position."
         is optional
     date BeginDate [1020]

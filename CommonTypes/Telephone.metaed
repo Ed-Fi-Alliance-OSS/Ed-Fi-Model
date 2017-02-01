@@ -1,12 +1,12 @@
 Common Type Telephone [535]
     documentation "The 10-digit telephone number, including the area code, for the person."
-    shared string TelephoneNumber named TelephoneNumber [949]
+    shared string TelephoneNumber [949]
         documentation "The telephone number including the area code, and extension, if applicable."
         is required
     enumeration TelephoneNumberType [950]
         documentation "The type of communication number listed for an individual or organization."
         is part of identity
-    shared integer OrderOfPriority named OrderOfPriority [948]
+    shared integer OrderOfPriority [948]
         documentation "The order of priority assigned to telephone numbers to define which number to attempt first, second, etc."
         is optional
     bool TextMessageCapabilityIndicator [951]

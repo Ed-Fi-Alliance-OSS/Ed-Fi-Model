@@ -12,7 +12,7 @@ Domain Entity GradingPeriod [561]
     date EndDate [1432]
         documentation "Month, day, and year of the last day of the GradingPeriod."
         is required
-    shared integer TotalInstructionalDays named TotalInstructionalDays [1435]
+    shared integer TotalInstructionalDays [1435]
         documentation "Total days available for educational instruction during the GradingPeriod."
         is required
     integer PeriodSequence [1434]

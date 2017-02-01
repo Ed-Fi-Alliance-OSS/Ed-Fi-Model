@@ -1,11 +1,11 @@
 Domain Entity Section [580]
     documentation "This entity represents a setting in which organized instruction of course content is provided, in-person or otherwise, to one or more students for a given period of time. A course offering may be offered to more than one section."
     allow primary key updates
-    shared string UniqueSectionCode named UniqueSectionCode [1632]
+    shared string UniqueSectionCode [1632]
         documentation "A unique identifier for the Section that is defined by the classroom, the subjects taught, and the instructors who are assigned."
         is part of identity
         is queryable field
-    shared integer SequenceOfCourse named SequenceOfCourse [1631]
+    shared integer SequenceOfCourse [1631]
         documentation "When a section is part of a sequence of parts for a course, the number of the sequence. If the course has only one part, the value of this section attribute should be 1."
         is part of identity
         is queryable field

@@ -10,7 +10,7 @@ Inline Common Type BirthData [488]
         documentation "The abbreviation for the name of the state (within the United States) or extra-state jurisdiction in which an individual was born."
         is optional
         with context Birth
-    shared string BirthInternationalProvince named BirthInternationalProvince [757]
+    shared string BirthInternationalProvince [757]
         documentation "For students born outside of the U.S., the Province or jurisdiction in which an individual is born."
         is optional
     descriptor Country [752]

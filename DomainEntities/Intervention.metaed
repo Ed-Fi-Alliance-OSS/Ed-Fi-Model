@@ -42,7 +42,7 @@ Domain Entity Intervention [563]
     reference EducationOrganization [1450]
         documentation "Relates the Education Organization which is sponsoring the intervention implementation."
         is part of identity
-    shared string IdentificationCode named IdentificationCode [1453]
+    shared string IdentificationCode [1453]
         documentation "A unique number or alphanumeric code assigned to an intervention."
         is part of identity
         with context Intervention

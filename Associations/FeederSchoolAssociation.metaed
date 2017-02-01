@@ -11,7 +11,7 @@ Association FeederSchoolAssociation [598]
     date EndDate [1011]
         documentation "The month, day, and year of the last day of the feeder school association."
         is optional
-    shared string Description named Description [1012]
+    shared string Description [1012]
         documentation "Describes the relationship from the feeder school to the receiving school, for example by program emphasis, such as special education, language immersion, science, or performing art."
         is optional
         with context FeederRelationship

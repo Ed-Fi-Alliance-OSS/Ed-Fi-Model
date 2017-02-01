@@ -1,6 +1,6 @@
 Domain Entity RestraintEvent [578]
     documentation "This event entity represents the instances where a special education student was physically or mechanically restrained due to imminent serious physical harm to themselves or others, imminent serious property destruction or a combination of both imminent serious physical harm to themselves or others and imminent serious property destruction."
-    shared string RestraintEventIdentifier named RestraintEventIdentifier [1596]
+    shared string RestraintEventIdentifier [1596]
         documentation "A unique number or alphanumeric code assigned to a restraint event by a school, school system, state, or other agency or entity."
         is part of identity
     date EventDate [1594]

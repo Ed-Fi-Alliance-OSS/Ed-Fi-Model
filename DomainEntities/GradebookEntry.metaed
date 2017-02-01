@@ -1,7 +1,7 @@
 Domain Entity GradebookEntry [560]
     documentation "This entity represents an assignment, homework, or classroom assessment to be recorded in a gradebook."
     allow primary key updates
-    shared string GradebookEntryTitle named GradebookEntryTitle [1424]
+    shared string GradebookEntryTitle [1424]
         documentation "The name or title of the activity to be recorded in the GradebookEntry."
         is part of identity
         is queryable field
@@ -13,7 +13,7 @@ Domain Entity GradebookEntry [560]
         documentation "The date the assignment, homework, or assessment was assigned or executed."
         is part of identity
         is queryable field
-    shared string Description named Description [1423]
+    shared string Description [1423]
         documentation "A description of the assignment, homework, or classroom assessment."
         is optional
     reference LearningStandard [1428]

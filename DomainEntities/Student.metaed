@@ -1,6 +1,6 @@
 Domain Entity Student [585]
     documentation "This entity represents an individual for whom instruction, services, and/or care are provided in an early childhood, elementary, or secondary educational program under the jurisdiction of a school, education agency or other institution or program. A student is a person who has been enrolled in a school or other educational institution."
-    shared string UniqueId named UniqueId [1705]
+    shared string UniqueId [1705]
         documentation "A unique alphanumeric code assigned to a student."
         is part of identity
         with context Student
@@ -37,7 +37,7 @@ Domain Entity Student [585]
     include ElectronicMail [1687]
         documentation "The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs."
         is optional collection
-    shared string ProfileThumbnail named ProfileThumbnail [1697]
+    shared string ProfileThumbnail [1697]
         documentation "Locator for the student photo."
         is optional
     bool HispanicLatinoEthnicity [1688]
@@ -78,7 +78,7 @@ Domain Entity Student [585]
     include Disability [1684]
         documentation "The disability condition(s) that best describes an individual's impairment."
         is optional collection
-    shared string DisplacementStatus named DisplacementStatus [1685]
+    shared string DisplacementStatus [1685]
         documentation "Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services."
         is optional
     include ProgramParticipation [1698]

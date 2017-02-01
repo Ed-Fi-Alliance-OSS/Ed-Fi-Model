@@ -19,7 +19,7 @@ Domain Entity Session [582]
     date EndDate [1639]
         documentation "Month, day and year of the last day of the Session."
         is required
-    shared integer TotalInstructionalDays named TotalInstructionalDays [1645]
+    shared integer TotalInstructionalDays [1645]
         documentation "The total number of instructional days in the school calendar."
         is required
     reference School [1641]

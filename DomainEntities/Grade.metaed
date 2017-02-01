@@ -7,7 +7,7 @@ Domain Entity Grade [559]
     shared decimal NumericGrade named NumericGradeEarned [1419]
         documentation "A final or interim (grading period) indicator of student performance in a class as submitted by the instructor."
         is optional
-    shared string DiagnosticStatement named DiagnosticStatement [1415]
+    shared string DiagnosticStatement [1415]
         documentation "A statement provided by the teacher that provides information in addition to the grade or assessment score."
         is optional
     enumeration GradeType [1416]

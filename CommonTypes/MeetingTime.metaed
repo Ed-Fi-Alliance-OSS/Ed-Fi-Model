@@ -3,7 +3,7 @@ Common Type MeetingTime [516]
     reference ClassPeriod [872]
         documentation "The class period associated with the meeting time for a bell schedule."
         is part of identity
-    shared string AlternateDayName named AlternateDayName [871]
+    shared string AlternateDayName [871]
         documentation "An alternate name for the day (e.g., Red, Blue)."
         is optional
     time StartTime [875]

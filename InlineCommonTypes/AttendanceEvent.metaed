@@ -10,7 +10,7 @@ Inline Common Type AttendanceEvent [486]
         Excused absence
         Tardy."
         is part of identity
-    shared string AttendanceEventReason named AttendanceEventReason [747]
+    shared string AttendanceEventReason [747]
         documentation "The reported reason for a student's absence."
         is optional
     enumeration EducationalEnvironment [748]

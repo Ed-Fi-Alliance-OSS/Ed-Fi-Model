@@ -3,7 +3,7 @@ Common Type Disability [502]
     descriptor Disability [809]
         documentation "A disability category that describes a child's impairment."
         is part of identity
-    shared string DisabilityDiagnosis named DisabilityDiagnosis [810]
+    shared string DisabilityDiagnosis [810]
         documentation "A description of the disability diagnosis."
         is optional
     integer OrderOfDisability [811]

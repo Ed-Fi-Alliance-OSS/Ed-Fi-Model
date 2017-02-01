@@ -1,6 +1,6 @@
 Domain Entity DisciplineAction [553]
     documentation "This event entity represents actions taken by an education organization after a disruptive event that is recorded as a discipline incident."
-    shared string DisciplineActionIdentifier named DisciplineActionIdentifier [1337]
+    shared string DisciplineActionIdentifier [1337]
         documentation "Identifier assigned by the education organization to the DisciplineAction."
         is part of identity
     descriptor Discipline [1336]
@@ -9,7 +9,7 @@ Domain Entity DisciplineAction [553]
     date DisciplineDate [1340]
         documentation "The date of the DisciplineAction."
         is part of identity
-    shared integer DisciplineActionLength named DisciplineActionLength [1338]
+    shared integer DisciplineActionLength [1338]
         documentation "The length of time in school days for the DisciplineAction (e.g. removal, detention), if applicable."
         is optional
     shared integer DisciplineActionLength named ActualDisciplineActionLength [1334]

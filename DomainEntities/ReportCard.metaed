@@ -21,13 +21,13 @@ Domain Entity ReportCard [577]
     shared decimal GPA named GPACumulative [1583]
         documentation "A measure of cumulative average performance in all courses taken by an individual from the beginning of the school year through the current grading period."
         is optional
-    shared decimal NumberOfDaysAbsent named NumberOfDaysAbsent [1587]
+    shared decimal NumberOfDaysAbsent [1587]
         documentation "The number of days an individual is absent when school is in session during a given reporting period."
         is optional
-    shared decimal NumberOfDaysInAttendance named NumberOfDaysInAttendance [1588]
+    shared decimal NumberOfDaysInAttendance [1588]
         documentation "The number of days an individual is present when school is in session during a given reporting period."
         is optional
-    shared integer NumberOfDaysTardy named NumberOfDaysTardy [1589]
+    shared integer NumberOfDaysTardy [1589]
         documentation "The number of days an individual is tardy during a given reporting period."
         is optional
     reference Student [1592]

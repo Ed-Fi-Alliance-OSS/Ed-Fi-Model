@@ -1,6 +1,6 @@
 Common Type Behavior [487]
     documentation "Describes behavior by category and provides a detailed description."
-    shared string Description named Description [751]
+    shared string Description [751]
         documentation "Specifies a more granular level of detail of a behavior involved in the incident."
         is optional
         with context BehaviorDetailed

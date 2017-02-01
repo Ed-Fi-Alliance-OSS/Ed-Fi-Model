@@ -6,7 +6,7 @@ Common Type AcademicHonor [478]
     enumeration AcademicHonorCategory [700]
         documentation "A designation of the type of academic distinctions earned by or awarded to the student."
         is part of identity
-    shared string HonorDescription named HonorDescription [704]
+    shared string HonorDescription [704]
         documentation "A description of the type of academic distinctions earned by or awarded to the individual."
         is optional
     date HonorAwardDate [702]

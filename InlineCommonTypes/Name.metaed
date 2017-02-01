@@ -1,18 +1,18 @@
 Inline Common Type Name [517]
     documentation "The set of elements that comprise a person's legal name."
-    shared string PersonalTitlePrefix named PersonalTitlePrefix [881]
+    shared string PersonalTitlePrefix [881]
         documentation "A prefix used to denote the title, degree, position, or seniority of the person."
         is optional
-    shared string FirstName named FirstName [876]
+    shared string FirstName [876]
         documentation "A name given to an individual at birth, baptism, or during another naming ceremony, or through legal change."
         is required
-    shared string MiddleName named MiddleName [880]
+    shared string MiddleName [880]
         documentation "A secondary name given to an individual at birth, baptism, or during another naming ceremony."
         is optional
-    shared string LastSurname named LastSurname [878]
+    shared string LastSurname [878]
         documentation "The name borne in common by members of a family."
         is required
-    shared string GenerationCodeSuffix named GenerationCodeSuffix [877]
+    shared string GenerationCodeSuffix [877]
         documentation "An appendage, if any, used to denote an individual's generation in his family (e.g., Jr., Sr., III)."
         is optional
     shared string LastSurname named MaidenName [879]

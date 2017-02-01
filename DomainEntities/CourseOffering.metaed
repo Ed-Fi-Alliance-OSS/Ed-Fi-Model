@@ -1,6 +1,6 @@
 Domain Entity CourseOffering [551]
     documentation "This entity represents an entry in the course catalog of available courses offered by the school during a session."
-    shared string LocalCourseCode named LocalCourseCode [1314]
+    shared string LocalCourseCode [1314]
         documentation "The local code assigned by the School that identifies the course offering provided for the instruction of students."
         is part of identity
     shared string CourseTitle named LocalCourseTitle [1315]
