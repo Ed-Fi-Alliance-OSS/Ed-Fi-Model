@@ -1,6 +1,6 @@
 Domain Entity AcademicWeek [536]
     documentation "This entity represents the academic weeks for a school year, optionally captured to support analyses."
-    reference School [2435]
+    domain entity School [2435]
         documentation "Relates the academic week to an existing School."
         is part of identity
     shared string WeekIdentifier [1204]

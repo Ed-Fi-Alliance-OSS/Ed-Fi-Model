@@ -6,9 +6,9 @@ Domain Entity Payroll [574]
     date AsOfDate [1567]
         documentation "The date of the reported payroll element."
         is part of identity
-    reference Account [1565]
+    domain entity Account [1565]
         documentation "Account with which the Payroll expense is associated."
         is part of identity
-    reference Staff [1568]
+    domain entity Staff [1568]
         documentation "Staff member associated with the Payroll expense."
         is part of identity

@@ -6,7 +6,7 @@ Domain Entity BellSchedule [543]
     descriptor GradeLevel [1264]
         documentation "The grade levels the particular BellSchedule applies to."
         is part of identity
-    reference School [1266]
+    domain entity School [1266]
         documentation "The school for which the BellSchedule is defined."
         is part of identity
         is weak
@@ -14,6 +14,6 @@ Domain Entity BellSchedule [543]
         documentation "The times at which this BellSchedule is intended to meet."
         is required collection
         merge MeetingTime.ClassPeriod.School with School
-    reference CalendarDate [1263]
+    domain entity CalendarDate [1263]
         documentation "The first calendar date of the BellSchedule."
         is part of identity

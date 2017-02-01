@@ -1,6 +1,6 @@
 Inline Common Type EducationContentSource [503]
     documentation "Published papers, reports, or other educational documents."
-    reference EducationContent [812]
+    domain entity EducationContent [812]
         documentation "Relates the education content source to the education content."
         is optional collection
     shared string LearningResourceMetadataURI [813]

@@ -3,7 +3,7 @@ Domain Entity CalendarDate [545]
     date Date [1271]
         documentation "The month, day, and year of the CalendarDate."
         is part of identity
-    reference School [2426]
+    domain entity School [2426]
         documentation "The school for which the calendar event is defined."
         is part of identity
     include CalendarEvent [1270]

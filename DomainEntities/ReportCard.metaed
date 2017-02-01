@@ -1,16 +1,16 @@
 Domain Entity ReportCard [577]
     documentation "This educational entity represents the collection of student grades for courses taken during a grading period."
-    reference Grade [1585]
+    domain entity Grade [1585]
         documentation "Grades for the classes attended by the Student for this grading period."
         is optional collection
         merge Grade.GradingPeriod with GradingPeriod
         merge Grade.StudentSectionAssociation.Student with Student
-    reference StudentCompetencyObjective [1590]
+    domain entity StudentCompetencyObjective [1590]
         documentation "The Student competency evaluations associated for this grading period."
         is optional collection
         merge StudentCompetencyObjective.GradingPeriod with GradingPeriod
         merge StudentCompetencyObjective.Student with Student
-    reference StudentLearningObjective [1591]
+    domain entity StudentLearningObjective [1591]
         documentation "The StudentLearningObjective evaluations associated for this grading period."
         is optional collection
         merge StudentLearningObjective.GradingPeriod with GradingPeriod
@@ -30,13 +30,13 @@ Domain Entity ReportCard [577]
     shared integer NumberOfDaysTardy [1589]
         documentation "The number of days an individual is tardy during a given reporting period."
         is optional
-    reference Student [1592]
+    domain entity Student [1592]
         documentation "Identifies the student that is associated with the ReportCard."
         is part of identity
-    reference EducationOrganization [1582]
+    domain entity EducationOrganization [1582]
         documentation "Identifies the EducationOrganization that issued the ReportCard."
         is part of identity
-    reference GradingPeriod [1586]
+    domain entity GradingPeriod [1586]
         documentation "Identifies the grading period for this report card."
         is part of identity
         with context GradingPeriod

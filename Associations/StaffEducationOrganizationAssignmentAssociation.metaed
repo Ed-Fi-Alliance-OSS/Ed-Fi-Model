@@ -19,7 +19,7 @@ Association StaffEducationOrganizationAssignmentAssociation [600]
     integer OrderOfAssignment [1023]
         documentation "Describes whether the assignment is this the staff member's primary assignment, secondary assignment, etc."
         is optional
-    reference StaffEducationOrganizationEmploymentAssociation [1026]
+    association StaffEducationOrganizationEmploymentAssociation [1026]
         documentation "A reference to the employment association."
         is optional
         with context StaffEducationOrganizationEmploymentAssociation shorten to Employment

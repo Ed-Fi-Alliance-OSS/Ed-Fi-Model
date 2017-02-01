@@ -1,7 +1,7 @@
 Domain Entity Location [570]
     documentation "This entity represents the physical space where students gather for a particular class/section. The Location may be an indoor or outdoor area designated for the purpose of meeting the educational needs of students."
     allow primary key updates
-    reference School [1533]
+    domain entity School [1533]
         documentation "Relates the Location to the school."
         is part of identity
     shared string ClassroomIdentificationCode [1530]

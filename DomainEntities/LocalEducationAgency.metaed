@@ -16,13 +16,13 @@ Domain Entity LocalEducationAgency based on EducationOrganization [569]
     include LocalEducationAgencyFederalFunds [1521]
         documentation "Contains the information about the reception and use of federal funds for reporting purposes."
         is optional collection
-    reference LocalEducationAgency [1525]
+    domain entity LocalEducationAgency [1525]
         documentation "For subdistricts; the LEA the subdistrict is a component of."
         is optional
         with context Parent
-    reference EducationServiceCenter [1516]
+    domain entity EducationServiceCenter [1516]
         documentation "The ESC of which the LEA is an organizational component."
         is optional
-    reference StateEducationAgency [1527]
+    domain entity StateEducationAgency [1527]
         documentation "The SEA of which the LEA is an organizational component."
         is optional

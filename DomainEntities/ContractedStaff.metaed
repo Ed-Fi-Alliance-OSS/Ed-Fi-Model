@@ -6,9 +6,9 @@ Domain Entity ContractedStaff [549]
     date AsOfDate [1289]
         documentation "The date of the reported contracted staff element."
         is part of identity
-    reference Account [1287]
+    domain entity Account [1287]
         documentation "Account with which the ContractedStaff expense is associated."
         is part of identity
-    reference Staff [1290]
+    domain entity Staff [1290]
         documentation "Relates the staff member to the associated ContractedStaff expense."
         is part of identity

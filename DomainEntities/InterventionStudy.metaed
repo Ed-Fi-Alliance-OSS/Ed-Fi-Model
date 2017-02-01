@@ -3,7 +3,7 @@ Domain Entity InterventionStudy [565]
     include EducationContentSource [1474]
         documentation "Reference to any published papers, reports, or other documents about this intervention study."
         is optional
-    reference InterventionPrescription [1478]
+    domain entity InterventionPrescription [1478]
         documentation "Reference to the InterventionPrescription being studied."
         is required
         with context InterventionPrescription
@@ -33,7 +33,7 @@ Domain Entity InterventionStudy [565]
     enumeration StateAbbreviation [1483]
         documentation "The abbreviation for the state (within the United States) or outlying area, the school system of which the participants of the study are considered to be a part."
         is optional collection
-    reference EducationOrganization [1475]
+    domain entity EducationOrganization [1475]
         documentation "Relates the EducationOrganization which is sponsoring the intervention study."
         is part of identity
     shared string IdentificationCode [1479]

@@ -18,6 +18,6 @@ Domain Entity LeaveEvent [568]
     bool SubstituteAssigned [1511]
         documentation "Indicator of whether a substitute was assigned during the period of staff leave."
         is optional
-    reference Staff [1510]
+    domain entity Staff [1510]
         documentation "The staff associated with this leave event."
         is part of identity

@@ -21,24 +21,24 @@ Domain Entity ObjectiveAssessment [571]
     shared string Description [1537]
         documentation "The description of the ObjectiveAssessment (e.g., vocabulary, measurement, or geometry)."
         is optional
-    reference AssessmentItem [1534]
+    domain entity AssessmentItem [1534]
         documentation "References individual test items, if appropriate."
         is optional collection
         with context AssessmentItem
         merge AssessmentItem.Assessment with Assessment
-    reference LearningObjective [1539]
+    domain entity LearningObjective [1539]
         documentation "References the LearningObjective(s) the ObjectiveAssessment tests."
         is optional collection
         merge LearningObjective.AcademicSubject with Assessment.AcademicSubject
         merge LearningObjective.ObjectiveGradeLevel with Assessment.AssessedGradeLevel
-    reference LearningStandard [1540]
+    domain entity LearningStandard [1540]
         documentation "LearningStandard tested by this ObjectiveAssessment."
         is optional collection
-    reference ObjectiveAssessment [1543]
+    domain entity ObjectiveAssessment [1543]
         documentation "Provide user information to lookup and link to the parent ObjectiveAssessment containing this ObjectiveAssessment."
         is optional
         with context Parent
         merge ParentObjectiveAssessment.Assessment with Assessment
-    reference Assessment [1536]
+    domain entity Assessment [1536]
         documentation "Provide user information to lookup and link to an existing assessment."
         is part of identity

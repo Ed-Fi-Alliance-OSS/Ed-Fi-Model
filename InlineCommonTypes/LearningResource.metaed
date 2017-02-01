@@ -48,6 +48,6 @@ Inline Common Type LearningResource [2514]
     shared string ContentVersion named Version [1380]
         documentation "The version identifier for the content."
         is optional
-    reference LearningStandard [1373]
+    domain entity LearningStandard [1373]
         documentation "Relates the competency, learning standard, skill and/or text complexity to which the learning resource is aligned."
         is optional

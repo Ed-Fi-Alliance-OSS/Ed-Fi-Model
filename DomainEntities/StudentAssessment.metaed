@@ -65,10 +65,10 @@ Domain Entity StudentAssessment [587]
         documentation "Describes special events that occur before during or after the assessment session that may impact use of results."
         is optional
         with context Event
-    reference Student [1741]
+    domain entity Student [1741]
         documentation "Reference to the Student associated with the Assessment."
         is part of identity
-    reference Assessment [1731]
+    domain entity Assessment [1731]
         documentation "Reference to the Assessment taken by the student."
         is part of identity
     include StudentAssessmentItem [1739]

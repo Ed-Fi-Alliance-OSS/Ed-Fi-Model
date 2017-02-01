@@ -28,7 +28,7 @@ Domain Entity School based on EducationOrganization [579]
     enumeration InternetAccess [1608]
         documentation "The type of Internet access available."
         is optional
-    reference LocalEducationAgency [1609]
+    domain entity LocalEducationAgency [1609]
         documentation "LEA of which the School is an organizational component."
         is optional
     enumeration CharterApprovalAgencyType [2423]

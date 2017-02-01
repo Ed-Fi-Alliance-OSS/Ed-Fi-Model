@@ -4,6 +4,6 @@ Domain Entity EducationServiceCenter based on EducationOrganization [558]
         documentation "The identifier assigned to an education service center by the State Education Agency (SEA)."
         renames identity property EducationOrganizationId
         is queryable field
-    reference StateEducationAgency [1412]
+    domain entity StateEducationAgency [1412]
         documentation "The SEA of which the ESC is an organizational component."
         is optional

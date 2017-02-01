@@ -27,6 +27,6 @@ Common Type StudentAssessmentItem [530]
     duration TimeAssessed [932]
         documentation "The overall time a student actually spent during the AssessmentItem."
         is optional
-    reference AssessmentItem [926]
+    domain entity AssessmentItem [926]
         documentation "The AssessmentItem responded to by the Student."
         is part of identity

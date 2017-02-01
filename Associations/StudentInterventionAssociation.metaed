@@ -4,7 +4,7 @@ Association StudentInterventionAssociation [609]
         documentation "Relates the Student associated with the Intervention."
     domain entity Intervention [1079]
         documentation "An implementation of an instructional approach focusing on the specific techniques and materials used to teach a given subject."
-    reference Cohort [1076]
+    domain entity Cohort [1076]
         documentation "Relates the cohort, if the student's membership in this cohort is the reason he or she is participating in this intervention."
         is optional
         with context Cohort

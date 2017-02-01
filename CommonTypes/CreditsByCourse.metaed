@@ -3,7 +3,7 @@ Common Type CreditsByCourse [498]
     shared string CourseSetName [795]
         documentation "Identifying name given to a collection of courses."
         is part of identity
-    reference Course [794]
+    domain entity Course [794]
         documentation "The course reference that identifies the organization of subject matter and related learning experiences provided for the instruction of students."
         is required collection
         with context Course

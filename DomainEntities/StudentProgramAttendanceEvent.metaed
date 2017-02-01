@@ -3,13 +3,13 @@ Domain Entity StudentProgramAttendanceEvent [592]
     include AttendanceEvent [1767]
         documentation "Details of the AttendanceEvent."
         is required
-    reference Student [1770]
+    domain entity Student [1770]
         documentation "Relates the Student associated with the AttendanceEvent."
         is part of identity
-    reference EducationOrganization [1768]
+    domain entity EducationOrganization [1768]
         documentation "The EducationOrganization where the student is participating in or receiving the program services."
         is part of identity
-    reference Program [1769]
+    domain entity Program [1769]
         documentation "Relates the Program associated with the AttendanceEvent."
         is part of identity
         with context Program

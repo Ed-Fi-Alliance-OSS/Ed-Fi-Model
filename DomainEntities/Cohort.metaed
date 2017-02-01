@@ -15,10 +15,10 @@ Domain Entity Cohort [547]
     descriptor AcademicSubject [1275]
         documentation "The academic subject associated with an academic intervention."
         is optional
-    reference EducationOrganization [1279]
+    domain entity EducationOrganization [1279]
         documentation "The education organization associated with and owner of the Cohort."
         is part of identity
-    reference Program [1280]
+    domain entity Program [1280]
         documentation "The (optional) program associated with this Cohort (e.g., special education)."
         is optional collection
         with context Program

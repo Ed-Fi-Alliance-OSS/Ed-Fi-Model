@@ -42,6 +42,6 @@ Domain Entity OpenStaffPosition [572]
     enumeration PostingResult [1552]
         documentation "Indication of whether the OpenStaffPosition was filled or retired without filling."
         is optional
-    reference EducationOrganization [1548]
+    domain entity EducationOrganization [1548]
         documentation "The EducationOrganization with the OpenStaffPosition."
         is part of identity

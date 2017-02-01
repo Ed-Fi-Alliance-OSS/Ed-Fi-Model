@@ -12,13 +12,13 @@ Domain Entity CourseOffering [551]
     enumeration CurriculumUsed [1312]
         documentation "The type of curriculum used in an early learning classroom or group."
         is optional collection
-    reference School [1316]
+    domain entity School [1316]
         documentation "The school that offers the course."
         is part of identity
-    reference Session [1317]
+    domain entity Session [1317]
         documentation "The session in which the course is offered at the school."
         is part of identity
         merge Session.School with School
-    reference Course [1311]
+    domain entity Course [1311]
         documentation "The course being offered by the school."
         is required

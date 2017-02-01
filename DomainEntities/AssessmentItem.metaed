@@ -22,9 +22,9 @@ Domain Entity AssessmentItem [542]
     shared string Nomenclature [1261]
         documentation "Reflects the specific nomenclature used for AssessmentItem."
         is optional
-    reference LearningStandard [1259]
+    domain entity LearningStandard [1259]
         documentation "LearningStandard tested by this item."
         is optional collection
-    reference Assessment [1255]
+	domain entity Assessment [1255]
         documentation "Relates the AssessmentItem to an existing assessment."
         is part of identity

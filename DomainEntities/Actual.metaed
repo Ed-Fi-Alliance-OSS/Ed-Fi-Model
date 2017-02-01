@@ -6,6 +6,6 @@ Domain Entity Actual [539]
     date AsOfDate [1218]
         documentation "The date of the reported actual element."
         is part of identity
-    reference Account [1216]
+    domain entity Account [1216]
         documentation "Account with which the Actual is associated."
         is part of identity

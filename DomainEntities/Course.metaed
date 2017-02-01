@@ -58,13 +58,13 @@ Domain Entity Course [550]
     descriptor CompetencyLevel [1293]
         documentation "The competency levels defined to rate the student for the course."
         is optional collection
-    reference EducationOrganization [1302]
+    domain entity EducationOrganization [1302]
         documentation "The Education Organization that defines the curriculum and courses offered - often the LEA or school."
         is part of identity
         is queryable field        
-    reference LearningStandard [1306]
+    domain entity LearningStandard [1306]
         documentation "Learning Standard(s) to be taught by the course."
         is optional collection
-    reference LearningObjective [1305]
+    domain entity LearningObjective [1305]
         documentation "Learning Objectives to be mastered in the course."
         is optional collection

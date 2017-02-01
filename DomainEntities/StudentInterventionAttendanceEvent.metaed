@@ -3,9 +3,9 @@ Domain Entity StudentInterventionAttendanceEvent [590]
     include AttendanceEvent [1757]
         documentation "Details of the AttendanceEvent."
         is required
-    reference Student [1759]
+    domain entity Student [1759]
         documentation "Relates the Student associated with the AttendanceEvent."
         is part of identity
-    reference Intervention [1758]
+    domain entity Intervention [1758]
         documentation "Relates the Intervention associated with the AttendanceEvent."
         is part of identity

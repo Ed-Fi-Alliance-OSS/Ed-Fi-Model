@@ -25,10 +25,10 @@ Domain Entity LearningObjective [566]
     shared string Criteria named SuccessCriteria [1493]
         documentation "One or more statements that describes the criteria used by teachers and students to check for attainment of a learning objective. This criteria gives clear indications as to the degree to which learning is moving through the Zone or Proximal Development toward independent achievement of the LearningObjective."
         is optional
-    reference LearningStandard [1488]
+    domain entity LearningStandard [1488]
         documentation "LearningStandard(s) included in this objective."
         is optional collection
-    reference LearningObjective [1492]
+    domain entity LearningObjective [1492]
         documentation "Provide user information to lookup and link to an existing learning objective which serves as a method to group other learning objectives."
         is optional
         with context Parent

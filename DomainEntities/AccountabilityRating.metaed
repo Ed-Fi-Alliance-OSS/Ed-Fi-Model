@@ -1,6 +1,6 @@
 Domain Entity AccountabilityRating [538]
     documentation "An accountability rating for a school or district."
-    reference EducationOrganization [1209]
+    domain entity EducationOrganization [1209]
         documentation "Relates the AccountabilityRating to an Education Organization."
         is part of identity
     shared string RatingTitleType named RatingTitle [1214]

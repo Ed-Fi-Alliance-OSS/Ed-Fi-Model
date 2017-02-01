@@ -23,7 +23,7 @@ Domain Entity Intervention [563]
     enumeration DeliveryMethod [1446]
         documentation "The way in which an intervention was implemented: individual, small group, whole class, or whole school."
         is required
-    reference InterventionPrescription [1454]
+    domain entity InterventionPrescription [1454]
         documentation "The reference to the intervention prescription being followed in this intervention implementation."
         is optional collection
         with context InterventionPrescription
@@ -36,10 +36,10 @@ Domain Entity Intervention [563]
     include MeetingTime [1455]
         documentation "The times at which this intervention is scheduled to meet."
         is optional collection
-    reference Staff [1458]
+    domain entity Staff [1458]
         documentation "Relates the staff member associated with the Intervention."
         is optional collection
-    reference EducationOrganization [1450]
+    domain entity EducationOrganization [1450]
         documentation "Relates the Education Organization which is sponsoring the intervention implementation."
         is part of identity
     shared string IdentificationCode [1453]

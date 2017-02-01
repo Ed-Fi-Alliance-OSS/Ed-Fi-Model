@@ -15,10 +15,10 @@ Domain Entity StudentGradebookEntry [589]
     shared string DiagnosticStatement [1752]
         documentation "A statement provided by the teacher that provides information in addition to the grade or assessment score."
         is optional
-    reference StudentSectionAssociation [1756]
+    association StudentSectionAssociation [1756]
         documentation "Relates the student associated with the GradebookEntry."
         is part of identity
-    reference GradebookEntry [1753]
+    domain entity GradebookEntry [1753]
         documentation "The GradebookEntry associated with the student grade or score."
         is part of identity
         merge GradebookEntry.Section with StudentSectionAssociation.Section

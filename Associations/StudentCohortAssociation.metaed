@@ -10,6 +10,6 @@
     date EndDate [1057]
         documentation "The month, day, and year on which the Student was removed as part of the Cohort."
         is optional
-    reference Section [1058]
+    domain entity Section [1058]
         documentation "The Cohort representing the subdivision of students within one or more sections. For example, a group of students may be given additional instruction and tracked as a cohort."
         is optional collection

@@ -21,20 +21,20 @@ Domain Entity DisciplineAction [553]
     bool RelatedToZeroTolerancePolicy [1342]
         documentation "An indication of whether or not this disciplinary action taken against a student was imposed as a consequence of state or local zero tolerance policies."
         is optional
-    reference Student [1345]
+    domain entity Student [1345]
         documentation "The student(s) disciplined by the DisciplineAction."
         is part of identity
-    reference DisciplineIncident [1341]
+    domain entity DisciplineIncident [1341]
         documentation "Reference to the DisciplineIncident associated with the DisciplineAction."
         is required collection
-    reference Staff [1344]
+    domain entity Staff [1344]
         documentation "The staff responsible for enforcing the DisciplineAction."
         is optional collection
-    reference School [1343]
+    domain entity School [1343]
         documentation "School responsible for student's discipline."
         is required
         with context Responsibility
-    reference School [1335]
+    domain entity School [1335]
         documentation "Optional school where student is transferred for discipline."
         is optional
         with context Assignment

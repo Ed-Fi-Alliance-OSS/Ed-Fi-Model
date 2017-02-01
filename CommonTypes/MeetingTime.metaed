@@ -1,6 +1,6 @@
 Common Type MeetingTime [516]
     documentation "This entity represents the set of elements defining the meeting time for a class period."
-    reference ClassPeriod [872]
+    domain entity ClassPeriod [872]
         documentation "The class period associated with the meeting time for a bell schedule."
         is part of identity
     shared string AlternateDayName [871]

@@ -46,10 +46,10 @@ Domain Entity StudentAcademicRecord [586]
     include Diploma [1713]
         documentation "Diploma(s) earned by the student."
         is optional collection
-    reference Student [1724]
+    domain entity Student [1724]
         documentation "Identifies the student who is associated with the StudentAcademicRecord."
         is part of identity
-    reference EducationOrganization [1714]
+    domain entity EducationOrganization [1714]
         documentation "Provides user information to lookup and link to an existing educational organization record."
         is part of identity
     enumeration SchoolYear [1719]
@@ -58,7 +58,7 @@ Domain Entity StudentAcademicRecord [586]
     descriptor Term [1725]
         documentation "The term for the session during the school year."
         is part of identity
-    reference ReportCard [1718]
+    domain entity ReportCard [1718]
         documentation "Report cards for the student."
         is optional collection
         merge ReportCard.EducationOrganization with EducationOrganization

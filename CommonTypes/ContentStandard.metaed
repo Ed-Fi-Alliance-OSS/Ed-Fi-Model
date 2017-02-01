@@ -19,7 +19,7 @@ Common Type ContentStandard [494]
     enumeration PublicationStatus [774]
         documentation "The publication status of the document (i.e., Adopted, Draft, Published, Deprecated, Unknown)."
         is optional
-    reference EducationOrganization [772]
+    domain entity EducationOrganization [772]
         documentation "Optionally relates the entity mandating the use of the content standard."
         is optional
         with context Mandating

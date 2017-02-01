@@ -23,7 +23,7 @@ Domain Entity InterventionPrescription [564]
     enumeration DeliveryMethod [1461]
         documentation "The way in which an intervention was implemented: individual, small group, whole class, or whole school."
         is required
-    reference EducationOrganization [1465]
+    domain entity EducationOrganization [1465]
         documentation "Relates the Education Organization which is sponsoring the InterventionPrescription."
         is part of identity
     shared string IdentificationCode [1467]

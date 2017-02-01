@@ -16,17 +16,17 @@ Domain Entity GradebookEntry [560]
     shared string Description [1423]
         documentation "A description of the assignment, homework, or classroom assessment."
         is optional
-    reference LearningStandard [1428]
+    domain entity LearningStandard [1428]
         documentation "LearningStandard(s) associated with the GradebookEntry."
         is optional collection
-    reference LearningObjective [1427]
+    domain entity LearningObjective [1427]
         documentation "LearningObjectives associated with the GradebookEntry."
         is optional collection
-    reference Section [1429]
+    domain entity Section [1429]
         documentation "The Section associated with the GradebookEntry."
         is part of identity
         is queryable field
-    reference GradingPeriod [1426]
+    domain entity GradingPeriod [1426]
         documentation "Identifies the grading period for the GradebookEntry."
         is optional
         is queryable field

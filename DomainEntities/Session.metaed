@@ -22,15 +22,15 @@ Domain Entity Session [582]
     shared integer TotalInstructionalDays [1645]
         documentation "The total number of instructional days in the school calendar."
         is required
-    reference School [1641]
+    domain entity School [1641]
         documentation "Relates the Session to the school."
         is part of identity
         is queryable field
-    reference GradingPeriod [1640]
+    domain entity GradingPeriod [1640]
         documentation "Grading periods associated with the calendar."
         is required collection
         merge GradingPeriod.School with School
-    reference AcademicWeek [1637]
+    domain entity AcademicWeek [1637]
         documentation "The academic weeks associated with the school year."
         is optional collection
         merge AcademicWeek.School with School

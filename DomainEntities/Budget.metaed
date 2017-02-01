@@ -6,6 +6,6 @@ Domain Entity Budget [544]
     date AsOfDate [1269]
         documentation "The date of the reported budget element."
         is part of identity
-    reference Account [1267]
+    domain entity Account [1267]
         documentation "Account with which the Budget is associated."
         is part of identity

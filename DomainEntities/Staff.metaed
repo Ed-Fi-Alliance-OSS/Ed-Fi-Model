@@ -85,6 +85,6 @@ Domain Entity Staff [583]
     bool HighlyQualifiedTeacher [1652]
         documentation "An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition. This attribute indicates the teacher is highly qualified for ALL Sections being taught."
         is optional
-    reference EducationOrganization [2357]
+    domain entity EducationOrganization [2357]
         documentation "Provide user information to lookup and link to an existing educational organization record in the receiving system."
         is queryable only

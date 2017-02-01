@@ -9,6 +9,6 @@ Domain Entity Account [537]
     integer FiscalYear [1208]
         documentation "The financial accounting year."
         is part of identity
-    reference EducationOrganization [1207]
+    domain entity EducationOrganization [1207]
         documentation "Relates the account to an Education Organization."
         is part of identity

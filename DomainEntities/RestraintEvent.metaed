@@ -12,12 +12,12 @@ Domain Entity RestraintEvent [578]
     enumeration RestraintEventReason [1597]
         documentation "A categorization of the circumstances or reason for the RestraintEvent."
         is optional collection
-    reference Student [1599]
+    domain entity Student [1599]
         documentation "Reference to student that was restrained."
         is part of identity
-    reference Program [1595]
+    domain entity Program [1595]
         documentation "The special education program associated with the RestraintEvent."
         is optional collection
-    reference School [1598]
+    domain entity School [1598]
         documentation "The school where the RestraintEvent occurred."
         is part of identity

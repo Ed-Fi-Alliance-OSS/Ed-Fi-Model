@@ -42,7 +42,7 @@ Domain Entity AssessmentFamily [541]
     descriptor AssessmentPeriod [1246]
         documentation "The periods or windows defined in which an assessment is supposed to be administered."
         is optional collection
-    reference AssessmentFamily [1251]
+    domain entity AssessmentFamily [1251]
         documentation "References the higher level AssessmentFamily the AssessmentFamily belongs to."
         is optional
         with context Parent

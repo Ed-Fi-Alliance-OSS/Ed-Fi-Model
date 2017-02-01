@@ -6,6 +6,6 @@ Common Type StudentObjectiveAssessment [534]
     include PerformanceLevel [888]
         documentation "The PerformanceLevel(s) achieved for the ObjectiveAssessment."
         is optional collection
-    reference ObjectiveAssessment [946]
+    domain entity ObjectiveAssessment [946]
         documentation "Reference to the test objective that is being measured by the objective-level assessment."
         is part of identity

@@ -16,10 +16,10 @@ Domain Entity Grade [559]
     enumeration PerformanceBaseConversion [1420]
         documentation "A conversion of the level to a standard set of performance levels."
         is optional
-    reference StudentSectionAssociation [1421]
+    association StudentSectionAssociation [1421]
         documentation "Relates the student and Section associated with the Grade."
         is part of identity
-    reference GradingPeriod [1417]
+    domain entity GradingPeriod [1417]
         documentation "Identifies the grading period for the Grade."
         is part of identity
         with context GradingPeriod
