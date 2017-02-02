@@ -1,4 +1,4 @@
-Common String FirstName [49]
+Shared String FirstName [49]
     documentation "A name given to an individual at birth, baptism, or during another naming ceremony, or through legal change."
     min length 1
     max length 75

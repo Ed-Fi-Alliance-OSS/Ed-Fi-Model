@@ -1,4 +1,4 @@
-Common String AssessmentTitle [10]
+Shared String AssessmentTitle [10]
     documentation "The title or name of the assessment."
     min length 1
     max length 60
