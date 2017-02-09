@@ -1,4 +1,4 @@
-Choice Common Type LearningResourceChoice [2501]
+Choice LearningResourceChoice [2501]
     documentation "NEEDS DOCUMENTATION"
     shared string LearningResourceMetadataURI [1372]
         documentation "The URI (typical a URL) pointing to the metadata entry in a LRMI metadata repository, which describes this content item."

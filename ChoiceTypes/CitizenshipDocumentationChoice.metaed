@@ -1,4 +1,4 @@
-Choice Common Type CitizenshipDocumentationChoice [2500]
+Choice CitizenshipDocumentationChoice [2500]
     documentation "NEEDS DOCUMENTATION"
     enumeration Visa [762]
         documentation "An indicator of a non-US citizen's Visa type."

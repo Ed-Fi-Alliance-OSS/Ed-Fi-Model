@@ -1,4 +1,4 @@
-Choice Common Type SectionOrProgramChoice [2504]
+Choice SectionOrProgramChoice [2504]
     documentation "NEEDS DOCUMENTATION"
     domain entity Section [1239]
         documentation "The Section(s) to which the Assessment is associated."

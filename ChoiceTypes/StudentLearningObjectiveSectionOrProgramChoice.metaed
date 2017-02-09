@@ -1,4 +1,4 @@
-Choice Common Type StudentLearningObjectiveSectionOrProgramChoice [2506]
+Choice StudentLearningObjectiveSectionOrProgramChoice [2506]
     documentation "NEEDS DOCUMENTATION"
     association StudentSectionAssociation [1766]
         documentation "Relates the Student and Section associated with the LearningObjective."

@@ -1,4 +1,4 @@
-Choice Common Type PublicationDateChoice [2503]
+Choice PublicationDateChoice [2503]
     documentation "NEEDS DOCUMENTATION"
     date PublicationDate [1374]
         documentation "The date on which this content was first published."
