@@ -6,4 +6,4 @@ Interchange PostSecondaryEvent [2522]
     4. Exchange a student's enrollment in a postsecondary institution.
     5. Exchange student applications for financial aid from a postsecondary institution.
     6. Exchange degree or certification awards earned by a student at a postsecondary institution."
-    element PostSecondaryEvent [2522-001]
+    domain entity PostSecondaryEvent [2522-001]

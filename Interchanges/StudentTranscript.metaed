@@ -4,5 +4,5 @@ Interchange StudentTranscript [2535]
     use case documentation
 "1. Exchange a student's full or partial academic record.
 2. Exchange a transcript for a course or set of courses."
-    element StudentAcademicRecord [2535-001]
-    element CourseTranscript [2535-002]
+    domain entity StudentAcademicRecord [2535-001]
+    domain entity CourseTranscript [2535-002]

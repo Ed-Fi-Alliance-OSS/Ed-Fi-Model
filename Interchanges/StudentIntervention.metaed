@@ -5,9 +5,9 @@ Interchange StudentIntervention [2533]
     3. Exchange descriptions of education content (e.g., videos, handouts, games) used in interventions.
     4. Exchange intervention implementations and student results.
     5. Exchange information about formal studies of interventions."
-    element EducationContent [2533-001]
-    element InterventionPrescription [2533-002]
-    element Intervention [2533-003]
-    element InterventionStudy [2533-004]
-    element StudentInterventionAssociation [2533-005]
-    element EducationOrganizationInterventionPrescriptionAssociation [2533-006]
+    domain entity EducationContent [2533-001]
+    domain entity InterventionPrescription [2533-002]
+    domain entity Intervention [2533-003]
+    domain entity InterventionStudy [2533-004]
+    association StudentInterventionAssociation [2533-005]
+    association EducationOrganizationInterventionPrescriptionAssociation [2533-006]

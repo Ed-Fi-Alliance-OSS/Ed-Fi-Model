@@ -3,7 +3,7 @@ Interchange EducationOrgCalendar [2518]
     use case documentation "1. Exchange dates indicating which days are instructional days, holidays, or teacher-only days.
     2. Exchange session start dates and end dates.
     3. Exchange grading period definitions."
-    element Session [2518-001]
-    element GradingPeriod [2518-002]
-    element CalendarDate [2518-003]
-    element AcademicWeek [2518-004]
+    domain entity Session [2518-001]
+    domain entity GradingPeriod [2518-002]
+    domain entity CalendarDate [2518-003]
+    domain entity AcademicWeek [2518-004]

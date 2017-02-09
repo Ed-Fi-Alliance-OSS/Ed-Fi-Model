@@ -4,16 +4,16 @@ Domain AlternativeAndSupplementalServices
 * A Program entity defines programs with services offered by an education organization.
 * A StudentProgramAssociation links Program entities to participating students.
 * A StaffProgramAssociation links Program entities to assigned staff."
-    domain item AttendanceEvent
-    domain item EducationOrganization
-    domain item Program
-    domain item School
-    domain item Section
-    domain item Staff
-    domain item StaffProgramAssociation
-    domain item Student
-    domain item StudentProgramAssociation
-    domain item StudentSectionAssociation
+    domain entity AttendanceEvent
+    domain entity EducationOrganization
+    domain entity Program
+    domain entity School
+    domain entity Section
+    domain entity Staff
+    association StaffProgramAssociation
+    domain entity Student
+    association StudentProgramAssociation
+    association StudentSectionAssociation
     footer documentation
 "# Alternative and Supplemental Services Subdomains
 

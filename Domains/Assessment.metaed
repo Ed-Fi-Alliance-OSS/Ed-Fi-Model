@@ -4,15 +4,15 @@ Domain Assessment
 * Learning Standards that drive the curriculum and the assessments
 * Assessment Metadata that describe the assessment
 * Student Assessment Results that follow a parallel structure of StudentAssessment, StudentObjectiveAssessment, and StudentAssessmentItem"
-    domain item Assessment
-    domain item AssessmentFamily
-    domain item AssessmentItem
-    domain item LearningObjective
-    domain item LearningStandard
-    domain item ObjectiveAssessment
-    domain item Program
-    domain item Section
-    domain item Student
-    domain item StudentAssessment
-    domain item StudentAssessmentItem
-    domain item StudentObjectiveAssessment
+    domain entity Assessment
+    domain entity AssessmentFamily
+    domain entity AssessmentItem
+    domain entity LearningObjective
+    domain entity LearningStandard
+    domain entity ObjectiveAssessment
+    domain entity Program
+    domain entity Section
+    domain entity Student
+    domain entity StudentAssessment
+    domain entity StudentAssessmentItem
+    domain entity StudentObjectiveAssessment

@@ -10,8 +10,8 @@ The student's assessment results follow a similar structure to the assessment me
 * StudentAssessment holds the overall assessment score and other information about a specific student's results for a specific assessment.The StudentAssessment is associated with a specific student.
 * StudentObjectiveAssessment optionally holds the student's score for individually scored results for a specific LearningObjective. If the assessment metadata includes ObjectiveAssessments, then there would be corresponding StudentObjectiveAssessments for each student.
 * StudentAssessmentItem optionally holds the student's score forindividual AssessmentItems. If the assessment metadata includesAssessmentItems, then there would be corresponding StudentAssessmentItems for each student."
-    domain item Student
-    domain item StudentAssessment
-    domain item StudentAssessmentItem
-    domain item StudentObjectiveAssessment
+    domain entity Student
+    domain entity StudentAssessment
+    domain entity StudentAssessmentItem
+    domain entity StudentObjectiveAssessment
     position 3

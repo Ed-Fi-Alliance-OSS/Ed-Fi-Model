@@ -3,8 +3,8 @@ Interchange StudentAttendance [2527]
     use case documentation "1. Exchange a school's or LEA's section (class), school (daily), intervention, or program attendance data.
     2. Exchange a school's or LEA's section attendance taken data.
     3. Exchange attendance data for a particular student (e.g., for a transfer student)."
-    element StudentInterventionAttendanceEvent [2527-001]
-    element StudentProgramAttendanceEvent [2527-002]
-    element StudentSchoolAttendanceEvent [2527-003]
-    element StudentSectionAttendanceEvent [2527-004]
-    element SectionAttendanceTakenEvent [2527-005]
+    domain entity StudentInterventionAttendanceEvent [2527-001]
+    domain entity StudentProgramAttendanceEvent [2527-002]
+    domain entity StudentSchoolAttendanceEvent [2527-003]
+    domain entity StudentSectionAttendanceEvent [2527-004]
+    domain entity SectionAttendanceTakenEvent [2527-005]

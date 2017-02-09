@@ -6,9 +6,9 @@ Interchange StudentGrade [2531]
 2. Exchange interim, grading period, semester, or final report card data.
 3. Exchange grades.
 4. Exchange students' graduation information."
-    element ReportCard [2531-001]
-    element Grade [2531-002]
-    element CompetencyObjective [2531-003]
-    element LearningObjective [2531-004]
-    element StudentCompetencyObjective [2531-005]
-    element StudentLearningObjective [2531-006]
+    domain entity ReportCard [2531-001]
+    domain entity Grade [2531-002]
+    domain entity CompetencyObjective [2531-003]
+    domain entity LearningObjective [2531-004]
+    domain entity StudentCompetencyObjective [2531-005]
+    domain entity StudentLearningObjective [2531-006]

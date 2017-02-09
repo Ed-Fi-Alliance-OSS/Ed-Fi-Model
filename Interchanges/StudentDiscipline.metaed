@@ -3,6 +3,6 @@ Interchange StudentDiscipline [2529]
     use case documentation "1. Exchange a student's full or partial discipline history.
     2. Exchange a student's updated discipline record.
     3. Exchange school or LEA discipline data."
-    element DisciplineIncident [2529-001]
-    element StudentDisciplineIncidentAssociation [2529-002]
-    element DisciplineAction [2529-003]
+    domain entity DisciplineIncident [2529-001]
+    association StudentDisciplineIncidentAssociation [2529-002]
+    domain entity DisciplineAction [2529-003]

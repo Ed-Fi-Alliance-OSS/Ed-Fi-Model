@@ -5,6 +5,6 @@ Interchange StudentCohort [2528]
     2. Exchange students identified for interventions.
     3. Exchange staff members associated with a cohort who are providing support, services, or sponsorship.
     4. Exchange staff members that are allowed to see specific student records (e.g., therapists and specialists)."
-    element Cohort [2528-001]
-    element StudentCohortAssociation [2528-002]
-    element StaffCohortAssociation [2528-003]
+    domain entity Cohort [2528-001]
+    association StudentCohortAssociation [2528-002]
+    association StaffCohortAssociation [2528-003]

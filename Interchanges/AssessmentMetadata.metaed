@@ -7,9 +7,9 @@ Interchange AssessmentMetadata [2516]
     * Three-level assessment, reporting an overall score, a score for sections that test specific learning objectives, and a score for each assessment item (e.g., a benchmark assessment may report a total raw score, a score per objective, and individual results for each question which are tied to learning standards)."
     use case documentation "1. Exchange metadata for standardized state or local assessment(s).
     2. Exchange metadata for classroom or benchmark assessment(s)."
-    element AssessmentFamily [2516-001]
-    element Assessment [2516-002]
-    element ObjectiveAssessment [2516-003]
-    element AssessmentItem [2516-004]
-    element LearningObjective [2516-005]
-    element LearningStandard [2516-006]
+    domain entity AssessmentFamily [2516-001]
+    domain entity Assessment [2516-002]
+    domain entity ObjectiveAssessment [2516-003]
+    domain entity AssessmentItem [2516-004]
+    domain entity LearningObjective [2516-005]
+    domain entity LearningStandard [2516-006]

@@ -9,7 +9,7 @@ Interchange StudentAssessment [2526]
     use case documentation "1. Exchange student scores for standardized state and local assessments.
     2. Exchange student scores for classroom and benchmark tests.
     3. Exchange student assessment score updates (e.g., retakes, correction of errors)."
-    identity template Assessment [2526-001]
-    identity template AssessmentItem [2526-002]
-    identity template ObjectiveAssessment [2526-003]
-    element StudentAssessment [2526-004]
+    domain entity identity Assessment [2526-001]
+    domain entity identity AssessmentItem [2526-002]
+    domain entity identity ObjectiveAssessment [2526-003]
+    domain entity StudentAssessment [2526-004]
