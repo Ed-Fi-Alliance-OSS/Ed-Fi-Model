@@ -10,15 +10,15 @@ Domain Entity Staff [583]
         is part of identity
         with context Staff
         is queryable field
-    include StaffIdentificationCode [1662]
+    common StaffIdentificationCode [1662]
         documentation "A unique number or alphanumeric code assigned to a staff member by a school, school system, a state, or other agency or entity."
         is optional collection
         is queryable field
-    include Name [1657]
+    inline common Name [1657]
         documentation "Full legal name of the person."
         is required
         is queryable field
-    include OtherName [1659]
+    common OtherName [1659]
         documentation "Other names (e.g., alias, nickname, previous legal name) associated with a person."
         is optional collection
         is queryable field
@@ -30,17 +30,17 @@ Domain Entity Staff [583]
         documentation "The month, day, and year on which an individual was born."
         is optional
         is queryable field
-    include Address [1646]
+    common Address [1646]
         documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
         is optional collection
-    include InternationalAddress [1654]
+    common InternationalAddress [1654]
         documentation "The set of elements that describes an international address."
         is optional collection
-    include Telephone [1664]
+    common Telephone [1664]
         documentation "The 10-digit telephone number, including the area code, for the person."
         is optional collection
         is queryable field
-    include ElectronicMail [1650]
+    common ElectronicMail [1650]
         documentation "The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs."
         is optional collection
         is queryable field
@@ -60,10 +60,10 @@ Domain Entity Staff [583]
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The way this data element is listed, it must allow for multiple entries so that each individual can specify all appropriate races."
         is optional collection
         is queryable field
-    include Citizenship [1648]
+    inline common Citizenship [1648]
         documentation "Contains information relative to citizenship status and its associated probationary documentation."
         is optional
-    include Language [1655]
+    common Language [1655]
         documentation "The language(s) the individual uses to communicate."
         is optional collection
     descriptor LevelOfEducation [1651]
@@ -76,7 +76,7 @@ Domain Entity Staff [583]
     shared decimal NumberOfYears named YearsOfPriorTeachingExperience [1666]
         documentation "The total number of years that an individual has previously held a teaching position in one or more education institutions."
         is optional
-    include Credential [1649]
+    common Credential [1649]
         documentation "The legal document or authorization giving authorization to perform teaching assignment services."
         is optional collection
     shared string IdentificationCode named LoginId [1656]

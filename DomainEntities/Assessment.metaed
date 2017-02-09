@@ -4,7 +4,7 @@ Domain Entity Assessment [540]
         documentation "The title or name of the Assessment."
         is part of identity
         is queryable field
-    include AssessmentIdentificationCode [1224]
+    common AssessmentIdentificationCode [1224]
         documentation "A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity."
         is required collection
         is queryable field
@@ -41,16 +41,16 @@ Domain Entity Assessment [540]
         ..."
         is optional
         with context LowestAssessed
-    include AssessmentScore [1227]
+    common AssessmentScore [1227]
         documentation "Definition of the scores to be expected from this assessment."
         is optional collection
-    include AssessmentPerformanceLevel [1225]
+    common AssessmentPerformanceLevel [1225]
         documentation "Definition of the performance levels and the associated cut scores. Three styles are supported:
         1. Specification of performance level by minimum and maximum score
         2. Specification of performance level by cut score, using only minimum score
         3. Specification of performance level without any mapping to scores."
         is optional collection
-    include ContentStandard [1229]
+    common ContentStandard [1229]
         documentation "An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard)."
         is optional
     shared string AssessmentForm [1223]

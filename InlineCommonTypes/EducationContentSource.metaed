@@ -1,4 +1,4 @@
-Inline Common Type EducationContentSource [503]
+Inline Common EducationContentSource [503]
     documentation "Published papers, reports, or other educational documents."
     domain entity EducationContent [812]
         documentation "Relates the education content source to the education content."

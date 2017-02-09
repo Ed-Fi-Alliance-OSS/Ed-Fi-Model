@@ -1,4 +1,4 @@
-Inline Common Type EmploymentPeriod [506]
+Inline Common EmploymentPeriod [506]
     documentation "The set of elements defining and characterizing a person's period of employment including start and end dates and the type and reason for separation."
     date HireDate [821]
         documentation "The month, day, and year on which an individual was hired for a position."

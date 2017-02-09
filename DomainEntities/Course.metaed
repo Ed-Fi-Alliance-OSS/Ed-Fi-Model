@@ -11,7 +11,7 @@ Domain Entity Course [550]
     shared integer NumberOfParts [1309]
         documentation "The number of parts identified for a course."
         is required
-    include CourseIdentificationCode [1298]
+    common CourseIdentificationCode [1298]
         documentation "The code that identifies the organization of subject matter and related learning experiences provided for the instruction of students."
         is required collection
         is queryable field        
@@ -44,11 +44,11 @@ Domain Entity Course [550]
     enumeration CourseDefinedBy [1295]
         documentation "Specifies whether the course was defined by the SEA, LEA, School, or national organization." 
         is optional
-    include Credits [1308]
+    inline common Credits [1308]
         documentation "The minimum amount of credit available to a student who successfully completes the course."
         is optional
         with context MinimumAvailable
-    include Credits [1307]
+    inline common Credits [1307]
         documentation "The maximum amount of credit available to a student who successfully completes the course."
         is optional
         with context MaximumAvailable

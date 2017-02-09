@@ -6,7 +6,7 @@ Association StudentSpecialEducationProgramAssociation based on StudentProgramAss
     descriptor SpecialEducationSetting [1152]
         documentation "The major instructional setting (more than 50 percent of a student's special education program)."
         is optional
-    include ServiceProvider [1150]
+    common ServiceProvider [1150]
         documentation "The Staff providing special education services to the Student."
         is optional collection
     shared decimal HoursPerWeek named SpecialEducationHoursPerWeek [1151]

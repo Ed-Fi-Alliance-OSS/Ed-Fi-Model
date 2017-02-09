@@ -1,4 +1,4 @@
-Common Type StudentCharacteristic [531]
+Common StudentCharacteristic [531]
     documentation "Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth."
     descriptor StudentCharacteristic [936]
         documentation "The characteristic designated for the Student."

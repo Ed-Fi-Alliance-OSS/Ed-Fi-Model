@@ -1,4 +1,4 @@
-Common Type InterventionEffectiveness [510]
+Common InterventionEffectiveness [510]
     documentation "Measurement of the effectiveness of the intervention per diagnosis."
     descriptor Diagnosis [847]
         documentation "Targeted purpose of the intervention (e.g., attendance issue, dropout risk) for which the effectiveness is measured."

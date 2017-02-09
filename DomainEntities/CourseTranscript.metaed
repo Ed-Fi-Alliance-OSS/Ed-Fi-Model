@@ -7,15 +7,15 @@ Domain Entity CourseTranscript [552]
         Incomplete
         Withdrawn."
         is part of identity
-    include Credits [1318]
+    inline common Credits [1318]
         documentation "The number of credits a student attempted and could earn for successfully completing a given course."
         is optional
         with context Attempted
-    include Credits [1324]
+    inline common Credits [1324]
         documentation "The number of credits a student earned for completing a given course."
         is required
         with context Earned
-    include AdditionalCredits [1323]
+    common AdditionalCredits [1323]
         documentation "The number of additional credits a student attempted and could earn for successfully completing a given course (e.g., dual credit, AP, IB)."
         is optional collection
         with context Earned

@@ -1,4 +1,4 @@
-Common Type ServiceProvider [526]
+Common ServiceProvider [526]
     documentation "The student's special education ServiceProvider."
     domain entity Staff [918]
         documentation "Relates the ServiceProvider to the Staff."

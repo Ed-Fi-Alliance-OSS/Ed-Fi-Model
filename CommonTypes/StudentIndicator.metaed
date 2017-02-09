@@ -1,4 +1,4 @@
-Common Type StudentIndicator [533]
+Common StudentIndicator [533]
     documentation "An indicator or metric computed for the student (e.g., at risk) to influence more effective education or direct specific interventions."
     shared string IndicatorName named IndicatorGroup [944]
         documentation "The name for a group of indicators."

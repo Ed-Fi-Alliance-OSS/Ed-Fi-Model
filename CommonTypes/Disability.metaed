@@ -1,4 +1,4 @@
-Common Type Disability [502]
+Common Disability [502]
     documentation "This type represents an impairment of body structure or function, a limitation in activities, or a restriction in participation, as ordered by severity of impairment."
     descriptor Disability [809]
         documentation "A disability category that describes a child's impairment."

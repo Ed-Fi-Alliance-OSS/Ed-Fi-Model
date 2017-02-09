@@ -6,7 +6,7 @@ Domain Entity ObjectiveAssessment [571]
     integer MaxRawScore [1541]
         documentation "The maximum raw score achievable across all assessment items that are correct and scored at the maximum."
         is optional
-    include AssessmentPerformanceLevel [1535]
+    common AssessmentPerformanceLevel [1535]
         documentation "Definition of the performance levels and the associated cut scores. Three styles are supported:
         1. Specification of performance level by minimum and maximum score    
         2. Specification of performance level by cut score, using only minimum score    

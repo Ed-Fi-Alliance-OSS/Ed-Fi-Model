@@ -5,11 +5,11 @@ Domain Entity Parent [573]
         is part of identity
         with context Parent
         is queryable field
-    include Name [1560]
+    inline common Name [1560]
         documentation "Full legal name of the person."
         is required
         is queryable field
-    include OtherName [1561]
+    common OtherName [1561]
         documentation "Other names (e.g., alias, nickname, previous legal name) associated with a person."
         is optional collection
         is queryable field
@@ -17,18 +17,18 @@ Domain Entity Parent [573]
         documentation "A person's gender."
         is optional
         is queryable field
-    include Address [1556]
+    common Address [1556]
         documentation "Parent's address, if different from the student address."
         is optional collection
         is queryable field
-    include InternationalAddress [1558]
+    common InternationalAddress [1558]
         documentation "The set of elements that describes an international address."
         is optional collection
-    include Telephone [1564]
+    common Telephone [1564]
         documentation "The 10-digit telephone number, including the area code, for the person."
         is optional collection
         is queryable field
-    include ElectronicMail [1557]
+    common ElectronicMail [1557]
         documentation "The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs."
         is optional collection
         is queryable field

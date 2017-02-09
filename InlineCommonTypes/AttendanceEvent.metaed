@@ -1,4 +1,4 @@
-Inline Common Type AttendanceEvent [486]
+Inline Common AttendanceEvent [486]
     documentation "This event entity represents the recording of whether a student is in attendance for a class or in attendance to receive or participate in program services."
     date EventDate [749]
         documentation "Date for this attendance event."

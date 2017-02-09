@@ -1,4 +1,4 @@
-Inline Common Type BirthData [488]
+Inline Common BirthData [488]
     documentation "The set of elements that capture relevant data regarding a person's birth, including birth date and place of birth."
     date BirthDate [753]
         documentation "The month, day, and year on which an individual was born."

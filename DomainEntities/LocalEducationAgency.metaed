@@ -10,10 +10,10 @@ Domain Entity LocalEducationAgency based on EducationOrganization [569]
     enumeration CharterStatus [1513]
         documentation "A school or agency providing free public elementary or secondary education to eligible students under a specific charter granted by the state legislature or other appropriate authority and designated by such authority to be a charter school."
         is optional
-    include LocalEducationAgencyAccountability [1519]
+    common LocalEducationAgencyAccountability [1519]
         documentation "This entity maintains information about federal reporting and accountability for local education agencies."
         is optional collection
-    include LocalEducationAgencyFederalFunds [1521]
+    common LocalEducationAgencyFederalFunds [1521]
         documentation "Contains the information about the reception and use of federal funds for reporting purposes."
         is optional collection
     domain entity LocalEducationAgency [1525]

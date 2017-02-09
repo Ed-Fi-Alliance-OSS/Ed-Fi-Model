@@ -1,4 +1,4 @@
-Common Type InternationalAddress [509]
+Common InternationalAddress [509]
     documentation "Addresses located outside of the United States."
     enumeration AddressType [841]
         documentation "The type of address listed for an individual or organization. For example:  Physical Address, Mailing Address, Home Address, etc.)"

@@ -1,4 +1,4 @@
-Common Type AssessmentFamilyIdentificationCode [482]
+Common AssessmentFamilyIdentificationCode [482]
     documentation "A unique number or alphanumeric code assigned to an assessment family by a school, school system, a state, or other agency or entity."
     shared string IdentificationCode [733]
         documentation "A unique number or alphanumeric code assigned to an assessment by a school, school system, state, or other agency or entity."

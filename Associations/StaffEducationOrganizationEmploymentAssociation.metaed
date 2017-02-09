@@ -13,7 +13,7 @@ Association StaffEducationOrganizationEmploymentAssociation [601]
         Volunteer/no contract
         ..."
         is part of identity
-    include EmploymentPeriod [1030]
+    inline common EmploymentPeriod [1030]
         documentation "The set of elements defining and characterizing a person's period of employment including start and end dates and the type and reason for separation."
         is required
     shared string Department [1028]

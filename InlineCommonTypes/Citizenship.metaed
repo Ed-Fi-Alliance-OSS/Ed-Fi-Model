@@ -1,4 +1,4 @@
-Inline Common Type Citizenship [490]
+Inline Common Citizenship [490]
     documentation "Describes  information relative to identity and citizenship of a person."
     enumeration CitizenshipStatus [761]
         documentation "An indicator of whether or not the person is a U.S. citizen."
@@ -6,7 +6,7 @@ Inline Common Type Citizenship [490]
     choice CitizenshipDocumentationChoice [2513]
         documentation "Describe the probationary documentation of U.S. citizenship."
         is optional
-    include IdentificationDocument [824]
+    common IdentificationDocument [824]
         documentation "Describe the probationary documentation of citizenship of an alien or a foreign nationality of a U.S. citizen."
         is optional collection
         with context ForeignCitizenship

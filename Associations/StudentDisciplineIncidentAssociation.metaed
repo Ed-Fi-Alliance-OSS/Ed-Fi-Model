@@ -12,6 +12,6 @@ Association StudentDisciplineIncidentAssociation [607]
         Witness
         Reporter."
         is required
-    include Behavior [1069]
+    common Behavior [1069]
         documentation "Describes behavior by category and provides a detailed description."
         is optional collection

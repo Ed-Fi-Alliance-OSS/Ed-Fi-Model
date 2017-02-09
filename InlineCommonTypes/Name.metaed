@@ -1,4 +1,4 @@
-Inline Common Type Name [517]
+Inline Common Name [517]
     documentation "The set of elements that comprise a person's legal name."
     shared string PersonalTitlePrefix [881]
         documentation "A prefix used to denote the title, degree, position, or seniority of the person."
@@ -18,7 +18,7 @@ Inline Common Type Name [517]
     shared string LastSurname named MaidenName [879]
         documentation "The person's maiden name."
         is optional
-    include IdentificationDocument [891]
+    common IdentificationDocument [891]
         documentation "The documents presented as evident to verify one's personal identity; for example: drivers license, passport, birth certificate, etc."
         is optional collection
         with context Personal

@@ -1,13 +1,13 @@
 Domain Entity InterventionStudy [565]
     documentation "An experimental or quasi-experimental study of an intervention technique."
-    include EducationContentSource [1474]
+    inline common EducationContentSource [1474]
         documentation "Reference to any published papers, reports, or other documents about this intervention study."
         is optional
     domain entity InterventionPrescription [1478]
         documentation "Reference to the InterventionPrescription being studied."
         is required
         with context InterventionPrescription
-    include InterventionEffectiveness [1477]
+    common InterventionEffectiveness [1477]
         documentation "Measurement of the effectiveness of the InterventionStudy per diagnosis."
         is optional collection
     integer Participants [1480]

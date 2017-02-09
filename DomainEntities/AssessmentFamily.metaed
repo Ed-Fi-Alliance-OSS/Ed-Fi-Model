@@ -4,7 +4,7 @@ Domain Entity AssessmentFamily [541]
         documentation "The title or name of the AssessmentFamily."
         is part of identity
         is queryable field
-    include AssessmentFamilyIdentificationCode [1244]
+    common AssessmentFamilyIdentificationCode [1244]
         documentation "A unique number or alphanumeric code assigned to an assessment family by a school, school system, a state, or other agency or entity."
         is required collection
         is queryable field
@@ -23,7 +23,7 @@ Domain Entity AssessmentFamily [541]
         documentation "If the assessment spans a range of grades, then this attribute holds the lowest grade assessed. If only one grade level is assessed, then this attribute is omitted."
         is optional
         with context LowestAssessed
-    include ContentStandard [1247]
+    common ContentStandard [1247]
         documentation "An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard)."
         is optional
     descriptor Language [1248]

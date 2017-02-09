@@ -1,4 +1,4 @@
-Common Type Address [481]
+Common Address [481]
     documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
     shared string StreetNumberName [730]
         documentation "The street number and street name or post office box number of an address."

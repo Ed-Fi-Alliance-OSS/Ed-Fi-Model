@@ -3,6 +3,6 @@ Choice Common Type LearningResourceChoice [2501]
     shared string LearningResourceMetadataURI [1372]
         documentation "The URI (typical a URL) pointing to the metadata entry in a LRMI metadata repository, which describes this content item."
         is required
-    include LearningResource [2502]
+    inline common LearningResource [2502]
         documentation "This entity maintains information that describes content, materials, and informational resources that support learning."
         is required

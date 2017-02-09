@@ -3,7 +3,7 @@ Choice Common Type CitizenshipDocumentationChoice [2500]
     enumeration Visa [762]
         documentation "An indicator of a non-US citizen's Visa type."
         is required collection
-    include IdentificationDocument [947]
+    common IdentificationDocument [947]
         documentation "Describe the probationary documentation of US citizenship."
         is required collection
         with context USCitizenship

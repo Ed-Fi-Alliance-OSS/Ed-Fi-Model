@@ -1,4 +1,4 @@
-Common Type CohortYear [493]
+Common CohortYear [493]
     documentation "The type and year of a cohort (e.g., 9th grade) the student belongs to."
     enumeration SchoolYear [768]
         documentation "The value of the  school year for the Cohort."

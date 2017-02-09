@@ -1,6 +1,6 @@
 Domain Entity StudentProgramAttendanceEvent [592]
     documentation "This event entity represents the recording of whether a student is in attendance to receive or participate in program services."
-    include AttendanceEvent [1767]
+    inline common AttendanceEvent [1767]
         documentation "Details of the AttendanceEvent."
         is required
     domain entity Student [1770]

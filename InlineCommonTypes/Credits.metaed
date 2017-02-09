@@ -1,4 +1,4 @@
-Inline Common Type Credits [497]
+Inline Common Credits [497]
     documentation "Credits or units of value awarded for the completion of a course."
     shared decimal CreditsValue named Credits [790]
         documentation "The value of credits or units of value awarded for the completion of a course."

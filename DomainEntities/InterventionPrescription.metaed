@@ -1,6 +1,6 @@
 Domain Entity InterventionPrescription [564]
     documentation "This entity represents a formal prescription of an instructional approach focusing on the specific techniques and materials used to teach a given subject. This can be prescribed by academic research, an interventions vendor, or another entity."
-    include EducationContentSource [1464]
+    inline common EducationContentSource [1464]
         documentation "Resources related to or used in this intervention prescription, including any documentation around the InterventionPrescription itself. Since an intervention prescription is intended to be a published intervention, an intervention prescription should have at least one such resource."
         is required
     enumeration InterventionClass [1466]

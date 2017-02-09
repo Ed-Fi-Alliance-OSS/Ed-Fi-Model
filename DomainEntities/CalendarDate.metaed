@@ -6,6 +6,6 @@ Domain Entity CalendarDate [545]
     domain entity School [2426]
         documentation "The school for which the calendar event is defined."
         is part of identity
-    include CalendarEvent [1270]
+    common CalendarEvent [1270]
         documentation "Additional description of the date such as date classification and duration of the event."
         is required collection

@@ -1,4 +1,4 @@
-Common Type ProgramParticipation [522]
+Common ProgramParticipation [522]
     documentation "Programs the student is participating in or receiving services from."
     enumeration ProgramType [904]
         documentation "The type of program."

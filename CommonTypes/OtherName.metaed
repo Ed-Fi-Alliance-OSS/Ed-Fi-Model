@@ -1,4 +1,4 @@
-Common Type OtherName [518]
+Common OtherName [518]
     documentation "Other names (e.g., alias, nickname, previous legal name) associated with a person."
     shared string PersonalTitlePrefix [887]
         documentation "A prefix used to denote the title, degree, position, or seniority of the person."

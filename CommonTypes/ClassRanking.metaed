@@ -1,4 +1,4 @@
-Common Type ClassRanking [492]
+Common ClassRanking [492]
     documentation "The academic rank information of a student in relation to his or her graduating class."
     integer ClassRank [763]
         documentation "The academic rank of a student in relation to his or her graduating class (e.g., 1st, 2nd, 3rd)."

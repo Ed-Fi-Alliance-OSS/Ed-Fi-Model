@@ -1,4 +1,4 @@
-Common Type Service [525]
+Common Service [525]
     documentation "The student's program service information."
     descriptor Service [914]
         documentation "Indicates the Service being provided to the student by the Program."

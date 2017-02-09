@@ -1,4 +1,4 @@
-Common Type IdentificationDocument [491]
+Common IdentificationDocument [491]
     documentation "Represents the valid document that a person uses for identification."
     shared string DocumentTitle [829]
         documentation "The title of the document given by the issuer."

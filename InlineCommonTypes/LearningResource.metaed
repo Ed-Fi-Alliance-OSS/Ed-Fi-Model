@@ -1,4 +1,4 @@
-Inline Common Type LearningResource [2514]
+Inline Common LearningResource [2514]
     documentation "This entity maintains information that describes content, materials, or informational resources that support learning."
     shared string ShortDescription [1377]
         documentation "A short description or name of the entity."
@@ -27,7 +27,7 @@ Inline Common Type LearningResource [2514]
     shared string URI named UseRightsURL [1379]
         documentation "The URL where the owner specifies permissions for using the resource."
         is optional
-    include EducationContentSource [1368]
+    inline common EducationContentSource [1368]
         documentation "A reference or URL pointing to education content from which this education content was derived."
         is optional
         with context DerivativeSource

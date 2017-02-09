@@ -1,6 +1,6 @@
-Common Type Diploma [501]
+Common Diploma [501]
     documentation "This educational entity represents the conferring or certification by an educational organization that the student has successfully completed a particular course of study. It represents the electronic version of its physical document counterpart."
-    include Achievement [714]
+    inline common Achievement [714]
         documentation "An entity that includes information about achievement earned by a learner upon fulfilling a specified criteria."
         is required
     date DiplomaAwardDate [804]

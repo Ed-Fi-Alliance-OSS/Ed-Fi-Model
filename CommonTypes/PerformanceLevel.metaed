@@ -1,4 +1,4 @@
-Common Type PerformanceLevel [519]
+Common PerformanceLevel [519]
     documentation "A performance level value that describes student proficiency."
     bool PerformanceLevelMet [890]
         documentation "Optional indicator of whether the performance level was met."

@@ -7,7 +7,7 @@ Abstract Entity EducationOrganization [556]
     shared string IdentificationCode named StateOrganizationId [1389]
         documentation "The identifier assigned to an education organization by the StateEducationAgency (SEA)."
         is required
-    include EducationOrganizationIdentificationCode [1383]
+    common EducationOrganizationIdentificationCode [1383]
         documentation "A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity."
         is optional collection
         is queryable field
@@ -23,13 +23,13 @@ Abstract Entity EducationOrganization [556]
         documentation "The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state."
         is required collection
         is queryable field
-    include Address [1381]
+    common Address [1381]
         documentation "The set of elements that describes the physical location of the education entity, including the street address, city, state, ZIP code, and ZIP code + 4."
         is required collection
-    include InternationalAddress [1385]
+    common InternationalAddress [1385]
         documentation "The set of elements that describes the international physical location of the education entity."
         is optional collection
-    include InstitutionTelephone [1384]
+    common InstitutionTelephone [1384]
         documentation "The 10-digit telephone number, including the area code, for the education entity."
         is optional collection
     shared string URI named WebSite [1390]

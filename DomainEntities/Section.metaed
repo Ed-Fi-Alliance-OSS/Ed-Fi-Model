@@ -36,7 +36,7 @@ Domain Entity Section [580]
         Special education students
         ..."
         is optional
-    include Credits [1620]
+    inline common Credits [1620]
         documentation "The amount of credit available to a student who successfully meets the objectives of the course. AvailableCredits are measured in Carnegie units, A course meeting every day for one period of the school day over the span of a school year offers one Carnegie unit. See publication: U.S. Department of Education, NCES, 2007-341, Secondary School Course Classification System: School Codes for the Exchange of Data (SCED)."
         is optional
         with context Available

@@ -6,7 +6,7 @@ Domain Entity PostSecondaryEvent [575]
     enumeration PostSecondaryEventCategory [1570]
         documentation "The PostSecondaryEvent that is logged (e.g., FAFSA application, college application, college acceptance)."
         is part of identity
-    include PostSecondaryInstitution [1571]
+    common PostSecondaryInstitution [1571]
         documentation "An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s)."
         is optional
     domain entity Student [1572]

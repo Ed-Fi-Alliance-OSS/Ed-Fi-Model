@@ -1,4 +1,4 @@
-Common Type LocalEducationAgencyFederalFunds [515]
+Common LocalEducationAgencyFederalFunds [515]
     documentation "Contains the information about the reception and use of federal funds for reporting purposes."
     integer FiscalYear [862]
         documentation "The school year for which the accountability is reported."

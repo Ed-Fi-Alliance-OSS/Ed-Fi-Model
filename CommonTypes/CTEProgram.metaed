@@ -1,4 +1,4 @@
-Common Type CTEProgram [500]
+Common CTEProgram [500]
     documentation "The career cluster or pathway representing the career path of the Vocational/Career Tech concentrator."
     enumeration CareerPathway [799]
         documentation "A sequence of courses within an area of interest that is a student's educational road map to a chosen career."

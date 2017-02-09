@@ -10,7 +10,7 @@ Domain Entity BellSchedule [543]
         documentation "The school for which the BellSchedule is defined."
         is part of identity
         is weak
-    include MeetingTime [1265]
+    common MeetingTime [1265]
         documentation "The times at which this BellSchedule is intended to meet."
         is required collection
         merge MeetingTime.ClassPeriod.School with School

@@ -48,14 +48,14 @@ Domain Entity StudentAssessment [587]
         LEP Exempt
         ..."
         is optional
-    include ScoreResult [1737]
+    common ScoreResult [1737]
         documentation "A meaningful score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
         is optional collection
     descriptor GradeLevel [1742]
         documentation "The grade level of a student when assessed."
         is optional
         with context WhenAssessed
-    include PerformanceLevel [1734]
+    common PerformanceLevel [1734]
         documentation "The performance level(s) achieved for the StudentAssessment."
         is optional collection
     enumeration EventCircumstance [1732]
@@ -71,11 +71,11 @@ Domain Entity StudentAssessment [587]
     domain entity Assessment [1731]
         documentation "Reference to the Assessment taken by the student."
         is part of identity
-    include StudentAssessmentItem [1739]
+    common StudentAssessmentItem [1739]
         documentation "NEEDS DOCUMENTATION"
         is optional collection
         merge StudentAssessmentItem.AssessmentItem.Assessment with Assessment
-    include StudentObjectiveAssessment [1740]
+    common StudentObjectiveAssessment [1740]
         documentation "NEEDS DOCUMENTATION"
         is optional collection
         merge StudentObjectiveAssessment.ObjectiveAssessment.Assessment with Assessment

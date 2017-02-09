@@ -1,4 +1,4 @@
-Common Type ContentStandard [494]
+Common ContentStandard [494]
     documentation "An indication as to whether an assessment conforms to a standard (e.g., local standard,statewide standard, regional standard, association standard).
     ..."
     shared string ContentStandardTitle named Title [776]

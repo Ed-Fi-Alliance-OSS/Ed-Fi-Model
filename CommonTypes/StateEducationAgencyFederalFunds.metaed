@@ -1,4 +1,4 @@
-Common Type StateEducationAgencyFederalFunds [529]
+Common StateEducationAgencyFederalFunds [529]
     documentation "Contains the information about the reception and use of federal funds for reporting purposes."
     integer FiscalYear [925]
         documentation "The fiscal year for which the federal funds are received."

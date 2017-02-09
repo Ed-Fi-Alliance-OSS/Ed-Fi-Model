@@ -1,4 +1,4 @@
-Common Type StudentIdentificationCode [532]
+Common StudentIdentificationCode [532]
     documentation "A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a student."
     shared string IdentificationCode [938]
         documentation "A unique number or alphanumeric code assigned to a student by a school, school system, a state, or other agency or entity."

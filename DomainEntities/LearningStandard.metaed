@@ -4,7 +4,7 @@ Domain Entity LearningStandard [567]
         documentation "The identifier for the specific learning standard (e.g., 111.15.3.1.A)."
         is part of identity
         is queryable field
-    include LearningStandardIdentificationCode [1500]
+    common LearningStandardIdentificationCode [1500]
         documentation "A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a learning standard."
         is optional collection
         is queryable field
@@ -14,7 +14,7 @@ Domain Entity LearningStandard [567]
     shared string IdentificationCode named LearningStandardItemCode [1501]
         documentation "A code designated by the promulgating body to identify the statement, e.g. 1.N.3 (usually not globally unique)."
         is optional
-    include ContentStandard [1495]
+    common ContentStandard [1495]
         documentation "The content standard from which the LearningStandard was derived."
         is required
         is queryable field

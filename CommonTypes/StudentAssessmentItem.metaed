@@ -1,4 +1,4 @@
-Common Type StudentAssessmentItem [530]
+Common StudentAssessmentItem [530]
     documentation "This entity represents the student's response to an assessment item and the item-level scores such as correct, incorrect, or met standard."
     shared string AssessmentResponse [928]
         documentation "A student's response to a stimulus on a test."
