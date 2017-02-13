@@ -1,4 +1,4 @@
-Common Decimal NumberOfDaysInAttendance [76]
+Shared Decimal NumberOfDaysInAttendance [76]
     documentation "The number of days an individual is present when school is in session during a given reporting period."
     total digits 18
     decimal places 4

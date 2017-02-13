@@ -1,4 +1,4 @@
-Common String RatingOrganization [91]
+Shared String RatingOrganization [91]
     documentation "The organization assigning the accountability rating."
     min length 1
     max length 35
