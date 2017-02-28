@@ -1,4 +1,4 @@
-Common Decimal HoursPerWeek [619]
-    documentation 'The number of hours per week used on an activity.
+Shared Decimal HoursPerWeek [619]
+    documentation "The number of hours per week used on an activity."
     total digits 5
     decimal places 2

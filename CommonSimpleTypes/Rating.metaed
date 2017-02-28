@@ -1,4 +1,4 @@
-Common String Rating [90]
-    documentation 'An accountability rating level, designation, or assessment.
+Shared String Rating [90]
+    documentation "An accountability rating level, designation, or assessment."
     min length 1
     max length 35

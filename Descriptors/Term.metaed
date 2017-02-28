@@ -1,10 +1,10 @@
 Descriptor Term [246]
-    documentation 'This descriptor defines the term of a session during the school year (e.g., Fall Semester).
+    documentation "This descriptor defines the term of a session during the school year (e.g., Fall Semester)."
     with optional map type
-        documentation 'The mapping to a known Term.
-        item Semester [246-001]
-        item Trimester [246-003]
-        item Year Round [246-012]
-        item MiniTerm [246-005]
-        item Quarter [246-002]
-        item Other [246-13]
+        documentation "The mapping to a known Term."
+        item "Semester" [246-001]
+        item "Trimester" [246-003]
+        item "Year Round" [246-012]
+        item "MiniTerm" [246-005]
+        item "Quarter" [246-002]
+        item "Other" [246-13]
