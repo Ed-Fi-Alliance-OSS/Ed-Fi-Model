@@ -1,4 +1,4 @@
-Common String PostalCode [84]
-    documentation 'The five or nine digit zip code or overseas postal code portion of an address.
+Shared String PostalCode [84]
+    documentation "The five or nine digit zip code or overseas postal code portion of an address."
     min length 1
     max length 17

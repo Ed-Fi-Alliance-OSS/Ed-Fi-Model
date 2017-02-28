@@ -1,4 +1,4 @@
-Common String URI [115]
-    documentation 'The public web site address (URL), file, or ftp locator.
+Shared String URI [115]
+    documentation "The public web site address (URL), file, or ftp locator."
     min length 5
     max length 225

@@ -1,4 +1,4 @@
-Common String DiagnosticStatement [40]
-    documentation 'A statement provided by the teacher that provides information in addition to the grade or assessment score.
+Shared String DiagnosticStatement [40]
+    documentation "A statement provided by the teacher that provides information in addition to the grade or assessment score."
     min length 1
     max length 1024

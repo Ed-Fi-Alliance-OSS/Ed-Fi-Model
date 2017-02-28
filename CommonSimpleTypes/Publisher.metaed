@@ -1,4 +1,4 @@
-Common String Publisher [89]
-    documentation 'The organization credited with publishing the resource.
+Shared String Publisher [89]
+    documentation "The organization credited with publishing the resource."
     min length 1
     max length 50
