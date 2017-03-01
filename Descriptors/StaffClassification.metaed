@@ -10,7 +10,7 @@ Descriptor StaffClassification [237]
             documentation "Staff supervising instructional programs including professional staff members or supervisors in an early learning program assigned specific duties related to instruction , or supervisors at a school district or sub-district level including curriculum coordinators or supervisors; in-service training staff; Title I supervisors; home economics supervisors; educational television staff; coordinators and supervisors of audiovisual services; and staff engaged in development of computer-assisted instruction."
         item "LEA Administrator" [237-006]
         item "LEA Specialist" [237-007]
-        item LEA System Administrator [237-021]
+        item "LEA System Administrator" [237-021]
         item "Librarians/Media Specialists" [237-009]
             documentation "A professional staff member or supervisor assigned specific duties and school time for professional library and media service activities. Activities include: selecting, acquiring, preparing, cataloging, and circulating books and other printed materials; planning the use of library and media services by students, teachers and other members of the instructional staff; and guiding individuals in their use of media services and library materials, (whether maintained separately or as part of an instructional materials center)."
         item "Operational Support" [237-010]

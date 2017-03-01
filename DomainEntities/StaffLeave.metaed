@@ -15,8 +15,6 @@ Domain Entity StaffLeave [568]
     shared string Reason [1509]
         documentation "Expanded reason for the staff leave."
         is optional
-    shared decimal HoursOnLeave named HoursOnLeave [1507]
-        documentation 'The hours the staff was absent, if not the entire working day.
     bool SubstituteAssigned [1511]
         documentation "Indicator of whether a substitute was assigned during the period of staff leave."
         is optional

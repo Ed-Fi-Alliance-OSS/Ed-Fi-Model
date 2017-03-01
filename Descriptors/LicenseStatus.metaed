@@ -1,7 +1,7 @@
 Descriptor LicenseStatus [2563]
-    documentation 'This descriptor defines the license statuses.
+    documentation "This descriptor defines the license statuses."
     with map type
-        documentation 'The mapping to a known LicenseStatus.
-        item Exempt [2563-001]
-        item Regulated [2563-002]
-        item Unregulated [2563-003]
+        documentation "The mapping to a known LicenseStatus."
+        item "Exempt" [2563-001]
+        item "Regulated" [2563-002]
+        item "Unregulated" [2563-003]
