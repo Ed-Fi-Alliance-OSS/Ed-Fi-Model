@@ -24,3 +24,4 @@ Association StaffSchoolAssociation [603]
     domain entity Calendar [2620]
         documentation "Reference to the Calendar associated with the StaffSchoolAssociation."
         is optional
+        merge Calendar.SchoolYear with SchoolYear

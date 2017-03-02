@@ -57,3 +57,4 @@ Association StudentSchoolAssociation [613]
     domain entity Calendar [2621]
         documentation "Reference to the Calendar associated with the StudentSchoolAssociation."
         is optional collection
+        merge Calendar.School with School
