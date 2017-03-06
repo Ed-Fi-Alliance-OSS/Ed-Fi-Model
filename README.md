@@ -1,3 +1,3 @@
-# Ed-Fi-MetaEd-Standard
+# Ed-Fi-Model
 
-Bower package containing the MetaEd grammar files for the Ed-Fi Standard
+Package containing the MetaEd grammar files for the Ed-Fi Standard

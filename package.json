@@ -1,0 +1,18 @@
+{
+  "name": "ed-fi-model",
+  "version": "0.7.28",
+  "description": "The Ed-Fi Data Standard as defined in MetaEd",
+  "repository": "https://github.com/Ed-Fi-Alliance/Ed-Fi-Model",
+  "license": "private",
+  "publishConfig": {
+    "registry": "https://www.myget.org/F/bradbanister/npm/"
+  },
+  "devDependencies": {
+    "standard-version": "^4.0.0"
+  },
+  "scripts": {
+    "release:version-dev": "standard-version --prerelease dev",
+    "release:push-master-tags": "git push --follow-tags origin master",
+    "release:publish-dev": "npm run release:push-master-tags && npm publish --tag=dev"
+  }
+}
