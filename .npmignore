@@ -1,5 +1,8 @@
-.gitignore
 .gitattributes
-.idea
-npm-debug.log
+.gitignore
 .npmignore
+.idea
+bower.json
+CHANGELOG.md
+README.md
+npm-debug.log
