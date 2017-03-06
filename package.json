@@ -1,6 +1,6 @@
 {
   "name": "ed-fi-model",
-  "version": "0.7.29-dev.0",
+  "version": "0.7.29-dev.1",
   "description": "The Ed-Fi Data Standard as defined in MetaEd",
   "repository": "https://github.com/Ed-Fi-Alliance/Ed-Fi-Model",
   "license": "private",
