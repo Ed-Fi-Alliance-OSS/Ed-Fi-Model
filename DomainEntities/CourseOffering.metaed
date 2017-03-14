@@ -15,10 +15,10 @@ Domain Entity CourseOffering [551]
     domain entity School [1316]
         documentation "The school that offers the course."
         is part of identity
+        merge School with Session.School
     domain entity Session [1317]
         documentation "The session in which the course is offered at the school."
         is part of identity
-        merge Session.School with School
     domain entity Course [1311]
         documentation "The course being offered by the school."
         is required

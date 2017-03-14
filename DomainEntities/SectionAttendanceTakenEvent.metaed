@@ -6,7 +6,7 @@ Domain Entity SectionAttendanceTakenEvent [581]
     domain entity CalendarEvent [2625]
         documentation "Reference to the instructional day associated with SectionAttendanceEvent."
         is part of identity
-        merge CalendarEvent.Calendar.School with Section.CourseOffering.School
+        merge CalendarEvent.Calendar.School with Section.CourseOffering.Session.School
         merge CalendarEvent.Calendar.SchoolYear with Section.CourseOffering.Session.SchoolYear
     date EventDate [1634]
         documentation "The date the SectionAttendanceTakenEvent was submitted, which could be a different date than the instructional day."

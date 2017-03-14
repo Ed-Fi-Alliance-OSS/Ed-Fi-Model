@@ -6,3 +6,4 @@ Choice StudentCompetencyObjectiveSectionOrProgramChoice [2505]
     association StudentProgramAssociation [1747]
         documentation "Relates the Student and Program associated with the CompetencyObjective."
         is required
+        merge StudentProgramAssociation.Student with StudentSectionAssociation.Student
