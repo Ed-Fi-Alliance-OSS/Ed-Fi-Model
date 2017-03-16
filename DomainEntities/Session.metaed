@@ -1,6 +1,5 @@
 Domain Entity Session [582]
     documentation "This entity represents the prescribed span of time when an education institution is open, instruction is provided and students are under the direction and guidance of teachers and/or education institution administration. A session may be interrupted by one or more vacations."
-    allow primary key updates
     shared string IdentificationCode named SessionName [1643]
         documentation "The identifier for the calendar for the academic session (e.g., 2010/11, 2011 Summer)."
         is part of identity
