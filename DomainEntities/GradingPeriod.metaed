@@ -1,20 +1,20 @@
 Domain Entity GradingPeriod [561]
-    documentation 'This entity represents the time span for which grades are reported.
+    documentation "This entity represents the time span for which grades are reported."
     descriptor GradingPeriod [1433]
-        documentation 'The name of the period for which grades are reported.
+        documentation "The name of the period for which grades are reported."
         is part of identity
     date BeginDate [1430]
-        documentation 'Month, day, and year of the first day of the GradingPeriod.
+        documentation "Month, day, and year of the first day of the GradingPeriod."
         is required
     date EndDate [1432]
-        documentation 'Month, day, and year of the last day of the GradingPeriod.
+        documentation "Month, day, and year of the last day of the GradingPeriod."
         is required
-    shared integer TotalInstructionalDays named TotalInstructionalDays [1435]
-        documentation 'Total days available for educational instruction during the GradingPeriod.
+    shared integer TotalInstructionalDays [1435]
+        documentation "Total days available for educational instruction during the GradingPeriod."
         is required
     integer PeriodSequence [1434]
-        documentation 'The sequential order of this period relative to other periods.
+        documentation "The sequential order of this period relative to other periods."
         is optional
-    reference Session [2775]
-        documentation 'Reference to the Session associated to the GradingPeriod.
+    domain entity Session [2775]
+        documentation "Reference to the Session associated to the GradingPeriod."
         is part of identity

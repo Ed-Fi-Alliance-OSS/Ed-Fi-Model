@@ -1,9 +1,8 @@
 Descriptor Behavior [134]
-    documentation 'This descriptor holds the categories of behavior describing a discipline 
-                  'incident.
+    documentation "This descriptor holds the categories of behavior describing a discipline incident."
     with optional map type
-        documentation 'The mapping to a known Behavior.
-        item State Offense [134-004]
-        item School Violation [134-003]
-        item School Code of Conduct [134-002]
-        item Other [134-001]
+        documentation "The mapping to a known Behavior."
+        item "State Offense" [134-004]
+        item "School Violation" [134-003]
+        item "School Code of Conduct" [134-002]
+        item "Other" [134-001]

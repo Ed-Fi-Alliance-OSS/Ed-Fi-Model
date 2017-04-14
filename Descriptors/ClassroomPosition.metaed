@@ -1,9 +1,8 @@
 Descriptor ClassroomPosition [139]
-    documentation 'This descriptor defines the type of position the staff member holds in a 
-                  'specific class/section.
+    documentation "This descriptor defines the type of position the staff member holds in a specific class/section."
     with optional map type
-        documentation 'The mapping to a known ClassroomPosition.
-        item Teacher of Record [139-004]
-        item Assistant Teacher [139-001]
-        item Support Teacher [139-003]
-        item Substitute Teacher [139-002]
+        documentation "The mapping to a known ClassroomPosition."
+        item "Teacher of Record" [139-004]
+        item "Assistant Teacher" [139-001]
+        item "Support Teacher" [139-003]
+        item "Substitute Teacher" [139-002]

@@ -1,2 +1,2 @@
-Common Integer AssessmentVersion [116]
-    documentation 'The version identifier for the assessment.
+Shared Integer AssessmentVersion [116]
+    documentation "The version identifier for the assessment."

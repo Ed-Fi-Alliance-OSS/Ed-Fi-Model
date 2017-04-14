@@ -1,7 +1,7 @@
 Descriptor ProviderStatus [2561]
-    documentation 'This descriptor defines the status of the provider.
+    documentation "This descriptor defines the status of the provider."
     with map type
-        documentation 'The mapping to a known ProviderStatus.
-        item Active [2561-001]
-        item Inactive [2561-002]
-        item Unknown [2561-003]
+        documentation "The mapping to a known ProviderStatus."
+        item "Active" [2561-001]
+        item "Inactive" [2561-002]
+        item "Unknown" [2561-003]

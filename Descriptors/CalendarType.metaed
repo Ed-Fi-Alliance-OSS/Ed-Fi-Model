@@ -1,6 +1,6 @@
 Descriptor CalendarType [2605]
-    documentation 'This descriptor defines the calendar types.
+    documentation "This descriptor defines the calendar types."
     with optional map type
-        documentation 'The mapping to a known CalendarType.
-        item IEP [2605-001]
-        item Student Specific [2605-002]
+        documentation "The mapping to a known CalendarType."
+        item "IEP" [2605-001]
+        item "Student Specific" [2605-002]
