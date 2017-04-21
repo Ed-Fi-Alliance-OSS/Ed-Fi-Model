@@ -1,4 +1,4 @@
-Domain Entity ExternalEducationOrganization [556]
+Domain Entity ExternalEducationOrganization [2776]
     documentation "This entity represents any external public or private institution, organization, or agency that provides instructional or support services to students or staff at any level. This entity is provided to refer to organizations about which local school and districts have little to no information."
     common EducationOrganizationIdentificationCode [2713]
         documentation "A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity."
