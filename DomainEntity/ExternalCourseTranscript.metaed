@@ -46,23 +46,22 @@ Domain Entity ExternalCourseTranscript [2740]
     domain entity ExternalStudentAcademicRecord [2760]
         documentation "Reference to the ExternalStudentAcademicRecord record for a semester/school year."
         is part of identity
-    shared string CourseTitle [2752]
+    shared string CourseTitle named ExternalCourseTitle [2752]
         documentation "The descriptive name given to a course of study offered in a school or other institution or organization. In departmentalized classes at the elementary, secondary, and postsecondary levels (and for staff development activities), this refers to the name by which a course is identified (e.g., American History, English III). For elementary and other non-departmentalized classes, it refers to any portion of the instruction for which a grade or report is assigned (e.g., reading, composition, spelling, language arts)."
         is required
     shared string CourseTitle named AlternativeCourseTitle [2743]
         documentation "The descriptive name given to a course of study offered in the school, if different from the CourseTitle."
         is optional
-    shared string LocalCourseCode named CourseCode [2742]
+    shared string LocalCourseCode named AlternativeCourseCode [2742]
         documentation "The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code."
         is optional
-        with context Alternative
     descriptor AcademicSubject [2741]
         documentation "The intended major subject area of the course."
         is optional
     enumeration CareerPathway [2745]
 		documentation "Indicates the career cluster or pathway the course is associated with as part of a CTE curriculum."
         is optional
-    shared string IdentificationCode named CourseCode [2747]
+    shared string IdentificationCode named ExternalCourseCode [2747]
         documentation "A unique alphanumeric code assigned to a course."
         is part of identity
         is queryable field
