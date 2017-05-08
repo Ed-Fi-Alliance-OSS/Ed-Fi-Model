@@ -30,4 +30,4 @@ Domain Entity GradebookEntry [560]
         documentation "Identifies the grading period for the GradebookEntry."
         is optional
         is queryable field
-        merge GradingPeriod.Session with Section.CourseOffering.Session
+        merge GradingPeriod.School with Section.CourseOffering.Session.School
