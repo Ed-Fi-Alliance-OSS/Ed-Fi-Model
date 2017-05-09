@@ -8,7 +8,7 @@ Domain Entity ExternalEducationOrganization [2776]
         documentation "The full, legally accepted name of the institution."
         is part of identity
         is queryable field
-    shared string NameOfInstitution [12718]
+    shared string NameOfInstitution [2718]
         documentation "A short name for the institution."
         is optional
         with context Short
