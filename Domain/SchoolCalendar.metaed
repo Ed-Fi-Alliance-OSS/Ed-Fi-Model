@@ -1,7 +1,7 @@
 Domain SchoolCalendar
     documentation "The School Calendar domain represents the instructional days, sessions, and grading periods defined for a school year. The defined sessions for a school year are associated with the education organization (e.g., SEA, LEA) or school that defines the calendar."
     domain entity Calendar
-    domain entity CalendarEvent
+    domain entity CalendarDate
     domain entity EducationOrganization
     domain entity GradingPeriod
     domain entity School
