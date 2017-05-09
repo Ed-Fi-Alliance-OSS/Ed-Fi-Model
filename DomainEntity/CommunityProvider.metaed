@@ -1,5 +1,9 @@
 Domain Entity CommunityProvider based on EducationOrganization [2577]
     documentation "This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups."
+    integer CommunityProviderId [2584]
+       documentation "The identifier assigned to a CommunityProvider."
+       renames identity property EducationOrganizationId
+       is queryable field
     domain entity CommunityOrganization [2578]
         documentation "CommunityOrganization of which the CommunityProvider is an organizational component."
         is optional
