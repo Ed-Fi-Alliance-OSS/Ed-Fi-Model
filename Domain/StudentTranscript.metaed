@@ -5,7 +5,5 @@ Subdomain StudentTranscript of StudentAcademicRecord
     domain entity Session
     domain entity Student
     domain entity ExternalEducationOrganization
-    domain entity ExternalStudentAcademicRecord
-    domain entity ExternalCourseTranscript 
     domain entity StudentAcademicRecord
     position 1

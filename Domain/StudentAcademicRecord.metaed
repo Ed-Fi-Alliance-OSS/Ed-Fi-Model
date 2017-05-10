@@ -27,5 +27,3 @@ Domain StudentAcademicRecord
     association StudentProgramAssociation
     association StudentSectionAssociation
     domain entity ExternalEducationOrganization
-    domain entity ExternalStudentAcademicRecord
-    domain entity ExternalCourseTranscript 
