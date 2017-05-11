@@ -25,3 +25,6 @@ Domain Entity Session [582]
         documentation "Relates the Session to the school."
         is part of identity
         is queryable field
+    domain entity AcademicWeek [1637]
+        documentation "The academic weeks associated with the school year."
+        is optional collection
