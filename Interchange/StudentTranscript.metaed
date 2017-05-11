@@ -6,4 +6,3 @@ Interchange StudentTranscript [2535]
 2. Exchange a transcript for a course or set of courses."
     domain entity StudentAcademicRecord [2535-001]
     domain entity CourseTranscript [2535-002]
-    domain entity ExternalEducationOrganization [2535-003]

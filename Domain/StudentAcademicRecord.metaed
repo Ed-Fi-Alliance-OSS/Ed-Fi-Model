@@ -26,4 +26,3 @@ Domain StudentAcademicRecord
     domain entity StudentLearningObjective
     association StudentProgramAssociation
     association StudentSectionAssociation
-    domain entity ExternalEducationOrganization
