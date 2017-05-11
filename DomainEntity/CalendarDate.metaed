@@ -5,7 +5,7 @@ Domain Entity CalendarDate [545]
         is part of identity
     descriptor CalendarEvent [1270]
         documentation "The type of scheduled or unscheduled event for the day."
-        is part of identity
+        is required collection
     domain entity Calendar [2614]
         documentation "Reference to the Calendar associated to the CalendarEvent."
         is part of identity

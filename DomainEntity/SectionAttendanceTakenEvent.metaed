@@ -1,7 +1,7 @@
 Domain Entity SectionAttendanceTakenEvent [581]
     documentation "Captures attendance taken event for given section."
     domain entity Section [1635]
-        documentation "Reference the section for which an attendance event was taken."
+        documentation "The section for which attendance was taken."
         is part of identity
     domain entity CalendarDate [2625]
         documentation "Reference to the instructional day associated with SectionAttendanceEvent."
@@ -12,5 +12,5 @@ Domain Entity SectionAttendanceTakenEvent [581]
         documentation "The date the SectionAttendanceTakenEvent was submitted, which could be a different date than the instructional day."
         is required
     domain entity Staff [1636]
-        documentation "Reference the staff responsible for taking attendance for the section"
+        documentation "The staff responsible for taking attendance."
         is optional
