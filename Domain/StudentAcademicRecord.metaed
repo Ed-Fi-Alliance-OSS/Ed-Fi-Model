@@ -3,7 +3,7 @@ Domain StudentAcademicRecord
 "The Student Academic Record domain models the various kindsof student performance reporting.
 * A student transcript contains information about course-levelgrades and credits. A student transcript consists of a StudentAcademicRecord associated with each Session which has aCourseTranscript for each course taken.
 * Report cards contain information for grading period gradesand competencies. A report card consists of a ReportCard entity for each GradingPeriod. A Grade is associated with each Sectionentity.
-* A gradebook contains grades and competencies for classroomquizzes, tests, homework, and projects. An assignment in a Gradebook is represented as a GradebookEntry. Each student'sscore for that entry is a StudentGradebookEntry which can be a grade or a CompetencyLevelDescriptor."
+* Gradebook contains grades and competencies for classroomquizzes, tests, homework, and projects. An assignment in a Gradebook is represented as a GradebookEntry. Each student'sscore for that entry is a StudentGradebookEntry which can be a grade or a CompetencyLevelDescriptor."
     domain entity CompetencyObjective
     domain entity Course
     domain entity CourseOffering
