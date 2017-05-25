@@ -54,7 +54,3 @@ Association StudentSchoolAssociation [613]
     bool EmployedWhileEnrolled [1113]
         documentation "An individual who is a paid employee or works in his or her own business, profession, or farm and at the same time is enrolled in secondary, postsecondary, or adult education."
         is optional
-    domain entity Calendar [2621]
-        documentation "Reference to the Calendar associated with the StudentSchoolAssociation."
-        is optional collection
-        merge Calendar.School with School
