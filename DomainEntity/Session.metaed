@@ -16,7 +16,7 @@ Domain Entity Session [582]
         is required
     descriptor Term [1644]
         documentation "An enumeration value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.)."
-        is required collection
+        is required
         is queryable field
     shared integer TotalInstructionalDays [1645]
         documentation "The total number of instructional days in the school calendar."
