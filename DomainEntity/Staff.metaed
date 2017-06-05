@@ -88,3 +88,6 @@ Domain Entity Staff [583]
     common Recognition [2550]
         documentation "Recognitions given to the staff for accomplishments in a co-curricular or extracurricular activity."
         is optional collection
+    domain entity Credential
+        documentation "The legal document giving authorization to perform teaching assignment services."
+        is optional collection

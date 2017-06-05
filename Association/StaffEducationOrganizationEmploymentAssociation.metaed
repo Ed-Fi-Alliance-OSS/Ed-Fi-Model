@@ -28,6 +28,6 @@ Association StaffEducationOrganizationEmploymentAssociation [601]
     currency HourlyWage [1033]
         documentation "Hourly wage associated with the employment position being reported."
         is optional
-    domain entity StaffCredential [2646]
-        documentation "Reference to the StaffCredential that is the basis for this employment."
+    domain entity Credential [2646]
+        documentation "Reference to the Credential that is the basis for this employment."
         is optional
