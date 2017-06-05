@@ -7,6 +7,7 @@ Domain Staff
 * StaffEducationOrganizationAssignmentAssociation represents position assignments and roles. The employment and assignment associations are separated to accommodate a number of different types of situations. Staff may have multiple employment and assignment associations. Staff may be employed with one organization,like an LEA, whereas their assignments are at other organizations, specifically schools. If an assignment is directly tied to employment (i.e., the staff member's pay would differ based upon the assignments), then an association is used from theStaffEducationOrganizationAssignmentAssociation to the StaffEducationOrganizationEmploymentAssociation.
 * LeaveEvent tracks staff leave history.
 * OpenStaffPosition indicates the employment postings for an education organization and captures the result of that posting."
+    domain entity Credential
     domain entity EducationOrganization
     domain entity EducationServiceCenter
     domain entity LocalEducationAgency
@@ -21,4 +22,3 @@ Domain Staff
     domain entity StaffAbsenceEvent
     domain entity StaffCredential
     domain entity StaffLeave
-
