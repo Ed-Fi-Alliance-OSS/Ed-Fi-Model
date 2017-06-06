@@ -1,7 +1,7 @@
 Common AcademicHonor [478]
     documentation "Academic distinctions earned by or awarded to the student."
     inline common Achievement [701]
-        documentation "NEEDS DOCUMENTATION"
+        documentation "The achievement earned by the student upon fulfilling specified criteria."
         is required
     enumeration AcademicHonorCategory [700]
         documentation "A designation of the type of academic distinctions earned by or awarded to the student."

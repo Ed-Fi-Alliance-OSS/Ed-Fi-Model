@@ -72,11 +72,11 @@ Domain Entity StudentAssessment [587]
         documentation "Reference to the Assessment taken by the student."
         is part of identity
     common StudentAssessmentItem [1739]
-        documentation "NEEDS DOCUMENTATION"
+        documentation "The student's response to an assessment item and the item-level scores such as correct, incorrect, or met standard."
         is optional collection
         merge StudentAssessmentItem.AssessmentItem.Assessment with Assessment
     common StudentObjectiveAssessment [1740]
-        documentation "NEEDS DOCUMENTATION"
+        documentation "The student's score and/or performance levels earned for an ObjectiveAssessment."
         is optional collection
     enumeration SchoolYear [2538]
         documentation "The school year for which the assessment was administered to a student. Among other uses, handles cases in which a student takes a prior-year exam in a subsequent school year during an exam re-test."

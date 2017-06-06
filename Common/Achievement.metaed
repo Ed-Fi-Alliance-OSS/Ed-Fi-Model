@@ -1,5 +1,5 @@
 Inline Common Achievement [479]
-    documentation "An entity that includes information about achievement earned by a learner upon fulfilling a specified criteria, which may be defined by a related competency set."
+    documentation "The achievement earned by the student upon fulfilling specified criteria."
     shared string AchievementTitle [707]
         documentation "The title assigned to the achievement."
         is optional

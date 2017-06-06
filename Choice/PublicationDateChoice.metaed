@@ -1,5 +1,5 @@
 Choice PublicationDateChoice [2503]
-    documentation "NEEDS DOCUMENTATION"
+    documentation "This choice type allows for the recording of a content publication date or, if the full date is unknown, the year of publication."
     date PublicationDate [1374]
         documentation "The date on which this content was first published."
         is required
