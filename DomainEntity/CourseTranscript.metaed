@@ -37,11 +37,8 @@ Domain Entity CourseTranscript [552]
         is optional
     domain entity Course [1320]
         documentation "The course recorded in the course transcript entry."
-        is optional
+        is part of identity
         with context Course
-    domain entity School [1332]
-        documentation "The School that provided the reported instruction."
-        is optional
     domain entity StudentAcademicRecord [1333]
         documentation "Link to the student's academic record for a semester/school year."
         is part of identity
