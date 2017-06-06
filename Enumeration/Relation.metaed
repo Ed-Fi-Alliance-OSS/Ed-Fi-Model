@@ -50,6 +50,8 @@ Enumeration Relation [218]
         documentation "The person is the learner's great uncle."
     item "Great Grandparent" [218-021]
         documentation "The person is the learner's great grandparent."
+    item "Guardian" [218-050]
+        documentation "The person is the learner's guardian."
     item "Husband" [218-023]
         documentation "The person is the learner's husband."
     item "MothersSignificantOther" [218-027]
