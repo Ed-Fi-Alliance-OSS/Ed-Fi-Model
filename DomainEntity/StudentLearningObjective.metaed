@@ -21,3 +21,4 @@ Domain Entity StudentLearningObjective [591]
         is optional
         merge StudentLearningObjectiveSectionOrProgramChoice.StudentSectionAssociation.Section.CourseOffering.Session with GradingPeriod.Session
         merge StudentLearningObjectiveSectionOrProgramChoice.StudentSectionAssociation.Student with Student
+        merge StudentLearningObjectiveSectionOrProgramChoice.StudentProgramAssociation.Student with Student
