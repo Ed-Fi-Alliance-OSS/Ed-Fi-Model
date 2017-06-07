@@ -1,5 +1,5 @@
 Choice LearningResourceChoice [2501]
-    documentation "NEEDS DOCUMENTATION"
+    documentation "This choice type represents the available options for providing details necessary to describe a LearningResource."
     shared string LearningResourceMetadataURI [1372]
         documentation "The URI (typical a URL) pointing to the metadata entry in a LRMI metadata repository, which describes this content item."
         is required

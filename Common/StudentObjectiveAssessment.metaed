@@ -1,5 +1,5 @@
 Common StudentObjectiveAssessment [534]
-    documentation "This entity holds the score and or performance levels earned for an ObjectiveAssessment by a student."
+    documentation "The student's score and/or performance levels earned for an ObjectiveAssessment."
     common ScoreResult [912]
         documentation "A meaningful score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
         is required collection

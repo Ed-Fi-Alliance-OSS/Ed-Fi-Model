@@ -32,7 +32,7 @@ Inline Common LearningResource [2514]
         is optional
         with context DerivativeSource
     choice PublicationDateChoice [2515]
-        documentation "NEEDS DOCUMENTATION"
+        documentation "The date or year that this content was first published."
         is optional
     enumeration Sex [1362]
         documentation "Sexes for which this education content is applicable. If omitted, considered generally applicable."

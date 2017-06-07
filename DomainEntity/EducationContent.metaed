@@ -4,7 +4,7 @@ Domain Entity EducationContent [555]
         documentation "A unique identifier for the EducationContent."
         is part of identity
     choice LearningResourceChoice [2510]
-        documentation "NEEDS DOCUMENTATION"
+        documentation "The details describing a LearningResource or a URI pointing to the metadata entry in a LRMI metadata repository describing the content item."
         is required
     currency Cost [1366]
         documentation "An amount that has to be paid or spent to buy or obtain the EducationContent."

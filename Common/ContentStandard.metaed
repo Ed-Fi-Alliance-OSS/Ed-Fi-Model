@@ -14,7 +14,7 @@ Common ContentStandard [494]
         documentation "An unambiguous reference to the standards using a network-resolvable URI."
         is optional
     choice PublicationDateChoice [2508]
-        documentation "NEEDS DOCUMENTATION"
+        documentation "The date or year that this content was first published."
         is optional
     enumeration PublicationStatus [774]
         documentation "The publication status of the document (i.e., Adopted, Draft, Published, Deprecated, Unknown)."

@@ -1,5 +1,5 @@
 Choice StudentLearningObjectiveSectionOrProgramChoice [2506]
-    documentation "NEEDS DOCUMENTATION"
+    documentation "This choice type allows a StudentLearningObjective to be associated with either a Section or Program."
     association StudentSectionAssociation [1766]
         documentation "Relates the Student and Section associated with the LearningObjective."
         is required

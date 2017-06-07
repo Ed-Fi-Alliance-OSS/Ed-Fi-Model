@@ -1,5 +1,5 @@
 Choice StudentCompetencyObjectiveSectionOrProgramChoice [2505]
-    documentation "NEEDS DOCUMENTATION"
+    documentation "This choice type allows a StudentCompetencyObjective to be associated with either a Section or a Program."
     association StudentSectionAssociation [1749]
         documentation "Relates the Student and Section associated with the CompetencyObjective."
         is required

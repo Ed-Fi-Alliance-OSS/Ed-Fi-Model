@@ -1,5 +1,5 @@
 Choice SectionOrProgramChoice [2504]
-    documentation "NEEDS DOCUMENTATION"
+    documentation "This choice type allows an Assessment to be associated with either one or more Sections or one or more Programs."
     domain entity Section [1239]
         documentation "The Section(s) to which the Assessment is associated."
         is required collection
