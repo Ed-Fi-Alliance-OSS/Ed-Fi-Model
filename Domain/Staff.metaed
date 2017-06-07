@@ -20,5 +20,4 @@ Domain Staff
     association StaffSchoolAssociation
     association StaffEducationOrganizationContactAssociation
     domain entity StaffAbsenceEvent
-    domain entity StaffCredential
     domain entity StaffLeave
