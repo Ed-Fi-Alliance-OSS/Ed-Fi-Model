@@ -22,3 +22,4 @@ Domain Entity StudentCompetencyObjective [588]
         is optional
         merge StudentCompetencyObjectiveSectionOrProgramChoice.StudentSectionAssociation.Section.CourseOffering.Session with GradingPeriod.Session
         merge StudentCompetencyObjectiveSectionOrProgramChoice.StudentSectionAssociation.Student with Student
+        merge StudentCompetencyObjectiveSectionOrProgramChoice.StudentProgramAssociation.Student with Student
