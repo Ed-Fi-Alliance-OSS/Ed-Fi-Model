@@ -5,7 +5,7 @@ Domain Entity BellSchedule [543]
         is part of identity
     descriptor GradeLevel [1264]
         documentation "The grade levels the particular BellSchedule applies to."
-        is part of identity
+        is optional collection
     domain entity School [1266]
         documentation "The school for which the BellSchedule is defined."
         is part of identity
