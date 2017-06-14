@@ -16,7 +16,7 @@ Common InternationalAddress [509]
         documentation "The fourth line of the address."
         is optional
     descriptor Country [843]
-        documentation "The name of the country."
+        documentation "The name of the country. It is strongly recommended that entries use only ISO 3166 2-letter country codes."
         is required
     shared string Coordinate named Latitude [845]
         documentation "The geographic latitude of the physical address."
