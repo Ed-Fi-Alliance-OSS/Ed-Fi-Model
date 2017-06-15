@@ -17,7 +17,7 @@ Common IdentificationDocument [491]
         documentation "Name of the entity or institution that issued the document."
         is optional
     descriptor Country [831]
-        documentation "Country of origin of the document."
+        documentation "Country of origin of the document. It is strongly recommended that entries use only ISO 3166 2-letter country codes."
         is optional
         with context Issuer
     enumeration IdentificationDocumentUse [830]
