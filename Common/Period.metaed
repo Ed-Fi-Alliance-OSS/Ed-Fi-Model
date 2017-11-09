@@ -1,0 +1,8 @@
+Common Period
+    documentation "The time period for which the information is applicable or effective."
+    date BeginDate
+        documentation "The month, day, and year for the start of the period."
+        is part of identity
+    date EndDate
+        documentation "The month, day, and year for the end of the period."
+        is optional
