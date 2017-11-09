@@ -9,12 +9,9 @@ Common StudentIndicator [533]
     shared string Indicator [943]
         documentation "The value of the indicator or metric."
         is required
-    date BeginDate [940]
-        documentation "The date when the indicator was assigned or computed."
-        is optional
-    date EndDate [942]
-        documentation "The date the indicator or metric was sunset or removed."
-        is optional
+    common Period
+        documentation "The time periods for which the indicator was effective."
+        is optional collection
     shared string DesignatedBy [941]
         documentation "The person, organization, or department that designated the program association."
         is optional
