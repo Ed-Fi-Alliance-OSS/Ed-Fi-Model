@@ -74,7 +74,7 @@ Domain Entity Student [585]
         is optional
     common Language [1690]
         documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes."
-        is optional collection 
+        is optional collection
     common Disability [1684]
         documentation "The disability condition(s) that best describes an individual's impairment."
         is optional collection
@@ -84,9 +84,6 @@ Domain Entity Student [585]
     common ProgramParticipation [1698]
         documentation "Key programs the student is participating in or receives services from."
         is optional collection
-    common LearningStyle [1691]
-        documentation "The student's relative preference to visual, auditory, and tactile learning expressed as percentages."
-        is optional
     common CohortYear [1683]
         documentation "The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade."
         is optional collection
