@@ -31,3 +31,4 @@ Domain Entity GradebookEntry [560]
         is optional
         is queryable field
         merge GradingPeriod.School with Section.CourseOffering.Session.School
+        merge GradingPeriod.SchoolYear with Section.CourseOffering.Session.SchoolYear
