@@ -4,7 +4,7 @@ Domain Entity Session [582]
         documentation "The identifier for the calendar for the academic session (e.g., 2010/11, 2011 Summer)."
         is part of identity
         is queryable field
-    enumeration SchoolYear [1642]
+    descriptor SchoolYear [1642]
         documentation "The identifier for the school year."
         is part of identity
         is queryable field
@@ -15,7 +15,7 @@ Domain Entity Session [582]
         documentation "Month, day and year of the last day of the Session."
         is required
     descriptor Term [1644]
-        documentation "An enumeration value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.)."
+        documentation "An descriptor value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.)."
         is required
         is queryable field
     shared integer TotalInstructionalDays [1645]

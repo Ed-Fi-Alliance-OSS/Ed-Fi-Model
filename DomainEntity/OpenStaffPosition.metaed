@@ -39,7 +39,7 @@ Domain Entity OpenStaffPosition [572]
     date DatePostingRemoved [1547]
         documentation "The date the posting was removed or filled."
         is optional
-    enumeration PostingResult [1552]
+    descriptor PostingResult [1552]
         documentation "Indication of whether the OpenStaffPosition was filled or retired without filling."
         is optional
     domain entity EducationOrganization [1548]

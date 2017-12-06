@@ -15,7 +15,7 @@ Domain Entity DisciplineAction [553]
     shared decimal DisciplineActionLength named ActualDisciplineActionLength [1334]
         documentation "Indicates the actual length in school days of a student's disciplinary assignment."
         is optional
-    enumeration DisciplineActionLengthDifferenceReason [1339]
+    descriptor DisciplineActionLengthDifferenceReason [1339]
         documentation "Indicates the reason for the difference, if any, between the official and actual lengths of a student's disciplinary assignment."
         is optional
     bool RelatedToZeroTolerancePolicy [1342]

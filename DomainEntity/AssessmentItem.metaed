@@ -3,7 +3,7 @@ Domain Entity AssessmentItem [542]
     shared string IdentificationCode [1258]
         documentation "A unique number or alphanumeric code assigned to a space, room, site, building, individual, organization, program, or institution by a school, school system, state, or other agency or entity."
         is part of identity
-    enumeration AssessmentItemCategory [1254]
+    descriptor AssessmentItemCategory [1254]
         documentation "Category or type of the AssessmentItem. For example:
         Multiple choice
         Analytic

@@ -3,7 +3,7 @@ Common ElectronicMail [505]
     shared string ElectronicMailAddress [817]
         documentation "The electronic mail (e-mail) address listed for an individual or organization."
         is required
-    enumeration ElectronicMailType [818]
+    descriptor ElectronicMailType [818]
         documentation "The type of email listed for an individual or organization. For example: Home/Personal, Work, etc.)"
         is part of identity
     bool PrimaryEmailAddressIndicator [819]

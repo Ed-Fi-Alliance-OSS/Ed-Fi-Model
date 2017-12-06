@@ -18,10 +18,10 @@ Inline Common LearningResource [2514]
     duration TimeRequired [1378]
         documentation "Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience."
         is optional
-    enumeration InteractivityStyle [1370]
+    descriptor InteractivityStyle [1370]
         documentation "The predominate mode of learning supported by the learning resource. Acceptable values are active, expositive, or mixed."
         is optional
-    enumeration ContentClass [1364]
+    descriptor ContentClass [1364]
         documentation "The predominate type or kind characterizing the learning resource."
         is required
     shared string URI named UseRightsURL [1379]
@@ -34,7 +34,7 @@ Inline Common LearningResource [2514]
     choice PublicationDateChoice [2515]
         documentation "The date or year that this content was first published."
         is optional
-    enumeration Sex [1362]
+    descriptor Sex [1362]
         documentation "Sexes for which this education content is applicable. If omitted, considered generally applicable."
         is optional collection
         with context Appropriate

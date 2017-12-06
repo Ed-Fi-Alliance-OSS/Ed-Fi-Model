@@ -22,7 +22,7 @@ Domain Entity Staff [583]
         documentation "Other names (e.g., alias, nickname, previous legal name) associated with a person."
         is optional collection
         is queryable field
-    enumeration Sex [1661]
+    descriptor Sex [1661]
         documentation "A person's gender."
         is optional
         is queryable field
@@ -48,7 +48,7 @@ Domain Entity Staff [583]
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
         is optional
         is queryable field
-    enumeration OldEthnicity [1658]
+    descriptor OldEthnicity [1658]
         documentation "Previous definition of Ethnicity combining Hispanic/Latino and race:
         1 - American Indian or Alaskan Native
         2 - Asian or Pacific Islander
@@ -56,7 +56,7 @@ Domain Entity Staff [583]
         4 - Hispanic
         5 - White, not of Hispanic origin."
         is optional
-    enumeration Race [1660]
+    descriptor Race [1660]
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The way this data element is listed, it must allow for multiple entries so that each individual can specify all appropriate races."
         is optional collection
         is queryable field

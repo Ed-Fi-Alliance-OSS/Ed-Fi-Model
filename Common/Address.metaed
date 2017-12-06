@@ -12,7 +12,7 @@ Common Address [481]
     shared string City [722]
         documentation "The name of the city in which an address is located."
         is required
-    enumeration StateAbbreviation [729]
+    descriptor StateAbbreviation [729]
         documentation "The abbreviation for the state (within the United States) or outlying area in which an address is located."
         is required
     shared string PostalCode [728]
@@ -34,7 +34,7 @@ Common Address [481]
     common Period
         documentation "The time periods for which the address is valid. For physical addresses, the periods in which the person lived at that address."
         is optional collection
-    enumeration AddressType [718]
+    descriptor AddressType [718]
         documentation "The type of address listed for an individual or organization.    For example:  Physical Address, Mailing Address, Home Address, etc.)"
         is part of identity
     bool DoNotPublishIndicator [2552]

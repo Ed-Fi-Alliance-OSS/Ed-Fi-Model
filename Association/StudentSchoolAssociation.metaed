@@ -8,7 +8,7 @@ Association StudentSchoolAssociation [613]
     bool PrimarySchool [1121]
         documentation "Indicates if a given enrollment record should be considered the primary record for a student."
         is optional
-    enumeration SchoolYear [1126]
+    descriptor SchoolYear [1126]
         documentation "The school year associated with the student's enrollment."
         is optional
     date EntryDate [1114]
@@ -18,7 +18,7 @@ Association StudentSchoolAssociation [613]
         documentation "The grade level or primary instructional level at which a student enters and receives services in a school or an educational institution during a given academic session."
         is required
         with context Entry
-    enumeration EntryGradeLevelReason [1116]
+    descriptor EntryGradeLevelReason [1116]
         documentation "The primary reason as to why a staff member determined that a student should be promoted or not (or be demoted) at the end of a given school term."
         is optional
     descriptor EntryType [1117]
@@ -27,7 +27,7 @@ Association StudentSchoolAssociation [613]
     bool RepeatGradeIndicator [1122]
         documentation "An indicator of whether the student is enrolling to repeat a grade level, either by failure or an agreement to hold the student back."
         is optional
-    enumeration SchoolYear [1111]
+    descriptor SchoolYear [1111]
         documentation "Projected High School graduation year."
         is optional
         with context ClassOf
@@ -40,7 +40,7 @@ Association StudentSchoolAssociation [613]
     descriptor ExitWithdrawType [1119]
         documentation "The circumstances under which the student exited from membership in an educational institution."
         is optional
-    enumeration EducationPlan [1112]
+    descriptor EducationPlan [1112]
         documentation "The type of EducationPlan(s) the student is following, if appropriate. For example:
         Special education IEP
         Vocational."

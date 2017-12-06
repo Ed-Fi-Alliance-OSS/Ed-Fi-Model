@@ -6,10 +6,10 @@ Domain Entity Cohort [547]
     shared string CohortDescription [1276]
         documentation "The description of the Cohort and its purpose."
         is optional
-    enumeration CohortType [1278]
+    descriptor CohortType [1278]
         documentation "The type of cohort (e.g., academic intervention, classroom breakout)."
         is required
-    enumeration CohortScope [1277]
+    descriptor CohortScope [1277]
         documentation "The scope of cohort (e.g., school, district, classroom)."
         is optional
     descriptor AcademicSubject [1275]

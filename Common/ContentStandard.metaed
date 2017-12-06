@@ -16,7 +16,7 @@ Common ContentStandard [494]
     choice PublicationDateChoice [2508]
         documentation "The date or year that this content was first published."
         is optional
-    enumeration PublicationStatus [774]
+    descriptor PublicationStatus [774]
         documentation "The publication status of the document (i.e., Adopted, Draft, Published, Deprecated, Unknown)."
         is optional
     domain entity EducationOrganization [772]

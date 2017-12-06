@@ -9,6 +9,6 @@ Common AssessmentScore [485]
     shared string Result named MaximumScore [743]
         documentation "The maximum score possible on the assessment."
         is optional
-    enumeration ResultDatatypeType [745]
+    descriptor ResultDatatypeType [745]
         documentation "The datatype of the result. The results can be expressed as a number, percentile, range, level, etc."
         is optional

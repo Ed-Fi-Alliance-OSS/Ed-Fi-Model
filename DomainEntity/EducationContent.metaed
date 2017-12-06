@@ -9,7 +9,7 @@ Domain Entity EducationContent [555]
     currency Cost [1366]
         documentation "An amount that has to be paid or spent to buy or obtain the EducationContent."
         is optional
-    enumeration CostRate [1367]
+    descriptor CostRate [1367]
         documentation "The rate by which the cost applies."
         is optional
     shared string URI named Namespace [2438]

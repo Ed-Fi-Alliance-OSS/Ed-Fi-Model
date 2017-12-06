@@ -13,7 +13,7 @@ Domain Entity StudentAssessment [587]
         documentation "The language in which an assessment is written and/or administered."
         is optional
         with context Administration
-    enumeration AdministrationEnvironment [1729]
+    descriptor AdministrationEnvironment [1729]
         documentation "The environment in which the test was administered. For example:
         Electronic
         Classroom
@@ -30,14 +30,14 @@ Domain Entity StudentAssessment [587]
         Oral Administration
         ..."
         is optional collection
-    enumeration RetestIndicator [1736]
+    descriptor RetestIndicator [1736]
         documentation "Indicator if the test was retaken. For example:
         Primary administration
         First retest
         Second retest
         ..."
         is optional
-    enumeration ReasonNotTested [1735]
+    descriptor ReasonNotTested [1735]
         documentation "The primary reason student is not tested. For example:
         Absent
         Refusal by parent
@@ -58,7 +58,7 @@ Domain Entity StudentAssessment [587]
     common PerformanceLevel [1734]
         documentation "The performance level(s) achieved for the StudentAssessment."
         is optional collection
-    enumeration EventCircumstance [1732]
+    descriptor EventCircumstance [1732]
         documentation "An unusual event occurred during the administration of the assessment. This could include fire alarm, student became ill, etc."
         is optional
     shared string Description [1733]
@@ -78,6 +78,6 @@ Domain Entity StudentAssessment [587]
     common StudentObjectiveAssessment [1740]
         documentation "The student's score and/or performance levels earned for an ObjectiveAssessment."
         is optional collection
-    enumeration SchoolYear [2538]
+    descriptor SchoolYear [2538]
         documentation "The school year for which the assessment was administered to a student. Among other uses, handles cases in which a student takes a prior-year exam in a subsequent school year during an exam re-test."
         is optional

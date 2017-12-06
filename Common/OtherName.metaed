@@ -15,6 +15,6 @@ Common OtherName [518]
     shared string GenerationCodeSuffix [883]
         documentation "An appendage, if any, used to denote an individual's generation in his family (e.g., Jr., Sr., III)."
         is optional
-    enumeration OtherNameType [886]
+    descriptor OtherNameType [886]
         documentation "The types of alternate names for a person."
         is part of identity

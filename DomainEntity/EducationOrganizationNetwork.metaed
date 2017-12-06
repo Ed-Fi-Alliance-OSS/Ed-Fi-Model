@@ -4,6 +4,6 @@ Domain Entity EducationOrganizationNetwork based on EducationOrganization [557]
         documentation "The identifier assigned to a network of education organizations."
         renames identity property EducationOrganizationId
         is queryable field
-    enumeration NetworkPurpose [1398]
+    descriptor NetworkPurpose [1398]
         documentation "The purpose(s) of the network (e.g., shared services, collective procurement)."
         is required

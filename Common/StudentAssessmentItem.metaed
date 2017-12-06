@@ -6,7 +6,7 @@ Common StudentAssessmentItem [530]
     shared string Description named DescriptiveFeedback [929]
         documentation "The formative descriptive feedback that was given to a learner in response to the results from a scored/evaluated assessment item."
         is optional
-    enumeration ResponseIndicator [931]
+    descriptor ResponseIndicator [931]
         documentation "Indicator of the response. For example:
         Nonscorable response
         Ineffective response
@@ -14,7 +14,7 @@ Common StudentAssessmentItem [530]
         Partial response
         ..."
         is optional
-    enumeration AssessmentItemResult [927]
+    descriptor AssessmentItemResult [927]
         documentation "The analyzed result of a student's response to an assessment item. For example:
         Correct
         Incorrect

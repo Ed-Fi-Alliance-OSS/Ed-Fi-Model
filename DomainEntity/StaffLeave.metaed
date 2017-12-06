@@ -6,7 +6,7 @@ Domain Entity StaffLeave [568]
     date EndDate [2691]
         documentation "The end date of the staff leave."
         is optional
-    enumeration StaffLeaveEventCategory [1508]
+    descriptor StaffLeaveEventCategory [1508]
         documentation "The code describing the type of leave taken, for example:
         Sick
         Personal

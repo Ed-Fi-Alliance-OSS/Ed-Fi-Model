@@ -1,6 +1,6 @@
 Choice CitizenshipDocumentationChoice [2500]
     documentation "This choice type represents the available options for providing details relevant to an individual's citizenship documentation."
-    enumeration Visa [762]
+    descriptor Visa [762]
         documentation "An indicator of a non-US citizen's Visa type."
         is required collection
     common IdentificationDocument [947]

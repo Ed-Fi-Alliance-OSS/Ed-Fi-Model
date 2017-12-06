@@ -12,14 +12,14 @@ Domain Entity Program [576]
         documentation "The formal name of the Program of instruction, training, services, or benefits available through federal, state, or local agencies."
         is part of identity
         is queryable field
-    enumeration ProgramType [1580]
+    descriptor ProgramType [1580]
         documentation "The type of program."
         is part of identity
         is queryable field
     descriptor ProgramCharacteristic [1576]
         documentation "Reflects important characteristics of the Program, such as categories or particular indications."
         is optional collection
-    enumeration ProgramSponsor [1579]
+    descriptor ProgramSponsor [1579]
         documentation "Ultimate and intermediate providers of funds for a particular educational or service program or activity, or for an individual's participation in the program or activity (e.g., Federal, State, ESC, District, School, Private Organization)."
         is optional collection
     descriptor Service [1581]

@@ -3,7 +3,7 @@ Domain Entity PostSecondaryEvent [575]
     date EventDate [1569]
         documentation "The date the event occurred or was recorded."
         is part of identity
-    enumeration PostSecondaryEventCategory [1570]
+    descriptor PostSecondaryEventCategory [1570]
         documentation "The PostSecondaryEvent that is logged (e.g., FAFSA application, college application, college acceptance)."
         is part of identity
     common PostSecondaryInstitution [1571]

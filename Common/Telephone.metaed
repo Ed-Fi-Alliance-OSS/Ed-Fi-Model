@@ -3,7 +3,7 @@ Common Telephone [535]
     shared string TelephoneNumber [949]
         documentation "The telephone number including the area code, and extension, if applicable."
         is required
-    enumeration TelephoneNumberType [950]
+    descriptor TelephoneNumberType [950]
         documentation "The type of communication number listed for an individual or organization."
         is part of identity
     shared integer OrderOfPriority [948]
