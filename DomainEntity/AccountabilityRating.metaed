@@ -12,7 +12,7 @@ Domain Entity AccountabilityRating [538]
     date RatingDate [1211]
         documentation "The date the rating was awarded."
         is optional
-    descriptor SchoolYear [1215]
+    enumeration SchoolYear [1215]
         documentation "The school year for which the AccountabilityRating is assessed."
         is part of identity
     shared string RatingOrganization [1212]

@@ -1,6 +1,6 @@
 Common LocalEducationAgencyAccountability [514]
     documentation "This entity maintains information about federal reporting and accountability for Local Education Agencies."
-    descriptor SchoolYear [861]
+    enumeration SchoolYear [861]
         documentation "The school year for which the accountability is reported."
         is part of identity
     descriptor GunFreeSchoolsActReportingStatus [859]
