@@ -29,6 +29,7 @@ Domain Entity Session [582]
         documentation "Grading periods associated with the session."
         is required collection
         merge GradingPeriod.SchoolYear with SchoolYear
+        merge GradingPeriod.School with School
     domain entity AcademicWeek [1637]
         documentation "The academic weeks associated with the school year."
         is optional collection
