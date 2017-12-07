@@ -1,0 +1,11 @@
+Common AssessmentPeriod
+    documentation "The period or window in which an assessment is supposed to be administered."
+    descriptor AssessmentPeriod
+        documentation "The period of time in which an assessment is supposed to be administered (e.g., Beginning of Year, Middle of Year, End of Year)."
+        is required
+    date BeginDate
+        documentation "The first date the assessment is to be administered."
+        is optional
+    date EndDate
+        documentation "The last date the assessment is to be administered."
+        is optional
