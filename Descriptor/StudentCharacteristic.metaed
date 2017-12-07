@@ -1,16 +1,2 @@
 Descriptor StudentCharacteristic [240]
     documentation "This descriptor captures important characteristics of the student's environment or situation. Generally used for non-program-based student characteristics."
-    with optional map type
-        documentation "The mapping to a known StudentCharacteristic."
-        item "Asylee" [240-004]
-        item "Displaced Homemaker" [240-005]
-        item "Foster Care" [240-010]
-        item "Homeless" [240-013]
-        item "Immigrant" [240-015]
-        item "Other" [240-034]
-        item "Parent in Military" [240-021]
-        item "Pregnant" [240-022]
-        item "Refugee" [240-025]
-        item "Runaway" [240-028]
-        item "Single Parent" [240-030]
-        item "Unaccompanied Youth" [240-033]

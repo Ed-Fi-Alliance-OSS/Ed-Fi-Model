@@ -4,7 +4,7 @@ Association StudentParentAssociation [611]
         documentation "The Student associated with the Parent."
     domain entity Parent [1099]
         documentation "The Parent associated with the Student."
-    enumeration Relation [1101]
+    descriptor Relation [1101]
         documentation "The nature of an individual's relationship to a student; for example:
         Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian, etc."
         is optional

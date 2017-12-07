@@ -13,6 +13,6 @@ Inline Common AttendanceEvent [486]
     shared string AttendanceEventReason [747]
         documentation "The reported reason for a student's absence."
         is optional
-    enumeration EducationalEnvironment [748]
+    descriptor EducationalEnvironment [748]
         documentation "The setting in which a child receives education and related services. This attribute is only used if it differs from the EducationalEnvironment of the Section. This is only used in the AttendanceEvent if different from the associated Section."
         is optional

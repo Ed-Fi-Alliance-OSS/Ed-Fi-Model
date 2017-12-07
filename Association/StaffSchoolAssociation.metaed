@@ -4,7 +4,7 @@ Association StaffSchoolAssociation [603]
         documentation "The Staff member providing services to the School."
     domain entity School [1044]
         documentation "The School where the Staff member provides services."
-    enumeration SchoolYear [1045]
+    descriptor SchoolYear [1045]
         documentation "Identifier for a school year."
         is optional
     descriptor ProgramAssignment [1043]

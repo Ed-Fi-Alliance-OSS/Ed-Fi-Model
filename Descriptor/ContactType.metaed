@@ -1,5 +1,2 @@
 Descriptor ContactType [2686]
     documentation "This descriptor defines the set of contact types."
-    with map type
-        documentation "The mapping to a known ContactType."
-        item "Other" [2686-001]

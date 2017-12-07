@@ -4,7 +4,7 @@ Association StudentDisciplineIncidentAssociation [607]
         documentation "Relates the Student associated with the DisciplineIncident."
     domain entity DisciplineIncident [1070]
         documentation "Reference to the DisciplineIncident associated with the Student."
-    enumeration StudentParticipationCode [1071]
+    descriptor StudentParticipationCode [1071]
         documentation "The role or type of participation of a student in a discipline incident; 
         for example:
         Victim

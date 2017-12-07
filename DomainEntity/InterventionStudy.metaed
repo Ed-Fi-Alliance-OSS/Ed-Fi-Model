@@ -13,24 +13,24 @@ Domain Entity InterventionStudy [565]
     integer Participants [1480]
         documentation "The number of participants observed in the study."
         is required
-    enumeration DeliveryMethod [1472]
+    descriptor DeliveryMethod [1472]
         documentation "The way in which an intervention was implemented: individual, small group, whole class, or whole school."
         is required
-    enumeration InterventionClass [1476]
+    descriptor InterventionClass [1476]
         documentation "The way in which an intervention is used: curriculum, supplement, or practice."
         is required
     descriptor GradeLevel [1470]
         documentation "Grade levels participating in this study."
         is optional collection
         with context Appropriate
-    enumeration PopulationServed [1481]
+    descriptor PopulationServed [1481]
         documentation "A subset of students that are the focus of the InterventionStudy."
         is optional collection
-    enumeration Sex [1471]
+    descriptor Sex [1471]
         documentation "Sexes participating in this study. If omitted, considered generally applicable."
         is optional collection
         with context Appropriate
-    enumeration StateAbbreviation [1483]
+    descriptor StateAbbreviation [1483]
         documentation "The abbreviation for the state (within the United States) or outlying area, the school system of which the participants of the study are considered to be a part."
         is optional collection
     domain entity EducationOrganization [1475]

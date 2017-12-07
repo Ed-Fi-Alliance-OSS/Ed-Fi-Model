@@ -15,7 +15,7 @@ Domain Entity Course [550]
         documentation "The code that identifies the organization of subject matter and related learning experiences provided for the instruction of students."
         is required collection
         is queryable field        
-    enumeration CourseLevelCharacteristic [1299]
+    descriptor CourseLevelCharacteristic [1299]
         documentation "The type of specific program or designation with which the course is associated (e.g., AP, IB, Dual Credit, CTE)."
         is optional collection
     descriptor GradeLevel [1303]
@@ -38,10 +38,10 @@ Domain Entity Course [550]
     bool HighSchoolCourseRequirement [1304]
         documentation "An indication that this course may satisfy high school graduation requirements in the course's subject area."
         is optional
-    enumeration CourseGPAApplicability [1297]
+    descriptor CourseGPAApplicability [1297]
         documentation "An indicator of whether or not the course being described is included in the computation of the student's Grade Point Average, and if so, if it is weighted differently from regular courses."
         is optional
-    enumeration CourseDefinedBy [1295]
+    descriptor CourseDefinedBy [1295]
         documentation "Specifies whether the course was defined by the SEA, LEA, School, or national organization." 
         is optional
     inline common Credits [1308]
@@ -52,7 +52,7 @@ Domain Entity Course [550]
         documentation "The maximum amount of credit available to a student who successfully completes the course."
         is optional
         with context MaximumAvailable
-    enumeration CareerPathway [1292]
+    descriptor CareerPathway [1292]
         documentation "Indicates the career cluster or pathway the course is associated with as part of a CTE curriculum."
         is optional
     descriptor CompetencyLevel [1293]

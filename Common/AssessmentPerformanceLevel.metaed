@@ -15,6 +15,6 @@ Common AssessmentPerformanceLevel [484]
     shared string Result named MaximumScore [738]
         documentation "The maximum score to make the indicated level of performance."
         is optional
-    enumeration ResultDatatypeType [741]
+    descriptor ResultDatatypeType [741]
         documentation "The datatype of the result. The results can be expressed as a number, percentile,range, level, etc."
         is optional

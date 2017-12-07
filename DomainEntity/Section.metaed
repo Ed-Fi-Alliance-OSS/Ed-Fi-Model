@@ -8,7 +8,7 @@ Domain Entity Section [580]
     shared integer SequenceOfCourse [1631]
         documentation "When a section is part of a sequence of parts for a course, the number of the sequence. If the course has only one part, the value of this section attribute should be 1."
         is optional
-    enumeration EducationalEnvironment [1623]
+    descriptor EducationalEnvironment [1623]
         documentation "The setting in which a child receives education and related services; for example:
         Center-based instruction
         Home-based instruction
@@ -17,7 +17,7 @@ Domain Entity Section [580]
         Residential care and treatment facility
         ..."
         is optional
-    enumeration MediumOfInstruction [1626]
+    descriptor MediumOfInstruction [1626]
         documentation "The media through which teachers provide instruction to students and students and teachers communicate about instructional matters; for example:
         Technology-based instruction in classroom
         Correspondence instruction
@@ -26,7 +26,7 @@ Domain Entity Section [580]
         Center-based instruction
         ..."
         is optional
-    enumeration PopulationServed [1627]
+    descriptor PopulationServed [1627]
         documentation "The type of students the Section is offered and tailored to; for example:
         Bilingual students
         Remedial education students

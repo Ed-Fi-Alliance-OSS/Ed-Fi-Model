@@ -9,7 +9,7 @@ Domain Entity DisciplineIncident [554]
     time IncidentTime [1353]
         documentation "An indication of the time of day the incident took place."
         is optional
-    enumeration IncidentLocation [1352]
+    descriptor IncidentLocation [1352]
         documentation "Identifies where the DisciplineIncident occurred and whether or not it occurred on school, for example:
         On school
         Administrative offices area

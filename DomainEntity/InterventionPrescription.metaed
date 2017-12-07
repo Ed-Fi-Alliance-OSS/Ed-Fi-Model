@@ -3,16 +3,16 @@ Domain Entity InterventionPrescription [564]
     inline common EducationContentSource [1464]
         documentation "Resources related to or used in this intervention prescription, including any documentation around the InterventionPrescription itself. Since an intervention prescription is intended to be a published intervention, an intervention prescription should have at least one such resource."
         is required
-    enumeration InterventionClass [1466]
+    descriptor InterventionClass [1466]
         documentation "The way in which an intervention is used: curriculum, supplement, or practice."
         is required
     descriptor Diagnosis [1463]
         documentation "Targeted purpose of the InterventionPrescription (e.g., attendance issue, dropout risk)."
         is optional collection
-    enumeration PopulationServed [1468]
+    descriptor PopulationServed [1468]
         documentation "A subset of students that are the focus of the InterventionPrescription."
         is optional collection
-    enumeration Sex [1460]
+    descriptor Sex [1460]
         documentation "Sexes for the InterventionPrescription. If omitted, considered generally applicable."
         is optional collection
         with context Appropriate
@@ -20,7 +20,7 @@ Domain Entity InterventionPrescription [564]
         documentation "Grade levels for the prescribed intervention. If omitted, considered generally applicable."
         is optional collection
         with context Appropriate
-    enumeration DeliveryMethod [1461]
+    descriptor DeliveryMethod [1461]
         documentation "The way in which an intervention was implemented: individual, small group, whole class, or whole school."
         is required
     domain entity EducationOrganization [1465]

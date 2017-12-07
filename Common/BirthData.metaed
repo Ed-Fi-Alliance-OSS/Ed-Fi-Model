@@ -6,7 +6,7 @@ Inline Common BirthData [488]
     shared string City named BirthCity [755]
         documentation "The city the student was born in."
         is optional
-    enumeration StateAbbreviation [754]
+    descriptor StateAbbreviation [754]
         documentation "The abbreviation for the name of the state (within the United States) or extra-state jurisdiction in which an individual was born."
         is optional
         with context Birth

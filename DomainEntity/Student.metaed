@@ -17,7 +17,7 @@ Domain Entity Student [585]
         documentation "Other names (e.g., alias, nickname, previous legal name) associated with a person."
         is optional collection
         is queryable field
-    enumeration Sex [1701]
+    descriptor Sex [1701]
         documentation "A person's gender."
         is required
         is queryable field
@@ -44,7 +44,7 @@ Domain Entity Student [585]
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
         is optional
         is queryable field
-    enumeration OldEthnicity [1695]
+    descriptor OldEthnicity [1695]
         documentation "Previous definition of Ethnicity combining Hispanic/Latino and race:
         1 - American Indian or Alaskan Native
         2 - Asian or Pacific Islander
@@ -52,7 +52,7 @@ Domain Entity Student [585]
         4 - Hispanic
         5 - White, not of Hispanic origin."
         is optional
-    enumeration Race [1699]
+    descriptor Race [1699]
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races."
         is optional collection
         is queryable field
@@ -96,6 +96,6 @@ Domain Entity Student [585]
     domain entity EducationOrganization [2371]
         documentation "Provide user information to lookup and link to an existing educational organization record in the receiving system."
         is queryable only
-    enumeration HomelessPrimaryNighttimeResidence [2549]
+    descriptor HomelessPrimaryNighttimeResidence [2549]
         documentation "The primary nighttime residence of the student at the time the student is identified as homeless."
         is optional

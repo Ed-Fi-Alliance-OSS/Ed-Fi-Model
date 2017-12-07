@@ -14,7 +14,7 @@ Association StudentSectionAssociation [614]
     bool HomeroomIndicator [1130]
         documentation "Indicates the Section is the student's homeroom. Homeroom period may the convention for taking daily attendance."
         is optional
-    enumeration RepeatIdentifier [1131]
+    descriptor RepeatIdentifier [1131]
         documentation "An indication as to whether a student has previously taken a given course.
         Repeated, counted in grade point average
         Repeated, not counted in grade point average

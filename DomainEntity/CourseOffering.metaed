@@ -9,7 +9,7 @@ Domain Entity CourseOffering [551]
     shared integer Duration named InstructionalTimePlanned [1313]
         documentation "The planned total number of clock minutes of instruction for this course offering. Generally, this should be at least as many minutes as is required for completion by the related state- or district-defined course."
         is optional
-    enumeration CurriculumUsed [1312]
+    descriptor CurriculumUsed [1312]
         documentation "The type of curriculum used in an early learning classroom or group."
         is optional collection
     domain entity School [1316]

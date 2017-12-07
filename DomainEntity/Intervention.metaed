@@ -3,16 +3,16 @@ Domain Entity Intervention [563]
     inline common EducationContentSource [1449]
         documentation "Resources related to or used in this intervention, including any documentation around the Intervention itself. Since an intervention is intended to be a published intervention, an intervention should have at least one such resource."
         is required
-    enumeration InterventionClass [1452]
+    descriptor InterventionClass [1452]
         documentation "The way in which an intervention is used: curriculum, supplement, or practice."
         is required
     descriptor Diagnosis [1448]
         documentation "Targeted purpose of the Intervention (e.g., attendance issue, dropout risk)."
         is optional collection
-    enumeration PopulationServed [1456]
+    descriptor PopulationServed [1456]
         documentation "A subset of students that are the focus of the Intervention."
         is optional collection
-    enumeration Sex [1444]
+    descriptor Sex [1444]
         documentation "Sexes for the Intervention. If omitted, considered generally applicable."
         is optional collection
         with context Appropriate
@@ -20,7 +20,7 @@ Domain Entity Intervention [563]
         documentation "Grade levels for the Intervention-if omitted, considered generally applicable."
         is optional collection
         with context Appropriate
-    enumeration DeliveryMethod [1446]
+    descriptor DeliveryMethod [1446]
         documentation "The way in which an intervention was implemented: individual, small group, whole class, or whole school."
         is required
     domain entity InterventionPrescription [1454]

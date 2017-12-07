@@ -9,6 +9,6 @@ Common Disability [502]
     integer OrderOfDisability [811]
         documentation "The order by severity of student's disabilities: 1- Primary, 2 -  Secondary, 3 - Tertiary, etc."
         is optional
-    enumeration DisabilityDeterminationSourceType [2414]
+    descriptor DisabilityDeterminationSourceType [2414]
         documentation "The source that provided the disability determination."
         is optional

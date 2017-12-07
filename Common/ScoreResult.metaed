@@ -3,7 +3,7 @@ Common ScoreResult [524]
     shared string Result [910]
         documentation "The value of a meaningful raw score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
         is required
-    enumeration ResultDatatypeType [911]
+    descriptor ResultDatatypeType [911]
         documentation "The datatype of the result. The results can be expressed as a number, percentile, range, level, etc."
         is required
     descriptor AssessmentReportingMethod [2542]

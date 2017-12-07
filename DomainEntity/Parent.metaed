@@ -13,7 +13,7 @@ Domain Entity Parent [573]
         documentation "Other names (e.g., alias, nickname, previous legal name) associated with a person."
         is optional collection
         is queryable field
-    enumeration Sex [1563]
+    descriptor Sex [1563]
         documentation "A person's gender."
         is optional
         is queryable field

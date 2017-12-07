@@ -3,7 +3,7 @@ Common IdentificationDocument [491]
     shared string DocumentTitle [829]
         documentation "The title of the document given by the issuer."
         is optional
-    enumeration PersonalInformationVerification [834]
+    descriptor PersonalInformationVerification [834]
         documentation "The category of the document relative to its purpose."
         is part of identity
     date DocumentExpirationDate [828]
@@ -20,6 +20,6 @@ Common IdentificationDocument [491]
         documentation "Country of origin of the document. It is strongly recommended that entries use only ISO 3166 2-letter country codes."
         is optional
         with context Issuer
-    enumeration IdentificationDocumentUse [830]
+    descriptor IdentificationDocumentUse [830]
         documentation "The primary function of the document used for establishing identity."
         is part of identity

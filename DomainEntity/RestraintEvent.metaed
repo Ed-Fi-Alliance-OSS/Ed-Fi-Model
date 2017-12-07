@@ -6,10 +6,10 @@ Domain Entity RestraintEvent [578]
     date EventDate [1594]
         documentation "Month, day, and year of the RestraintEvent."
         is required
-    enumeration EducationalEnvironment [1593]
+    descriptor EducationalEnvironment [1593]
         documentation "The setting where the RestraintEvent was exercised."
         is optional
-    enumeration RestraintEventReason [1597]
+    descriptor RestraintEventReason [1597]
         documentation "A categorization of the circumstances or reason for the RestraintEvent."
         is optional collection
     domain entity Student [1599]

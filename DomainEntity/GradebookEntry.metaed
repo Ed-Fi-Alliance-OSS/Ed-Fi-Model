@@ -5,7 +5,7 @@ Domain Entity GradebookEntry [560]
         documentation "The name or title of the activity to be recorded in the GradebookEntry."
         is part of identity
         is queryable field
-    enumeration GradebookEntryType [1425]
+    descriptor GradebookEntryType [1425]
         documentation "The type of the GradebookEntry; for example, homework, assignment, quiz, unit test, oral presentation, etc."
         is optional
         is queryable field
