@@ -19,7 +19,7 @@ Domain Entity GraduationPlan [562]
     domain entity EducationOrganization [1438]
         documentation "The reference to the EducationOrganization defining the plan."
         is part of identity
-    descriptor SchoolYear [1440]
+    enumeration SchoolYear [1440]
         documentation "The school year the student is expected to graduate."
         is part of identity
         with context Graduation

@@ -8,7 +8,7 @@ Association StudentSchoolAssociation [613]
     bool PrimarySchool [1121]
         documentation "Indicates if a given enrollment record should be considered the primary record for a student."
         is optional
-    descriptor SchoolYear [1126]
+    enumeration SchoolYear [1126]
         documentation "The school year associated with the student's enrollment."
         is optional
     date EntryDate [1114]
@@ -27,7 +27,7 @@ Association StudentSchoolAssociation [613]
     bool RepeatGradeIndicator [1122]
         documentation "An indicator of whether the student is enrolling to repeat a grade level, either by failure or an agreement to hold the student back."
         is optional
-    descriptor SchoolYear [1111]
+    enumeration SchoolYear [1111]
         documentation "Projected High School graduation year."
         is optional
         with context ClassOf

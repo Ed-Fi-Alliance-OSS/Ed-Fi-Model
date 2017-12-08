@@ -52,7 +52,7 @@ Domain Entity StudentAcademicRecord [586]
     domain entity EducationOrganization [1714]
         documentation "Provides user information to lookup and link to an existing educational organization record."
         is part of identity
-    descriptor SchoolYear [1719]
+    enumeration SchoolYear [1719]
         documentation "The identifier for the school year."
         is part of identity
     descriptor Term [1725]

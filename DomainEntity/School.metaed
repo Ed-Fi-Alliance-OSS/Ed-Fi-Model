@@ -34,7 +34,7 @@ Domain Entity School based on EducationOrganization [579]
     descriptor CharterApprovalAgencyType [2423]
         documentation "The type of agency that approved the establishment or continuation of a charter school."
         is optional
-    descriptor SchoolYear [2424]
+    enumeration SchoolYear [2424]
         documentation "The school year in which a charter school was initially approved."
         is optional
         with context CharterApproval

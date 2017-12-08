@@ -9,7 +9,7 @@ Domain Entity GradingPeriod [561]
     integer PeriodSequence [1434]
         documentation "The sequential order of this period relative to other periods."
         is part of identity
-    descriptor SchoolYear
+    enumeration SchoolYear
         documentation "The identifier for the grading period school year."
         is part of identity
     date BeginDate [1430]
