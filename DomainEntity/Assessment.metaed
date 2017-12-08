@@ -72,7 +72,7 @@ Domain Entity Assessment [540]
     shared string Nomenclature [1236]
         documentation "Reflects the specific nomenclature used for Assessment."
         is optional
-    descriptor AssessmentPeriod [1226]
+    common AssessmentPeriod [1226]
         documentation "The period or window in which an assessment is supposed to be administered."
         is optional
     shared string AssessmentFamily named AssessmentFamily [2544]
