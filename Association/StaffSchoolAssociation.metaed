@@ -25,3 +25,4 @@ Association StaffSchoolAssociation [603]
         documentation "Reference to the Calendar associated with the StaffSchoolAssociation."
         is optional
         merge Calendar.SchoolYear with SchoolYear
+        merge Calendar.School with School
