@@ -24,3 +24,4 @@ Domain Entity Grade [559]
         is part of identity
         with context GradingPeriod
         merge GradingPeriod.School with StudentSectionAssociation.Section.CourseOffering.Session.School
+        merge GradingPeriod.SchoolYear with StudentSectionAssociation.Section.CourseOffering.Session.SchoolYear
