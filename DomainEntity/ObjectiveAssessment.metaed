@@ -42,3 +42,6 @@ Domain Entity ObjectiveAssessment [571]
     domain entity Assessment [1536]
         documentation "Provide user information to lookup and link to an existing assessment."
         is part of identity
+    common AssessmentScore
+        documentation "Definition of the scores to be expected from this objective assessment."
+        is optional collection
