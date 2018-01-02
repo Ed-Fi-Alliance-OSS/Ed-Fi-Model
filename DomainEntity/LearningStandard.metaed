@@ -46,3 +46,6 @@ Domain Entity LearningStandard [567]
     shared string URI named Namespace [2440]
         documentation "Namespace for the LearningStandard."
         is required
+    descriptor LearningStandardCategory
+        documentation "An additional classification of the type of a specific learning standard."
+        is optional
