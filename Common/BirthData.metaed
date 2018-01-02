@@ -23,3 +23,7 @@ Inline Common BirthData [488]
     bool MultipleBirthStatus [758]
         documentation "Indicator of whether the student was born with other siblings (i.e., twins, triplets, etc.)"
         is optional
+    descriptor Sex
+        documentation "A person's gender at birth."
+        is optional
+        with context Birth
