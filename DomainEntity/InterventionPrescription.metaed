@@ -30,3 +30,11 @@ Domain Entity InterventionPrescription [564]
         documentation "A unique number or alphanumeric code assigned to an intervention prescription."
         is part of identity
         with context InterventionPrescription
+    shared integer Dosage
+        documentation "The minimum duration of time in minutes that is recommended for the intervention."
+        is optional
+        with context Min
+    shared integer Dosage
+        documentation "The maximum duration of time in minutes that is recommended for the intervention."
+        is optional
+        with context Max
