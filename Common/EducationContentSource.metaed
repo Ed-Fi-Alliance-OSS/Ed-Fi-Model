@@ -3,9 +3,10 @@ Inline Common EducationContentSource [503]
     domain entity EducationContent [812]
         documentation "Relates the education content source to the education content."
         is optional collection
-    shared string LearningResourceMetadataURI [813]
+    shared string URI [813]
         documentation "The URI (typical a URL) pointing to the metadata entry in a LRMI metadata repository, which describes this content item."
         is optional collection
+        with context LearningResourceMetadata
     shared string URI [814]
         documentation "The URI (typical a URL) pointing to an education content item."
         is optional collection
