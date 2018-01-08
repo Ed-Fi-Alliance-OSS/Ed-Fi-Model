@@ -1,6 +1,6 @@
 Domain CareerAndTechnicalEducation
 documentation "The Career and Technical Education subdomain of the Alternative and Supplemental Services extends the StudentProgramAssociation to specify attributes specific to the CTE program, such as the CTE cluster."
-    domain entity AttendanceEvent
+    common AttendanceEvent
     domain entity EducationOrganization
     domain entity Program
     domain entity School

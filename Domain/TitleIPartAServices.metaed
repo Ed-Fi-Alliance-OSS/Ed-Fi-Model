@@ -1,6 +1,6 @@
 Domain TitleIPartAServices
     documentation "The Title I Part A Services subdomain of the Alternative andSupplemental Services domain extends the StudentProgramAssociation to specify Title I Part A participation for a student."
-    domain entity AttendanceEvent
+    common AttendanceEvent
     domain entity EducationOrganization
     domain entity Program
     domain entity School

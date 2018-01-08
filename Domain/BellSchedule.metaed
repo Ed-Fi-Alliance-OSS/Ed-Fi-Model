@@ -9,7 +9,7 @@ Domain BellSchedule
     domain entity CalendarDate
     domain entity ClassPeriod
     domain entity EducationOrganization
-    domain entity MeetingTime
     domain entity School
     domain entity Section
     domain entity Session
+    common MeetingTime
