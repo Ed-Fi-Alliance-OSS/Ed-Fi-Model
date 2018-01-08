@@ -13,5 +13,5 @@ Domain Assessment
     domain entity Section
     domain entity Student
     domain entity StudentAssessment
-    domain entity StudentAssessmentItem
-    domain entity StudentObjectiveAssessment
+    common StudentAssessmentItem
+    common StudentObjectiveAssessment
