@@ -9,10 +9,13 @@ Domain Entity BellSchedule [543]
     domain entity School [1266]
         documentation "The school for which the BellSchedule is defined."
         is part of identity
-    common MeetingTime [1265]
-        documentation "The MeetingTimes that compose this BellSchedule."
+    domain entity ClassPeriod
+        documentation "The class periods that compose this BellSchedule."
         is required collection
-        merge MeetingTime.ClassPeriod.School with School
+        merge ClassPeriod.School with School
     date Date [1263]
         documentation "The dates for which the BellSchedule applies."
         is optional collection
+    shared string AlternateDayName [871]
+        documentation "An alternate name for the day (e.g., Red, Blue)."
+        is optional

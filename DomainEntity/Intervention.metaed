@@ -33,7 +33,7 @@ Domain Entity Intervention [563]
     date EndDate [1451]
         documentation "The end date for the intervention implementation."
         is optional
-    common MeetingTime [1455]
+    inline common MeetingTime [1455]
         documentation "The times at which this intervention is scheduled to meet."
         is optional collection
     domain entity Staff [1458]
