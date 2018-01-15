@@ -1,4 +1,4 @@
-Inline Common MeetingTime [516]
+Common MeetingTime [516]
     documentation "The start and end times defining a meeting time."
     time StartTime [875]
         documentation "An indication of the time of day the meeting time begins."
