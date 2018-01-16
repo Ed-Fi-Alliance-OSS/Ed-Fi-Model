@@ -1,15 +1,18 @@
-Association StudentEducationOrganizationAssociation [608]
-    documentation "This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation."
-    domain entity Student [1075]
+Association StudentEducationOrganizationAssociation
+    documentation "This association represents student information that is specific to a student's relationship with an EducationOrganization. Enrollment relationship semantics are covered by StudentSchoolAssociation."
+    domain entity Student
         documentation "A reference to the Student."
-    domain entity EducationOrganization [1073]
+    domain entity EducationOrganization
         documentation "A reference to the EducationOrganization."
-    descriptor Responsibility [1074]
-        documentation "Indications of an education organization's responsibility for a student, such as accountability, attendance, funding, etc."
-        is part of identity
-    date BeginDate [2554]
-        documentation "Month, day, and year of the start date of an education organization's responsibility for a student."
-        is part of identity
-    date EndDate [2555]
-        documentation "Month, day, and year of the end date of an education organization's responsibility for a student."
+    common Disability [1684]
+        documentation "The disability condition(s) that best describes an individual's impairment."
+        is optional collection
+    bool EconomicDisadvantaged [1686]
+        documentation "An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy."
+        is optional
+    descriptor LimitedEnglishProficiency [1692]
+        documentation "An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient."
+        is optional
+    descriptor SchoolFoodServicesEligibility [1700]
+        documentation "An indication of a student's level of eligibility for breakfast, lunch, snack, supper, and milk programs."
         is optional

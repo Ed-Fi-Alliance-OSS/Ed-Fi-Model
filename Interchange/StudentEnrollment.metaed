@@ -9,4 +9,5 @@ Interchange StudentEnrollment [2530]
     association StudentSchoolAssociation [2530-002]
     association StudentSectionAssociation [2530-003]
     domain entity GraduationPlan [2530-004]
-    association StudentEducationOrganizationAssociation [2530-005]
+    association StudentEducationOrganizationResponsibilityAssociation [2530-005]
+    association StudentEducationOrganizationAssociation

@@ -7,4 +7,4 @@ Domain StudentIdentificationAndDemographics
     domain entity Parent
     domain entity Student
     association StudentParentAssociation
-
+    association StudentEducationOrganizationAssociation

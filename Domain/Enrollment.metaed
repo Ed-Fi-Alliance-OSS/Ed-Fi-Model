@@ -8,5 +8,6 @@ For associations between a student and a school or LEA that is *not* enrollment(
     domain entity LocalEducationAgency
     domain entity School
     domain entity Student
+    association StudentEducationOrganizationResponsibilityAssociation
     association StudentEducationOrganizationAssociation
     association StudentSchoolAssociation

@@ -59,28 +59,13 @@ Domain Entity Student [585]
     inline common Citizenship [1682]
         documentation "Contains information relative to U.S. citizenship status and its associated probationary documentation."
         is optional
-    bool EconomicDisadvantaged [1686]
-        documentation "An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy."
-        is optional
-    descriptor SchoolFoodServicesEligibility [1700]
-        documentation "An indication of a student's level of eligibility for breakfast, lunch, snack, supper, and milk programs."
-        is optional
     common StudentCharacteristic [1702]
         documentation "Reflects important characteristics of the student's home situation:
         Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth."
         is optional collection
-    descriptor LimitedEnglishProficiency [1692]
-        documentation "An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient."
-        is optional
     common Language [1690]
         documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes."
         is optional collection
-    common Disability [1684]
-        documentation "The disability condition(s) that best describes an individual's impairment."
-        is optional collection
-    shared string DisplacementStatus [1685]
-        documentation "Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services."
-        is optional
     common ProgramParticipation [1698]
         documentation "Key programs the student is participating in or receives services from."
         is optional collection
