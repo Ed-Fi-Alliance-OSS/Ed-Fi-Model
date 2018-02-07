@@ -20,3 +20,4 @@ Domain EducationOrganization
     domain entity CommunityOrganization
     domain entity CommunityProvider
     domain entity CommunityProviderLicense
+    domain entity PostSecondaryInstitution

@@ -1,4 +1,0 @@
-Shared String PostSecondaryInstitutionId [85]
-    documentation "A unique number or alphanumeric code assigned to the postsecondary organization."
-    min length 1
-    max length 30
