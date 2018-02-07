@@ -4,6 +4,7 @@ Interchange Finance [2519]
     2. Exchange actuals against a budget for an education organization.
     3. Exchange an education organization's payroll data."
     domain entity Account [2519-001]
+    domain entity AccountCode
     domain entity Actual [2519-002]
     domain entity Budget [2519-003]
     domain entity ContractedStaff [2519-004]
