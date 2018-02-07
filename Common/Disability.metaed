@@ -12,3 +12,6 @@ Common Disability [502]
     descriptor DisabilityDeterminationSourceType [2414]
         documentation "The source that provided the disability determination."
         is optional
+    descriptor DisabilityDesignation [294]
+        documentation "Whether the disability is IDEA, Section 504, or other disability designation."
+        is optional collection
