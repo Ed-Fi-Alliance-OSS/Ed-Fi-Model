@@ -66,9 +66,6 @@ Domain Entity Student [585]
     common Language [1690]
         documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes."
         is optional collection
-    common ProgramParticipation [1698]
-        documentation "Key programs the student is participating in or receives services from."
-        is optional collection
     common CohortYear [1683]
         documentation "The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade."
         is optional collection
