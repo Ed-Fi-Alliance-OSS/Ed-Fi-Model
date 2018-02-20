@@ -1,4 +1,4 @@
-Shared String AccountCodeIdentifier
+Shared String AccountCodeNumber
     documentation "An account code defined for the education accounting system by the education organization."
     min length 1
     max length 50

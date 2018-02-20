@@ -1,6 +1,6 @@
 Domain Entity AccountCode
     documentation "The set of account codes defined by an education organization for a fiscal year."
-    shared string AccountCodeIdentifier named AccountCode
+    shared string AccountCodeNumber
         documentation "An account code defined for the education accounting system by the education organization."
         is part of identity
     descriptor AccountClassification

@@ -1,4 +1,0 @@
-Shared String AccountNumber [2]
-    documentation "The alphanumeric string that identifies the account."
-    min length 1
-    max length 50
