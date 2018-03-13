@@ -53,11 +53,13 @@ Domain Entity Section [580]
     domain entity School [1629]
         documentation "The school where the Section is taught."
         is optional
-        merge School with CourseOffering.Session.School
+        with context Location
+        merge LocationSchool with Location.School
     domain entity Location [1625]
         documentation "The location, typically a classroom, where the Section meets."
         is optional
-        merge Location.School with CourseOffering.Session.School
+        with context Location
+        merge Location.School with LocationSchool
     domain entity ClassPeriod [1621]
         documentation "The class period during which the Section meets."
         is optional collection
