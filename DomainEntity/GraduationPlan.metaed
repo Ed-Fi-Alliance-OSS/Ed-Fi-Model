@@ -1,5 +1,5 @@
 Domain Entity GraduationPlan [562]
-    documentation "This entity is a plan outlining the required credits, credits by subject,credits by course, and other criteria required for graduation. A graduation plan may be one or more standard plans defined by an education organization and/or individual plans for some or all students."
+    documentation "This entity is a plan outlining the required credits,credits by subject, credits by course, and other criteria required for graduation. A graduation plan may be one or more standard plans defined by an education organization and/or individual plans for some or all students."
     descriptor GraduationPlanType [1439]
         documentation "The type of academic plan the student is following for graduation: for example, Minimum, Recommended, Distinguished, or Standard."
         is part of identity
