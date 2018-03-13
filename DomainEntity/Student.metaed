@@ -74,3 +74,6 @@ Domain Entity Student [585]
     descriptor HomelessPrimaryNighttimeResidence [2549]
         documentation "The primary nighttime residence of the student at the time the student is identified as homeless."
         is optional
+    descriptor TribalAffiliation
+        documentation "An American Indian tribe with which the student is affiliated."
+        is optional collection
