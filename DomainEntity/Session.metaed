@@ -27,7 +27,7 @@ Domain Entity Session [582]
         is queryable field
     domain entity GradingPeriod [1640]
         documentation "Grading periods associated with the session."
-        is required collection
+        is optional collection
         merge GradingPeriod.SchoolYear with SchoolYear
         merge GradingPeriod.School with School
     domain entity AcademicWeek [1637]
