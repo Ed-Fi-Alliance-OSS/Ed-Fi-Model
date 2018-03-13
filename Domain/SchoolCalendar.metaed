@@ -3,8 +3,9 @@ Domain SchoolCalendar
     domain entity AcademicWeek
     domain entity Calendar
     domain entity CalendarDate
-    domain entity Cohort
     domain entity EducationOrganization
     domain entity GradingPeriod
     domain entity School
     domain entity Session
+    domain entity Student
+    association StudentSchoolAssociation

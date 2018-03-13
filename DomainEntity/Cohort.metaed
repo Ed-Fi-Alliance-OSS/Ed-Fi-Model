@@ -22,6 +22,3 @@ Domain Entity Cohort [547]
         documentation "The (optional) program associated with this Cohort (e.g., special education)."
         is optional collection
         with context Program
-    domain entity Calendar [2613]
-        documentation "A calendar associated with the cohort."
-        is optional
