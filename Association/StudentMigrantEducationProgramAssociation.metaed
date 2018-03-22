@@ -1,4 +1,4 @@
-Association StudentMigrantEducationProgramAssociation based on StudentProgramAssociation [610]
+Association StudentMigrantEducationProgramAssociation based on GeneralStudentProgramAssociation [610]
     documentation "This association represents the migrant education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation with added elements particular to migrant education programs."
     bool PriorityForServices [1086]
         documentation "Report migratory children who are classified as having ""priority for services"" because they are failing, or most at risk of failing to meet the State's challenging State academic content standards and challenging State student academic achievement standards, and their education has been interrupted during the regular school year."
