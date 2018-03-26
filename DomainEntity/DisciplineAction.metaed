@@ -24,9 +24,10 @@ Domain Entity DisciplineAction [553]
     domain entity Student [1345]
         documentation "The student(s) disciplined by the DisciplineAction."
         is part of identity
-    domain entity DisciplineIncident [1341]
+    association StudentDisciplineIncidentAssociation [1341]
         documentation "Reference to the DisciplineIncident associated with the DisciplineAction."
         is required collection
+        merge StudentDisciplineIncidentAssociation.Student with Student
     domain entity Staff [1344]
         documentation "The staff responsible for enforcing the DisciplineAction."
         is optional collection
