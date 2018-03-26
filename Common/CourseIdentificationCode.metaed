@@ -7,6 +7,6 @@ Common CourseIdentificationCode [495]
         documentation "A system that is used to identify the organization of subject matter and related learning experiences provided for the instruction of students."
         is part of identity
     shared string IdentificationCode [779]
-        documentation "The organization code or name assigning the staff Identification Code."
+        documentation "The organization code or name assigning the Identification Code."
         is optional
         with context AssigningOrganization
