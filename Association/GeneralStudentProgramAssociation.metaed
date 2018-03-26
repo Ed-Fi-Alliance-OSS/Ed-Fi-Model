@@ -5,9 +5,6 @@ domain entity Student [1110]
 domain entity Program [1106]
     documentation "The Program associated with the Student."
     with context Program
-common Service [1109]
-    documentation "Indicates the Service(s) being provided to the Student by the Program."
-    is optional collection
 date BeginDate [1103]
     documentation "The month, day, and year on which the Student first received services."
     is part of identity
