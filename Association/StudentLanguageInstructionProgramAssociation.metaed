@@ -1,0 +1,11 @@
+Association StudentLanguageInstructionProgramAssociation based on GeneralStudentProgramAssociation
+    documentation "This association represents the Title III Language Instruction for Limited English Proficient and Immigrant Students program(s) that a student participates in or from which the Student receives services."
+    common EnglishLanguageProficiencyAssessment
+        documentation "Results of yearly English language assessment."
+        is optional collection
+    bool EnglishLearnerParticipation
+        documentation "An indication that an English Learner student is served by an English language instruction educational program supported with Title III of ESEA funds."
+        is optional
+    common LanguageInstructionProgramService
+        documentation "Indicates the service(s) being provided to the Student by the Language Instruction Program."
+        is optional collection
