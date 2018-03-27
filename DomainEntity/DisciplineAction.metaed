@@ -39,3 +39,6 @@ Domain Entity DisciplineAction [553]
         documentation "School where student is transferred for discipline."
         is optional
         with context Assignment
+    bool ReceivedEducationServicesDuringExpulsion
+        documentation "An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons."
+        is optional

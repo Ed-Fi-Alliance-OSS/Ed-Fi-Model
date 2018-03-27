@@ -5,7 +5,7 @@ Association StudentEducationOrganizationAssociation
     domain entity EducationOrganization
         documentation "A reference to the EducationOrganization."
     common Disability [1684]
-        documentation "The disability condition(s) that best describes an individual's impairment."
+        documentation "The disability condition(s) that best describes an individual's impairment, as determined by evaluation(s) conducted by the education organization."
         is optional collection
     descriptor LimitedEnglishProficiency [1692]
         documentation "An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient."
