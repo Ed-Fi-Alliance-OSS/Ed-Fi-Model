@@ -6,3 +6,13 @@ Association StudentCTEProgramAssociation based on GeneralStudentProgramAssociati
     common Service
         documentation "Indicates the Service(s) being provided to the Student by the Program."
         is optional collection
+    bool NonTraditionalGenderStatus
+        documentation "Indicator that student is from a gender group that comprises less than 25% of the individuals employed in an occupation or field of work."
+        is optional
+    bool PrivateCTEProgram
+        documentation "Indicator that student participated in career and technical education at private agencies or institutions that are reported by the state for purposes of the Elementary and Secondary Education Act (ESEA).
+Students in private institutions which do not receive Perkins funding are reported only in the state file."
+        is optional
+    descriptor TechnicalSkillsAssessment
+        documentation "Results of technical skills assessment aligned with industry recognized standards."
+        is optional
