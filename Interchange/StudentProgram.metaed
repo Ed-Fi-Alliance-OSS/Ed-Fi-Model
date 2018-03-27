@@ -9,3 +9,7 @@ Interchange StudentProgram [2534]
     association StudentCTEProgramAssociation [2534-004]
     association StudentTitleIPartAProgramAssociation [2534-005]
     association StudentMigrantEducationProgramAssociation [2534-006]
+    association StudentLanguageInstructionProgramAssociation
+    association StudentHomelessProgramAssociation
+    association StudentNeglectedOrDelinquentProgramAssociation
+    association StudentSchoolFoodServiceProgramAssociation
