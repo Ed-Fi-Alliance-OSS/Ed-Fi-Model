@@ -6,5 +6,10 @@
   "license": "private",
   "publishConfig": {
     "registry": "https://www.myget.org/F/ed-fi/npm/"
+  },
+  "metaEdProject": {
+    "namespace": "edfi",
+    "projectName": "Ed-Fi",
+    "projectVersion": "3.0.0"
   }
 }
