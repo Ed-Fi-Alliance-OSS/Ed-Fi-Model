@@ -5,7 +5,7 @@ Domain Finance
 * Federal Fund allocations and expenses
 * Staff and contracted staff actuals
 
-Core to the Finance model is the Account entity, representing the chart of accounts, or an organization of aggregate accounts. The various codes (e.g., Object, Function,Fund) specific to the EducationOrganization are represented by AccountCodeDescriptor."
+Core to the Finance model is the Account entity, representing the chart of accounts, or an organization of aggregate accounts. The various codes (e.g., Object, Function, Fund) specific to the EducationOrganization are represented by AccountCodeDescriptor."
     domain entity Account
     domain entity AccountCode
     domain entity Actual

@@ -16,5 +16,5 @@ Common AssessmentPerformanceLevel [484]
         documentation "The maximum score to make the indicated level of performance."
         is optional
     descriptor ResultDatatypeType [741]
-        documentation "The datatype of the result. The results can be expressed as a number, percentile,range, level, etc."
+        documentation "The datatype of the result. The results can be expressed as a number, percentile, range, level, etc."
         is optional

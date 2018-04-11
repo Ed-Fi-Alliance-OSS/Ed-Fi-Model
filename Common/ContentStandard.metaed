@@ -1,5 +1,5 @@
 Common ContentStandard [494]
-    documentation "An indication as to whether an assessment conforms to a standard (e.g., local standard,statewide standard, regional standard, association standard).
+    documentation "An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard).
     ..."
     shared string ContentStandardTitle named Title [776]
         documentation "The name of the content standard, for example Common Core."
