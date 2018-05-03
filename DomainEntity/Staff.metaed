@@ -64,7 +64,7 @@ Domain Entity Staff [583]
         documentation "Contains information relative to U.S. citizenship status and its associated probationary documentation."
         is optional
     common Language [1655]
-        documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes."
+        documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-2 language codes."
         is optional collection
     descriptor LevelOfEducation [1651]
         documentation "The extent of formal instruction an individual has received (e.g., the highest grade in school completed or its equivalent or the highest degree received)."
