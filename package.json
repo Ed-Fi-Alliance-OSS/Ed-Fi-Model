@@ -1,6 +1,6 @@
 {
   "name": "ed-fi-model-3.0",
-  "version": "1.0.0-dev.3",
+  "version": "1.0.0",
   "description": "The Ed-Fi Data Standard v3.0 as defined in MetaEd",
   "repository": "https://github.com/Ed-Fi-Alliance/Ed-Fi-Model",
   "license": "private",
@@ -8,7 +8,6 @@
     "registry": "https://www.myget.org/F/ed-fi/npm/"
   },
   "metaEdProject": {
-    "namespace": "edfi",
     "projectName": "Ed-Fi",
     "projectVersion": "3.0.0"
   }
