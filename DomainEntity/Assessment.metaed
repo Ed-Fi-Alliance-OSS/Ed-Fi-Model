@@ -1,13 +1,14 @@
 Domain Entity Assessment [540]
     documentation "This entity represents a tool, instrument, process, or exhibition composed of a systematic sampling of behavior for measuring a student's competence, knowledge,skills, or behavior. An assessment can be used to measure differences inindividuals or groups and changes in performance from one occasion to the next."
+    shared string IdentificationCode named AssessmentIdentifier
+        documentation "A unique number or alphanumeric code assigned to an assessment."
+        is part of identity
     shared string AssessmentTitle [1228]
         documentation "The title or name of the Assessment."
-        is part of identity
-        is queryable field
+        is required
     common AssessmentIdentificationCode [1224]
         documentation "A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity."
-        is required collection
-        is queryable field
+        is optional collection
     descriptor AssessmentCategory [1221]
         documentation "The category of an assessment based on format and content. For example:
         Achievement test
@@ -17,30 +18,13 @@ Domain Entity Assessment [540]
         Cognitive and perceptual skills test
         ..."
         is optional
-        is queryable field
     descriptor AcademicSubject [1219]
         documentation "The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment."
-        is part of identity
-        is queryable field
+        is required collection
     descriptor GradeLevel [1220]
-        documentation "The typical grade level for which an assessment is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example:
-        Adult
-        Prekindergarten
-        First grade
-        Second grade
-        ..."
-        is part of identity
+        documentation "The grade level(s) for which an assessment is designed. The semantics of null is assumed to mean that the assessment is not associated with any grade level."
+        is optional collection
         with context Assessed
-        is queryable field
-    descriptor GradeLevel [1234]
-        documentation "If the assessment spans a range of grades, then this attribute holds the lowest grade assessed. If only one grade level is assessed, then this attribute is omitted. For example:
-        Adult
-        Prekindergarten
-        First grade
-        Second grade
-        ..."
-        is optional
-        with context LowestAssessed
     common AssessmentScore [1227]
         documentation "Definition of the scores to be expected from this assessment."
         is optional collection
@@ -61,8 +45,7 @@ Domain Entity Assessment [540]
         is optional collection
     shared integer Version [1240]
         documentation "The version identifier for the assessment."
-        is part of identity
-        is queryable field
+        is optional
     date RevisionDate [1238]
         documentation "The month, day, and year that the conceptual design for the assessment was most recently revised substantially."
         is optional
@@ -78,10 +61,15 @@ Domain Entity Assessment [540]
     domain entity AssessmentFamily [1222]
         documentation "References the AssessmentFamily this Assessment is a member of."
         is optional
-        is queryable field
     choice SectionOrProgramChoice [2509]
         documentation "The Section(s) to which the Assessment is associated."
         is optional
     shared string URI named Namespace [2300]
         documentation "Namespace for the Assessment."
+        is part of identity
+    domain entity EducationOrganization
+        documentation "The EducationOganization for which the assessment was developed and in which it was employed."
+        is optional
+    bool AdaptiveAssessment
+        documentation "Indicates that the assessment is adaptive."
         is optional

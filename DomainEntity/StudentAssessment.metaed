@@ -1,10 +1,13 @@
 Domain Entity StudentAssessment [587]
     documentation "This entity represents the analysis or scoring of a student's response on an assessment. The analysis results in a value that represents a student's performance on a set of items on a test."
-    date AdministrationDate [1727]
-        documentation "The month(s), day(s), and year on which an assessment is administered or first day of administration if over multiple days."
+    shared string IdentificationCode named StudentAssessmentIdentifier
+        documentation "A unique number or alphanumeric code assigned to an assessment administered to a student."
         is part of identity
-    date AdministrationEndDate [1728]
-        documentation "Assessment Administration End Date, if administered over multiple days."
+    datetime AdministrationDate [1727]
+        documentation "The date and time an assessment was completed by the student. The use of ISO-8601 formats with a timezone designator (UTC or time offset) is recommended in order to prevent ambiguity due to time zones."
+        is required
+    datetime AdministrationEndDate [1728]
+        documentation "The date and time an assessment administration ended."
         is optional
     shared string IdentificationCode named SerialNumber [1738]
         documentation "The unique number for the assessment form or answer document."
@@ -67,7 +70,7 @@ Domain Entity StudentAssessment [587]
         with context Event
     domain entity Student [1741]
         documentation "Reference to the Student associated with the Assessment."
-        is part of identity
+        is required
     domain entity Assessment [1731]
         documentation "Reference to the Assessment taken by the student."
         is part of identity
