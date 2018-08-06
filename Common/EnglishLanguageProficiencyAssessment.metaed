@@ -10,7 +10,7 @@ Common EnglishLanguageProficiencyAssessment
         documentation "The proficiency level for the yearly English language assessment."
         is optional
     descriptor Progress
-        documentation "The yearly progress or growth from last year’s assessment."
+        documentation "The yearly progress or growth from last year's assessment."
         is optional
     descriptor Monitored
         documentation "Student is monitored on content achievement who are no longer receiving services."

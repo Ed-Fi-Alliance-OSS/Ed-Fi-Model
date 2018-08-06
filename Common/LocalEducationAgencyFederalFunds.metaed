@@ -16,7 +16,7 @@ Common LocalEducationAgencyFederalFunds [515]
         documentation "The amount of Section 1003(a) and 1003(g) allocations to LEAs."
         is optional
     percent SchoolImprovementReservedFundsPercentage [867]
-        documentation "An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and §200.100(a) of ED's regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA."
+        documentation "An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and 200.100(a) of ED's regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA."
         is optional
     currency SupplementalEducationalServicesFundsSpent [869]
         documentation "The dollar amount spent on supplemental educational services during the school year under Title I, Part A, Section 1116 of ESEA as amended."

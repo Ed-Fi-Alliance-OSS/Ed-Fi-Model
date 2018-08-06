@@ -71,5 +71,5 @@ Domain Entity Assessment [540]
         documentation "The EducationOrganization for which the assessment was developed and in which it was employed."
         is optional
     bool AdaptiveAssessment
-        documentation "Indicates that the assessment is adaptive."
+        documentation "Indicates that the assessment is adaptive."
         is optional
