@@ -29,6 +29,7 @@ Domain Entity ObjectiveAssessment [571]
     domain entity LearningObjective [1539]
         documentation "References the LearningObjective(s) the ObjectiveAssessment tests."
         is optional collection
+        with context LearningObjective
     domain entity LearningStandard [1540]
         documentation "LearningStandard tested by this ObjectiveAssessment."
         is optional collection
