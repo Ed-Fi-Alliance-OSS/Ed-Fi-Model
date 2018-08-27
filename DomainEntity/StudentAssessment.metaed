@@ -70,7 +70,7 @@ Domain Entity StudentAssessment [587]
         with context Event
     domain entity Student [1741]
         documentation "Reference to the Student associated with the Assessment."
-        is required
+        is part of identity
     domain entity Assessment [1731]
         documentation "Reference to the Assessment taken by the student."
         is part of identity
