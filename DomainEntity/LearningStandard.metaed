@@ -27,7 +27,7 @@ Domain Entity LearningStandard [567]
         is queryable field
     descriptor AcademicSubject [1494]
         documentation "Subject area for the LearningStandard."
-        is required
+        is required collection
         is queryable field
     shared string CourseTitle [1496]
         documentation "The official Course Title with which this learning standard is associated."
