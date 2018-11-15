@@ -22,3 +22,10 @@ Domain Entity CourseOffering [551]
     domain entity Course [1311]
         documentation "The course being offered by the school."
         is required
+    descriptor CourseLevelCharacteristic
+        documentation "The type of specific program or designation with which the course offering is associated (e.g., AP, IB, Dual Credit, CTE). This collection should only be populated if it differs from the Course Level Characteristics identified at the Course level."
+        is optional collection
+    descriptor GradeLevel
+        documentation "The grade levels in which the course is offered. This collection should only be populated if it differs from the Offered Grade Levels identified at the Course level."
+        is optional collection
+        with context Offered
