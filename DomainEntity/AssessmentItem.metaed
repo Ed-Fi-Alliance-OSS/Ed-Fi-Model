@@ -28,6 +28,6 @@ Domain Entity AssessmentItem [542]
     domain entity Assessment [1255]
         documentation "Relates the AssessmentItem to an existing assessment."
         is part of identity
-    shared string URI named AsessmentItemURI [2537]
+    shared string URI named AssessmentItemURI [2537]
         documentation "The URI (typical a URL) pointing to the entry in an assessment item bank, which describes this content item."
         is optional
