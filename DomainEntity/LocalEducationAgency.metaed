@@ -19,7 +19,7 @@ Domain Entity LocalEducationAgency based on EducationOrganization [569]
     domain entity LocalEducationAgency [1525]
         documentation "For subdistricts; the LEA the subdistrict is a component of."
         is optional
-        with context Parent
+        role name Parent
     domain entity EducationServiceCenter [1516]
         documentation "The ESC of which the LEA is an organizational component."
         is optional

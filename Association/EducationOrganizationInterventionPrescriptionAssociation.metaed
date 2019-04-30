@@ -4,7 +4,7 @@ Association EducationOrganizationInterventionPrescriptionAssociation [595]
         documentation "The EducationalOrganization, often times a district, which is making the InterventionPrescription available to its hierarchy. In some cases, it may be an education organization network instead of a district."
     domain entity InterventionPrescription [1003]
         documentation "The InterventionPrescription being made available by the EducationOrganization."
-        with context InterventionPrescription
+        role name InterventionPrescription
     date BeginDate [1000]
         documentation "The begin date of the period during which the InterventionPrescription is available."
         is optional

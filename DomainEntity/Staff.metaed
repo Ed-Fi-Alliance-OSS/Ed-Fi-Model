@@ -8,7 +8,7 @@ Domain Entity Staff [583]
     shared string UniqueId [1663]
         documentation "A unique alphanumeric code assigned to a staff."
         is part of identity
-        with context Staff
+        role name Staff
         is queryable field
     common StaffIdentificationCode [1662]
         documentation "A unique number or alphanumeric code assigned to a staff member by a school, school system, a state, or other agency or entity."
@@ -69,7 +69,7 @@ Domain Entity Staff [583]
     descriptor LevelOfEducation [1651]
         documentation "The extent of formal instruction an individual has received (e.g., the highest grade in school completed or its equivalent or the highest degree received)."
         is optional
-        with context HighestCompleted
+        role name HighestCompleted
     shared decimal NumberOfYears named YearsOfPriorProfessionalExperience [1665]
         documentation "The total number of years that an individual has previously held a similar professional position in one or more education institutions."
         is optional

@@ -12,14 +12,14 @@ Common IdentificationDocument [491]
     shared string IdentificationCode [832]
         documentation "The unique identifier on the issuer's identification system."
         is optional
-        with context IssuerDocument
+        role name IssuerDocument
     shared string IssuerName [833]
         documentation "Name of the entity or institution that issued the document."
         is optional
     descriptor Country [831]
         documentation "Country of origin of the document."
         is optional
-        with context Issuer
+        role name Issuer
     enumeration IdentificationDocumentUse [830]
         documentation "The primary function of the document used for establishing identity."
         is part of identity

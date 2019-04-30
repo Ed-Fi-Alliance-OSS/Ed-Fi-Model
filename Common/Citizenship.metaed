@@ -9,4 +9,4 @@ Inline Common Citizenship [490]
     common IdentificationDocument [824]
         documentation "Describe the probationary documentation of citizenship of an alien or a foreign nationality of a U.S. citizen."
         is optional collection
-        with context ForeignCitizenship
+        role name ForeignCitizenship

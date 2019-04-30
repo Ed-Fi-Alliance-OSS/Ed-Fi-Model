@@ -30,7 +30,7 @@ Domain Entity Assessment [540]
         Second grade
         ..."
         is part of identity
-        with context Assessed
+        role name Assessed
         is queryable field
     descriptor GradeLevel [1234]
         documentation "If the assessment spans a range of grades, then this attribute holds the lowest grade assessed. If only one grade level is assessed, then this attribute is omitted. For example:
@@ -40,7 +40,7 @@ Domain Entity Assessment [540]
         Second grade
         ..."
         is optional
-        with context LowestAssessed
+        role name LowestAssessed
     common AssessmentScore [1227]
         documentation "Definition of the scores to be expected from this assessment."
         is optional collection

@@ -9,4 +9,4 @@ Common AssessmentIdentificationCode [483]
     shared string IdentificationCode [735]
         documentation "The organization code or name assigning the assessment identification code."
         is optional
-        with context AssigningOrganization
+        role name AssigningOrganization

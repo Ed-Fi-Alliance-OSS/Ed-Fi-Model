@@ -4,7 +4,7 @@ Association StudentProgramAssociation [612]
         documentation "The Student associated with the Program."
     domain entity Program [1106]
         documentation "The Program associated with the Student."
-        with context Program
+        role name Program
     common Service [1109]
         documentation "Indicates the Service(s) being provided to the Student by the Program."
         is optional collection
