@@ -34,11 +34,11 @@ Domain Entity DisciplineAction [553]
     domain entity School [1343]
         documentation "School responsible for student's discipline."
         is required
-        with context Responsibility
+        role name Responsibility
     domain entity School [1335]
         documentation "School where student is transferred for discipline."
         is optional
-        with context Assignment
+        role name Assignment
     bool ReceivedEducationServicesDuringExpulsion
         documentation "An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons."
         is optional

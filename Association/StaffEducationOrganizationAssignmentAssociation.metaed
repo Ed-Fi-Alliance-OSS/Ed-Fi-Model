@@ -22,7 +22,7 @@ Association StaffEducationOrganizationAssignmentAssociation [600]
     association StaffEducationOrganizationEmploymentAssociation [1026]
         documentation "A reference to the employment association."
         is optional
-        with context StaffEducationOrganizationEmploymentAssociation shorten to Employment
+        role name StaffEducationOrganizationEmploymentAssociation shorten to Employment
         merge StaffEducationOrganizationEmploymentAssociation.Staff with Staff
     domain entity Credential [2645]
         documentation "Reference to the Credential that is the basis for this assignment."

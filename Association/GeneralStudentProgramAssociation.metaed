@@ -4,7 +4,7 @@ domain entity Student [1110]
     documentation "The Student associated with the Program."
 domain entity Program [1106]
     documentation "The Program associated with the Student."
-    with context Program
+    role name Program
 date BeginDate [1103]
     documentation "The month, day, and year on which the Student first received services."
     is part of identity

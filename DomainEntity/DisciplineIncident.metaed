@@ -21,7 +21,7 @@ Domain Entity DisciplineIncident [554]
     shared string Description [1350]
         documentation "The description for an incident."
         is optional
-        with context Incident
+        role name Incident
     descriptor ReporterDescription [1355]
         documentation "Information on the type of individual who reported the DisciplineIncident. When known and/or if useful, use a more specific option code (e.g., ""Counselor"" rather than ""Professional Staff""); for example:
         Student

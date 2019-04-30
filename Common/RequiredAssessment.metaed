@@ -6,8 +6,8 @@ Common RequiredAssessment [658]
     common AssessmentScore [954]
         documentation "Score required to be met or exceeded."
         is optional collection
-        with context Required
+        role name Required
     common AssessmentPerformanceLevel [953]
         documentation "Performance level required to be met or exceeded."
         is optional
-        with context Required
+        role name Required

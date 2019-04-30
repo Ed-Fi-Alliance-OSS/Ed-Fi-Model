@@ -37,4 +37,4 @@ Domain Entity School based on EducationOrganization [579]
     enumeration SchoolYear [2424]
         documentation "The school year in which a charter school was initially approved."
         is optional
-        with context CharterApproval
+        role name CharterApproval

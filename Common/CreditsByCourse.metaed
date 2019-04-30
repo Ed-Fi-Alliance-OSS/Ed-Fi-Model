@@ -6,11 +6,11 @@ Common CreditsByCourse [498]
     domain entity Course [794]
         documentation "The course reference that identifies the organization of subject matter and related learning experiences provided for the instruction of students."
         is required collection
-        with context Course
+        role name Course
     inline common Credits [793]
         documentation "The value of credits or units of value awarded for the completion of a course."
         is required
     descriptor GradeLevel [797]
         documentation "The grade level when the student is planned to take the course."
         is optional
-        with context WhenTaken
+        role name WhenTaken

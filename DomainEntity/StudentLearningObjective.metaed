@@ -12,7 +12,7 @@ Domain Entity StudentLearningObjective [591]
     domain entity GradingPeriod [1762]
         documentation "Relates the LearningObjective to a grading period."
         is part of identity
-        with context GradingPeriod
+        role name GradingPeriod
     domain entity Student [1765]
         documentation "Relates the Student associated with the LearningObjective."
         is part of identity

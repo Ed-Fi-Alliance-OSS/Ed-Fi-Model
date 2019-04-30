@@ -15,18 +15,18 @@ Domain Entity Intervention [563]
     descriptor Sex [1444]
         documentation "Sexes for the Intervention. If omitted, considered generally applicable."
         is optional collection
-        with context Appropriate
+        role name Appropriate
     descriptor GradeLevel [1443]
         documentation "Grade levels for the Intervention-if omitted, considered generally applicable."
         is optional collection
-        with context Appropriate
+        role name Appropriate
     descriptor DeliveryMethod [1446]
         documentation "The way in which an intervention was implemented: individual, small group, whole class, or whole school."
         is required
     domain entity InterventionPrescription [1454]
         documentation "The reference to the intervention prescription being followed in this intervention implementation."
         is optional collection
-        with context InterventionPrescription
+        role name InterventionPrescription
     date BeginDate [1445]
         documentation "The start date for the intervention implementation."
         is required
@@ -45,12 +45,12 @@ Domain Entity Intervention [563]
     shared string IdentificationCode [1453]
         documentation "A unique number or alphanumeric code assigned to an intervention."
         is part of identity
-        with context Intervention
+        role name Intervention
     shared integer Dosage
         documentation "The minimum duration of time in minutes that may be assigned for the intervention."
         is optional
-        with context Min
+        role name Min
     shared integer Dosage
         documentation "The maximum duration of time in minutes that may be assigned for the intervention."
         is optional
-        with context Max
+        role name Max

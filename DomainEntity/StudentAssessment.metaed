@@ -15,7 +15,7 @@ Domain Entity StudentAssessment [587]
     descriptor Language [1730]
         documentation "The language in which an assessment is written and/or administered."
         is optional
-        with context Administration
+        role name Administration
     descriptor AdministrationEnvironment [1729]
         documentation "The environment in which the test was administered. For example:
         Electronic
@@ -57,7 +57,7 @@ Domain Entity StudentAssessment [587]
     descriptor GradeLevel [1742]
         documentation "The grade level of a student when assessed."
         is optional
-        with context WhenAssessed
+        role name WhenAssessed
     common PerformanceLevel [1734]
         documentation "The performance level(s) achieved for the StudentAssessment."
         is optional collection
@@ -67,7 +67,7 @@ Domain Entity StudentAssessment [587]
     shared string Description [1733]
         documentation "Describes special events that occur before during or after the assessment session that may impact use of results."
         is optional
-        with context Event
+        role name Event
     domain entity Student [1741]
         documentation "Reference to the Student associated with the Assessment."
         is part of identity
