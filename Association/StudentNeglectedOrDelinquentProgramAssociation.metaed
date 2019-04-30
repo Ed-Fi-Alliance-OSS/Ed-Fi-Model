@@ -6,11 +6,11 @@ Association StudentNeglectedOrDelinquentProgramAssociation based on GeneralStude
     descriptor ProgressLevel
         documentation "The progress measured from pre- to post- test for ELA."
         is optional
-        with context ELA
+        role name ELA
     descriptor ProgressLevel
         documentation "The progress measured from pre- to post-test for Mathematics."
         is optional
-        with context Mathematics
+        role name Mathematics
     common NeglectedOrDelinquentProgramService
         documentation "Indicates the service(s) being provided to the Student by the Neglected or Delinquent Program."
         is optional collection

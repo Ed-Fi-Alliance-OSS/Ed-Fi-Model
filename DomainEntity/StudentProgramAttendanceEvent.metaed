@@ -12,4 +12,4 @@ Domain Entity StudentProgramAttendanceEvent [592]
     domain entity Program [1769]
         documentation "Relates the Program associated with the AttendanceEvent."
         is part of identity
-        with context Program
+        role name Program

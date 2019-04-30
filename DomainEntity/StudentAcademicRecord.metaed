@@ -3,11 +3,11 @@ Domain Entity StudentAcademicRecord [586]
     inline common Credits [1710]
         documentation "The cumulative number of credits an individual earns by completing courses or examinations during his or her enrollment in the current school as well as those credits transferred from schools in which the individual had been previously enrolled."
         is optional
-        with context CumulativeEarned
+        role name CumulativeEarned
     inline common Credits [1709]
         documentation "The cumulative number of credits an individual attempts to earn by taking courses during his or her enrollment in the current school as well as those credits transferred from schools in which the individual had been previously enrolled."
         is optional
-        with context CumulativeAttempted
+        role name CumulativeAttempted
     shared decimal GPA named CumulativeGradePointsEarned [1712]
         documentation "The cumulative number of grade points an individual earns by successfully completing courses or examinations during his or her enrollment in the current school as well as those transferred from schools in which the individual had been previously enrolled."
         is optional
@@ -32,11 +32,11 @@ Domain Entity StudentAcademicRecord [586]
     inline common Credits [1721]
         documentation "The number of credits an individual earned in this session."
         is optional
-        with context SessionEarned
+        role name SessionEarned
     inline common Credits [1720]
         documentation "The number of credits an individual attempted to earn in this session."
         is optional
-        with context SessionAttempted
+        role name SessionAttempted
     shared decimal GPA named SessionGradePointsEarned [1723]
         documentation "The number of grade points an individual earned for this session."
         is optional

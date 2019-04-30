@@ -21,4 +21,4 @@ Inline Common Name [517]
     common IdentificationDocument [891]
         documentation "The documents presented as evident to verify one's personal identity; for example: drivers license, passport, birth certificate, etc."
         is optional collection
-        with context Personal
+        role name Personal

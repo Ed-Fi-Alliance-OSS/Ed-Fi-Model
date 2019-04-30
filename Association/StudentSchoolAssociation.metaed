@@ -17,7 +17,7 @@ Association StudentSchoolAssociation [613]
     descriptor GradeLevel [1115]
         documentation "The grade level or primary instructional level at which a student enters and receives services in a school or an educational institution during a given academic session."
         is required
-        with context Entry
+        role name Entry
     descriptor EntryGradeLevelReason [1116]
         documentation "The primary reason as to why a staff member determined that a student should be promoted or not (or be demoted) at the end of a given school term."
         is optional
@@ -30,7 +30,7 @@ Association StudentSchoolAssociation [613]
     enumeration SchoolYear [1111]
         documentation "Projected High School graduation year."
         is optional
-        with context ClassOf
+        role name ClassOf
     bool SchoolChoiceTransfer [1124]
         documentation "An indication of whether students transferred in or out of the school did so during the school year under the provisions for public school choice in accordance with Title I, Part A, Section 1116."
         is optional

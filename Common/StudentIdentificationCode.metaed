@@ -9,4 +9,4 @@ Common StudentIdentificationCode [532]
     shared string IdentificationCode [937]
         documentation "The organization code or name assigning the StudentIdentificationCode."
         is part of identity
-        with context AssigningOrganization
+        role name AssigningOrganization
