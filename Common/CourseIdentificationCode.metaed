@@ -9,4 +9,4 @@ Common CourseIdentificationCode [495]
     shared string IdentificationCode [779]
         documentation "The organization code or name assigning the staff Identification Code."
         is optional
-        with context AssigningOrganization
+        role name AssigningOrganization

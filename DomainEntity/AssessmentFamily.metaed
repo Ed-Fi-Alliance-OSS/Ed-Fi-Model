@@ -18,11 +18,11 @@ Domain Entity AssessmentFamily [541]
     descriptor GradeLevel [1242]
         documentation "The typical grade level for which an assessment family is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example: Adult, Prekindergarten, First grade, Second grade, etc."
         is optional
-        with context Assessed
+        role name Assessed
     descriptor GradeLevel [1249]
         documentation "If the assessment spans a range of grades, then this attribute holds the lowest grade assessed. If only one grade level is assessed, then this attribute is omitted."
         is optional
-        with context LowestAssessed
+        role name LowestAssessed
     common ContentStandard [1247]
         documentation "An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard)."
         is optional
@@ -45,7 +45,7 @@ Domain Entity AssessmentFamily [541]
     domain entity AssessmentFamily [1251]
         documentation "References the higher level AssessmentFamily the AssessmentFamily belongs to."
         is optional
-        with context Parent
+        role name Parent
     shared string URI named Namespace [2301]
         documentation "Namespace for the Assessments in this AssessmentFamily."
         is required

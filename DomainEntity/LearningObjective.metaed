@@ -18,7 +18,7 @@ Domain Entity LearningObjective [566]
     descriptor GradeLevel [1491]
         documentation "The grade level for which the LearningObjective is targeted. The semantics of null is assumed to mean that the learning objective is not associated with any grade level."
         is optional collection
-        with context Objective
+        role name Objective
     shared string Nomenclature [1489]
         documentation "Reflects the specific nomenclature used for the LearningObjective."
         is optional
@@ -31,7 +31,7 @@ Domain Entity LearningObjective [566]
     domain entity LearningObjective [1492]
         documentation "Provide user information to lookup and link to an existing learning objective which serves as a method to group other learning objectives."
         is optional
-        with context Parent
+        role name Parent
     shared string URI named Namespace [2439]
         documentation "Namespace for the LearningObjective."
         is part of identity

@@ -4,4 +4,4 @@ Association EducationOrganizationPeerAssociation [597]
         documentation "The associated peer organization(s) for the EducationOrganization."
     domain entity EducationOrganization [1009]
         documentation "The associated peer organization(s) for the EducationOrganization."
-        with context Peer
+        role name Peer

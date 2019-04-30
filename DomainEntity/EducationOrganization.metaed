@@ -18,7 +18,7 @@ Abstract Entity EducationOrganization [556]
     shared string NameOfInstitution [1388]
         documentation "A short name for the institution."
         is optional
-        with context Short
+        role name Short
     enumeration EducationOrganizationCategory [1382]
         documentation "The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state."
         is required collection

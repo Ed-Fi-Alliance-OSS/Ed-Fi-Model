@@ -29,7 +29,7 @@ Domain Entity OpenStaffPosition [572]
     descriptor GradeLevel [1550]
         documentation "The set of grade levels for which the position's assignment is responsible."
         is optional collection
-        with context Instructional
+        role name Instructional
     descriptor AcademicSubject [1545]
         documentation "The teaching field required for the OpenStaffPosition, for example English/Language Arts, Reading, Mathematics, Science, Social Sciences, etc."
         is optional collection

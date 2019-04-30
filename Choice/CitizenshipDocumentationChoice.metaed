@@ -6,4 +6,4 @@ Choice CitizenshipDocumentationChoice [2500]
     common IdentificationDocument [947]
         documentation "Describe the probationary documentation of US citizenship."
         is required collection
-        with context USCitizenship
+        role name USCitizenship

@@ -24,19 +24,19 @@ Domain Entity ObjectiveAssessment [571]
     domain entity AssessmentItem [1534]
         documentation "References individual test items, if appropriate."
         is optional collection
-        with context AssessmentItem
+        role name AssessmentItem
         merge AssessmentItem.Assessment with Assessment
     domain entity LearningObjective [1539]
         documentation "References the LearningObjective(s) the ObjectiveAssessment tests."
         is optional collection
-        with context LearningObjective
+        role name LearningObjective
     domain entity LearningStandard [1540]
         documentation "LearningStandard tested by this ObjectiveAssessment."
         is optional collection
     domain entity ObjectiveAssessment [1543]
         documentation "Provide user information to lookup and link to the parent ObjectiveAssessment containing this ObjectiveAssessment."
         is optional
-        with context Parent
+        role name Parent
         merge ParentObjectiveAssessment.Assessment with Assessment
     domain entity Assessment [1536]
         documentation "Provide user information to lookup and link to an existing assessment."

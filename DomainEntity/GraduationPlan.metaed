@@ -9,7 +9,7 @@ Domain Entity GraduationPlan [562]
     inline common Credits [1442]
         documentation "The total number of credits required for graduation under this plan."
         is required
-        with context TotalRequired
+        role name TotalRequired
     common CreditsBySubject [1437]
         documentation "The total credits required in subject to graduate. Only those courses identified as a high school course requirement are eligible to meet subject credit requirements."
         is optional collection
@@ -22,7 +22,7 @@ Domain Entity GraduationPlan [562]
     enumeration SchoolYear [1440]
         documentation "The school year the student is expected to graduate."
         is part of identity
-        with context Graduation
+        role name Graduation
     common RequiredAssessment [1779]
         documentation "The assessments and associated required score and performance level needed to satisfy graduation requirements."
         is optional collection

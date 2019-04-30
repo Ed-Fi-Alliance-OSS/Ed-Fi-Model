@@ -22,7 +22,7 @@ Common ContentStandard [494]
     domain entity EducationOrganization [772]
         documentation "Optionally relates the entity mandating the use of the content standard."
         is optional
-        with context Mandating
+        role name Mandating
     date BeginDate [770]
         documentation "The beginning of the period during which this learning standard document is intended for use."
         is optional

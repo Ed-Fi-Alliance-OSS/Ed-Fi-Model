@@ -9,4 +9,4 @@ Common StaffIdentificationCode [527]
     shared string IdentificationCode [919]
         documentation "The organization code or name assigning the staff Identification Code."
         is optional
-        with context AssigningOrganization
+        role name AssigningOrganization

@@ -24,7 +24,7 @@ Domain Entity Assessment [540]
     descriptor GradeLevel [1220]
         documentation "The grade level(s) for which an assessment is designed. The semantics of null is assumed to mean that the assessment is not associated with any grade level."
         is optional collection
-        with context Assessed
+        role name Assessed
     common AssessmentScore [1227]
         documentation "Definition of the scores to be expected from this assessment."
         is optional collection

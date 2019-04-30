@@ -10,19 +10,19 @@ Domain Entity CourseTranscript [552]
     inline common Credits [1318]
         documentation "The number of credits a student attempted and could earn for successfully completing a given course."
         is optional
-        with context Attempted
+        role name Attempted
     inline common Credits [1324]
         documentation "The number of credits a student earned for completing a given course."
         is required
-        with context Earned
+        role name Earned
     common AdditionalCredits [1323]
         documentation "The number of additional credits a student attempted and could earn for successfully completing a given course (e.g., dual credit, AP, IB)."
         is optional collection
-        with context Earned
+        role name Earned
     descriptor GradeLevel [1328]
         documentation "Student's grade level at time of course."
         is optional
-        with context WhenTaken
+        role name WhenTaken
     enumeration MethodCreditEarned [1331]
         documentation "The method the credits were earned (e.g., Classroom, Examination, Transfer)."
         is optional
@@ -38,7 +38,7 @@ Domain Entity CourseTranscript [552]
     domain entity Course [1320]
         documentation "The course recorded in the course transcript entry."
         is part of identity
-        with context Course
+        role name Course
     domain entity School [1332]
         documentation "The School that provided the reported instruction."
         is optional
@@ -54,4 +54,4 @@ Domain Entity CourseTranscript [552]
     shared string LocalCourseCode named CourseCode [1329]
         documentation "The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code."
         is optional
-        with context Alternative
+        role name Alternative

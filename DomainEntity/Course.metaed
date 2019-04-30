@@ -21,14 +21,14 @@ Domain Entity Course [550]
     descriptor GradeLevel [1303]
         documentation "The grade levels in which the course is offered."
         is optional collection
-        with context Offered
+        role name Offered
     descriptor AcademicSubject [1291]
         documentation "The intended major subject area of the course."
         is optional
     shared string Description [1296]
         documentation "A description of the content standards and goals covered in the course. Reference may be made to state or national content standards."
         is optional
-        with context Course
+        role name Course
     shared integer Duration named TimeRequiredForCompletion [1310]
         documentation "The actual or estimated number of clock minutes required for class completion.  This number is especially important for career and technical education classes and may represent (in minutes) the clock hour requirement of the class."
         is optional
@@ -47,11 +47,11 @@ Domain Entity Course [550]
     inline common Credits [1308]
         documentation "The minimum amount of credit available to a student who successfully completes the course."
         is optional
-        with context MinimumAvailable
+        role name MinimumAvailable
     inline common Credits [1307]
         documentation "The maximum amount of credit available to a student who successfully completes the course."
         is optional
-        with context MaximumAvailable
+        role name MaximumAvailable
     enumeration CareerPathway [1292]
         documentation "Indicates the career cluster or pathway the course is associated with as part of a CTE curriculum."
         is optional

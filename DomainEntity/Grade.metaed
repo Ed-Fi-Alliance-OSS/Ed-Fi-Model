@@ -22,5 +22,5 @@ Domain Entity Grade [559]
     domain entity GradingPeriod [1417]
         documentation "Identifies the grading period for the Grade."
         is part of identity
-        with context GradingPeriod
+        role name GradingPeriod
         merge GradingPeriod.School with StudentSectionAssociation.Section.Location.School

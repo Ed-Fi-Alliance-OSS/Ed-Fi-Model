@@ -15,11 +15,11 @@ Domain Entity InterventionPrescription [564]
     enumeration Sex [1460]
         documentation "Sexes for the InterventionPrescription. If omitted, considered generally applicable."
         is optional collection
-        with context Appropriate
+        role name Appropriate
     descriptor GradeLevel [1459]
         documentation "Grade levels for the prescribed intervention. If omitted, considered generally applicable."
         is optional collection
-        with context Appropriate
+        role name Appropriate
     enumeration DeliveryMethod [1461]
         documentation "The way in which an intervention was implemented: individual, small group, whole class, or whole school."
         is required
@@ -29,4 +29,4 @@ Domain Entity InterventionPrescription [564]
     shared string IdentificationCode [1467]
         documentation "A unique number or alphanumeric code assigned to an intervention prescription."
         is part of identity
-        with context InterventionPrescription
+        role name InterventionPrescription

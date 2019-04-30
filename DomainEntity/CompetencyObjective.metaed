@@ -12,7 +12,7 @@ Domain Entity CompetencyObjective [548]
     descriptor GradeLevel [1285]
         documentation "The grade level for which the CompetencyObjective is targeted."
         is part of identity
-        with context Objective
+        role name Objective
     domain entity EducationOrganization [1283]
         documentation "The EducationOrganization that defines the curriculum and courses offered - often the LEA or school."
         is part of identity
