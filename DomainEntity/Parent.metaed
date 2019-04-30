@@ -3,7 +3,7 @@ Domain Entity Parent [573]
     shared string UniqueId [1562]
         documentation "A unique alphanumeric code assigned to a parent."
         is part of identity
-        with context Parent
+        role name Parent
         is queryable field
     inline common Name [1560]
         documentation "Full legal name of the person."

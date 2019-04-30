@@ -3,7 +3,7 @@ Domain Entity Student [585]
     shared string UniqueId [1705]
         documentation "A unique alphanumeric code assigned to a student."
         is part of identity
-        with context Student
+        role name Student
         is queryable field
     inline common Name [1694]
         documentation "Full legal name of the person."

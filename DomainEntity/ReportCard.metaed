@@ -39,4 +39,4 @@ Domain Entity ReportCard [577]
     domain entity GradingPeriod [1586]
         documentation "Identifies the grading period for this report card."
         is part of identity
-        with context GradingPeriod
+        role name GradingPeriod

@@ -30,18 +30,18 @@ Inline Common LearningResource [2514]
     inline common EducationContentSource [1368]
         documentation "A reference or URL pointing to education content from which this education content was derived."
         is optional
-        with context DerivativeSource
+        role name DerivativeSource
     choice PublicationDateChoice [2515]
         documentation "The date or year that this content was first published."
         is optional
     descriptor Sex [1362]
         documentation "Sexes for which this education content is applicable. If omitted, considered generally applicable."
         is optional collection
-        with context Appropriate
+        role name Appropriate
     descriptor GradeLevel [1361]
         documentation "Grade levels for which this education content is applicable-if omitted, considered generally applicable."
         is optional collection
-        with context Appropriate
+        role name Appropriate
     descriptor Language [1371]
         documentation "An indication of the languages in which the Education Content is designed."
         is optional collection

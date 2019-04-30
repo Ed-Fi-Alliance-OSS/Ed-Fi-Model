@@ -38,11 +38,11 @@ Domain Entity LearningStandard [567]
     domain entity LearningStandard [1503]
         documentation "The unique identifier of a prerequisite learning standard item, a competency needed prior to learning this one. (Some items may have no prerequisites others may have one or more prerequisites. This should only be used to represent the immediate predecessors in a competency-based pathway, i.e. not prerequisites of prerequisites)."
         is optional collection
-        with context Prerequisite
+        role name Prerequisite
     domain entity LearningStandard [1502]
         documentation "Provide user information to lookup and link to an existing learning standard which serves as a method to group other learning standards."
         is optional
-        with context Parent
+        role name Parent
     shared string URI named Namespace [2440]
         documentation "Namespace for the LearningStandard."
         is required
