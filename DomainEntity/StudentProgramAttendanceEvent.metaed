@@ -13,3 +13,6 @@ Domain Entity StudentProgramAttendanceEvent [592]
         documentation "Relates the Program associated with the AttendanceEvent."
         is part of identity
         role name Program
+    shared integer AttendanceEventDuration named ProgramAttendanceDuration
+        documentation "The duration in minutes of the program attendance event."
+        is optional

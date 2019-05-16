@@ -13,3 +13,6 @@ Domain Entity StudentSchoolAttendanceEvent [593]
         documentation "Relates the Session associated with the AttendanceEvent."
         is part of identity
         merge Session.School with School
+    shared integer AttendanceEventDuration named SchoolAttendanceDuration
+        documentation "The duration in minutes of the school attendance event."
+        is optional
