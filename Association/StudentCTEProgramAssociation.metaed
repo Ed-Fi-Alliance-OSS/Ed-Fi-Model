@@ -1,10 +1,10 @@
 Association StudentCTEProgramAssociation based on GeneralStudentProgramAssociation [606]
     documentation "This association represents the career and technical education (CTE) program that a student participates in. The association is an extension of the StudentProgramAssociation particular for CTE programs."
     common CTEProgram [1061]
-        documentation "The career cluster representing the career path of the Vocational/Career Tech concentrator."
+        documentation "DEPRECATED: The career cluster representing the career path of the Vocational/Career Tech concentrator."
         is optional collection
     common Service
-        documentation "Indicates the Service(s) being provided to the Student by the Program."
+        documentation "DEPRECATED: Indicates the Service(s) being provided to the Student by the Program."
         is optional collection
     bool NonTraditionalGenderStatus
         documentation "Indicator that student is from a gender group that comprises less than 25% of the individuals employed in an occupation or field of work."
@@ -16,3 +16,6 @@ Students in private institutions which do not receive Perkins funding are report
     descriptor TechnicalSkillsAssessment
         documentation "Results of technical skills assessment aligned with industry recognized standards."
         is optional
+    common CTEProgramService
+        documentation "Indicates the Service(s) being provided to the Student by the CTE Program."
+        is optional collection

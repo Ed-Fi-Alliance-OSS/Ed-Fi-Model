@@ -1,0 +1,17 @@
+Common CTEProgramService
+    documentation "The student's CTE program service information."
+    descriptor CTEProgramService
+        documentation "Indicates the service being provided to the student by the CTE Program."
+        is part of identity
+    bool PrimaryIndicator
+        documentation "True if service is a primary service."
+        is optional
+    date ServiceBeginDate
+        documentation "First date the Student was in this option for the current school year."
+        is optional
+    date ServiceEndDate
+        documentation "Last date the Student was in this option for the current school year."
+        is optional
+    shared string CIPCode
+        documentation "Number and description of the CIP Code associated with the student's CTE Program."
+        is optional
