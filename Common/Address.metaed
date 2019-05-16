@@ -2,7 +2,7 @@ Common Address [481]
     documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
     shared string StreetNumberName [730]
         documentation "The street number and street name or post office box number of an address."
-        is required
+        is part of identity
     shared string ApartmentRoomSuiteNumber [719]
         documentation "The apartment, room, or suite number of an address."
         is optional
@@ -11,13 +11,13 @@ Common Address [481]
         is optional
     shared string City [722]
         documentation "The name of the city in which an address is located."
-        is required
+        is part of identity
     descriptor StateAbbreviation [729]
         documentation "The abbreviation for the state (within the United States) or outlying area in which an address is located."
-        is required
+        is part of identity
     shared string PostalCode [728]
         documentation "The five or nine digit zip code or overseas postal code portion of an address."
-        is required
+        is part of identity
     shared string NameOfCounty [727]
         documentation "The name of the county, parish, borough, or comparable unit (within a state) in
                       'which an address is located."

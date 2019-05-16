@@ -2,7 +2,7 @@ Common ElectronicMail [505]
     documentation "The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs."
     shared string ElectronicMailAddress [817]
         documentation "The electronic mail (e-mail) address listed for an individual or organization."
-        is required
+        is part of identity
     descriptor ElectronicMailType [818]
         documentation "The type of email listed for an individual or organization. For example: Home/Personal, Work, etc.)"
         is part of identity
