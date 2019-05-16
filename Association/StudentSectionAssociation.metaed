@@ -25,5 +25,5 @@ Association StudentSectionAssociation [614]
         documentation "Indicates that the student-section combination is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation."
         is optional
     descriptor AttemptStatus
-        documentation "An indication of the student's attempt status for the section."
+        documentation "An indication of the student's completion status for the section."
         is optional

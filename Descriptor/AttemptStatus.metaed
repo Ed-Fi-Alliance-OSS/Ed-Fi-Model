@@ -1,2 +1,2 @@
 Descriptor AttemptStatus
-    documentation "This descriptor describes a student's attempt status for a section."
+    documentation "This descriptor describes a student's completion status for a section."
