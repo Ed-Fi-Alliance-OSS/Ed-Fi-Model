@@ -19,3 +19,9 @@ Domain Entity BellSchedule [543]
     shared string AlternateDayName [871]
         documentation "An alternate name for the day (e.g., Red, Blue)."
         is optional
+    time StartTime
+        documentation "An indication of the time of day the bell schedule begins."
+        is optional
+    time EndTime
+        documentation "An indication of the time of day the bell schedule ends."
+        is optional
