@@ -7,6 +7,9 @@ Association StudentTitleIPartAProgramAssociation based on GeneralStudentProgramA
         Private School Students Participating
         Local Neglected Program."
         is required
+    common TitleIPartAProgramService
+        documentation "Indicates the service(s) being provided to the Student by the Title I Part A Program."
+        is optional collection
     common Service
-        documentation "Indicates the Service(s) being provided to the Student by the Program."
+        documentation "DEPRECATED: Indicates the Service(s) being provided to the Student by the Program."
         is optional collection
