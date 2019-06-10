@@ -1,0 +1,14 @@
+Common ParticipationStatus
+    documentation "The status of the student's program participation."
+    descriptor ParticipationStatus
+        documentation "The student's program participation status."
+        is part of identity
+    date StatusBeginDate
+        documentation "The date the student's program participation status began."
+        is optional
+    date StatusEndDate
+        documentation "The date the student's program participation status ended."
+        is optional
+    shared string DesignatedBy
+        documentation "The person, organization, or department that designated the participation status."
+        is optional

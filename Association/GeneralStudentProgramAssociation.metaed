@@ -6,7 +6,7 @@ domain entity Program [1106]
     documentation "The Program associated with the Student."
     role name Program
 date BeginDate [1103]
-    documentation "The month, day, and year on which the Student first received services."
+    documentation "The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program."
     is part of identity
 date EndDate [1105]
     documentation "The month, day, and year on which the Student exited the Program or stopped receiving services."
@@ -19,4 +19,7 @@ domain entity EducationOrganization [1104]
     is part of identity
 bool ServedOutsideOfRegularSession [1108]
     documentation "Indicates whether the Student received services during the summer session or between sessions."
+    is optional
+common ParticipationStatus
+    documentation "The status of the student's program participation."
     is optional
