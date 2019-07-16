@@ -14,6 +14,6 @@ Association StudentInterventionAssociation [609]
     shared string DiagnosticStatement [1077]
         documentation "A statement provided by the assigner that provides information regarding why the student was assigned to this intervention."
         is optional
-    shared integer Dosage
+    shared integer Dosage [2789]
         documentation "The duration of time in minutes for which the student was assigned to participate in the intervention."
         is optional

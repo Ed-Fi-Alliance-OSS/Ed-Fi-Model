@@ -40,9 +40,9 @@ Common Address [481]
     bool DoNotPublishIndicator [2552]
         documentation "An indication that the address should not be published."
         is optional
-    shared string CongressionalDistrict
+    shared string CongressionalDistrict [2709]
         documentation "The congressional district in which an address is located."
         is optional
-    descriptor Locale
+    descriptor Locale [2710]
         documentation "A general geographic indicator that categorizes U.S. territory (e.g., City, Suburban)."
         is optional

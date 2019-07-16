@@ -24,4 +24,4 @@ Interchange EducationOrganization [2517]
     domain entity CommunityOrganization [2517-014]
     domain entity CommunityProvider [2517-015]
     domain entity CommunityProviderLicense [2517-016]
-    domain entity PostSecondaryInstitution
+    domain entity PostSecondaryInstitution [2517-017]

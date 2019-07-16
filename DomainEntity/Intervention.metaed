@@ -46,11 +46,11 @@ Domain Entity Intervention [563]
         documentation "A unique number or alphanumeric code assigned to an intervention."
         is part of identity
         role name Intervention
-    shared integer Dosage
+    shared integer Dosage [2846]
         documentation "The minimum duration of time in minutes that may be assigned for the intervention."
         is optional
         role name Min
-    shared integer Dosage
+    shared integer Dosage [2847]
         documentation "The maximum duration of time in minutes that may be assigned for the intervention."
         is optional
         role name Max

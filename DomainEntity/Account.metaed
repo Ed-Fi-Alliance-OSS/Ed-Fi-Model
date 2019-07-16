@@ -14,6 +14,6 @@ Domain Entity Account [537]
     domain entity EducationOrganization [1207]
         documentation "Relates the account to an Education Organization."
         is part of identity
-    shared string AccountName
+    shared string AccountName [2831]
         documentation "A descriptive name for the account."
         is optional

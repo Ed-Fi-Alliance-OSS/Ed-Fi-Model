@@ -38,9 +38,9 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
     date IEPEndDate [1140]
         documentation "The end date of the most recent IEP."
         is optional
-    common Disability
+    common Disability [2807]
         documentation "The disability condition(s) that best describes an individual's impairment, as related to special education services received."
         is optional collection
-    common SpecialEducationProgramService
+    common SpecialEducationProgramService [2808]
         documentation "Indicates the Service(s) being provided to the Student by the Special Education Program."
         is optional collection

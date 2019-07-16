@@ -30,11 +30,11 @@ Domain Entity InterventionPrescription [564]
         documentation "A unique number or alphanumeric code assigned to an intervention prescription."
         is part of identity
         role name InterventionPrescription
-    shared integer Dosage
+    shared integer Dosage [2848]
         documentation "The minimum duration of time in minutes that is recommended for the intervention."
         is optional
         role name Min
-    shared integer Dosage
+    shared integer Dosage [2849]
         documentation "The maximum duration of time in minutes that is recommended for the intervention."
         is optional
         role name Max

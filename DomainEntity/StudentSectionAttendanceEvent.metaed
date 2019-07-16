@@ -9,6 +9,6 @@ Domain Entity StudentSectionAttendanceEvent [594]
     domain entity Section [1776]
         documentation "Relates the Section associated with the AttendanceEvent."
         is part of identity
-    shared integer AttendanceEventDuration named SectionAttendanceDuration
+    shared integer AttendanceEventDuration named SectionAttendanceDuration [2859]
         documentation "The duration in minutes of the section attendance event."
         is optional

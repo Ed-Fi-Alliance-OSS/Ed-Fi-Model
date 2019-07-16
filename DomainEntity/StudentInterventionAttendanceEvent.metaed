@@ -9,6 +9,6 @@ Domain Entity StudentInterventionAttendanceEvent [590]
     domain entity Intervention [1758]
         documentation "Relates the Intervention associated with the AttendanceEvent."
         is part of identity
-    shared integer AttendanceEventDuration named InterventionDuration
+    shared integer AttendanceEventDuration named InterventionDuration [2856]
         documentation "The duration in minutes in which the student participated in the intervention during this instance."
         is optional

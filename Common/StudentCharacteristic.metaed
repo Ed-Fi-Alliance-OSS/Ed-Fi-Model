@@ -3,7 +3,7 @@ Common StudentCharacteristic [531]
     descriptor StudentCharacteristic [936]
         documentation "The characteristic designated for the Student."
         is part of identity
-    common Period
+    common Period [2770]
         documentation "The time periods for which characteristic was effective."
         is optional collection
     shared string DesignatedBy [934]

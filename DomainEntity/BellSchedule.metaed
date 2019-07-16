@@ -9,7 +9,7 @@ Domain Entity BellSchedule [543]
     domain entity School [1266]
         documentation "The school for which the BellSchedule is defined."
         is part of identity
-    domain entity ClassPeriod
+    domain entity ClassPeriod [2838]
         documentation "The class periods that compose this BellSchedule."
         is required collection
         merge ClassPeriod.School with School
@@ -19,9 +19,9 @@ Domain Entity BellSchedule [543]
     shared string AlternateDayName [871]
         documentation "An alternate name for the day (e.g., Red, Blue)."
         is optional
-    time StartTime
+    time StartTime [2839]
         documentation "An indication of the time of day the bell schedule begins."
         is optional
-    time EndTime
+    time EndTime [2840]
         documentation "An indication of the time of day the bell schedule ends."
         is optional

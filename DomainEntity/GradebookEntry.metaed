@@ -32,6 +32,6 @@ Domain Entity GradebookEntry [560]
         is queryable field
         merge GradingPeriod.School with Section.CourseOffering.Session.School
         merge GradingPeriod.SchoolYear with Section.CourseOffering.Session.SchoolYear
-    date DueDate
+    date DueDate [2845]
         documentation "The date the assignment, homework, or assessment is due."
         is optional

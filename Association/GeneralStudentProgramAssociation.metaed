@@ -20,6 +20,6 @@ domain entity EducationOrganization [1104]
 bool ServedOutsideOfRegularSession [1108]
     documentation "Indicates whether the Student received services during the summer session or between sessions."
     is optional
-common ParticipationStatus
+common ParticipationStatus [2776]
     documentation "The status of the student's program participation."
     is optional

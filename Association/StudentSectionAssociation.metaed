@@ -24,6 +24,6 @@ Association StudentSectionAssociation [614]
     bool TeacherStudentDataLinkExclusion [1134]
         documentation "Indicates that the student-section combination is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation."
         is optional
-    descriptor AttemptStatus
+    descriptor AttemptStatus [2806]
         documentation "An indication of the student's completion status for the section."
         is optional

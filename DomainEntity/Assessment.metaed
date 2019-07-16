@@ -1,6 +1,6 @@
 Domain Entity Assessment [540]
     documentation "This entity represents a tool, instrument, process, or exhibition composed of a systematic sampling of behavior for measuring a student's competence, knowledge, skills, or behavior. An assessment can be used to measure differences in individuals or groups and changes in performance from one occasion to the next."
-    shared string IdentificationCode named AssessmentIdentifier
+    shared string IdentificationCode named AssessmentIdentifier [2703]
         documentation "A unique number or alphanumeric code assigned to an assessment."
         is part of identity
     shared string AssessmentTitle [1228]
@@ -67,9 +67,9 @@ Domain Entity Assessment [540]
     shared string URI named Namespace [2300]
         documentation "Namespace for the Assessment."
         is part of identity
-    domain entity EducationOrganization
+    domain entity EducationOrganization [2704]
         documentation "The EducationOrganization for which the assessment was developed and in which it was employed."
         is optional
-    bool AdaptiveAssessment
+    bool AdaptiveAssessment [2705]
         documentation "Indicates that the assessment is adaptive."
         is optional

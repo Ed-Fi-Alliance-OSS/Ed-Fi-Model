@@ -1,8 +1,8 @@
 Association StudentEducationOrganizationAssociation
     documentation "This association represents student information that is specific to a student's relationship with an EducationOrganization. Enrollment relationship semantics are covered by StudentSchoolAssociation."
-    domain entity Student
+    domain entity Student [2782]
         documentation "A reference to the Student."
-    domain entity EducationOrganization
+    domain entity EducationOrganization [2783]
         documentation "A reference to the EducationOrganization."
     common StudentIdentificationCode [1703]
         documentation "A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student."
@@ -43,7 +43,7 @@ Association StudentEducationOrganizationAssociation
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races."
         is optional collection
         is queryable field
-    descriptor TribalAffiliation
+    descriptor TribalAffiliation [2784]
         documentation "An American Indian tribe with which the student is affiliated."
         is optional collection
     common StudentCharacteristic [1702]
