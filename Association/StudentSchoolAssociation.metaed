@@ -35,7 +35,7 @@ Association StudentSchoolAssociation [613]
         documentation "An indication of whether students transferred in or out of the school did so during the school year under the provisions for public school choice in accordance with Title I, Part A, Section 1116."
         is optional
     date ExitWithdrawDate [1118]
-        documentation "The month, day, and year of the first day after the date of an individual's last attendance at a school (if known), the day on which an individual graduated, or the date on which it becomes known officially that an individual left school."
+        documentation "The recorded exit or withdraw date for the student."
         is optional
     descriptor ExitWithdrawType [1119]
         documentation "The circumstances under which the student exited from membership in an educational institution."
@@ -57,3 +57,9 @@ Association StudentSchoolAssociation [613]
         is optional
         merge Calendar.School with School
         merge Calendar.SchoolYear with SchoolYear
+    shared decimal FullTimeEquivalency [2873]
+        documentation "The full-time equivalent ratio for the student’s assignment to a school for services or instruction. For example, a full-time student would have an FTE value of 1 while a half-time student would have an FTE value of 0.5."
+        is optional
+    bool TermCompletionIndicator [2874]
+        documentation "Idicates whether or not a student completed the most recent school term."
+        is optional
