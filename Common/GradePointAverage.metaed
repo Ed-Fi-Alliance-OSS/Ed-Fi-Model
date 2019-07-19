@@ -1,0 +1,11 @@
+Common GradePointAverage [2868]
+    documentation "A measure of average performance for courses taken by an individual."
+    descriptor GradePointAverageWeightSystem [2869]
+        documentation "The system used for calculating the Grade Point Average."
+        is part of identity
+    bool IsCumulative [2870]
+        documentation "Indicator of whether or not the Grade Point Average value is cumulative."
+        is part of identity
+    shared decimal GPA named GradePointAverageValue [2871]
+        documentation "Grade Point Average computed for a grading period, session, or cumulatively."
+        is required
