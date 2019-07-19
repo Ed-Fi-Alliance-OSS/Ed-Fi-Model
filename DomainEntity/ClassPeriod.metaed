@@ -11,5 +11,5 @@ Domain Entity ClassPeriod [546]
         documentation "The meeting time(s) for a class period."
         is optional collection
     bool OfficialAttendancePeriod [874]
-        documentation "Indicator of whether this class period is used for official daily attendance."
+        documentation "Indicator of whether this class period is used for official daily attendance. Alternatively, official daily attendance may be tied to a Section."
         is optional

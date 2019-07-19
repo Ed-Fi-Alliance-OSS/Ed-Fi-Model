@@ -74,3 +74,6 @@ Domain Entity Section [580]
         documentation "The grade levels in which the section is offered. This collection should only be populated if it differs from the Offered Grade Levels identified at the Course Offering level."
         is optional collection
         role name Offered
+    bool OfficialAttendancePeriod [2875]
+        documentation "Indicator of whether this section is used for official daily attendance. Alternatively, official daily attendance may be tied to a Class Period."
+        is optional
