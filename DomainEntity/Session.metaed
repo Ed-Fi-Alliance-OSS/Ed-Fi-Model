@@ -16,7 +16,7 @@ Domain Entity Session [582]
         documentation "Month, day and year of the last day of the Session."
         is required
     descriptor Term [1644]
-        documentation "An descriptor value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.)."
+        documentation "An descriptor value indicating the term (e.g. 'Semester', 'Quarter', etc.)."
         is required
         is queryable field
     shared integer TotalInstructionalDays [1645]
