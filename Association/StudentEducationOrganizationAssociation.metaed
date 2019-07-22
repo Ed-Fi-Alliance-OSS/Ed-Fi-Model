@@ -9,7 +9,7 @@ Association StudentEducationOrganizationAssociation
         is optional collection
         is queryable field
     descriptor Sex [1701]
-        documentation "A person's gender."
+        documentation "The student's gender as last reported to the education organization."
         is required
         is queryable field
     common Address [1680]
@@ -28,7 +28,7 @@ Association StudentEducationOrganizationAssociation
         documentation "Locator reference for the student photo. The specification for that reference is left to local definition."
         is optional
     bool HispanicLatinoEthnicity [1688]
-        documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
+        documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race, as last reported to the education organization. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
         is optional
         is queryable field
     descriptor OldEthnicity [1695]
@@ -40,11 +40,11 @@ Association StudentEducationOrganizationAssociation
         5 - White, not of Hispanic origin."
         is optional
     descriptor Race [1699]
-        documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races."
+        documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies as last reported to the education organization. The data model allows for multiple entries so that each individual can specify all appropriate races."
         is optional collection
         is queryable field
     descriptor TribalAffiliation [2784]
-        documentation "An American Indian tribe with which the student is affiliated."
+        documentation "An American Indian tribe with which the student is affiliated as last reported to the education organization."
         is optional collection
     common StudentCharacteristic [1702]
         documentation "Reflects important characteristics of the student's home situation:
