@@ -16,10 +16,10 @@ Association StaffSchoolAssociation [603]
         Bilingual/English as a Second Language."
         is part of identity
     descriptor GradeLevel [1042]
-        documentation "The set of grade levels for which the individual's assignment is responsible."
+        documentation "The grade levels the individual is eligible to teach."
         is optional collection
     descriptor AcademicSubject [1041]
-        documentation "The teaching field taught by an individual, for example English/Language Arts, Reading, Mathematics, Science, Social Sciences, etc."
+        documentation "The academic subjects the individual is eligible to teach."
         is optional collection
     domain entity Calendar [2620]
         documentation "Reference to the Calendar associated with the StaffSchoolAssociation."
