@@ -53,5 +53,8 @@ Domain Entity DisciplineIncident [554]
         documentation "Relates the DisciplineIncident to the school where the incident occurred."
         is part of identity
     domain entity Staff [1358]
-        documentation "Identifies the staff reporter of the DisciplineIncident by use of a pre-existing school or district unique identifier."
+        documentation "DEPRECATED: Identifies the staff reporter of the DisciplineIncident by use of a pre-existing school or district unique identifier."
         is optional
+    common DisciplineIncidentExternalParticipant [2881]
+        documentation "Information on an individual involved in the Discipline Incident."
+        is optional collection
