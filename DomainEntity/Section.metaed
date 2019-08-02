@@ -51,15 +51,13 @@ Domain Entity Section [580]
         is part of identity
         is queryable field
     domain entity School [1629]
-        documentation "The school where the Section is taught."
+        documentation "The physical school location in which the Section is taught."
         is optional
         role name Location
-        merge LocationSchool with Location.School
     domain entity Location [1625]
         documentation "The location, typically a classroom, where the Section meets."
         is optional
         role name Location
-        merge Location.School with LocationSchool
     domain entity ClassPeriod [1621]
         documentation "The class period during which the Section meets."
         is optional collection
