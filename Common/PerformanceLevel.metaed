@@ -1,7 +1,7 @@
 Common PerformanceLevel [519]
-    documentation "A performance level value that describes student proficiency."
+    documentation "A performance level value that describes student proficiency, generally a cut score."
     bool PerformanceLevelMet [890]
-        documentation "Optional indicator of whether the performance level was met."
+        documentation "DEPRECATED: Optional indicator of whether the performance level was met."
         is required
     descriptor PerformanceLevel [889]
         documentation "A specification of which performance level value describes the student proficiency."
