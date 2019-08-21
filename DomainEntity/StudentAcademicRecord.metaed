@@ -9,10 +9,12 @@ Domain Entity StudentAcademicRecord [586]
         is optional
         role name CumulativeAttempted
     shared decimal GPA named CumulativeGradePointsEarned [1712]
-        documentation "DEPRECATED: The cumulative number of grade points an individual earns by successfully completing courses or examinations during his or her enrollment in the current school as well as those transferred from schools in which the individual had been previously enrolled."
+        deprecated "This element is rarely used. Expect removal of this element in a future release."
+        documentation "The cumulative number of grade points an individual earns by successfully completing courses or examinations during his or her enrollment in the current school as well as those transferred from schools in which the individual had been previously enrolled."
         is optional
     shared decimal GPA named CumulativeGradePointAverage [1711]
-        documentation "DEPRECATED: A measure of average performance in all courses taken by an individual during his or her school career as determined for record-keeping purposes. This is obtained by dividing the total grade points received by the total number of credits attempted. This usually includes grade points received and credits attempted in his or her current school as well as those transferred from schools in which the individual was previously enrolled."
+        deprecated "Users of this element are advised to use GradePointAverage instead, which supports capture of multiple (e.g., weighted, unweighted) GPAs. Expect removal of this element in a future release."
+        documentation "A measure of average performance in all courses taken by an individual during his or her school career as determined for record-keeping purposes. This is obtained by dividing the total grade points received by the total number of credits attempted. This usually includes grade points received and credits attempted in his or her current school as well as those transferred from schools in which the individual was previously enrolled."
         is optional
     shared string GradeValueQualifier [1715]
         documentation "The scale of equivalents, if applicable, for grades awarded as indicators of performance in schoolwork. For example, numerical equivalents for letter grades used in determining a student's Grade Point Average (A=4, B=3, C=2, D=1 in a four-point system) or letter equivalents for percentage grades (90-100%=A, 80-90%=B, etc.)"
@@ -38,10 +40,12 @@ Domain Entity StudentAcademicRecord [586]
         is optional
         role name SessionAttempted
     shared decimal GPA named SessionGradePointsEarned [1723]
-        documentation "DEPRECATED: The number of grade points an individual earned for this session."
+        deprecated "This element is rarely used. Expect removal of this element in a future release."
+        documentation "The number of grade points an individual earned for this session."
         is optional
     shared decimal GPA named SessionGradePointAverage [1722]
-        documentation "DEPRECATED: The grade point average for an individual computed as the grade points earned during the session divided by the number of credits attempted."
+        deprecated "Users of this element are advised to use GradePointAverage instead, which supports capture of multiple (e.g., weighted, unweighted) GPAs. Expect removal of this element in a future release."
+        documentation "The grade point average for an individual computed as the grade points earned during the session divided by the number of credits attempted."
         is optional
     common GradePointAverage [2866]
         documentation "A measure of average performance for courses taken by an individual."

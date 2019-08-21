@@ -1,10 +1,12 @@
 Association StudentCTEProgramAssociation based on GeneralStudentProgramAssociation [606]
     documentation "This association represents the career and technical education (CTE) program that a student participates in. The association is an extension of the StudentProgramAssociation particular for CTE programs."
     common CTEProgram [1061]
-        documentation "DEPRECATED: The career cluster representing the career path of the Vocational/Career Tech concentrator."
+        deprecated "Users of this element are advised to use CTEProgramService instead.  CTEProgram and Service elements have been combined in the new CTEProgramService. Expect removal of this element in a future release."
+        documentation "The career cluster representing the career path of the Vocational/Career Tech concentrator."
         is optional collection
     common Service [2777]
-        documentation "DEPRECATED: Indicates the Service(s) being provided to the Student by the Program."
+        deprecated "Users of this element are advised to use CTEProgramService instead.  CTEProgram and Service elements have been combined in the new CTEProgramService. Expect removal of this element in a future release."
+        documentation "Indicates the Service(s) being provided to the Student by the Program."
         is optional collection
     bool NonTraditionalGenderStatus [2778]
         documentation "Indicator that student is from a gender group that comprises less than 25% of the individuals employed in an occupation or field of work."

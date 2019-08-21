@@ -40,7 +40,8 @@ Domain Entity DisciplineAction [553]
         is optional
         role name Assignment
     bool ReceivedEducationServicesDuringExpulsion [2707]
-        documentation "DEPRECATED: An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons."
+        deprecated "Users of this element are advised to use the Discipline descriptor value ""Explusion with Services"" instead. Expect removal of this element in a future release."
+        documentation "An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons."
         is optional
     bool IEPPlacementMeetingIndicator [2708]
         documentation "An indication as to whether an offense and/or disciplinary action resulted in a meeting of a student's Individualized Education Program (IEP) team to determine appropriate placement."

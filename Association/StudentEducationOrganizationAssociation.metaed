@@ -60,7 +60,8 @@ Association StudentEducationOrganizationAssociation
         documentation "The disability condition(s) that best describes an individual's impairment, as determined by evaluation(s) conducted by the education organization."
         is optional collection
     common ProgramParticipation [1698]
-        documentation "DEPRECATED: Key programs the student is participating in or receives services from."
+        deprecated "Users of this element are advised to use StudentProgramAssociation instead. Expect removal of this element in a future release."
+        documentation "Key programs the student is participating in or receives services from."
         is optional collection
     common CohortYear [1683]
         documentation "The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade."

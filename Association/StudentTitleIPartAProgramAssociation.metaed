@@ -11,5 +11,6 @@ Association StudentTitleIPartAProgramAssociation based on GeneralStudentProgramA
         documentation "Indicates the service(s) being provided to the Student by the Title I Part A Program."
         is optional collection
     common Service [2810]
-        documentation "DEPRECATED: Indicates the Service(s) being provided to the Student by the Program."
+        deprecated "Users of this element are advised to use TitleIPartAProgramService instead. Title I Part A program-specific descriptor values have been included to replace the generic Service descriptor values. Expect removal of this element in a future release."
+        documentation "Indicates the Service(s) being provided to the Student by the Program."
         is optional collection

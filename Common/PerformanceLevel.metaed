@@ -1,7 +1,8 @@
 Common PerformanceLevel [519]
     documentation "A performance level value that describes student proficiency, generally a cut score."
     bool PerformanceLevelMet [890]
-        documentation "DEPRECATED: Optional indicator of whether the performance level was met."
+        deprecated "This element creates confusion in the model. Performance levels that have not been met should not be reported in StudentAssessment. Expect removal of this element in a future release."
+        documentation "Optional indicator of whether the performance level was met."
         is required
     descriptor PerformanceLevel [889]
         documentation "A specification of which performance level value describes the student proficiency."
