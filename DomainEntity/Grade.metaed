@@ -25,3 +25,6 @@ Domain Entity Grade [559]
         role name GradingPeriod
         merge GradingPeriod.School with StudentSectionAssociation.Section.CourseOffering.Session.School
         merge GradingPeriod.SchoolYear with StudentSectionAssociation.Section.CourseOffering.Session.SchoolYear
+    common LearningStandardGrade [2902]
+        documentation "A collection of learning standards associated with the grade."
+        is optional collection
