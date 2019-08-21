@@ -12,3 +12,6 @@ Common SpecialEducationProgramService [2765]
     date ServiceEndDate [2769]
         documentation "Last date the Student was in this option for the current school year."
         is optional
+    common ServiceProvider [2895]
+        documentation "The Staff providing the service to the Student."
+        is optional collection
