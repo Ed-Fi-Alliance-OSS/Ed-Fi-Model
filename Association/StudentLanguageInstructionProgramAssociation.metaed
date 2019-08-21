@@ -9,3 +9,6 @@ Association StudentLanguageInstructionProgramAssociation based on GeneralStudent
     common LanguageInstructionProgramService [2793]
         documentation "Indicates the service(s) being provided to the Student by the Language Instruction Program."
         is optional collection
+    shared integer Dosage [2894]
+        documentation "The duration of time in minutes for which the student was assigned to participate in the program."
+        is optional
