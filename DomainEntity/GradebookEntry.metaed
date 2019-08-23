@@ -20,6 +20,7 @@ Domain Entity GradebookEntry [560]
         documentation "LearningStandard(s) associated with the GradebookEntry."
         is optional collection
     domain entity LearningObjective [1427]
+        deprecated "Users of this element are advised to use LearningStandard instead. Expect removal of this element in a future release."
         documentation "LearningObjectives associated with the GradebookEntry."
         is optional collection
     domain entity Section [1429]

@@ -1,4 +1,5 @@
 Domain Entity LearningObjective [566]
+    deprecated "Users of this element are advised to use LearningStandard instead. Expect removal of this element in a future release."
     documentation "This entity represents identified learning objectives for courses in specific grades."
     shared string LearningStandardId named LearningObjectiveId [1487]
         documentation "The identifier for the specific learning objective in the context of a standard (e.g., 111.15.3.1.A)."

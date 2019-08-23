@@ -1,4 +1,5 @@
 Domain Entity StudentLearningObjective [591]
+    deprecated "Users of this element are advised to use Grade.LearningStandardGrade instead. Expect removal of this element in a future release."
     documentation "This entity represents the competency assessed or evaluated for the student against a specific LearningObjective."
     domain entity LearningObjective [1763]
         documentation "The  LearningObjective evaluated or assessed for the student."

@@ -1,5 +1,5 @@
 Domain Entity LearningStandard [567]
-    documentation "This entity is a sub-element of a learning objective consisting of a precise statement of the expectation of a student's proficiency."
+    documentation "A statement that describes a specific competency or academic standard."
     shared string LearningStandardId [1499]
         documentation "The identifier for the specific learning standard (e.g., 111.15.3.1.A)."
         is part of identity
@@ -36,6 +36,7 @@ Domain Entity LearningStandard [567]
         documentation "One or more statements that describes the criteria used by teachers and students to check for attainment of a learning standard. This criteria gives clear indications as to the degree to which learning is moving through the Zone or Proximal Development toward independent achievement of the LearningStandard."
         is optional
     domain entity LearningStandard [1503]
+        deprecated "This element is rarely used. Expect removal of this element in a future release."
         documentation "The unique identifier of a prerequisite learning standard item, a competency needed prior to learning this one. (Some items may have no prerequisites others may have one or more prerequisites. This should only be used to represent the immediate predecessors in a competency-based pathway, i.e. not prerequisites of prerequisites)."
         is optional collection
         role name Prerequisite
@@ -44,8 +45,11 @@ Domain Entity LearningStandard [567]
         is optional
         role name Parent
     shared string URI named Namespace [2440]
-        documentation "Namespace for the LearningStandard."
+        documentation "The namespace of the organization or entity who governs the standard. It is recommended the namespaces observe a URI format and begin with a domain name under the governing organization or entity control."
         is required
     descriptor LearningStandardCategory [2850]
         documentation "An additional classification of the type of a specific learning standard."
+        is optional
+    descriptor LearningStandardScope
+        documentation "Signals the scope of usage the standard. Does not necessarily relate the standard to the governing body."
         is optional

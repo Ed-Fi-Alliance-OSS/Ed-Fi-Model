@@ -11,6 +11,7 @@ Domain Entity ReportCard [577]
         merge StudentCompetencyObjective.GradingPeriod with GradingPeriod
         merge StudentCompetencyObjective.Student with Student
     domain entity StudentLearningObjective [1591]
+        deprecated "Users of this element are advised to use ReportCard.Grade.LearningStandardGrade instead. Expect removal of this element in a future release."
         documentation "The StudentLearningObjective evaluations associated for this grading period."
         is optional collection
         merge StudentLearningObjective.GradingPeriod with GradingPeriod

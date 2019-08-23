@@ -27,6 +27,7 @@ Domain Entity Program [576]
         documentation "Defines the services this program provides to students."
         is optional collection
     domain entity LearningObjective [1574]
+        deprecated "Users of this element are advised to use LearningStandard instead. Expect removal of this element in a future release."
         documentation "References the LearningObjective(s) with which the Program is associated."
         is optional collection
     domain entity LearningStandard [1575]
