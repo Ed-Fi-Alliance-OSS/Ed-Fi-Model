@@ -1,6 +1,2 @@
 Descriptor AdministrationEnvironment [126]
-    documentation "The environment in which the test was administered. For example:
-    Electronic
-    Classroom
-    Testing Center
-    ..."
+    documentation "The environment in which the test was administered."

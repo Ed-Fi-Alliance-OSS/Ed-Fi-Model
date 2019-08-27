@@ -17,11 +17,7 @@ Domain Entity StudentAssessment [587]
         is optional
         role name Administration
     descriptor AdministrationEnvironment [1729]
-        documentation "The environment in which the test was administered. For example:
-        Electronic
-        Classroom
-        Testing Center
-        ..."
+        documentation "The environment in which the test was administered."
         is optional
     descriptor Accommodation [1726]
         documentation "The specific type of special variation used in how an examination is presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examination measures. The proper use of accommodations does not substantially change academic level or performance criteria. For example:
