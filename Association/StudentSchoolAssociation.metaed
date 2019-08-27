@@ -47,8 +47,12 @@ Association StudentSchoolAssociation [613]
         documentation "An indication of the location of a persons legal residence relative to (within or outside of) the boundaries of the public school attended and its administrative unit."
         is optional
     domain entity GraduationPlan [1120]
-        documentation "The GraduationPlan associated with the student enrolled in the school."
+        documentation "The primary graduation plan associated with the student enrolled in the school."
         is optional
+    domain entity GraduationPlan [2912]
+        documentation "The secondary graduation plan or plans associated with the student enrolled in the school."
+        is optional collection
+        role name Alternative
     bool EmployedWhileEnrolled [1113]
         documentation "An individual who is a paid employee or works in his or her own business, profession, or farm and at the same time is enrolled in secondary, postsecondary, or adult education."
         is optional
