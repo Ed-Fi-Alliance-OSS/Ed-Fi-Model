@@ -1,11 +1,11 @@
 Domain Entity StudentCompetencyObjective [588]
-    documentation "This entity represents the competency assessed or evaluated for the student against a specific learning  objective."
+    documentation "This entity represents the competency assessed or evaluated for the student against a specific competency objective."
     domain entity CompetencyObjective [1744]
         documentation "The CompetencyObjective evaluated for the student."
         is part of identity
         role name CompetencyObjective shorten to Objective
     descriptor CompetencyLevel [1743]
-        documentation "The CompetencyLevel assessed for the student for the referenced LearningObjective."
+        documentation "The competency level assessed for the student for the referenced competency objective."
         is required
     shared string DiagnosticStatement [1745]
         documentation "A statement provided by the teacher that provides information in addition to the grade or assessment score."
