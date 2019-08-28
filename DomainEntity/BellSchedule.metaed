@@ -25,3 +25,6 @@ Domain Entity BellSchedule [543]
     time EndTime [2840]
         documentation "An indication of the time of day the bell schedule ends."
         is optional
+    shared integer TotalInstructionalTime [2914]
+        documentation "The total instructional time in minutes per day for the bell schedule."
+        is optional
