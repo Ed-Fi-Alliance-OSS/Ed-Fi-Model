@@ -12,3 +12,9 @@ Domain Entity StudentSectionAttendanceEvent [594]
     shared integer AttendanceEventDuration named SectionAttendanceDuration [2859]
         documentation "The duration in minutes of the section attendance event."
         is optional
+    time ArrivalTime [2915]
+        documentation "The time of day the student arrived for the attendance event in ISO 8601 format."
+        is optional
+    time DepartureTime [2916]
+        documentation "The time of day the student departed for the attendance event in ISO 8601 format."
+        is optional
