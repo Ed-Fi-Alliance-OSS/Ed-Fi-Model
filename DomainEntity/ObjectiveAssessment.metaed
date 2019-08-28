@@ -3,9 +3,11 @@ Domain Entity ObjectiveAssessment [571]
     shared string IdentificationCode [1538]
         documentation "A unique number or alphanumeric code assigned to a space, room, site, building, individual, organization, program, or institution by a school, school system, a state, or other agency or entity."
         is part of identity
-    integer MaxRawScore [1541]
+    decimal MaxRawScore [1541]
         documentation "The maximum raw score achievable across all assessment items that are correct and scored at the maximum."
         is optional
+        total digits 10
+        decimal places 5
     common AssessmentPerformanceLevel [1535]
         documentation "Definition of the performance levels and the associated cut scores. Three styles are supported:
         1. Specification of performance level by minimum and maximum score
@@ -45,3 +47,6 @@ Domain Entity ObjectiveAssessment [571]
     common AssessmentScore [2851]
         documentation "Definition of the scores to be expected from this objective assessment."
         is optional collection
+    descriptor AcademicSubject
+        documentation "The subject area of the objective assessment."
+        is optional

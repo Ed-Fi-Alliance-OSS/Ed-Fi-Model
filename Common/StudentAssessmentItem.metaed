@@ -21,9 +21,11 @@ Common StudentAssessmentItem [530]
          Met standard
         ..."
         is required
-    integer RawScoreResult [930]
+    decimal RawScoreResult [930]
         documentation "A meaningful raw score of the performance of an individual on an assessment item."
         is optional
+        total digits 10
+        decimal places 5
     duration TimeAssessed [932]
         documentation "The overall time a student actually spent during the AssessmentItem."
         is optional
