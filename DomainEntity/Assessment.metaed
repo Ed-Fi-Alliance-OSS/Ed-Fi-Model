@@ -75,3 +75,6 @@ Domain Entity Assessment [540]
     bool AdaptiveAssessment [2705]
         documentation "Indicates that the assessment is adaptive."
         is optional
+    descriptor PlatformType
+        documentation "The platforms with which the assessment may be delivered."
+        is optional collection
