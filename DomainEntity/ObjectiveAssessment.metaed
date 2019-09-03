@@ -47,6 +47,6 @@ Domain Entity ObjectiveAssessment [571]
     common AssessmentScore [2851]
         documentation "Definition of the scores to be expected from this objective assessment."
         is optional collection
-    descriptor AcademicSubject
+    descriptor AcademicSubject [2921]
         documentation "The subject area of the objective assessment."
         is optional

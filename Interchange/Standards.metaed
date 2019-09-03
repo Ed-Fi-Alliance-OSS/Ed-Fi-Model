@@ -4,3 +4,4 @@ Interchange Standards [2524]
     2. Exchange learning objective information to be used when defining courses, assessments and grades."
     domain entity LearningObjective [2524-001]
     domain entity LearningStandard [2524-002]
+    association LearningStandardEquivalenceAssociation [2524-003]
