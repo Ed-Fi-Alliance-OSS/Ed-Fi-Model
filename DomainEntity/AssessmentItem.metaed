@@ -13,7 +13,7 @@ Domain Entity AssessmentItem [542]
     decimal MaxRawScore [1260]
         documentation "The maximum raw score achievable across all assessment items that are correct and scored at the maximum."
         is optional
-        total digits 10
+        total digits 15
         decimal places 5
     shared string ItemText [2892]
         documentation "The text of the item."

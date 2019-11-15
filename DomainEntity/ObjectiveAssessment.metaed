@@ -6,7 +6,7 @@ Domain Entity ObjectiveAssessment [571]
     decimal MaxRawScore [1541]
         documentation "The maximum raw score achievable across all assessment items that are correct and scored at the maximum."
         is optional
-        total digits 10
+        total digits 15
         decimal places 5
     common AssessmentPerformanceLevel [1535]
         documentation "Definition of the performance levels and the associated cut scores. Three styles are supported:

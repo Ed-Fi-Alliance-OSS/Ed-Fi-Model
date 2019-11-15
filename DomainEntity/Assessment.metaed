@@ -52,7 +52,7 @@ Domain Entity Assessment [540]
     decimal MaxRawScore [1235]
         documentation "The maximum raw score achievable across all assessment items that are correct and scored at the maximum."
         is optional
-        total digits 10
+        total digits 15
         decimal places 5
     shared string Nomenclature [1236]
         documentation "Reflects the specific nomenclature used for Assessment."
