@@ -10,3 +10,6 @@ Common CourseIdentificationCode [495]
         documentation "The organization code or name assigning the Identification Code."
         is optional
         role name AssigningOrganization
+    shared string CourseCatalogURL [2924]
+        documentation "The URL for the course catalog that defines the course identification code."
+        is optional
