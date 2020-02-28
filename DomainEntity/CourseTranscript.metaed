@@ -68,3 +68,9 @@ Domain Entity CourseTranscript [552]
     shared string CourseCatalogURL [2927]
         documentation "The URL for the course catalog that defines the course identification code."
         is optional
+    descriptor CreditCategory [2929]
+        documentation "A categorization for the course transcript credits awarded in the course transcript."
+        is optional collection
+    descriptor AcademicSubject [2934]
+        documentation "The subject area for the course transcript credits awarded in the course transcript."
+        is optional collection
