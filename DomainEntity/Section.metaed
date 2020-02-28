@@ -75,3 +75,6 @@ Domain Entity Section [580]
     bool OfficialAttendancePeriod [2875]
         documentation "Indicator of whether this section is used for official daily attendance. Alternatively, official daily attendance may be tied to a Class Period."
         is optional
+    shared string SectionName [2935]
+        documentation "A locally-defined name for the section, generally created to make the section more recognizable in informal contexts and generally distinct from the SectionIdentifier."
+        is optional
