@@ -1,5 +1,5 @@
 Association StudentEducationOrganizationResponsibilityAssociation [608]
-    documentation "This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation."
+    documentation "This association indicates a relationship between a student and an education organization other than an enrollment relationship, and generally indicating some kind of responsibility of the education organization for the student. Enrollment relationship semantics are covered by StudentSchoolAssociation."
     domain entity Student [1075]
         documentation "A reference to the Student."
     domain entity EducationOrganization [1073]
