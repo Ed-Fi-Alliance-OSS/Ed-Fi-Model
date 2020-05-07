@@ -1,0 +1,21 @@
+Domain Entity SurveyQuestionResponse
+    documentation "The response to a survey question."
+    domain entity SurveyQuestion
+        documentation "The identifying code for the question, unique for the survey."
+        is part of identity
+	  domain entity SurveyResponse
+        documentation "Reference to the survey response."
+        is part of identity
+        merge SurveyResponse.Survey with SurveyQuestion.Survey
+    bool NoResponse
+        documentation "Indicates there was no response to the question."
+        is optional
+    common SurveyQuestionResponseValue
+        documentation "For free-form, single- or multiple-selection questions, one or more responses."
+        is optional collection
+    common SurveyQuestionMatrixElementResponse
+        documentation "For matrix questions, the response for each row of the matrix."
+        is optional collection
+    shared string Comment
+        documentation "Additional information provided by the responder about the question in the survey."
+        is optional

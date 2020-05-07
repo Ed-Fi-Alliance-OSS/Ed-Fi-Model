@@ -1,0 +1,17 @@
+Interchange Survey
+    documentation "The Survey interchange describes survey metadata, including the definitions of the survey, survey sections, and survey questions making up the survey and survey responses from both identified and anonymous respondents."
+    use case documentation "1. Exchange metadata for surveys.
+    2. Exchange identified or anonymous student, staff, and parent responses for surveys."
+    domain entity Survey
+    domain entity SurveyQuestion
+    domain entity SurveyQuestionResponse
+    domain entity SurveyResponse
+    domain entity SurveySection
+    domain entity SurveySectionResponse
+    association SurveyCourseAssociation
+    association SurveySectionAssociation
+    association SurveyProgramAssociation
+    association SurveyResponseEducationOrganizationTargetAssociation
+    association SurveyResponseStaffTargetAssociation
+    association SurveySectionResponseEducationOrganizationTargetAssociation
+    association SurveySectionResponseStaffTargetAssociation

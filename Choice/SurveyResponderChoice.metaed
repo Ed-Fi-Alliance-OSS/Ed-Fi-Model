@@ -1,0 +1,11 @@
+Choice SurveyResponderChoice
+    documentation "Reference to either a student, parent, staff, or applicant - or none for anonymous survey."
+    domain entity Student
+        documentation "The student respondent for a survey."
+        is required
+    domain entity Parent
+        documentation "The parent respondent for a survey."
+        is required
+    domain entity Staff
+        documentation "The staff respondent for a survey."
+        is required
