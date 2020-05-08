@@ -23,3 +23,6 @@ Domain Entity Student [585]
     domain entity EducationOrganization [2371]
         documentation "Provide user information to lookup and link to an existing educational organization record in the receiving system."
         is queryable only
+    domain entity Person [2944]
+        documentation "Relates the student to a generic person."
+        is optional

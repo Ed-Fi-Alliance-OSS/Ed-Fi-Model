@@ -41,3 +41,6 @@ Domain Entity Parent [573]
     common Language [2547]
         documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-2 language codes."
         is optional collection
+    domain entity Person [2945]
+        documentation "Relates the parent to a generic person."
+        is optional

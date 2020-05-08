@@ -94,3 +94,6 @@ Domain Entity Staff [583]
     descriptor TribalAffiliation [2855]
         documentation "An American Indian tribe with which the staff member is affiliated."
         is optional collection
+    domain entity Person [2946]
+        documentation "Relates the staff to a generic person."
+        is optional
