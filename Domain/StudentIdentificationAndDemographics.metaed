@@ -6,5 +6,6 @@ Domain StudentIdentificationAndDemographics
 * The StudentParentAssociation links students and parents and indicates the relation."
     domain entity Parent
     domain entity Student
+    domain entity Person
     association StudentParentAssociation
     association StudentEducationOrganizationAssociation

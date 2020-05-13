@@ -21,3 +21,4 @@ Domain Staff
     association StaffEducationOrganizationContactAssociation
     domain entity StaffAbsenceEvent
     domain entity StaffLeave
+    domain entity Person

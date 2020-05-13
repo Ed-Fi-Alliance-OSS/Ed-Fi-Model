@@ -4,3 +4,4 @@ Interchange Parent [2521]
     2. Exchange parent contact or emergency contact information."
     domain entity Parent [2521-001]
     association StudentParentAssociation [2521-002]
+    domain entity Person [2521-003]
