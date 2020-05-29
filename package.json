@@ -1,7 +1,7 @@
 {
-  "name": "ed-fi-model-3.2b",
-  "version": "2.0.1",
-  "description": "The Ed-Fi Data Model v3.2b as defined in MetaEd",
+  "name": "ed-fi-model-3.2c",
+  "version": "2.0.0",
+  "description": "The Ed-Fi Data Model v3.2c as defined in MetaEd",
   "repository": "https://github.com/Ed-Fi-Alliance/Ed-Fi-Model",
   "license": "private",
   "publishConfig": {
@@ -9,6 +9,6 @@
   },
   "metaEdProject": {
     "projectName": "Ed-Fi",
-    "projectVersion": "3.2.0-b"
+    "projectVersion": "3.2.0-c"
   }
 }
