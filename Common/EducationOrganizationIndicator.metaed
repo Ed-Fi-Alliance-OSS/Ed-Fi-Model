@@ -1,0 +1,17 @@
+Common EducationOrganizationIndicator [2969]
+    documentation "An indicator or metric of an Education Organization."
+    descriptor IndicatorTitle [2970]
+        documentation "The title of the indicator or metric."
+        is part of identity
+    shared string DesignatedBy [2971]
+        documentation "The person, organization, or department that designated the program association."
+        is optional
+    shared string Indicator [2972]
+        documentation "The value of the indicator or metric."
+        is required
+    shared string IndicatorName named IndicatorGroup [2973]
+        documentation "The name for a group of indicators."
+        is optional
+    common Period [2974]
+        documentation "The time period or as-of date for which the indicator."
+        is required

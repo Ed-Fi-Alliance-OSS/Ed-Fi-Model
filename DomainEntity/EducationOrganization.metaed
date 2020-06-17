@@ -35,3 +35,6 @@ Abstract Entity EducationOrganization [556]
     descriptor OperationalStatus [1387]
         documentation "The current operational status of the EducationOrganization (e.g., active, inactive)."
         is optional
+    common EducationOrganizationIndicator [3050]
+        documentation "An indicator or metric of an Education Organization."
+        is optional collection
