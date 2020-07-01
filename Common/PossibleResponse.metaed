@@ -6,6 +6,6 @@ Common PossibleResponse [2889]
     shared string ResponseDescription [2891]
         documentation "Additional text provided to define the response value."
         is optional
-    bool CorrectResponse
+    bool CorrectResponse [3057]
         documentation "Indicates the response is correct."
         is optional
