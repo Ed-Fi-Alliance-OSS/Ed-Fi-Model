@@ -17,4 +17,4 @@ Common EducationOrganizationIndicator [2969]
         is optional
     common Period [2974]
         documentation "The time period or as-of date for the indicator."
-        is optional
+        is optional collection
