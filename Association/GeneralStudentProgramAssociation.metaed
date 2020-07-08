@@ -1,4 +1,4 @@
-Association GeneralStudentProgramAssociation
+Association GeneralStudentProgramAssociation [3051]
     documentation "This association base class represents the basic relationship between students and programs."
 domain entity Student [1110]
     documentation "The Student associated with the Program."

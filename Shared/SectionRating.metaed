@@ -1,4 +1,4 @@
-Shared Decimal SectionRating
+Shared Decimal SectionRating [3058]
     documentation "The type for survey section ratings."
     total digits 9
     decimal places 3

@@ -1,6 +1,6 @@
-Association SurveySectionAssociation
+Association SurveySectionAssociation [2956]
   documentation "The section associated with the survey."
-  domain entity Survey
+  domain entity Survey [2957]
     documentation "Reference to Survey."
-  domain entity Section
+  domain entity Section [2958]
     documentation "The section associated with the survey."
