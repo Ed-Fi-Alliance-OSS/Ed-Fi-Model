@@ -32,6 +32,7 @@ Association StudentEducationOrganizationAssociation [3052]
         is optional
         is queryable field
     descriptor OldEthnicity [1695]
+        deprecated "Users of this element are advised to use Race and HispanicLatinoEthnicity instead. Expect removal of this element in a future release."
         documentation "Previous definition of Ethnicity combining Hispanic/Latino and race:
         1 - American Indian or Alaskan Native
         2 - Asian or Pacific Islander
