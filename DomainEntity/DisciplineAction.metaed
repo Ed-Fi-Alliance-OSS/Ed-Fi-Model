@@ -22,9 +22,10 @@ Domain Entity DisciplineAction [553]
         documentation "An indication of whether or not this disciplinary action taken against a student was imposed as a consequence of state or local zero tolerance policies."
         is optional
     domain entity Student [1345]
-        documentation "The student(s) disciplined by the DisciplineAction."
+        documentation "The student disciplined by the DisciplineAction."
         is part of identity
     association StudentDisciplineIncidentAssociation [1341]
+        deprecated "Users of this element are advised to use StudentDisciplineIncidentBehaviorAssociation instead. Expect removal of this element in a future release."
         documentation "Reference to the DisciplineIncident associated with the DisciplineAction."
         is required collection
         merge StudentDisciplineIncidentAssociation.Student with Student
@@ -46,3 +47,7 @@ Domain Entity DisciplineAction [553]
     bool IEPPlacementMeetingIndicator [2708]
         documentation "An indication as to whether an offense and/or disciplinary action resulted in a meeting of a student's Individualized Education Program (IEP) team to determine appropriate placement."
         is optional
+    association StudentDisciplineIncidentBehaviorAssociation [3074]
+        documentation "A reference to the behavior(s) by the student that led or contributed to this specific action."
+        is optional collection
+        merge StudentDisciplineIncidentBehaviorAssociation.Student with Student

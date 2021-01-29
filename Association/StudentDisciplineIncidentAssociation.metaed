@@ -1,11 +1,12 @@
 Association StudentDisciplineIncidentAssociation [607]
+    deprecated "Users of this element are advised to use StudentDisciplineIncidentBehaviorAssociation or StudentDisciplineIncidentNonOffenderAssociation instead. Expect removal of this element in a future release."
     documentation "This association indicates those students who were victims, perpetrators, witnesses, and reporters for a discipline incident."
     domain entity Student [1072]
         documentation "Relates the Student associated with the DisciplineIncident."
     domain entity DisciplineIncident [1070]
         documentation "Reference to the DisciplineIncident associated with the Student."
     descriptor StudentParticipationCode [1071]
-        documentation "The role or type of participation of a student in a discipline incident; 
+        documentation "The role or type of participation of a student in a discipline incident;
         for example:
         Victim
         Perpetrator

@@ -1,0 +1,16 @@
+Association StudentDisciplineIncidentBehaviorAssociation [3066]
+    documentation "This association describes the behavior of students involved in a discipline incident."
+    domain entity Student [3067]
+        documentation "Relates the Student associated with the DisciplineIncident."
+    domain entity DisciplineIncident [3068]
+        documentation "Reference to the DisciplineIncident associated with the Student."
+    descriptor Behavior [3069]
+        documentation "Describes behavior by category."
+        is part of identity
+    shared string Description [3070]
+        documentation "Specifies a more granular level of detail of a behavior involved in the incident."
+        is optional
+        role name BehaviorDetailed
+    descriptor DisciplineIncidentParticipationCode [3089]
+        documentation "The role or type of participation of a student in a discipline incident."
+        is optional collection
