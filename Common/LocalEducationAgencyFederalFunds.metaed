@@ -1,7 +1,7 @@
 Common LocalEducationAgencyFederalFunds [515]
     documentation "Contains the information about the reception and use of federal funds for reporting purposes."
     integer FiscalYear [862]
-        documentation "The school year for which the accountability is reported."
+        documentation "The fiscal year for which the federal funds are received."
         is part of identity
     currency InnovativeDollarsSpent [863]
         documentation "The total Title V, Part A funds expended by LEAs."
