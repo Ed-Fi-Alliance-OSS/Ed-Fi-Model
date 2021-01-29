@@ -58,7 +58,7 @@ Domain Entity StudentAcademicRecord [586]
         documentation "Identifies the student who is associated with the StudentAcademicRecord."
         is part of identity
     domain entity EducationOrganization [1714]
-        documentation "Provides user information to lookup and link to an existing educational organization record."
+        documentation "The education organization that granted the credits or other achievements on the student academic record, generally a school district."
         is part of identity
     enumeration SchoolYear [1719]
         documentation "The identifier for the school year."
