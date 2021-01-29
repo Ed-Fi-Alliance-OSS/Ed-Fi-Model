@@ -1,5 +1,5 @@
 Common StudentCharacteristic [531]
-    documentation "Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth."
+    documentation "Reflects important characteristics of a student. If a student has a characteristic present, that characteristic is considered true or active for that student. If a characteristic is not present, no assumption is made as to the applicability of the characteristic, but local policy may dictate otherwise."
     descriptor StudentCharacteristic [936]
         documentation "The characteristic designated for the Student."
         is part of identity

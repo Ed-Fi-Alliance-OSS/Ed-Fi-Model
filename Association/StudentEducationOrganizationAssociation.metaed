@@ -48,8 +48,7 @@ Association StudentEducationOrganizationAssociation [3052]
         documentation "An American Indian tribe with which the student is affiliated as last reported to the education organization."
         is optional collection
     common StudentCharacteristic [1702]
-        documentation "Reflects important characteristics of the student's home situation:
-        Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth."
+        documentation "Reflects important characteristics of a student. If a student has a characteristic present, that characteristic is considered true or active for that student. If a characteristic is not present, no assumption is made as to the applicability of the characteristic, but local policy may dictate otherwise."
         is optional collection
     descriptor LimitedEnglishProficiency [1692]
         documentation "An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient."
