@@ -5,8 +5,7 @@ Association StudentParentAssociation [611]
     domain entity Parent [1099]
         documentation "The Parent associated with the Student."
     descriptor Relation [1101]
-        documentation "The nature of an individual's relationship to a student; for example:
-        Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian, etc."
+        documentation "The nature of an individual's relationship to a student, primarily used to capture family relationships."
         is optional
     bool PrimaryContactStatus [1100]
         documentation "Indicator of whether the person is a primary parental contact for the Student."
@@ -22,4 +21,7 @@ Association StudentParentAssociation [611]
         is optional
     shared string ContactRestrictions [1096]
         documentation "Restrictions for student and/or teacher contact with the individual (e.g., the student may not be picked up by the individual)."
+        is optional
+    bool LegalGuardian [3065]
+        documentation "Indicator of whether the person is a legal guardian for the Student."
         is optional
