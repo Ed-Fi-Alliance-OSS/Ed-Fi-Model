@@ -1,0 +1,12 @@
+Domain Entity OrganizationDepartment based on EducationOrganization [3075]
+    documentation "An organizational unit of another education organization, often devoted to a particular academic discipline, area of study, or organization function."
+    integer OrganizationDepartmentId [3076]
+       documentation "The unique identification code for the OrganizationDepartment."
+       renames identity property EducationOrganizationId
+    descriptor AcademicSubject [3077]
+        documentation "The intended major subject area of the department."
+        is optional
+    domain entity EducationOrganization [3078]
+        documentation "Relates the OrganizationDepartment to an EducationOrganization it is an organizational unit of."
+        is optional
+        role name Parent
