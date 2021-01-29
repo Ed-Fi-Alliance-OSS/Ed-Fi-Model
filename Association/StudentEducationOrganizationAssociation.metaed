@@ -73,3 +73,6 @@ Association StudentEducationOrganizationAssociation [3052]
     shared string IdentificationCode named LoginId [1693]
         documentation "The login ID for the user; used for security access control interface."
         is optional
+    descriptor AncestryEthnicOrigin [3080]
+        documentation "The original peoples or cultures with which the individual identifies."
+        is optional collection
