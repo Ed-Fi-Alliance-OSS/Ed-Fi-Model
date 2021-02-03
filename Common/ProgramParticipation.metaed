@@ -1,4 +1,5 @@
 Common ProgramParticipation [522]
+    deprecated "Users of this element are advised to use ProgramParticipationStatus instead. Expect removal of this element in a future release."
     documentation "Programs the student is participating in or receiving services from."
     descriptor ProgramType [904]
         documentation "The type of program."
