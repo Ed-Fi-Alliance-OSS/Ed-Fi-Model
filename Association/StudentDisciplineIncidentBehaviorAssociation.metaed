@@ -11,6 +11,6 @@ Association StudentDisciplineIncidentBehaviorAssociation [3066]
         documentation "Specifies a more granular level of detail of a behavior involved in the incident."
         is optional
         role name BehaviorDetailed
-    descriptor DisciplineIncidentParticipationCode [3089]
+    descriptor DisciplineIncidentParticipationCode [3097]
         documentation "The role or type of participation of a student in a discipline incident."
         is optional collection
