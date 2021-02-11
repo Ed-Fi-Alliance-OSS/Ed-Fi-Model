@@ -98,3 +98,6 @@ Domain Entity Staff [583]
     domain entity Person [2946]
         documentation "Relates the staff to a generic person."
         is optional
+    descriptor AncestryEthnicOrigin [3095]
+        documentation "The original peoples or cultures with which the individual identifies."
+        is optional collection
