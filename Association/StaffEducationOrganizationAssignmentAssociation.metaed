@@ -27,3 +27,6 @@ Association StaffEducationOrganizationAssignmentAssociation [600]
     domain entity Credential [2645]
         documentation "Reference to the Credential that is the basis for this assignment."
         is optional
+    shared decimal FullTimeEquivalency [3100]
+        documentation "The ratio between the hours of work expected in a position and the hours of work normally expected in a full-time position in the same setting."
+        is optional

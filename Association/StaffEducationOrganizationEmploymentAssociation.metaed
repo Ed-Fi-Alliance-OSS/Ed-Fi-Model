@@ -19,7 +19,7 @@ Association StaffEducationOrganizationEmploymentAssociation [601]
     shared string Department [1028]
         documentation "The department or suborganization the employee/contractor is associated with in the EducationOrganization."
         is optional
-    percent FullTimeEquivalency [1032]
+    shared decimal FullTimeEquivalency [1032]
         documentation "The ratio between the hours of work expected in a position and the hours of work normally expected in a full-time position in the same setting."
         is optional
     date OfferDate [1034]
