@@ -1,5 +1,5 @@
 Association StaffEducationOrganizationAssignmentAssociation [600]
-    documentation "This association indicates the education organization to which a staff member provides services; also known as school of service."
+    documentation "This association indicates the education organization to which a staff member provides services."
     domain entity Staff [1027]
         documentation "The Staff assigned to the EducationOrganization."
     domain entity EducationOrganization [1021]
@@ -11,10 +11,10 @@ Association StaffEducationOrganizationAssignmentAssociation [600]
         documentation "The descriptive name of an individual's position."
         is optional
     date BeginDate [1020]
-        documentation "Month, day, and year of the start or effective date of a staff member's employment, contract, or relationship with the LEA."
+        documentation "Month, day, and year of the start or effective date of a staff member's employment, contract, or relationship with the education organization."
         is part of identity
     date EndDate [1022]
-        documentation "Month, day, and year of the end or termination date of a staff member's employment, contract, or relationship with the LEA."
+        documentation "Month, day, and year of the end or termination date of a staff member's employment, contract, or relationship with the education organization."
         is optional
     integer OrderOfAssignment [1023]
         documentation "Describes whether the assignment is this the staff member's primary assignment, secondary assignment, etc."
