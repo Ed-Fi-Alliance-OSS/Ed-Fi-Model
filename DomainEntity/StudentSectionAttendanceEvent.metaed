@@ -18,3 +18,7 @@ Domain Entity StudentSectionAttendanceEvent [594]
     time DepartureTime [2916]
         documentation "The time of day the student departed for the attendance event in ISO 8601 format."
         is optional
+    domain entity ClassPeriod [3098]
+        documentation "The Class Period(s) to which the Section Attendance Event applies."
+        is optional collection
+        merge ClassPeriod.School with Section.CourseOffering.Session.School
