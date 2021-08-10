@@ -54,9 +54,13 @@ Domain Entity CourseTranscript [552]
         is optional
         role name Alternative
     domain entity EducationOrganization [2615]
-        documentation "Optional association between CourseTranscript and ExternalEdOrg is designed to capture cases in which the student takes a course via an ExternalEducationOrganization (like an enrolled student taking a Khan Academy course)."
+        documentation "The external institution where the student completed the course (e.g., the original education organization for a transferred course transcript, or the provider for an online course)."
         is optional
         role name External
+    shared string NameOfInstitution [3099]
+        documentation "Name of the external institution where the student completed the course; to be used only when the reference ExternalEducationOrganization is not available."
+        is optional
+        role name ExternalEducationOrganization
     common CourseIdentificationCode [2925]
         documentation "The code that identifies the course, course offering, the code from an external educational organization, or other alternate course code."
         is optional collection
