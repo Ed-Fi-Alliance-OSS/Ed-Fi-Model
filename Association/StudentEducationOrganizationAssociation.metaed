@@ -75,3 +75,24 @@ Association StudentEducationOrganizationAssociation [3052]
     descriptor AncestryEthnicOrigin [3080]
         documentation "The original peoples or cultures with which the individual identifies."
         is optional collection
+    descriptor PrimaryLearningDeviceAwayFromSchool [3107]
+        documentation "The type of device the student uses most often to complete learning activities away from school."
+        is optional
+    descriptor PrimaryLearningDeviceAccess [3108]
+        documentation "An indication of whether the primary learning device is shared or not shared with another individual."
+        is optional
+    descriptor PrimaryLearningDeviceProvider [3109]
+        documentation "The provider of the primary learning device."
+        is optional
+    bool InternetAccessInResidence [3110]
+        documentation "An indication of whether the student is able to access the internet in their primary place of residence."
+        is optional
+    descriptor BarrierToInternetAccessInResidence [3111]
+        documentation "An indication of the barrier to having internet access in the student’s primary place of residence."
+        is optional
+    descriptor InternetAccessTypeInResidence [3112]
+        documentation "The primary type of internet service used in the student’s primary place of residence."
+        is optional
+    descriptor InternetPerformanceInResidence [3113]
+        documentation "An indication of whether the student can complete the full range of learning activities, including video streaming and assignment upload, without interruptions caused by poor internet performance in their primary place of residence."
+        is optional
