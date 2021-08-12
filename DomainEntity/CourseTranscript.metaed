@@ -78,3 +78,6 @@ Domain Entity CourseTranscript [552]
     descriptor AcademicSubject [2934]
         documentation "The subject area for the course transcript credits awarded in the course transcript."
         is optional collection
+    common PartialCourseTranscriptAwards [3120]
+        documentation "A collection of partial credits and/or grades a student earned against the course over the session, used when awards of credit are incremental."
+        is optional collection
