@@ -1,7 +1,7 @@
 Inline Common Name [517]
-    documentation "The set of elements that comprise a person's legal name."
+    documentation "The set of elements that comprise an individual's legal name."
     shared string PersonalTitlePrefix [881]
-        documentation "A prefix used to denote the title, degree, position, or seniority of the person."
+        documentation "A prefix used to denote the title, degree, position, or seniority of the individual."
         is optional
     shared string FirstName [876]
         documentation "A name given to an individual at birth, baptism, or during another naming ceremony, or through legal change."
@@ -16,7 +16,7 @@ Inline Common Name [517]
         documentation "An appendage, if any, used to denote an individual's generation in his family (e.g., Jr., Sr., III)."
         is optional
     shared string LastSurname named MaidenName [879]
-        documentation "The person's maiden name."
+        documentation "The individual's maiden name."
         is optional
     common IdentificationDocument [891]
         documentation "The documents presented as evident to verify one's personal identity; for example: drivers license, passport, birth certificate, etc."

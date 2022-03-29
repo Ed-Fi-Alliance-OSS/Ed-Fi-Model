@@ -1,5 +1,5 @@
 Common Telephone [535]
-    documentation "The 10-digit telephone number, including the area code, for the person."
+    documentation "The 10-digit telephone number, including the area code, of an individual or organization."
     shared string TelephoneNumber [949]
         documentation "The telephone number including the area code, and extension, if applicable."
         is part of identity

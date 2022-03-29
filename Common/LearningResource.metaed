@@ -39,7 +39,7 @@ Inline Common LearningResource [2514]
         is optional collection
         role name Appropriate
     descriptor GradeLevel [1361]
-        documentation "Grade levels for which this education content is applicable-if omitted, considered generally applicable."
+        documentation "Grade levels for which this education content is applicable. If omitted, considered generally applicable."
         is optional collection
         role name Appropriate
     descriptor Language [1371]

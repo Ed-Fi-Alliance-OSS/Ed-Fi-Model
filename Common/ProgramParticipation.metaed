@@ -5,13 +5,13 @@ Common ProgramParticipation [522]
         documentation "The type of program."
         is part of identity
     descriptor ProgramCharacteristic [903]
-        documentation "Reflects important characteristics of the Program, such as categories or particular indications."
+        documentation "Reflects important characteristics of the program, such as categories or particular indications."
         is optional collection
     date BeginDate [900]
-        documentation "The date the Student was associated with the Program or service."
+        documentation "The date the student was associated with the program or service."
         is optional
     date EndDate [902]
-        documentation "The date the Program participation ended."
+        documentation "The date the program participation ended."
         is optional
     shared string DesignatedBy [901]
         documentation "The person, organization, or department that designated the program association."

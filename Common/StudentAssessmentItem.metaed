@@ -4,31 +4,22 @@ Common StudentAssessmentItem [530]
         documentation "A student's response to a stimulus on a test."
         is optional
     shared string Description named DescriptiveFeedback [929]
-        documentation "The formative descriptive feedback that was given to a learner in response to the results from a scored/evaluated assessment item."
+        documentation "The formative descriptive feedback that was given to a student in response to the results from a scored/evaluated assessment item."
         is optional
     descriptor ResponseIndicator [931]
-        documentation "Indicator of the response. For example:
-        Nonscorable response
-        Ineffective response
-        Effective response
-        Partial response
-        ..."
+        documentation "Indicator of the response."
         is optional
     descriptor AssessmentItemResult [927]
-        documentation "The analyzed result of a student's response to an assessment item. For example:
-        Correct
-        Incorrect
-         Met standard
-        ..."
+        documentation "The analyzed result of a student's response to an assessment item."
         is required
     decimal RawScoreResult [930]
-        documentation "A meaningful raw score of the performance of an individual on an assessment item."
+        documentation "A meaningful raw score of the performance of a student on an assessment item."
         is optional
         total digits 15
         decimal places 5
     duration TimeAssessed [932]
-        documentation "The overall time a student actually spent during the AssessmentItem."
+        documentation "The overall time a student actually spent during the assessment item."
         is optional
     domain entity AssessmentItem [926]
-        documentation "The AssessmentItem responded to by the Student."
+        documentation "The assessment item responded to by the student."
         is part of identity

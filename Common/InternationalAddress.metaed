@@ -25,8 +25,8 @@ Common InternationalAddress [509]
         documentation "The geographic longitude of the physical address."
         is optional
     date BeginDate [842]
-        documentation "The first date the address is valid. For physical addresses, the date the person moved to that address."
+        documentation "The first date the address is valid. For physical addresses, the date the individual moved to that address."
         is optional
     date EndDate [844]
-        documentation "The last date the address is valid. For physical addresses, this would be the date the person moved from that address."
+        documentation "The last date the address is valid. For physical addresses, the date the individual moved from that address."
         is optional
