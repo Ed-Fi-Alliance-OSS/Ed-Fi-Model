@@ -1,7 +1,7 @@
 Domain Entity Program [576]
     documentation "This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students."
     domain entity EducationOrganization [1573]
-        documentation "Relates the program to an EducationOrganization."
+        documentation "Relates the program to an education organization."
         is part of identity
         is queryable field
     shared string ProgramId [1577]
@@ -9,7 +9,7 @@ Domain Entity Program [576]
         is optional
         is queryable field
     shared string ProgramName [1578]
-        documentation "The formal name of the Program of instruction, training, services, or benefits available through federal, state, or local agencies."
+        documentation "The formal name of the program of instruction, training, services, or benefits available through federal, state, or local agencies."
         is part of identity
         is queryable field
     descriptor ProgramType [1580]
@@ -17,7 +17,7 @@ Domain Entity Program [576]
         is part of identity
         is queryable field
     descriptor ProgramCharacteristic [1576]
-        documentation "Reflects important characteristics of the Program, such as categories or particular indications."
+        documentation "Reflects important characteristics of the program, such as categories or particular indications."
         is optional collection
     descriptor ProgramSponsor [1579]
         documentation "Ultimate and intermediate providers of funds for a particular educational or service program or activity, or for an individual's participation in the program or activity (e.g., Federal, State, ESC, District, School, Private Organization)."
@@ -28,8 +28,8 @@ Domain Entity Program [576]
         is optional collection
     domain entity LearningObjective [1574]
         deprecated "Users of this element are advised to use LearningStandard instead. Expect removal of this element in a future release."
-        documentation "References the LearningObjective(s) with which the Program is associated."
+        documentation "References the learning objective(s) with which the program is associated."
         is optional collection
     domain entity LearningStandard [1575]
-        documentation "LearningStandard followed by this program."
+        documentation "Learning standard followed by this program."
         is optional collection

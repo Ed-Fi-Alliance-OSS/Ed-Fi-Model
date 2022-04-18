@@ -1,7 +1,7 @@
 Association StudentInterventionAssociation [609]
     documentation "This association indicates the students participating in an intervention."
     domain entity Student [1080]
-        documentation "Relates the Student associated with the Intervention."
+        documentation "Relates the student associated with the intervention."
     domain entity Intervention [1079]
         documentation "An implementation of an instructional approach focusing on the specific techniques and materials used to teach a given subject."
     domain entity Cohort [1076]

@@ -20,32 +20,13 @@ Domain Entity StudentAssessment [587]
         documentation "The environment in which the test was administered."
         is optional
     descriptor Accommodation [1726]
-        documentation "The specific type of special variation used in how an examination is presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examination measures. The proper use of accommodations does not substantially change academic level or performance criteria. For example:
-        Braille
-        Enlarged monitor view
-        Extra time
-        Large Print
-        Setting
-        Oral Administration
-        ..."
+        documentation "The specific type of special variation used in how an examination is presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examination measures. The proper use of accommodations does not substantially change academic level or performance criteria."
         is optional collection
     descriptor RetestIndicator [1736]
-        documentation "Indicator if the test was retaken. For example:
-        Primary administration
-        First retest
-        Second retest
-        ..."
+        documentation "Indicator if the test was a retake."
         is optional
     descriptor ReasonNotTested [1735]
-        documentation "The primary reason student is not tested. For example:
-        Absent
-        Refusal by parent
-        Refusal by student
-        Medical waiver
-        Illness
-        Disruptive behavior
-        LEP Exempt
-        ..."
+        documentation "The primary reason student is not tested."
         is optional
     common ScoreResult [1737]
         documentation "A meaningful score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
@@ -55,7 +36,7 @@ Domain Entity StudentAssessment [587]
         is optional
         role name WhenAssessed
     common PerformanceLevel [1734]
-        documentation "The performance level(s) achieved for the StudentAssessment."
+        documentation "The performance level(s) achieved for the student assessment."
         is optional collection
     descriptor EventCircumstance [1732]
         documentation "An unusual event occurred during the administration of the assessment. This could include fire alarm, student became ill, etc."
@@ -65,17 +46,17 @@ Domain Entity StudentAssessment [587]
         is optional
         role name Event
     domain entity Student [1741]
-        documentation "Reference to the Student associated with the Assessment."
+        documentation "Reference to the student associated with the assessment."
         is part of identity
     domain entity Assessment [1731]
-        documentation "Reference to the Assessment taken by the student."
+        documentation "Reference to the assessment taken by the student."
         is part of identity
     common StudentAssessmentItem [1739]
         documentation "The student's response to an assessment item and the item-level scores such as correct, incorrect, or met standard."
         is optional collection
         merge StudentAssessmentItem.AssessmentItem.Assessment with Assessment
     common StudentObjectiveAssessment [1740]
-        documentation "The student's score and/or performance levels earned for an ObjectiveAssessment."
+        documentation "The student's score and/or performance levels earned for an objective assessment."
         is optional collection
 		merge StudentObjectiveAssessment.ObjectiveAssessment.Assessment with Assessment
     enumeration SchoolYear [2538]

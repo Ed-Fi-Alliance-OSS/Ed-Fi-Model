@@ -30,7 +30,7 @@ Domain Entity Course [550]
         is optional
         role name Course
     shared integer Duration named TimeRequiredForCompletion [1310]
-        documentation "The actual or estimated number of clock minutes required for class completion.  This number is especially important for career and technical education classes and may represent (in minutes) the clock hour requirement of the class."
+        documentation "The actual or estimated number of clock minutes required for class completion. This number is especially important for career and technical education classes and may represent (in minutes) the clock hour requirement of the class."
         is optional
     date DateCourseAdopted [1301]
         documentation "Date the course was adopted by the education agency."
@@ -39,7 +39,7 @@ Domain Entity Course [550]
         documentation "An indication that this course may satisfy high school graduation requirements in the course's subject area."
         is optional
     descriptor CourseGPAApplicability [1297]
-        documentation "An indicator of whether or not the course being described is included in the computation of the student's Grade Point Average, and if so, if it is weighted differently from regular courses."
+        documentation "An indicator of whether or not the course being described is included in the computation of the student's grade point average, and if so, if it is weighted differently from regular courses."
         is optional
     descriptor CourseDefinedBy [1295]
         documentation "Specifies whether the course was defined by the SEA, LEA, School, or national organization."
@@ -59,15 +59,15 @@ Domain Entity Course [550]
         documentation "The competency levels defined to rate the student for the course."
         is optional collection
     domain entity EducationOrganization [1302]
-        documentation "The Education Organization that defines the curriculum and courses offered - often the LEA or school."
+        documentation "The education organization that defines the curriculum and courses offered - often the LEA or school."
         is part of identity
         is queryable field
     domain entity LearningStandard [1306]
-        documentation "Learning Standard(s) to be taught by the course."
+        documentation "Learning standard(s) to be taught by the course."
         is optional collection
     domain entity LearningObjective [1305]
         deprecated "Users of this element are advised to use LearningStandard instead. Expect removal of this element in a future release."
-        documentation "Learning Objectives to be mastered in the course."
+        documentation "Learning objectives to be mastered in the course."
         is optional collection
     shared integer MaxCompletionsForCredit [2546]
         documentation "Designates how many times the course may be taken with credit received by the student."

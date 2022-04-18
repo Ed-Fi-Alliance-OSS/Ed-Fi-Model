@@ -10,15 +10,15 @@ Domain Entity StudentGradebookEntry [589]
         documentation "A final or interim (grading period) indicator of student performance in a class as submitted by the instructor."
         is optional
     descriptor CompetencyLevel [1750]
-        documentation "The CompetencyLevel assessed for the student for the referenced LearningObjective."
+        documentation "The competency level assessed for the student for the referenced learning objective."
         is optional
     shared string DiagnosticStatement [1752]
         documentation "A statement provided by the teacher that provides information in addition to the grade or assessment score."
         is optional
     association StudentSectionAssociation [1756]
-        documentation "Relates the student associated with the GradebookEntry."
+        documentation "Relates the student associated with the gradebook entry."
         is part of identity
     domain entity GradebookEntry [1753]
-        documentation "The GradebookEntry associated with the student grade or score."
+        documentation "The gradebook entry associated with the student grade or score."
         is part of identity
         merge GradebookEntry.Section with StudentSectionAssociation.Section

@@ -4,11 +4,11 @@ Domain Entity PostSecondaryEvent [575]
         documentation "The date the event occurred or was recorded."
         is part of identity
     descriptor PostSecondaryEventCategory [1570]
-        documentation "The PostSecondaryEvent that is logged (e.g., FAFSA application, college application, college acceptance)."
+        documentation "The post secondary event that is logged."
         is part of identity
     domain entity PostSecondaryInstitution [1571]
         documentation "An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s)."
         is optional
     domain entity Student [1572]
-        documentation "The student associated with the PostSecondaryEvent."
+        documentation "The student associated with the post secondary event."
         is part of identity

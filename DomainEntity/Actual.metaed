@@ -7,5 +7,5 @@ Domain Entity Actual [539]
         documentation "The date of the reported actual element."
         is part of identity
     domain entity Account [1216]
-        documentation "Account with which the Actual is associated."
+        documentation "Account with which the actual is associated."
         is part of identity

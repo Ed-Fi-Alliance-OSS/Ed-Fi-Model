@@ -7,7 +7,7 @@ Domain Entity StaffLeave [568]
         documentation "The end date of the staff leave."
         is optional
     descriptor StaffLeaveEventCategory [1508]
-        documentation "The code describing the type of leave taken, for example: Sick, Personal, Vacation."
+        documentation "The code describing the type of leave taken."
         is part of identity
     shared string Reason [1509]
         documentation "Expanded reason for the staff leave."

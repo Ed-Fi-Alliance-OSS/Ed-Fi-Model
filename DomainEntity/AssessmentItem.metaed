@@ -4,11 +4,7 @@ Domain Entity AssessmentItem [542]
         documentation "A unique number or alphanumeric code assigned to a space, room, site, building, individual, organization, program, or institution by a school, school system, state, or other agency or entity."
         is part of identity
     descriptor AssessmentItemCategory [1254]
-        documentation "Category or type of the AssessmentItem. For example:
-        Multiple choice
-        Analytic
-        Prose
-        ..."
+        documentation "Category or type of the assessment item."
         is optional
     decimal MaxRawScore [1260]
         documentation "The maximum raw score achievable across all assessment items that are correct and scored at the maximum."
@@ -23,19 +19,19 @@ Domain Entity AssessmentItem [542]
         is optional collection
     shared string CorrectResponse [1256]
         deprecated "Users of this element are advised to use PossibleResponse.CorrectResponse instead, which supports capture of all or a subset of all possible responses to an assessment item. Expect removal of this element in a future release."
-        documentation "The correct response for the AssessmentItem."
+        documentation "The correct response for the assessment item."
         is optional
     duration ExpectedTimeAssessed [1257]
-        documentation "The duration of time allotted for the AssessmentItem."
+        documentation "The duration of time allotted for the assessment item."
         is optional
     shared string Nomenclature [1261]
-        documentation "Reflects the specific nomenclature used for AssessmentItem."
+        documentation "Reflects the specific nomenclature used for assessment item."
         is optional
     domain entity LearningStandard [1259]
-        documentation "LearningStandard tested by this item."
+        documentation "Learning standard tested by this item."
         is optional collection
     domain entity Assessment [1255]
-        documentation "Relates the AssessmentItem to an existing assessment."
+        documentation "Relates the assessment item to an existing assessment."
         is part of identity
     shared string URI named AssessmentItemURI [2537]
         documentation "The URI (typical a URL) pointing to the entry in an assessment item bank, which describes this content item."

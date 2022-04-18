@@ -7,5 +7,5 @@ Domain Entity Budget [544]
         documentation "The date of the reported budget element."
         is part of identity
     domain entity Account [1267]
-        documentation "Account with which the Budget is associated."
+        documentation "Account with which the budget is associated."
         is part of identity

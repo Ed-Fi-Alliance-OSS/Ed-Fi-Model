@@ -1,18 +1,18 @@
 Domain Entity ReportCard [577]
     documentation "This educational entity represents the collection of student grades for courses taken during a grading period."
     domain entity Grade [1585]
-        documentation "Grades for the classes attended by the Student for this grading period."
+        documentation "Grades for the classes attended by the student for this grading period."
         is optional collection
         merge Grade.GradingPeriod with GradingPeriod
         merge Grade.StudentSectionAssociation.Student with Student
     domain entity StudentCompetencyObjective [1590]
-        documentation "The Student competency evaluations associated for this grading period."
+        documentation "The student competency evaluations associated for this grading period."
         is optional collection
         merge StudentCompetencyObjective.GradingPeriod with GradingPeriod
         merge StudentCompetencyObjective.Student with Student
     domain entity StudentLearningObjective [1591]
         deprecated "Users of this element are advised to use ReportCard.Grade.LearningStandardGrade instead. Expect removal of this element in a future release."
-        documentation "The StudentLearningObjective evaluations associated for this grading period."
+        documentation "The student learning objective evaluations associated for this grading period."
         is optional collection
         merge StudentLearningObjective.GradingPeriod with GradingPeriod
         merge StudentLearningObjective.Student with Student
@@ -37,10 +37,10 @@ Domain Entity ReportCard [577]
         documentation "The number of days an individual is tardy during a given reporting period."
         is optional
     domain entity Student [1592]
-        documentation "Identifies the student that is associated with the ReportCard."
+        documentation "Identifies the student that is associated with the report card."
         is part of identity
     domain entity EducationOrganization [1582]
-        documentation "Identifies the EducationOrganization that issued the ReportCard."
+        documentation "Identifies the education organization that issued the report card."
         is part of identity
     domain entity GradingPeriod [1586]
         documentation "Identifies the grading period for this report card."

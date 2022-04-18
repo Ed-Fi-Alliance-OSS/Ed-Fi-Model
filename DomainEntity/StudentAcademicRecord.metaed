@@ -18,7 +18,7 @@ Domain Entity StudentAcademicRecord [586]
         is optional
     shared string GradeValueQualifier [1715]
         deprecated "This element is rarely used and in many cases would not permit full capture of the semantics of GPA calculations without access to significant external information that would be ambiguous to try to capture in this field. Expect removal of this element in a future release."
-        documentation "The scale of equivalents, if applicable, for grades awarded as indicators of performance in schoolwork. For example, numerical equivalents for letter grades used in determining a student's Grade Point Average (A=4, B=3, C=2, D=1 in a four-point system) or letter equivalents for percentage grades (90-100%=A, 80-90%=B, etc.)"
+        documentation "The scale of equivalents, if applicable, for grades awarded as indicators of performance in schoolwork. For example, numerical equivalents for letter grades used in determining a student's grade point average (A=4, B=3, C=2, D=1 in a four-point system) or letter equivalents for percentage grades (90-100%=A, 80-90%=B, etc.)."
         is optional
     common ClassRanking [1708]
         documentation "The academic rank information of a student in relation to his or her graduating class."
@@ -45,7 +45,7 @@ Domain Entity StudentAcademicRecord [586]
         documentation "The number of grade points an individual earned for this session."
         is optional
     shared decimal GPA named SessionGradePointAverage [1722]
-        deprecated "Users of this element are advised to use GradePointAverage instead, which supports capture of multiple (e.g., weighted, unweighted) GPAs. Expect removal of this element in a future release."
+        deprecated "Users of this element are advised to use grade point average instead, which supports capture of multiple (e.g., weighted, unweighted) GPAs. Expect removal of this element in a future release."
         documentation "The grade point average for an individual computed as the grade points earned during the session divided by the number of credits attempted."
         is optional
     common GradePointAverage [2866]
@@ -55,7 +55,7 @@ Domain Entity StudentAcademicRecord [586]
         documentation "Diploma(s) earned by the student."
         is optional collection
     domain entity Student [1724]
-        documentation "Identifies the student who is associated with the StudentAcademicRecord."
+        documentation "Identifies the student who is associated with the student academic record."
         is part of identity
     domain entity EducationOrganization [1714]
         documentation "The education organization that granted the credits or other achievements on the student academic record, generally a school district."

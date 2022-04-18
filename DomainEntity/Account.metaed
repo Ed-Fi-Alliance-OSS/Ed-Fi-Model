@@ -12,7 +12,7 @@ Domain Entity Account [537]
         documentation "The financial accounting year."
         is part of identity
     domain entity EducationOrganization [1207]
-        documentation "Relates the account to an Education Organization."
+        documentation "Relates the account to an education organization."
         is part of identity
     shared string AccountName [2831]
         documentation "A descriptive name for the account."

@@ -4,19 +4,13 @@ Domain Entity Assessment [540]
         documentation "A unique number or alphanumeric code assigned to an assessment."
         is part of identity
     shared string AssessmentTitle [1228]
-        documentation "The title or name of the Assessment."
+        documentation "The title or name of the assessment."
         is required
     common AssessmentIdentificationCode [1224]
         documentation "A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity."
         is optional collection
     descriptor AssessmentCategory [1221]
-        documentation "The category of an assessment based on format and content. For example:
-        Achievement test
-        Advanced placement test
-        Alternate assessment/grade-level standards
-        Attitudinal test
-        Cognitive and perceptual skills test
-        ..."
+        documentation "The category of an assessment based on format and content."
         is optional
     descriptor AcademicSubject [1219]
         documentation "The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment."
@@ -55,22 +49,22 @@ Domain Entity Assessment [540]
         total digits 15
         decimal places 5
     shared string Nomenclature [1236]
-        documentation "Reflects the specific nomenclature used for Assessment."
+        documentation "Reflects the specific nomenclature used for assessment."
         is optional
     common AssessmentPeriod [1226]
         documentation "The period or window in which an assessment is supposed to be administered."
         is optional
     shared string AssessmentFamily named AssessmentFamily [2544]
-        documentation "The AssessmentFamily this Assessment is a member of."
+        documentation "The assessment family this assessment is a member of."
         is optional
     choice SectionOrProgramChoice [2509]
-        documentation "The Section(s) to which the Assessment is associated."
+        documentation "The section(s) to which the assessment is associated."
         is optional
     shared string URI named Namespace [2300]
-        documentation "Namespace for the Assessment."
+        documentation "Namespace for the assessment."
         is part of identity
     domain entity EducationOrganization [2704]
-        documentation "The EducationOrganization for which the assessment was developed and in which it was employed."
+        documentation "The education organization for which the assessment was developed and in which it was employed."
         is optional
     bool AdaptiveAssessment [2705]
         documentation "Indicates that the assessment is adaptive."

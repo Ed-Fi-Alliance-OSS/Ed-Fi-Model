@@ -30,11 +30,11 @@ Abstract Entity EducationOrganization [556]
         documentation "The 10-digit telephone number, including the area code, for the education entity."
         is optional collection
     shared string URI named WebSite [1390]
-        documentation "The public web site address (URL) for the EducationOrganization."
+        documentation "The public web site address (URL) for the education organization."
         is optional
     descriptor OperationalStatus [1387]
-        documentation "The current operational status of the EducationOrganization (e.g., active, inactive)."
+        documentation "The current operational status of the education organization (e.g., active, inactive)."
         is optional
     common EducationOrganizationIndicator [3050]
-        documentation "An indicator or metric of an Education Organization."
+        documentation "An indicator or metric of an education organization."
         is optional collection

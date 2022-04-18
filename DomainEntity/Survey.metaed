@@ -4,10 +4,10 @@ Domain Entity Survey [3000]
         documentation "The unique survey identifier from the survey tool."
         is part of identity
     shared string URI named Namespace [3002]
-        documentation "Namespace for the Survey."
+        documentation "Namespace for the survey."
         is part of identity
     domain entity EducationOrganization [3003]
-        documentation "The Education Organization associated with the survey."
+        documentation "The education organization associated with the survey."
         is optional
     shared string SurveyTitle [3004]
         documentation "The title of the survey."

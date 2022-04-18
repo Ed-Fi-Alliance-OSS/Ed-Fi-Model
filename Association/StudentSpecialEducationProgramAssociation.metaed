@@ -7,7 +7,7 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
         documentation "The major instructional setting (more than 50 percent of a student's special education program)."
         is optional
     common ServiceProvider [1150]
-        documentation "The Staff providing special education services to the Student."
+        documentation "The staff providing special education services to the student."
         is optional collection
     shared decimal HoursPerWeek named SpecialEducationHoursPerWeek [1151]
         documentation "The number of hours per week for special education instruction and therapy."
@@ -16,7 +16,7 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
         documentation "Indicate the total number of hours of instructional time per week for the school that the student attends."
         is optional
     bool MultiplyDisabled [1144]
-        documentation "Indicates whether the Student receiving special education and related services has been designated as multiply disabled by the admission, review, and dismissal committee as aligned with federal requirements."
+        documentation "Indicates whether the student receiving special education and related services has been designated as multiply disabled by the admission, review, and dismissal committee as aligned with federal requirements."
         is optional
     bool MedicallyFragile [1143]
         documentation "Indicates whether the Student receiving special education and related services is:
@@ -42,5 +42,5 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
         documentation "The disability condition(s) that best describes an individual's impairment, as related to special education services received."
         is optional collection
     common SpecialEducationProgramService [2808]
-        documentation "Indicates the Service(s) being provided to the Student by the Special Education Program."
+        documentation "Indicates the service(s) being provided to the student by the special education program."
         is optional collection

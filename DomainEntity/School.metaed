@@ -8,7 +8,7 @@ Domain Entity School based on EducationOrganization [579]
         documentation "The grade levels served at the school."
         is required collection
     descriptor SchoolCategory [1613]
-        documentation "The one or more categories of school. For example: High School, Middle School, and/or Elementary School."
+        documentation "The one or more categories of school."
         is optional collection
     descriptor SchoolType [1615]
         documentation "The type of education institution as classified by its primary focus."

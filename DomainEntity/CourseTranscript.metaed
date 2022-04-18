@@ -1,11 +1,7 @@
 Domain Entity CourseTranscript [552]
     documentation "This entity is the final record of a student's performance in their courses at the end of a semester or school year."
     descriptor CourseAttemptResult [1319]
-        documentation "The result from the student's attempt to take the course, for example:
-        Pass
-        Fail
-        Incomplete
-        Withdrawn."
+        documentation "The result from the student's attempt to take the course."
         is part of identity
     inline common Credits [1318]
         documentation "The number of credits a student attempted and could earn for successfully completing a given course."
@@ -16,7 +12,7 @@ Domain Entity CourseTranscript [552]
         is required
         role name Earned
     common AdditionalCredits [1323]
-        documentation "The number of additional credits a student attempted and could earn for successfully completing a given course (e.g., dual credit, AP, IB)."
+        documentation "The number of additional credits a student attempted and could earn for successfully completing a given course."
         is optional collection
         role name Earned
     descriptor GradeLevel [1328]
@@ -24,7 +20,7 @@ Domain Entity CourseTranscript [552]
         is optional
         role name WhenTaken
     descriptor MethodCreditEarned [1331]
-        documentation "The method the credits were earned (e.g., Classroom, Examination, Transfer)."
+        documentation "The method the credits were earned."
         is optional
     shared string GradeEarned named FinalLetterGradeEarned [1326]
         documentation "The final indicator of student performance in a class as submitted by the instructor."
@@ -49,7 +45,7 @@ Domain Entity CourseTranscript [552]
         documentation "The descriptive name given to a course of study offered in the school, if different from the CourseTitle."
         is optional
     shared string LocalCourseCode named CourseCode [1329]
-        deprecated "Users of this element are advised to use AlternativeCourseIdentificationCode instead. Expect removal of this element in a future release."
+        deprecated "Users of this element are advised to use AlternativeCourseIdentification code instead. Expect removal of this element in a future release."
         documentation "The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code."
         is optional
         role name Alternative
@@ -58,7 +54,7 @@ Domain Entity CourseTranscript [552]
         is optional
         role name External
     shared string NameOfInstitution [3099]
-        documentation "Name of the external institution where the student completed the course; to be used only when the reference ExternalEducationOrganization is not available."
+        documentation "Name of the external institution where the student completed the course; to be used only when the reference external education organization is not available."
         is optional
         role name ExternalEducationOrganization
     common CourseIdentificationCode [2925]

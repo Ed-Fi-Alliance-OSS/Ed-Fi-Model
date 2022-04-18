@@ -2,7 +2,7 @@ Domain Entity Session [582]
     documentation "A term in the school year, generally a unit of time into which courses are scheduled, instruction occurs and by which credits are awarded. Sessions may be interrupted by vacations or other events."
     allow primary key updates
     shared string IdentificationCode named SessionName [1643]
-        documentation "The identifier for the calendar for the academic session (e.g., 2010/11, 2011 Summer)."
+        documentation "The identifier for the calendar for the academic session."
         is part of identity
         is queryable field
     enumeration SchoolYear [1642]
@@ -10,20 +10,20 @@ Domain Entity Session [582]
         is part of identity
         is queryable field
     date BeginDate [1638]
-        documentation "Month, day, and year of the first day of the Session."
+        documentation "Month, day, and year of the first day of the session."
         is required
     date EndDate [1639]
-        documentation "Month, day and year of the last day of the Session."
+        documentation "Month, day and year of the last day of the session."
         is required
     descriptor Term [1644]
-        documentation "An descriptor value indicating the term (e.g. 'Semester', 'Quarter', etc.)."
+        documentation "An descriptor value indicating the term."
         is required
         is queryable field
     shared integer TotalInstructionalDays [1645]
         documentation "The total number of instructional days in the school calendar."
         is required
     domain entity School [1641]
-        documentation "Relates the Session to the school."
+        documentation "Relates the session to the school."
         is part of identity
         is queryable field
     domain entity GradingPeriod [1640]

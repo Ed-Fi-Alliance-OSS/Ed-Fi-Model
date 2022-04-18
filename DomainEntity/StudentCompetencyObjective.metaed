@@ -1,7 +1,7 @@
 Domain Entity StudentCompetencyObjective [588]
     documentation "This entity represents the competency assessed or evaluated for the student against a specific competency objective."
     domain entity CompetencyObjective [1744]
-        documentation "The CompetencyObjective evaluated for the student."
+        documentation "The competency objective evaluated for the student."
         is part of identity
         role name CompetencyObjective shorten to Objective
     descriptor CompetencyLevel [1743]
@@ -11,14 +11,14 @@ Domain Entity StudentCompetencyObjective [588]
         documentation "A statement provided by the teacher that provides information in addition to the grade or assessment score."
         is optional
     domain entity GradingPeriod [1746]
-        documentation "Relates the CompetencyObjective to a grading period."
+        documentation "Relates the competency objective to a grading period."
         is part of identity
         role name GradingPeriod
     domain entity Student [1748]
-        documentation "Relates the student associated with the CompetencyObjective."
+        documentation "Relates the student associated with the competency objective."
         is part of identity
     choice StudentCompetencyObjectiveSectionOrProgramChoice [2511]
-        documentation "Relates the student and the Section or Program with the CompetencyObjective."
+        documentation "Relates the student and the section or program with the competency objective."
         is optional
         merge StudentCompetencyObjectiveSectionOrProgramChoice.StudentSectionAssociation.Section.CourseOffering.Session with GradingPeriod.Session
         merge StudentCompetencyObjectiveSectionOrProgramChoice.StudentSectionAssociation.Student with Student

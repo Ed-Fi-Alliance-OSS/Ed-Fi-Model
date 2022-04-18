@@ -13,11 +13,11 @@ Domain Entity GradingPeriod [561]
         documentation "The identifier for the grading period school year."
         is part of identity
     date BeginDate [1430]
-        documentation "Month, day, and year of the first day of the GradingPeriod."
+        documentation "Month, day, and year of the first day of the grading period."
         is required
     date EndDate [1432]
-        documentation "Month, day, and year of the last day of the GradingPeriod."
+        documentation "Month, day, and year of the last day of the grading period."
         is required
     shared integer TotalInstructionalDays [1435]
-        documentation "Total days available for educational instruction during the GradingPeriod."
+        documentation "Total days available for educational instruction during the grading period."
         is required

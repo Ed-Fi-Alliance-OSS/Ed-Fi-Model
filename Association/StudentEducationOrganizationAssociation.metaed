@@ -1,9 +1,9 @@
 Association StudentEducationOrganizationAssociation [3052]
-    documentation "This association represents student information as reported in the context of the student's relationship to the Education Organization. Enrollment relationship semantics are covered by StudentSchoolAssociation."
+    documentation "This association represents student information as reported in the context of the student's relationship to the education organization. Enrollment relationship semantics are covered by StudentSchoolAssociation."
     domain entity Student [2782]
-        documentation "A reference to the Student."
+        documentation "A reference to the student."
     domain entity EducationOrganization [2783]
-        documentation "A reference to the Education Organization representing the context of the student information."
+        documentation "A reference to the education organization representing the context of the student information."
     common StudentIdentificationCode [1703]
         documentation "A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student."
         is optional collection
@@ -32,8 +32,8 @@ Association StudentEducationOrganizationAssociation [3052]
         is optional
         is queryable field
     descriptor OldEthnicity [1695]
-        deprecated "Users of this element are advised to use Race and HispanicLatinoEthnicity instead. Expect removal of this element in a future release."
-        documentation "Previous definition of Ethnicity combining Hispanic/Latino and race:
+        deprecated "Users of this element are advised to use race and Hispanic/LatinoEthnicity instead. Expect removal of this element in a future release."
+        documentation "Previous definition of ethnicity combining Hispanic/Latino and race:
         1 - American Indian or Alaskan Native
         2 - Asian or Pacific Islander
         3 - Black, not of Hispanic origin
@@ -60,7 +60,7 @@ Association StudentEducationOrganizationAssociation [3052]
         documentation "The disability condition(s) that best describes an individual's impairment, as determined by evaluation(s) conducted by the education organization."
         is optional collection
     common ProgramParticipation [1698]
-        deprecated "Users of this element are advised to use StudentProgramAssociation instead. Expect removal of this element in a future release."
+        deprecated "Users of this element are advised to use student program association instead. Expect removal of this element in a future release."
         documentation "Key programs the student is participating in or receives services from."
         is optional collection
     common CohortYear [1683]

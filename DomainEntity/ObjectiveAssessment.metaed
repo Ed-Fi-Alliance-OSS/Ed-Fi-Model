@@ -1,7 +1,7 @@
 Domain Entity ObjectiveAssessment [571]
     documentation "This entity represents subtests that assess specific learning objectives."
     shared string IdentificationCode [1538]
-        documentation "A unique number or alphanumeric code assigned to a space, room, site, building, individual, organization, program, or institution by a school, school system, a state, or other agency or entity."
+        documentation "A unique number or alphanumeric code assigned to an objective assessment by a school, school system, a state, or other agency or entity."
         is part of identity
     decimal MaxRawScore [1541]
         documentation "The maximum raw score achievable across all assessment items that are correct and scored at the maximum."
@@ -15,13 +15,13 @@ Domain Entity ObjectiveAssessment [571]
         3. Specification of performance level without any mapping to scores"
         is optional collection
     percent PercentOfAssessment [1544]
-        documentation "The percentage of the Assessment that tests this objective."
+        documentation "The percentage of the assessment that tests this objective."
         is optional
     shared string Nomenclature [1542]
-        documentation "Reflects the specific nomenclature used for this level of ObjectiveAssessment."
+        documentation "Reflects the specific nomenclature used for this level of objective assessment."
         is optional
     shared string Description [1537]
-        documentation "The description of the ObjectiveAssessment (e.g., vocabulary, measurement, or geometry)."
+        documentation "The description of the objective assessment (e.g., vocabulary, measurement, or geometry)."
         is optional
     domain entity AssessmentItem [1534]
         documentation "References individual test items, if appropriate."
@@ -30,14 +30,14 @@ Domain Entity ObjectiveAssessment [571]
         merge AssessmentItem.Assessment with Assessment
     domain entity LearningObjective [1539]
         deprecated "Users of this element are advised to use LearningStandard instead. Expect removal of this element in a future release."
-        documentation "References the LearningObjective(s) the ObjectiveAssessment tests."
+        documentation "References the learning objective(s) the objective assessment tests."
         is optional collection
         role name LearningObjective
     domain entity LearningStandard [1540]
-        documentation "LearningStandard tested by this ObjectiveAssessment."
+        documentation "Learning standard tested by this objective assessment."
         is optional collection
     domain entity ObjectiveAssessment [1543]
-        documentation "Provide user information to lookup and link to the parent ObjectiveAssessment containing this ObjectiveAssessment."
+        documentation "Provide user information to lookup and link to the parent objective assessment containing this objective assessment."
         is optional
         role name Parent
         merge ParentObjectiveAssessment.Assessment with Assessment

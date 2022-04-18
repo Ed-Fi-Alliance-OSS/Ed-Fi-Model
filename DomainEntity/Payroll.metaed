@@ -7,8 +7,8 @@ Domain Entity Payroll [574]
         documentation "The date of the reported payroll element."
         is part of identity
     domain entity Account [1565]
-        documentation "Account with which the Payroll expense is associated."
+        documentation "Account with which the payroll expense is associated."
         is part of identity
     domain entity Staff [1568]
-        documentation "Staff member associated with the Payroll expense."
+        documentation "Staff member associated with the payroll expense."
         is part of identity

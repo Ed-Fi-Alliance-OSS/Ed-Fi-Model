@@ -1,10 +1,10 @@
 Domain Entity AssessmentScoreRangeLearningStandard [3081]
     documentation "Score ranges of an assessment associated with one or more learning standards."
-    domain entity  Assessment [3082]
-        documentation "Reference to the Assessment with which the score range is associated."
+    domain entity Assessment [3082]
+        documentation "Reference to the assessment with which the score range is associated."
         is part of identity
     domain entity LearningStandard [3083]
-        documentation "LearningStandard associated with the score range."
+        documentation "Learning standard associated with the score range."
         is required collection
     shared string IdentificationCode named ScoreRangeId [3084]
         documentation "A unique number or alphanumeric code assigned to the score range associated with one or more learning standards."
@@ -19,6 +19,6 @@ Domain Entity AssessmentScoreRangeLearningStandard [3081]
         documentation "The maximum score in the score range."
         is required
     domain entity ObjectiveAssessment [3088]
-        documentation "Reference to the ObjectiveAssessment with which the score range is associated."
+        documentation "Reference to the objective assessment with which the score range is associated."
         is optional
         merge ObjectiveAssessment.Assessment with Assessment

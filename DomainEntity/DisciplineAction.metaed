@@ -1,16 +1,16 @@
 Domain Entity DisciplineAction [553]
     documentation "This event entity represents actions taken by an education organization after a disruptive event that is recorded as a discipline incident."
     shared string DisciplineActionIdentifier [1337]
-        documentation "Identifier assigned by the education organization to the DisciplineAction."
+        documentation "Identifier assigned by the education organization to the discipline action."
         is part of identity
     descriptor Discipline [1336]
         documentation "Type of action, such as removal from the classroom, used to discipline the student involved as a perpetrator in a discipline incident."
         is required collection
     date DisciplineDate [1340]
-        documentation "The date of the DisciplineAction."
+        documentation "The date of the discipline action."
         is part of identity
     shared decimal DisciplineActionLength [1338]
-        documentation "The length of time in school days for the DisciplineAction (e.g. removal, detention), if applicable."
+        documentation "The length of time in school days for the discipline action (e.g. removal, detention), if applicable."
         is optional
     shared decimal DisciplineActionLength named ActualDisciplineActionLength [1334]
         documentation "Indicates the actual length in school days of a student's disciplinary assignment."
@@ -22,15 +22,15 @@ Domain Entity DisciplineAction [553]
         documentation "An indication of whether or not this disciplinary action taken against a student was imposed as a consequence of state or local zero tolerance policies."
         is optional
     domain entity Student [1345]
-        documentation "The student disciplined by the DisciplineAction."
+        documentation "The student disciplined by the discipline action."
         is part of identity
     association StudentDisciplineIncidentAssociation [1341]
         deprecated "Users of this element are advised to use StudentDisciplineIncidentBehaviorAssociation instead. Expect removal of this element in a future release."
-        documentation "Reference to the DisciplineIncident associated with the DisciplineAction."
+        documentation "Reference to the discipline incident associated with the discipline action."
         is required collection
         merge StudentDisciplineIncidentAssociation.Student with Student
     domain entity Staff [1344]
-        documentation "The staff responsible for enforcing the DisciplineAction."
+        documentation "The staff responsible for enforcing the discipline action."
         is optional collection
     domain entity School [1343]
         documentation "School responsible for student's discipline."
