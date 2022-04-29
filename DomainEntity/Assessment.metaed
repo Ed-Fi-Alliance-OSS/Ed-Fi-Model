@@ -23,10 +23,7 @@ Domain Entity Assessment [540]
         documentation "Definition of the scores to be expected from this assessment."
         is optional collection
     common AssessmentPerformanceLevel [1225]
-        documentation "Definition of the performance levels and the associated cut scores. Three styles are supported:
-        1. Specification of performance level by minimum and maximum score
-        2. Specification of performance level by cut score, using only minimum score
-        3. Specification of performance level without any mapping to scores."
+        documentation "Definition of the performance levels and the associated cut scores. Three styles are supported: 1. Specification of performance level by minimum and maximum score, 2. Specification of performance level by cut score, using only minimum score, 3. Specification of performance level without any mapping to scores."
         is optional collection
     common ContentStandard [1229]
         documentation "An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard)."

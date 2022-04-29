@@ -1,10 +1,2 @@
 Descriptor ReasonNotTested [216]
-    documentation "The primary reason student is not tested. For example:
-    Absent
-    Refusal by parent
-    Refusal by student
-    Medical waiver
-    Illness
-    Disruptive behavior
-    LEP Exempt
-    '..."
+    documentation "The primary reason student is not tested."

@@ -9,7 +9,7 @@ Domain Entity Section [580]
         documentation "When a section is part of a sequence of parts for a course, the number of the sequence. If the course has only one part, the value of this section attribute should be 1."
         is optional
     descriptor EducationalEnvironment [1623]
-        documentation "The setting in which a child receives education and related services."
+        documentation "The setting in which a student receives education and related services."
         is optional
     descriptor MediumOfInstruction [1626]
         documentation "The media through which teachers provide instruction to students and students and teachers communicate about instructional matters."

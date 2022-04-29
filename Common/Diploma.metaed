@@ -7,10 +7,7 @@ Common Diploma [501]
         documentation "The month, day, and year on which the student met  graduation requirements and was awarded a diploma."
         is part of identity
     descriptor DiplomaLevel [807]
-        documentation "The level of diploma/credential that is awarded to a student in recognition of his/her completion of the curricular requirements.
-        Minimum high school program
-        Recommended high school program
-        Distinguished Achievement Program."
+        documentation "The level of diploma/credential that is awarded to a student in recognition of completion of the curricular requirements."
         is optional
     descriptor DiplomaType [808]
         documentation "The type of diploma/credential that is awarded to a student in recognition of his/her completion of the curricular requirements."
