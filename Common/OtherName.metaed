@@ -1,6 +1,6 @@
 Common OtherName [518]
     documentation "Other names (e.g., alias, nickname, previous legal name) associated with an individual."
-    shared string individualalTitlePrefix [887]
+    shared string PersonalTitlePrefix [887]
         documentation "A prefix used to denote the title, degree, position, or seniority of the individual."
         is optional
     shared string FirstName [882]
