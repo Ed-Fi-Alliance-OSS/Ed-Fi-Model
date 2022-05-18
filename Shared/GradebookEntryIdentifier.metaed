@@ -1,0 +1,4 @@
+Shared String GradebookEntryIdentifier [3118]
+    documentation "A unique number or alphanumeric code assigned to a gradebook entry by the source system."
+    min length 1
+    max length 60
