@@ -25,11 +25,6 @@ Domain Entity ObjectiveAssessment [571]
         is optional collection
         role name AssessmentItem
         merge AssessmentItem.Assessment with Assessment
-    domain entity LearningObjective [1539]
-        deprecated "Users of this element are advised to use LearningStandard instead. Expect removal of this element in a future release."
-        documentation "References the learning objective(s) the objective assessment tests."
-        is optional collection
-        role name LearningObjective
     domain entity LearningStandard [1540]
         documentation "Learning standard tested by this objective assessment."
         is optional collection
