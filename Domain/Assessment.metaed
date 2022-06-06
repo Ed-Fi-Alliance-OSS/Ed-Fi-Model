@@ -6,7 +6,6 @@ Domain Assessment
 * Student Assessment Results that follow a parallel structure of StudentAssessment, StudentObjectiveAssessment, and StudentAssessmentItem"
     domain entity Assessment
     domain entity AssessmentItem
-    domain entity LearningObjective
     domain entity LearningStandard
     domain entity ObjectiveAssessment
     domain entity Program
