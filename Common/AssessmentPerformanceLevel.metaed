@@ -18,3 +18,6 @@ Common AssessmentPerformanceLevel [484]
     descriptor ResultDatatypeType [741]
         documentation "The datatype of the result. The results can be expressed as a number, percentile, range, level, etc."
         is optional
+    shared string PerformanceLevelIndicatorName [3128]
+        documentation "The name of the indicator being measured for a collection of performance level values."
+        is optional
