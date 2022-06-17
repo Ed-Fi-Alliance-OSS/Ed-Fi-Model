@@ -23,3 +23,6 @@ Common StudentAssessmentItem [530]
     domain entity AssessmentItem [926]
         documentation "The assessment item responded to by the student."
         is part of identity
+    integer ItemNumber [3227]
+        documentation "The test question number for this student's test item."
+        is optional
