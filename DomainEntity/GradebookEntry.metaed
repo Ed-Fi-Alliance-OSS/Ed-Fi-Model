@@ -17,9 +17,10 @@ Domain Entity GradebookEntry [560]
     date DateAssigned [1422]
         documentation "The date the assignment, homework, or assessment was assigned or executed."
         is required
-    shared string GradebookEntryTitle [1424]
+    string Title [1424]
         documentation "The name or title of the activity to be recorded in the gradebook entry."
         is required
+        max length 100
     shared string Description [1423]
         documentation "A description of the assignment, homework, or classroom assessment."
         is optional
