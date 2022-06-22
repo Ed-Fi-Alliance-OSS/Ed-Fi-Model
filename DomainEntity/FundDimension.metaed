@@ -9,7 +9,6 @@ Domain Entity FundDimension [3159]
     shared string CodeName [3162]
         documentation "A description of the account fund dimension."
         is optional
-    //Optional Collection
     descriptor ReportingTag [3163]
         documentation "Optional tag for accountability reporting."
         is optional collection

@@ -9,7 +9,6 @@ Domain Entity SourceDimension [3218]
     shared string CodeName [3221]
         documentation "A description of the account source dimension."
         is optional
-    //Optional Collection
     descriptor ReportingTag [3222]
         documentation "Optional tag for accountability reporting."
         is optional collection

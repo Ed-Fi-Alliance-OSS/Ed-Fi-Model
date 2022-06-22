@@ -9,7 +9,6 @@ Domain Entity ObjectDimension [3198]
     shared string CodeName [3201]
         documentation "A description of the account object dimension."
         is optional
-    //Optional Collection
     descriptor ReportingTag [3202]
         documentation "Optional tag for accountability reporting."
         is optional collection

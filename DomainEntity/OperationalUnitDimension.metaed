@@ -9,7 +9,6 @@ Domain Entity OperationalUnitDimension [3203]
     shared string CodeName [3206]
         documentation "A description of the account operational unit dimension."
         is optional
-    //Optional Collection
     descriptor ReportingTag [3207]
         documentation "Optional tag for accountability reporting."
         is optional collection

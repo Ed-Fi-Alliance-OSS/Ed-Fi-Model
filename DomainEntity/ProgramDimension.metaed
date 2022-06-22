@@ -9,7 +9,6 @@ Domain Entity ProgramDimension [3208]
     shared string CodeName [3211]
         documentation "A description of the account program dimension."
         is optional
-    //Optional Collection
     descriptor ReportingTag [3212]
         documentation "Optional tag for accountability reporting."
         is optional collection

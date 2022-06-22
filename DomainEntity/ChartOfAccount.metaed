@@ -18,8 +18,6 @@ Domain Entity ChartOfAccount [3139]
     shared string EdFi.AccountName [3144]
         documentation "A descriptive name for the account."
         is optional
-
-    //Optional NCES Account Dimensions1
     domain entity BalanceSheetDimension [3145]
         documentation "References the balance sheet dimension with which the chart of account is associated."
         is optional
@@ -60,8 +58,6 @@ Domain Entity ChartOfAccount [3139]
         is optional
         role name Source
         merge SourceSourceDimension.FiscalYear with FiscalYear
-
-    //Optional Collection
     common ReportingTag [3153]
         documentation "Optional tag for accountability reporting."
         is optional collection

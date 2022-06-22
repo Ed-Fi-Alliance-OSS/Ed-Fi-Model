@@ -9,7 +9,6 @@ Domain Entity ProjectDimension [3213]
     shared string CodeName [3216]
         documentation "A description of the account project dimension."
         is optional
-    //Optional Collection
     descriptor ReportingTag [3217]
         documentation "Optional tag for accountability reporting."
         is optional collection

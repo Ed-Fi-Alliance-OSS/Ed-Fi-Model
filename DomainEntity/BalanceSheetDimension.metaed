@@ -9,7 +9,6 @@ Domain Entity BalanceSheetDimension [3134]
     shared string CodeName [3137]
         documentation "A description of the account balance sheet dimension."
         is optional
-    //Optional Collection
     descriptor ReportingTag [3138]
         documentation "Optional tag for accountability reporting."
         is optional collection

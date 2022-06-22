@@ -11,7 +11,6 @@ Domain Entity LocalAccount [3164]
         documentation "The fiscal year for the account."
         is part of identity
         is queryable field
-
     shared string EdFi.AccountName [3168]
         documentation "A descriptive name for the account."
         is optional
@@ -20,8 +19,6 @@ Domain Entity LocalAccount [3164]
         is required
         role name ChartOfAccount
         merge ChartOfAccount.FiscalYear with FiscalYear
-
-    //Optional Collection
     common ReportingTag [3170]
         documentation "Optional tag for accountability reporting."
         is optional collection
