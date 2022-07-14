@@ -1,0 +1,21 @@
+Domain Entity DescriptorMapping
+    documentation "A mapping of a descriptor value in one namespace to a descriptor value in another namespace. This can be used to exchange known contextual mappings of enumeration values."
+    string FromDescriptorValue
+        documentation "The descriptor value that is being mapped to another value."
+        is part of identity
+        min length 1
+        max length 50
+    shared string URI named FromDescriptorNamespace
+        documentation "The namespace of the descriptor value that is being mapped to another value."
+        is part of identity
+    string ToDescriptorValue
+        documentation "The descriptor value to which the from descriptor value is being mapped to."
+        is part of identity
+        min length 1
+        max length 50
+    shared string URI named ToDescriptorNamespace
+        documentation "The namespace of the descriptor value to which the from descriptor value is mapped to."
+        is part of identity
+    descriptor ModelEntity
+        documentation "The resources for which the descriptor mapping applies. If empty, the mapping is assumed to be applicable to all resources in which the descriptor appears."
+        is optional collection
