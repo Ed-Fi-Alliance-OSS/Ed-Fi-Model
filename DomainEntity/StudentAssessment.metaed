@@ -5,7 +5,7 @@ Domain Entity StudentAssessment [587]
         is part of identity
     datetime AdministrationDate [1727]
         documentation "The date and time an assessment was completed by the student. The use of ISO-8601 formats with a timezone designator (UTC or time offset) is recommended in order to prevent ambiguity due to time zones."
-        is required
+        is optional
     datetime AdministrationEndDate [1728]
         documentation "The date and time an assessment administration ended."
         is optional
@@ -28,7 +28,7 @@ Domain Entity StudentAssessment [587]
     descriptor ReasonNotTested [1735]
         documentation "The primary reason student is not tested."
         is optional
-    common ScoreResult [1737]
+    common ScoreResult [912]
         documentation "A meaningful score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
         is optional collection
     descriptor GradeLevel [1742]
@@ -64,4 +64,10 @@ Domain Entity StudentAssessment [587]
         is optional
     descriptor PlatformType [2922]
         documentation "The platform with which the assessment was delivered to the student during the assessment session."
+        is optional
+    common AssessmentPeriod [1226]
+        documentation "The period or window in which an assessment is supposed to be administered."
+        is optional
+    integer AssessedMinutes [3235]
+        documentation "Reported time student was assessed in minutes."
         is optional

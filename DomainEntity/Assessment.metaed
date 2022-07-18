@@ -50,7 +50,7 @@ Domain Entity Assessment [540]
         is optional
     common AssessmentPeriod [1226]
         documentation "The period or window in which an assessment is supposed to be administered."
-        is optional
+        is optional collection
     shared string AssessmentFamily named AssessmentFamily [2544]
         documentation "The assessment family this assessment is a member of."
         is optional
