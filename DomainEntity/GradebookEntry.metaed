@@ -7,7 +7,6 @@ Domain Entity GradebookEntry [560]
     shared string URI named Namespace [3119]
         documentation "Namespace URI for the source of the gradebook entry."
         is part of identity
-        role name SourceSystem
     shared string SectionIdentifier [1632]
         documentation "The local identifier assigned to a section."
         is required
