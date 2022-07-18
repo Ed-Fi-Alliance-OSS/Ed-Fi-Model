@@ -1,2 +1,2 @@
 Descriptor AssignmentLateStatus [3125]
-    documentation "Status of whether the assignment was submitted after the due date and/or marked as."
+    documentation "Status of whether the assignment was submitted after the due date and/or marked as late."
