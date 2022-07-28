@@ -10,6 +10,7 @@ Domain Entity GradebookEntry [560]
     shared string SectionIdentifier [1632]
         documentation "The local identifier assigned to a section."
         is required
+        role name Source
     domain entity Section [1429]
         documentation "The section associated with the gradebook entry."
         is optional
