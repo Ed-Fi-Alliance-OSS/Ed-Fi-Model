@@ -27,7 +27,7 @@ Domain Entity DisciplineAction [553]
     association StudentDisciplineIncidentAssociation [1341]
         deprecated "Users of this element are advised to use StudentDisciplineIncidentBehaviorAssociation instead. Expect removal of this element in a future release."
         documentation "Reference to the discipline incident associated with the discipline action."
-        is required collection
+        is optional collection
         merge StudentDisciplineIncidentAssociation.Student with Student
     domain entity Staff [1344]
         documentation "The staff responsible for enforcing the discipline action."
