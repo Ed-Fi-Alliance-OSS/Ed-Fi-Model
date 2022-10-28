@@ -71,3 +71,11 @@ Domain Entity StudentAssessment [587]
     integer AssessedMinutes [3235]
         documentation "Reported time student was assessed in minutes."
         is optional
+    domain entity School
+        documentation "The school reference reported as the school the enrollment at the time of the assessment using the assigned SchoolId."
+        is optional
+        role name Reported
+    shared string SchoolIdentifier
+        documentation "A reported school identifier for the school the enrollment at the time of the assessment used when the assigned SchoolId is not known by the assessment vendor."
+        is optional
+        role name Reported
