@@ -9,12 +9,12 @@ Common StudentObjectiveAssessment [534]
     domain entity ObjectiveAssessment [946]
         documentation "Reference to the test objective that is being measured by the objective-level assessment."
         is part of identity
-    integer AssessedMinutes [3240]
+    integer AssessedMinutes [3238]
         documentation "Reported time student was assessed in minutes."
         is optional
-    datetime AdministrationDate [3238]
+    datetime AdministrationDate [3239]
         documentation "The date and time an assessment was completed by the student. The use of ISO-8601 formats with a timezone designator (UTC or time offset) is recommended in order to prevent ambiguity due to time zones."
         is optional
-    datetime AdministrationEndDate [3239]
+    datetime AdministrationEndDate [3240]
         documentation "The date and time an assessment administration ended."
         is optional

@@ -6,6 +6,6 @@ Common CohortYear [493]
     descriptor CohortYearType [767]
         documentation "The type of cohort year (9th grade, graduation)."
         is part of identity
-    descriptor Term [3116]
+    descriptor Term [3130]
         documentation "The term associated with the cohort year; for example, the intended term of graduation."
         is optional

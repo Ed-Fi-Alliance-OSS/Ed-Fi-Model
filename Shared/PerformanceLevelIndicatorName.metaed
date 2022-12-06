@@ -1,4 +1,4 @@
-Shared String PerformanceLevelIndicatorName [3130]
+Shared String PerformanceLevelIndicatorName [3124]
     documentation "The name of the indicator being measured for a collection of performance level values."
     min length 1
     max length 60

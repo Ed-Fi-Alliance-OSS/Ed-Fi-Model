@@ -28,7 +28,7 @@ Domain Entity StudentAssessment [587]
     descriptor ReasonNotTested [1735]
         documentation "The primary reason student is not tested."
         is optional
-    common ScoreResult [912]
+    common ScoreResult [3250]
         documentation "A meaningful score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
         is optional collection
     descriptor GradeLevel [1742]
@@ -65,17 +65,17 @@ Domain Entity StudentAssessment [587]
     descriptor PlatformType [2922]
         documentation "The platform with which the assessment was delivered to the student during the assessment session."
         is optional
-    common AssessmentPeriod [1226]
+    common AssessmentPeriod [3251]
         documentation "The period or window in which an assessment is supposed to be administered."
         is optional
-    integer AssessedMinutes [3235]
+    integer AssessedMinutes [3252]
         documentation "Reported time student was assessed in minutes."
         is optional
-    domain entity School
+    domain entity School [3253]
         documentation "The school reference reported as the school the enrollment at the time of the assessment using the assigned SchoolId."
         is optional
         role name Reported
-    shared string SchoolIdentifier
+    shared string SchoolIdentifier [3254]
         documentation "A reported school identifier for the school the enrollment at the time of the assessment used when the assigned SchoolId is not known by the assessment vendor."
         is optional
         role name Reported

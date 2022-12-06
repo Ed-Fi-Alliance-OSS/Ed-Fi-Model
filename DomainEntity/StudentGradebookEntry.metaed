@@ -3,7 +3,7 @@ Domain Entity StudentGradebookEntry [589]
     domain entity GradebookEntry [1753]
         documentation "The gradebook entry associated with the student grade or score."
         is part of identity
-    domain entity Student [585]
+    domain entity Student [3255]
         documentation "The student associated with the student gradebook entry."
         is part of identity
     descriptor CompetencyLevel [1750]
@@ -12,13 +12,13 @@ Domain Entity StudentGradebookEntry [589]
     date DateFulfilled [1751]
         documentation "The date an assignment was turned in or the date of an assessment."
         is optional
-    time TimeFulfilled [3122]
+    time TimeFulfilled [3256]
         documentation "The time an assignment was turned in on the date fulfilled."
         is optional
     shared string DiagnosticStatement [1752]
         documentation "A statement provided by the teacher that provides information in addition to the grade or assessment score."
         is optional
-    shared decimal NumericGrade named PointsEarned [3123]
+    shared decimal NumericGrade named PointsEarned [3257]
         documentation "The points earned for the submission. With extra credit, the points earned may exceed the max points."
         is optional
     shared string GradeEarned named LetterGradeEarned [1754]
@@ -27,9 +27,9 @@ Domain Entity StudentGradebookEntry [589]
     shared decimal NumericGrade named NumericGradeEarned [1755]
         documentation "A final or interim (grading period) indicator of student performance in a class as submitted by the instructor."
         is optional
-    descriptor SubmissionStatus [3124]
+    descriptor SubmissionStatus [3258]
         documentation "The status of the student's submission."
         is optional
-    descriptor AssignmentLateStatus [3125]
+    descriptor AssignmentLateStatus [3259]
         documentation "Status of whether the assignment was submitted after the due date and/or marked as."
         is optional

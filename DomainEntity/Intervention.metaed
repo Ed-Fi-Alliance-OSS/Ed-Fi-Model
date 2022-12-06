@@ -54,6 +54,6 @@ Domain Entity Intervention [563]
         documentation "The maximum duration of time in minutes that may be assigned for the intervention."
         is optional
         role name Max
-    shared string URI named Namespace [3228]
+    shared string URI named Namespace [3248]
         documentation "Namespace for the intervention."
         is optional
