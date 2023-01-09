@@ -34,3 +34,6 @@ Domain Entity Grade [559]
     date CurrentGradeAsOfDate [3242]
         documentation "As-Of date for a grade posted as the current grade."
         is optional
+    shared string GradeEarnedDescription [3265]
+        documentation "A description of the grade earned by the learner."
+        is optional
