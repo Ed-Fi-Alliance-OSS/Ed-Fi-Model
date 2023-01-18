@@ -5,7 +5,7 @@ Domain Entity StudentAcademicRecord [586]
         is optional
         role name CumulativeEarned
     inline common Credits [1709]
-        documentation "The cumulative number of credits an individual attempts to earn by taking courses during his or her enrollment in the current school as well as those credits transferred from schools in which the individual had been previously enrolled."
+        documentation "The total number of credits a student has earned plus the total number of credits the student has attempted but not earned from distinct courses. This includes credits attempted and earned from all schools the student has been enrolled."
         is optional
         role name CumulativeAttempted
     shared decimal GPA named CumulativeGradePointsEarned [1712]
