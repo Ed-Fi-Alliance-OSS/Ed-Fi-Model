@@ -9,7 +9,7 @@ Domain Entity CourseTranscript [552]
         role name Attempted
     inline common Credits [1324]
         documentation "The number of credits a student earned for completing a given course."
-        is required
+        is optional
         role name Earned
     common AdditionalCredits [1323]
         documentation "The number of additional credits a student attempted and could earn for successfully completing a given course."
