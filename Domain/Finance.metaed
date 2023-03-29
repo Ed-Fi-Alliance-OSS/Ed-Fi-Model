@@ -16,7 +16,7 @@ Domain Finance
     domain entity BalanceSheetDimension
     domain entity FunctionDimension
     domain entity FundDimension
-    domain entity ObjectDimentsion
+    domain entity ObjectDimension
     domain entity OperationalUnitDimension
     domain entity ProgramDimension
     domain entity ProjectDimension
