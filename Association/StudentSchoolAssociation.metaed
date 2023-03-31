@@ -32,6 +32,7 @@ Association StudentSchoolAssociation [613]
         is optional
         role name ClassOf
     bool SchoolChoiceTransfer [1124]
+        deprecated "Will be removed in Data Standard v7.0"
         documentation "An indication of whether students transferred in or out of the school did so during the school year under the provisions for public school choice in accordance with Title I, Part A, Section 1116."
         is optional
     date ExitWithdrawDate [1118]
@@ -66,4 +67,21 @@ Association StudentSchoolAssociation [613]
         is optional
     bool TermCompletionIndicator [2874]
         documentation "Idicates whether or not a student completed the most recent school term."
+        is optional
+        domain entity School 
+        documentation "The anticipated school of enrollment for the student for the next school year, possibly reflecting a rollover to the same school, the promotion to a feeder school, or an anticipated transfer."
+        is optional
+        role name NextYear
+    descriptor GradeLevel
+        documentation "The anticipated grade level for the student for the next school year."
+        is optional
+        role name NextYear
+    bool SchoolChoice
+        documentation "An indication of whether the student enrolled in this school under the provisions for public school choice"
+        is optional
+    descriptor SchoolChoiceBasis
+        documentation "The legal basis for the school choice enrollment according to local, state or federal policy or regulation. (The descriptor provides the list of available bases specific to the state"
+        is optional
+    descriptor EnrollmentType
+        documentation "The type of enrollment reflected by the StudentSchoolAssociation."
         is optional
