@@ -25,5 +25,5 @@ Domain Entity SurveyResponse [3024]
         documentation "Location of the respondent, often a city, district, or school."
         is optional
     choice SurveyResponderChoice [3033]
-        documentation "Reference to either a student, parent, or staff - or none for anonymous survey."
+        documentation "Reference to either a student, contact, or staff - or none for anonymous survey."
         is optional
