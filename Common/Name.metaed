@@ -18,6 +18,14 @@ Inline Common Name [517]
     shared string LastSurname named MaidenName [879]
         documentation "The individual's maiden name."
         is optional
+    shared string FirstName
+        documentation "The first name the individual prefers, if different from their legal first name"
+        is optional
+        role name Preferred
+    shared string LastSurname
+        documentation "The last name the individual prefers, if different from their legal last name"
+        is optional
+        role name Preferred
     common IdentificationDocument [891]
         documentation "The documents presented as evident to verify one's personal identity; for example: drivers license, passport, birth certificate, etc."
         is optional collection
