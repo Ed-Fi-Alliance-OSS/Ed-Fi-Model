@@ -1,0 +1,4 @@
+Shared String EvaluationLateReason
+    documentation "Refers to additional information for delay in doing the evaluation. This is a free flow text."
+    min length 1
+    max length 255
