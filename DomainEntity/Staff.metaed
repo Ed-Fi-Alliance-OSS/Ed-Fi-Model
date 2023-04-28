@@ -43,15 +43,6 @@ Domain Entity Staff [583]
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
         is optional
         is queryable field
-    descriptor OldEthnicity [1658]
-        deprecated "Users of this element are advised to use Race and Hispanic/LatinoEthnicity instead. Expect removal of this element in a future release."
-        documentation "Previous definition of ethnicity combining Hispanic/Latino and race:
-        1 - American Indian or Alaskan Native
-        2 - Asian or Pacific Islander
-        3 - Black, not of Hispanic origin
-        4 - Hispanic
-        5 - White, not of Hispanic origin."
-        is optional
     descriptor Race [1660]
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The way this data element is listed, it must allow for multiple entries so that each individual can specify all appropriate races."
         is optional collection

@@ -12,7 +12,6 @@ Domain StudentAcademicRecord
     domain entity Grade
     domain entity GradebookEntry
     domain entity GradingPeriod
-    domain entity LearningObjective
     domain entity LearningStandard
     domain entity Program
     domain entity ReportCard
@@ -23,6 +22,5 @@ Domain StudentAcademicRecord
     domain entity StudentAcademicRecord
     domain entity StudentCompetencyObjective
     domain entity StudentGradebookEntry
-    domain entity StudentLearningObjective
     association StudentProgramAssociation
     association StudentSectionAssociation

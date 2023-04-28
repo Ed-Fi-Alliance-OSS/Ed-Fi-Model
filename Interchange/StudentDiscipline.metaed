@@ -4,7 +4,6 @@ Interchange StudentDiscipline [2529]
     2. Exchange a student's updated discipline record.
     3. Exchange school or LEA discipline data."
     domain entity DisciplineIncident [2529-001]
-    association StudentDisciplineIncidentAssociation [2529-002]
     domain entity DisciplineAction [2529-003]
     association StaffDisciplineIncidentAssociation [2529-004]
     association StudentDisciplineIncidentBehaviorAssociation [2529-005]

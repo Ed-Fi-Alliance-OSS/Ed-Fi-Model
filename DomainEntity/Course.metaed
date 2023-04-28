@@ -65,10 +65,6 @@ Domain Entity Course [550]
     domain entity LearningStandard [1306]
         documentation "Learning standard(s) to be taught by the course."
         is optional collection
-    domain entity LearningObjective [1305]
-        deprecated "Users of this element are advised to use LearningStandard instead. Expect removal of this element in a future release."
-        documentation "Learning objectives to be mastered in the course."
-        is optional collection
     shared integer MaxCompletionsForCredit [2546]
         documentation "Designates how many times the course may be taken with credit received by the student."
         is optional

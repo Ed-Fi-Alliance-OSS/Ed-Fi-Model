@@ -44,11 +44,6 @@ Domain Entity CourseTranscript [552]
     shared string CourseTitle named AlternativeCourseTitle [1330]
         documentation "The descriptive name given to a course of study offered in the school, if different from the CourseTitle."
         is optional
-    shared string LocalCourseCode named CourseCode [1329]
-        deprecated "Users of this element are advised to use AlternativeCourseIdentification code instead. Expect removal of this element in a future release."
-        documentation "The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code."
-        is optional
-        role name Alternative
     domain entity EducationOrganization [2615]
         documentation "The external institution where the student completed the course (e.g., the original education organization for a transferred course transcript, or the provider for an online course)."
         is optional

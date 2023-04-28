@@ -22,14 +22,6 @@ Domain Entity Program [576]
     descriptor ProgramSponsor [1579]
         documentation "Ultimate and intermediate providers of funds for a particular educational or service program or activity, or for an individual's participation in the program or activity (e.g., Federal, State, ESC, District, School, Private Organization)."
         is optional collection
-    descriptor Service [1581]
-        deprecated "This element is rarely used and default descriptor values do not include program-specific services as defined on the GeneralStudentProgramAssociation sub-classes. Expect removal of this element in a future release."
-        documentation "Defines the services this program provides to students."
-        is optional collection
-    domain entity LearningObjective [1574]
-        deprecated "Users of this element are advised to use LearningStandard instead. Expect removal of this element in a future release."
-        documentation "References the learning objective(s) with which the program is associated."
-        is optional collection
     domain entity LearningStandard [1575]
         documentation "Learning standard followed by this program."
         is optional collection

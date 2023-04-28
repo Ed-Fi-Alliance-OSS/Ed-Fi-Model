@@ -20,10 +20,6 @@ domain entity EducationOrganization [1104]
 bool ServedOutsideOfRegularSession [1108]
     documentation "Indicates whether the student received services during the summer session or between sessions."
     is optional
-common ParticipationStatus [2776]
-    deprecated "Users of this element are advised to use program participation status instead. Expect removal of this element in a future release."
-    documentation "The status of the student's program participation."
-    is optional
 common ProgramParticipationStatus [3094]
     documentation "The status of the student's program participation."
     is optional collection
