@@ -14,7 +14,8 @@ Domain Entity Contact [573]
         is optional collection
         is queryable field
     descriptor Sex [1563]
-        documentation "A person's gender."
+        deprecated "The descriptor will be removed from the Ed-Fi core with Data Standard v7.0"
+        documentation "A person's birth sex."
         is optional
         is queryable field
     common Address [1556]
