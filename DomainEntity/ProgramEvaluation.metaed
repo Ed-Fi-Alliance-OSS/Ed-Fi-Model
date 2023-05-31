@@ -1,0 +1,30 @@
+Domain Entity ProgramEvaluation
+    documentation "Add text"
+    domain entity ProgramProgram 
+        documentation "The program associated with the student program evaluation."
+        is part of identity
+        is required
+    shared string ProgramEvaluationTitle 
+        documentation "An assigned unique identifier for the student program evaluation."
+        is part of identity
+        is required
+    descriptor ProgramEvaluationType
+        documentation "The type of program evaluation conducted."
+        is part of identity
+        is required
+    descriptor ProgramEvaluationPeriod 
+        documentation "The name of the period for the program evaluation."
+        is part of identity
+        is required
+    shared string ProgramEvaluationDescription 
+        documentation "The long description of the program evaluation."
+        is optional
+    common EvaluationRatingLevel 
+        documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation."
+        is optional collection
+    shared decimal EvaluationMaxRating
+        documentation "The maximum summary numerical rating or score for the program evaluation."
+        is optional
+    shared decimal EvaluationMinRating
+        documentation "The minimum summary numerical rating or score for the program evaluation. If omitted, assumed to be 0.0"
+        is optional
