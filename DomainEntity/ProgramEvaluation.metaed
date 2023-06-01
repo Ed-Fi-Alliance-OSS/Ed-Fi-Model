@@ -1,5 +1,5 @@
 Domain Entity ProgramEvaluation
-    documentation "Add text"
+    documentation "An evaluation instrument applied to evaluate a student in the context of a program. Student evaluations are typically applied by a staff member based upon a rubric."
     domain entity ProgramProgram 
         documentation "The program associated with the student program evaluation."
         is part of identity
