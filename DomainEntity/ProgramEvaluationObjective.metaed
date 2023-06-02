@@ -1,0 +1,25 @@
+Domain Entity ProgramEvaluationObjective
+    documentation "A subcomponent of a ProgramEvaluation, a specific student objective or domain of performance that is being evaluated."
+    domain entity ProgramEvaluation
+        documentation "The program evaluation associated with this program evaluation objective."
+        is part of identity
+        is required
+    shared string ProgramEvaluationObjectiveTitle
+        documentation "The name or title of the program evaluation objective."
+        is part of identity
+        is required
+    shared string ProgramEvaluationObjectiveDescription
+        documentation "	The long description of the program evaluation objective."
+        is optional
+    common ObjectiveRatingLevel
+        documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation objective."
+        is optional collection
+    shared decimal ObjectiveMaxRating
+        documentation "The maximum summary numerical rating or score for the program evaluation objective."
+        is optional
+    shared decimal ObjectiveMinRating
+        documentation "The minimum summary numerical rating or score for the program evaluation objective. If omitted, assumed to be 0.0"
+        is optional
+    integer ObjectiveSortOrder
+        documentation "The sort order of this program evaluation objective."
+        is optional

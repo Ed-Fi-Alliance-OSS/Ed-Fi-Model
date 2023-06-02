@@ -1,0 +1,41 @@
+Domain Entity StudentProgramEvaluation
+    documentation "The evaluation results for a student as evaluated in the context of a program."
+    domain entity ProgramEvaluation
+        documentation "The program evaluation administered to the student."
+        is part of identity
+        is required
+    domain entity Student
+        documentation "The student being evaluated on behalf of the program."
+        is part of identity
+        is required
+    date EvaluationDate
+        documentation "The month, day, and year on which the evaluation was conducted."
+        is part of identity
+        is required
+    domain entity EducationOrganization
+        documentation "A reference to the education organization that evaluated the student, which may be different from the education organization associated with the program."    
+        is optional
+    integer EvaluationDuration
+        documentation "The actual or estimated number of clock minutes during which the evaluation was conducted."
+        is optional
+    shared decimal SummaryEvaluationRating
+        documentation "The numerical summary rating or score for the evaluation."
+        is optional
+    descriptor SummaryEvaluationRatingLevel
+        documentation "The summary rating level achieved based upon the rating or score."
+        is optional
+    shared string ummaryEvaluationComments
+        documentation "Any comments about the summary evaluation to be captured."
+        is optional
+    domain entity StaffEvaluator
+        documentation "Reference to the staff that evaluated the student."
+        is optional
+    shared string ExternalEvaluator
+        documentation "The external person(s) - not staff - that conducted the evaluation."
+        is optional collection
+    common StudentEvaluationObject
+        documentation "The student's rating and/or rating levels earned for a program evaluation objective."
+        is optional collection
+    common StudentEvaluationElement 
+        documentation "The student's rating and/or rating levels earned for a program evaluation element."
+        is optional collection
