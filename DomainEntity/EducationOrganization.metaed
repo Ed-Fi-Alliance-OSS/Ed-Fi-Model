@@ -4,6 +4,7 @@ Abstract Entity EducationOrganization [556]
         documentation "The identifier assigned to an education organization."
         is part of identity
         is queryable field
+        min value big
     common EducationOrganizationIdentificationCode [1383]
         documentation "A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity."
         is optional collection

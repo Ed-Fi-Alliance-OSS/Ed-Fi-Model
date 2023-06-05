@@ -3,6 +3,7 @@ Domain Entity OrganizationDepartment based on EducationOrganization [3075]
     integer OrganizationDepartmentId [3076]
        documentation "The unique identification code for the organization department."
        renames identity property EducationOrganizationId
+       min value big
     descriptor AcademicSubject [3077]
         documentation "The intended major subject area of the department."
         is optional
