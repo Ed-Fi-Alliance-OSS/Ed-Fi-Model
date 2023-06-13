@@ -1,0 +1,14 @@
+Common RatingLevel
+    documentation "The descriptive level(s) of ratings (cut scores) for evaluation."
+    descriptor EvaluationRatingLevel
+        documentation "The title for a level of rating or evaluation band (e.g., Excellent, Acceptable, Needs Improvement, Unacceptable)."
+        is part of identity
+        is required
+    shared decimal NumericRating
+        documentation "The minimum numerical rating or score to achieve the evaluation rating level."
+        is optional
+        role name Min
+    shared decimal NumericRating 
+        documentation "The maximum numerical rating or score to achieve the evaluation rating level."
+        is optional
+        role name Max

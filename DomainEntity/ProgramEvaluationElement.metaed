@@ -11,18 +11,22 @@ Domain Entity ProgramEvaluationElement
         documentation "The name or title of the program evaluation element."
         is part of identity
         is required
-    shared string ProgramEvaluationElementDescription
+    shared string EvaluationDescription named ProgramEvaluationElementDescription
         documentation "The long description of the program evaluation element."
         is optional
-    common ElementRatingLevel 
+    common RatingLevel 
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation element."
         is optional collection
-    shared decimal ElementMaxRating
+        role name Element
+    shared decimal NumericRating
         documentation "	The maximum summary numerical rating or score for the program evaluation element."
         is optional
-    shared decimal ElementMinRating
+        role name ElementMax
+    shared decimal NumericRating
         documentation "The minimum summary numerical rating or score for the program evaluation element. If omitted, assumed to be 0.0."
         is optional
-    integer ElementSortOrder
+        role name ElementMin
+    shared integer SortOrder
         documentation "The sort order of this program evaluation element."
         is optional
+        role name Element

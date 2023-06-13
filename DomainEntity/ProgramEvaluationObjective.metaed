@@ -8,18 +8,22 @@ Domain Entity ProgramEvaluationObjective
         documentation "The name or title of the program evaluation objective."
         is part of identity
         is required
-    shared string ProgramEvaluationObjectiveDescription
+    shared string EvaluationDescription named ProgramEvaluationObjectiveDescription
         documentation "	The long description of the program evaluation objective."
         is optional
-    common ObjectiveRatingLevel
+    common RatingLevel
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation objective."
         is optional collection
-    shared decimal ObjectiveMaxRating
+        role name Objective
+    shared decimal NumericRating
         documentation "The maximum summary numerical rating or score for the program evaluation objective."
         is optional
-    shared decimal ObjectiveMinRating
+        role name ObjectiveMax
+    shared decimal NumericRating
         documentation "The minimum summary numerical rating or score for the program evaluation objective. If omitted, assumed to be 0.0"
         is optional
-    integer ObjectiveSortOrder
+        role name ObjectiveMin
+    shared integer SortOrder
         documentation "The sort order of this program evaluation objective."
         is optional
+        role name Objective

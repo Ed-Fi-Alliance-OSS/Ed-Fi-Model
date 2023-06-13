@@ -8,12 +8,15 @@ Domain Entity EvaluationRubricDimension
         documentation "The numeric rating associated with the evaluation rubric dimension."
         is part of identity
         is required
-    shared string EvaluationCriterionDescription
+    shared string Description
         documentation "The evaluation criterion description for the evaluation rubric dimension."
         is required
-    descriptor EvaluationRubricRatingLevel
+        role name EvaluationCriterion
+    descriptor RatingLevel
         documentation "The rating level achieved for the evaluation rubric dimension."
         is optional
-    integer RubricDimensionSortOrder
+        role name EvaluationRubric
+    shared integer SortOrder
         documentation "The sort order of the rubric dimension."
         is optional
+        role name RubricDimension

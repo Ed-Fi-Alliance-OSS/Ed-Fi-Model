@@ -15,25 +15,29 @@ Domain Entity StudentProgramEvaluation
     domain entity EducationOrganization
         documentation "A reference to the education organization that evaluated the student, which may be different from the education organization associated with the program."    
         is optional
-    integer EvaluationDuration
+    shared integer Duration
         documentation "The actual or estimated number of clock minutes during which the evaluation was conducted."
         is optional
-    shared decimal SummaryEvaluationRating
+        role name Evaluation
+    shared decimal NumericRating
         documentation "The numerical summary rating or score for the evaluation."
         is optional
-    descriptor SummaryEvaluationRatingLevel
+        role name SummaryEvaluation
+    descriptor RatingLevel
         documentation "The summary rating level achieved based upon the rating or score."
         is optional
-    shared string ummaryEvaluationComments
+        role name SummaryEvaluation
+    shared string Comments
         documentation "Any comments about the summary evaluation to be captured."
         is optional
+        role name SummaryEvaluation
     domain entity StaffEvaluator
         documentation "Reference to the staff that evaluated the student."
         is optional
     shared string ExternalEvaluator
         documentation "The external person(s) - not staff - that conducted the evaluation."
         is optional collection
-    common StudentEvaluationObject
+    common StudentEvaluationObjective
         documentation "The student's rating and/or rating levels earned for a program evaluation objective."
         is optional collection
     common StudentEvaluationElement 
