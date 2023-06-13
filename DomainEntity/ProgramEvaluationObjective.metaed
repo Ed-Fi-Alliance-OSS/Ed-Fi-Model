@@ -15,11 +15,11 @@ Domain Entity ProgramEvaluationObjective
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation objective."
         is optional collection
         role name Objective
-    shared decimal NumericRating
+    shared decimal Value
         documentation "The maximum summary numerical rating or score for the program evaluation objective."
         is optional
         role name ObjectiveMax
-    shared decimal NumericRating
+    shared decimal Value
         documentation "The minimum summary numerical rating or score for the program evaluation objective. If omitted, assumed to be 0.0"
         is optional
         role name ObjectiveMin

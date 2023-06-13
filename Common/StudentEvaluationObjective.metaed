@@ -4,7 +4,7 @@ Common StudentEvaluationObjective
         documentation "The program evaluation objective associated with the student's results."
         is part of identity
         is required
-    shared decimal NumericRating
+    shared decimal Value
         documentation "The numerical rating or score for the evaluation objective."
         is optional
         role name EvaluationObjective

@@ -4,7 +4,7 @@ Common StudentEvaluationElement
         documentation "The program evaluation element associated with the student's results."
         is part of identity
         is required
-    shared decimal NumericRating
+    shared decimal Value
         documentation "The numerical rating or score for the evaluation element."
         is optional
         role name EvaluationElement

@@ -4,11 +4,11 @@ Common RatingLevel
         documentation "The title for a level of rating or evaluation band (e.g., Excellent, Acceptable, Needs Improvement, Unacceptable)."
         is part of identity
         is required
-    shared decimal NumericRating
+    shared decimal Value
         documentation "The minimum numerical rating or score to achieve the evaluation rating level."
         is optional
         role name Min
-    shared decimal NumericRating 
+    shared decimal Value 
         documentation "The maximum numerical rating or score to achieve the evaluation rating level."
         is optional
         role name Max
