@@ -3,7 +3,6 @@ Common StudentEvaluationObjective
     domain entity ProgramEvaluationObjective
         documentation "The program evaluation objective associated with the student's results."
         is part of identity
-        is required
     shared decimal Value
         documentation "The numerical rating or score for the evaluation objective."
         is optional

@@ -3,15 +3,12 @@ Domain Entity StudentProgramEvaluation
     domain entity ProgramEvaluation
         documentation "The program evaluation administered to the student."
         is part of identity
-        is required
     domain entity Student
         documentation "The student being evaluated on behalf of the program."
         is part of identity
-        is required
     date EvaluationDate
         documentation "The month, day, and year on which the evaluation was conducted."
         is part of identity
-        is required
     domain entity EducationOrganization
         documentation "A reference to the education organization that evaluated the student, which may be different from the education organization associated with the program."    
         is optional

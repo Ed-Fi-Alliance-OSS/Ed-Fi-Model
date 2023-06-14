@@ -3,11 +3,9 @@ Domain Entity EvaluationRubricDimension
     domain entity ProgramEvaluationElement
         documentation "The program evaluation element associated with the evaluation rubric dimension."
         is part of identity
-        is required
     integer EvaluationRubricRating
         documentation "The numeric rating associated with the evaluation rubric dimension."
         is part of identity
-        is required
     shared string Description
         documentation "The evaluation criterion description for the evaluation rubric dimension."
         is required

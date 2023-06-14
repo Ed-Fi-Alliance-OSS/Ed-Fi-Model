@@ -3,11 +3,9 @@ Domain Entity ProgramEvaluationObjective
     domain entity ProgramEvaluation
         documentation "The program evaluation associated with this program evaluation objective."
         is part of identity
-        is required
     shared string ProgramEvaluationObjectiveTitle
         documentation "The name or title of the program evaluation objective."
         is part of identity
-        is required
     shared string EvaluationDescription named ProgramEvaluationObjectiveDescription
         documentation "	The long description of the program evaluation objective."
         is optional

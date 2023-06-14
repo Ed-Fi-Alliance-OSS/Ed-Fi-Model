@@ -3,21 +3,17 @@ Domain Entity ProgramEvaluation
     domain entity Program 
         documentation "The program associated with the student program evaluation."
         is part of identity
-        is required
         role name Program
     shared string ProgramEvaluationTitle 
         documentation "An assigned unique identifier for the student program evaluation."
         is part of identity
-        is required
     descriptor EvaluationType
         documentation "The type of program evaluation conducted."
         is part of identity
-        is required
         role name Program
     descriptor EvaluationPeriod 
         documentation "The name of the period for the program evaluation."
         is part of identity
-        is required
         role name Program
     shared string EvaluationDescription 
         documentation "The long description of the program evaluation."
