@@ -6,7 +6,7 @@ Domain Entity ProgramEvaluationElement
     domain entity ProgramEvaluationObjective
         documentation "The program evaluation objective associated with this program evaluation element, if applicable."
         is optional
-        merge ProgramEvaluationObjective.ProgramEvaluation.EvaluationPeriod with ProgramEvaluation
+        merge ProgramEvaluationObjective.ProgramEvaluation.ProgramEvaluationPeriod with ProgramEvaluation.ProgramEvaluationPeriod
     shared string ProgramEvaluationElementTitle
         documentation "The name or title of the program evaluation element."
         is part of identity
