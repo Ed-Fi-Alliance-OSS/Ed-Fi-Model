@@ -16,7 +16,7 @@ Domain Entity StudentProgramEvaluation
         documentation "The actual or estimated number of clock minutes during which the evaluation was conducted."
         is optional
         role name Evaluation
-    shared decimal Value
+    shared decimal NumericRating
         documentation "The numerical summary rating or score for the evaluation."
         is optional
         role name SummaryEvaluation

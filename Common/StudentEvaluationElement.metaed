@@ -3,7 +3,7 @@ Common StudentEvaluationElement
     domain entity ProgramEvaluationElement
         documentation "The program evaluation element associated with the student's results."
         is part of identity
-    shared decimal Value
+    shared decimal NumericRating
         documentation "The numerical rating or score for the evaluation element."
         is optional
         role name EvaluationElement

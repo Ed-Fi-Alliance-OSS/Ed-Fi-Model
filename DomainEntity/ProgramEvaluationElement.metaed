@@ -16,11 +16,11 @@ Domain Entity ProgramEvaluationElement
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation element."
         is optional collection
         role name Element
-    shared decimal Value
+    shared decimal NumericRating
         documentation "	The maximum summary numerical rating or score for the program evaluation element."
         is optional
         role name ElementMax
-    shared decimal Value
+    shared decimal NumericRating
         documentation "The minimum summary numerical rating or score for the program evaluation element. If omitted, assumed to be 0.0."
         is optional
         role name ElementMin
