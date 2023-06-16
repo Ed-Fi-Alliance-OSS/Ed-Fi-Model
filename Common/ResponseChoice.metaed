@@ -1,6 +1,6 @@
 Common ResponseChoice [2979]
     documentation "An individual choice within a list of possible responses to a survey question."
-    integer SortOrder [2980]
+    shared integer SortOrder [2980]
         documentation "Sort order of this ResponseChoice within the complete list of choices attached to a SurveyQuestion. If sort order doesn't apply, the value of NumericValue or a unique, possibly sequential numeric value."
         is part of identity
     shared integer NumericValue [2981]
