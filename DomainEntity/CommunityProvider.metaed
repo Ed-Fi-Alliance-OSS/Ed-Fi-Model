@@ -4,6 +4,7 @@ Domain Entity CommunityProvider based on EducationOrganization [2577]
        documentation "The identifier assigned to a community provider."
        renames identity property EducationOrganizationId
        is queryable field
+       min value big
     domain entity CommunityOrganization [2578]
         documentation "CommunityOrganization of which the community provider is an organizational component."
         is optional

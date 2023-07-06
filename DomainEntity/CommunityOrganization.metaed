@@ -4,3 +4,4 @@ Domain Entity CommunityOrganization based on EducationOrganization [2575]
         documentation "The identifier assigned to a community organization."
         renames identity property EducationOrganizationId
         is queryable field
+        min value big

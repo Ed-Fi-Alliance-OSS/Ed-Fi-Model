@@ -4,6 +4,7 @@ Domain Entity School based on EducationOrganization [579]
         documentation "The identifier assigned to a school."
         renames identity property EducationOrganizationId
         is queryable field
+        min value big
     descriptor GradeLevel [1605]
         documentation "The grade levels served at the school."
         is required collection

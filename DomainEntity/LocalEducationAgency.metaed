@@ -4,6 +4,7 @@ Domain Entity LocalEducationAgency based on EducationOrganization [569]
         documentation "The identifier assigned to a local education agency."
         renames identity property EducationOrganizationId
         is queryable field
+        min value big
     descriptor LocalEducationAgencyCategory [1520]
         documentation "The category of local education agency/district."
         is required
