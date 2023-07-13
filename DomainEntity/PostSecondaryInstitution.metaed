@@ -4,6 +4,7 @@ Domain Entity PostSecondaryInstitution based on EducationOrganization [520]
         documentation "The ID of the post secondary institution."
         renames identity property EducationOrganizationId
         is queryable field
+        min value big
     descriptor MediumOfInstruction [893]
         documentation "The categories in which an institution serves the students."
         is optional collection
