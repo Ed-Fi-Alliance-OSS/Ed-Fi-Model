@@ -23,8 +23,8 @@ Domain Entity Course [550]
         is optional collection
         role name Offered
     descriptor AcademicSubject [1291]
-        documentation "The intended major subject area of the course."
-        is optional
+        documentation "The intended major subject/s area of the course."
+        is optional collection
     shared string Description [1296]
         documentation "A description of the content standards and goals covered in the course. Reference may be made to state or national content standards."
         is optional
