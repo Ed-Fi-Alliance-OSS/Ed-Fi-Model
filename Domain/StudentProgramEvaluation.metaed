@@ -4,7 +4,5 @@ Subdomain StudentProgramEvaluation of TeachingAndLearning
     domain entity EvaluationRubricDimension
     domain entity ProgramEvaluation
     domain entity Program
-    domain entity StudentEvaluationObjective
-    domain entity StudentEvaluationElement
     domain entity ProgramEvaluationObjective
     domain entity ProgramEvaluationElement
