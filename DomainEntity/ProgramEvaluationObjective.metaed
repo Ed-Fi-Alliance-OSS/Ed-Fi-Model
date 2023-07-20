@@ -6,13 +6,13 @@ Domain Entity ProgramEvaluationObjective
     shared string ProgramEvaluationObjectiveTitle
         documentation "The name or title of the program evaluation objective."
         is part of identity
-    shared string EvaluationDescription named ProgramEvaluationObjectiveDescription
-        documentation "	The long description of the program evaluation objective."
+    shared string ProgramEvaluationDescription named ProgramEvaluationObjectiveDescription
+        documentation "The long description of the program evaluation objective."
         is optional
-    common RatingLevel
+    common Level
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation objective."
         is optional collection
-        role name Objective
+        role name ObjectiveRating        
     shared decimal NumericRating
         documentation "The maximum summary numerical rating or score for the program evaluation objective."
         is optional

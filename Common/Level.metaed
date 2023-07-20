@@ -1,4 +1,4 @@
-Common RatingLevel
+Common Level
     documentation "The descriptive level(s) of ratings (cut scores) for evaluation."
     descriptor RatingLevel
         documentation "The title for a level of rating or evaluation band (e.g., Excellent, Acceptable, Needs Improvement, Unacceptable)."

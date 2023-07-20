@@ -7,22 +7,19 @@ Domain Entity ProgramEvaluation
     shared string ProgramEvaluationTitle 
         documentation "An assigned unique identifier for the student program evaluation."
         is part of identity
-    descriptor EvaluationType
+    descriptor ProgramEvaluationType
         documentation "The type of program evaluation conducted."
         is part of identity
-        role name Program
-    descriptor EvaluationPeriod 
+    descriptor ProgramEvaluationPeriod 
         documentation "The name of the period for the program evaluation."
         is part of identity
-        role name Program
-    shared string EvaluationDescription 
+    shared string ProgramEvaluationDescription 
         documentation "The long description of the program evaluation."
         is optional
-        role name Program
-    common RatingLevel 
+    common Level 
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation."
         is optional collection
-        role name Evaluation
+        role name EvaluationRating
     shared decimal NumericRating
         documentation "The maximum summary numerical rating or score for the program evaluation."
         is optional
