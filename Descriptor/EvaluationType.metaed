@@ -1,2 +1,2 @@
-Descriptor EvaluationType 
+Descriptor ProgramEvaluationType 
     documentation "The type of the evaluation."
