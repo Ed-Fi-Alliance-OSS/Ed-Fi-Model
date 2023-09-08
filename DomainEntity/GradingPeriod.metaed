@@ -8,7 +8,7 @@ Domain Entity GradingPeriod [561]
         is part of identity
     shared string GradingPeriodName
         documentation "The school's descriptive name of the grading period."
-        is required
+        is part of identity
     integer PeriodSequence [1434]
         documentation "The sequential order of this period relative to other periods."
         is optional
