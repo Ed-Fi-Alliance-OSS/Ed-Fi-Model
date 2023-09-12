@@ -20,6 +20,5 @@ Domain Entity StudentCompetencyObjective [588]
     choice StudentCompetencyObjectiveSectionOrProgramChoice [2511]
         documentation "Relates the student and the Section or Program with the CompetencyObjective."
         is optional
-        merge StudentCompetencyObjectiveSectionOrProgramChoice.StudentSectionAssociation.Section.CourseOffering.Session with GradingPeriod.Session
         merge StudentCompetencyObjectiveSectionOrProgramChoice.StudentSectionAssociation.Student with Student
         merge StudentCompetencyObjectiveSectionOrProgramChoice.GeneralStudentProgramAssociation.Student with Student

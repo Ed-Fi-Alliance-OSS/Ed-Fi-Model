@@ -20,6 +20,5 @@ Domain Entity StudentLearningObjective [591]
     choice StudentLearningObjectiveSectionOrProgramChoice [2512]
         documentation "Relates the student and the Section or Program with the LearningObjective."
         is optional
-        merge StudentLearningObjectiveSectionOrProgramChoice.StudentSectionAssociation.Section.CourseOffering.Session with GradingPeriod.Session
         merge StudentLearningObjectiveSectionOrProgramChoice.StudentSectionAssociation.Student with Student
         merge StudentLearningObjectiveSectionOrProgramChoice.GeneralStudentProgramAssociation.Student with Student
