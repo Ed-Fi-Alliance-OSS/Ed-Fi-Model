@@ -4,11 +4,14 @@ Domain Entity GradingPeriod [561]
         documentation "Provide user information to lookup and link to an existing school record."
         is part of identity
     descriptor GradingPeriod [1433]
-        documentation "The name of the period for which grades are reported."
+        documentation "The state's name of the period for which grades are reported."
+        is part of identity
+    shared string GradingPeriodName
+        documentation "The school's descriptive name of the grading period."
         is part of identity
     integer PeriodSequence [1434]
         documentation "The sequential order of this period relative to other periods."
-        is part of identity
+        is optional
     enumeration SchoolYear
         documentation "The identifier for the grading period school year."
         is part of identity

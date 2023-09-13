@@ -1,0 +1,4 @@
+Shared String GradingPeriodName
+    documentation "The school's descriptive name of the grading period."
+    min length 1
+    max length 60
