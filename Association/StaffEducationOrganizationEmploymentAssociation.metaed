@@ -22,6 +22,9 @@ Association StaffEducationOrganizationEmploymentAssociation [601]
     currency HourlyWage [1033]
         documentation "Hourly wage associated with the employment position being reported."
         is optional
+    currency AnnualWage
+        documentation "Annual wage associated with the employment position being reported."
+        is optional
     domain entity Credential [2646]
         documentation "Reference to the credential that is the basis for this employment."
         is optional
