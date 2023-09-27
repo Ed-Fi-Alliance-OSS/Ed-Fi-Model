@@ -3,6 +3,9 @@ Association StudentSectionAssociation [614]
     allow primary key updates
     domain entity Student [1133]
         documentation "The student enrolled in the section."
+    domain entity Program
+        documentation "The program(s) that the student is participating in the context of the course."
+        is optional collection
     domain entity Section [1132]
         documentation "The section the student is enrolled in."
     date BeginDate [1128]

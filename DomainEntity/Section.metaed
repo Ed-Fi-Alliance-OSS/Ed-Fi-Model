@@ -5,6 +5,9 @@ Domain Entity Section [580]
         documentation "The local identifier assigned to a section."
         is part of identity
         is queryable field
+    descriptor SectionType
+        documentation "Specifies whether the section is for attendance only, credit only, or both."
+        is optional    
     shared integer SequenceOfCourse [1631]
         documentation "When a section is part of a sequence of parts for a course, the number of the sequence. If the course has only one part, the value of this section attribute should be 1."
         is optional
