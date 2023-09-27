@@ -38,12 +38,15 @@ Domain Entity CourseTranscript [552]
     domain entity StudentAcademicRecord [1333]
         documentation "Link to the student's academic record for a semester/school year."
         is part of identity
+        merge StudentAcademicRecord.SchoolYear with Section.CourseOffering.Session.SchoolYear 
     domain entity Section
         documentation "The section(s) associated with the course transcript."
         is optional collection
-    domain entity ResponsibleTeacherStaff
+        merge Section.CourseOffering.Session.SchoolYear with StudentAcademicRecord.SchoolYear
+    domain entity Staff
         documentation "The staff member that is the responsible teacher for instructing or monitoring instruction for student attempting the course."
         is optional
+        role name ResponsibleTeacher
     domain entity Program
         documentation "The program(s) that the student participated in the context of the course."
         is optional collection
