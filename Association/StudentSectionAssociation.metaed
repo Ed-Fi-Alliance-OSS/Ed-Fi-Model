@@ -23,3 +23,6 @@ Association StudentSectionAssociation [614]
     descriptor AttemptStatus [2806]
         documentation "An indication of the student's completion status for the section."
         is optional
+    domain entity Program
+        documentation "The program(s) that the student is participating in the context of the course."
+        is optional collection
