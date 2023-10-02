@@ -9,9 +9,12 @@ Association StudentEducationOrganizationAssociation [3052]
         is optional collection
         is queryable field
     descriptor Sex [1701]
-        documentation "The student's gender as last reported to the education organization."
-        is required
+        documentation "The student's birth sex as reported to the education organization."
+        is optional
         is queryable field
+    shared string GenderIdentity
+        documentation "The student's gender as last reported to the education organization."
+        is optional
     common Address [1680]
         documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
         is optional collection
