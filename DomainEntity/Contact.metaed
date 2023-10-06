@@ -18,6 +18,9 @@ Domain Entity Contact [573]
         documentation "A person's birth sex."
         is optional
         is queryable field
+    shared string GenderIdentity
+        documentation "The gender the contact identifies themselves as."
+        is optional
     common Address [1556]
         documentation "Contact's address, if different from the student address."
         is optional collection

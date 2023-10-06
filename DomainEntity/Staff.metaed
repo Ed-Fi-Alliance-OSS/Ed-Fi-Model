@@ -21,6 +21,9 @@ Domain Entity Staff [583]
         documentation "The birth sex of the staff member."
         is optional
         is queryable field
+    shared string GenderIdentity
+        documentation "The gender the staff member identifies themselves as."
+        is optional
     date BirthDate [1647]
         documentation "The month, day, and year on which an individual was born."
         is optional
