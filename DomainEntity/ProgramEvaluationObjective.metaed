@@ -11,7 +11,8 @@ Domain Entity ProgramEvaluationObjective
         is optional
     common ProgramEvaluationLevel
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation objective."
-        is optional collection       
+        is optional collection
+        role name Objective       
     shared decimal NumericRating
         documentation "The maximum summary numerical rating or score for the program evaluation objective."
         is optional
