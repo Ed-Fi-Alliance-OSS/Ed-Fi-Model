@@ -9,10 +9,9 @@ Domain Entity ProgramEvaluationObjective
     shared string ProgramEvaluationDescription named ProgramEvaluationObjectiveDescription
         documentation "The long description of the program evaluation objective."
         is optional
-    common Level
+    common ProgramEvaluationLevel
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation objective."
-        is optional collection
-        role name ObjectiveRating        
+        is optional collection       
     shared decimal NumericRating
         documentation "The maximum summary numerical rating or score for the program evaluation objective."
         is optional

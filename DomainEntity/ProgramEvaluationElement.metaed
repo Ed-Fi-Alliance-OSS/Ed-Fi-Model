@@ -13,10 +13,9 @@ Domain Entity ProgramEvaluationElement
     shared string ProgramEvaluationDescription named ProgramEvaluationElementDescription
         documentation "The long description of the program evaluation element."
         is optional
-    common Level 
+    common ProgramEvaluationLevel 
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation element."
         is optional collection
-        role name ElementRating
     shared decimal NumericRating
         documentation "	The maximum summary numerical rating or score for the program evaluation element."
         is optional
