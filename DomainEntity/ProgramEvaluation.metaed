@@ -16,10 +16,9 @@ Domain Entity ProgramEvaluation
     shared string ProgramEvaluationDescription 
         documentation "The long description of the program evaluation."
         is optional
-    common Level 
+    common ProgramEvaluationLevel 
         documentation "The descriptive level(s) of ratings (cut scores) for the program evaluation."
         is optional collection
-        role name EvaluationRating
     shared decimal NumericRating
         documentation "The maximum summary numerical rating or score for the program evaluation."
         is optional
