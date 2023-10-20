@@ -52,12 +52,6 @@ Association StudentSpecialEducationProgramEligibilityAssociation
     date TransitionConferenceDate
         documentation "Indicates the month, day, and year when the transition conference was held (for a child receiving early childhood intervention (ECI) services) among the lead agency, the family, and the local education agency (LEA) where the child resides to discuss the child's potential eligibility for early childhood special education (ECSE) services."
         is optional
-    date SpecialEducationExitDate
-        documentation "The  month, day and year on which a person stops receiving special education services."
-        is optional
-    descriptor SpecialEducationExitReason
-        documentation "The reference why a person stops receiving special education services."
-        is optional
-    shared string SpecialEducationExitExplained
-        documentation "Explanation on why a person stops receiving special education services."
-        is optional 
+    date EligibilityConferenceDate
+        documentation "The month, day, and year when the eligibility conference is held between the parent(s)/guardian(s) and the educational organization responsible staff member(s) to review and make decision on special education related services eligibility."
+        is optional      

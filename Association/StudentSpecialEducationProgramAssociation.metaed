@@ -39,6 +39,12 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
     common SpecialEducationProgramService [2808]
         documentation "Indicates the service(s) being provided to the student by the special education program."
         is optional collection
-    date EligibilityConferenceDate
-        documentation "The month, day, and year when the eligibility conference is held between the parent(s)/guardian(s) and the educational organization responsible staff member(s) to review and make decision on special education related services eligibility."
-        is optional  
+    date SpecialEducationExitDate
+        documentation "The  month, day and year on which a person stops receiving special education services."
+        is optional
+    descriptor SpecialEducationExitReason
+        documentation "The reference why a person stops receiving special education services."
+        is optional
+    shared string SpecialEducationExitExplained
+        documentation "Explanation on why a person stops receiving special education services."
+        is optional 
