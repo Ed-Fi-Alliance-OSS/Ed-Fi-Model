@@ -8,8 +8,8 @@ Association StaffSectionAssociation [604]
         documentation "The type of position the staff member holds in the specific class/section."
         is required
     date BeginDate [1047]
-        documentation "Month, day, and year of a teacher's assignment to the section. If blank, defaults to the first day of the first grading period for the section."
-        is optional
+        documentation "Month, day, and year of a teacher's assignment to the section."
+        is part of identity
     date EndDate [1049]
         documentation "Month, day, and year of the last day of a staff member's assignment to the section."
         is optional
