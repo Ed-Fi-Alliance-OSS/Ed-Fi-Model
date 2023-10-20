@@ -43,7 +43,7 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
         documentation "The  month, day and year on which a person stops receiving special education services."
         is optional
     descriptor SpecialEducationExitReason
-        documentation "The reference why a person stops receiving special education services."
+        documentation "The reason why a person stops receiving special education services."
         is optional
     shared string SpecialEducationExitExplained
         documentation "Explanation on why a person stops receiving special education services."
