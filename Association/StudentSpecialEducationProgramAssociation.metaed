@@ -39,3 +39,12 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
     common SpecialEducationProgramService [2808]
         documentation "Indicates the service(s) being provided to the student by the special education program."
         is optional collection
+    date SpecialEducationExitDate
+        documentation "The  month, day and year on which a person stops receiving special education services."
+        is optional
+    descriptor SpecialEducationExitReason
+        documentation "The reason why a person stops receiving special education services."
+        is optional
+    shared string SpecialEducationExitExplained
+        documentation "Explanation on why a person stops receiving special education services."
+        is optional 
