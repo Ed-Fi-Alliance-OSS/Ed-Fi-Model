@@ -41,7 +41,7 @@ Association StudentSpecialEducationProgramEligibilityAssociation
         documentation "Indicates the month, day, and year the local education agency (LEA) held the admission, review, and dismissal committee meeting regarding the child's eligibility determination for special education and related services. An individualized education plan (IEP) would be developed and implemented for a child admitted into special education on this same date."
         is optional
     bool IDEAIndicator
-        documentation "Indicates whether or not the student was determined eligible and enrolled in special education and related services as a result of the evaluation report and the admission, review, and dismissal committee meeting decision."
+        documentation "Indicates whether or not the student was determined eligible as a result of an evaluation."
         is optional
     descriptor EligibilityDelayReason
         documentation "The reason why the eligibility determination was completed beyond the required timeframe."
@@ -52,3 +52,6 @@ Association StudentSpecialEducationProgramEligibilityAssociation
     date TransitionConferenceDate
         documentation "Indicates the month, day, and year when the transition conference was held (for a child receiving early childhood intervention (ECI) services) among the lead agency, the family, and the local education agency (LEA) where the child resides to discuss the child's potential eligibility for early childhood special education (ECSE) services."
         is optional
+    date EligibilityConferenceDate
+        documentation "The month, day, and year when the eligibility conference is held between the parent(s)/guardian(s) and the educational organization responsible staff member(s) to review and make decision on special education related services eligibility."
+        is optional      
