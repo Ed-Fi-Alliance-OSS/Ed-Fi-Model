@@ -1,0 +1,19 @@
+Domain Entity VehicleSnapshot
+    documentation "Contains manufacturing and identification infomation for the buses."
+    string VehicleIdentificationNumber
+        documentation "The vehicle VIN number."        
+        is part of identity
+        max length 100        
+    string LicensePlateNumber
+        documentation "The vehicle's license number."        
+        is part of identity
+        max length 8        
+    descriptor Manufacturer
+        documentation "The vehicle's body manufacturer."
+        is optional
+    integer ManufacturerYear
+        documentation "The year the vehicle was manufactured."
+        is optional
+    descriptor FuelType
+        documentation "The vehicle's fuel type."
+        is optional

@@ -1,0 +1,20 @@
+Domain Entity Transportation
+    documentation "Represents the buses..."
+    domain entity School
+        documentation "References the School related to the vehicle."
+        is part of identity        
+    domain entity VehicleSnapshot
+        documentation "The vehicle associated with this entity."        
+        is part of identity
+    string BusNumber
+        documentation "Identifier assigned to a bus."
+        is part of identity                
+        max length 5        
+    string BusRoute
+        documentation "The school bus route."        
+        is optional
+        max length 10
+    enumeration SchoolYear
+        documentation "The school year refrence."
+        is required
+        is queryable field

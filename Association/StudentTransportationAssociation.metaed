@@ -1,0 +1,15 @@
+Association StudentTransportAssociation
+    documentation "This association indicates the mode of transport to which a student is assigned."
+    domain entity Student
+        documentation "References the student associated with the school bus."               
+    domain entity Transportation
+        documentation "References the school bus associated with the student."             
+    integer BusStopNumber
+        documentation "The bus stop that where the student gets picked up and dropped off."
+        is optional
+    date BeginDate
+        documentation "The date when the student starts the school bus service."
+        is optional
+    domain entity VehicleSnapshot
+        documentation "test."
+        is required
