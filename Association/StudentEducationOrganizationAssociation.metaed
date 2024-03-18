@@ -91,4 +91,4 @@ Association StudentEducationOrganizationAssociation [3052]
         is optional
     common DisplacedStudent
         documentation "Information about student who was enrolled, or eligible for enrollment, but has temporarily or permanently enrolled in another school or district because of a crisis-related disruption in educational services."
-        is optional
+        is optional collection
