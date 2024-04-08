@@ -1,4 +1,3 @@
 Shared String DocumentTitle [45]
     documentation "The title of the document given by the issuer."
-    min length 1
     max length 60
