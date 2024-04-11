@@ -3,7 +3,7 @@ Common StudentBusDetails
     string BusNumber
         documentation "The unique identifier assigned to the bus used for transporting the student."
         is part of identity
-        max length 10
+        max length 36
     descriptor BusRoute
         documentation "Identifies the specific route taken by a bus for student transportation."
         is part of identity

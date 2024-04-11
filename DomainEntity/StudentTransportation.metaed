@@ -1,7 +1,7 @@
  Domain Entity StudentTransportation
     documentation "This entity captures a student's specific transportation arrangement."
     domain entity Student
-        documentation "The studentassociated with the transportation."        
+        documentation "The student associated with the transportation."        
         is part of identity
     domain entity EducationOrganization
         documentation "The educational organization accountable for managing a student's transportation arrangements. Usually, this refers to a Local Education Agency (LEA), though it could also pertain to a school."        
