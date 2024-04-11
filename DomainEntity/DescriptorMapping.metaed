@@ -3,7 +3,6 @@ Domain Entity DescriptorMapping [3229]
     string Value [3230]
         documentation "The descriptor value that is being mapped to another value."
         is part of identity
-        min length 1
         max length 50
     shared string URI named Namespace [3231]
         documentation "The namespace of the descriptor value that is being mapped to another value."
@@ -11,7 +10,6 @@ Domain Entity DescriptorMapping [3229]
     string MappedValue [3232]
         documentation "The descriptor value to which the from descriptor value is being mapped to."
         is part of identity
-        min length 1
         max length 50
     shared string URI named MappedNamespace [3233]
         documentation "The namespace of the descriptor value to which the from descriptor value is mapped to."
