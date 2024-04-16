@@ -1,5 +1,5 @@
 Common AdditionalImmunization
-    documentation "Stores information about vaccinations or immunizations that students have received beyond those mandated by institutional or governmental regulations."
+    documentation  "Stores student's vaccination or immunization history beyond those mandated."
     string ImmunizationName
         documentation "The name of the immunization that an individual has satisfactorily received."
         is part of identity
