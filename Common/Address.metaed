@@ -19,8 +19,7 @@ Common Address [481]
         documentation "The five or nine digit zip code or overseas postal code portion of an address."
         is part of identity
     shared string NameOfCounty [727]
-        documentation "The name of the county, parish, borough, or comparable unit (within a state) in
-                      'which an address is located."
+        documentation "The name of the county, parish, borough, or comparable unit (within a state) in which an address is located."
         is optional
     shared string CountyFIPSCode [723]
         documentation "The Federal Information Processing Standards (FIPS) numeric code for the county issued by the National Institute of Standards and Technology (NIST). Counties are considered to be the ""first-order subdivisions"" of each State and statistically equivalent entity, regardless of their local designations (county, parish, borough, etc.) Counties in different States will have the same code. A unique county number is created when combined with the 2-digit FIPS State Code."
