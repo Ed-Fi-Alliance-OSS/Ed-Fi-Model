@@ -31,6 +31,7 @@ Association StudentEducationOrganizationAssociation [3052]
         documentation "Locator reference for the student photo. The specification for that reference is left to local definition."
         is optional
     bool HispanicLatinoEthnicity [1688]
+        deprecated "Will be removed in 2029."
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race, as last reported to the education organization. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
         is optional
         is queryable field
