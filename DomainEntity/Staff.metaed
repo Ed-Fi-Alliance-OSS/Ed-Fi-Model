@@ -43,6 +43,7 @@ Domain Entity Staff [583]
         is optional collection
         is queryable field
     bool HispanicLatinoEthnicity [1653]
+        deprecated "This element is scheduled for removal by 2029. Users of this element are advised to use Race instead."
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
         is optional
         is queryable field
