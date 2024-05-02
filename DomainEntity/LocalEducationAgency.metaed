@@ -1,7 +1,7 @@
 Domain Entity LocalEducationAgency based on EducationOrganization [569]
     documentation "This entity represents an administrative unit at the local level which exists primarily to operate schools or to contract for educational services. It includes school districts, charter schools, charter management organizations, or other local administrative organizations."
     integer LocalEducationAgencyId [1522]
-        documentation "The identifier assigned to a local education agency."
+        documentation "The identifier assigned to a local education agency. It must be distinct from any other identifier assigned to educational organizations, such as a SchoolId, to prevent duplication."
         renames identity property EducationOrganizationId
         is queryable field
         min value big

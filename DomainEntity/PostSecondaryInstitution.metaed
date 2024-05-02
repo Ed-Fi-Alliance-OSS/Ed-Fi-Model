@@ -1,7 +1,7 @@
 Domain Entity PostSecondaryInstitution based on EducationOrganization [520]
     documentation "An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s)."
     integer PostSecondaryInstitutionId [895]
-        documentation "The ID of the post secondary institution."
+        documentation "The ID of the post secondary institution. It must be distinct from any other identifier assigned to educational organizations, such as a LocalEducationAgencyId, to prevent duplication."
         renames identity property EducationOrganizationId
         is queryable field
         min value big
