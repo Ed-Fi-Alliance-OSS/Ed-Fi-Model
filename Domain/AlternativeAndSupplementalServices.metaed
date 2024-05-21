@@ -6,16 +6,25 @@ Domain AlternativeAndSupplementalServices
 * A StaffProgramAssociation links Program entities to assigned staff."
     domain entity EducationOrganization
     domain entity Program
+    association StudentSpecialEducationProgramEligibilityAssociation
     domain entity School
     domain entity Section
     domain entity Staff
     association StaffProgramAssociation
     domain entity Student
+    association StudentCTEProgramAssociation
+    association StudentHomelessProgramAssociation
+    association StudentLanguageInstructionProgramAssociation
+    association StudentMigrantEducationProgramAssociation
+    association StudentNeglectedOrDelinquentProgramAssociation
     association StudentProgramAssociation
     domain entity StudentProgramAttendanceEvent
     domain entity StudentSchoolAttendanceEvent
+    association StudentSchoolFoodServiceProgramAssociation  
     association StudentSectionAssociation
     domain entity StudentSectionAttendanceEvent
+    association StudentSpecialEducationProgramAssociation    
+    association StudentTitleIPartAProgramAssociation
     footer documentation
 "# Alternative and Supplemental Services Subdomains
 

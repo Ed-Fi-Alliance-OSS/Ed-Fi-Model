@@ -1,7 +1,9 @@
 Subdomain SectionsAndPrograms of TeachingAndLearning
     documentation "A school will have one or more Sections for each CourseOffering. Students are enrolled in specific Sections. Each Section will have one or more assigned Staff, will typically meet in a specific location in the school, and be assigned a ClassPeriod for the Session."
     domain entity ClassPeriod
+    domain entity Course
     domain entity CourseOffering
+    domain entity CourseTranscript
     domain entity EducationOrganization
     domain entity Location
     domain entity Program
@@ -13,6 +15,7 @@ Subdomain SectionsAndPrograms of TeachingAndLearning
     association StaffSchoolAssociation
     association StaffSectionAssociation
     domain entity Student
+    domain entity StudentAcademicRecord
     association StudentProgramAssociation
     association StudentSchoolAssociation
     association StudentSectionAssociation

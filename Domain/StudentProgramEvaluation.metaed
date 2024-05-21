@@ -6,3 +6,5 @@ Subdomain StudentProgramEvaluation of TeachingAndLearning
     domain entity Program
     domain entity ProgramEvaluationObjective
     domain entity ProgramEvaluationElement
+    common StudentEvaluationElement
+    common StudentEvaluationObjective

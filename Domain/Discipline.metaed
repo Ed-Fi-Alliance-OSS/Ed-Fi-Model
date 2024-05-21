@@ -8,3 +8,7 @@ Domain Discipline
     domain entity School
     domain entity Staff
     domain entity Student
+    association StaffDisciplineIncidentAssociation
+    association StudentDisciplineIncidentNonOffenderAssociation
+    association StudentDisciplineIncidentBehaviorAssociation
+

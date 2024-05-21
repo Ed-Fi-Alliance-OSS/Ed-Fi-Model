@@ -4,10 +4,11 @@ Subdomain ReportCard of StudentAcademicRecord
     domain entity EducationOrganization
     domain entity Grade
     domain entity GradingPeriod
+    domain entity LearningStandard
     domain entity Program
     domain entity ReportCard
     domain entity Section
-    domain entity Student
+    domain entity Student    
     domain entity StudentCompetencyObjective
     association StudentProgramAssociation
     association StudentSectionAssociation
