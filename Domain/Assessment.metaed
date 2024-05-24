@@ -12,5 +12,8 @@ Domain Assessment
     domain entity Section
     domain entity Student
     domain entity StudentAssessment
+    domain entity AssessmentScoreRangeLearningStandard
+    domain entity LearningStandardEquivalenceAssociation
+    association StudentAssessmentEducationOrganizationAssociation
     common StudentAssessmentItem
     common StudentObjectiveAssessment
