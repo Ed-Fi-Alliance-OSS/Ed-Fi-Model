@@ -25,7 +25,7 @@ env:
 jobs:
   MetaEd-Js-Data-Standard-Artifacts-4:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
@@ -59,12 +59,12 @@ jobs:
         ref: refs/heads/ODS-6336
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}         
     - name: Is pull request branch exists in Ed-Fi-Model
-      shell: pwsh
+      shell: powershell
       working-directory: ./Ed-Fi-Model/
       run: |
         ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."        
     - name: Find build.githubactions.ps1
-      shell: pwsh
+      shell: powershell
       run: |
         $scriptPath = Get-ChildItem -Path "${{ github.workspace }}" -Filter "build.githubactions.ps1" -Recurse -File | Select-Object -ExpandProperty FullName
         Write-Output "Found script at: $scriptPath"
@@ -103,9 +103,9 @@ jobs:
 
         $FilePath = '${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json'
         $MetaEdConfigBase | ConvertTo-Json -Depth 100 | Out-File -FilePath $FilePath -NoNewline -Encoding Ascii
-      shell: pwsh
+      shell: powershell
     - name: Print JSON content
-      shell: pwsh
+      shell: powershell
       run: |
         # Define the path to the JSON file
         $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json"
@@ -128,9 +128,9 @@ jobs:
             if ($fileCount -eq 0) {
                 throw "MetaEd build failed - there was no output. Review log above for more information."
             }
-      shell: pwsh
+      shell: powershell
     - name: Find Ed-Fi-Core.xsd
-      shell: pwsh
+      shell: powershell
       run: |
         $scriptPath = Get-ChildItem -Path "${{ github.workspace }}" -Filter "Ed-Fi-Core.xsd" -Recurse -File | Select-Object -ExpandProperty FullName
         Write-Output "Found script at: $scriptPath"      
@@ -269,11 +269,12 @@ jobs:
 
         }
         Write-host "`r`n Validation finished in $elapsed`ms. `r`n"
-      shell: pwsh
-    - name: Install SqlServer module
+      shell: powershell
+    - name: Install sql-server-2019 & sqlpackage
+      shell: powershell
       run: |
-        Install-Module -Name SqlServer -Force -AllowClobber
-      shell: pwsh      
+          choco install sql-server-2019  -y --params "'/IGNOREPENDINGREBOOT /IACCEPTSQLSERVERLICENSETERMS /Q /ACTION=install /INSTANCEID=MSSQLSERVER /INSTANCENAME=MSSQLSERVER /TCPENABLED=1 /UPDATEENABLED=FALSE /FEATURES=SQL,Tools'" --execution-timeout=$installTimeout
+          choco install sqlpackage      
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
       run: |
@@ -400,7 +401,7 @@ jobs:
         if ($Error.Count -gt 0) {
             exit 1
         }
-      shell: pwsh
+      shell: powershell
     - name: Upload log
       if: ${{ always() }}
       uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
