@@ -71,11 +71,16 @@ jobs:
     - name: Create MetaEdConfig
       working-directory: ./MetaEd-js/
       run: |
-        $FolderName = "${{ github.workspace }}\MetaEdOutput"
-        if (-not (Test-Path $FolderName)) {
-          New-Item $FolderName -ItemType Directory
+        $FolderMetaEdOutputName = "${{ github.workspace }}\MetaEdOutput"
+        if (-not (Test-Path $FolderMetaEdOutputName)) {
+          New-Item $FolderMetaEdOutputName -ItemType Directory
         }
 
+
+        $FolderMetaEdDeployName = "${{ github.workspace }}\MetaEdDeploy"
+        if (-not (Test-Path $FolderMetaEdDeployName)) {
+          New-Item $FolderMetaEdDeployName -ItemType Directory
+        }
         $MetaEdConfigBase = @{}
 
         $emptyList = New-Object System.Collections.ArrayList
@@ -110,12 +115,6 @@ jobs:
           node --version
         }
       shell: pwsh 
-    - name: Configure npm registry
-      run: |
-        npm config set registry https://registry.npmjs.org/
-        npm config set "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}"
-      shell: pwsh
-
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
