@@ -20,10 +20,7 @@ env:
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
   PROJECT_VERSION: "5.0.0"
   PROJECT_DESCRIPTION: "The Ed-Fi Data Model 5.0"
-  TECHNOLOGY_VERSION: "6.1.0"
   DATASTANDARD_VERSION: "DS-4.0-ME-3.x"
-  
-  
 
 jobs:
   MetaEd-Js-Data-Standard-Artifacts-4:
@@ -35,8 +32,6 @@ jobs:
         TECHNOLOGY_VERSION: ["6.1.0","7.1.0"]   
     name:  MetaEd-js-Data-Standard-Artifacts 4.0 with ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
-    - name: echo distinct ID ${{ github.event.inputs.distinct_id }}
-      run:  echo "${{ github.event.inputs.distinct_id }}"
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
       run: | 
@@ -49,10 +44,6 @@ jobs:
         path: MetaEd-js/
         ref: v4.3.1-dev.23
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
-    - name: Move build to metaed-model-builder
-      run: |
-        mkdir -p MetaEd-js/metaed-model-builder
-        mv MetaEd-js/build/* MetaEd-js/metaed-model-builder/        
     - name: Checkout Ed-Fi-Model
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
@@ -107,7 +98,7 @@ jobs:
 
         $MetaEdConfigBase.Add("metaEdConfiguration",$metaEdConfiguration)
 
-        $FilePath = 'metaed-model-builder\MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json'
+        $FilePath = 'build\MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json'
         $MetaEdConfigBase | ConvertTo-Json -Depth 100 | Out-File -FilePath $FilePath -NoNewline -Encoding Ascii
       shell: pwsh
     - name: Check for Node.js
@@ -126,9 +117,9 @@ jobs:
       shell: pwsh
 
     - name: Build the model 
-      working-directory: ./MetaEd-js/metaed-model-builder/  
+      working-directory: ./MetaEd-js/build/  
       run: |
-        node . ${{ github.workspace }}/MetaEd-js/metaed-model-builder/index.js --config . ${{ github.workspace }}/MetaEd-js/metaed-model-builder/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json -a
+        node . ${{ github.workspace }}/MetaEd-js/build/index.js --config . ${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json -a
 
         $fileCount = (Get-ChildItem ${{ github.workspace }}/Ed-Fi-Model/MetaEdDeploy -ErrorAction SilentlyContinue | Measure-Object).Count
 
