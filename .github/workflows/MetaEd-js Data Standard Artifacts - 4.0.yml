@@ -129,6 +129,11 @@ jobs:
                 throw "MetaEd build failed - there was no output. Review log above for more information."
             }
       shell: pwsh
+    - name: Find Ed-Fi-Core.xsd
+      shell: pwsh
+      run: |
+        $scriptPath = Get-ChildItem -Path "${{ github.workspace }}" -Filter "Ed-Fi-Core.xsd" -Recurse -File | Select-Object -ExpandProperty FullName
+        Write-Output "Found script at: $scriptPath"      
     - name: Validate Schema 
       working-directory: ./Ed-Fi-Model/    
       run: |
