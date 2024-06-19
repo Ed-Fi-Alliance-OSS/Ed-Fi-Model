@@ -123,7 +123,7 @@ jobs:
       run: |
             node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json -a
 
-            $fileCount = (Get-ChildItem ${{ github.workspace }}/MetaEdDeploy -ErrorAction SilentlyContinue | Measure-Object).Count
+            $fileCount = (Get-ChildItem "${{ github.workspace }}/MetaEdDeploy" -ErrorAction SilentlyContinue | Measure-Object).Count
 
             if ($fileCount -eq 0) {
                 throw "MetaEd build failed - there was no output. Review log above for more information."
