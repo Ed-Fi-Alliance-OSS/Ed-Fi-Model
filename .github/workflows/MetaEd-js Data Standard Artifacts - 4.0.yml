@@ -260,8 +260,8 @@ jobs:
         $Error.Clear()
         Write-Host " "
 
-        $coreSchemaPath = "${{ github.workspace }}/MetaEdDeploy/edfi/XSD/Ed-Fi-Core.xsd"
-        $interchangePath = "${{ github.workspace }}/MetaEdDeploy/edfi/Interchange"
+        $coreSchemaPath = "${{ github.workspace }}/MetaEdOutput/EdFi/XSD/Ed-Fi-Core.xsd"
+        $interchangePath = "${{ github.workspace }}/MetaEdOutput/EdFi/Interchange"
 
         $elapsed = Use-StopWatch {
         $coreSchema = Test-Schema $coreSchemaPath
