@@ -119,7 +119,7 @@ jobs:
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
-        node . ${{ github.workspace }}/MetaEd-js/build/index.js --config . ${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json -a
+        node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json -a
 
         $fileCount = (Get-ChildItem ${{ github.workspace }}/Ed-Fi-Model/MetaEdDeploy -ErrorAction SilentlyContinue | Measure-Object).Count
 
