@@ -270,6 +270,10 @@ jobs:
         }
         Write-host "`r`n Validation finished in $elapsed`ms. `r`n"
       shell: pwsh
+    - name: Install SqlServer module
+      run: |
+        Install-Module -Name SqlServer -Force -AllowClobber
+      shell: pwsh      
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
       run: |
@@ -300,8 +304,8 @@ jobs:
 
             $scripts = @()
 
-            $basePath = '${{ github.workspace }}\MetaEdDeploy'
-            $latestSqlServerScriptPath = Join-Path $basePath 'edfi\Database\SQLServer\ODS'
+            $basePath = '${{ github.workspace }}/MetaEdOutput'
+            $latestSqlServerScriptPath = Join-Path $basePath 'EdFi/Database/SQLServer/ODS'
             $deprecatedScriptPath = Join-Path $basePath 'ODS-SQLServer'
 
             if (Test-Path $latestSqlServerScriptPath) {
