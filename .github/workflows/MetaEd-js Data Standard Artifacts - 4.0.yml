@@ -86,7 +86,7 @@ jobs:
         $emptyList = New-Object System.Collections.ArrayList
 
         $projectPaths = New-Object System.Collections.ArrayList
-        $projectPaths.Add("${{ github.workspace }}\Ed-Fi-Model")
+        $projectPaths.Add("${{ github.workspace }}\Ed-Fi-Model\")
 
         $projectList = New-Object System.Collections.ArrayList
         $projectList.Add(@{"namespaceName"="EdFi";"projectName"="Ed-Fi";"projectVersion"="${{env.PROJECT_VERSION}}";"projectExtension"="";"description"="${{env.PROJECT_DESCRIPTION}}";})
@@ -106,15 +106,21 @@ jobs:
         $FilePath = 'build\MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json'
         $MetaEdConfigBase | ConvertTo-Json -Depth 100 | Out-File -FilePath $FilePath -NoNewline -Encoding Ascii
       shell: pwsh
-    - name: Check for Node.js
+    - name: Print JSON content
+      shell: pwsh
       run: |
-        if (-not (Get-Command node -ErrorAction SilentlyContinue)) {
-          Write-Host "Node.js is not installed. Please install Node.js to proceed."
-          exit 1
-        } else {
-          node --version
-        }
-      shell: pwsh 
+        # Define the path to the JSON file
+        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json"
+        
+        # Read the content of the JSON file
+        $jsonContent = Get-Content -Path $jsonFilePath -Raw
+        
+        # Convert the JSON content to a PowerShell object
+        $jsonObject = $jsonContent | ConvertFrom-Json
+        
+        # Print the content of the JSON object
+        $jsonObject | Format-List -Property *
+
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
