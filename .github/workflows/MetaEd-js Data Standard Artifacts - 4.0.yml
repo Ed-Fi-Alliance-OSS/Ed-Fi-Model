@@ -89,7 +89,7 @@ jobs:
         $projectList = New-Object System.Collections.ArrayList
         $projectList.Add(@{"namespaceName"="EdFi";"projectName"="Ed-Fi";"projectVersion"="${{env.PROJECT_VERSION}}";"projectExtension"="";"description"="${{env.PROJECT_DESCRIPTION}}"})
         $metaEdConfiguration = @{
-                                  "artifactDirectory"="${{ github.workspace }}/MetaEdDeploy";
+                                  "artifactDirectory"="${{ github.workspace }}/MetaEdOutput";
                                   "deployDirectory"="";
                                   "pluginTechVersion"=@{};
                                   "projects"=$projectList;
