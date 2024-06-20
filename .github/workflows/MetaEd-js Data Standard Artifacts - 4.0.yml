@@ -402,12 +402,6 @@ jobs:
             exit 1
         }
       shell: powershell
-    - name: Upload log
-      if: ${{ always() }}
-      uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
-      with:
-        name: Build-${{env.DATASTANDARD_VERSION}}-${{ matrix.TECHNOLOGY_VERSION }}.Log
-        path: /home/runner/.npm/_logs/*.log
     - name: Upload MetaEd.Artifacts
       if: success()
       uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
