@@ -18,8 +18,8 @@ env:
   HEAD_REF:  ${{ GITHUB.HEAD_REF }}
   REF_NAME:  ${{ GITHUB.REF_NAME }}
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
-  PROJECT_VERSION: "5.0.0"
-  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 5.0"
+  PROJECT_VERSION: "4.0.0"
+  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 4.0"
   DATASTANDARD_VERSION: "DS-4.0-ME-3.x"
 
 jobs:
@@ -56,11 +56,6 @@ jobs:
       working-directory: ./Ed-Fi-Model/
       run: |
         ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."        
-    - name: Find build.githubactions.ps1
-      shell: powershell
-      run: |
-        $scriptPath = Get-ChildItem -Path "${{ github.workspace }}" -Filter "build.githubactions.ps1" -Recurse -File | Select-Object -ExpandProperty FullName
-        Write-Output "Found script at: $scriptPath"
     - name: Create MetaEdConfig
       run: |
         $FolderMetaEdOutputName = "${{ github.workspace }}/MetaEdOutput"
@@ -97,20 +92,6 @@ jobs:
         $FilePath = '${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json'
         $MetaEdConfigBase | ConvertTo-Json -Depth 100 | Out-File -FilePath $FilePath -NoNewline -Encoding Ascii
       shell: powershell
-    - name: Print JSON content
-      shell: powershell
-      run: |
-        # Define the path to the JSON file
-        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json"
-        
-        # Read the content of the JSON file
-        $jsonContent = Get-Content -Path $jsonFilePath -Raw
-        
-        # Convert the JSON content to a PowerShell object
-        $jsonObject = $jsonContent | ConvertFrom-Json
-        
-        # Print the content of the JSON object
-        $jsonObject | Format-List -Property *
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
@@ -122,11 +103,6 @@ jobs:
                 throw "MetaEd build failed - there was no output. Review log above for more information."
             }
       shell: powershell
-    - name: Find Ed-Fi-Core.xsd
-      shell: powershell
-      run: |
-        $scriptPath = Get-ChildItem -Path "${{ github.workspace }}" -Filter "Ed-Fi-Core.xsd" -Recurse -File | Select-Object -ExpandProperty FullName
-        Write-Output "Found script at: $scriptPath"      
     - name: Validate Schema 
       working-directory: ./Ed-Fi-Model/    
       run: |
