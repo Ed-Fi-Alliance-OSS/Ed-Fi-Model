@@ -68,6 +68,20 @@ jobs:
       run: |
         ./CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }}
       shell: powershell
+    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json content
+      shell: powershell
+      run: |
+        # Define the path to the JSON file
+        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json"
+
+        # Read the content of the JSON file
+        $jsonContent = Get-Content -Path $jsonFilePath -Raw
+
+        # Convert the JSON content to a PowerShell object
+        $jsonObject = $jsonContent | ConvertFrom-Json
+
+        # Print the content of the JSON object
+        $jsonObject | Format-List -Property *      
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
