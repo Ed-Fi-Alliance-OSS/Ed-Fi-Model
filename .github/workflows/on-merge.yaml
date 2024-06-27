@@ -50,7 +50,8 @@ jobs:
         repository: Ed-Fi-Closed/Ed-Fi-Model
         path: Ed-Fi-Model/
         ref: ${{env.DATASTANDARD_VERSION}}
-        token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+        #token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+        token: ${{ github.token }}
     - name: Is pull request branch exists in Ed-Fi-Model
       shell: powershell
       working-directory: ./Ed-Fi-Model/
