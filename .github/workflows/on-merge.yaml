@@ -19,11 +19,8 @@ env:
   REF_NAME:  ${{ GITHUB.REF_NAME }}
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
   PROJECT_VERSION: "5.2.0"
-  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 5.2.0"
-  DATASTANDARD_VERSION: "DS-5.2.0-ME-3.x"
-  #DATASTANDARD_VERSION: "DS-5.2.0-ME-3.x"
-                         
-  #DATASTANDARD_VERSION: "DS-5.1.0-ME-3.0.1"
+  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 5.2.0"                         
+  DATASTANDARD_VERSION: "DS-5.1.0-ME-3.0.1"
 
 jobs:
   MetaEd-Js-Data-Standard-Artifacts-4:
@@ -72,7 +69,6 @@ jobs:
       run: |
         ./eng/CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }}
       shell: powershell
-
     - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.0.json content
       shell: powershell
       run: |
