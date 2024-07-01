@@ -127,13 +127,6 @@ function Restore {
     Invoke-Execute { dotnet restore  $Solution --verbosity:normal }
 }
 
-function Compile {
-    Invoke-Execute {
-        dotnet --info
-        dotnet build $Solution -c $Configuration --version-suffix $version --no-restore -p:StandardVersion=$StandardVersion
-    }
-}
-
 function Pack {
     if ([string]::IsNullOrWhiteSpace($PackageName) -and [string]::IsNullOrWhiteSpace($NuspecFilePath)){
         Invoke-Execute {
@@ -296,12 +289,6 @@ function RepositoryTag {
     return $versionTag
 }
 
-function Invoke-Build {
-    Write-Host "Building Version $version" -ForegroundColor Cyan
-    Invoke-Step { DotnetClean }
-    Invoke-Step { Compile }
-}
-
 function Invoke-DotnetClean {
     Invoke-Step { DotnetClean }
 }
@@ -346,7 +333,7 @@ Invoke-Main {
     switch ($Command) {
         DotnetClean { Invoke-DotnetClean }
         Restore { Invoke-Restore }
-        Build { Invoke-Build }
+        <# Build { Invoke-Build } #>
         Test { Invoke-Tests }
         Pack { Invoke-Pack }
         Publish { Invoke-Publish }

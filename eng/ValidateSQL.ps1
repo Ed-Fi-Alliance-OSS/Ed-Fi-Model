@@ -18,12 +18,6 @@ function Test-SQL {
     $databseCSB.Database = "MetaEd_SQL_Validation_Test"
 
     $server   = New-Object 'Microsoft.SqlServer.Management.Smo.Server' $databseCSB.Server
-    try {
-        $server.KillDatabase($databseCSB.Database)
-    } catch {
-        Write-Host $_
-        $Error.Clear()
-    }
 
     $database = New-Object 'Microsoft.SqlServer.Management.Smo.Database' ($server, $databseCSB.Database)
     $database.RecoveryModel = [Microsoft.SqlServer.Management.Smo.RecoveryModel]::Simple
