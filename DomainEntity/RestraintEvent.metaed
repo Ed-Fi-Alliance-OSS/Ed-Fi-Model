@@ -21,3 +21,6 @@ Domain Entity RestraintEvent [578]
     domain entity School [1598]
         documentation "The school where the restraint event occurred."
         is part of identity
+    domain entity DisciplineIncident
+        documentation "The discipline incident associated with the restraint event."         
+        is optional
