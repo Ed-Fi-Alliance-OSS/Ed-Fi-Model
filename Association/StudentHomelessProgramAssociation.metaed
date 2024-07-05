@@ -1,5 +1,5 @@
 Association StudentHomelessProgramAssociation based on GeneralStudentProgramAssociation [2785]
-    documentation "This association represents the McKinney-Vento Homeless Program program(s) that a student participates in or from which the student receives services."
+    documentation "This association represents the McKinney-Vento Homeless Program program(s) that a student participates in or from which the student receives services. The association is a subclass of the GeneralStudentProgramAssociation specifically designed for homeless programs."
     descriptor HomelessPrimaryNighttimeResidence [2549]
         documentation "The primary nighttime residence of the student at the time the student is identified as homeless."
         is optional

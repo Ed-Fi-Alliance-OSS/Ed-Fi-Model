@@ -1,5 +1,5 @@
 Association StudentCTEProgramAssociation based on GeneralStudentProgramAssociation [606]
-    documentation "This association represents the career and technical education (CTE) program that a student participates in. The association is an extension of the StudentProgramAssociation particular for CTE programs."
+    documentation "This association represents the career and technical education (CTE) program that a student participates in. The association is a subclass of the GeneralStudentProgramAssociation specifically designed for CTE programs."
     bool NonTraditionalGenderStatus [2778]
         documentation "Indicator that student is from a gender group that comprises less than 25% of the individuals employed in an occupation or field of work."
         is optional
