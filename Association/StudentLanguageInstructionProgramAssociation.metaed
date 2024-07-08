@@ -1,5 +1,5 @@
 Association StudentLanguageInstructionProgramAssociation based on GeneralStudentProgramAssociation [2790]
-    documentation "This association represents the Title III Language Instruction for Limited English Proficient and Immigrant Students program(s) that a student participates in or from which the student receives services."
+    documentation "This association represents the Title III Language Instruction for Limited English Proficient and Immigrant Students program(s) that a student participates in or from which the student receives services. The association is a subclass of the GeneralStudentProgramAssociation specifically designed for language instruction programs."
     common EnglishLanguageProficiencyAssessment [2791]
         documentation "Results of yearly English language assessment."
         is optional collection

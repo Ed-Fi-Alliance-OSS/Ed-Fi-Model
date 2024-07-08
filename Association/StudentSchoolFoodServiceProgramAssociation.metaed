@@ -1,5 +1,5 @@
 Association StudentSchoolFoodServiceProgramAssociation based on GeneralStudentProgramAssociation [2803]
-    documentation "This association represents the school food services program(s), such as the Free or Reduced Lunch program, that a student participates in or from which the student receives services."
+    documentation "This association represents the school food services program(s), such as the Free or Reduced Lunch program, that a student participates in or from which the student receives services. The association is a subclass of the GeneralStudentProgramAssociation specifically designed for school food service programs."
     bool DirectCertification [2804]
         documentation "Indicates that the student's National School Lunch Program (NSLP) eligibility has been determined through direct certification."
         is optional

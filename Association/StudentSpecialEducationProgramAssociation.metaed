@@ -1,5 +1,5 @@
 Association StudentSpecialEducationProgramAssociation based on GeneralStudentProgramAssociation [615]
-    documentation "This association represents the special education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation particular for special education programs."
+    documentation "This association represents the special education program(s) that a student participates in or receives services from. The association is a subclass of the GeneralStudentProgramAssociation specifically designed for special education programs."
     bool IdeaEligibility [1138]
         documentation "Indicator of the eligibility of the student to receive special education services according to the Individuals with Disabilities Education Act (IDEA)."
         is optional
