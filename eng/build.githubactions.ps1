@@ -333,7 +333,6 @@ Invoke-Main {
     switch ($Command) {
         DotnetClean { Invoke-DotnetClean }
         Restore { Invoke-Restore }
-        <# Build { Invoke-Build } #>
         Test { Invoke-Tests }
         Pack { Invoke-Pack }
         Publish { Invoke-Publish }
