@@ -1,4 +1,4 @@
-name: MetaEd-js Data Standard Artifacts - 5.2.0
+name: MetaEd-js Data Standard Artifacts - 5.X
 
 on:
   pull_request:
