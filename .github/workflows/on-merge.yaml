@@ -23,7 +23,7 @@ env:
   DATASTANDARD_VERSION: "DS-5.1.0-ME-3.0.1"
 
 jobs:
-  MetaEd-Js-Data-Standard-Artifacts-5:
+  MetaEd-Js-Data-Standard-Artifacts-4:
 
     runs-on: windows-latest
     strategy:
@@ -46,13 +46,21 @@ jobs:
         ref: v4.4.1-dev.1
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
-    - name: Checkout Ed-Fi-Model
+    #- name: Checkout Ed-Fi-Model
+      #uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+      #with:
+        #repository: Ed-Fi-Closed/Ed-Fi-Model
+        #path: Ed-Fi-Model/
+        #ref: ${{env.DATASTANDARD_VERSION}}
+        #token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+
+    - name: Checkout Ed-Fi-Model Branch
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
         repository: Ed-Fi-Closed/Ed-Fi-Model
         path: Ed-Fi-Model/
-        ref: ${{env.DATASTANDARD_VERSION}}
-        token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}    
+        ref: refs/heads/ODS-6337
+        token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
     - name: Is pull request branch exists in Ed-Fi-Model
       shell: powershell
