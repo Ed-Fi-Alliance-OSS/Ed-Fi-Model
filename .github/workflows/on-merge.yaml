@@ -58,6 +58,8 @@ jobs:
       shell: powershell
       working-directory: ./Ed-Fi-Model/
       run: |
+        pwd
+        ls
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
 
     - name: Create MetaEdConfig
