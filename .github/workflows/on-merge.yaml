@@ -46,20 +46,12 @@ jobs:
         ref: v4.4.1-dev.1
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
-    #- name: Checkout Ed-Fi-Model
-      #uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
-      #with:
-        #repository: Ed-Fi-Closed/Ed-Fi-Model
-        #path: Ed-Fi-Model/
-        #ref: ${{env.DATASTANDARD_VERSION}}
-        #token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
-
-    - name: Checkout Ed-Fi-Model Branch
+    - name: Checkout Ed-Fi-Model
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
         repository: Ed-Fi-Closed/Ed-Fi-Model
         path: Ed-Fi-Model/
-        ref: refs/heads/ODS-6337
+        ref: ${{env.DATASTANDARD_VERSION}}
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
     - name: Is pull request branch exists in Ed-Fi-Model
