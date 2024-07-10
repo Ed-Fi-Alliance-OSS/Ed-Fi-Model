@@ -29,8 +29,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        TECHNOLOGY_VERSION: ["6.2.0","7.2.0"]   
-    name:  MetaEd-js-Data-Standard-Artifacts 5.0 with ODS ${{ matrix.TECHNOLOGY_VERSION }}
+        TECHNOLOGY_VERSION: ["6.2.0","7.3.0"]   
+    name:  MetaEd-js-Data-Standard-Artifacts 5.x with ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
