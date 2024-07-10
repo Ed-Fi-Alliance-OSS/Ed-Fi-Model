@@ -20,7 +20,6 @@ env:
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
   PROJECT_VERSION: "5.2.0"
   PROJECT_DESCRIPTION: "The Ed-Fi Data Model 5.2.0"
-  #DATASTANDARD_VERSION: "DS-5.1.0-ME-3.0.1"
   DATASTANDARD_VERSION: ${{ github.event.repository.default_branch }}
 
 jobs:
@@ -59,7 +58,6 @@ jobs:
       shell: powershell
       working-directory: ./Ed-Fi-Model/
       run: |
-        ls
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
 
     - name: Create MetaEdConfig
