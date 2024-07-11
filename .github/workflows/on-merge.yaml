@@ -20,17 +20,17 @@ env:
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
   PROJECT_VERSION: "5.2.0"
   PROJECT_DESCRIPTION: "The Ed-Fi Data Model 5.2.0"
-  DATASTANDARD_VERSION: "DS-5.1.0-ME-3.0.1"
+  DATASTANDARD_VERSION: ${{ github.event.repository.default_branch }}
 
 jobs:
-  MetaEd-Js-Data-Standard-Artifacts-4:
+  MetaEd-Js-Data-Standard-Artifacts-5:
 
     runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
-        TECHNOLOGY_VERSION: ["6.2.0","7.2.0"]   
-    name:  MetaEd-js-Data-Standard-Artifacts 5.0 with ODS ${{ matrix.TECHNOLOGY_VERSION }}
+        TECHNOLOGY_VERSION: ["7.3.0"]
+    name:  MetaEd-js-Data-Standard-Artifacts 5.x with ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
@@ -52,14 +52,6 @@ jobs:
         repository: Ed-Fi-Closed/Ed-Fi-Model
         path: Ed-Fi-Model/
         ref: ${{env.DATASTANDARD_VERSION}}
-        token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
-
-    - name: Checkout Ed-Fi-Model Branch
-      uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
-      with:
-        repository: Ed-Fi-Closed/Ed-Fi-Model
-        path: Ed-Fi-Model/
-        ref: refs/heads/ODS-6337
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
     - name: Is pull request branch exists in Ed-Fi-Model
