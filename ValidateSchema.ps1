@@ -143,8 +143,10 @@ $elapsed = Use-StopWatch {
 
 	if (-not [string]::IsNullOrWhiteSpace($MetaEdExtensionName) `
         -and $MetaEdExtensionName -ne "Homograph") {
+
+        Write-Host "`r`n $MetaEdExtensionName Extension Schema validation  `r`n"            
         # See https://tracker.ed-fi.org/browse/METAED-997 for why we skip Homograph
-        $extensionSchemaPath = "$Workspace/MetaEdDeploy/XSD/EXTENSION-Ed-Fi-Extended-Core.xsd"
+        $extensionSchemaPath = "$Workspace/MetaEdDeploy/$MetaEdExtensionName/XSD/EXTENSION-Ed-Fi-Extended-Core.xsd"
         $extensionInterchangePath = "$Workspace/MetaEdDeploy/$MetaEdExtensionName/Interchange"
 
         $extensionSchema = Test-Schema $extensionSchemaPath $coreSchema

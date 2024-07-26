@@ -70,6 +70,8 @@ function Test-SQL {
     }
 
 	if (-not [string]::IsNullOrWhiteSpace($MetaEdExtensionName)) {
+
+        Write-Host "`r`n $MetaEdExtensionName Extension SQL validation  `r`n"   
         $extensionSqlServerScriptPath = Join-Path $basePath "$MetaEdExtensionName\Database\SQLServer\ODS"
         if (Test-Path $extensionSqlServerScriptPath) {
             $structurePath = Join-Path $extensionSqlServerScriptPath 'Structure'
@@ -126,7 +128,7 @@ function Write-Result {
         [parameter(mandatory = $false)]
         $Exception
     )
-    if ($Elapsed -ne $null) {
+    if ($null -ne $Elapsed) {
         $Elapsed = "($Elapsed`ms)"
     }
     if ($Passed) {
@@ -135,7 +137,7 @@ function Write-Result {
     } else {
         Write-Host " FAIL " -BackgroundColor Red -ForegroundColor Black -NoNewline
         Write-Host " $Name $Elapsed`r`n"
-        if ($Exception -ne $null) {
+        if ($null -ne $Exception) {
             Write-Error $Exception
         }
     }
