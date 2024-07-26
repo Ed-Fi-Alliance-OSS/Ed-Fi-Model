@@ -25,6 +25,10 @@ jobs:
   MetaEd-Js-Extension-Artifacts-StudentTranscript-4-With-ODS-71:
 
     runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        TECHNOLOGY_VERSION: ["6.1.0","7.1.0"]
 
     name:  MetaEd-js Extension Artifacts - Student Transcript 4.0 with ODS 7.1
     steps:
@@ -84,14 +88,14 @@ jobs:
     - name: Create MetaEdConfig
       working-directory: ./Ed-Fi-Model/    
       run: |
-        ./CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ env.TECHNOLOGY_VERSION }} -MetaEdExtensionName "SampleStudentTranscript"
+        ./CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }} -MetaEdExtensionName "SampleStudentTranscript"
       shell: powershell
 
-    - name: Print MetaEdConfig-API-${{ env.TECHNOLOGY_VERSION }}-DS-4.0.json content
+    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json content
       shell: powershell
       run: |
         # Define the path to the JSON file
-        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ env.TECHNOLOGY_VERSION }}-DS-4.0.json"
+        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json"
 
         # Read the content of the JSON file
         $jsonContent = Get-Content -Path $jsonFilePath -Raw
@@ -105,7 +109,7 @@ jobs:
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
-            node index.js --config ./MetaEdConfig-API-${{ env.TECHNOLOGY_VERSION }}-DS-4.0.json -a
+            node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json -a
 
             $fileCount = (Get-ChildItem "${{ github.workspace }}/MetaEdOutput" -ErrorAction SilentlyContinue | Measure-Object).Count
 
@@ -136,7 +140,7 @@ jobs:
     - name: Upload MetaEd.Artifacts
       uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
       with:
-        name: MetaEdOutput-${{env.DATASTANDARD_VERSION}}-${{ env.TECHNOLOGY_VERSION }}
+        name: MetaEdOutput-${{env.DATASTANDARD_VERSION}}-${{ matrix.TECHNOLOGY_VERSION }}
         path: ${{ github.workspace }}/MetaEdOutput/**/*.*      
 
  
