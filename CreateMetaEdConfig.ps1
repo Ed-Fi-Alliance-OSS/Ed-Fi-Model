@@ -9,7 +9,9 @@ param (
     [string]$Workspace,
     [string]$ProjectVersion,
     [string]$ProjectDescription,
-    [string]$TechnologyVersion
+    [string]$TechnologyVersion,
+    [string]$MetaEdExtensionName    
+    
 )
 
 $FolderMetaEdOutputName = "$Workspace/MetaEdOutput"
@@ -35,6 +37,11 @@ $projectList.Add(@{
     "projectExtension"="";
     "description"=$ProjectDescription
 })
+
+if (-not [string]::IsNullOrWhiteSpace($MetaEdExtensionName)) {
+    $projectPaths.Add("$Workspace/MetaEdExtensionSource")
+    $projectList.Add(@{"namespaceName"="$MetaEdExtensionName";"projectName"="$MetaEdExtensionName";"projectVersion"="1.0.0";"projectExtension"="EXTENSION";"description"="";})
+}
 
 $metaEdConfiguration = @{
     "artifactDirectory"="$Workspace/MetaEdOutput";
