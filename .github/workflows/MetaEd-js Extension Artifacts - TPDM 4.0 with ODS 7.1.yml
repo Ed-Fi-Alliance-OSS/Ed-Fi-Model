@@ -46,7 +46,7 @@ jobs:
     - name: Checkout Ed-Fi-TPDM-Model
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
-        repository: Ed-Fi-TPDM-Model
+        repository: Ed-Fi-Alliance/Ed-Fi-TPDM-Model
         path: MetaEdExtensionSource/
         ref: ${{env.TPDM_DATASTANDARD_VERSION}}
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
