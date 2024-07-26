@@ -25,7 +25,7 @@ env:
   TECHNOLOGY_VERSION: "7.1.0"
 
 jobs:
-  MetaEd-Js-Data-Standard-Artifacts-4:
+  MetaEd-Js-Data-Standard-Artifacts-TPDM-4-With-ODS-71:
 
     runs-on: windows-latest
 
