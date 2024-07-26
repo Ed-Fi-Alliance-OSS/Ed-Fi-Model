@@ -149,6 +149,8 @@ $elapsed = Use-StopWatch {
         $extensionSchemaPath = "$Workspace/MetaEdDeploy/$MetaEdExtensionName/XSD/EXTENSION-Ed-Fi-Extended-Core.xsd"
         $extensionInterchangePath = "$Workspace/MetaEdDeploy/$MetaEdExtensionName/Interchange"
 
+        Write-Host "`r`n extensionSchemaPath is $extensionSchemaPath `r`n"
+        Write-Host "`r`n extensionInterchangePath is $extensionInterchangePath `r`n"        
         $extensionSchema = Test-Schema $extensionSchemaPath $coreSchema
         Test-InterchangeSchema $extensionInterchangePath $extensionSchema "EXTENSION-Interchange*"
     }
