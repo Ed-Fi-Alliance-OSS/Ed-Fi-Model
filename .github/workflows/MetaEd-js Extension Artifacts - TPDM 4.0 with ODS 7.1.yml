@@ -1,10 +1,7 @@
 name: MetaEd-js Extension Artifacts - TPDM 4.0 with ODS 7.1
 
 on:
-  pull_request:
-    branches: ['DS-*']
-  push:
-    branches: ['DS-*']
+
   workflow_dispatch:
 
 permissions: read-all
