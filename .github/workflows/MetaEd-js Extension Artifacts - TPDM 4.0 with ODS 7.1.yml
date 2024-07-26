@@ -93,6 +93,11 @@ jobs:
                 throw "MetaEd build failed - there was no output. Review log above for more information."
             }
       shell: powershell
+    - name: Upload MetaEd.Artifacts
+      uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
+      with:
+        name: MetaEdOutput-${{env.DATASTANDARD_VERSION}}-${{ env.TECHNOLOGY_VERSION }}
+        path: ${{ github.workspace }}/MetaEdOutput/**/*.*      
     - name: Validate Schema 
       working-directory: ./Ed-Fi-Model/    
       run: |
@@ -108,10 +113,6 @@ jobs:
       run: |
         ./ValidateSQL.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName "TPDM"
       shell: powershell
-    - name: Upload MetaEd.Artifacts
-      uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
-      with:
-        name: MetaEdOutput-${{env.DATASTANDARD_VERSION}}-${{ env.TECHNOLOGY_VERSION }}
-        path: ${{ github.workspace }}/MetaEdOutput/**/*.*
+
         
  
