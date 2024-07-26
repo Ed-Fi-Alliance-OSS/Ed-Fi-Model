@@ -1,10 +1,7 @@
 name: MetaEd-js Extension Artifacts - Student Transcript 4.0 with ODS 7.1
 
 on:
-  pull_request:
-    branches: ['DS-*']
-  push:
-    branches: ['DS-*']
+
   workflow_dispatch:
 
 permissions: read-all
@@ -25,7 +22,7 @@ env:
   TECHNOLOGY_VERSION: "7.1.0"
 
 jobs:
-  MetaEd-Js-Data-Standard-Artifacts-StudentTranscript-4-With-ODS-71:
+  MetaEd-Js-Extension-Artifacts-StudentTranscript-4-With-ODS-71:
 
     runs-on: windows-latest
 
