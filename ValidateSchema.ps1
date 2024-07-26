@@ -136,6 +136,9 @@ Write-Host " "
 $coreSchemaPath = "$Workspace/MetaEdOutput/EdFi/XSD/Ed-Fi-Core.xsd"
 $interchangePath = "$Workspace/MetaEdOutput/EdFi/Interchange"
 
+Write-Host "`r`n coreSchemaPath is $coreSchemaPath `r`n"
+Write-Host "`r`n interchangePath is $interchangePath `r`n"  
+
 $elapsed = Use-StopWatch {
     $coreSchema = Test-Schema $coreSchemaPath
     Test-InterchangeSchema $interchangePath $coreSchema
@@ -146,8 +149,8 @@ $elapsed = Use-StopWatch {
 
         Write-Host "`r`n $MetaEdExtensionName Extension Schema validation  `r`n"            
         # See https://tracker.ed-fi.org/browse/METAED-997 for why we skip Homograph
-        $extensionSchemaPath = "$Workspace/MetaEdDeploy/$MetaEdExtensionName/XSD/EXTENSION-Ed-Fi-Extended-Core.xsd"
-        $extensionInterchangePath = "$Workspace/MetaEdDeploy/$MetaEdExtensionName/Interchange"
+        $extensionSchemaPath = "$Workspace/MetaEdOutput/$MetaEdExtensionName/XSD/EXTENSION-Ed-Fi-Extended-Core.xsd"
+        $extensionInterchangePath = "$Workspace/MetaEdOutput/$MetaEdExtensionName/Interchange"
 
         Write-Host "`r`n extensionSchemaPath is $extensionSchemaPath `r`n"
         Write-Host "`r`n extensionInterchangePath is $extensionInterchangePath `r`n"        
