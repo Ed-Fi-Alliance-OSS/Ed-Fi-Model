@@ -39,8 +39,16 @@ $projectList.Add(@{
 })
 
 if (-not [string]::IsNullOrWhiteSpace($MetaEdExtensionName)) {
+
+    Write-Host "`r`n $MetaEdExtensionName Extension Project Added  `r`n"    
     $projectPaths.Add("$Workspace/MetaEdExtensionSource")
-    $projectList.Add(@{"namespaceName"="$MetaEdExtensionName";"projectName"="$MetaEdExtensionName";"projectVersion"="1.0.0";"projectExtension"="EXTENSION";"description"="";})
+    $projectList.Add(@{
+        "namespaceName"="$MetaEdExtensionName";
+        "projectName"="$MetaEdExtensionName";
+        "projectVersion"="1.0.0";
+        "projectExtension"="EXTENSION";
+        "description"="";
+    })
 }
 
 $metaEdConfiguration = @{
