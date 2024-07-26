@@ -48,6 +48,20 @@ jobs:
         ref: v4.3.1-dev.23
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
+    - name: Checkout Ed-Fi-Model
+      uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+      with:
+        repository: Ed-Fi-Closed/Ed-Fi-Model
+        path: Ed-Fi-Model/
+        ref: ${{env.DATASTANDARD_VERSION}}
+        token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+
+    - name: Is pull request branch exists in Ed-Fi-Model
+      shell: powershell
+      working-directory: ./Ed-Fi-Model/
+      run: |
+        ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
+
     - name: Checkout ODS
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
@@ -71,20 +85,6 @@ jobs:
         cd MetaEdExtensionSource/Samples/Extensions/StudentTranscript/StudentTranscriptMetaEd
         mv * ../../../..
 
-    - name: Checkout Ed-Fi-Model
-      uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
-      with:
-        repository: Ed-Fi-Closed/Ed-Fi-Model
-        path: Ed-Fi-Model/
-        ref: ${{env.DATASTANDARD_VERSION}}
-        token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
-
-    - name: Is pull request branch exists in Ed-Fi-Model
-      shell: powershell
-      working-directory: ./Ed-Fi-Model/
-      run: |
-        ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
-    
     - name: Create MetaEdConfig
       working-directory: ./Ed-Fi-Model/    
       run: |
