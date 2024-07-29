@@ -1,10 +1,7 @@
 name: MetaEd-js Extension Artifacts - AlternativeEducationProgram 4.0 with ODS 7.2
 
 on:
-  pull_request:
-    branches: ['DS-*']
-  push:
-    branches: ['DS-*']
+
   workflow_dispatch:
 
 permissions: read-all
@@ -22,7 +19,6 @@ env:
   PROJECT_DESCRIPTION: "The Ed-Fi Data Model 4.0"
   DATASTANDARD_VERSION: "DS-4.0-ME-3.x"
   TPDM_DATASTANDARD_VERSION: "Data-Standard-v4.0.0"
-  TECHNOLOGY_VERSION: "7.2.0"
 
 jobs:
   MetaEd-Js-Extension-Artifacts-AlternativeEducationProgram-4-With-ODS-72:
@@ -76,16 +72,6 @@ jobs:
       run: |
         ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "../MetaEdExtensionSource" 
          
-    - name: Clean up folders except AlternativeEducationProgramMetaEd for MetaEdExtensionSource
-      shell: powershell
-      run: |
-        Get-ChildItem MetaEdExtensionSource -Exclude Samples | Remove-Item -Recurse -Force
-        Get-ChildItem MetaEdExtensionSource/Samples/Extensions/AlternativeEducationProgram -Exclude AlternativeEducationProgramMetaEd | Remove-Item -Recurse -Force
-        Get-ChildItem MetaEdExtensionSource/Samples/Extensions -Exclude AlternativeEducationProgram | Remove-Item -Recurse -Force
-        Get-ChildItem MetaEdExtensionSource/Samples -Exclude Extensions | Remove-Item -Recurse -Force
-        cd MetaEdExtensionSource/Samples/Extensions/AlternativeEducationProgram/AlternativeEducationProgramMetaEd
-        mv * ../../../..
-
     - name: Create MetaEdConfig
       working-directory: ./Ed-Fi-Model/    
       run: |

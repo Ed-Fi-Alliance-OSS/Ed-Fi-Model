@@ -1,10 +1,7 @@
 name: MetaEd-js Extension Artifacts - Student Transcript 4.0 with ODS 7.2
 
 on:
-  pull_request:
-    branches: ['DS-*']
-  push:
-    branches: ['DS-*']
+
   workflow_dispatch:
 
 permissions: read-all
@@ -22,7 +19,7 @@ env:
   PROJECT_DESCRIPTION: "The Ed-Fi Data Model 4.0"
   DATASTANDARD_VERSION: "DS-4.0-ME-3.x"
   TPDM_DATASTANDARD_VERSION: "Data-Standard-v4.0.0"
-  TECHNOLOGY_VERSION: "7.2.0"
+  
 
 jobs:
   MetaEd-Js-Extension-Artifacts-StudentTranscript-4-With-ODS-72:
