@@ -38,6 +38,8 @@ $projectList.Add(@{
     "description"=$ProjectDescription
 })
 
+Write-Host "`r`n MetaEdExtensionName is $MetaEdExtensionName  `r`n"  
+
 if (-not [string]::IsNullOrWhiteSpace($MetaEdExtensionName)) {
 
     Write-Host "`r`n $MetaEdExtensionName Extension Project Added  `r`n"    
