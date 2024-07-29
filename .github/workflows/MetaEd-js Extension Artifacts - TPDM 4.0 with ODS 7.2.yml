@@ -1,4 +1,4 @@
-name: MetaEd-js Extension Artifacts - TPDM 4.0 with ODS 7.1
+name: MetaEd-js Extension Artifacts - TPDM 4.0 with ODS 7.2
 
 on:
   pull_request:
@@ -25,7 +25,7 @@ env:
   TECHNOLOGY_VERSION: "7.2.0"
 
 jobs:
-  MetaEd-Js-Extension-Artifacts-TPDM-4-With-ODS-71:
+  MetaEd-Js-Extension-Artifacts-TPDM-4-With-ODS-72:
 
     runs-on: windows-latest
     strategy:
@@ -33,7 +33,7 @@ jobs:
       matrix:
         TECHNOLOGY_VERSION: ["6.1.0","7.2.0"]
 
-    name:  MetaEd-js Extension Artifacts - TPDM 4.0 with ODS 7.1
+    name:  MetaEd-js Extension Artifacts - TPDM 4.0 with ODS 7.2
     steps:
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
