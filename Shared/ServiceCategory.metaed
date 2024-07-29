@@ -1,3 +1,0 @@
-Shared String ServiceCategory [102]
-    documentation "The category of service provided by a program."
-    max length 50
