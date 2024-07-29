@@ -46,7 +46,6 @@ jobs:
       with:
         repository: Ed-Fi-Closed/MetaEd-js
         path: MetaEd-js/
-        ref: v4.3.1-dev.23
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
     - name: Checkout Ed-Fi-TPDM-Model
