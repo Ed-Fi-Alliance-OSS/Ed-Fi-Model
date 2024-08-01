@@ -2,9 +2,8 @@ name: MetaEd-js Data Standard Artifacts - 4.0
 
 on:
   pull_request:
-    branches: [main, 'DS-*']
-  push:
-    branches: [main, 'DS-*']
+    branches: ['DS-4.0-ME-3.x']
+
   workflow_dispatch:
 
 permissions: read-all
@@ -29,38 +28,42 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        TECHNOLOGY_VERSION: ["6.1.0","7.1.0"]   
+        TECHNOLOGY_VERSION: ["6.1.0","7.2.0"] 
+  
     name:  MetaEd-js-Data-Standard-Artifacts 4.0 with ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
       run: | 
         echo "::error::Missing Azure Token"
-        exit 1 
+        exit 1
+
     - name: Checkout MetaEd-js
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
         repository: Ed-Fi-Closed/MetaEd-js
         path: MetaEd-js/
-        ref: v4.3.1-dev.23
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+
     - name: Checkout Ed-Fi-Model
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
         repository: Ed-Fi-Closed/Ed-Fi-Model
         path: Ed-Fi-Model/
         ref: ${{env.DATASTANDARD_VERSION}}
-        token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+
     - name: Is pull request branch exists in Ed-Fi-Model
       shell: powershell
       working-directory: ./Ed-Fi-Model/
       run: |
-        ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."        
+        ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
+
     - name: Create MetaEdConfig
       working-directory: ./Ed-Fi-Model/    
       run: |
-        ./CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }}
+        ./CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }} -MetaEdExtensionName ""
       shell: powershell
+
     - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json content
       shell: powershell
       run: |
@@ -74,7 +77,8 @@ jobs:
         $jsonObject = $jsonContent | ConvertFrom-Json
 
         # Print the content of the JSON object
-        $jsonObject | Format-List -Property *      
+        $jsonObject | Format-List -Property *
+    
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
@@ -86,26 +90,30 @@ jobs:
                 throw "MetaEd build failed - there was no output. Review log above for more information."
             }
       shell: powershell
+
     - name: Validate Schema 
       working-directory: ./Ed-Fi-Model/    
       run: |
         ./ValidateSchema.ps1 -Workspace ${{ github.workspace }}
       shell: powershell
+
     - name: Install sql-server-2019 & sqlpackage
       shell: powershell
       run: |
           choco install sql-server-2019  -y --params "'/IGNOREPENDINGREBOOT /IACCEPTSQLSERVERLICENSETERMS /Q /ACTION=install /INSTANCEID=MSSQLSERVER /INSTANCENAME=MSSQLSERVER /TCPENABLED=1 /UPDATEENABLED=FALSE /FEATURES=SQL,Tools'" --execution-timeout=$installTimeout
-          choco install sqlpackage      
+          choco install sqlpackage
+    
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
       run: |
         ./ValidateSQL.ps1 -Workspace ${{ github.workspace }}
       shell: powershell
+
     - name: Upload MetaEd.Artifacts
       if: success()
       uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
       with:
         name: MetaEdOutput-${{env.DATASTANDARD_VERSION}}-${{ matrix.TECHNOLOGY_VERSION }}
         path: ${{ github.workspace }}/MetaEdOutput/**/*.*
-        
+ 
  

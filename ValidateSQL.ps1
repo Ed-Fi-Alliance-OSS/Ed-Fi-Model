@@ -6,7 +6,8 @@
 # ValidateSQL.ps1
 
 param (
-    [string]$Workspace
+    [string]$Workspace,
+    [string]$MetaEdExtensionName
 )
 
 function Test-SQL {
@@ -68,6 +69,36 @@ function Test-SQL {
         $scripts = Get-ChildItem $deprecatedScriptPath -Filter '*.sql'
     }
 
+	if (-not [string]::IsNullOrWhiteSpace($MetaEdExtensionName)) {
+
+        Write-Host "`r`n $MetaEdExtensionName Extension SQL validation  `r`n"   
+        $extensionSqlServerScriptPath = Join-Path $basePath "$MetaEdExtensionName\Database\SQLServer\ODS"
+        if (Test-Path $extensionSqlServerScriptPath) {
+            $structurePath = Join-Path $extensionSqlServerScriptPath 'Structure'
+            $dataPath = Join-Path $extensionSqlServerScriptPath 'Data'
+
+            if (Test-Path $structurePath) {
+                $scripts += Get-ChildItem $structurePath -Filter '*.sql'
+            }
+            if (Test-Path $dataPath) {
+                $scripts += Get-ChildItem $dataPath -Filter '*.sql'
+            }
+
+            if (Test-Path $structurePath) {
+                $structureSubTypePaths = Get-ChildItem $structurePath -Directory
+                foreach ($subTypePath in $structureSubTypePaths) {
+                    $scripts += Get-ChildItem $subTypePath.FullName -Filter '*.sql' -Recurse
+                }
+            }
+            if (Test-Path $dataPath) {
+                $dataSubTypePaths = Get-ChildItem $dataPath -Directory
+                foreach ($subTypePath in $dataSubTypePaths) {
+                    $scripts += Get-ChildItem $subTypePath.FullName -Filter '*.sql' -Recurse
+                }
+            }
+        }
+    }
+
     foreach ($script in $scripts) {
         try {
             $elapsed = Use-StopWatch {
@@ -97,7 +128,7 @@ function Write-Result {
         [parameter(mandatory = $false)]
         $Exception
     )
-    if ($Elapsed -ne $null) {
+    if ($null -ne $Elapsed) {
         $Elapsed = "($Elapsed`ms)"
     }
     if ($Passed) {
@@ -106,7 +137,7 @@ function Write-Result {
     } else {
         Write-Host " FAIL " -BackgroundColor Red -ForegroundColor Black -NoNewline
         Write-Host " $Name $Elapsed`r`n"
-        if ($Exception -ne $null) {
+        if ($null -ne $Exception) {
             Write-Error $Exception
         }
     }
