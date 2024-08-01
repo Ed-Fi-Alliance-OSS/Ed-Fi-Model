@@ -49,8 +49,6 @@ jobs:
 
     name: MetaEd-js ${{ matrix.EXTENSION_NAME }} Extension Artifacts With ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
-    - name: Support longpaths
-      run: git config --system core.longpaths true
 
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
