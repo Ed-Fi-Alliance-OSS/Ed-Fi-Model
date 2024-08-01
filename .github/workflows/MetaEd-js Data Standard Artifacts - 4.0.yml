@@ -1,6 +1,8 @@
 name: MetaEd-js Data Standard Artifacts - 4.0
 
 on:
+  pull_request:
+    branches: ['DS-4.0-ME-3.x']
 
   workflow_dispatch:
 

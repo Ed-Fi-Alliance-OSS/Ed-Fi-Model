@@ -2,9 +2,8 @@ name: MetaEd-js All Extension Artifacts With ODS 6.X And 7.X
 
 on:
   pull_request:
-    branches: ['DS-*']
-  push:
-    branches: ['DS-*']
+    branches: ['DS-4.0-ME-3.x']
+
   workflow_dispatch:
 
 permissions: read-all
