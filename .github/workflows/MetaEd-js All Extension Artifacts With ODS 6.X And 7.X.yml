@@ -21,11 +21,26 @@ env:
   PROJECT_DESCRIPTION: "The Ed-Fi Data Model 4.0"
   DATASTANDARD_VERSION: "DS-4.0-ME-3.x"
   TPDM_DATASTANDARD_VERSION: "Data-Standard-v4.0.0"
+  DB_PASS: temporaryDbP@ssw0rd!
 
 jobs:
   MetaEd-Js-All-Extension-Artifacts-With-ODS-6X-And-7X:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+
+    services:
+      mssql:
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        env:
+          ACCEPT_EULA: Y
+          SA_PASSWORD: ${{ env.DB_PASS }}
+        ports:
+          - 1433:1433
+        options: >-
+          --health-cmd "exit 0" 
+          --health-interval 10s 
+          --health-timeout 5s 
+          --health-retries 3
     strategy:
       fail-fast: false
       matrix:
@@ -46,12 +61,12 @@ jobs:
     - name: Checkout Ed-Fi-Model
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
-        repository: Ed-Fi-Closed/Ed-Fi-Model
+        repository: semalaiappan/Ed-Fi-Model
         path: Ed-Fi-Model/
         ref: ${{env.DATASTANDARD_VERSION}}
 
     - name: Is pull request branch exists in Ed-Fi-Model
-      shell: powershell
+      shell: pwsh
       working-directory: ./Ed-Fi-Model/
       run: |
         ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
@@ -59,7 +74,7 @@ jobs:
     - name: Checkout MetaEd-js
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
-        repository: Ed-Fi-Closed/MetaEd-js
+        repository: semalaiappan/MetaEd-js
         path: MetaEd-js/
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
@@ -67,7 +82,7 @@ jobs:
       if: matrix.EXTENSION_NAME == 'TPDM'
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
-        repository: Ed-Fi-Closed/Ed-Fi-TPDM-Model
+        repository: semalaiappan/Ed-Fi-TPDM-Model
         path: MetaEdExtensionSource/
         ref: ${{env.TPDM_DATASTANDARD_VERSION}}
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
@@ -81,7 +96,7 @@ jobs:
 
     - name: Is pull request branch exists in Ed-Fi-ODS-Implementation
       if: matrix.EXTENSION_NAME == 'Homograph'  || matrix.EXTENSION_NAME == 'Sample'
-      shell: powershell
+      shell: pwsh
       working-directory: ./Ed-Fi-Model/
       run: |
         ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "../MetaEdExtensionSource" 
@@ -95,14 +110,14 @@ jobs:
 
     - name: Is pull request branch exists in Ed-Fi-ODS
       if: matrix.EXTENSION_NAME == 'SampleStudentTranscript' || matrix.EXTENSION_NAME == 'SampleAlternativeEducationProgram'
-      shell: powershell
+      shell: pwsh
       working-directory: ./Ed-Fi-Model/
       run: |
         ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "../MetaEdExtensionSource" 
 
     - name: Clean up folders except AlternativeEducationProgramMetaEd for MetaEdExtensionSource
       if: matrix.EXTENSION_NAME == 'SampleAlternativeEducationProgram'    
-      shell: powershell
+      shell: pwsh
       run: |
         Get-ChildItem MetaEdExtensionSource -Exclude Samples | Remove-Item -Recurse -Force
         Get-ChildItem MetaEdExtensionSource/Samples/Extensions/AlternativeEducationProgram -Exclude AlternativeEducationProgramMetaEd | Remove-Item -Recurse -Force
@@ -113,7 +128,7 @@ jobs:
 
     - name: Clean up folders except StudentTranscriptMetaEd for MetaEdExtensionSource
       if: matrix.EXTENSION_NAME == 'SampleStudentTranscript'    
-      shell: powershell
+      shell: pwsh
       run: |
         Get-ChildItem MetaEdExtensionSource -Exclude Samples | Remove-Item -Recurse -Force
         Get-ChildItem MetaEdExtensionSource/Samples/Extensions/StudentTranscript -Exclude StudentTranscriptMetaEd | Remove-Item -Recurse -Force
@@ -124,7 +139,7 @@ jobs:
 
     - name: Clean up folders except HomographMetaEd for MetaEdExtensionSource
       if: matrix.EXTENSION_NAME == 'Homograph'    
-      shell: powershell
+      shell: pwsh
       run: |
         Get-ChildItem MetaEdExtensionSource -Exclude Extensions | Remove-Item -Recurse -Force
         Get-ChildItem MetaEdExtensionSource/Extensions/4.0.0/Homograph/ -Exclude HomographMetaEd | Remove-Item -Recurse -Force
@@ -136,7 +151,7 @@ jobs:
 
     - name: Clean up folders except SampleMetaEd for MetaEdExtensionSource
       if: matrix.EXTENSION_NAME == 'Sample'
-      shell: powershell
+      shell: pwsh
       run: |
         Get-ChildItem MetaEdExtensionSource -Exclude Extensions | Remove-Item -Recurse -Force
         Get-ChildItem MetaEdExtensionSource/Extensions/4.0.0/Sample/ -Exclude SampleMetaEd | Remove-Item -Recurse -Force
@@ -150,10 +165,10 @@ jobs:
       working-directory: ./Ed-Fi-Model/    
       run: |
         ./CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
-      shell: powershell
+      shell: pwsh
 
     - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json content
-      shell: powershell
+      shell: pwsh
       run: |
         # Define the path to the JSON file
         $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json"
@@ -161,7 +176,7 @@ jobs:
         # Read the content of the JSON file
         $jsonContent = Get-Content -Path $jsonFilePath -Raw
 
-        # Convert the JSON content to a PowerShell object
+        # Convert the JSON content to a pwsh object
         $jsonObject = $jsonContent | ConvertFrom-Json
 
         # Print the content of the JSON object
@@ -177,25 +192,19 @@ jobs:
             if ($fileCount -eq 0) {
                 throw "MetaEd build failed - there was no output. Review log above for more information."
             }
-      shell: powershell
+      shell: pwsh
   
     - name: Validate Schema 
       working-directory: ./Ed-Fi-Model/    
       run: |
         ./ValidateSchema.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
-      shell: powershell
+      shell: pwsh
 
-    - name: Install sql-server-2019 & sqlpackage
-      shell: powershell
-      run: |
-          choco install sql-server-2019  -y --params "'/IGNOREPENDINGREBOOT /IACCEPTSQLSERVERLICENSETERMS /Q /ACTION=install /INSTANCEID=MSSQLSERVER /INSTANCENAME=MSSQLSERVER /TCPENABLED=1 /UPDATEENABLED=FALSE /FEATURES=SQL,Tools'" --execution-timeout=$installTimeout
-          choco install sqlpackage
-   
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
       run: |
-        ./ValidateSQL.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
-      shell: powershell
+        ./ValidateSQL.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}  -Password ${{ env.DB_PASS }}
+      shell: pwsh
 
     - name: Upload MetaEd.Artifacts
       uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
