@@ -7,33 +7,13 @@
 
 param (
     [string]$Workspace,
-    [string]$MetaEdExtensionName
+    [string]$MetaEdExtensionName,
+    [string]$Password
 )
 
 function Test-SQL {
-    [System.Reflection.Assembly]::LoadWithPartialName('Microsoft.SqlServer.SMO') | Out-Null
 
-    $script:databseCSB   = New-Object System.Data.Common.DbConnectionStringBuilder $true
-    $databseCSB.Server   = 'localhost'
-    $databseCSB.Provider = 'SQLNCLI11'
-    $databseCSB.Database = "MetaEd_SQL_Validation_Test"
-
-    $server   = New-Object 'Microsoft.SqlServer.Management.Smo.Server' $databseCSB.Server
-    try {
-        $server.KillDatabase($databseCSB.Database)
-    } catch {
-        Write-Host $_
-        $Error.Clear()
-    }
-
-    $database = New-Object 'Microsoft.SqlServer.Management.Smo.Database' ($server, $databseCSB.Database)
-    $database.RecoveryModel = [Microsoft.SqlServer.Management.Smo.RecoveryModel]::Simple
-    $database.Create()
-
-    $conn = new-object Microsoft.SqlServer.Management.Common.ServerConnection
-    $conn.ConnectionString = "Database=$($databseCSB.Database); Data Source=$($databseCSB.Server); Persist Security Info=True; Trusted_Connection=True; Connection Timeout=120"
-    $conn.StatementTimeout = 60
-    $srv = New-Object 'Microsoft.SqlServer.Management.Smo.Server' ($conn)
+    sqlcmd -S localhost -U sa -P $Password -Q "CREATE DATABASE MetaEd_SQL_Validation_Test"    
 
     $scripts = @()
 
@@ -102,9 +82,9 @@ function Test-SQL {
     foreach ($script in $scripts) {
         try {
             $elapsed = Use-StopWatch {
-                $contents = Get-Content "$($script.FullName)"
-                $sql = [string]::Join([Environment]::NewLine, $contents);
-                $srv.ConnectionContext.ExecuteNonQuery($sql) | Out-Null
+                Write-Host "`r`n Script Full Name is $script `r`n"
+                $sqlcmdOutput= sqlcmd -S localhost -U sa -P $Password -i $script.FullName
+                Write-Host $sqlcmdOutput
             }
             Write-Result $true $script.Name $elapsed
         } catch {
