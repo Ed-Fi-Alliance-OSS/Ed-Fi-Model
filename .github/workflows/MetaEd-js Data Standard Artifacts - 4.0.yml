@@ -56,14 +56,15 @@ jobs:
     - name: Checkout MetaEd-js
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
-        repository: Ed-Fi-Closed/MetaEd-js
+        repository: semalaiappan/MetaEd-js
         path: MetaEd-js/
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+        ref: main        
 
     - name: Checkout Ed-Fi-Model
       uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
       with:
-        repository: Ed-Fi-Closed/Ed-Fi-Model
+        repository: semalaiappan/Ed-Fi-Model
         path: Ed-Fi-Model/
         ref: ${{env.DATASTANDARD_VERSION}}
 
