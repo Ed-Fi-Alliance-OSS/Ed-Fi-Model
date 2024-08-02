@@ -2,7 +2,7 @@ name: MetaEd-js Data Standard Artifacts - 4.0
 
 on:
   pull_request:
-    branches: ['DS-4.0-ME-3.x']
+    branches: ['DS-4.*-ME-3.x']
 
   workflow_dispatch:
 
@@ -20,11 +20,26 @@ env:
   PROJECT_VERSION: "4.0.0"
   PROJECT_DESCRIPTION: "The Ed-Fi Data Model 4.0"
   DATASTANDARD_VERSION: "DS-4.0-ME-3.x"
+  DB_PASS: temporaryDbP@ssw0rd!
 
 jobs:
   MetaEd-Js-Data-Standard-Artifacts-4:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+
+    services:
+      mssql:
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        env:
+          ACCEPT_EULA: Y
+          SA_PASSWORD: ${{ env.DB_PASS }}
+        ports:
+          - 1433:1433
+        options: >-
+          --health-cmd "exit 0" 
+          --health-interval 10s 
+          --health-timeout 5s 
+          --health-retries 3
     strategy:
       fail-fast: false
       matrix:
@@ -53,7 +68,7 @@ jobs:
         ref: ${{env.DATASTANDARD_VERSION}}
 
     - name: Is pull request branch exists in Ed-Fi-Model
-      shell: powershell
+      shell: pwsh
       working-directory: ./Ed-Fi-Model/
       run: |
         ./build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
@@ -62,10 +77,10 @@ jobs:
       working-directory: ./Ed-Fi-Model/    
       run: |
         ./CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }} -MetaEdExtensionName ""
-      shell: powershell
+      shell: pwsh
 
     - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json content
-      shell: powershell
+      shell: pwsh
       run: |
         # Define the path to the JSON file
         $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-4.0.json"
@@ -73,7 +88,7 @@ jobs:
         # Read the content of the JSON file
         $jsonContent = Get-Content -Path $jsonFilePath -Raw
 
-        # Convert the JSON content to a PowerShell object
+        # Convert the JSON content to a pwsh object
         $jsonObject = $jsonContent | ConvertFrom-Json
 
         # Print the content of the JSON object
@@ -89,25 +104,19 @@ jobs:
             if ($fileCount -eq 0) {
                 throw "MetaEd build failed - there was no output. Review log above for more information."
             }
-      shell: powershell
+      shell: pwsh
 
     - name: Validate Schema 
       working-directory: ./Ed-Fi-Model/    
       run: |
         ./ValidateSchema.ps1 -Workspace ${{ github.workspace }}
-      shell: powershell
-
-    - name: Install sql-server-2019 & sqlpackage
-      shell: powershell
-      run: |
-          choco install sql-server-2019  -y --params "'/IGNOREPENDINGREBOOT /IACCEPTSQLSERVERLICENSETERMS /Q /ACTION=install /INSTANCEID=MSSQLSERVER /INSTANCENAME=MSSQLSERVER /TCPENABLED=1 /UPDATEENABLED=FALSE /FEATURES=SQL,Tools'" --execution-timeout=$installTimeout
-          choco install sqlpackage
+      shell: pwsh
     
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
       run: |
-        ./ValidateSQL.ps1 -Workspace ${{ github.workspace }}
-      shell: powershell
+        ./ValidateSQL.ps1 -Workspace ${{ github.workspace }} -Password ${{ env.DB_PASS }}
+      shell: pwsh
 
     - name: Upload MetaEd.Artifacts
       if: success()
@@ -115,5 +124,4 @@ jobs:
       with:
         name: MetaEdOutput-${{env.DATASTANDARD_VERSION}}-${{ matrix.TECHNOLOGY_VERSION }}
         path: ${{ github.workspace }}/MetaEdOutput/**/*.*
- 
  
