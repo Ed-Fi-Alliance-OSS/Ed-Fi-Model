@@ -6,28 +6,14 @@
 # ValidateSQL.ps1
 
 param (
-    [string]$Workspace
+    [string]$Workspace,
+    [string]$MetaEdExtensionName,
+    [string]$Password
 )
 
 function Test-SQL {
-    [System.Reflection.Assembly]::LoadWithPartialName('Microsoft.SqlServer.SMO') | Out-Null
 
-    $script:databseCSB   = New-Object System.Data.Common.DbConnectionStringBuilder $true
-    $databseCSB.Server   = 'localhost'
-    $databseCSB.Provider = 'SQLNCLI11'
-    $databseCSB.Database = "MetaEd_SQL_Validation_Test"
-
-    $server   = New-Object 'Microsoft.SqlServer.Management.Smo.Server' $databseCSB.Server
-
-    $database = New-Object 'Microsoft.SqlServer.Management.Smo.Database' ($server, $databseCSB.Database)
-    $database.RecoveryModel = [Microsoft.SqlServer.Management.Smo.RecoveryModel]::Simple
-    $database.Create()
-
-    $conn = new-object Microsoft.SqlServer.Management.Common.ServerConnection
-    $conn.ConnectionString = "Database=$($databseCSB.Database); Data Source=$($databseCSB.Server); Persist Security Info=True; Trusted_Connection=True; Connection Timeout=120"
-    $conn.StatementTimeout = 60
-    $srv = New-Object 'Microsoft.SqlServer.Management.Smo.Server' ($conn)
-
+    sqlcmd -S localhost -U sa -P $Password -Q "CREATE DATABASE MetaEd_SQL_Validation_Test" 
     $scripts = @()
 
     $basePath = Join-Path $Workspace 'MetaEdOutput'
@@ -62,12 +48,42 @@ function Test-SQL {
         $scripts = Get-ChildItem $deprecatedScriptPath -Filter '*.sql'
     }
 
+    if (-not [string]::IsNullOrWhiteSpace($MetaEdExtensionName)) {
+
+        Write-Host "`r`n $MetaEdExtensionName Extension SQL validation  `r`n"   
+        $extensionSqlServerScriptPath = Join-Path $basePath "$MetaEdExtensionName\Database\SQLServer\ODS"
+        if (Test-Path $extensionSqlServerScriptPath) {
+            $structurePath = Join-Path $extensionSqlServerScriptPath 'Structure'
+            $dataPath = Join-Path $extensionSqlServerScriptPath 'Data'
+
+            if (Test-Path $structurePath) {
+                $scripts += Get-ChildItem $structurePath -Filter '*.sql'
+            }
+            if (Test-Path $dataPath) {
+                $scripts += Get-ChildItem $dataPath -Filter '*.sql'
+            }
+
+            if (Test-Path $structurePath) {
+                $structureSubTypePaths = Get-ChildItem $structurePath -Directory
+                foreach ($subTypePath in $structureSubTypePaths) {
+                    $scripts += Get-ChildItem $subTypePath.FullName -Filter '*.sql' -Recurse
+                }
+            }
+            if (Test-Path $dataPath) {
+                $dataSubTypePaths = Get-ChildItem $dataPath -Directory
+                foreach ($subTypePath in $dataSubTypePaths) {
+                    $scripts += Get-ChildItem $subTypePath.FullName -Filter '*.sql' -Recurse
+                }
+            }
+        }
+    }
+
     foreach ($script in $scripts) {
         try {
             $elapsed = Use-StopWatch {
-                $contents = Get-Content "$($script.FullName)"
-                $sql = [string]::Join([Environment]::NewLine, $contents);
-                $srv.ConnectionContext.ExecuteNonQuery($sql) | Out-Null
+                Write-Host "`r`n Script Full Name is $script `r`n"
+                $sqlcmdOutput= sqlcmd -S localhost -U sa -P $Password -i $script.FullName
+                Write-Host $sqlcmdOutput
             }
             Write-Result $true $script.Name $elapsed
         } catch {
@@ -91,7 +107,7 @@ function Write-Result {
         [parameter(mandatory = $false)]
         $Exception
     )
-    if ($Elapsed -ne $null) {
+    if ($null -ne $Elapsed) {
         $Elapsed = "($Elapsed`ms)"
     }
     if ($Passed) {
@@ -100,7 +116,7 @@ function Write-Result {
     } else {
         Write-Host " FAIL " -BackgroundColor Red -ForegroundColor Black -NoNewline
         Write-Host " $Name $Elapsed`r`n"
-        if ($Exception -ne $null) {
+        if ($null -ne $Exception) {
             Write-Error $Exception
         }
     }
