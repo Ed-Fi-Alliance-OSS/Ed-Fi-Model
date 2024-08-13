@@ -1,8 +1,6 @@
 name: Publish Data Standard 4.0 Package
 
 on:
-  pull_request:
-    branches: ['DS-4.*-ME-3.x']
   push:
     branches: ['DS-4.*-ME-3.x']   
 
@@ -93,8 +91,8 @@ jobs:
           echo ${{ env.NPM_REGISTRY }}:email=techsupport@ed-fi.org >> $HOME/.npmrc
           echo "; end auth token" >> $HOME/.npmrc
 
-    - name: Publish to Azure DevOps npm registry
-      working-directory: ./Ed-Fi-Model/MetaEd.Artifacts
-      run: npm publish
+    # - name: Publish to Azure DevOps npm registry
+    #   working-directory: ./Ed-Fi-Model/MetaEd.Artifacts
+    #   run: npm publish
 
  
