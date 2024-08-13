@@ -92,4 +92,4 @@ jobs:
 
     # - name: Publish to Azure DevOps npm registry
     #   working-directory: ./Ed-Fi-Model/MetaEd.Artifacts
-    #   run: npm publish 
+    #   run: npm publish --tag dev Added
