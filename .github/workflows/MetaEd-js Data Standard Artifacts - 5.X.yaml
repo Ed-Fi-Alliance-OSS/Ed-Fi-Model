@@ -2,7 +2,7 @@ name: MetaEd-js Data Standard Artifacts - 5.X
 
 on:
   pull_request:
-    branches: ['DS-*']
+    branches: ['DS-5.*']
 
   workflow_dispatch:
 
