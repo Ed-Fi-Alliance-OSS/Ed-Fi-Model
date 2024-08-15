@@ -1,8 +1,6 @@
 name: Publish Data Standard 4.0 Package
 
 on:
-  pull_request:
-    branches: ['DS-4.*']   
   push:
     branches: ['DS-4.*']   
 
