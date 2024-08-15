@@ -1,6 +1,6 @@
 Domain Entity ChartOfAccount [3139]
     documentation "A valid combination of account dimensions under which financials are reported. This financial entity represents a funding source combined with its purpose and type of transaction. It provides a formal record of the debits and credits relating to the specific account."
-    shared string EdFi.AccountIdentifier [3140]
+    shared string AccountIdentifier [3140]
         documentation "SEA populated code value for the valid combination of account dimensions under which financials are reported."
         is part of identity
         is queryable field
@@ -8,14 +8,14 @@ Domain Entity ChartOfAccount [3139]
         documentation "The fiscal year for the account"
         is part of identity
         is queryable field
-  domain entity EdFi.EducationOrganization [3142]
+  domain entity EducationOrganization [3142]
         documentation "A reference to the education organization managing the chart of accounts."
         is part of identity
         is queryable field
     descriptor AccountType [3143]
         documentation "The type of account used in accounting such as revenue, expenditure, or balance sheet."
         is required
-    shared string EdFi.AccountName [3144]
+    shared string AccountName [3144]
         documentation "A descriptive name for the account."
         is optional
     domain entity BalanceSheetDimension [3145]
