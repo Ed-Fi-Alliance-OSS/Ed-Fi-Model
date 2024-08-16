@@ -1,10 +1,9 @@
 name: Publish Data Standard 4.0 Package
 
 on:
-  push:
-    branches: ['DS-4.*']   
-
-  workflow_dispatch:
+  pull_request:
+    types: [closed]
+    branches: ['DS-4.*']
 
 permissions: read-all
 
