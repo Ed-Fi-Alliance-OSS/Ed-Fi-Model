@@ -110,6 +110,7 @@ jobs:
         path: ${{ github.workspace }}/package/**/*.tgz
 
     - name: Create .npmrc for Azure Artifacts publishing
+      if: steps.versions.outputs.update-required == 'true'
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/    
       run: |
           echo "Configuring .npmrc for ${{ env.NPM_REGISTRY }}"
@@ -125,6 +126,7 @@ jobs:
           echo "; end auth token" >> $HOME/.npmrc
 
     - name: Publish to Azure DevOps npm registry
+      if: steps.versions.outputs.update-required == 'true'
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/
       run: npm publish --workspaces --tag dev
 
