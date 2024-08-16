@@ -103,7 +103,7 @@ jobs:
       run: npm pack --workspaces
 
     - name: Upload MetaEd.Artifacts
-      if: success()
+      if: steps.versions.outputs.update-required == 'true'
       uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
       with:
         name: Data Standard-${{env.DATASTANDARD_VERSION}}-{{steps.set-version.outputs.version}}
