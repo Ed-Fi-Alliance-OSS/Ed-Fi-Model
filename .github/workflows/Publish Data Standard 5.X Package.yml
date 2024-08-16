@@ -1,8 +1,8 @@
 name: Publish Data Standard 5.X Package
 
 on:
-  pull_request:
-
+  pull_request_review:
+    types: [submitted]
     branches: ['DS-5.*']
 
 permissions: read-all
@@ -24,7 +24,7 @@ jobs:
   Publish-Data-Standard-5X:
 
     runs-on: ubuntu-latest
-    # if: ${{ github.event_name == 'pull_request_review' && github.event.review.state == 'approved' }}
+    if: ${{ github.event_name == 'pull_request_review' && github.event.review.state == 'approved' }}
     defaults:
       run:
         working-directory: Ed-Fi-Model
@@ -61,20 +61,6 @@ jobs:
         }
         Write-Host "Current Branch: $current_branch"   
         echo "current_branch=$current_branch" >> $Env:GITHUB_ENV
-
-    - name: Get Last Commit Information
-      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
-      run: |
-        echo "Latest commit on the branch ${{ github.head_ref }}:"
-        git log -1 --pretty=format:"%h - %an, %ar : %s"
-        echo "REPOSITORY_DISPATCH_BRANCH is ${{ github.event.client_payload.branch }}"
-        
-        
-    - name: Get Branch Name of Last Commit
-      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
-      run: |
-        branch_name=$(git branch --contains $(git log -1 --format="%H") | grep -v 'HEAD' | awk '{$1=$1};1')
-        echo "The branch for the last commit is: $branch_name"
 
     - name: Current Latest Tag Version
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
@@ -116,7 +102,7 @@ jobs:
       with:
         commit_message: "${{steps.set-version.outputs.version}}"
         repo: ${{ github.repository }}
-        branch: ${{ github.head_ref || github.ref_name }}
+        branch: ${{ env.current_branch }}
      
       env:
         GITHUB_TOKEN: ${{secrets.PRIVATE_REPO_READ_TOKEN}}
