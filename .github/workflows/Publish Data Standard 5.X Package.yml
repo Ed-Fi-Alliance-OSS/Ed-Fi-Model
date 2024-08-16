@@ -52,11 +52,13 @@ jobs:
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
 
     - name: Get Last Commit Information
+      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
       run: |
         echo "Latest commit on the branch ${{ github.head_ref }}:"
         git log -1 --pretty=format:"%h - %an, %ar : %s"
         
     - name: Get Branch Name of Last Commit
+      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
       run: |
         branch_name=$(git branch --contains $(git log -1 --format="%H") | grep -v 'HEAD' | awk '{$1=$1};1')
         echo "The branch for the last commit is: $branch_name"
