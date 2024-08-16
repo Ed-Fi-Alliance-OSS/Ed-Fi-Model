@@ -55,7 +55,7 @@ jobs:
       run: |
         echo "Latest commit on the branch ${{ github.head_ref }}:"
         git log -1 --pretty=format:"%h - %an, %ar : %s"
-        echo "REPOSITORY_DISPATCH_BRANCH ${{ env.REPOSITORY_DISPATCH_BRANCH }}:"
+        echo "REPOSITORY_DISPATCH_BRANCH is ${{ github.event.client_payload.branch }}"
         
         
     - name: Get Branch Name of Last Commit
