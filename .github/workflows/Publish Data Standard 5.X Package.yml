@@ -52,6 +52,7 @@ jobs:
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
 
     - name: Set Current Branch Environment Variable
+      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
       shell: pwsh
       run: |
         $current_branch = '${{env.REF_NAME}}'
