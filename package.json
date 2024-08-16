@@ -1,14 +1,11 @@
 {
-  "name": "@edfi/ed-fi-model-5.1",
-  "version": "3.0.1",
-  "description": "The Ed-Fi Data Model 5.1",
-  "repository": "https://github.com/Ed-Fi-closed/Ed-Fi-Model",
-  "license": "private",
-  "publishConfig": {
-    "registry": "https://pkgs.dev.azure.com/ed-fi-alliance/Ed-Fi-Alliance-OSS/_packaging/EdFi/npm/registry/"
+  "name": "ed-fi-model",
+  "description": "The Ed-Fi data model",
+  "private": true,
+  "devDependencies": {
+    "lerna": "8.0.2"
   },
-  "metaEdProject": {
-    "projectName": "Ed-Fi",
-    "projectVersion": "5.1.0"
-  }
+  "workspaces": [
+    "package"
+  ]
 }
