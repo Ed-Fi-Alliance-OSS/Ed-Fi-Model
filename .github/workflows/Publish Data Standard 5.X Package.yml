@@ -1,8 +1,8 @@
 name: Publish Data Standard 5.X Package
 
 on:
-  pull_request:
-    types: [closed]
+  pull_request_review:
+    types: [submitted]
     branches: ['DS-5.*']
 
 permissions: read-all
@@ -24,6 +24,7 @@ jobs:
   Publish-Data-Standard-5X:
 
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request_review' && github.event.review.state == 'approved' }}
     defaults:
       run:
         working-directory: Ed-Fi-Model
@@ -40,7 +41,7 @@ jobs:
     - name: Checkout Ed-Fi-Model
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
-        repository: Ed-Fi-Closed/Ed-Fi-Model
+        repository: semalaiappan/Ed-Fi-Model
         ref: ${{env.DATASTANDARD_VERSION}}
         fetch-depth: 0
 
@@ -92,7 +93,7 @@ jobs:
       with:
         commit_message: "${{steps.set-version.outputs.version}}"
         repo: ${{ github.repository }}
-        branch: ${{ env.DATASTANDARD_VERSION }}
+        branch: ${{ github.head_ref || github.ref_name }}
      
       env:
         GITHUB_TOKEN: ${{secrets.PRIVATE_REPO_READ_TOKEN}}
@@ -110,7 +111,7 @@ jobs:
         path: ${{ github.workspace }}/package/**/*.tgz
 
     - name: Create .npmrc for Azure Artifacts publishing
-      if: steps.versions.outputs.update-required == 'true'
+      if: ${{ steps.versions.outputs.update-required == 'true' &&  github.event_name == 'push' }}
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/    
       run: |
           echo "Configuring .npmrc for ${{ env.NPM_REGISTRY }}"
