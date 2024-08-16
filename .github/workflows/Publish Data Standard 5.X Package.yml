@@ -111,7 +111,7 @@ jobs:
         path: ${{ github.workspace }}/package/**/*.tgz
 
     - name: Create .npmrc for Azure Artifacts publishing
-      if: ${{ steps.versions.outputs.update-required == 'true' &&  github.event_name == 'push' }}
+      if: steps.versions.outputs.update-required == 'true'
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/    
       run: |
           echo "Configuring .npmrc for ${{ env.NPM_REGISTRY }}"
