@@ -1,10 +1,9 @@
 name: Publish Data Standard 5.X Package
 
 on:
-  push:
-    branches: ['DS-5.*']   
-
-  workflow_dispatch:
+  pull_request:
+    types: [closed]
+    branches: ['DS-5.*']
 
 permissions: read-all
 
