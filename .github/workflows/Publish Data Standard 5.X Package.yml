@@ -1,10 +1,11 @@
 name: Publish Data Standard 5.X Package
 
 on:
-  pull_request_review:
-    types: [submitted]
+ pull_request_review:
+    types: [edited]
     branches: ['DS-5.*']
-
+#  repository_dispatch:
+#     types: [triggered-from-ods-repo]
 permissions: read-all
 
 concurrency:
@@ -50,6 +51,11 @@ jobs:
       shell: pwsh
       run: |
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
+
+    - name: Check Branch Name
+      run: |
+        echo "The branch name is ${{ github.HEAD_REF }}"
+        echo "The HEAD_REF name is ${{ github.REF_NAME }}"        
 
     - name: Set Current Branch Environment Variable
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
