@@ -31,7 +31,7 @@ jobs:
         }
         Write-Host "Current Branch: $current_branch"   
         echo "current_branch=$current_branch" >> $Env:GITHUB_ENV          
-    - name: Dispatch to Implementation repo
+    - name: Dispatch to Trigger Publish Data Standard 5.X Package workflow
       if: ${{ env.PRIVATE_REPO_READ_TOKEN != '' }}
       uses: peter-evans/repository-dispatch@11ba7d3f32dc7cc919d1c43f1fec1c05260c26b5 # v2
       with:
