@@ -1,9 +1,13 @@
 name: Publish Data Standard 5.X Package
 
 on:
-  pull_request:
-    types: [closed]
+ pull_request_review:
+    types: [submitted]
     branches: ['DS-5.*']
+#  repository_dispatch:
+#     types: [triggered-from-ods-repo]
+  
+ workflow_dispatch:
 
 permissions: read-all
 
@@ -24,6 +28,7 @@ jobs:
   Publish-Data-Standard-5X:
 
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request_review' && github.event.review.state == 'approved' }}
     defaults:
       run:
         working-directory: Ed-Fi-Model
@@ -40,7 +45,7 @@ jobs:
     - name: Checkout Ed-Fi-Model
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
-        repository: Ed-Fi-Closed/Ed-Fi-Model
+        repository: semalaiappan/Ed-Fi-Model
         ref: ${{env.DATASTANDARD_VERSION}}
         fetch-depth: 0
 
@@ -49,6 +54,22 @@ jobs:
       shell: pwsh
       run: |
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
+
+    - name: Check Branch Name
+      run: |
+        echo "The branch name is ${{ github.HEAD_REF }}"
+        echo "The HEAD_REF name is ${{ github.REF_NAME }}"        
+
+    - name: Set Current Branch Environment Variable
+      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
+      shell: pwsh
+      run: |
+        $current_branch = '${{env.REF_NAME}}'
+        if ($current_branch -like "*/merge"){
+          $current_branch = '${{env.HEAD_REF}}'
+        }
+        Write-Host "Current Branch: $current_branch"   
+        echo "current_branch=$current_branch" >> $Env:GITHUB_ENV
 
     - name: Current Latest Tag Version
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
@@ -60,12 +81,10 @@ jobs:
       id: versions
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model
       run: |
-        if [ ${{ github.event_name }} == 'pull_request' ]; then
           suggested=$(cat lerna.json | jq -r .version)
           current=$(git describe --tags $(git rev-list --tags --max-count=1))
           echo "Versions: Lerna: $suggested. Current: $current"
           echo "update-required=$([[ "$suggested" != "$current" ]] && echo true)" >>$GITHUB_OUTPUT
-        fi
 
     - name: Update versions
       if: steps.versions.outputs.update-required
@@ -92,7 +111,7 @@ jobs:
       with:
         commit_message: "${{steps.set-version.outputs.version}}"
         repo: ${{ github.repository }}
-        branch: ${{ env.DATASTANDARD_VERSION }}
+        branch: ${{ env.current_branch }}
      
       env:
         GITHUB_TOKEN: ${{secrets.PRIVATE_REPO_READ_TOKEN}}
