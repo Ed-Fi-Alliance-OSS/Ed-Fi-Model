@@ -5,6 +5,10 @@ on:
     branches: ['DS-5.*']
   workflow_dispatch:
 
+permissions:
+  actions: write
+  contents: write
+
 env:
   REPO_DISPATCH_TOKEN: ${{ secrets.REPO_DISPATCH_TOKEN }}
   REPOSITORY_OWNER: ${{ github.repository_owner }}
@@ -32,6 +36,13 @@ jobs:
           }
           Write-Host "Current Branch: $current_branch"   
           echo "current_branch=$current_branch" >> $Env:GITHUB_ENV          
+
+      - name: Debug Repository Dispatch
+        if: ${{ env.REPO_DISPATCH_TOKEN != '' }}
+        run: |
+          echo "Repository Dispatch Token: ${{ env.REPO_DISPATCH_TOKEN }}"
+          echo "Current Branch: ${{ env.current_branch }}"
+          echo "Triggering repository_dispatch event..."
 
       - name: Dispatch to Trigger Publish Data Standard 5.X Package Workflow
         if: ${{ env.REPO_DISPATCH_TOKEN != '' }}

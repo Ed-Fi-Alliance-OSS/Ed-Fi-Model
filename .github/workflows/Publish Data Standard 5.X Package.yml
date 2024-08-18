@@ -3,7 +3,7 @@ name: Publish Data Standard 5.X Package
 on:
   repository_dispatch:
     types: [pr-approved]
-  
+    
 permissions: read-all
 
 concurrency:
