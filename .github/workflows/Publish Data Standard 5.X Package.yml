@@ -2,10 +2,13 @@ name: Publish Data Standard 5.X Package
 
 on:
  pull_request_review:
-    types: [edited]
+    types: [submitted]
     branches: ['DS-5.*']
 #  repository_dispatch:
 #     types: [triggered-from-ods-repo]
+  
+ workflow_dispatch:
+
 permissions: read-all
 
 concurrency:
