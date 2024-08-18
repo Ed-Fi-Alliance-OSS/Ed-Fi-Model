@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  PRIVATE_REPO_READ_TOKEN: ${{ secrets.REPO_DISPATCH_TOKEN }}
+  REPO_DISPATCH_TOKEN: ${{ secrets.REPO_DISPATCH_TOKEN }}
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
   HEAD_REF:  ${{ GITHUB.HEAD_REF }}
   REF_NAME:  ${{ GITHUB.REF_NAME }}
@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - name: Check for Repo Dispatch Token
-      if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.PRIVATE_REPO_READ_TOKEN == '' }}
+      if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.REPO_DISPATCH_TOKEN == '' }}
       run: | 
         echo "::error::Missing GitHub Token"
         exit 1
@@ -32,10 +32,10 @@ jobs:
         Write-Host "Current Branch: $current_branch"   
         echo "current_branch=$current_branch" >> $Env:GITHUB_ENV          
     - name: Dispatch to Trigger Publish Data Standard 5.X Package workflow
-      if: ${{ env.PRIVATE_REPO_READ_TOKEN != '' }}
+      if: ${{ env.REPO_DISPATCH_TOKEN != '' }}
       uses: peter-evans/repository-dispatch@11ba7d3f32dc7cc919d1c43f1fec1c05260c26b5 # v2
       with:
-        token: ${{ env.PRIVATE_REPO_READ_TOKEN }}
+        token: ${{ env.REPO_DISPATCH_TOKEN }}
         event-type: pr-approved
         client-payload: '{"branch": "${{  env.current_branch  }}"}'
 
