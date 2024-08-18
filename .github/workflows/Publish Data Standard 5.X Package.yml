@@ -1,14 +1,14 @@
 name: Publish Data Standard 5.X Package
 
 on:
- pull_request_review:
-    types: [submitted]
-    branches: ['DS-5.*']
-#  repository_dispatch:
-#     types: [triggered-from-ods-repo]
+#  pull_request_review:
+#     types: [submitted]
+#     branches: ['DS-5.*']
+#  issue_comment:
+#     types: [created]    
+ repository_dispatch:
+    types: [pr-approved]
   
- workflow_dispatch:
-
 permissions: read-all
 
 concurrency:
@@ -55,21 +55,9 @@ jobs:
       run: |
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
 
-    - name: Check Branch Name
+    - name: Extract Branch from Payload
       run: |
-        echo "The branch name is ${{ github.HEAD_REF }}"
-        echo "The HEAD_REF name is ${{ github.REF_NAME }}"        
-
-    - name: Set Current Branch Environment Variable
-      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
-      shell: pwsh
-      run: |
-        $current_branch = '${{env.REF_NAME}}'
-        if ($current_branch -like "*/merge"){
-          $current_branch = '${{env.HEAD_REF}}'
-        }
-        Write-Host "Current Branch: $current_branch"   
-        echo "current_branch=$current_branch" >> $Env:GITHUB_ENV
+        echo "Branch name from PR approval is: ${{ github.event.client_payload.branch }}"
 
     - name: Current Latest Tag Version
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
