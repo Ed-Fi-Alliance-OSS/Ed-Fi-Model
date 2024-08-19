@@ -1,0 +1,53 @@
+name: Trigger Publish Data Standard 5.X Package Workflow
+
+on:
+  # pull_request:
+  #   branches: ['DS-5.*']
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: write
+
+env:
+  REPO_DISPATCH_TOKEN: ${{ secrets.REPO_DISPATCH_TOKEN }}
+  REPOSITORY_OWNER: ${{ github.repository_owner }}
+  HEAD_REF:  ${{ github.head_ref }}
+  REF_NAME:  ${{ github.ref_name }}
+  REPOSITORY_DISPATCH_BRANCH: ${{ github.event.client_payload.branch }} 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check for Repo Dispatch Token
+        if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.REPO_DISPATCH_TOKEN == '' }}
+        run: | 
+          echo "::error::Missing GitHub Token"
+          exit 1
+
+      - name: Set Current Branch Environment Variable
+        shell: pwsh
+        run: |
+          $current_branch = '${{ env.REF_NAME }}'
+          if ($current_branch -like "*/merge") {
+            $current_branch = '${{ env.HEAD_REF }}'
+          }
+          Write-Host "Current Branch: $current_branch"   
+          echo "current_branch=$current_branch" >> $Env:GITHUB_ENV          
+
+      - name: Debug Repository Dispatch
+        if: ${{ env.REPO_DISPATCH_TOKEN != '' }}
+        run: |
+          echo "Repository Dispatch Token: ${{ env.REPO_DISPATCH_TOKEN }}"
+          echo "Current Branch: ${{ env.current_branch }}"
+          echo "Triggering repository_dispatch event..."
+
+      - name: Dispatch to Trigger Publish Data Standard 5.X Package Workflow
+        if: ${{ env.REPO_DISPATCH_TOKEN != '' }}
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ env.REPO_DISPATCH_TOKEN }}
+          event-type: pr-approved
+          client-payload: '{"branch": "${{ env.current_branch }}"}'
