@@ -5,7 +5,7 @@
 
 [CmdLetBinding()]
 param(
-    # Command to execute, defaults to "Build".
+    # Command to execute, defaults to "CheckoutBranch".
     [string]
     [ValidateSet("CheckoutBranch")]
     $Command = "CheckoutBranch",
