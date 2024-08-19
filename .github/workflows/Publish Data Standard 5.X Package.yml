@@ -3,52 +3,18 @@ name: Publish Data Standard 5.X Package
 on:
   repository_dispatch:
     types: [pr-approved]
-    
-permissions: read-all
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
-  
-env:
-  REPOSITORY_DISPATCH_BRANCH: ${{ github.event.client_payload.branch }}
-  HEAD_REF:  ${{ github.head_ref }}
-  REF_NAME:  ${{ github.ref_name }}
-  REPOSITORY_OWNER: ${{ github.repository_owner }}
-  DATASTANDARD_VERSION:  "DS-5.2.0-ME-3.0.0"
-  ARTIFACTS_API_KEY: ${{ secrets.AZURE_ARTIFACTS_PERSONAL_ACCESS_TOKEN }}
-  NPM_REGISTRY: ${{ vars.NPM_REGISTRY }}
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: write
 
 jobs:
   Publish-Data-Standard-5X:
 
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: Ed-Fi-Model
-    permissions:
-      contents: write
-    name: Publish-Data-Standard-5.X
-
     steps:
-    - name: Check for Azure token
-      if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.ARTIFACTS_API_KEY == '' }}
-      run: | 
-        echo "::error::Missing Azure Token"
-        exit 1
 
-    - name: Checkout Ed-Fi-Model
-      uses: actions/checkout@v4
-      with:
-        repository: semalaiappan/Ed-Fi-Model
-        ref: ${{ env.DATASTANDARD_VERSION }}
-        fetch-depth: 0
-
-    - name: Is pull request branch exists in Ed-Fi-Model
-      shell: pwsh
-      run: |
-        ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
 
     - name: Extract Branch from Payload
       run: |
