@@ -1,6 +1,8 @@
 name: Publish Data Standard 5.X Package
 
 on:
+  pull_request:
+    branches: ['DS-5.*']
   repository_dispatch:
     types: [pr-approved]
   workflow_dispatch:
