@@ -1,8 +1,8 @@
 name: Trigger Publish Data Standard 5.X Package workflow
 
 on:
-  pull_request:
-    branches: ['DS-5.*']
+  # pull_request:
+  #   branches: ['DS-5.*']
   workflow_dispatch:
 
 env:

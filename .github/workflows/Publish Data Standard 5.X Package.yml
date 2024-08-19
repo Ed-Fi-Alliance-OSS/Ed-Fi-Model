@@ -1,13 +1,12 @@
 name: Publish Data Standard 5.X Package
 
 on:
-#  pull_request_review:
-#     types: [submitted]
-#     branches: ['DS-5.*']
-#  issue_comment:
-#     types: [created]    
- repository_dispatch:
-    types: [pr-approved]
+ pull_request_review:
+    types: [submitted]
+    branches: ['DS-5.*']
+
+#  repository_dispatch:
+#     types: [pr-approved]
   
 permissions: read-all
 
@@ -45,7 +44,7 @@ jobs:
     - name: Checkout Ed-Fi-Model
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
-        repository: Ed-Fi-Closed/Ed-Fi-Model
+        repository: semalaiappan/Ed-Fi-Model
         ref: ${{env.DATASTANDARD_VERSION}}
         fetch-depth: 0
 
@@ -55,9 +54,21 @@ jobs:
       run: |
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
 
-    - name: Extract Branch from Payload
+    - name: Check Branch Name
       run: |
-        echo "Branch name from PR approval is: ${{ github.event.client_payload.branch }}"
+        echo "The branch name is ${{ github.HEAD_REF }}"
+        echo "The HEAD_REF name is ${{ github.REF_NAME }}"   
+
+    - name: Set Current Branch Environment Variable
+      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
+      shell: pwsh
+      run: |
+        $current_branch = '${{env.REF_NAME}}'
+        if ($current_branch -like "*/merge"){
+          $current_branch = '${{env.HEAD_REF}}'
+        }
+        Write-Host "Current Branch: $current_branch"   
+        echo "current_branch=$current_branch" >> $Env:GITHUB_ENV
 
     - name: Current Latest Tag Version
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model    
