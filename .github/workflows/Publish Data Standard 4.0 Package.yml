@@ -5,6 +5,8 @@ on:
     types: [closed]
     branches: ['DS-4.*']
 
+  workflow_dispatch:
+  
 permissions: read-all
 
 concurrency:
@@ -92,7 +94,7 @@ jobs:
       with:
         commit_message: "${{steps.set-version.outputs.version}}"
         repo: ${{ github.repository }}
-        branch: ${{ github.head_ref || github.ref_name }}
+        branch: ${{ env.DATASTANDARD_VERSION }}
      
       env:
         GITHUB_TOKEN: ${{secrets.PRIVATE_REPO_READ_TOKEN}}
