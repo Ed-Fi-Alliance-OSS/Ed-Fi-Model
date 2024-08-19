@@ -1,4 +1,4 @@
-name: Publish Data Standard 4.0 Package
+name: Publish Data Standard 4.X Package
 
 on:
   pull_request:
@@ -23,7 +23,7 @@ env:
   NPM_REGISTRY: ${{ vars.NPM_REGISTRY }}
 
 jobs:
-  Publish-Data-Standard-4:
+  Publish-Data-Standard-4X:
 
     runs-on: ubuntu-latest
     defaults:
@@ -31,7 +31,7 @@ jobs:
         working-directory: Ed-Fi-Model
     permissions:
       contents: write
-    name:  Publish-Data-Standard-4
+    name:  Publish-Data-Standard-4X
     steps:
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
@@ -105,13 +105,14 @@ jobs:
       run: npm pack --workspaces
 
     - name: Upload MetaEd.Artifacts
-      if: success()
+      if: steps.versions.outputs.update-required == 'true'
       uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
       with:
-        name: Data Standard-${{env.DATASTANDARD_VERSION}}
+        name: Data Standard-${{env.DATASTANDARD_VERSION}}-${{steps.versions.outputs.update-required}}
         path: ${{ github.workspace }}/package/**/*.tgz
 
     - name: Create .npmrc for Azure Artifacts publishing
+      if: steps.versions.outputs.update-required == 'true'
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/    
       run: |
           echo "Configuring .npmrc for ${{ env.NPM_REGISTRY }}"
@@ -127,6 +128,7 @@ jobs:
           echo "; end auth token" >> $HOME/.npmrc
 
     - name: Publish to Azure DevOps npm registry
+      if: steps.versions.outputs.update-required == 'true'    
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/
       run: npm publish --workspaces --tag dev
 
