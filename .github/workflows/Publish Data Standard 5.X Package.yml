@@ -5,6 +5,8 @@ on:
     types: [closed]
     branches: ['DS-5.*']
 
+  workflow_dispatch:
+
 permissions: read-all
 
 concurrency:
