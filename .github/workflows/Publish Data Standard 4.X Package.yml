@@ -6,7 +6,7 @@ on:
     branches: ['DS-4.*']
 
   workflow_dispatch:
-  
+
 permissions: read-all
 
 concurrency:
@@ -31,7 +31,7 @@ jobs:
         working-directory: Ed-Fi-Model
     permissions:
       contents: write
-    name:  Publish-Data-Standard-4X
+    name:  Publish-Data-Standard-4.X
     steps:
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
@@ -108,7 +108,7 @@ jobs:
       if: steps.versions.outputs.update-required == 'true'
       uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
       with:
-        name: Data Standard-${{env.DATASTANDARD_VERSION}}-${{steps.versions.outputs.update-required}}
+        name: Data Standard-${{env.DATASTANDARD_VERSION}}-${{steps.set-version.outputs.version}}
         path: ${{ github.workspace }}/package/**/*.tgz
 
     - name: Create .npmrc for Azure Artifacts publishing
@@ -128,7 +128,7 @@ jobs:
           echo "; end auth token" >> $HOME/.npmrc
 
     - name: Publish to Azure DevOps npm registry
-      if: steps.versions.outputs.update-required == 'true'    
+      if: steps.versions.outputs.update-required == 'true'
       working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/
       run: npm publish --workspaces --tag dev
 
