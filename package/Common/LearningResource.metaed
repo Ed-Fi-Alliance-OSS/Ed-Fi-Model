@@ -16,7 +16,7 @@ Inline Common LearningResource [2514]
         documentation "The organization credited with publishing the resource."
         is optional
     duration TimeRequired [1378]
-        documentation "Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience."
+        documentation "Approximate or typical time that it takes to work with or through this learning resource for the typical intended target audience expressed in minutes."
         is optional
     descriptor InteractivityStyle [1370]
         documentation "The predominate mode of learning supported by the learning resource. Acceptable values are active, expositive, or mixed."
