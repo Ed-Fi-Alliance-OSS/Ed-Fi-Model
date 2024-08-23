@@ -13,7 +13,7 @@ Domain Entity StudentProgramEvaluation
         documentation "A reference to the education organization that evaluated the student, which may be different from the education organization associated with the program."    
         is optional
     shared integer Duration
-        documentation "The actual or estimated number of clock minutes during which the evaluation was conducted."
+        documentation "The actual number of minutes to conduct the evaluation."
         is optional
         role name Evaluation
     shared decimal NumericRating

@@ -10,7 +10,7 @@ Domain Entity SurveyResponse [3024]
         documentation "Date of the survey response."
         is required
     integer ResponseTime [3028]
-        documentation "The amount of time (in seconds) it took for the respondent to complete the survey."
+        documentation "The amount of time in seconds it took for the respondent to complete the survey."
         is optional
     descriptor SurveyLevel [3029]
         documentation "Provides information about the respondents of a survey and how they can be grouped together."

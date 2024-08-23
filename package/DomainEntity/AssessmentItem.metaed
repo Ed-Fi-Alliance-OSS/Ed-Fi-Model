@@ -18,7 +18,7 @@ Domain Entity AssessmentItem [542]
         documentation "A possible response to an assessment item."
         is optional collection
     duration ExpectedTimeAssessed [1257]
-        documentation "The duration of time allotted for the assessment item."
+        documentation "The duration allotted for the assessment item expressed in minutes."
         is optional
     shared string Nomenclature [1261]
         documentation "Reflects the specific nomenclature used for assessment item."
