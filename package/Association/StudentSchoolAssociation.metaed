@@ -12,7 +12,7 @@ Association StudentSchoolAssociation [613]
         documentation "The school year associated with the student's enrollment."
         is optional
     date EntryDate [1114]
-        documentation "The month, day, and year on which an individual enters and begins to receive instructional services in a school for each school year. The EntryDate value should be the date the student enrolled, or when the student's enrollment materially changed, such as with a grade promotion."
+        documentation "The month, day, and year on which an individual enters and begins to receive instructional services in a school for each school year. The EntryDate value should be the date the student enrolled, or when the student's enrollment materially changed, such as with a grade promotion.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     descriptor GradeLevel [1115]
         documentation "The grade level or primary instructional level at which a student enters and receives services in a school or an educational institution during a given academic session."
@@ -36,7 +36,7 @@ Association StudentSchoolAssociation [613]
         documentation "An indication of whether students transferred in or out of the school did so during the school year under the provisions for public school choice in accordance with Title I, Part A, Section 1116."
         is optional
     date ExitWithdrawDate [1118]
-        documentation "The recorded exit or withdraw date for the student."
+        documentation "The recorded exit or withdraw date for the student.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     descriptor ExitWithdrawType [1119]
         documentation "The circumstances under which the student exited from membership in an educational institution."

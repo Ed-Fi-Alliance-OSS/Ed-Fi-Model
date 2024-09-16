@@ -5,10 +5,10 @@ Association StaffCohortAssociation [599]
     domain entity Cohort [1016]
         documentation "Reference to the cohort associated with the staff."
     date BeginDate [1015]
-        documentation "Start date for the association of staff to this cohort."
+        documentation "Start date for the association of staff to this cohort.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     date EndDate [1017]
-        documentation "End date for the association of staff to this cohort."
+        documentation "End date for the association of staff to this cohort.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     bool StudentRecordAccess [1019]
         documentation "Indicator of whether the staff has access to the student records of the cohort per district interpretation of FERPA and other privacy laws, regulations, and policies."

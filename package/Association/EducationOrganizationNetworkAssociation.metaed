@@ -6,8 +6,8 @@ Association EducationOrganizationNetworkAssociation [596]
         documentation "The education organization member in the network."
         role name Member
     date BeginDate [1004]
-        documentation "The date on which the education organization joined this network."
+        documentation "The date on which the education organization joined this network.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     date EndDate [1006]
-        documentation "The date on which the education organization left this network."
+        documentation "The date on which the education organization left this network.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

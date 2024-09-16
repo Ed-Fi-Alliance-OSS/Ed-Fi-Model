@@ -6,10 +6,10 @@ domain entity Program [1106]
     documentation "The program associated with the student."
     role name Program
 date BeginDate [1103]
-    documentation "The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program."
+    documentation "The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
     is part of identity
 date EndDate [1105]
-    documentation "The month, day, and year on which the student exited the program or stopped receiving services."
+    documentation "The month, day, and year on which the student exited the program or stopped receiving services.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
     is optional
 descriptor ReasonExited [1107]
     documentation "The reason the student left the program within a school or district."

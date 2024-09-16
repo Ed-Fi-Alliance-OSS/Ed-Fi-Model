@@ -7,10 +7,10 @@ Domain Entity AcademicWeek [536]
         documentation "The school label for the week."
         is part of identity
     date BeginDate [1200]
-        documentation "The start date for the academic week."
+        documentation "The start date for the academic week.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     date EndDate [1202]
-        documentation "The end date for the academic week."
+        documentation "The end date for the academic week.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     shared integer TotalInstructionalDays named TotalInstructionalDays [1203]
         documentation "The total instructional days during the academic week."

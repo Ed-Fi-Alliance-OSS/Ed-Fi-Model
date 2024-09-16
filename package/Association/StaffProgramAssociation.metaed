@@ -6,10 +6,10 @@ Association StaffProgramAssociation [602]
         documentation "The program associated to the staff."
         role name Program
     date BeginDate [1036]
-        documentation "Start date for the association of staff to this program."
+        documentation "Start date for the association of staff to this program.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     date EndDate [1037]
-        documentation "End date for the association of staff to this program."
+        documentation "End date for the association of staff to this program.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     bool StudentRecordAccess [1040]
         documentation "Indicator of whether the staff has access to the student records of the program per district interpretation of FERPA and other privacy laws, regulations, and policies."

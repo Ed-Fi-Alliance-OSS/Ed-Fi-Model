@@ -6,10 +6,10 @@ Association StudentSectionAssociation [614]
     domain entity Section [1132]
         documentation "The section the student is enrolled in."
     date BeginDate [1128]
-        documentation "Month, day, and year of the student's entry or assignment to the section."
+        documentation "Month, day, and year of the student's entry or assignment to the section.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     date EndDate [1129]
-        documentation "Month, day, and year of the withdrawal or exit of the student from the section."
+        documentation "Month, day, and year of the withdrawal or exit of the student from the section.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     bool HomeroomIndicator [1130]
         documentation "Indicates the section is the student's homeroom. Homeroom period may the convention for taking daily attendance."

@@ -1,8 +1,8 @@
 Common Period [2757]
     documentation "The time period for which the information is applicable or effective."
     date BeginDate [2758]
-        documentation "The month, day, and year for the start of the period."
+        documentation "The month, day, and year for the start of the period.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     date EndDate [2759]
-        documentation "The month, day, and year for the end of the period."
+        documentation "The month, day, and year for the end of the period.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

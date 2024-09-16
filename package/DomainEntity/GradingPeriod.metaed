@@ -16,10 +16,10 @@ Domain Entity GradingPeriod [561]
         documentation "The identifier for the grading period school year."
         is part of identity
     date BeginDate [1430]
-        documentation "Month, day, and year of the first day of the grading period."
+        documentation "Month, day, and year of the first day of the grading period.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     date EndDate [1432]
-        documentation "Month, day, and year of the last day of the grading period."
+        documentation "Month, day, and year of the last day of the grading period.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     shared integer TotalInstructionalDays [1435]
         documentation "Total days available for educational instruction during the grading period."

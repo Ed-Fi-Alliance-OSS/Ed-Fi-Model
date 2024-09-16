@@ -11,10 +11,10 @@ Association StaffEducationOrganizationAssignmentAssociation [600]
         documentation "The descriptive name of an individual's position."
         is optional
     date BeginDate [1020]
-        documentation "Month, day, and year of the start or effective date of a staff member's employment, contract, or relationship with the education organization."
+        documentation "Month, day, and year of the start or effective date of a staff member's employment, contract, or relationship with the education organization.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     date EndDate [1022]
-        documentation "Month, day, and year of the end or termination date of a staff member's employment, contract, or relationship with the education organization."
+        documentation "Month, day, and year of the end or termination date of a staff member's employment, contract, or relationship with the education organization.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     integer OrderOfAssignment [1023]
         documentation "Describes whether the assignment is this the staff member's primary assignment, secondary assignment, etc."
