@@ -7,10 +7,10 @@ Inline Common License [2564]
         documentation "The organization issuing the license."
         is part of identity
     date LicenseEffectiveDate [2566]
-        documentation "The month, day, and year on which a license is active or becomes effective."
+        documentation "The month, day, and year on which a license is active or becomes effective.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     date LicenseExpirationDate [2567]
-        documentation "The month, day, and year on which a license will expire."
+        documentation "The month, day, and year on which a license will expire.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     date LicenseIssueDate [2569]
         documentation "The month, day, and year on which an active license was issued."
