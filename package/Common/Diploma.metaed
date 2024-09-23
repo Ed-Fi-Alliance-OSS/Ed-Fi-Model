@@ -4,7 +4,7 @@ Common Diploma [501]
         documentation "An entity that includes information about achievement earned by a student upon fulfilling a specified criteria."
         is required
     date DiplomaAwardDate [804]
-        documentation "The month, day, and year on which the student met  graduation requirements and was awarded a diploma."
+        documentation "The month, day, and year on which the student met  graduation requirements and was awarded a diploma.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     descriptor DiplomaLevel [807]
         documentation "The level of diploma/credential that is awarded to a student in recognition of completion of the curricular requirements."
@@ -19,5 +19,5 @@ Common Diploma [501]
         documentation "The description of the diploma given to the student for accomplishments."
         is optional
     date DiplomaAwardExpiresDate [805]
-        documentation "Date on which the diploma expires."
+        documentation "Date on which the diploma expires.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

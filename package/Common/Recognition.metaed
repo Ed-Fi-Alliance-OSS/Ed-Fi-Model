@@ -10,8 +10,8 @@ Common Recognition [523]
         documentation "A description of the type of recognition earned by or awarded to the individual."
         is optional
     date RecognitionAwardDate [905]
-        documentation "The date the recognition was awarded or earned."
+        documentation "The date the recognition was awarded or earned.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     date RecognitionAwardExpiresDate [906]
-        documentation "Date on which the recognition expires."
+        documentation "Date on which the recognition expires.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

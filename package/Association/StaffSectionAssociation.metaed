@@ -8,10 +8,10 @@ Association StaffSectionAssociation [604]
         documentation "The type of position the staff member holds in the specific class/section."
         is required
     date BeginDate [1047]
-        documentation "Month, day, and year of a teacher's assignment to the section."
+        documentation "Month, day, and year of a teacher's assignment to the section.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     date EndDate [1049]
-        documentation "Month, day, and year of the last day of a staff member's assignment to the section."
+        documentation "Month, day, and year of the last day of a staff member's assignment to the section.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     bool HighlyQualifiedTeacher [1050]
         documentation "An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition. This attribute indicates the teacher is highly qualified for this section being taught."

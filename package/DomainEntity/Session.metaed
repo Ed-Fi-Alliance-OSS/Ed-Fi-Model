@@ -10,10 +10,10 @@ Domain Entity Session [582]
         is part of identity
         is queryable field
     date BeginDate [1638]
-        documentation "Month, day, and year of the first day of the session."
+        documentation "Month, day, and year of the first day of the session.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     date EndDate [1639]
-        documentation "Month, day and year of the last day of the session."
+        documentation "Month, day and year of the last day of the session.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     descriptor Term [1644]
         documentation "A descriptor value to indicate the term that the session is associated with."

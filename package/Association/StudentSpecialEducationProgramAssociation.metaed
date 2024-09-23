@@ -28,10 +28,10 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
         documentation "The date of the last IEP review."
         is optional
     date IEPBeginDate [1139]
-        documentation "The effective date of the most recent IEP."
+        documentation "The effective date of the most recent IEP.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     date IEPEndDate [1140]
-        documentation "The end date of the most recent IEP."
+        documentation "The end date of the most recent IEP.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     common Disability [2807]
         documentation "The disability condition(s) that best describes an individual's impairment, as related to special education services received."

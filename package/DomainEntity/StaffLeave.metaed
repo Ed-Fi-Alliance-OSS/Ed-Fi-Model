@@ -1,10 +1,10 @@
 Domain Entity StaffLeave [568]
     documentation "This entity represents the recording of the dates of staff leave (e.g., sick leave, personal time, vacation)."
     date BeginDate [2690]
-        documentation "The begin date of the staff leave."
+        documentation "The begin date of the staff leave.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     date EndDate [2691]
-        documentation "The end date of the staff leave."
+        documentation "The end date of the staff leave.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     descriptor StaffLeaveEventCategory [1508]
         documentation "The code describing the type of leave taken."

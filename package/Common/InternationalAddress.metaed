@@ -25,8 +25,8 @@ Common InternationalAddress [509]
         documentation "The geographic longitude of the physical address."
         is optional
     date BeginDate [842]
-        documentation "The first date the address is valid. For physical addresses, the date the individual moved to that address."
+        documentation "The first date the address is valid. For physical addresses, the date the individual moved to that address.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     date EndDate [844]
-        documentation "The last date the address is valid. For physical addresses, the date the individual moved from that address."
+        documentation "The last date the address is valid. For physical addresses, the date the individual moved from that address.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

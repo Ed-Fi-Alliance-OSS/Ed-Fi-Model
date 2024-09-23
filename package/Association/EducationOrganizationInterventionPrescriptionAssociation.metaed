@@ -6,8 +6,8 @@ Association EducationOrganizationInterventionPrescriptionAssociation [595]
         documentation "The intervention prescription being made available by the education organization."
         role name InterventionPrescription
     date BeginDate [1000]
-        documentation "The begin date of the period during which the intervention prescription is available."
+        documentation "The begin date of the period during which the intervention prescription is available.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     date EndDate [1002]
-        documentation "The end date of the period during which the intervention prescription is available."
+        documentation "The end date of the period during which the intervention prescription is available.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

@@ -28,10 +28,10 @@ Domain Entity Intervention [563]
         is optional collection
         role name InterventionPrescription
     date BeginDate [1445]
-        documentation "The start date for the intervention implementation."
+        documentation "The start date for the intervention implementation.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     date EndDate [1451]
-        documentation "The end date for the intervention implementation."
+        documentation "The end date for the intervention implementation.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     common MeetingTime [1455]
         documentation "The times at which this intervention is scheduled to meet."

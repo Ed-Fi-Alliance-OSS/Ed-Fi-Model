@@ -24,8 +24,8 @@ Common ContentStandard [494]
         is optional
         role name Mandating
     date BeginDate [770]
-        documentation "The beginning of the period during which this learning standard document is intended for use."
+        documentation "The beginning of the period during which this learning standard document is intended for use.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     date EndDate [771]
-        documentation "The end of the period during which this learning standard document is intended for use."
+        documentation "The end of the period during which this learning standard document is intended for use.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

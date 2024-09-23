@@ -7,8 +7,8 @@ Common MigrantEducationProgramService [2742]
         documentation "True if service is a primary service."
         is optional
     date ServiceBeginDate [2745]
-        documentation "First date the student was in this option for the current school year."
+        documentation "First date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     date ServiceEndDate [2746]
-        documentation "Last date the student was in this option for the current school year."
+        documentation "Last date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

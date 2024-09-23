@@ -6,10 +6,10 @@ Association FeederSchoolAssociation [598]
     domain entity School [1014]
         documentation "Reference to the receiving school."
     date BeginDate [1010]
-        documentation "The month, day, and year of the first day of the feeder school association."
+        documentation "The month, day, and year of the first day of the feeder school association.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     date EndDate [1011]
-        documentation "The month, day, and year of the last day of the feeder school association."
+        documentation "The month, day, and year of the last day of the feeder school association.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     shared string Description [1012]
         documentation "Describes the relationship from the feeder school to the receiving school, for example by program emphasis, such as special education, language immersion, science, or performing art."
