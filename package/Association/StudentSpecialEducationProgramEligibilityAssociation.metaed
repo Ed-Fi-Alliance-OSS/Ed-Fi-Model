@@ -7,6 +7,7 @@ Association StudentSpecialEducationProgramEligibilityAssociation
     domain entity Program
         documentation "Indicates the program that the student is being evaluated for."
         is part of identity
+        role name Program
     date ConsentToEvaluationReceivedDate
         documentation "Indicates the date on which the local education agency received written consent for the evaluation from the student's parent or guardian. This is the first day of the evaluation timeframe."
         is part of identity
