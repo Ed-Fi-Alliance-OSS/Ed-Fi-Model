@@ -10,7 +10,7 @@ param (
     [string]$ProjectVersion,
     [string]$ProjectDescription,
     [string]$TechnologyVersion,
-    [string]$MetaEdExtensionName    
+    [string]$MetaEdExtensionName = ""   
     
 )
 
