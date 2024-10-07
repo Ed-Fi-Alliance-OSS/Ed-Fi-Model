@@ -78,11 +78,11 @@ jobs:
         ./eng/CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }}  -MetaEdExtensionName ""
       shell: pwsh
 
-    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.0.json content
+    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.2.json content
       shell: pwsh
       run: |
         # Define the path to the JSON file
-        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.0.json"
+        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.2.json"
 
         # Read the content of the JSON file
         $jsonContent = Get-Content -Path $jsonFilePath -Raw
@@ -96,7 +96,7 @@ jobs:
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
-            node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.0.json -a
+            node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.2.json -a
 
             $fileCount = (Get-ChildItem "${{ github.workspace }}/MetaEdOutput" -ErrorAction SilentlyContinue | Measure-Object).Count
 
