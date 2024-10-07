@@ -6,7 +6,8 @@
 # ValidateSchema.ps1
 
 param (
-    [string]$Workspace
+    [string]$Workspace,
+    [string]$MetaEdExtensionName
 )
 
 function Test-Schema {
@@ -103,7 +104,7 @@ function Write-Result {
         [parameter(mandatory = $false)]
         $Exception
     )
-    if ($Elapsed -ne $null) {
+    if ($null -ne $Elapsed) {
         $Elapsed = "($Elapsed`ms)"
     }
     if ($Passed) {
@@ -112,7 +113,7 @@ function Write-Result {
     } else {
         Write-Host " FAIL " -BackgroundColor Red -ForegroundColor Black -NoNewline
         Write-Host " $Name"
-        if ($Exception -ne $null) {
+        if ($null -ne $Exception) {
             Write-Error $Exception.Message
         }
     }
@@ -135,8 +136,26 @@ Write-Host " "
 $coreSchemaPath = "$Workspace/MetaEdOutput/EdFi/XSD/Ed-Fi-Core.xsd"
 $interchangePath = "$Workspace/MetaEdOutput/EdFi/Interchange"
 
+Write-Host "`r`n coreSchemaPath is $coreSchemaPath `r`n"
+Write-Host "`r`n interchangePath is $interchangePath `r`n"  
+
 $elapsed = Use-StopWatch {
     $coreSchema = Test-Schema $coreSchemaPath
     Test-InterchangeSchema $interchangePath $coreSchema
+
+
+	if (-not [string]::IsNullOrWhiteSpace($MetaEdExtensionName) `
+        -and $MetaEdExtensionName -ne "Homograph") {
+
+        Write-Host "`r`n $MetaEdExtensionName Extension Schema validation  `r`n"            
+        # See https://tracker.ed-fi.org/browse/METAED-997 for why we skip Homograph
+        $extensionSchemaPath = "$Workspace/MetaEdOutput/$MetaEdExtensionName/XSD/EXTENSION-Ed-Fi-Extended-Core.xsd"
+        $extensionInterchangePath = "$Workspace/MetaEdOutput/$MetaEdExtensionName/Interchange"
+
+        Write-Host "`r`n extensionSchemaPath is $extensionSchemaPath `r`n"
+        Write-Host "`r`n extensionInterchangePath is $extensionInterchangePath `r`n"        
+        $extensionSchema = Test-Schema $extensionSchemaPath $coreSchema
+        Test-InterchangeSchema $extensionInterchangePath $extensionSchema "EXTENSION-Interchange*"
+    }
 }
 Write-Host "`r`n Validation finished in $elapsed`ms. `r`n"
