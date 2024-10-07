@@ -66,5 +66,5 @@ $metaEdConfiguration = @{
 
 $MetaEdConfigBase.Add("metaEdConfiguration", $metaEdConfiguration)
 
-$FilePath = "$Workspace/MetaEd-js/build/MetaEdConfig-API-$TechnologyVersion-DS-5.0.json"
+$FilePath = "$Workspace/MetaEd-js/build/MetaEdConfig-API-$TechnologyVersion-DS-5.2.json"
 $MetaEdConfigBase | ConvertTo-Json -Depth 100 | Out-File -FilePath $FilePath -NoNewline -Encoding Ascii
