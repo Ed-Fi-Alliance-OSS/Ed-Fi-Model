@@ -1,0 +1,3 @@
+Shared String AdministrationIdentifier
+    documentation "The title or name of the assessment in the context of it's administration."
+    max length 255

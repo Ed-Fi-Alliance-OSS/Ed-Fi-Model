@@ -1,0 +1,3 @@
+Shared String AssessmentBatteryPartName
+    documentation "The name of the part of a assessment battery."
+    max length 65

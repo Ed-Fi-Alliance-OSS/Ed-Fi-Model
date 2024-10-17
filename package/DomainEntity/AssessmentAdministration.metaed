@@ -1,0 +1,21 @@
+Domain Entity AssessmentAdministration
+    documentation "The anticipated administration of an assessment under the purview of an EducationOrganization"
+    domain entity EducationOrganization
+        documentation "A reference to the education organization which contracts for or administers an assessment."
+        is part of identity
+        role name Assigning
+    domain entity Assessment
+        documentation "A reference to the assessment."
+        is part of identity
+        merge Assessment.AssessmentIdentifier with ObjectiveAssessment.Assessment.AssessmentIdentifier
+        merge Assessment.Namespace with ObjectiveAssessment.Assessment.Namespace
+    shared string AdministrationIdentifier
+        documentation "The title or name of the assessment in the context of it's administration."
+        is part of identity
+    common Period
+        documentation "The anticipated dates for the assessment, or administration window."
+        is optional collection
+        role name AssessmentAdminstration
+    domain entity AssessmentBatteryPart
+        documentation "A reference to the parts of the assessment battery that are offered in this administration of the assessment."
+        is optional collection

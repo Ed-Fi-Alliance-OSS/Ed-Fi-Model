@@ -1,0 +1,11 @@
+Domain Entity AssessmentBatteryPart
+    documentation "The parts organized for administering an assessessment which together provide a comprehensive assessment of the students."
+    domain entity Assessment
+        documentation "A reference to the assessment."
+        is part of identity
+    shared string AssessmentBatteryPartName
+        documentation "The name of the part of a assessment battery."
+        is part of identity
+    domain entity ObjectiveAssessment
+        documentation "A reference to the objective assessment(s) that are administered by the assessment battery part."
+        is optional collection
