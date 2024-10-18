@@ -1,0 +1,11 @@
+Association StudentAssessmentRegistrationBatteryPartAssociation
+    documentation "The association to the part(s) of the assessment battery that the student is to be tested for this administration of the assessment."
+    domain entity StudentAssessmentRegistration
+        documentation "A reference to the registration that indicates the student is expected to participate in particular assessment."
+    domain entity AssessmentBatteryPart
+        documentation "A reference to the part of the assessment battery that the student is to be tested for this administration of the assessment."
+        merge AssessmentBatteryPart.Assessment.AssessmentIdentifier with StudentAssessmentRegistration.AssessmentAdministration.Assessment.AssessmentIdentifier
+        merge AssessmentBatteryPart.Assessment.Namespace with StudentAssessmentRegistration.AssessmentAdministration.Assessment.Namespace
+    descriptor  Accommodation
+        documentation "The special variation(s) to be used for the specific part of the assessment battery on how is presented, how it is administered, or how the test taker is allowed to respond. "
+        is optional collection

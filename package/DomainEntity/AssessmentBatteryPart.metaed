@@ -9,3 +9,5 @@ Domain Entity AssessmentBatteryPart
     domain entity ObjectiveAssessment
         documentation "A reference to the objective assessment(s) that are administered by the assessment battery part."
         is optional collection
+        merge ObjectiveAssessment.Assessment.Namespace with Assessment.Namespace
+        merge ObjectiveAssessment.Assessment.AssessmentIdentifier with Assessment.AssessmentIdentifier

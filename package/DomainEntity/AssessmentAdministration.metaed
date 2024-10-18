@@ -7,8 +7,6 @@ Domain Entity AssessmentAdministration
     domain entity Assessment
         documentation "A reference to the assessment."
         is part of identity
-        merge Assessment.AssessmentIdentifier with ObjectiveAssessment.Assessment.AssessmentIdentifier
-        merge Assessment.Namespace with ObjectiveAssessment.Assessment.Namespace
     shared string AdministrationIdentifier
         documentation "The title or name of the assessment in the context of it's administration."
         is part of identity
@@ -19,3 +17,5 @@ Domain Entity AssessmentAdministration
     domain entity AssessmentBatteryPart
         documentation "A reference to the parts of the assessment battery that are offered in this administration of the assessment."
         is optional collection
+        merge AssessmentBatteryPart.Assessment.AssessmentIdentifier with Assessment.AssessmentIdentifier
+        merge AssessmentBatteryPart.Assessment.Namespace with Assessment.Namespace

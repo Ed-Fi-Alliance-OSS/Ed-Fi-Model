@@ -1,0 +1,9 @@
+Common AssessmentCustomization
+    documentation "An un-typed key/value pair used to  provide additional information needed for vendor regisration, administration, or reporting."
+    shared string IdentificationCode
+        documentation "An agreed upon identifier for the custom information"
+        is part of identity
+    string CustomizationValue
+        documentation "Custom value for the indicated IdentificationCode"
+        is required
+        max length 1024
