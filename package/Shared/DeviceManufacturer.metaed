@@ -1,0 +1,3 @@
+Shared String DeviceManufacturer
+    documentation "The manufacturer of the device."
+    max length 100

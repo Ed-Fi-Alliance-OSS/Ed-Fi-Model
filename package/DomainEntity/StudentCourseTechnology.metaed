@@ -1,0 +1,25 @@
+Domain Entity StudentCourseTechnology
+    documentation "This entity represents the device used by a student for school-related work."
+    domain entity Student
+        documentation "References the student related to the device."
+        is part of identity
+    domain entity CourseOffering
+        documentation "References the student related to the device."
+        is part of identity
+    descriptor DeviceType
+        documentation "Specifies the type of device used by a student for school-related work"
+        is required
+    shared string DeviceManufacturer
+        documentation "The manufacturer of the device."
+        is optional
+    string DeviceModel
+        documentation "The specific model of the device"
+        is optional
+        max length 100
+    bool ProvidedBySchool
+        documentation "Indicates if the device is provided by the school."
+        is optional
+    association StudentSchoolAssociation
+        documentation "References the studentschoolassociation for the device."
+        is optional collection    
+        merge StudentSchoolAssociation.Student.StudentUniqueId with Student.StudentUniqueId

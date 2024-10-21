@@ -1,0 +1,3 @@
+Descriptor DeviceType
+    documentation "Specifies the type of device used by a student for school-related work."
+    
