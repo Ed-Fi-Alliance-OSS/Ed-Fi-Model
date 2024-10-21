@@ -6,10 +6,10 @@ Domain Entity StudentAssessmentRegistration
     association StudentEducationOrganizationAssociation
         documentation "A reference to the attending student education organization association."
         is part of identity
-        merge StudentEducationOrganizationAssociation.Student.StudentUniqueId with StudentSchoolAssociation.Student.StudentUniqueId 
     association StudentSchoolAssociation
         documentation "Identifies an assessment registration that a student is expected to participate in including the testing organization, reporting organization and assessment delivery details."
         is required
+        merge StudentSchoolAssociation.Student with StudentEducationOrganizationAssociation.Student
     domain entity EducationOrganization
         documentation "A reference to the education organization expected to administer the assessment."
         is optional
@@ -21,6 +21,8 @@ Domain Entity StudentAssessmentRegistration
     domain entity StudentEducationOrganizationAssessmentAccommodation
         documentation "A reference to the accommodations expected for administering the assessment."
         is optional
+        merge StudentEducationOrganizationAssessmentAccommodation.Student with StudentSchoolAssociation.Student
+        merge StudentEducationOrganizationAssessmentAccommodation.Student with StudentEducationOrganizationAssociation.Student
     descriptor Accommodation
         documentation "The special variation(s) to be used in how assessments (in general) are presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examination measures. The proper use of accommodations does not substantially change academic level or performance criteria."
         is optional collection
