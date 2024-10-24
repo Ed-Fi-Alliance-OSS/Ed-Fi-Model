@@ -5,6 +5,6 @@ Common AssessmentCustomization
         is part of identity
         max length 60
     string CustomizationValue
-        documentation "Custom value for the indicated IdentificationCode."
+        documentation "Custom value for the indicated CustomizationKey."
         is required
         max length 1024
