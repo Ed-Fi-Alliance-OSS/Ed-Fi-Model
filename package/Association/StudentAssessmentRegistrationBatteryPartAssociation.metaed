@@ -7,5 +7,5 @@ Association StudentAssessmentRegistrationBatteryPartAssociation
         merge AssessmentBatteryPart.Assessment.AssessmentIdentifier with StudentAssessmentRegistration.AssessmentAdministration.Assessment.AssessmentIdentifier
         merge AssessmentBatteryPart.Assessment.Namespace with StudentAssessmentRegistration.AssessmentAdministration.Assessment.Namespace
     descriptor  Accommodation
-        documentation "The special variation(s) to be used for the specific part of the assessment battery on how is presented, how it is administered, or how the test taker is allowed to respond. "
+        documentation "The special variation(s) to be used for the specific part of the assessment battery on how is presented, how it is administered, or how the test taker is allowed to respond."
         is optional collection

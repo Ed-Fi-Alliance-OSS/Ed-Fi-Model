@@ -1,5 +1,5 @@
 Domain Entity AssesssmentAdministrationParticipation
-    documentation "Identifies the point of contact for the administration of an assessment under the purview of an EducationOrganization."
+    documentation "Identifies the point of contact for the administration of an assessment under the purview of an education organization."
     domain entity AssessmentAdministration
         documentation "A reference to the assessment administration for which participation is being indicated."
         is part of identity

@@ -7,7 +7,7 @@ Domain Entity StudentAssessmentRegistration
         documentation "A reference to the attending student education organization association."
         is part of identity
     association StudentSchoolAssociation
-        documentation "Identifies an assessment registration that a student is expected to participate in including the testing organization, reporting organization and assessment delivery details."
+        documentation "A reference to the attending student school association that is active during the period of administration."
         is required
         merge StudentSchoolAssociation.Student with StudentEducationOrganizationAssociation.Student
     domain entity EducationOrganization
