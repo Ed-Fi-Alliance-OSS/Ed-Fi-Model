@@ -1,0 +1,12 @@
+Domain Entity AssesssmentAdministrationParticipation
+    documentation "Identifies the point of contact for the administration of an assessment under the purview of an education organization."
+    domain entity AssessmentAdministration
+        documentation "A reference to the assessment administration for which participation is being indicated."
+        is part of identity
+    domain entity EducationOrganization
+        documentation "A reference to the education organization for which participation is being indicated."
+        is part of identity
+        role name Participating
+    common AdministrationPointOfContact
+        documentation "Pre-identified contacts for education organizations administering the assessment."
+        is optional collection

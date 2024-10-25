@@ -1,0 +1,11 @@
+Domain Entity StudentEducationOrganizationAssessmentAccommodation
+    documentation "The accommodation(s) required or expected for administering assessments as determined by the education organization."
+    domain entity EducationOrganization
+        documentation "A reference to the education organization determining the student's accommodations required for assessments."
+        is part of identity
+    domain entity Student
+        documentation "Reference to the student associated with the assessment."
+        is part of identity
+    descriptor Accommodation
+        documentation "The special variation(s) to be used in how assessments (in general) are presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examination measures. The proper use of accommodations does not substantially change academic level or performance criteria."
+        is optional collection

@@ -1,0 +1,17 @@
+Common AdministrationPointOfContact
+    documentation "Short list of information which identifies the point of contact for the administration of an assessment within an education organization."
+    domain entity EducationOrganization
+        documentation "A reference to the education organization."
+        is part of identity
+    shared string ElectronicMailAddress
+        documentation "The email address for the contact."
+        is part of identity
+    shared string FirstName
+        documentation "The contacts's first name."
+        is required
+    shared string LastSurname
+        documentation "The contact's last name."
+        is required
+    shared string IdentificationCode named LoginId
+        documentation "The login ID for the user; used for security access control interface."
+        is optional
