@@ -1,0 +1,17 @@
+Association StudentSection504ProgramAssociation based on GeneralStudentProgramAssociation
+    documentation "This association identifies student that qualifies for the Section 504 of the Rehabilitation Act of 1973."
+    bool Section504Eligibility
+        documentation "Indicates whether student has a disability, either temporary or permenant, that qualifies student for Section 504 consideration. Selection of FALSE for this boolean is equivalent to marking student as 'Did Not Qualify'."
+        is required
+    bool AccommodationPlan
+        documentation "Indicates whether student has a Section 504 accommodation plan."
+        is optional
+    descriptor Section504DisabilityType
+        documentation "Defines one or more disabilities student has that qualifies them for a Section 504 plan."
+        is optional
+    date Section504MeetingDate
+        documentation "The month, day, and year on which the meeting with student's parent/guardian held to discuss the 504 eligibility of the student."
+        is optional
+    date Section504EligibilityDecisionDate
+        documentation "The month, day, and year on which the Section 504 eligibility decision is made."
+        is optional
