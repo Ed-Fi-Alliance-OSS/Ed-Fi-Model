@@ -1,0 +1,15 @@
+Domain AssessmentRegistration
+    documentation
+"This domain defines a model that can be used for the data recording relating to assessments registration, including early childhood assessment, state standardized assessments, college entrance exams, benchmark assessments, and/or course assessments. This domain contains:
+* Educational Organizations that are assigned to administer or participate to the assessment, and are responsible for testing and/or reporting.
+* AssessmentBatteryPart that are parts of the assessment for administering and later reporing composite scores.
+* StudentEducationOrganizationAssessmentAccommodation that describe special accommodation needs of student during the administration of assessment."
+    domain entity AssessmentAdministration
+    domain entity AssessmentAdministrationParticipation
+    domain entity StudentAssessmentRegistration
+    domain entity AssessmentBatteryPart
+    domain entity StudentEducationOrganizationAssessmentAccommodation
+    association StudentAssessmentRegistrationBatteryPartAssociation
+    common AdministrationPointOfContact
+    common AssessmentCustomization
+    common Period
