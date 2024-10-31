@@ -18,11 +18,9 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
     bool ShortenedSchoolDayIndicator
         documentation "Indicator that the student's IEP requires a shortened school day."
         is optional    
-    decimal ReductionInHoursPerWeekComparedToPeers
+    shared decimal HoursPerWeek named ReductionInHoursPerWeekComparedToPeers
         documentation "Records the number of hours reduced for the shortened school day for the IEP student as compared to peers in regular education." 
-        is optional
-        total digits 5
-        decimal places 2
+        is optional        
     bool MultiplyDisabled [1144]
         documentation "Indicates whether the student receiving special education and related services has been designated as multiply disabled by the admission, review, and dismissal committee as aligned with federal requirements."
         is optional
