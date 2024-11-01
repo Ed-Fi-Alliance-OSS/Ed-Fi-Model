@@ -1,5 +1,5 @@
 Interchange AssessmentRegistration
-    documentation "This interchange defines the registration of students for assessments. It encompasses information related to the scheduled assessment administration, scheduled student participation, and the specific assessments taken by students."
+    documentation "This interchange defines the registration of students for assessments. It encompasses information related to the scheduled assessment administration, scheduled student participation, and the specific assessments to be taken by the students."
     use case documentation "1. Exchange initial assessment registration information for students, including identification numbers, assessment names, scheduled test dates, and necessary accommodations.
     2. Exchange updated assessment registration information for students, including modifications to scheduled test dates or the addition of necessary accommodations.
     3. Exchange canceled assessment registration information for students, removing them from assessments due to various reasons such as withdrawal or enrollment changes.
