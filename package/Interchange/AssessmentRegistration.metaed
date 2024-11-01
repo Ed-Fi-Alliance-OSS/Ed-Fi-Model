@@ -1,10 +1,13 @@
 Interchange AssessmentRegistration
-    documentation
-"This interchange defines the registration of students for assessments. It encompasses information related to the assessment administration, parties that are assigned to administer or participate to the assessment, parts of the assessment for composite scores, and special accommodation students will require."
+    documentation "This interchange defines the registration of students for assessments. It encompasses information related to the scheduled assessment administration, scheduled student participation, and the specific assessments taken by students."
+    use case documentation "1. Exchange initial assessment registration information for students, including identification numbers, assessment names, scheduled test dates, and necessary accommodations.
+    2. Exchange updated assessment registration information for students, including modifications to scheduled test dates or the addition of necessary accommodations.
+    3. Exchange canceled assessment registration information for students, removing them from assessments due to various reasons such as withdrawal or enrollment changes.
+    4. Exchange assessment registration data to obtain specific information about a student's registrations, including scheduled test dates, accommodations, and registered assessments.
+    5. Exchange assessment registration data to produce reports on assessment performance. These reports may include data on student performance, overall participation rates, and other key metrics relevant to the assessment program."
     domain entity AssessmentAdministration
     domain entity AssessmentAdministrationParticipation
     domain entity StudentAssessmentRegistration
     domain entity AssessmentBatteryPart
     domain entity StudentEducationOrganizationAssessmentAccommodation
     association StudentAssessmentRegistrationBatteryPartAssociation
-    
