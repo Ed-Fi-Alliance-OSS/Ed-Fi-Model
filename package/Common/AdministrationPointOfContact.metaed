@@ -7,7 +7,7 @@ Common AdministrationPointOfContact
         documentation "The email address for the contact."
         is part of identity
     shared string FirstName
-        documentation "The contacts's first name."
+        documentation "The contact's first name."
         is required
     shared string LastSurname
         documentation "The contact's last name."

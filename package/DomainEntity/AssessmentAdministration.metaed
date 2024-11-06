@@ -8,7 +8,7 @@ Domain Entity AssessmentAdministration
         documentation "A reference to the assessment."
         is part of identity
     shared string AdministrationIdentifier
-        documentation "The title or name of the assessment in the context of it's administration."
+        documentation "The title or name of the assessment in the context of its administration."
         is part of identity
     common Period
         documentation "The anticipated dates for the assessment or administration window."

@@ -1,5 +1,5 @@
 Common AssessmentCustomization
-    documentation "An un-typed key and value pair that is used to provide additional information needed for vendor regisration, administration, or reporting."
+    documentation "An untyped key and value pair that is used to provide additional information needed for vendor regisration, administration, or reporting."
     string CustomizationKey
         documentation "An agreed upon identifier for the custom information."
         is part of identity
