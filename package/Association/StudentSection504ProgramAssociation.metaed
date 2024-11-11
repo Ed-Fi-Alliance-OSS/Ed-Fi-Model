@@ -6,7 +6,7 @@ Association StudentSection504ProgramAssociation based on GeneralStudentProgramAs
     bool AccommodationPlan
         documentation "Indicates whether student has a Section 504 accommodation plan."
         is optional
-    descriptor Section504DisabilityType
+    descriptor Section504Disability
         documentation "Defines one or more disabilities student has that qualifies them for a Section 504 plan."
         is optional
     date Section504MeetingDate
