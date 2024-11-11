@@ -13,7 +13,7 @@ Domain Entity AssessmentAdministration
     common Period
         documentation "The anticipated dates for the assessment or administration window."
         is optional collection
-        role name AssessmentAdminstration
+        role name AssessmentAdministration
     domain entity AssessmentBatteryPart
         documentation "A reference to the parts of the assessment battery that are offered in this administration of the assessment."
         is optional collection
