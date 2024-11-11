@@ -10,9 +10,9 @@ Inline Common DualCredit
         documentation "Indicates whether successful completion of the course will result in credits toward high school graduation."
         is optional
     domain entity EducationOrganization
-        documentation "The education organization reference that is awarding the post-secondary credit as part of the dual credit program. Use of this attribute requires that education organization, typically a PostSecondaryInstitution, is a defined education organization."
+        documentation "The education organization reference that is awarding the postsecondary credit as part of the dual credit program. Use of this attribute requires that education organization, typically a postsecondary institution, is a defined education organization."
         is optional
         role name DualCredit
     descriptor DualCreditInstitution
-        documentation "Descriptor for the post secondary institution offering college credit. This descriptor may be used to select a postsecondary institution that is not defined as an EducationOrganization, and/or select a general type of postsecondary institution."
+        documentation "Descriptor for the postsecondary institution offering college credit. This descriptor may be used to select a postsecondary institution that is not defined as an education organization, and/or select a general type of postsecondary institution."
         is optional
