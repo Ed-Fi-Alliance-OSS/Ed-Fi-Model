@@ -1,0 +1,18 @@
+Inline Common DualCredit
+    documentation "This common stores details about the dual credit type and information about the organization that delivers the educational service and award."
+    bool DualCreditIndicator
+        documentation "Indicates whether the student assigned to the section is to receive dual credit upon successful completion."
+        is optional
+    descriptor DualCreditType
+        documentation "For a student taking a dual credit course in a college or high school setting, indicates the type of dual credit program."
+        is optional
+    bool DualHighSchoolCreditIndicator
+        documentation "Indicates whether successful completion of the course will result in credits toward high school graduation."
+        is optional
+    domain entity EducationOrganization
+        documentation "The education organization reference that is awarding the postsecondary credit as part of the dual credit program. Use of this attribute requires that education organization, typically a postsecondary institution, is a defined education organization."
+        is optional
+        role name DualCredit
+    descriptor DualCreditInstitution
+        documentation "Descriptor for the postsecondary institution offering college credit. This descriptor may be used to select a postsecondary institution that is not defined as an education organization, and/or select a general type of postsecondary institution."
+        is optional

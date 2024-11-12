@@ -26,3 +26,6 @@ Association StudentSectionAssociation [614]
     domain entity Program
         documentation "The program(s) that the student is participating in the context of the course."
         is optional collection
+    inline common DualCredit
+        documentation "The set of elements that capture relevant data regarding dual credit."
+        is optional
