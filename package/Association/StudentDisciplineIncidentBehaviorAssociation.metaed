@@ -14,3 +14,6 @@ Association StudentDisciplineIncidentBehaviorAssociation [3066]
     descriptor DisciplineIncidentParticipationCode [3097]
         documentation "The role or type of participation of a student in a discipline incident."
         is optional collection
+    descriptor Weapon
+        documentation "Identifies the type(s) of weapon used by the student during a discipline incident. The Federal Gun-Free Schools Act requires states to report the number of students expelled for bringing firearms to school by type of firearm."
+        is optional collection
