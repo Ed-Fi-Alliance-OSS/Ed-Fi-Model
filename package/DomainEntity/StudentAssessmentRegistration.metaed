@@ -19,10 +19,9 @@ Domain Entity StudentAssessmentRegistration
         is optional
         role name Reporting
     domain entity StudentEducationOrganizationAssessmentAccommodation
-        documentation "A reference to the accommodations expected for administering the assessment."
+        documentation "A reference to the accommodations expected for administering the assessment. Student and education organization references must be consistent with StudentEducationOrganizationAssociation and StudentSchoolAssociation."
         is optional
-        merge StudentEducationOrganizationAssessmentAccommodation.Student with StudentSchoolAssociation.Student
-        merge StudentEducationOrganizationAssessmentAccommodation.Student with StudentEducationOrganizationAssociation.Student
+        role name Scheduled
     descriptor Accommodation
         documentation "The special variation(s) to be used in how assessments (in general) are presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examination measures. The proper use of accommodations does not substantially change academic level or performance criteria."
         is optional collection
