@@ -44,7 +44,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        TECHNOLOGY_VERSION: ["6.1.0","7.2.0"]
+        TECHNOLOGY_VERSION: ["6.1.0","7.3.0"]
         EXTENSION_NAME: ["TPDM","Homograph","SampleStudentTranscript","Sample","SampleAlternativeEducationProgram"]        
 
     name: MetaEd-js ${{ matrix.EXTENSION_NAME }} Extension Artifacts With ODS ${{ matrix.TECHNOLOGY_VERSION }}
