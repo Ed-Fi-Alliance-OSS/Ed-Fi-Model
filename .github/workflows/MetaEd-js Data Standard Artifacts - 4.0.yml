@@ -43,7 +43,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        TECHNOLOGY_VERSION: ["6.1.0","7.2.0"] 
+        TECHNOLOGY_VERSION: ["6.1.0","7.3.0"] 
   
     name:  MetaEd-js-Data-Standard-Artifacts 4.0 with ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
