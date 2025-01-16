@@ -1,0 +1,23 @@
+Domain Entity CertificationExam
+    documentation "An examination required by one or more certifications."
+    shared string IdentificationCode named CertificationExamIdentifier
+        documentation "Identifier or serial number assigned to the certification exam."
+        is part of identity
+    shared string URI named Namespace
+        documentation "The namespace for the certification exam."
+        is part of identity
+    shared string CertificationExamTitle
+        documentation "The title of the certification exam."
+        is required
+    domain entity EducationOrganization
+        documentation "The education organization associated with the certification exam."
+        is optional
+    descriptor CertificationExamType
+        documentation "The type or category of the certification exam."
+        is optional
+    date EffectiveDate
+        documentation "The month, day, and year on which the certification exam is offered."
+        is optional
+    date EndDate
+        documentation "The month, day, and year on which the certification exam offering is expected to end."
+        is optional
