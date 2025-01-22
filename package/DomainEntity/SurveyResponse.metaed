@@ -27,3 +27,6 @@ Domain Entity SurveyResponse [3024]
     choice SurveyResponderChoice [3033]
         documentation "Reference to either a student, contact, or staff - or none for anonymous survey."
         is optional
+    domain entity Person
+        documentation "Relates the survey response to a person."
+        is optional

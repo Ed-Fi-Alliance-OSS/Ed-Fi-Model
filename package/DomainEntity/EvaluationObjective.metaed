@@ -1,0 +1,29 @@
+Domain Entity EvaluationObjective
+    documentation "A subcomponent of an evaluation, a specific educator objective or domain of performance that is being evaluated."
+    domain entity Evaluation
+        documentation "The evaluation applied for the person."
+        is part of identity
+    shared string EvaluationObjectiveTitle
+        documentation "The name or title of the evaluation objective."
+        is part of identity
+    shared string EvaluationDescription named EvaluationObjectiveDescription
+        documentation "The long description of the evaluation objective."
+        is optional
+    shared integer SortOrder
+        documentation "The sort order of the evaluation objective."
+        is optional
+    shared decimal PerformanceRating
+        documentation "The minimum summary numerical rating or score for the evaluation objective. If omitted, assumed to be 0.0."
+        is optional
+        role name Min
+    shared decimal PerformanceRating
+        documentation "The maximum summary numerical rating or score for the evaluation objective."
+        is optional
+        role name Max
+    descriptor EvaluationType
+        documentation "The type of the evaluation objective."
+        is optional
+    common RatingLevel
+        documentation "The descriptive level(s) of ratings (cut scores) for the evaluation objective."
+        is optional collection
+        role name Objective

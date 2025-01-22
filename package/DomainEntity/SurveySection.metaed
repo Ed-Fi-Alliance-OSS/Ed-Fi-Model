@@ -6,3 +6,6 @@ Domain Entity SurveySection [3034]
     shared string SurveySectionTitle [3036]
         documentation "The title or label for the survey section."
         is part of identity
+    domain entity EvaluationElement
+        documentation "The evaluation element associated with the quantitative measure."
+        is optional
