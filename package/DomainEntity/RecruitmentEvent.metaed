@@ -1,0 +1,20 @@
+Domain Entity RecruitmentEvent
+    documentation "Events associated with the recruitment process."
+    date EventDate
+        documentation "The date of the event."
+        is part of identity
+    shared string EventDescription
+        documentation "The long description of the event."
+        is optional
+    shared string EventTitle
+        documentation "The title of the event."
+        is part of identity
+    descriptor RecruitmentEventType
+      documentation "The type of event."
+      is required
+    shared string EventLocation
+      documentation "The location of the event."
+      is optional
+    domain entity EducationOrganization
+      documentation "Relates the recruiting event to an education organization."
+      is part of identity

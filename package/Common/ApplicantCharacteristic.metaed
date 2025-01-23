@@ -1,0 +1,14 @@
+Common ApplicantCharacteristic
+    documentation "Reflects important characteristics of the applicant's home situation."
+    descriptor StudentCharacteristic
+        documentation "The characteristic designated for the student applicant."
+        is part of identity
+    date BeginDate
+        documentation "The date the characteristic was designated. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
+    date EndDate
+        documentation "The date the characteristic was removed. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
+    shared string DesignatedBy
+        documentation "The person, organization, or department that designated the characteristic."
+        is optional

@@ -1,0 +1,31 @@
+Domain Entity ApplicationEvent
+  documentation "The life cycle event associated with an application."
+  date EventDate
+    documentation "The date of the application event, or begin date if an interval. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+    is part of identity
+  date EventEndDate
+    documentation "The end date of the event, if an interval. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+    is optional
+  shared integer SequenceNumber
+    documentation "The sequence number of the application events. This is used to discriminate between mutiple events of the same type in the same day."
+    is part of identity
+  descriptor ApplicationEventType
+    documentation "Description of the application event."
+    is part of identity
+  decimal ApplicationEvaluationScore
+    documentation "The evaluation score for the application, if applicable."
+    is optional
+    total digits 36
+    decimal places 18
+  descriptor ApplicationEventResult
+    documentation "The recommendation, result or conclusion of the application event."
+    is optional
+  domain entity Application
+    documentation "Reference to the application associated with the application event."
+    is part of identity
+  enumeration SchoolYear
+    documentation "The identifier for the school year."
+    is required
+  descriptor Term
+    documentation "Defines the term of a session during the school year."
+    is optional

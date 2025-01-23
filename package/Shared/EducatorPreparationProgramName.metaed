@@ -1,0 +1,4 @@
+Shared String EducatorPreparationProgramName
+    documentation "The name of the educator preparation program."
+    min length 1
+    max length 255

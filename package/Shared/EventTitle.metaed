@@ -1,0 +1,3 @@
+Shared String EventTitle
+    documentation "The title of the event."
+    max length 50

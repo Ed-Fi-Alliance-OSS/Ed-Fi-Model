@@ -1,0 +1,4 @@
+Shared String SocialMediaNetworkName
+    documentation "The social media network name associated with the social media username."
+    min length 1
+    max length 50
