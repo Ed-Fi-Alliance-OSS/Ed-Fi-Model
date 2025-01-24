@@ -14,7 +14,7 @@ Domain Entity Staff [583]
         is required
         is queryable field
     common OtherName [1659]
-        documentation "Other names (e.g., alias, nickname, previous legal name) associated with a person."
+        documentation "Other names associated with a person."
         is optional collection
         is queryable field
     descriptor Sex [1661]
@@ -91,3 +91,19 @@ Domain Entity Staff [583]
     descriptor AncestryEthnicOrigin [3095]
         documentation "The original peoples or cultures with which the individual identifies."
         is optional collection
+    descriptor AcademicSubject
+        documentation "The academic subject(s) in which the staff is deemed to be ""highly qualified""."
+        is optional collection
+        role name HighlyQualified
+    descriptor Gender
+        documentation "The gender with which a person associates."
+        is optional
+    common EducatorResearch
+        documentation "The educator preparation provider faculty that instruct teacher candidates in content area or pedagogy."
+        is optional
+    domain entity EducatorPreparationProgram
+        documentation "The educator preparation program(s) completed by the teacher."
+        is optional collection
+    domain entity OpenStaffPosition
+        documentation "Reference to the open staff position filled by the staff."
+        is optional        

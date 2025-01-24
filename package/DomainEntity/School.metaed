@@ -39,3 +39,15 @@ Domain Entity School based on EducationOrganization [579]
         documentation "The school year in which a charter school was initially approved."
         is optional
         role name CharterApproval
+    descriptor FederalLocaleCode
+        documentation "The federal locale code associated with an education organization."
+        is optional
+    domain entity PostSecondaryInstitution
+        documentation "The postsecondary institution or university associated as an organization component for the school, if applicable"
+        is optional
+    bool ImprovingSchool
+        documentation "An indication of whether a school is identified as an improving school."
+        is optional
+    descriptor AccreditationStatus
+        documentation "The accreditation status for an education preparation provider."
+        is optional

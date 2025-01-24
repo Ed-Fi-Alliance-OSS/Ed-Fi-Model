@@ -14,3 +14,6 @@ Domain Entity PostSecondaryInstitution based on EducationOrganization [520]
     descriptor AdministrativeFundingControl [892]
         documentation "A classification of whether a postsecondary institution is operated by publicly elected or appointed officials (public control) or by privately elected or appointed officials and derives its major source of funds from private sources (private control)."
         is optional
+    descriptor FederalLocaleCode
+        documentation "The federal locale code associated with an education organization."
+        is optional

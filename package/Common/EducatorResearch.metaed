@@ -1,0 +1,11 @@
+Common EducatorResearch
+  documentation "The educator preparation provider faculty that instruct teacher candidates in content area or pedagogy."
+  date ResearchExperienceDate
+    documentation "The month, day, and year of the start or effective date of a staff member's teacher educator position for an education organization."
+    is required
+  shared string ResearchExperienceTitle
+    documentation "The title of the research experience."
+    is optional
+  shared string Description named ResearchExperienceDescription
+    documentation "The description of the research experience."
+    is optional
