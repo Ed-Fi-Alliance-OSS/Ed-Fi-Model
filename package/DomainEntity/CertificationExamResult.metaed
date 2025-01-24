@@ -1,0 +1,27 @@
+Domain Entity CertificationExamResult
+    documentation "The person's result from taking a certification exam."
+    domain entity CertificationExam
+        documentation "The certification exam taken by the person."
+        is part of identity
+    domain entity Person
+        documentation "The person who took the certification exam."
+        is part of identity
+    date CertificationExamDate
+        documentation "The month, day, and year on which the certification exam is taken."
+        is part of identity
+    integer AttemptNumber
+        documentation "The number of the person's attempt for the certification exam."
+        is optional
+    shared decimal ScoreValue named CertificationExamScore
+        documentation "The score result for the certification exam attempt."
+        is optional
+    bool CertificationExamPassIndicator
+        documentation "Indicator that the person passed the certification exam."
+        is optional
+    descriptor CertificationExamStatus
+        documentation "The status of the certification exam attempt."
+        is optional
+    domain entity StudentAssessment
+        documentation "Reference to a detailed result for the assessment taken by a person."
+        is optional
+        role name CertificationExam
