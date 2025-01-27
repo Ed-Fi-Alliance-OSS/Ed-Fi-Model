@@ -1,0 +1,24 @@
+Interchange Candidate
+
+  documentation "This interchange defines teacher candidates and contains all of their identifying information."
+
+  domain entity Credential
+  domain entity Student
+  domain entity Candidate
+  domain entity StudentAcademicRecord
+  domain entity CourseTranscript
+  domain entity FieldworkExperience
+  domain entity Certification
+  domain entity CertificationExam
+  domain entity CertificationExamResult
+  domain entity CredentialEvent
+  domain entity Person
+  domain entity FinancialAid
+
+  association CandidateRelationshipToStaffAssociation
+  association CandidateEducatorPreparationProgramAssociation
+  association StudentSchoolAssociation
+  association StudentSectionAssociation
+  association StudentEducationOrganizationAssociation
+  association StudentEducationOrganizationResponsibilityAssociation
+  association FieldworkExperienceSectionAssociation

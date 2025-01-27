@@ -1,0 +1,38 @@
+Association CandidateEducatorPreparationProgramAssociation
+  documentation "Information about the association between the educator candidate and the educator preparation program."
+  domain entity Candidate
+    documentation "The educator candidate for the association."
+  domain entity EducatorPreparationProgram
+    documentation "The program associated to the educator candidate."
+  date BeginDate
+    documentation "The begin date for the association. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+    is part of identity
+  date EndDate
+    documentation "The end date for the association. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+    is optional
+  descriptor ReasonExited
+    documentation "The reason exited for the association."
+    is optional
+  common CandidateIndicator
+    documentation "Indicator(s) or metric(s) computed for the candidate in the educator preparation program."
+    is optional collection
+  descriptor EPPProgramPathway
+    documentation "The program pathway the candidate is following."
+    is optional
+  shared string Specialization named MajorSpecialization
+      deprecated "This element has been replaced with DegreeSpecialization.MajorSpecialization. Expect this element to be removed in a future release."
+      documentation "The major area for a degree or area of specialization for a certificate."
+      is optional
+  shared string Specialization named MinorSpecialization
+      deprecated "This element has been replaced with DegreeSpecialization.MinorSpecialization. Expect this element to be removed in a future release."
+      documentation "The major area for a degree or area of specialization for a certificate."
+      is optional
+  common DegreeSpecialization
+      documentation "Information around the area(s) of specialization for an individual."
+      is optional collection
+  common CohortYear
+      documentation "The type and year of a cohort the student belongs to as determined by the year that student entered a specific grade."
+      is optional collection
+  domain entity Application
+      documentation "The educator preparation program application submitted by the accepted candidate."
+      is optional

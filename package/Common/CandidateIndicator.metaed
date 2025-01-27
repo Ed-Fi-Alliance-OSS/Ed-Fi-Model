@@ -1,0 +1,24 @@
+Common CandidateIndicator
+    documentation "An indicator or metric computed for the student to influence more effective education or direct specific interventions."
+    shared string IndicatorName named IndicatorGroup
+        documentation "The name for a group of indicators."
+        is optional
+    shared string IndicatorName
+        documentation "The name of the indicator or metric."
+        is part of identity
+    date BeginDate
+        documentation "The month, day, and year when the indicator value is valid. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is part of identity
+    date EndDate
+        documentation "The month, day, and year when the indicator value is no longer valid. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
+    shared string Indicator
+        documentation "The value of the indicator or metric."
+        is required
+    shared string DesignatedBy
+        documentation "The person, organization, or department that designated the program association."
+        is optional
+    common Period
+        deprecated "Period on CandidateIndicator is being deprecated in favor of BeginDate and EndDate. Expect removal in a future release."
+        documentation "The time periods for which the indicator was effective."
+        is optional collection

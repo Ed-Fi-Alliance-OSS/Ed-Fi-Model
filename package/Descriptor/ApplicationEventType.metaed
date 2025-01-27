@@ -1,0 +1,2 @@
+Descriptor ApplicationEventType
+  documentation "The description of an application event."

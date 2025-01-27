@@ -1,0 +1,14 @@
+Domain Entity OpenStaffPositionEvent
+    documentation "Represents significant milestones related to an open staff position."
+    date EventDate
+        documentation "The date when the open staff position event occurred."
+        is part of identity
+    descriptor OpenStaffPositionEventType
+        documentation "Specifies the type of milestone event."
+        is part of identity
+    descriptor OpenStaffPositionEventStatus
+        documentation "Reflects the status of the milestone event."
+        is optional
+    domain entity OpenStaffPosition
+        documentation "The open staff position associated with the event."
+        is part of identity
