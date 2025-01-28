@@ -6,6 +6,6 @@ Common PathMilestoneStatusEvent
     date PathMilestoneStatusDate
         documentation "The month, day and year associated with the change in the path milestone status. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    shared string EdFi.Description
+    shared string Description
         documentation "Additional information associated with the path milestone status achieved."
         is optional
