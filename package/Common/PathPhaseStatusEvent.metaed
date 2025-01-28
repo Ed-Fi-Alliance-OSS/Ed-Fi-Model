@@ -1,0 +1,8 @@
+Common PathPhaseStatusEvent
+    documentation "An event recognizing the change in status for the path phase."
+    descriptor PathPhaseStatus
+        documentation "The student's status associated with entering or completing the path phase."
+        is part of identity
+    date PathPhaseStatusDate
+        documentation "The month, day and year on which the status was achieved for the path phase. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is part of identity

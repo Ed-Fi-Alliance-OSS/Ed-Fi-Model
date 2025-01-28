@@ -1,0 +1,4 @@
+Shared String PathPhaseName
+    documentation "The name of the phase within a defined path of study."
+    min length 0 
+    max length 60

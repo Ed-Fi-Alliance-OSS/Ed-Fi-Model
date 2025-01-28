@@ -1,0 +1,4 @@
+Shared String PathMilestoneName
+    documentation "The name of the milestone associated with the defined path of study."
+    min length 0 
+    max length 60
