@@ -1,7 +1,7 @@
 Domain Entity RecruitmentEventAttendance
-    documentation "A prospect for employment or acceptance that has not yet made formal application that has attended recruitment event, such as a  job fair or university recruiting visit."
+    documentation "A prospect for employment or acceptance that has not yet made a formal application but has attended a recruitment event, such as a job fair or university recruiting visit."
     shared string RecruitmentEventAttendeeIdentifier
-        documentation "The identifier for the attendee to a recuitment event."
+        documentation "The identifier for the attendee to a recruitment event."
         is part of identity
     bool Applied
         documentation "Indicator of whether the prospect applied for a position."

@@ -10,7 +10,7 @@ Common CurrentPosition
         documentation "The descriptive name of an individual's position."
         is required
     descriptor AcademicSubject
-        documentation "The academic subject the staff person's assignment to a school."
+        documentation "The academic subject of the staff person's assignment to a school."
         is optional
     descriptor GradeLevel
         documentation "The set of grade levels for which the individual's assignment is responsible."

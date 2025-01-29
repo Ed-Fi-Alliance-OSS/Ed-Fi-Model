@@ -1,5 +1,5 @@
 Interchange RecruitmentAndStaffing
-  documentation "TThis interchange facilitates the exchange of information related to all aspects of the teacher recruitment and application process."
+  documentation "This interchange facilitates the exchange of information related to all aspects of the teacher recruitment and application process."
   use case documentation "1. Exchange new or updated recruitment information.
   2. Exchange new or updated applicant and application status information.
   3. Exchange new or updated background check processing and reporting information.

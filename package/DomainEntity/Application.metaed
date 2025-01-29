@@ -56,5 +56,5 @@ Domain Entity Application
     documentation "The open staff position associated with the application."
     is optional
   domain entity RecruitmentEventAttendance
-    documentation "The recuitment event(s) associated with the application."
+    documentation "The recruitment event(s) associated with the application."
     is optional collection

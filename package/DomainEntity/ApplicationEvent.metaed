@@ -7,7 +7,7 @@ Domain Entity ApplicationEvent
     documentation "The end date of the event, if an interval. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
     is optional
   shared integer SequenceNumber
-    documentation "The sequence number of the application events. This is used to discriminate between mutiple events of the same type in the same day."
+    documentation "The sequence number of the application events. This is used to discriminate between multiple events of the same type on the same day."
     is part of identity
   descriptor ApplicationEventType
     documentation "Description of the application event."

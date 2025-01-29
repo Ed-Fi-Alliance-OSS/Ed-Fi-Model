@@ -16,7 +16,7 @@ Domain Entity ProfessionalDevelopmentEvent
     documentation "An indication of whether a teacher candidate is active in a professional development."
     is optional
   bool MultipleSession
-    documentation "An indication of whether or not a professional development event is comprised of multiple sessions or not."
+    documentation "An indication of whether a professional development event is comprised of multiple sessions."
     is optional
   shared string ProfessionalDevelopmentReason
     documentation "The reported reason for a teacher candidate's professional development."

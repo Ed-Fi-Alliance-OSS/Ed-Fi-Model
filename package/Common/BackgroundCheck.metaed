@@ -13,5 +13,5 @@ Common BackgroundCheck
         documentation "The date the background check was completed."
         is optional
     bool Fingerprint
-        documentation "Indicates that a person has or has not completed a fingerprint."
+        documentation "Indicates whether a person has or has not completed a fingerprint."
         is optional
