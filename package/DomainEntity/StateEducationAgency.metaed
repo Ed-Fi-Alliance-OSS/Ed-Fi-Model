@@ -11,3 +11,6 @@ Domain Entity StateEducationAgency based on EducationOrganization [584]
     common StateEducationAgencyFederalFunds [1676]
         documentation "Contains the information about the reception and use of federal funds for reporting purposes."
         is optional collection
+    descriptor FederalLocaleCode
+        documentation "The federal locale code associated with an education organization."
+        is optional

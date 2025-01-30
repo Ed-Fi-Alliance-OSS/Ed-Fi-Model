@@ -29,3 +29,6 @@ Domain Entity GraduationPlan [562]
     common RequiredAssessment [1779]
         documentation "The assessments and associated required score and performance level needed to satisfy graduation requirements."
         is optional collection
+    common RequiredCertification
+        documentation "The title or reference to the certification(s) required for graduation."
+        is optional collection
