@@ -1,0 +1,34 @@
+Domain Entity PerformanceEvaluation
+    documentation "A performance evaluation of an educator, typically regularly scheduled and uniformly applied, composed of one or more evaluations."
+    shared string EvaluationTitle
+        documentation "An assigned unique identifier for the performance evaluation."
+        is part of identity
+        role name Performance
+    shared string EvaluationDescription named PerformanceEvaluationDescription
+        documentation "The long description of the performance evaluation."
+        is optional
+    descriptor Term
+        documentation "The term for the session during the school year."
+        is part of identity
+    descriptor PerformanceEvaluationType
+        documentation "The type of performance evaluation conducted."
+        is part of identity
+    common RatingLevel
+        documentation "The descriptive level(s) of ratings (cut scores) for the evaluation."
+        is optional collection
+        role name PerformanceEvaluation
+    enumeration SchoolYear
+        documentation "The identifier for the school year."
+        is part of identity
+    descriptor EvaluationPeriod
+        documentation "The period for the evaluation."
+        is part of identity
+    domain entity EducationOrganization
+        documentation "The education organization for which the evaluation was developed and in which it was employed."
+        is part of identity
+    descriptor AcademicSubject
+        documentation "The description of the content or subject area of the performance evaluation."
+        is optional
+    descriptor GradeLevel
+        documentation "The grade levels involved with the performance evaluation."
+        is optional collection
