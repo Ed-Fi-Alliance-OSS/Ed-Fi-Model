@@ -1,0 +1,4 @@
+Shared String PathName
+    documentation "The name of the defined path of study."
+    min length 0 
+    max length 60

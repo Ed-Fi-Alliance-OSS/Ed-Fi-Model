@@ -1,0 +1,11 @@
+Common PathMilestoneStatusEvent
+    documentation "An event recongnizing the change in status for the path milestone."
+    descriptor PathMilestoneStatus
+        documentation "The student's status associated with the path milestone."
+        is part of identity
+    date PathMilestoneStatusDate
+        documentation "The month, day and year associated with the change in the path milestone status. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is part of identity
+    shared string Description
+        documentation "Additional information associated with the path milestone status achieved."
+        is optional

@@ -1,0 +1,52 @@
+Domain Entity Certification
+    documentation "An offering by an official granting authority of a certification or license that qualifies persons to perform specific job functions, such as fulfill a teaching assignment."
+    shared string IdentificationCode named CertificationIdentifier
+        documentation "Identifier or serial number assigned to the certification."
+        is part of identity
+    shared string URI named Namespace
+        documentation "The namespace for the certification, typically associated with the issuing authority."
+        is part of identity
+    shared string CertificationTitle
+        documentation "The title of the certification."
+        is required
+    domain entity EducationOrganization
+        documentation "The education organization that authorizes the certification, often a state education agency."
+        is optional
+    descriptor CertificationLevel
+        documentation "The level or category of the certification."
+        is optional
+    descriptor CertificationField
+        documentation "The field of certification."
+        is optional
+    descriptor GradeLevel
+        documentation "The grade level(s) certified for teaching."
+        is optional collection
+    descriptor CertificationRoute
+        documentation "The process, program, or pathway used to obtain the certification."
+        is optional collection
+    descriptor CertificationStandard
+        documentation "The standard, law, or policy defining the certification."
+        is optional
+    descriptor Degree
+        documentation "The minimum level of degree, if any, required for the certification."
+        is optional
+        role name Minimum
+    descriptor EducatorRole
+        documentation "The role authorized by the certification, typically associated with service and administrative certifications."
+        is optional
+    descriptor PopulationServed
+        documentation "The type of students that the certification is offered and tailored to."
+        is optional
+    descriptor InstructionalSetting
+        documentation "The setting authorized by the certification in which a person receives education and related services."
+        is optional
+    domain entity CertificationExam
+        documentation "The certification exams required for the certification."
+        is optional collection
+        role name CertificationExam
+    date EffectiveDate
+        documentation "The month, day, and year on which the certification is offered. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
+    date EndDate
+        documentation "The month, day, and year on which the certification offering is expected to end. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional

@@ -27,3 +27,6 @@ Domain Entity LocalEducationAgency based on EducationOrganization [569]
     domain entity StateEducationAgency [1527]
         documentation "The SEA of which the LEA is an organizational component."
         is optional
+    descriptor FederalLocaleCode
+        documentation "The federal locale code associated with an education organization."
+        is optional   
