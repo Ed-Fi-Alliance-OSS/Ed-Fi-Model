@@ -1,0 +1,17 @@
+Domain Entity ProfessionalDevelopmentEventAttendance
+  documentation "This event entity represents the recording of whether a staff is in attendance for professional development."
+  domain entity Person
+    documentation "The person associated with the professional development attendance event."
+    is part of identity
+  domain entity ProfessionalDevelopmentEvent
+    documentation "The professional development event the attendance event is associated to."
+    is part of identity
+  date AttendanceDate
+    documentation "Date for this attendance event."
+    is part of identity
+  descriptor AttendanceEventCategory
+    documentation "A code describing the attendance event."
+    is required
+  shared string AttendanceEventReason
+    documentation "The reported reason for a teacher candidate's absence."
+    is optional

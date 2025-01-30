@@ -1,2 +1,2 @@
 Descriptor BackgroundCheckStatus
-  documentation "The  status of the background check."
+  documentation "This descriptor holds the status of the background check."

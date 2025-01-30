@@ -1,2 +1,2 @@
 Descriptor BackgroundCheckType
-  documentation "Defines the classification of the background check a person receives."
+  documentation "This descriptor defines the classification of the background check a person receives."
