@@ -1,0 +1,6 @@
+Interchange ProfessionalDevelopment
+
+    documentation "This interchange defines professional development events and their associated attendance records."
+
+    domain entity ProfessionalDevelopmentEvent
+    domain entity ProfessionalDevelopmentEventAttendance

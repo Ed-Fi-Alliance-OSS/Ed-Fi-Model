@@ -1,0 +1,15 @@
+Association StaffEducatorPreparationProgramAssociation
+  documentation "This association indicates the educator preparation program associated with a staff."
+  domain entity Staff
+    documentation "The staff associated with the educator preparation program."
+  domain entity EducatorPreparationProgram
+    documentation "The educator preparation program associated to the staff."
+  date BeginDate
+    documentation "The start date for the association of staff to this program. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+    is required
+  date EndDate
+    documentation "The end date for the association of staff to this program. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+    is optional
+  bool Completer
+    documentation "Indicator of whether the staff completed the educator preparation program."
+    is optional

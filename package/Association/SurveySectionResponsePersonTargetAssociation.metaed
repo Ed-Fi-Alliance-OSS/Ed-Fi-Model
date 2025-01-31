@@ -1,0 +1,6 @@
+Association SurveySectionResponsePersonTargetAssociation
+  documentation "This association provides information about the survey section and the person the survey section is about."
+  domain entity SurveySectionResponse
+    documentation "Reference to the survey section response."
+  domain entity Person
+    documentation "Reference to target of the survey."
