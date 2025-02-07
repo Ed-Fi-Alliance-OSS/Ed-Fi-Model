@@ -40,5 +40,5 @@ Domain Entity DisciplineAction [553]
         is optional
     association StudentDisciplineIncidentBehaviorAssociation [3074]
         documentation "A reference to the behavior(s) by the student that led or contributed to this specific action."
-        is optional collection
+        is required collection
         merge StudentDisciplineIncidentBehaviorAssociation.Student with Student
