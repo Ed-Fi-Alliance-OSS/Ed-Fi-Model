@@ -3,7 +3,7 @@ Common RatingResult
     shared string RatingResultTitle
         documentation "The title of the rating result."
         is part of identity
-    shared decimal PerformanceRating
+    shared decimal NumericRating
         documentation "The numerical summary rating or score for the evaluation."
         is part of identity
     descriptor ResultDatatypeType

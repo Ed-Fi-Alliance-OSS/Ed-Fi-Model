@@ -12,11 +12,11 @@ Domain Entity EvaluationObjective
     shared integer SortOrder
         documentation "The sort order of the evaluation objective."
         is optional
-    shared decimal PerformanceRating
+    shared decimal NumericRating
         documentation "The minimum summary numerical rating or score for the evaluation objective. If omitted, assumed to be 0.0."
         is optional
         role name Min
-    shared decimal PerformanceRating
+    shared decimal NumericRating
         documentation "The maximum summary numerical rating or score for the evaluation objective."
         is optional
         role name Max
