@@ -37,9 +37,6 @@ Domain Entity Candidate
         deprecated "This element is scheduled for removal by 2029. Users of this element are advised to use Race instead."  
       documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
       is optional
-  descriptor OldEthnicity
-      documentation "Previous definition of Ethnicity combining Hispanic/Latino and race: 1 - American Indian or Alaskan Native 2 - Asian or Pacific Islander 3 - Black, not of Hispanic origin 4 - Hispanic 5 - White, not of Hispanic origin."
-      is optional
   descriptor Race
       documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races."
       is optional collection
@@ -64,10 +61,6 @@ Domain Entity Candidate
   shared string DisplacementStatus
       documentation "Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services."
       is optional
-  common CohortYear
-      deprecated "This element is problematic for candidates enrolled in multiple programs.  Its information is now captured in the CandidateEducatorPreparationProgramAssociation. This element will be removed in a future release."
-      documentation "The type and year of a cohort the student belongs to as determined by the year that student entered a specific grade."
-      is optional collection
   common CandidateIndicator
       documentation "Indicator(s) or metric(s) computed for the candidate."
       is optional collection
@@ -82,10 +75,6 @@ Domain Entity Candidate
     is optional
     total digits 19
     decimal places 4
-  common Aid
-    deprecated "This element has been promoted to a top level entity. It will be removed in a future release."
-    documentation "This entity represents the financial aid awarded to a person."
-    is optional collection
   common BackgroundCheck
     documentation "Applicant background check history and disposition."
     is optional
@@ -95,14 +84,6 @@ Domain Entity Candidate
   descriptor PreviousCareer
     documentation "The career previous for an individual."
     is optional
-  bool ProgramComplete
-    deprecated "This element is problematic for candidates enrolled in multiple programs. Program completion should be determined by the ReasonExited descriptor on the CandidateEducatorPreparationProgramAssociation.  This element will be removed in a future release."
-    documentation "Indicates whether a candidate has completed the educator preparation program."
-    is optional
-  common DegreeSpecialization
-    deprecated "This element is problematic for candidates enrolled in multiple programs.  Its information is now captured in the CandidateEducatorPreparationProgramAssociation.  This element will be removed in a future release."
-    documentation "Information around the area(s) of specialization for an individual."
-    is optional collection
   bool FirstGenerationStudent
     documentation "Indicates whether an individual is a first-generation college student."
     is optional
@@ -111,8 +92,4 @@ Domain Entity Candidate
     is optional collection
   domain entity Person
       documentation "Relates the candidate to a generic person."
-      is optional
-  domain entity Application
-      deprecated "This element is problematic for candidates enrolled in multiple programs.  Its information is now captured in the CandidateEducatorPreparationProgramAssociation.  This element will be removed in a future release."
-      documentation "The educator preparation program application submitted by the candidate."
       is optional
