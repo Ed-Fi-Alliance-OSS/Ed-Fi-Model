@@ -1,0 +1,13 @@
+Domain RecruitingAndStaffing
+	documentation
+" This domain defines the model for application and recruitment pursuers, events, and the opportunity they pursue of.
+* A RecruitmentEvent entity is to capture information about the type, location and description of an event associated with the recruitment.
+* A RecruitmentEventAttendance entity is for the details relating to the a prospect for employment or acceptance that has not made a formal application yet.
+* An ApplicantProfile entity is to capture the details about the person making the application. These details consist of demographic, communicational and professional/academic information.
+* An Application entity includes information about the pursue and pursuer of the employment and acceptance.
+* An ApplicationEvent is to capture information about the lifecycle of the event associated with the pursue of employment or acceptance.
+	domain entity RecruitmentEvent
+	domain entity RecruitmentEventAttendance
+	domain entity ApplicantProfile
+	domain entity Application
+	domain entity ApplicationEvent

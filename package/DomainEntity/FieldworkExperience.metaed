@@ -1,5 +1,5 @@
 Domain Entity FieldworkExperience
-    documentation "The information regarding a postsecondary instructional course in a particular field of study that typically involves a prescribed number, instruction periods, or meetings for enrolled students."
+    documentation "The information regarding a post-secondary instructional course in a particular field of study that typically involves a prescribed number, instruction periods, or meetings for enrolled students."
     shared string FieldworkIdentifier
         documentation "The unique identifier for the fieldwork experience."
         is part of identity

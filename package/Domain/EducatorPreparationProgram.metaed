@@ -1,0 +1,13 @@
+Domain EducatorPreparationProgram
+	documentation 
+" This domain defines the model that is to capture information about the candidate, fieldwork experience and other 
+* A Candidate entity defines information for educator preparation programs, detailing personal identifiers, demographic data, contact information, educational background, and program participation details.
+* A EducationPreparationProgram entity is for the details of the program and accreditation.
+* A FieldworkExperience entity is to capture information about the field experience enrolled students have in a postsecondary instructional course."
+	domain entity Candidate
+	association CandidateEducationPreparationProgram Association
+	association CandidateRelationshipToStaffAssociation
+	domain entity EducationPreparationProgram
+	domain entity FieldworkExperience
+	association FieldworkExperienceSectionAssociation
+	association StaffEducationPreparationProgram Association

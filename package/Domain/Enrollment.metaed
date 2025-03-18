@@ -13,3 +13,4 @@ For associations between a student and a school or LEA that is *not* enrollment(
     association StudentEducationOrganizationAssociation
     association StudentSchoolAssociation
     domain entity StudentTransportation
+    domain entity FinancialAid

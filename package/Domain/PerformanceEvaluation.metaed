@@ -1,0 +1,21 @@
+Domain PerformanceEvaluation
+	documentation 
+" This domain defines the model for performance measurement with four hierarchical level of defining performance measures and capturing metadata and ratings of persons for each level. These four levels are Evaluation, EvaluationObjective, EvaluationElement and PerformanceEvaluation.
+* A PerformanceEvaluation is the entity for metadata relating the measurement of performance that is composed of one or more evaluations where PerformanceEvaluationRating is the entity for scoring the performance evaluation.
+* An Evaluation entity is for metadata relating the lower level instruments of PerformanceEvaluation where EvaluationRating entity is for scoring the performance at this level.
+* An EvaluationObjective entity is to record metadata for sub-components of an Evaluation where EvaluationObjectiveRating is to record scores at that level.
+* An EvaluationElement entity is for recording metadata for the most granular information about the performance evaluation where EvaluationElementRating entity is to record scores at that granularity level. An EvaluationElement can be associated with RubricDimension, or QuantitativeMeasure, or SurveySection, or neither of them.
+* A Goal entity is defined to record and track performance goals related to an EvaluationElement."
+	domain entity Evaluation
+	domain entity EvaluationElement
+	domain entity EvaluationElementRating
+	domain entity EvaluationObjective
+	domain entity EvaluationObjectiveRating
+	domain entity EvaluationRating
+	domain entity EvaluationRubricDimension
+	domain entity Goal
+	domain entity PerformanceEvaluation
+	domain entity PerformanceEvaluationRating
+	domain entity QuantitativeMeasure
+	domain entity QuantitativeMeasureScore
+	domain entity SurveySectionAggregateResponse
