@@ -1,7 +1,7 @@
 Domain Path 
 	documentation 
-" This domain defines the model that consists of information needed for tracking a student progress in becoming an educator.
-* A PathMilestone entity is captures the details about significant event and achievements in the path.
+" This domain defines the model that consists of information needed for tracking a student progress in achieving an educational goal.
+* A PathMilestone entity captures the details about significant event and achievements in the path.
 * A StudentPathMilestoneStatus entity is to define student's place in those significant progress marks. 
 * A PathPhase entity is to identify the stages of becoming an educator.
 * A StudentPathPhaseStatus entity is to define student's place in those stages of the path."
