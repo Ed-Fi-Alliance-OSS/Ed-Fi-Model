@@ -19,14 +19,6 @@ Association CandidateEducatorPreparationProgramAssociation
   descriptor EPPProgramPathway
     documentation "The program pathway the candidate is following."
     is optional
-  shared string Specialization named MajorSpecialization
-      deprecated "This element has been replaced with DegreeSpecialization.MajorSpecialization. Expect this element to be removed in a future release."
-      documentation "The major area for a degree or area of specialization for a certificate."
-      is optional
-  shared string Specialization named MinorSpecialization
-      deprecated "This element has been replaced with DegreeSpecialization.MinorSpecialization. Expect this element to be removed in a future release."
-      documentation "The major area for a degree or area of specialization for a certificate."
-      is optional
   common DegreeSpecialization
       documentation "Information around the area(s) of specialization for an individual."
       is optional collection

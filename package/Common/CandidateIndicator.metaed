@@ -18,7 +18,3 @@ Common CandidateIndicator
     shared string DesignatedBy
         documentation "The person, organization, or department that designated the program association."
         is optional
-    common Period
-        deprecated "Period on CandidateIndicator is being deprecated in favor of BeginDate and EndDate. Expect removal in a future release."
-        documentation "The time periods for which the indicator was effective."
-        is optional collection
