@@ -5,7 +5,7 @@ Domain RecruitingAndStaffing
 * A RecruitmentEventAttendance entity is for the details relating to a prospect of employment or acceptance that has not been embodied as a formal application yet.
 * An ApplicantProfile entity is to capture the details about the person making the application. These details consist of demographic, communicational and professional/academic information.
 * An Application entity includes information about the pursue and pursuer of the employment and acceptance.
-* An ApplicationEvent is to capture information about the lifecycle of the event associated with the pursue of employment or acceptance.
+* An ApplicationEvent is to capture information about the lifecycle of the event associated with the pursue of employment or acceptance."
 	domain entity RecruitmentEvent
 	domain entity RecruitmentEventAttendance
 	domain entity ApplicantProfile
