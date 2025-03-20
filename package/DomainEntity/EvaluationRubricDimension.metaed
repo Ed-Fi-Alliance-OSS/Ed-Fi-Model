@@ -1,5 +1,5 @@
 Domain Entity EvaluationRubricDimension
-    documentation "The cells of a rubric, consisting of a qualitative decription, definition, or exemplar with the associated rubric evaluation level."
+    documentation "The cells of a rubric, consisting of a qualitative description, definition, or exemplar with the associated rubric evaluation level."
     domain entity ProgramEvaluationElement
         documentation "The program evaluation element associated with the evaluation rubric dimension."
         is part of identity

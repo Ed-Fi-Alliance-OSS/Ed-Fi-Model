@@ -1,5 +1,5 @@
 Domain Entity PostSecondaryEvent [575]
-    documentation "This entity captures significant postsecondary events during a student's high school tenure (e.g., FAFSA application or college application, acceptance, and enrollment) or during a student's enrollment at a post-secondary institution."
+    documentation "This entity captures significant post-secondary events during a student's high school tenure (e.g., FAFSA application or college application, acceptance, and enrollment) or during a student's enrollment at a post-secondary institution."
     date EventDate [1569]
         documentation "The date the event occurred or was recorded."
         is part of identity
