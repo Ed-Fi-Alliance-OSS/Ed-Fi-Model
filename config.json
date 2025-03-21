@@ -1,0 +1,21 @@
+{
+  "metaEdConfiguration": {
+    "artifactDirectory": "MetaEdOutput",
+    "deployDirectory": "",
+    "pluginTechVersion": {},
+    "projects": [
+      {
+        "namespaceName": "EdFi",
+        "projectName": "Ed-Fi",
+        "projectVersion": "6.0.0"
+      }
+    ],
+    "projectPaths": [
+      "package"
+    ],
+    "pluginConfigDirectories": [],
+    "defaultPluginTechVersion": "7.3.0",
+    "allianceMode": true,
+    "suppressPrereleaseVersion": true
+  }
+}
