@@ -24,7 +24,12 @@ npm ci
 npm start
 ```
 
-The output is formatted for use in Visual Studio and looks a little confusing at first. You will see that each line is a JSON object, and you will see embedded color codes such as `\u001b[90m`. The color coding does not work when running this way; please ignore that. Each line has a `level` listed; look for `"level":"error"`. These _must_ be corrected. There are also warnings about deprecation, which in this context you can ignore.
+The output is formatted for use in Visual Studio and looks a little confusing at
+first. You will see that each line is a JSON object, and you will see embedded
+color codes such as `\u001b[90m`. The color coding does not work when running
+this way; please ignore that. Each line has a `level` listed; look for
+`"level":"error"`. These _must_ be corrected. There are also warnings about
+deprecation, which in this context you can ignore.
 
 ```shell
 {"level":"info","message":"- edfiUnified, tech version 7.3.0"}
