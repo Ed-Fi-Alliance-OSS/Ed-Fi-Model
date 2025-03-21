@@ -15,9 +15,6 @@ Domain Entity RecruitmentEventAttendance
     shared string ElectronicMailAddress
         documentation "The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs."
         is required
-    descriptor Gender
-      documentation "The gender with which a person associates."
-      is optional
     bool HispanicLatinoEthnicity
         deprecated "This element is scheduled for removal by 2029. Users of this element are advised to use Race instead."
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino""."
@@ -53,7 +50,10 @@ Domain Entity RecruitmentEventAttendance
         documentation "The person making the referral."
         is optional
     descriptor Sex
-        documentation "A person's gender."
+        documentation "A person's birth sex."
+        is optional
+    shared string GenderIdentity
+        documentation "The gender the person identifies themselves as."
         is optional
     shared string SocialMediaNetworkName
         documentation "The social media network name associated with the social media user name."

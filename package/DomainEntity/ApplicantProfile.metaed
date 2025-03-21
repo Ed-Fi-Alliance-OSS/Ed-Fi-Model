@@ -7,7 +7,10 @@ Domain Entity ApplicantProfile
         documentation "Full legal name of the person."
         is required
     descriptor Sex
-        documentation "A person's gender."
+        documentation "A person's birth sex."
+        is optional
+    shared string GenderIdentity
+        documentation "The gender the person identifies themselves as."
         is optional
     date BirthDate
         documentation "The month, day, and year on which an individual was born."
@@ -40,9 +43,6 @@ Domain Entity ApplicantProfile
     common BackgroundCheck
         documentation "Applicant background check history and disposition."
         is optional collection
-    descriptor Gender
-      documentation "The gender with which a person associates."
-      is optional
     common Disability
       documentation "The disability condition(s) that best describes an individual's impairment."
       is optional collection
