@@ -95,9 +95,6 @@ Domain Entity Staff [583]
         documentation "The academic subject(s) in which the staff is deemed to be ""highly qualified""."
         is optional collection
         role name HighlyQualified
-    descriptor Gender
-        documentation "The gender with which a person associates."
-        is optional
     common EducatorResearch
         documentation "The educator preparation provider faculty that instruct teacher candidates in content area or pedagogy."
         is optional

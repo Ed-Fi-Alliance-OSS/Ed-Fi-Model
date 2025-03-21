@@ -15,6 +15,9 @@ Domain Entity Candidate
   descriptor Sex
       documentation "The sex of the person."
       is required
+  shared string GenderIdentity
+        documentation "The gender the candidate identifies themselves as."
+        is optional
   inline common BirthData
       documentation "The set of elements that capture relevant data regarding a person's birth, including birth date and place of birth."
       is required
@@ -67,9 +70,6 @@ Domain Entity Candidate
   shared string IdentificationCode named LoginId
       documentation "The login ID for the user; used for security access control interface."
       is optional
-  descriptor Gender
-    documentation "The gender of the candidate."
-    is optional
   decimal TuitionCost
     documentation "The tuition for a person's participation in a program, service. or course."
     is optional
