@@ -13,7 +13,6 @@
     "@edfi/metaed-console": "dev"
   },
   "scripts": {
-    "start": "node node_modules/@edfi/metaed-console/dist/index.js -c ./config.json -a",
-    "deploy": "node node_modules/@edfi/metaed-console/dist/index.js -c ./config.json -a"
+    "start": "node node_modules/@edfi/metaed-console/dist/index.js -c ./config.json -a"
   }
 }
