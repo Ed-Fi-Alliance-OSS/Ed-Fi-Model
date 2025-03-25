@@ -13,7 +13,8 @@ param (
 
 function Test-SQL {
 
-    sqlcmd -S localhost -U sa -P $Password -Q "CREATE DATABASE MetaEd_SQL_Validation_Test" 
+    docker exec -i mssql /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P $Password -C -d master -Q "CREATE DATABASE MetaEd_SQL_Validation_Test"
+
     $scripts = @()
 
     $basePath = Join-Path $Workspace 'MetaEdOutput'
@@ -82,10 +83,12 @@ function Test-SQL {
         try {
             $elapsed = Use-StopWatch {
                 Write-Host "`r`n Script Full Name is $script `r`n"
-                $sqlcmdOutput= sqlcmd -S localhost -U sa -P $Password -i $script.FullName
-                Write-Host $sqlcmdOutput
+                docker cp $script.FullName mssql:/tmp/
+                docker exec -i mssql /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P $Password -C -d MetaEd_SQL_Validation_Test -i /tmp/$($script.Name)
+    
             }
-            Write-Result $true $script.Name $elapsed
+            $elapsedString = $elapsed.ToString()
+            Write-Result $true $script.Name $elapsedString
         } catch {
             Write-Result $false $script.Name $elapsed $_.Exception
         }
