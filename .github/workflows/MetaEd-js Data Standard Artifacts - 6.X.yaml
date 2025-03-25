@@ -40,27 +40,13 @@ jobs:
           --health-interval 10s 
           --health-timeout 5s 
           --health-retries 3
-          --name mssql
     strategy:
       fail-fast: false
       matrix:
         TECHNOLOGY_VERSION: ["7.3.0"]
     name:  MetaEd-js-Data-Standard-Artifacts 5.x with ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
-      # Install sqlcmd (SQL Server Command Line Tool) for Ubuntu
-    - name: Install sqlcmd and dependencies
-      run: |
-        curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-        curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
-        sudo apt-get update
-        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev 
-        # Add mssql-tools to PATH
-        echo "export PATH=\$PATH:/opt/mssql-tools/bin" >> ~/.bashrc
-        source ~/.bashrc        
-    - name: Verify sqlcmd installation
-      run: |
-        sqlcmd -?
-        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION"        
+
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
       run: | 
@@ -125,6 +111,19 @@ jobs:
       run: |
         ./eng/ValidateSchema.ps1 -Workspace ${{ github.workspace }}
       shell: pwsh
+
+    - name: Install sqlcmd
+      run: |
+        curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+        sudo apt-get update
+        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+        echo 'PATH=/opt/mssql-tools/bin/' >>"${GITHUB_ENV}"
+
+    - name: Verify sqlcmd installation
+      run: |
+        echo "Verifying sqlcmd..."
+        sqlcmd "-?" || echo "sqlcmd not found in PATH"
+        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || echo "Failed to connect with sqlcmd"
 
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    

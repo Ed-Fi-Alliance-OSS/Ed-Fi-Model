@@ -40,7 +40,6 @@ jobs:
           --health-interval 10s 
           --health-timeout 5s 
           --health-retries 3
-          --name mssql          
     strategy:
       fail-fast: false
       matrix:
@@ -186,6 +185,19 @@ jobs:
       run: |
         ./eng/ValidateSchema.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
       shell: pwsh
+
+    - name: Install sqlcmd
+      run: |
+        curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+        sudo apt-get update
+        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+        echo 'PATH=/opt/mssql-tools/bin/' >>"${GITHUB_ENV}"
+
+    - name: Verify sqlcmd installation
+      run: |
+        echo "Verifying sqlcmd..."
+        sqlcmd "-?" || echo "sqlcmd not found in PATH"
+        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || echo "Failed to connect with sqlcmd"
 
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
