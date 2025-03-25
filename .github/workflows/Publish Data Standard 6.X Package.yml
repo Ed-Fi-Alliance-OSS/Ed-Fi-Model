@@ -1,4 +1,4 @@
-name: Publish Data Standard 5.X Package
+name: Publish Data Standard 6.X Package
 
 on:
   pull_request:
@@ -18,12 +18,12 @@ env:
   HEAD_REF:  ${{ GITHUB.HEAD_REF }}
   REF_NAME:  ${{ GITHUB.REF_NAME }}
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
-  DATASTANDARD_VERSION:  "DS-5.2.0-ME-3.0.0"
+  DATASTANDARD_VERSION:  "DS-6.0.0-ME-3.0.0"
   ARTIFACTS_API_KEY: ${{ secrets.AZURE_ARTIFACTS_PERSONAL_ACCESS_TOKEN }}
   NPM_REGISTRY: ${{ vars.NPM_REGISTRY }}
 
 jobs:
-  Publish-Data-Standard-5X:
+  Publish-Data-Standard-6X:
 
     runs-on: ubuntu-latest
     defaults:
@@ -31,7 +31,7 @@ jobs:
         working-directory: Ed-Fi-Model
     permissions:
       contents: write
-    name:  Publish-Data-Standard-5.X
+    name:  Publish-Data-Standard-6.X
     steps:
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
