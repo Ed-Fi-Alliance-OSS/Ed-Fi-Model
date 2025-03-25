@@ -2,7 +2,7 @@ name: MetaEd-js All Extension Artifacts With ODS 7.X
 
 on:
   pull_request:
-    branches: ['DS-5.*']
+    branches: ['DS-6.*']
 
   workflow_dispatch:
 
@@ -41,6 +41,7 @@ jobs:
           --health-interval 10s 
           --health-timeout 5s 
           --health-retries 3
+          --name mssql          
     strategy:
       fail-fast: false
       matrix:
