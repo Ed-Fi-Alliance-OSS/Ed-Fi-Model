@@ -2,7 +2,7 @@ name: MetaEd-js All Extension Artifacts With ODS 7.X
 
 on:
   pull_request:
-    branches: ['DS-5.*']
+    branches: ['DS-6.*']
 
   workflow_dispatch:
 
@@ -17,10 +17,9 @@ env:
   HEAD_REF:  ${{ GITHUB.HEAD_REF }}
   REF_NAME:  ${{ GITHUB.REF_NAME }}
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
-  PROJECT_VERSION: "5.2.0"
-  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 5.2.0"
+  PROJECT_VERSION: "6.0.0"
+  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 6.0.0"
   DATASTANDARD_VERSION:  ${{ github.event.repository.default_branch }}
-  TPDM_DATASTANDARD_VERSION: "Data-Standard-v5.2.0"
   DB_PASS: temporaryDbP@ssw0rd!
 
 jobs:
@@ -45,7 +44,7 @@ jobs:
       fail-fast: false
       matrix:
         TECHNOLOGY_VERSION: ["7.3.0"]
-        EXTENSION_NAME: ["TPDM","Homograph","SampleStudentTranscript","Sample","SampleAlternativeEducationProgram"]        
+        EXTENSION_NAME: ["Homograph","SampleStudentTranscript","Sample","SampleAlternativeEducationProgram"]        
 
     name: MetaEd-js ${{ matrix.EXTENSION_NAME }} Extension Artifacts With ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
@@ -74,15 +73,6 @@ jobs:
       with:
         repository: Ed-Fi-Closed/MetaEd-js
         path: MetaEd-js/
-        token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
-
-    - name: Checkout Ed-Fi-TPDM-Model
-      if: matrix.EXTENSION_NAME == 'TPDM'
-      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      with:
-        repository: Ed-Fi-Closed/Ed-Fi-TPDM-Model
-        path: MetaEdExtensionSource/
-        ref: ${{env.TPDM_DATASTANDARD_VERSION}}
         token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
     - name: Checkout Ed-Fi-ODS-Implementation
@@ -163,11 +153,11 @@ jobs:
         ./eng/CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
       shell: pwsh
 
-    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.2.json content
+    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.0.json content
       shell: pwsh
       run: |
         # Define the path to the JSON file
-        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.2.json"
+        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.0.json"
 
         # Read the content of the JSON file
         $jsonContent = Get-Content -Path $jsonFilePath -Raw
@@ -181,7 +171,7 @@ jobs:
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
-            node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.2.json -a
+            node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.0.json -a
 
             $fileCount = (Get-ChildItem "${{ github.workspace }}/MetaEdOutput" -ErrorAction SilentlyContinue | Measure-Object).Count
 
@@ -195,6 +185,20 @@ jobs:
       run: |
         ./eng/ValidateSchema.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
       shell: pwsh
+
+    - name: Install sqlcmd
+      run: |
+        curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+        sudo apt-get update
+        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+        echo "/opt/mssql-tools/bin/" >> "$GITHUB_PATH"
+
+    - name: Verify sqlcmd installation
+      run: |
+        echo $PATH      
+        echo "Verifying sqlcmd..."
+        sqlcmd "-?" || { echo "sqlcmd not found in PATH"; exit 1; }
+        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || { echo "Failed to connect with sqlcmd"; exit 1; }
 
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    

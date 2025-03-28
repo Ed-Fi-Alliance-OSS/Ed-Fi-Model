@@ -1,8 +1,8 @@
-name: MetaEd-js Data Standard Artifacts - 5.X
+name: MetaEd-js Data Standard Artifacts - 6.X
 
 on:
   pull_request:
-    branches: ['DS-5.*']
+    branches: ['DS-6.*']
 
   workflow_dispatch:
 
@@ -17,8 +17,8 @@ env:
   HEAD_REF:  ${{ GITHUB.HEAD_REF }}
   REF_NAME:  ${{ GITHUB.REF_NAME }}
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
-  PROJECT_VERSION: "5.2.0"
-  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 5.2.0"
+  PROJECT_VERSION: "6.0.0"
+  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 6.0.0"
   DATASTANDARD_VERSION: ${{ github.event.repository.default_branch }}
   DB_PASS: temporaryDbP@ssw0rd!
 
@@ -46,6 +46,7 @@ jobs:
         TECHNOLOGY_VERSION: ["7.3.0"]
     name:  MetaEd-js-Data-Standard-Artifacts 5.x with ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
+
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
       run: | 
@@ -78,11 +79,11 @@ jobs:
         ./eng/CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }}  -MetaEdExtensionName ""
       shell: pwsh
 
-    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.2.json content
+    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.0.json content
       shell: pwsh
       run: |
         # Define the path to the JSON file
-        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.2.json"
+        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.0.json"
 
         # Read the content of the JSON file
         $jsonContent = Get-Content -Path $jsonFilePath -Raw
@@ -96,7 +97,7 @@ jobs:
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
-            node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-5.2.json -a
+            node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.0.json -a
 
             $fileCount = (Get-ChildItem "${{ github.workspace }}/MetaEdOutput" -ErrorAction SilentlyContinue | Measure-Object).Count
 
@@ -110,6 +111,20 @@ jobs:
       run: |
         ./eng/ValidateSchema.ps1 -Workspace ${{ github.workspace }}
       shell: pwsh
+
+    - name: Install sqlcmd
+      run: |
+        curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+        sudo apt-get update
+        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+        echo "/opt/mssql-tools/bin/" >> "$GITHUB_PATH"
+
+    - name: Verify sqlcmd installation
+      run: |
+        echo $PATH
+        echo "Verifying sqlcmd..."
+        sqlcmd "-?" || { echo "sqlcmd not found in PATH"; exit 1; }
+        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || { echo "Failed to connect with sqlcmd"; exit 1; }
 
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
