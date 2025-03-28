@@ -196,8 +196,8 @@ jobs:
     - name: Verify sqlcmd installation
       run: |
         echo "Verifying sqlcmd..."
-        sqlcmd "-?" || echo "sqlcmd not found in PATH"
-        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || echo "Failed to connect with sqlcmd"
+        sqlcmd "-?" || { echo "sqlcmd not found in PATH"; exit 1; }
+        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || { echo "Failed to connect with sqlcmd"; exit 1; }
 
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
