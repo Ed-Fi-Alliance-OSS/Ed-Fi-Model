@@ -57,7 +57,7 @@ jobs:
         exit 1 
 
     - name: Checkout Ed-Fi-Model
-      uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       with:
         repository: Ed-Fi-Closed/Ed-Fi-Model
         path: Ed-Fi-Model/
@@ -70,7 +70,7 @@ jobs:
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
 
     - name: Checkout MetaEd-js
-      uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       with:
         repository: Ed-Fi-Closed/MetaEd-js
         path: MetaEd-js/
@@ -78,7 +78,7 @@ jobs:
 
     - name: Checkout Ed-Fi-TPDM-Model
       if: matrix.EXTENSION_NAME == 'TPDM'
-      uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       with:
         repository: Ed-Fi-Closed/Ed-Fi-TPDM-Model
         path: MetaEdExtensionSource/
@@ -87,7 +87,7 @@ jobs:
 
     - name: Checkout Ed-Fi-ODS-Implementation
       if: matrix.EXTENSION_NAME == 'Homograph'  || matrix.EXTENSION_NAME == 'Sample'
-      uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       with:
         repository: Ed-Fi-Alliance-OSS/Ed-Fi-ODS-Implementation
         path: MetaEdExtensionSource/
@@ -101,7 +101,7 @@ jobs:
   
     - name: Checkout ODS
       if: matrix.EXTENSION_NAME == 'SampleStudentTranscript' || matrix.EXTENSION_NAME == 'SampleAlternativeEducationProgram'
-      uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       with:
         repository: Ed-Fi-Alliance-OSS/Ed-Fi-ODS
         path: MetaEdExtensionSource
@@ -196,6 +196,20 @@ jobs:
         ./eng/ValidateSchema.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
       shell: pwsh
 
+    - name: Install sqlcmd
+      run: |
+        curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+        sudo apt-get update
+        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+        echo "/opt/mssql-tools/bin/" >> "$GITHUB_PATH"
+
+    - name: Verify sqlcmd installation
+      run: |
+        echo $PATH      
+        echo "Verifying sqlcmd..."
+        sqlcmd "-?" || { echo "sqlcmd not found in PATH"; exit 1; }
+        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || { echo "Failed to connect with sqlcmd"; exit 1; }
+
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
       run: |
@@ -203,7 +217,7 @@ jobs:
       shell: pwsh
 
     - name: Upload MetaEd.Artifacts
-      uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
+      uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b # v4.5
       with:
         name: MetaEdOutput-${{env.DATASTANDARD_VERSION}}-${{ matrix.TECHNOLOGY_VERSION }}- ${{ matrix.EXTENSION_NAME }}
         path: ${{ github.workspace }}/MetaEdOutput/**/*.*          
