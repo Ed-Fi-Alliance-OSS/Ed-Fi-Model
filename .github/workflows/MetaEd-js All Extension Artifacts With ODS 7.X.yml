@@ -201,7 +201,7 @@ jobs:
         curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
         sudo apt-get update
         sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
-        echo 'PATH=/opt/mssql-tools/bin/' >>"${GITHUB_ENV}"
+        echo 'export PATH=/opt/mssql-tools/bin:$PATH' >>"${GITHUB_ENV}"
 
     - name: Verify sqlcmd installation
       run: |
