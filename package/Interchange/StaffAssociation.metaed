@@ -20,3 +20,4 @@ Interchange StaffAssociation [2523]
     domain entity Person [2523-012]
     domain entity PersonStaffPositionEvent
     association StaffEducatorPreparationProgramAssociation
+    
