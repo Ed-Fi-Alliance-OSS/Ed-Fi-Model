@@ -14,7 +14,7 @@ Interchange Candidate
   domain entity CredentialEvent
   domain entity Person
   domain entity FinancialAid
-
+  domain entity EducatorPreparationProgram
   association CandidateRelationshipToStaffAssociation
   association CandidateEducatorPreparationProgramAssociation
   association StudentSchoolAssociation
