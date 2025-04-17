@@ -15,3 +15,6 @@ Interchange Survey [3041]
     association SurveyResponseStaffTargetAssociation [3041-011]
     association SurveySectionResponseEducationOrganizationTargetAssociation [3041-012]
     association SurveySectionResponseStaffTargetAssociation [3041-013]
+    association SurveyResponsePersonTargetAssociation
+    association SurveySectionResponsePersonTargetAssociation
+    
