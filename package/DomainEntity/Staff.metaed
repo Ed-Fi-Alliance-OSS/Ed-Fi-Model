@@ -5,10 +5,6 @@ Domain Entity Staff [583]
         is part of identity
         role name Staff
         is queryable field
-    common StaffIdentificationCode [1662]
-        documentation "A unique number or alphanumeric code assigned to a staff member by a school, school system, a state, or other agency or entity."
-        is optional collection
-        is queryable field
     inline common Name [1657]
         documentation "Full legal name of the person."
         is required
