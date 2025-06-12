@@ -1,0 +1,3 @@
+Shared String AssigningOrganizationIdentificationCode
+    documentation "The organization code or name assigning the identification code"
+    max length 60
