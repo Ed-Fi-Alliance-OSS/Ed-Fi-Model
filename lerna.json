@@ -1,6 +1,6 @@
 {
   "lerna": "8.0.2",
-  "version": "3.0.0-pre.38",
+  "version": "3.0.0-pre.39",
   "npmClient": "npm",
   "packages": [
     "package"
