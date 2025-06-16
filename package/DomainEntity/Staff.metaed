@@ -6,6 +6,7 @@ Domain Entity Staff [583]
         role name Staff
         is queryable field
     common StaffIdentificationCode [1662]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffIdentity entity."
         documentation "A unique number or alphanumeric code assigned to a staff member by a school, school system, a state, or other agency or entity."
         is optional collection
         is queryable field
@@ -18,10 +19,12 @@ Domain Entity Staff [583]
         is optional collection
         is queryable field
     descriptor Sex [1661]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffDemographics entity."
         documentation "The birth sex of the staff member."
         is optional
         is queryable field
     shared string GenderIdentity
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffDemographics entity."
         documentation "The gender the staff member identifies themselves as."
         is optional
     date BirthDate [1647]
@@ -29,16 +32,20 @@ Domain Entity Staff [583]
         is optional
         is queryable field
     common Address [1646]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffContactInformation entity."
         documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
         is optional collection
     common InternationalAddress [1654]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffContactInformation entity."
         documentation "The set of elements that describes an international address."
         is optional collection
     common Telephone [1664]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffContactInformation entity."
         documentation "The 10-digit telephone number, including the area code, for the person."
         is optional collection
         is queryable field
     common ElectronicMail [1650]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffContactInformation entity."
         documentation "The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs."
         is optional collection
         is queryable field
@@ -48,13 +55,16 @@ Domain Entity Staff [583]
         is optional
         is queryable field
     descriptor Race [1660]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffDemographics entity."
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The way this data element is listed, it must allow for multiple entries so that each individual can specify all appropriate races."
         is optional collection
         is queryable field
     inline common Citizenship [1648]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffDemographics entity."
         documentation "Contains information relative to U.S. citizenship status and its associated probationary documentation."
         is optional
     common Language [1655]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffDemographics entity."
         documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-2 language codes."
         is optional collection
     descriptor LevelOfEducation [1651]
@@ -83,12 +93,14 @@ Domain Entity Staff [583]
         documentation "The legal document giving authorization to perform teaching assignment services."
         is optional collection
     descriptor TribalAffiliation [2855]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffDemographics entity."
         documentation "An American Indian tribe with which the staff member is affiliated."
         is optional collection
     domain entity Person [2946]
         documentation "Relates the staff to a generic person."
         is optional
     descriptor AncestryEthnicOrigin [3095]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StaffDemographics entity."
         documentation "The original peoples or cultures with which the individual identifies."
         is optional collection
     descriptor AcademicSubject
