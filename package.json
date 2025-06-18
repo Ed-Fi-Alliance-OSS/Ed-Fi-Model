@@ -7,5 +7,12 @@
   },
   "workspaces": [
     "package"
-  ]
+  ],
+  "type": "module",
+  "dependencies": {
+    "@edfi/metaed-console": "dev"
+  },
+  "scripts": {
+    "start": "node node_modules/@edfi/metaed-console/dist/index.js -c ./config.json -a"
+  }
 }
