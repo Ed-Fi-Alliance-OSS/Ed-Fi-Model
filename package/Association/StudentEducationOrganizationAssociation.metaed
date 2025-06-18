@@ -5,13 +5,13 @@ Association StudentEducationOrganizationAssociation [3052]
     domain entity EducationOrganization [2783]
         documentation "A reference to the education organization representing the context of the student information."
     common StudentIdentificationCode [1703]
-        documentation "A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student."
         deprecated "This element is scheduled for removal by 2029. This element has been moved to StudentIdentity entity."
+        documentation "A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student."
         is optional collection
         is queryable field
     descriptor Sex [1701]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StudentIdentity entity."
         documentation "The student's birth sex as reported to the education organization."
-        deprecated "This element is scheduled for removal by 2029. This element has been moved to StudentDemographics entity."
         is optional
         is queryable field
     shared string GenderIdentity
