@@ -16,6 +16,7 @@ documentation "The demographic information associated to a student record"
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with the which the individual most identifies as last reported to the education organization. The data model allows for multiple entries so that each individual can specify all appropraite races."
         is optional collection
     bool HispanicLatinoEthnicity
+        deprecated "This element is scheduled for removal by 2029. Users of this element are advised to use Race."
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race, as last reported to the education organization. The term ""Spanish origin"", can be used in addition to ""Hispanic or Latino""."
         is optional
     descriptor AncestryEthnicOrigin
