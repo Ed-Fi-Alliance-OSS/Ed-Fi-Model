@@ -1,7 +1,7 @@
 Domain Entity ContactIdentity
-    documentation "This entity holds different identity codes for a contact"
+    documentation "This entity holds different identity codes for a contact."
     domain entity Contact 
-        documentation "A reference to the contact"
+        documentation "A reference to the contact."
         is part of identity
     descriptor ContactIdentificationSystem
         documentation "A coding scheme that is used for identification and record-keeping."
@@ -16,8 +16,8 @@ Domain Entity ContactIdentity
         documentation "the organization code or name assigning the IdentificationCode."
         is optional
     date BeginDate
-        documentation "Month, day, and year of the first day the identification code is effective"
+        documentation "Month, day, and year of the first day the identification code is effective."
         is optional
     date EndDate
-        documentation "Month, day, and year of the last day the identification code is effective"
+        documentation "Month, day, and year of the last day the identification code is effective."
         is optional
