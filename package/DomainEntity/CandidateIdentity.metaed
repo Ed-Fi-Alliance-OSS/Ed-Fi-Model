@@ -1,5 +1,5 @@
 Domain Entity CandidateIdentity
-documentation "This entity holds different identity codes for a candidate"
+documentation "This entity holds different identity codes for a candidate."
     domain entity Candidate
         documentation "A reference to the candidate."
         is part of identity
@@ -7,7 +7,7 @@ documentation "This entity holds different identity codes for a candidate"
         documentation "A coding scheme that is used for identification and record-keeping."
         is part of identity
     domain entity EducationOrganization
-        documentation "A reference to the education organization"
+        documentation "A reference to the education organization."
         is part of identity 
     shared string IdentificationCode
         documentation "A unique number or alphanumeric code assigned to an individual by a school, LEA, SEA, or other agency."
