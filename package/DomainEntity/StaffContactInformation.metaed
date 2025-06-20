@@ -1,13 +1,13 @@
 Domain Entity StaffContactInformation
-documentation "The contact information associated to a staff record."
+documentation "The contact information associated to a staff member."
     domain entity Staff
-        documentation "A reference to the staff."
+        documentation "A reference to the staff member."
         is part of identity
     domain entity EducationOrganization
         documentation "A reference to the education organization representing the context of the staff information"
         is part of identity
     common Address
-        documentation "The set of eleemnts that describes an address, including the street address, city, state, and ZIP code."
+        documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
         is optional collection
     common InternationalAddress
         documentation "The set of elements that describes an international address."
