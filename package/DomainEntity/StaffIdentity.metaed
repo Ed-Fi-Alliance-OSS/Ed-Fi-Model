@@ -1,23 +1,23 @@
 Domain Entity StaffIdentity
-documentation "This entity holds different identity codes for Staff"
+documentation "This entity holds different identity codes for staff member."
     domain entity Staff 
-        documentation "A reference to the staff"
+        documentation "A reference to the staff member."
         is part of identity
     descriptor StaffIdentificationSystem
-        documentation "A coding scheme that is used for identification and record-keeping purposes by schools, LEAs, SEAs, or other agencies refer to a staff."
+        documentation "A coding scheme that is used for identification and record-keeping purposes by schools, LEAs, SEAs, or other agencies refer to a staff member."
         is part of identity
     domain entity EducationOrganization
-        documentation "A reference to the education organization representing the context of the student information."
+        documentation "A reference to the education organization representing the context of the staff member information."
         is part of identity
     shared string IdentificationCode
         documentation "A unique number or alphanumeric code assigned to an individual by a school, LEA, SEA, or other agency."
         is optional
     shared string AssigningOrganizationIdentificationCode
-        documentation "the organization code or name assigning the IdentificationCode."
+        documentation "The organization code or name assigning the IdentificationCode."
         is optional
     date BeginDate
-        documentation "Month, day, and year of the first day the identification code is effective"
+        documentation "Month, day, and year of the first day the identification code is effective."
         is optional
     date EndDate
-        documentation "Month, day, and year of the last day the identification code is effective"
+        documentation "Month, day, and year of the last day the identification code is effective."
         is optional
