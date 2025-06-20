@@ -1,16 +1,16 @@
 Domain Entity StudentContactInformation
-documentation "The contact information associated to a student record."
+documentation "The contact information associated to a student."
     domain entity Student
         documentation "A reference to the student."
         is part of identity
     domain entity EducationOrganization
-        documentation "A reference to the education organization represnting the context of the student information."
+        documentation "A reference to the education organization representing the context of the student information."
         is part of identity
     common Address
         documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
         is optional collection
     common InternationalAddress
-        documentation "The set of elements that descibes and international address."
+        documentation "The set of elements that describes and international address."
         is optional collection
     common Telephone
         documentation "The 10-digit telephone number, including the area code, for the person."
