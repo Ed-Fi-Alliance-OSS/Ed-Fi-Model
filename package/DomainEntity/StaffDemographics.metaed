@@ -1,7 +1,7 @@
 Domain Entity StaffDemographics
-documentation "The demographic information associated to a Staff record"
+documentation "The demographic information associated to a Staff member"
     domain entity Staff
-        documentation "A reference to the Staff."
+        documentation "A reference to the Staff member."
         is part of identity
     domain entity EducationOrganization
         documentation "A reference ot the education organization representing the context of the Staff information."
@@ -10,10 +10,10 @@ documentation "The demographic information associated to a Staff record"
         documentation "The Staff's birth sex as reported to the education organization."
         is optional
     shared string GenderIdentity
-        documentation "The Staff's gender as last reported to the eeducation organization."
+        documentation "The Staff's gender as last reported to the education organization."
         is optional
     descriptor Race
-        documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with the which the individual most identifies as last reported to the education organization. The data model allows for multiple entries so that each individual can specify all appropraite races."
+        documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with the which the individual most identifies as last reported to the education organization. The data model allows for multiple entries so that each individual can specify all appropriate races."
         is optional collection
     bool HispanicLatinoEthnicity
         deprecated "This element is scheduled for removal by 2029. users of this element are advised to use Race instead."
@@ -23,7 +23,7 @@ documentation "The demographic information associated to a Staff record"
         documentation "The original peoples or cultures with which the individual identifies."
         is optional collection
     inline common Citizenship
-        documentation "Contains information relative to U.S. citizenship status and its assocaited probationary documentation."
+        documentation "Contains information relative to U.S. citizenship status and its associated probationary documentation."
         is optional
     descriptor TribalAffiliation
         documentation "An American Indian tribe with which the Staff is affiliated as last reported to the education organization."
