@@ -1,10 +1,10 @@
 Domain Entity EducationOrganizationIdentity
-documentation "This entity holds different identity codes for an education organization"
+documentation "This entity holds different identity codes for an education organization."
     domain entity EducationOrganization
-        documentation "A reference to the education organization"
+        documentation "A reference to the education organization."
         is part of identity 
     descriptor EducationOrganizationIdentificationSystem
-        documentation "A coding scheme that is used for identification and record-keeping"
+        documentation "A coding scheme that is used for identification and record-keeping."
         is part of identity
     shared string IdentificationCode
         documentation "A unique number or alphanumeric code assigned to an education organization by an SEA or other agency."
