@@ -27,4 +27,3 @@ Domain Entity FieldworkExperience
     common Coteaching
         documentation "The act of two teachers (teacher candidate and cooperating teacher) working together with groups of students; sharing the planning, organization, delivery, and assessment of instruction, as well as the physical space."
         is optional
-
