@@ -31,9 +31,3 @@ documentation "The demographic information associated to a Staff member"
     common Language
         documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 languages codes."
         is optional collection
-    date BeginDate
-        documentation "Month, day, and year of the first day the information is valid."
-        is optional
-    date EndDate
-        documentation "Month, day, and year of the last day the information is valid."
-        is optional
