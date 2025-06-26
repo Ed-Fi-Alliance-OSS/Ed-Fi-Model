@@ -12,9 +12,3 @@ documentation "This entity holds different identity codes for an education organ
     shared string AssigningOrganizationIdentificationCode
         documentation "The organization code or name assigning the IdentificationCode."
         is optional
-    date BeginDate
-        documentation "Month, day, and year of the first day the identification code is effective."
-        is optional
-    date EndDate
-        documentation "Month, day, and year of the last day the identification code is effective."
-        is optional
