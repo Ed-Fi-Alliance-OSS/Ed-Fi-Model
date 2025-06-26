@@ -8,7 +8,7 @@ documentation "This entity holds different identity codes for an education organ
         is part of identity
     shared string IdentificationCode
         documentation "A unique number or alphanumeric code assigned to an education organization by an SEA or other agency."
-        is optional
+        is required
     shared string AssigningOrganizationIdentificationCode
         documentation "The organization code or name assigning the IdentificationCode."
         is optional
