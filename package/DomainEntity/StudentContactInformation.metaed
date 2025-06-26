@@ -10,7 +10,7 @@ documentation "The contact information associated to a student."
         documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
         is optional collection
     common InternationalAddress
-        documentation "The set of elements that describes and international address."
+        documentation "The set of elements that describes an international address."
         is optional collection
     common Telephone
         documentation "The 10-digit telephone number, including the area code, for the person."
