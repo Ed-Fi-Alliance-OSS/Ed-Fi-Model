@@ -11,7 +11,7 @@ Domain Entity ContactIdentity
         is part of identity
     shared string IdentificationCode
         documentation "A unique number or alphanumeric code assigned to an individual by a school, LEA, SEA, or other agency."
-        is optional
+        is required
     shared string AssigningOrganizationIdentificationCode
         documentation "the organization code or name assigning the IdentificationCode."
         is optional
