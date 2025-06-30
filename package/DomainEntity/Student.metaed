@@ -18,6 +18,7 @@ Domain Entity Student [585]
         is required
         is queryable field
     inline common Citizenship [1682]
+        deprecated "This element is scheduled for removal by 2029. This element has been moved to StudentDemographics entity."
         documentation "Contains information relative to U.S. citizenship status and its associated probationary documentation."
         is optional
     domain entity EducationOrganization [2371]
