@@ -1,4 +1,4 @@
-name: Publish Data Standard 5.X Package
+name: Publish Data Standard 5.X Pre-Release Package
 
 on:
   pull_request:
