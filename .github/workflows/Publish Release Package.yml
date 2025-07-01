@@ -1,4 +1,4 @@
-name: Publish Data Standard Release Package
+name: Publish Release Package
 
 on:
   release:
@@ -19,14 +19,11 @@ env:
   NPM_REGISTRY: ${{ vars.NPM_REGISTRY }}
 
 jobs:
-  Publish-Data-Standard-5X:
+  Publish-Release:
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Ed-Fi-Model
 
-    name:  Publish-Data-Standard
+    name:  Publish Release Package
     steps:
     - name: Check for Azure token
       if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
@@ -39,19 +36,29 @@ jobs:
       with:
         ref: ${{ github.event.release.tag_name }}
 
-    - name: Create packages
+    - name: Set the version from the release tag
+      run: |
+        version=$(echo ${{ github.event.release.tag_name }} | sed 's/.*-//')
+        echo "Version set to $version"
+
+        npx lerna version $version --no-push --yes --no-git-tag-version --force-publish
+
+    # Note that the version number is not being committed into the repository,
+    # because we are working from a tag and it would be difficult to get back to
+    # the correct branch.
+
+    - name: Create package
       # Explicit step is not required for publishing, but it allows us to upload artifacts
       run: npm pack --workspaces
 
-    - name: Upload MetaEd.Artifacts
+    - name: Upload npm package as artifact
       uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b # v4.5
       with:
         name: ${{ github.event.release.tag_name }}
         path: ${{ github.workspace }}/*.tgz
 
     - name: Create .npmrc for Azure Artifacts publishing
-      if: steps.versions.outputs.update-required == 'true'
-      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/    
+      if: ${{ env.AZURE_ARTIFACT_NUGET_KEY != '' }} 
       run: |
           echo "Configuring .npmrc for ${{ env.NPM_REGISTRY }}"
           set +x  # disable echo to shell so that the base64-encoded API key never escapes into the log.
@@ -66,7 +73,5 @@ jobs:
           echo "; end auth token" >> $HOME/.npmrc
 
     - name: Publish to Azure DevOps npm registry
-      if: steps.versions.outputs.update-required == 'true'
-      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/
+      if: ${{ env.AZURE_ARTIFACT_NUGET_KEY != '' }}
       run: npm publish --workspaces
-
