@@ -36,6 +36,19 @@ jobs:
       with:
         ref: ${{ github.event.release.tag_name }}
 
+    - name: Get the version from the release tag
+      id: get_version
+      run: |
+        version=$(echo $tag_name | sed 's/.*-//')
+        echo $version >> $GITHUB_ENV
+        echo "Version set to $version"
+
+        npx lerna version $version --no-push --yes --no-git-tag-version --force-publish
+
+    # Note that the version number is not being committed into the repository,
+    # because we are working from a tag and it would be difficult to get back to
+    # the correct branch.
+
     - name: Create package
       # Explicit step is not required for publishing, but it allows us to upload artifacts
       run: npm pack --workspaces
@@ -47,8 +60,7 @@ jobs:
         path: ${{ github.workspace }}/*.tgz
 
     - name: Create .npmrc for Azure Artifacts publishing
-      if: ${{ env.AZURE_ARTIFACT_NUGET_KEY != '' }}
-      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/    
+      if: ${{ env.AZURE_ARTIFACT_NUGET_KEY != '' }} 
       run: |
           echo "Configuring .npmrc for ${{ env.NPM_REGISTRY }}"
           set +x  # disable echo to shell so that the base64-encoded API key never escapes into the log.
@@ -64,5 +76,4 @@ jobs:
 
     - name: Publish to Azure DevOps npm registry
       if: ${{ env.AZURE_ARTIFACT_NUGET_KEY != '' }}
-      working-directory: /home/runner/work/Ed-Fi-Model/Ed-Fi-Model/package/
       run: npm publish --workspaces
