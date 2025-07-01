@@ -36,11 +36,9 @@ jobs:
       with:
         ref: ${{ github.event.release.tag_name }}
 
-    - name: Get the version from the release tag
-      id: get_version
+    - name: Set the version from the release tag
       run: |
         version=$(echo ${{ github.event.release.tag_name }} | sed 's/.*-//')
-        echo "$version" >> $GITHUB_ENV
         echo "Version set to $version"
 
         npx lerna version $version --no-push --yes --no-git-tag-version --force-publish
