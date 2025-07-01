@@ -41,11 +41,6 @@ jobs:
         ref: ${{env.REF_NAME}}
         fetch-depth: 0
 
-    - name: Is pull request branch exists in Ed-Fi-Model
-      shell: pwsh
-      run: |
-        ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
-
     - name: Current Latest Tag Version
       run: |
         current=$(git describe --tags $(git rev-list --tags --max-count=1))
@@ -62,7 +57,7 @@ jobs:
         fi
 
     - name: Update versions
-      if: steps.versions.outputs.update-required
+      if: steps.versions.outputs.update-required == 'true'
       run: npx lerna version prerelease --exact --no-git-tag-version --preid pre --force-publish --yes
 
     - name: Set Version
@@ -100,7 +95,7 @@ jobs:
         path: ${{ github.workspace }}/*.tgz
 
     - name: Create .npmrc for Azure Artifacts publishing
-      if: steps.versions.outputs.update-required == 'true'
+      if: steps.versions.outputs.update-required == 'true' && ${{ env.AZURE_ARTIFACT_NUGET_KEY != '' }}
       run: |
           echo "Configuring .npmrc for ${{ env.NPM_REGISTRY }}"
           set +x  # disable echo to shell so that the base64-encoded API key never escapes into the log.
@@ -115,7 +110,7 @@ jobs:
           echo "; end auth token" >> $HOME/.npmrc
 
     - name: Publish to Azure DevOps npm registry
-      if: steps.versions.outputs.update-required == 'true'
+      if: steps.versions.outputs.update-required == 'true' && ${{ env.AZURE_ARTIFACT_NUGET_KEY != '' }}
       run: npm publish --workspaces --tag dev
 
  
