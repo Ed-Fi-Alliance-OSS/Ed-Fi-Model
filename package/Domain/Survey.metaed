@@ -21,8 +21,8 @@ Domain Survey
     association SurveySectionAssociation
     association SurveyProgramAssociation
     association SurveyResponseEducationOrganizationTargetAssociation
+    association SurveyResponsePersonTargetAssociation
     association SurveyResponseStaffTargetAssociation
     association SurveySectionResponseEducationOrganizationTargetAssociation
-    association SurveySectionResponseStaffTargetAssociation
-    association SurveyResponsePersonTargetAssociation
     association SurveySectionResponsePersonTargetAssociation
+    association SurveySectionResponseStaffTargetAssociation
