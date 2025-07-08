@@ -26,6 +26,7 @@ Domain AlternativeAndSupplementalServices
     domain entity StudentSectionAttendanceEvent
     association StudentSpecialEducationProgramAssociation    
     association StudentTitleIPartAProgramAssociation
+    association GeneralStudentProgramAssociation
     footer documentation
 "# Alternative and Supplemental Services Subdomains
 

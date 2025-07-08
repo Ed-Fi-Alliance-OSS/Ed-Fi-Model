@@ -22,3 +22,5 @@ Domain EducationOrganization
     domain entity CommunityProviderLicense
     domain entity PostSecondaryInstitution
     domain entity OrganizationDepartment
+    association EducationOrganizationPeerAssociation
+    domain entity DescriptorMapping
