@@ -20,7 +20,7 @@ Domain Entity EvaluationRating
     descriptor EvaluationRatingLevel
         documentation "The rating level achieved based upon the rating or score."
         is optional
-    domain entity EdFi.Section
+    domain entity Section
         documentation "The section associated with a classroom evaluation."
         is optional
         merge Section.CourseOffering.Session.SchoolYear with Evaluation.PerformanceEvaluation.SchoolYear
@@ -30,7 +30,7 @@ Domain Entity EvaluationRating
     shared string Comments
         documentation "Any comments about the evaluation to be captured."
         is optional
-    shared integer EdFi.Duration
+    shared integer Duration
         documentation "The actual or estimated number of clock minutes during which the evaluation was conducted."
         is optional
         role name Actual
