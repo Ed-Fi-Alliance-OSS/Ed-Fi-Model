@@ -7,7 +7,6 @@ Domain AlternativeAndSupplementalServices
     domain entity EducationOrganization
     association GeneralStudentProgramAssociation
     domain entity Program
-    association StudentSpecialEducationProgramEligibilityAssociation
     domain entity School
     domain entity Section
     domain entity Staff
@@ -25,7 +24,8 @@ Domain AlternativeAndSupplementalServices
     association StudentSection504ProgramAssociation
     association StudentSectionAssociation
     domain entity StudentSectionAttendanceEvent
-    association StudentSpecialEducationProgramAssociation    
+    association StudentSpecialEducationProgramAssociation
+    association StudentSpecialEducationProgramEligibilityAssociation    
     association StudentTitleIPartAProgramAssociation
     footer documentation
 "# Alternative and Supplemental Services Subdomains
