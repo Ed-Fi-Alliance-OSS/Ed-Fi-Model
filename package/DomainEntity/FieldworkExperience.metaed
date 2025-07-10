@@ -3,10 +3,10 @@ Domain Entity FieldworkExperience
     shared string FieldworkIdentifier
         documentation "The unique identifier for the fieldwork experience."
         is part of identity
-    domain entity EdFi.Student
+    domain entity Student
         documentation "The student associated with the fieldwork experience."
         is part of identity
-    domain entity EdFi.School
+    domain entity School
         documentation "The school the fieldwork experience is conducted in."
         is optional
     domain entity EducatorPreparationProgram
