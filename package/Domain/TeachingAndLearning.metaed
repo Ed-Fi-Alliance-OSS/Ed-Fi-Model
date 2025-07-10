@@ -8,14 +8,19 @@ Domain TeachingAndLearning
 The model is based upon multiple levels of definition, as follows:
 * A Course entity represents the definition of the course, its characteristics, and its mapping to LearningStandards. A course may be defined a state, LEA or school level.
 * The CourseOffering entity represents a course that is offered by a school during a session. The CourseOffering will have a LocalCourseCode and may have a LocalCourseTitle.
-* A school will have one or more sections for each CourseOffering. Students are enrolled in specific sections. Each Section entity will have one or more assigned staff, will typically meet in a specific location in the school, and will be assigned a ClassPeriodentity for the session. Since early learning teaching and learning is based on programs, students are enrolled by association to the Program and Staff entities as well."
+* A school will have one or more sections for each CourseOffering. Students are enrolled in specific sections. Each Section entity will have one or more assigned staff, will typically meet in a specific location in the school, and will be assigned a ClassPeriod entity for the session. Since early learning teaching and learning is based on programs, students are enrolled by association to the Program and Staff entities as well."
     domain entity ClassPeriod
     domain entity Course
     domain entity CourseOffering
+    domain entity CourseTranscript
     domain entity EducationOrganization
+    domain entity EvaluationRubricDimension
     domain entity LearningStandard
     domain entity Location
     domain entity Program
+    domain entity ProgramEvaluation
+    domain entity ProgramEvaluationElement
+    domain entity ProgramEvaluationObjective
     domain entity School
     domain entity Section
     domain entity Session
@@ -24,6 +29,10 @@ The model is based upon multiple levels of definition, as follows:
     association StaffSchoolAssociation
     association StaffSectionAssociation
     domain entity Student
+    domain entity StudentAcademicRecord
+    domain entity StudentEvaluationElement
+    domain entity StudentEvaluationObjective
+    domain entity StudentProgramEvaluation
     association StudentProgramAssociation
     association StudentSchoolAssociation
     association StudentSectionAssociation
