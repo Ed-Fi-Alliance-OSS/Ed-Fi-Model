@@ -19,6 +19,7 @@ The model is based upon multiple levels of definition, as follows:
     domain entity Location
     domain entity Program
     domain entity ProgramEvaluation
+    domain entity ProgramEvaluationElement
     domain entity ProgramEvaluationObjective
     domain entity School
     domain entity Section
