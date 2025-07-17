@@ -96,7 +96,7 @@ jobs:
         path: ${{ github.workspace }}/*.tgz
 
     - name: Create .npmrc for Azure Artifacts publishing
-      if: steps.versions.outputs.update-required == 'true' && env.AZURE_ARTIFACT_NUGET_KEY != ''
+      if: steps.versions.outputs.update-required == 'true' && env.ARTIFACTS_API_KEY != ''
       run: |
           echo "Configuring .npmrc for ${{ env.NPM_REGISTRY }}"
           set +x  # disable echo to shell so that the base64-encoded API key never escapes into the log.
@@ -111,7 +111,7 @@ jobs:
           echo "; end auth token" >> $HOME/.npmrc
 
     - name: Publish to Azure DevOps npm registry
-      if: steps.versions.outputs.update-required == 'true' && env.AZURE_ARTIFACT_NUGET_KEY != ''
+      if: steps.versions.outputs.update-required == 'true' && env.ARTIFACTS_API_KEY != ''
       run: npm publish --workspaces --tag dev
 
  
