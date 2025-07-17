@@ -47,18 +47,11 @@ jobs:
     name:  MetaEd-js-Data-Standard-Artifacts 5.x with ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
 
-    - name: Check for Azure token
-      if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.AZURE_ARTIFACT_NUGET_KEY == '' }}
-      run: | 
-        echo "::error::Missing Azure Token"
-        exit 1 
-
     - name: Checkout MetaEd-js
       uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       with:
-        repository: Ed-Fi-Closed/MetaEd-js
+        repository: Ed-Fi-Alliance-OSS/MetaEd-js
         path: MetaEd-js/
-        token: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
 
     - name: Checkout Ed-Fi-Model
       uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -67,7 +60,7 @@ jobs:
         path: Ed-Fi-Model/
         ref: ${{env.DATASTANDARD_VERSION}}
 
-    - name: Is pull request branch exists in Ed-Fi-Model
+    - name: Confirm that pull request branch exists in Ed-Fi-Model
       shell: pwsh
       working-directory: ./Ed-Fi-Model/
       run: |

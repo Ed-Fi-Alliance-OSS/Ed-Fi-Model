@@ -1,0 +1,77 @@
+name: Publish Release Package
+
+on:
+  release:
+    types:
+      - released
+  workflow_dispatch:
+
+permissions: read-all
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+  
+env:
+  REPOSITORY_DISPATCH_BRANCH: ${{ github.event.client_payload.branch }}
+  REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
+  ARTIFACTS_API_KEY: ${{ secrets.AZURE_ARTIFACTS_PERSONAL_ACCESS_TOKEN }}
+  NPM_REGISTRY: ${{ vars.NPM_REGISTRY }}
+
+jobs:
+  Publish-Release:
+
+    runs-on: ubuntu-latest
+
+    name:  Publish Release Package
+    steps:
+    - name: Check for Azure token
+      if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.ARTIFACTS_API_KEY == '' }}
+      run: | 
+        echo "::error::Missing Azure Token"
+        exit 1
+
+    - name: Checkout Ed-Fi-Model
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        ref: ${{ github.event.release.tag_name }}
+
+    - name: Set the version from the release tag
+      run: |
+        version=$(echo ${{ github.event.release.tag_name }} | sed 's/.*-//')
+        echo "Version set to $version"
+
+        npx lerna version $version --no-push --yes --no-git-tag-version --force-publish
+
+    # Note that the version number is not being committed into the repository,
+    # because we are working from a tag and it would be difficult to get back to
+    # the correct branch.
+
+    - name: Create package
+      # Explicit step is not required for publishing, but it allows us to upload artifacts
+      run: npm pack --workspaces
+
+    - name: Upload npm package as artifact
+      uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b # v4.5
+      with:
+        name: ${{ github.event.release.tag_name }}
+        path: ${{ github.workspace }}/*.tgz
+
+    - name: Create .npmrc for Azure Artifacts publishing
+      if: ${{ env.ARTIFACTS_API_KEY != '' }} 
+      run: |
+          echo "Configuring .npmrc for ${{ env.NPM_REGISTRY }}"
+          set +x  # disable echo to shell so that the base64-encoded API key never escapes into the log.
+
+          # Create the user .npmrc file with proper settings
+          API_KEY=`echo -n "${{ env.ARTIFACTS_API_KEY }}" | base64`
+          touch $HOME/.npmrc
+          echo "; begin auth token" >> $HOME/.npmrc
+          echo ${{ env.NPM_REGISTRY }}:username=ed-fi-alliance >> $HOME/.npmrc
+          echo ${{ env.NPM_REGISTRY }}:_password=$API_KEY >> $HOME/.npmrc
+          echo ${{ env.NPM_REGISTRY }}:email=techsupport@ed-fi.org >> $HOME/.npmrc
+          echo "; end auth token" >> $HOME/.npmrc
+
+    - name: Publish to Azure DevOps npm registry
+      if: ${{ env.ARTIFACTS_API_KEY != '' }}
+      run: npm publish --workspaces

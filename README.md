@@ -1,6 +1,13 @@
 # Ed-Fi-Model
 
-Package containing the MetaEd grammar files for the Ed-Fi Data Standard.
+This repository contains the MetaEd grammar files for the Ed-Fi Data Standard.
+
+## Overview
+
+Ed-Fi-Model provides the core data definitions for the Ed-Fi Data Standard,
+enabling interoperability and data exchange in education technology systems. The
+MetaEd grammar files define entities, associations, and extensions used
+throughout the Ed-Fi ecosystem.
 
 ## Authoring
 
@@ -8,28 +15,42 @@ Install the MetaEd extension in Visual Studio. See
 [MetaEd IDE](https://docs.ed-fi.org/reference/metaed) documentation for more
 information.
 
-## Build Script
+## Command Line Operations
 
-If you have NodeJs installed, you can perform the MetaEd > Build operation
-directly at the command line, without needing to open the MetaEd IDE.
+These instructions are only necessary when trying to perform command line
+operations, outside of the MetaEd IDE.
+
+### Prerequisites
+
+* [Node.js](https://nodejs.org/) (LTS recommended)
+
+### Installation
+
+Install dependencies using npm:
 
 ```shell
-# One time dependency installation
 npm install
+```
 
-# Alternative: force download of the latest MetaEd
+Or, to ensure a clean install of the latest dependencies:
+
+```shell
 npm ci
+```
 
-# Run the build process
+### Building the Project
+
+You can build the MetaEd grammar files directly from the command line:
+
+```shell
 npm start
 ```
 
-The output is formatted for use in Visual Studio and looks a little confusing at
-first. You will see that each line is a JSON object, and you will see embedded
-color codes such as `\u001b[90m`. The color coding does not work when running
-this way; please ignore that. Each line has a `level` listed; look for
-`"level":"error"`. These _must_ be corrected. There are also warnings about
-deprecation, which in this context you can ignore.
+#### Output
+
+The build output is formatted for use in Visual Studio Code and consists of JSON log lines. You may see embedded color codes such as `\u001b[90m`—these can be ignored in plain text output. Each log line includes a `level` property; pay attention to lines with `"level":"error"` as these must be addressed. Warnings about deprecation can generally be ignored in this context.
+
+Example output:
 
 ```shell
 {"level":"info","message":"- edfiUnified, tech version 7.3.0"}
