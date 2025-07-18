@@ -31,7 +31,7 @@ jobs:
     name:  Publish Pre-Release Package
     steps:
     - name: Check for Azure token
-      if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Alliance-OSS' && env.ARTIFACTS_API_KEY == '' }}
+      if: ${{ env.REPOSITORY_OWNER == 'Ed-Fi-Closed' && env.ARTIFACTS_API_KEY == '' }}
       run: | 
         echo "::error::Missing Azure Token"
         exit 1
