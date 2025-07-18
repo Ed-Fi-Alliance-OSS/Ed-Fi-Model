@@ -4,19 +4,58 @@ Domain StudentAcademicRecord
 * A student transcript contains information about course-level grades and credits. A student transcript consists of a StudentAcademicRecord associated with each Session which has aCourseTranscript for each course taken.
 * Report cards contain information for grading period grades and competencies. A report card consists of a ReportCard entity for each GradingPeriod. A Grade is associated with each Section entity.
 * Gradebook contains grades and competencies for classroom quizzes, tests, homework, and projects. An assignment in a Gradebook is represented as a GradebookEntry. Each student's score for that entry is a StudentGradebookEntry which can be a grade or a CompetencyLevelDescriptor."
+    descriptor AcademicSubject
+    descriptor AccreditationStatus
+    descriptor AdministrativeFundingControl
+    descriptor AssignmentLateStatus
+    descriptor CareerPathway
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
+    descriptor CompetencyLevel
     domain entity CompetencyObjective
     domain entity Course
+    descriptor CourseAttemptResult
+    descriptor CourseDefinedBy
+    descriptor CourseGPAApplicability
+    descriptor CourseLevelCharacteristic
     domain entity CourseOffering
+    descriptor CourseRepeatCode
     domain entity CourseTranscript
+    descriptor CreditCategory
+    descriptor CurriculumUsed
+    descriptor EducationalEnvironment
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor FederalLocaleCode
     domain entity Grade
     domain entity GradebookEntry
+    descriptor GradebookEntryType
+    descriptor GradeLevel
+    descriptor GradeType
     domain entity GradingPeriod
+    descriptor GradingPeriod
+    descriptor InternetAccess
+    descriptor Language
     domain entity LearningStandard
+    descriptor LearningStandardCategory
+    descriptor LearningStandardScope
+    descriptor MagnetSpecialProgramEmphasisSchool
+    descriptor MediumOfInstruction
+    descriptor MethodCreditEarned
+    descriptor OperationalStatus
+    descriptor PerformanceBaseConversion
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
     domain entity ReportCard
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolType
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
     domain entity Session
     domain entity Student
     domain entity StudentAcademicRecord
@@ -24,3 +63,6 @@ Domain StudentAcademicRecord
     domain entity StudentGradebookEntry
     association StudentProgramAssociation
     association StudentSectionAssociation
+    descriptor SubmissionStatus
+    descriptor Term
+    descriptor TitleIPartASchoolDesignation

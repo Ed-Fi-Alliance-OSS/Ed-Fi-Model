@@ -1,10 +1,28 @@
 Subdomain Gradebook of StudentAcademicRecord
     documentation "An individual assignment in a gradebook is represented as a GradebookEntry. A GradebookEntry may be mapped to LearningStandards. Each student's score for that entry is a StudentGradebookEntry which can be a grade or a CompetencyLevel."
+    descriptor AcademicSubject
+    descriptor AssignmentLateStatus
+    descriptor CareerPathway
+    descriptor CompetencyLevel
     domain entity Course
+    descriptor CourseDefinedBy
+    descriptor CourseGPAApplicability
+    descriptor CourseLevelCharacteristic
+    descriptor EducationalEnvironment
     domain entity GradebookEntry
+    descriptor GradebookEntryType
+    descriptor GradeLevel
+    descriptor Language
     domain entity LearningStandard
+    descriptor LearningStandardCategory
+    descriptor LearningStandardScope
+    descriptor MediumOfInstruction
+    descriptor PopulationServed
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
     domain entity Student
     domain entity StudentGradebookEntry
     association StudentSectionAssociation
+    descriptor SubmissionStatus
     position 3

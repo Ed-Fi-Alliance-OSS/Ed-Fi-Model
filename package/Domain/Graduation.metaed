@@ -4,11 +4,28 @@ Domain Graduation
 * A GraduationPlan entity represents either a generic graduation plan for all or many students or an individualized graduation plan. The GraduationPlan supports several levels of detail, including overall credit requirements, credits by subject area, or down to specific courses to be taken.
 * A PostSecondaryEvent entity represents significant postsecondary education information, such as college applications, remedial course enrollment, acceptances, and detailed postsecondary institution information.
 * A Diploma element represents graduation certificate information with associated honors and other recognitions as part of the StudentAcademicRecord."
+    descriptor AccreditationStatus
+    descriptor AdministrativeFundingControl
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor FederalLocaleCode
+    descriptor GradeLevel
     domain entity GraduationPlan
+    descriptor GraduationPlanType
+    descriptor MagnetSpecialProgramEmphasisSchool
+    descriptor MediumOfInstruction
+    descriptor OperationalStatus
     domain entity PostSecondaryEvent
+    descriptor PostSecondaryEventCategory
     domain entity PostSecondaryInstitution
+    descriptor PostSecondaryInstitutionLevel
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolType
     domain entity Student
     domain entity StudentAcademicRecord
     association StudentSchoolAssociation
+    descriptor Term
+    descriptor TitleIPartASchoolDesignation

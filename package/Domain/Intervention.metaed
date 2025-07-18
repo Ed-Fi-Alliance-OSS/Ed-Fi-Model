@@ -5,15 +5,29 @@ Domain Intervention
 * Intervention is a specific implementation of an instructional approach, outlined in an InterventionPrescription, with one or more students in a Cohort. Interventions may be one-time actions or recurring actions overtime. Interventions typically have assigned Staff. AttendanceEvents may be captured for Interventions.
 * EducationContent metadata may be linked to InterventionPrescriptions and/or Interventions. The EducationContent includes descriptive information about the content conforming to the Learning Resource MetadataInitiative (LRMI).
 * StudentInterventionAssociation links Students to Interventions in which they participate. The effectiveness of an Intervention for a given Student is also captured. Data about a formal InterventionStudy for an InterventionPrescription may also be associated."
+    descriptor AcademicSubject
+    descriptor AncestryEthnicOrigin
+    descriptor DeliveryMethod
+    descriptor Diagnosis
     domain entity Cohort
     domain entity EducationContent
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
     association EducationOrganizationInterventionPrescriptionAssociation
+    descriptor GradeLevel
     domain entity Intervention
+    descriptor InterventionClass
     domain entity InterventionPrescription
     domain entity InterventionStudy
+    descriptor LevelOfEducation
+    descriptor OperationalStatus
+    descriptor PopulationServed
+    descriptor Race
+    descriptor Sex
     domain entity Staff
+    descriptor StateAbbreviation
     domain entity Student
     association StudentCohortAssociation
     association StudentInterventionAssociation
     domain entity StudentInterventionAttendanceEvent
+    descriptor TribalAffiliation

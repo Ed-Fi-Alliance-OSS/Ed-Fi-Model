@@ -4,6 +4,7 @@ Domain AssessmentRegistration
 * Educational Organizations that are assigned to administer or participate to the assessment, and are responsible for testing and/or reporting.
 * AssessmentBatteryPart that are parts of the assessment for administering and later reporing composite scores.
 * StudentEducationOrganizationAssessmentAccommodation that describe special accommodation needs of student during the administration of assessment."
+    descriptor Accommodation
     domain entity AssessmentAdministration
     domain entity AssessmentAdministrationParticipation
     domain entity StudentAssessmentRegistration
@@ -12,4 +13,6 @@ Domain AssessmentRegistration
     association StudentAssessmentRegistrationBatteryPartAssociation
     common AdministrationPointOfContact
     common AssessmentCustomization
+    descriptor GradeLevel
     common Period
+    descriptor PlatformType

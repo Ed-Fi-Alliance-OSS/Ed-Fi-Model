@@ -4,11 +4,38 @@ Domain AlternativeAndSupplementalServices
 * A Program entity defines programs with services offered by an education organization.
 * A StudentProgramAssociation links Program entities to participating students.
 * A StaffProgramAssociation links Program entities to assigned staff."
+    descriptor AcademicSubject
+    descriptor AccreditationStatus
+    descriptor AdministrativeFundingControl
+    descriptor AncestryEthnicOrigin
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
+    descriptor CourseLevelCharacteristic
+    descriptor EducationalEnvironment
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor FederalLocaleCode
     association GeneralStudentProgramAssociation
+    descriptor GradeLevel
+    descriptor InternetAccess
+    descriptor Language
+    descriptor LevelOfEducation
+    descriptor MagnetSpecialProgramEmphasisSchool
+    descriptor MediumOfInstruction
+    descriptor OperationalStatus
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramType
+    descriptor ProgramSponsor
+    descriptor Race
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolType
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
+    descriptor Sex
     domain entity Staff
     association StaffProgramAssociation
     domain entity Student
@@ -27,6 +54,8 @@ Domain AlternativeAndSupplementalServices
     association StudentSpecialEducationProgramAssociation
     association StudentSpecialEducationProgramEligibilityAssociation    
     association StudentTitleIPartAProgramAssociation
+    descriptor TitleIPartASchoolDesignation
+    descriptor TribalAffiliation
     footer documentation
 "# Alternative and Supplemental Services Subdomains
 

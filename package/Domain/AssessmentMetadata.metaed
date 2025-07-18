@@ -2,9 +2,24 @@ Subdomain AssessmentMetadata of Assessment
     documentation
 "Assessment metadata is information describing the assessment instrument itself. 
 * There are two options to associate an Assessment which are mutually exclusive: by Section and by Program. For example, if an Assessment is defined to assess Common Core Standards, then the association shall be with Section, on the other hand if the Assessment is defined to assess the Developmental Domains by an Early Learning program, then the association shall be with Program."
+    descriptor AcademicSubject
     domain entity Assessment
+    descriptor AssessmentCategory
     domain entity AssessmentItem
+    descriptor AssessmentItemCategory
+    descriptor CourseLevelCharacteristic
+    descriptor EducationalEnvironment
+    descriptor GradeLevel
+    descriptor Language
+    descriptor MediumOfInstruction
     domain entity ObjectiveAssessment
+    descriptor PlatformType
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
     position 2

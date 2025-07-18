@@ -4,12 +4,35 @@ Domain Assessment
 * Learning Standards that drive the curriculum and the assessments
 * Assessment Metadata that describe the assessment
 * Student Assessment Results that follow a parallel structure of StudentAssessment, StudentObjectiveAssessment, and StudentAssessmentItem"
+    descriptor AcademicSubject
+    descriptor Accommodation
+    descriptor AdministrationEnvironment
     domain entity Assessment
+    descriptor AssessmentCategory
+    descriptor AssessmentItemCategory
     domain entity AssessmentItem
+    descriptor AssessmentReportingMethod
+    descriptor CourseLevelCharacteristic
+    descriptor EducationalEnvironment
+    descriptor EventCircumstance
+    descriptor GradeLevel
+    descriptor Language
     domain entity LearningStandard
+    descriptor LearningStandardCategory
+    descriptor LearningStandardScope
+    descriptor MediumOfInstruction
     domain entity ObjectiveAssessment
+    descriptor PlatformType
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
+    descriptor ReasonNotTested
+    descriptor RetestIndicator
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
     domain entity Student
     domain entity StudentAssessment
     domain entity AssessmentScoreRangeLearningStandard

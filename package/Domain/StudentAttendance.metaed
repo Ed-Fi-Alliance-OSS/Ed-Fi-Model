@@ -3,11 +3,35 @@ Domain StudentAttendance
 "The Student Attendance domain represents both daily and classperiod (section) attendance. This model supports two approaches for collecting attendance data:
 * One attendance event for each student-section (or each student-day), reporting both attendance and absences
 * ""Exception only"" reporting, providing attendance events only for absences and tardies"
+    descriptor AcademicSubject
+    descriptor AccreditationStatus
+    descriptor AdministrativeFundingControl
+    descriptor AncestryEthnicOrigin
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
+    descriptor CourseLevelCharacteristic
+    descriptor EducationalEnvironment
+    descriptor FederalLocaleCode
+    descriptor GradeLevel
+    descriptor InternetAccess
+    descriptor Language
+    descriptor LevelOfEducation
+    descriptor MagnetSpecialProgramEmphasisSchool
+    descriptor PopulationServed 
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
+    descriptor Race
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolType
     domain entity Section
     domain entity SectionAttendanceTakenEvent
+    descriptor SectionCharacteristic
+    descriptor SectionType
     domain entity Session
+    descriptor Sex
     domain entity Staff
     domain entity Student
     association StudentProgramAssociation
@@ -15,3 +39,6 @@ Domain StudentAttendance
     domain entity StudentSchoolAttendanceEvent
     association StudentSectionAssociation
     domain entity StudentSectionAttendanceEvent
+    descriptor Term
+    descriptor TitleIPartASchoolDesignation
+    descriptor TribalAffiliation

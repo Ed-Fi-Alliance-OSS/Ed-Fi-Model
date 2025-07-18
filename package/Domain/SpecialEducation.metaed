@@ -1,11 +1,39 @@
 Domain SpecialEducation
     documentation
 "The Special Education subdomain of the Alternative and Supplemental Services domain extends the StudentProgramAssociation. A StudentSpecialEducationProgramAssociation entity provides important information about the student's participation in the Special Education Program, such as the service provider, key Individualized Education Program dates, and data about the nature of the student's disability. In addition, a RestraintEvents entity is included to represent information about special education medical restraint occurrences related to a student."
+    descriptor AcademicSubject
+    descriptor AccreditationStatus
+    descriptor AdministrativeFundingControl
+    descriptor AncestryEthnicOrigin
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
+    descriptor CourseLevelCharacteristic
+    descriptor EducationalEnvironment
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor FederalLocaleCode
+    descriptor GradeLevel
+    descriptor InternetAccess
+    descriptor Language
+    descriptor LevelOfEducation
+    descriptor MagnetSpecialProgramEmphasisSchool
+    descriptor MediumOfInstruction
+    descriptor OperationalStatus
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
+    descriptor Race
     domain entity RestraintEvent
+    descriptor RestraintEventReason
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolType
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
+    descriptor Sex
     domain entity Staff
     association StaffSectionAssociation
     association StaffProgramAssociation
@@ -16,3 +44,5 @@ Domain SpecialEducation
     association StudentSectionAssociation
     domain entity StudentSectionAttendanceEvent
     association StudentSpecialEducationProgramAssociation
+    descriptor TitleIPartASchoolDesignation
+    descriptor TribalAffiliation

@@ -1,13 +1,33 @@
 Subdomain ReportCard of StudentAcademicRecord
     documentation "A Student has a ReportCard for each GradingPeriod. A Grade is associated with each Section. For early grade levels, a StudentCompetencyObjective is assigned to CompetencyObjectives, for example, assigning a ""Satisfactory"" for ""Participates in class discussions."""
+    descriptor AcademicSubject
+    descriptor CompetencyLevel
     domain entity CompetencyObjective
+    descriptor CourseLevelCharacteristic
+    descriptor EducationalEnvironment
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
     domain entity Grade
+    descriptor GradeLevel
+    descriptor GradeType
     domain entity GradingPeriod
+    descriptor GradingPeriod
+    descriptor Language
     domain entity LearningStandard
+    descriptor LearningStandardCategory
+    descriptor LearningStandardScope
+    descriptor MediumOfInstruction
+    descriptor OperationalStatus
+    descriptor PerformanceBasedConversion
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
     domain entity ReportCard
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
     domain entity Student    
     domain entity StudentCompetencyObjective
     association StudentProgramAssociation

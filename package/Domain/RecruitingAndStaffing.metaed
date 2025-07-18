@@ -6,8 +6,22 @@ Domain RecruitingAndStaffing
 * An ApplicantProfile entity is to capture the details about the person making the application. These details consist of demographic, communicational and professional/academic information.
 * An Application entity includes information about the pursue and pursuer of the employment and acceptance.
 * An ApplicationEvent is to capture information about the lifecycle of the event associated with the pursue of employment or acceptance."
-	domain entity RecruitmentEvent
-	domain entity RecruitmentEventAttendance
-	domain entity ApplicantProfile
+	descriptor AcademicSubject
 	domain entity Application
 	domain entity ApplicationEvent
+	descriptor ApplicationEventResult
+	descriptor ApplicationEventType
+	descriptor ApplicationSource
+	descriptor ApplicationStatus
+	domain entity ApplicantProfile
+	descriptor HireStatus
+	descriptor LevelOfEducation
+	descriptor Race
+	domain entity RecruitmentEvent
+	descriptor RecruitmentEventType
+	domain entity RecruitmentEventAttendance
+	descriptor RecruitmentEventAttendeeType
+	descriptor Sex
+	descriptor Term
+	descriptor WithdrawReason
+	

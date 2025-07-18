@@ -2,15 +2,35 @@ Domain Enrollment
     documentation
 "The Enrollment domain represents students' enrollments in schools, as specifically designated by the StudentSchoolAssociation. The model supports the two cases of where a student is limited to be enrolled only in one school at a time or cases where a state may have policies supporting multiple school enrollments. The semantics assume that a separate StudentSchoolAssociation is provided for each grade level for each student; in other words, a student is withdrawn in the previous grade level and enrolled in the next grade level when promoted.
 For associations between a student and a school or LEA that is *not* enrollment(e.g., school of accountability), the StudentEducationOrganizationAssociation is defined."
+    descriptor AccreditationStatus
     domain entity AccountabilityRating
-    domain entity EducationOrganization
-    domain entity GraduationPlan
+    descriptor AdministrativeFundingControl
+    descriptor AidType
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
     domain entity CrisisEvent
+    descriptor CrisisType
+    domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor FederalLocaleCode
+    domain entity FinancialAid
+    descriptor GradeLevel
+    domain entity GraduationPlan
+    descriptor GraduationPlanType
+    descriptor InternetAccess
     domain entity LocalEducationAgency
+    descriptor LocalEducationAgencyCategory
+    descriptor MagnetSpecialProgramEmphasisSchool
+    descriptor OperationalStatus
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolType
     domain entity Student
     association StudentEducationOrganizationResponsibilityAssociation
     association StudentEducationOrganizationAssociation
     association StudentSchoolAssociation
     domain entity StudentTransportation
-    domain entity FinancialAid
+    descriptor TitleIPartASchoolDesignation
+    descriptor TransportationPublicExpenseEligibilityType
+    descriptor TransportationType
+

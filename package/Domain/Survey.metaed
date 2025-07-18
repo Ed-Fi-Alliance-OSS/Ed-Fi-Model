@@ -3,15 +3,40 @@ Domain Survey
     * Survey, SurveySection, and SurveyQuestion that describe the survey.
     * Survey responses that follow a parallel structure of SurveyResponse, SurveySectionResponse, and SurveyQuestionResponse.
     * Associations to tie Survey and SurveyResponse domain entities to Course, Section, Program, Target EducationOrganization, and Target Staff."
+    descriptor AcademicSubject
+    descriptor AncestryEthnicOrigin
+    descriptor CareerPathway
+    descriptor CompetencyLevel
     domain entity Contact
     domain entity Course
+    descriptor CourseDefinedBy
+    descriptor CourseGPAApplicability
+    descriptor CourseLevelCharacteristic
+    descriptor EducationalEnvironment
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor GradeLevel
+    descriptor Language
+    descriptor LevelOfEducation
+    descriptor MediumOfInstruction
+    descriptor OperationalStatus
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
+    descriptor QuestionForm
+    descriptor Race
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
     domain entity Session
+    descriptor Sex
     domain entity Staff
     domain entity Student
     domain entity Survey
+    descriptor SurveyCategory
+    descriptor SurveyLevel
     domain entity SurveyQuestion
     domain entity SurveyQuestionResponse
     domain entity SurveyResponse
@@ -26,3 +51,5 @@ Domain Survey
     association SurveySectionResponseEducationOrganizationTargetAssociation
     association SurveySectionResponsePersonTargetAssociation
     association SurveySectionResponseStaffTargetAssociation
+    descriptor Term
+    descriptor TribalAffiliation
