@@ -38,5 +38,3 @@ Domain Assessment
     domain entity AssessmentScoreRangeLearningStandard
     domain entity LearningStandardEquivalenceAssociation
     association StudentAssessmentEducationOrganizationAssociation
-    common StudentAssessmentItem
-    common StudentObjectiveAssessment

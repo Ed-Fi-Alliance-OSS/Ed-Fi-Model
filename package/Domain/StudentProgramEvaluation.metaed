@@ -11,6 +11,4 @@ Subdomain StudentProgramEvaluation of TeachingAndLearning
     descriptor ProgramEvaluationType
     descriptor ProgramType
     descriptor RatingLevel
-    common StudentEvaluationElement
-    common StudentEvaluationObjective
     domain entity StudentProgramEvaluation

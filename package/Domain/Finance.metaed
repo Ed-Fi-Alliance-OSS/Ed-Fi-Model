@@ -32,4 +32,3 @@ Domain Finance
     domain entity Staff
     domain entity SourceDimension
     descriptor TribalAffiliation
-    common ReportingTag

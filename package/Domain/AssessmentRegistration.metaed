@@ -11,8 +11,5 @@ Domain AssessmentRegistration
     domain entity AssessmentBatteryPart
     domain entity StudentEducationOrganizationAssessmentAccommodation
     association StudentAssessmentRegistrationBatteryPartAssociation
-    common AdministrationPointOfContact
-    common AssessmentCustomization
     descriptor GradeLevel
-    common Period
     descriptor PlatformType
