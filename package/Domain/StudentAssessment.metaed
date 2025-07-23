@@ -12,6 +12,4 @@ The student's assessment results follow a similar structure to the assessment me
 * StudentAssessmentItem optionally holds the student's score for individual AssessmentItems. If the assessment metadata includesAssessmentItems, then there would be corresponding StudentAssessmentItems for each student."
     domain entity Student
     domain entity StudentAssessment
-    domain entity StudentAssessmentItem
-    domain entity StudentObjectiveAssessment
     position 3
