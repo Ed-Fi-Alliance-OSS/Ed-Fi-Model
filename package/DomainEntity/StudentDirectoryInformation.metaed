@@ -1,4 +1,4 @@
-Domain Entity StudentContactInformation
+Domain Entity StudentDirectoryInformation
 documentation "The contact information associated to a student."
     domain entity Student
         documentation "A reference to the student."
