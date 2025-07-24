@@ -15,8 +15,8 @@ Domain Staff
     domain entity OpenStaffPositionEvent
     domain entity School
     domain entity Staff
-    domain entity StaffContactInformation
-    domain entity StaffDemographics
+    domain entity StaffDirectoryInformation
+    domain entity StaffDemographicInformation
     association StaffEducationOrganizationAssignmentAssociation
     association StaffEducationOrganizationEmploymentAssociation
     domain entity StaffIdentity
