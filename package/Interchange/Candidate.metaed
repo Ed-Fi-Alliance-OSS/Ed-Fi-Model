@@ -5,6 +5,7 @@ Interchange Candidate
   domain entity Credential
   domain entity Student
   domain entity Candidate
+  domain entity CandidateIdentity
   domain entity StudentAcademicRecord
   domain entity CourseTranscript
   domain entity FieldworkExperience
