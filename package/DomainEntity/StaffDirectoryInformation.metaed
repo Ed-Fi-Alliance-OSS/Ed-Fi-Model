@@ -1,4 +1,4 @@
-Domain Entity StaffContactInformation
+Domain Entity StaffDirectoryInformation
 documentation "The contact information associated to a staff member."
     domain entity Staff
         documentation "A reference to the staff member."
