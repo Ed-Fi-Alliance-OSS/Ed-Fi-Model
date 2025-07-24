@@ -1,22 +1,22 @@
-Domain Entity StudentDemographics
-documentation "The demographic information associated to a student."
-    domain entity Student
-        documentation "A reference to the student."
+Domain Entity StaffDemographicInformation
+documentation "The demographic information associated to a Staff member"
+    domain entity Staff
+        documentation "A reference to the Staff member."
         is part of identity
     domain entity EducationOrganization
-        documentation "A reference ot the education organization representing the context of the student information."
+        documentation "A reference ot the education organization representing the context of the Staff information."
         is part of identity
     descriptor Sex
-        documentation "The student's birth sex as reported to the education organization."
+        documentation "The Staff's birth sex as reported to the education organization."
         is optional
     shared string GenderIdentity
-        documentation "The student's gender as last reported to the education organization."
+        documentation "The Staff's gender as last reported to the education organization."
         is optional
     descriptor Race
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with the which the individual most identifies as last reported to the education organization. The data model allows for multiple entries so that each individual can specify all appropriate races."
         is optional collection
     bool HispanicLatinoEthnicity
-        deprecated "This element is scheduled for removal by 2029. Users of this element are advised to use Race."
+        deprecated "This element is scheduled for removal by 2029. users of this element are advised to use Race instead."
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race, as last reported to the education organization. The term ""Spanish origin"", can be used in addition to ""Hispanic or Latino""."
         is optional
     descriptor AncestryEthnicOrigin
@@ -26,17 +26,8 @@ documentation "The demographic information associated to a student."
         documentation "Contains information relative to U.S. citizenship status and its associated probationary documentation."
         is optional
     descriptor TribalAffiliation
-        documentation "An American Indian tribe with which the student is affiliated as last reported to the education organization."
+        documentation "An American Indian tribe with which the Staff is affiliated as last reported to the education organization."
         is optional collection
-    descriptor LimitedEnglishProficiency
-        documentation "An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient."
-        is optional
     common Language
         documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 languages codes."
         is optional collection
-    common Disability
-        documentation "The disability condition(s) that best describes an individual's impairment, as determined by evaluation(s) conducted by the education organization."
-        is optional collection
-    descriptor SupporterMilitaryConnection
-        documentation "Military connection of the person/people whom the student is a dependent of."
-        is optional
