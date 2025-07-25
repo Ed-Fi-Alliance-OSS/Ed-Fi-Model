@@ -1,4 +1,4 @@
-Domain Entity StaffDemographicInformation
+Domain Entity StaffDemographic
 documentation "The demographic information associated to a Staff member"
     domain entity Staff
         documentation "A reference to the Staff member."

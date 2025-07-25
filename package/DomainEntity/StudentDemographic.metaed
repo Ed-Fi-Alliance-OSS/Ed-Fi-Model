@@ -1,4 +1,4 @@
-Domain Entity StudentDemographicInformation
+Domain Entity StudentDemographic
 documentation "The demographic information associated to a student."
     domain entity Student
         documentation "A reference to the student."

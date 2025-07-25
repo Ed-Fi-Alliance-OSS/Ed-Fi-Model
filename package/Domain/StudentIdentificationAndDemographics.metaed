@@ -7,8 +7,8 @@ Domain StudentIdentificationAndDemographics
     domain entity Contact
     domain entity ContactIdentity  
     domain entity Student
-    domain entity StudentDirectoryInformation
-    domain entity StudentDemographicInformation
+    domain entity StudentDirectory
+    domain entity StudentDemographic
     domain entity StudentIdentity
     domain entity Person
     association StudentContactAssociation
