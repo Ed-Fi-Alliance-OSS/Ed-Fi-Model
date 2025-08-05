@@ -14,6 +14,7 @@ Domain EducationOrganization
     domain entity CommunityProviderLicense
     domain entity DescriptorMapping
     domain entity EducationOrganization
+    domain entity EducationOrganizationIdentity
     domain entity EducationOrganizationNetwork
     association EducationOrganizationNetworkAssociation
     association EducationOrganizationPeerAssociation
