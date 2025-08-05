@@ -5,10 +5,10 @@ Domain EducatorPreparationProgram
 * A EducatorPreparationProgram entity is for the details of the program and accreditation.
 * A FieldworkExperience entity is to capture information about the field experience enrolled students have in a postsecondary instructional course."
 	domain entity Candidate
+	association CandidateEducatorPreparationProgramAssociation
+	domain entity CandidateIdentity
+	association CandidateRelationshipToStaffAssociation
 	domain entity EducatorPreparationProgram
 	domain entity FieldworkExperience
-
-	association CandidateEducatorPreparationProgramAssociation
-	association CandidateRelationshipToStaffAssociation
 	association FieldworkExperienceSectionAssociation
 	association StaffEducatorPreparationProgramAssociation

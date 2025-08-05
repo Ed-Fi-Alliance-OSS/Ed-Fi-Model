@@ -13,11 +13,9 @@ Domain Entity Candidate
       documentation "Other names associated with a person."
       is optional collection
   descriptor Sex
-      deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateDemographics entity."
       documentation "The sex of the person."
       is required
   shared string GenderIdentity
-        deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateDemographics entity."
         documentation "The gender the candidate identifies themselves as."
         is optional
   inline common BirthData
@@ -46,29 +44,24 @@ Domain Entity Candidate
       documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
       is optional
   descriptor Race
-      deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateDemographics entity."
       documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races."
       is optional collection
   inline common Citizenship
       documentation "Contains information relative to citizenship status and its associated probationary documentation."
       is optional
   bool EconomicDisadvantaged
-      deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateDemographics entity."
       documentation "An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy."
       is optional
   common CandidateCharacteristic
       documentation "Reflects important characteristics of the candidate."
       is optional collection
   descriptor LimitedEnglishProficiency
-      deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateDemographics entity."
       documentation "Indicates whether the individual has been identified as limited English proficient (LEP) by the Language Proficiency Assessment Committee (LPAC), or is English proficient."
       is optional
   common Language
-      deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateDemographics entity."
       documentation "The language(s) the individual uses to communicate."
       is optional collection
   common Disability
-      deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateDemographics entity."
       documentation "The disability condition(s) that best describes an individual's impairment."
       is optional collection
   shared string DisplacementStatus
