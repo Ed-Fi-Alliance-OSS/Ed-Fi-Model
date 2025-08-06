@@ -7,6 +7,8 @@ Interchange StaffAssociation [2523]
     5. Exchange staff leave events.
     6. Exchange current or historical information on filling open staff positions."
     domain entity Staff [2523-001]
+    domain entity StaffDemographic
+    domain entity StaffDirectory
     domain entity StaffIdentity
     association StaffEducationOrganizationEmploymentAssociation [2523-002]
     association StaffEducationOrganizationAssignmentAssociation [2523-003]

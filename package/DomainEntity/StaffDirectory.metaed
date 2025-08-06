@@ -9,12 +9,12 @@ documentation "The contact information associated to a staff member."
     common Address
         documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
         is optional collection
+    common ElectronicMail
+        documentation "The numbers, letters, and symbols used to identify an electronic email (e-mail) user within the network to which the individual or organization belongs."
+        is optional collection
     common InternationalAddress
         documentation "The set of elements that describes an international address."
         is optional collection
     common Telephone
         documentation "The 10-digit telephone number, including the area code, for the person."
-        is optional collection
-    common ElectronicMail
-        documentation "The numbers, letters, and symbols used to identify an electronic email (e-mail) user within the network to which the individual or organization belongs."
         is optional collection
