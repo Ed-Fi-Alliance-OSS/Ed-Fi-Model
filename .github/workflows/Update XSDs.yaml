@@ -1,0 +1,151 @@
+name: Update XSDs
+
+on:
+  push:
+    branches: [ "DS-6.0.0-ME-3.0.0" ]
+  workflow_dispatch:
+    inputs:
+      pr_base_branch:
+        description: 'The base branch used for the PR in the Ed-Fi-Data-Standard repository. Leave empty to try to infer it.'
+        required: false
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+  
+env:
+  PROJECT_VERSION: "6.0.0"
+  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 6.0.0"
+  TECHNOLOGY_VERSION: "7.3.0"
+  REF_NAME: ${{ GITHUB.REF_NAME }}
+
+  # Commits pushed to this branch (key) in the Ed-Fi-Model repo will use this base branch (value) for the PR in the Ed-Fi-Data-Standard repo:
+  # Remember to also update the workflow's trigger above.
+  DS-6.0.0-ME-3.0.0: "v6.0.0"
+
+jobs:
+  Update-XSDs:
+    name: Update XSDs
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+    - name: Calculate the base branch name for the PR
+      run: |
+        $inputBaseBranch = "${{ inputs.pr_base_branch }}"
+        if (-not [string]::IsNullOrEmpty($inputBaseBranch)) {
+          Write-Host "Will use '$inputBaseBranch' as the base branch"
+          echo "BASE_BRANCH=$inputBaseBranch" >> $env:GITHUB_ENV
+          return
+        }
+        
+        $baseBranch = [System.Environment]::GetEnvironmentVariable($env:REF_NAME)
+        if ([string]::IsNullOrEmpty($baseBranch)) {
+          throw "No base branch env mapping found for ref name: $env:REF_NAME"
+        }
+        
+        Write-Host "Will use '$baseBranch' as the base branch"
+        echo "BASE_BRANCH=$baseBranch" >> $env:GITHUB_ENV
+
+    - name: Checkout Ed-Fi-Data-Standard
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        repository: Ed-Fi-Alliance-OSS/Ed-Fi-Data-Standard
+        ref: ${{ env.BASE_BRANCH }}
+
+    - name: Checkout Ed-Fi-Model
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        repository: Ed-Fi-Closed/Ed-Fi-Model
+        path: Ed-Fi-Model/
+
+    - name: Checkout MetaEd-js
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        repository: Ed-Fi-Alliance-OSS/MetaEd-js
+        path: MetaEd-js/
+
+    - name: Create MetaEdConfig
+      working-directory: ./Ed-Fi-Model/    
+      run: |
+        ./eng/CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ env.TECHNOLOGY_VERSION }} -MetaEdExtensionName ""
+
+    - name: Print MetaEdConfig
+      run: |
+        $configFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ env.TECHNOLOGY_VERSION }}-DS-6.0.json"
+        
+        if (Test-Path $configFilePath) {
+            $jsonContent = Get-Content -Path $configFilePath | Out-String
+            Write-Host "MetaEd Configuration JSON Content:"
+            Write-Host $jsonContent
+        } else {
+            Write-Host "MetaEd configuration file does not exist at: $configFilePath"
+            exit 1
+        }
+
+    - name: Build the model 
+      working-directory: ./MetaEd-js/build/  
+      run: |
+            node index.js --config ./MetaEdConfig-API-${{ env.TECHNOLOGY_VERSION }}-DS-6.0.json -a
+
+            $fileCount = (Get-ChildItem "${{ github.workspace }}/MetaEdOutput" -ErrorAction SilentlyContinue | Measure-Object).Count
+
+            if ($fileCount -eq 0) {
+                throw "MetaEd build failed - there was no output. Review log above for more information."
+            }
+
+    - name: Copy updated XSDs
+      run: |
+        Import-Module '${{ github.workspace }}/Ed-Fi-Model/eng/XsdManagement.psm1'
+
+        Copy-UpdatedXsds `
+            -sourceDirectoryPaths @( `
+                '${{ github.workspace }}/MetaEdOutput/EdFi/XSD',
+                '${{ github.workspace }}/MetaEdOutput/EdFi/Interchange'
+            ) `
+            -targetDirectoryPath '${{ github.workspace }}/Schemas/Bulk'
+
+        $gitStatus = Get-GitStatus `
+          -edfiModelRepoPath '${{ github.workspace }}/Ed-Fi-Model' `
+          -edfiStandardRepoPath '${{ github.workspace }}'
+
+        Write-Output "HAS_CHANGES=$($gitStatus.hasChanges)" >> $env:GITHUB_ENV
+        Write-Output "LAST_EDFI_STANDARD_COMMIT_HASH=$($gitStatus.lastEdFiStandardCommitHash)" >> $env:GITHUB_ENV
+        Write-Output "LAST_EDFI_MODEL_COMMIT_HASH=$($gitStatus.lastEdFiModelCommitHash)" >> $env:GITHUB_ENV
+        Write-Output "LAST_EDFI_MODEL_COMMIT_HASH_SHORT=$($gitStatus.lastEdFiModelCommitHashShort)" >> $env:GITHUB_ENV
+        Write-Output "HEAD_BRANCH_NAME=$($gitStatus.headBranchName)" >> $env:GITHUB_ENV
+
+    - name: Create branch
+      env:
+        GITHUB_TOKEN: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+      run: |
+        # This step is needed because planetscale/ghcommit-action assumes that the branch already exists (it can't create it)
+        Import-Module '${{ github.workspace }}/Ed-Fi-Model/eng/XsdManagement.psm1'
+
+        Add-GithubBranch -commitHash $Env:LAST_EDFI_STANDARD_COMMIT_HASH -branchName $Env:HEAD_BRANCH_NAME
+
+    - name: Commit and push
+      uses: planetscale/ghcommit-action@d4176bfacef926cc2db351eab20398dfc2f593b5 #v0.2.0
+      if: env.HAS_CHANGES == 'true'
+      with:
+        commit_message: "Update XSD files"
+        repo: "Ed-Fi-Alliance-OSS/Ed-Fi-Data-Standard"
+        branch: ${{ env.HEAD_BRANCH_NAME }}
+        file_pattern: "Schemas/Bulk/*.xsd"
+      env:
+        GITHUB_TOKEN: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+
+    - name: Create PR
+      if: env.HAS_CHANGES == 'true'
+      env:
+        GH_TOKEN: ${{ secrets.PRIVATE_REPO_READ_TOKEN }}
+      run: |
+        Import-Module '${{ github.workspace }}/Ed-Fi-Model/eng/XsdManagement.psm1'
+
+        Open-PullRequest `
+            -lastEdFiModelCommitHash $env:LAST_EDFI_MODEL_COMMIT_HASH `
+            -lastEdFiModelCommitHashShort $env:LAST_EDFI_MODEL_COMMIT_HASH_SHORT `
+            -baseBranchName $env:BASE_BRANCH `
+            -headBranchName $env:HEAD_BRANCH_NAME
