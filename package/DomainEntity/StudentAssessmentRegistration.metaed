@@ -3,36 +3,36 @@ Domain Entity StudentAssessmentRegistration
     domain entity AssessmentAdministration
         documentation "A reference to the expected administration of an assessment."
         is part of identity
-    association StudentEducationOrganizationAssociation
-        documentation "A reference to the attending student education organization association."
+    domain entity StudentDemographic
+        documentation "The demographic information associated to a student."
         is part of identity
     association StudentSchoolAssociation
         documentation "A reference to the attending student school association that is active during the period of administration."
         is required
-        merge StudentSchoolAssociation.Student with StudentEducationOrganizationAssociation.Student
-    domain entity EducationOrganization
-        documentation "A reference to the education organization expected to administer the assessment."
-        is optional
-        role name Testing
-    domain entity EducationOrganization
-        documentation "A reference to the education organization which should receive the results of the assessment."
-        is optional
-        role name Reporting
-    domain entity StudentEducationOrganizationAssessmentAccommodation
-        documentation "A reference to the accommodations expected for administering the assessment. Student and education organization references must be consistent with StudentEducationOrganizationAssociation and StudentSchoolAssociation."
-        is optional
-        role name Scheduled
+        merge StudentSchoolAssociation.Student with StudentDemographic.Student
     descriptor Accommodation
         documentation "The special variation(s) to be used in how assessments (in general) are presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examination measures. The proper use of accommodations does not substantially change academic level or performance criteria."
         is optional collection
         role name Assessment
-    descriptor PlatformType
-        documentation "The environment or format in which the assessment is expected to be administered."
+    common AssessmentCustomization
+        documentation "Key/value pairs which may be used to facilitate customization of an assessment or to support vendor reporting/analysis."
+        is optional collection
+    domain entity EducationOrganization
+        documentation "A reference to the education organization which should receive the results of the assessment."
         is optional
+        role name Reporting
+    domain entity EducationOrganization
+        documentation "A reference to the education organization expected to administer the assessment."
+        is optional
+        role name Testing
     descriptor GradeLevel
         documentation "The grade level or primary instructional level at which the student is to be assessed."
         is optional
         role name Assessment
-    common AssessmentCustomization
-        documentation "Key/value pairs which may be used to facilitate customization of an assessment or to support vendor reporting/analysis."
-        is optional collection
+    descriptor PlatformType
+        documentation "The environment or format in which the assessment is expected to be administered."
+        is optional
+    domain entity StudentEducationOrganizationAssessmentAccommodation
+        documentation "A reference to the accommodations expected for administering the assessment. Student and education organization references must be consistent with StudentEducationOrganizationAssociation and StudentSchoolAssociation."
+        is optional
+        role name Scheduled
