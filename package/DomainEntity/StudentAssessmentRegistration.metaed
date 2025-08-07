@@ -33,6 +33,6 @@ Domain Entity StudentAssessmentRegistration
         documentation "The environment or format in which the assessment is expected to be administered."
         is optional
     domain entity StudentEducationOrganizationAssessmentAccommodation
-        documentation "A reference to the accommodations expected for administering the assessment. Student and education organization references must be consistent with StudentEducationOrganizationAssociation and StudentSchoolAssociation."
+        documentation "A reference to the accommodations expected for administering the assessment. Student and education organization references must be consistent with StudentDemographics and StudentSchoolAssociation."
         is optional
         role name Scheduled
