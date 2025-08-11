@@ -19,6 +19,7 @@ Domain Assessment
     descriptor Language
     domain entity LearningStandard
     descriptor LearningStandardCategory
+    association LearningStandardEquivalenceAssociation
     descriptor LearningStandardScope
     descriptor MediumOfInstruction
     domain entity ObjectiveAssessment
@@ -36,5 +37,4 @@ Domain Assessment
     domain entity Student
     domain entity StudentAssessment
     domain entity AssessmentScoreRangeLearningStandard
-    domain entity LearningStandardEquivalenceAssociation
     association StudentAssessmentEducationOrganizationAssociation
