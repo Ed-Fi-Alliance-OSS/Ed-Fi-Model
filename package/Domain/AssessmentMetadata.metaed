@@ -5,20 +5,27 @@ Subdomain AssessmentMetadata of Assessment
     descriptor AcademicSubject
     domain entity Assessment
     descriptor AssessmentCategory
+    descriptor AssessmentIdentificationSystem
     domain entity AssessmentItem
     descriptor AssessmentItemCategory
+    descriptor AssessmentPeriod
+    descriptor AssessmentReportingMethod
     descriptor CourseLevelCharacteristic
+    descriptor CreditType
     descriptor EducationalEnvironment
     descriptor GradeLevel
     descriptor Language
     descriptor MediumOfInstruction
     domain entity ObjectiveAssessment
+    descriptor PerformanceLevel
     descriptor PlatformType
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic
     descriptor ProgramSponsor
     descriptor ProgramType
+    descriptor PublicationStatus
+    descriptor ResultDatatypeType
     domain entity Section
     descriptor SectionCharacteristic
     descriptor SectionType

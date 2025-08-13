@@ -9,32 +9,48 @@ Domain Assessment
     descriptor AdministrationEnvironment
     domain entity Assessment
     descriptor AssessmentCategory
-    descriptor AssessmentItemCategory
+    descriptor AssessmentIdentificationSystem
     domain entity AssessmentItem
+    descriptor AssessmentItemCategory
+    descriptor AssessmentItemResult
+    descriptor AssessmentPeriod
     descriptor AssessmentReportingMethod
+    domain entity AssessmentScoreRangeLearningStandard
+    descriptor CitizenshipStatus
+    descriptor Country
     descriptor CourseLevelCharacteristic
+    descriptor CreditType
     descriptor EducationalEnvironment
+    descriptor EducationOrganizationAssociationType
     descriptor EventCircumstance
     descriptor GradeLevel
     descriptor Language
     domain entity LearningStandard
     descriptor LearningStandardCategory
     association LearningStandardEquivalenceAssociation
+    descriptor LearningStandardEquivalenceStrength
     descriptor LearningStandardScope
     descriptor MediumOfInstruction
     domain entity ObjectiveAssessment
+    descriptor OtherNameType
+    descriptor PerformanceLevel
     descriptor PlatformType
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic
     descriptor ProgramSponsor
     descriptor ProgramType
+    descriptor PublicationStatus
     descriptor ReasonNotTested
+    descriptor ResponseIndicator
+    descriptor ResultDatatypeType
     descriptor RetestIndicator
     domain entity Section
     descriptor SectionCharacteristic
     descriptor SectionType
+    descriptor Sex
+    descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAssessment
-    domain entity AssessmentScoreRangeLearningStandard
-    association StudentAssessmentEducationOrganizationAssociation
+    domain entity StudentAssessmentEducationOrganizationAssociation
+    descriptor Visa

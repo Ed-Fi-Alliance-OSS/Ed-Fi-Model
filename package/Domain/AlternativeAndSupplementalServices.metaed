@@ -6,38 +6,87 @@ Domain AlternativeAndSupplementalServices
 * A StaffProgramAssociation links Program entities to assigned staff."
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AncestryEthnicOrigin
+    descriptor AttemptStatus
+    descriptor AttendanceEventCategory
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor CitizenshipStatus
+    descriptor ContinuationOfServicesReason
+    descriptor Country
     descriptor CourseLevelCharacteristic
+    descriptor CreditType
+    descriptor CTEProgramService
+    descriptor Disability
+    descriptor DisabilityDesignation
+    descriptor DisabilityDeterminationSourceType
+    descriptor DualCreditInstitution
+    descriptor DualCreditType
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor ElectronicMailType
+    descriptor EligibilityDelayReason
+    descriptor EligibilityEvaluationType
+    descriptor EvaluationDelayReason
     descriptor FederalLocaleCode
     association GeneralStudentProgramAssociation
     descriptor GradeLevel
+    descriptor HomelessPrimaryNighttimeResidence
+    descriptor HomelessProgramService
+    descriptor IDEAPart
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
     descriptor InternetAccess
     descriptor Language
+    descriptor LanguageInstructionProgramService
+    descriptor LanguageUse
     descriptor LevelOfEducation
+    descriptor Locale
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor MediumOfInstruction
+    descriptor MigrantEducationProgramService
+    descriptor Monitored
+    descriptor NeglectedOrDelinquentProgram
+    descriptor NeglectedOrDelinquentProgramService
     descriptor OperationalStatus
+    descriptor OtherNameType
+    descriptor Participation
+    descriptor ParticipationStatus
     descriptor PopulationServed
+    descriptor Proficiency
     domain entity Program
     descriptor ProgramCharacteristic
-    descriptor ProgramType
     descriptor ProgramSponsor
+    descriptor ProgramType
+    descriptor Progress
+    descriptor ProgressLevel
     descriptor Race
+    descriptor ReasonExited
+    descriptor RecognitionType
+    descriptor RepeatIdentifier
     domain entity School
     descriptor SchoolCategory
+    descriptor SchoolFoodServiceProgramService
     descriptor SchoolType
     domain entity Section
+    descriptor Section504Disability
     descriptor SectionCharacteristic
     descriptor SectionType
+    descriptor Service
     descriptor Sex
+    descriptor SpecialEducationExitReason
+    descriptor SpecialEducationProgramService
+    descriptor SpecialEducationSetting
     domain entity Staff
+    descriptor StaffIdentificationSystem
     association StaffProgramAssociation
+    descriptor StateAbbreviation
     domain entity Student
     association StudentCTEProgramAssociation
     association StudentHomelessProgramAssociation
@@ -47,15 +96,20 @@ Domain AlternativeAndSupplementalServices
     association StudentProgramAssociation
     domain entity StudentProgramAttendanceEvent
     domain entity StudentSchoolAttendanceEvent
-    association StudentSchoolFoodServiceProgramAssociation  
+    association StudentSchoolFoodServiceProgramAssociation
     association StudentSection504ProgramAssociation
     association StudentSectionAssociation
     domain entity StudentSectionAttendanceEvent
     association StudentSpecialEducationProgramAssociation
-    association StudentSpecialEducationProgramEligibilityAssociation    
+    association StudentSpecialEducationProgramEligibilityAssociation
     association StudentTitleIPartAProgramAssociation
+    descriptor TechnicalSkillsAssessment
+    descriptor TelephoneNumberType
+    descriptor TitleIPartAParticipant
+    descriptor TitleIPartAProgramService
     descriptor TitleIPartASchoolDesignation
     descriptor TribalAffiliation
+    descriptor Visa
     footer documentation
 "# Alternative and Supplemental Services Subdomains
 
