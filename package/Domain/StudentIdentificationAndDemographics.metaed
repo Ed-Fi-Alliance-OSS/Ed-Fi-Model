@@ -4,12 +4,47 @@ Domain StudentIdentificationAndDemographics
 * The Student entity captures important information and characteristics of a student.
 * The Contact entity spans all variants of contact - parent, guardian, caretaker or other important contact.
 * The StudentParentAssociation links students and parents and indicates the relation."
+    descriptor AddressType
+    descriptor AncestryEthnicOrigin
+    descriptor BarrierToInternetAccessInResidence
+    descriptor CitizenshipStatus
+    descriptor CohortYearType
     domain entity Contact
-    domain entity ContactIdentity  
-    domain entity Student
-    domain entity StudentDirectory
-    domain entity StudentDemographic
-    domain entity StudentIdentity
+    descriptor ContactIdentificationSystem
+    domain entity ContactIdentity
+    descriptor Country
+    descriptor Disability
+    descriptor DisabilityDesignation
+    descriptor DisabilityDeterminationSourceType
+    descriptor DisplacedStudentStatus
+    descriptor ElectronicMailType
+    descriptor InternetAccessTypeInResidence
+    descriptor InternetPerformanceInResidence
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LevelOfEducation
+    descriptor LimitedEnglishProficiency
+    descriptor Locale
+    descriptor OtherNameType
     domain entity Person
+    descriptor PrimaryLearningDeviceAccess
+    descriptor PrimaryLearningDeviceAwayFromSchool
+    descriptor PrimaryLearningDeviceProvider
+    descriptor Race
+    descriptor Relation
+    descriptor Sex
+    descriptor SourceSystem
+    descriptor StateAbbreviation
+    domain entity Student
+    descriptor StudentCharacteristic
     association StudentContactAssociation
+    domain entity StudentDemographic
+    domain entity StudentDirectory
     association StudentEducationOrganizationAssociation
+    descriptor StudentIdentificationSystem
+    domain entity StudentIdentity
+    descriptor SupporterMilitaryConnection
+    descriptor TelephoneNumberType
+    descriptor Term
+    descriptor TribalAffiliation
+    descriptor Visa

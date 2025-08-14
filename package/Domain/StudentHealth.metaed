@@ -1,8 +1,22 @@
 Domain StudentHealth
     documentation "The Student Health domain includes the collection of information that relates student health such as immunization, allergies and health conditions."
+    descriptor AddressType
+    descriptor CitizenshipStatus
+    descriptor Country
+    domain entity EducationOrganization
     descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor ImmunizationType
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor Locale
     descriptor NonMedicalImmunizationExemption
     descriptor OperationalStatus
+    descriptor OtherNameType
+    descriptor Sex
+    descriptor StateAbbreviation
     domain entity Student
-    domain entity EducationOrganization
     domain entity StudentHealth
+    descriptor Visa

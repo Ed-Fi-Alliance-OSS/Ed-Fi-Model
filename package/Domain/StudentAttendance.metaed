@@ -5,24 +5,39 @@ Domain StudentAttendance
 * ""Exception only"" reporting, providing attendance events only for absences and tardies"
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AncestryEthnicOrigin
+    descriptor AttemptStatus
+    descriptor AttendanceEventCategory
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor CitizenshipStatus
+    descriptor Country
     descriptor CourseLevelCharacteristic
+    descriptor CreditType
+    descriptor DualCreditInstitution
+    descriptor DualCreditType
     descriptor EducationalEnvironment
+    descriptor ElectronicMailType
     descriptor FederalLocaleCode
     descriptor GradeLevel
     descriptor InternetAccess
     descriptor Language
+    descriptor LanguageUse
     descriptor LevelOfEducation
+    descriptor Locale
     descriptor MagnetSpecialProgramEmphasisSchool
-    descriptor PopulationServed 
+    descriptor MediumOfInstruction
+    descriptor OtherNameType
+    descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic
     descriptor ProgramSponsor
     descriptor ProgramType
     descriptor Race
+    descriptor RecognitionType
+    descriptor RepeatIdentifier
     domain entity School
     descriptor SchoolCategory
     descriptor SchoolType
@@ -30,15 +45,20 @@ Domain StudentAttendance
     domain entity SectionAttendanceTakenEvent
     descriptor SectionCharacteristic
     descriptor SectionType
+    descriptor Service
     domain entity Session
     descriptor Sex
     domain entity Staff
+    descriptor StaffIdentificationSystem
+    descriptor StateAbbreviation
     domain entity Student
     association StudentProgramAssociation
     domain entity StudentProgramAttendanceEvent
     domain entity StudentSchoolAttendanceEvent
     association StudentSectionAssociation
     domain entity StudentSectionAttendanceEvent
+    descriptor TelephoneNumberType
     descriptor Term
     descriptor TitleIPartASchoolDesignation
     descriptor TribalAffiliation
+    descriptor Visa

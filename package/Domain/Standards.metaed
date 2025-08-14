@@ -7,4 +7,5 @@ LearningStandard may also be hierarchically organized to support the use case th
     domain entity LearningStandard
     descriptor LearningStandardCategory
     descriptor LearningStandardScope
+    descriptor PublicationStatus
     position 1

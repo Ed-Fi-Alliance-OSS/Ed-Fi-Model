@@ -9,6 +9,7 @@ Subdomain StudentProgramEvaluation of TeachingAndLearning
     domain entity ProgramEvaluationObjective
     descriptor ProgramEvaluationPeriod
     descriptor ProgramEvaluationType
+    descriptor ProgramSponsor
     descriptor ProgramType
     descriptor RatingLevel
     domain entity StudentProgramEvaluation

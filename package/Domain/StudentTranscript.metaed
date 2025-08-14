@@ -1,22 +1,43 @@
 Subdomain StudentTranscript of StudentAcademicRecord
     documentation "A student transcript contains information about course-level grades and credits. A student transcript consists of aStudentAcademicRecord associated with each Session which has a CourseTranscript for each course taken."
+    descriptor AcademicHonorCategory
     descriptor AcademicSubject
+    descriptor AdditionalCreditType
+    descriptor AddressType
     descriptor CareerPathway
+    descriptor CitizenshipStatus
     descriptor CompetencyLevel
+    descriptor Country
     domain entity Course
     descriptor CourseAttemptResult
     descriptor CourseDefinedBy
     descriptor CourseGPAApplicability
+    descriptor CourseIdentificationSystem
     descriptor CourseLevelCharacteristic
     descriptor CourseRepeatCode
     domain entity CourseTranscript
     descriptor CreditCategory
+    descriptor CreditType
+    descriptor DiplomaLevel
+    descriptor DiplomaType
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
     descriptor GradeLevel
+    descriptor GradePointAverageType
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor Locale
     descriptor MethodCreditEarned
     descriptor OperationalStatus
+    descriptor OtherNameType
+    descriptor RecognitionType
+    descriptor Sex
+    descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAcademicRecord
     descriptor Term
+    descriptor Visa
     position 1
