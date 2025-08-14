@@ -3,28 +3,51 @@ Domain SpecialEducation
 "The Special Education subdomain of the Alternative and Supplemental Services domain extends the StudentProgramAssociation. A StudentSpecialEducationProgramAssociation entity provides important information about the student's participation in the Special Education Program, such as the service provider, key Individualized Education Program dates, and data about the nature of the student's disability. In addition, a RestraintEvents entity is included to represent information about special education medical restraint occurrences related to a student."
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AncestryEthnicOrigin
+    descriptor AttemptStatus
+    descriptor AttendanceEventCategory
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor CitizenshipStatus
+    descriptor ClassroomPosition
+    descriptor Country
     descriptor CourseLevelCharacteristic
+    descriptor CreditType
+    descriptor Disability
+    descriptor DisabilityDesignation
+    descriptor DisabilityDeterminationSourceType
+    descriptor DualCreditInstitution
+    descriptor DualCreditType
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor ElectronicMailType
     descriptor FederalLocaleCode
     descriptor GradeLevel
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
     descriptor InternetAccess
     descriptor Language
+    descriptor LanguageUse
     descriptor LevelOfEducation
+    descriptor Locale
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor MediumOfInstruction
     descriptor OperationalStatus
+    descriptor OtherNameType
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic
     descriptor ProgramSponsor
     descriptor ProgramType
     descriptor Race
+    descriptor RecognitionType
+    descriptor RepeatIdentifier
     domain entity RestraintEvent
     descriptor RestraintEventReason
     domain entity School
@@ -33,10 +56,16 @@ Domain SpecialEducation
     domain entity Section
     descriptor SectionCharacteristic
     descriptor SectionType
+    descriptor Service
     descriptor Sex
+    descriptor SpecialEducationExitReason
+    descriptor SpecialEducationProgramService
+    descriptor SpecialEducationSetting
     domain entity Staff
-    association StaffSectionAssociation
+    descriptor StaffIdentificationSystem
     association StaffProgramAssociation
+    association StaffSectionAssociation
+    descriptor StateAbbreviation
     domain entity Student
     association StudentProgramAssociation
     domain entity StudentProgramAttendanceEvent
@@ -44,5 +73,7 @@ Domain SpecialEducation
     association StudentSectionAssociation
     domain entity StudentSectionAttendanceEvent
     association StudentSpecialEducationProgramAssociation
+    descriptor TelephoneNumberType
     descriptor TitleIPartASchoolDesignation
     descriptor TribalAffiliation
+    descriptor Visa

@@ -7,8 +7,10 @@ Domain Path
 * A StudentPathPhaseStatus entity is to define student's place in those stages of the path."
 	domain entity Path
 	domain entity PathMilestone
+	descriptor PathMilestoneStatus
 	descriptor PathMilestoneType
 	domain entity PathPhase
+	descriptor PathPhaseStatus
 	domain entity StudentPath
 	domain entity StudentPathMilestoneStatus
 	domain entity StudentPathPhaseStatus

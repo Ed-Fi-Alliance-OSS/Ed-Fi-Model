@@ -11,6 +11,7 @@ Domain PerformanceEvaluation
 	domain entity Evaluation
 	domain entity EvaluationElement
 	domain entity EvaluationElementRating
+	descriptor EvaluationElementRatingLevel
 	domain entity EvaluationObjective
 	domain entity EvaluationObjectiveRating
 	descriptor EvaluationPeriod
@@ -21,6 +22,7 @@ Domain PerformanceEvaluation
 	descriptor EvaluationType
 	domain entity Goal
 	descriptor GoalType
+	descriptor GradeLevel
 	descriptor ObjectiveRatingLevel
 	domain entity PerformanceEvaluation
 	descriptor PerformanceEvaluationType
@@ -31,5 +33,6 @@ Domain PerformanceEvaluation
 	descriptor QuantitativeMeasureType
 	domain entity QuantitativeMeasureScore
 	descriptor RatingLevel
+	descriptor ResultDatatypeType
 	domain entity SurveySectionAggregateResponse
 	descriptor Term

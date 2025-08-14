@@ -2,35 +2,87 @@ Domain Enrollment
     documentation
 "The Enrollment domain represents students' enrollments in schools, as specifically designated by the StudentSchoolAssociation. The model supports the two cases of where a student is limited to be enrolled only in one school at a time or cases where a state may have policies supporting multiple school enrollments. The semantics assume that a separate StudentSchoolAssociation is provided for each grade level for each student; in other words, a student is withdrawn in the previous grade level and enrolled in the next grade level when promoted.
 For associations between a student and a school or LEA that is *not* enrollment(e.g., school of accountability), the StudentEducationOrganizationAssociation is defined."
-    descriptor AccreditationStatus
+    descriptor AcademicSubject
     domain entity AccountabilityRating
+    descriptor AccreditationStatus
+    descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AidType
+    descriptor AncestryEthnicOrigin
+    descriptor BarrierToInternetAccessInResidence
+    descriptor BusRoute
+    descriptor CertificationRoute
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor CitizenshipStatus
+    descriptor CohortYearType
+    descriptor Country
+    descriptor CreditCategory
+    descriptor CreditType
     domain entity CrisisEvent
     descriptor CrisisType
+    descriptor Disability
+    descriptor DisabilityDesignation
+    descriptor DisabilityDeterminationSourceType
+    descriptor DisplacedStudentStatus
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor EducationPlan
+    descriptor ElectronicMailType
+    descriptor EnrollmentType
+    descriptor EntryGradeLevelReason
+    descriptor EntryType
+    descriptor ExitWithdrawType
     descriptor FederalLocaleCode
     domain entity FinancialAid
     descriptor GradeLevel
     domain entity GraduationPlan
     descriptor GraduationPlanType
+    descriptor GunFreeSchoolsActReportingStatus
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
     descriptor InternetAccess
+    descriptor InternetAccessTypeInResidence
+    descriptor InternetPerformanceInResidence
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LimitedEnglishProficiency
+    descriptor Locale
     domain entity LocalEducationAgency
     descriptor LocalEducationAgencyCategory
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor OperationalStatus
+    descriptor OtherNameType
+    descriptor PrimaryLearningDeviceAccess
+    descriptor PrimaryLearningDeviceAwayFromSchool
+    descriptor PrimaryLearningDeviceProvider
+    descriptor Race
+    descriptor ResidencyStatus
+    descriptor Responsibility
     domain entity School
     descriptor SchoolCategory
+    descriptor SchoolChoiceBasis
+    descriptor SchoolChoiceImplementStatus
     descriptor SchoolType
+    descriptor Sex
+    descriptor StateAbbreviation
     domain entity Student
-    association StudentEducationOrganizationResponsibilityAssociation
+    descriptor StudentCharacteristic
     association StudentEducationOrganizationAssociation
-    association StudentSchoolAssociation
+    descriptor StudentIdentificationSystem
     domain entity StudentTransportation
+    descriptor SupporterMilitaryConnection
+    descriptor TelephoneNumberType
+    descriptor Term
     descriptor TitleIPartASchoolDesignation
     descriptor TransportationPublicExpenseEligibilityType
     descriptor TransportationType
-
+    descriptor TravelDayofWeek
+    descriptor TravelDirection
+    descriptor TribalAffiliation
+    association StudentEducationOrganizationResponsibilityAssociation
+    association StudentSchoolAssociation
+    descriptor Visa

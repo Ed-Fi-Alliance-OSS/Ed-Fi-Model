@@ -4,28 +4,58 @@ Domain Graduation
 * A GraduationPlan entity represents either a generic graduation plan for all or many students or an individualized graduation plan. The GraduationPlan supports several levels of detail, including overall credit requirements, credits by subject area, or down to specific courses to be taken.
 * A PostSecondaryEvent entity represents significant postsecondary education information, such as college applications, remedial course enrollment, acceptances, and detailed postsecondary institution information.
 * A Diploma element represents graduation certificate information with associated honors and other recognitions as part of the StudentAcademicRecord."
+    descriptor AcademicHonorCategory
+    descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AddressType
     descriptor AdministrativeFundingControl
+    descriptor CertificationRoute
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor CitizenshipStatus
+    descriptor Country
+    descriptor CreditCategory
+    descriptor CreditType
+    descriptor DiplomaLevel
+    descriptor DiplomaType
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor EducationPlan
+    descriptor EnrollmentType
+    descriptor EntryGradeLevelReason
+    descriptor EntryType
+    descriptor ExitWithdrawType
     descriptor FederalLocaleCode
     descriptor GradeLevel
+    descriptor GradePointAverageType
     domain entity GraduationPlan
     descriptor GraduationPlanType
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor InternetAccess
+    descriptor Locale
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor MediumOfInstruction
     descriptor OperationalStatus
+    descriptor OtherNameType
     domain entity PostSecondaryEvent
     descriptor PostSecondaryEventCategory
     domain entity PostSecondaryInstitution
     descriptor PostSecondaryInstitutionLevel
+    descriptor RecognitionType
+    descriptor ResidencyStatus
     domain entity School
     descriptor SchoolCategory
+    descriptor SchoolChoiceBasis
     descriptor SchoolType
+    descriptor Sex
+    descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAcademicRecord
     association StudentSchoolAssociation
     descriptor Term
     descriptor TitleIPartASchoolDesignation
+    descriptor Visa

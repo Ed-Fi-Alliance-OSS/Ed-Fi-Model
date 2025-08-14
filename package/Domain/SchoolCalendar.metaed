@@ -2,6 +2,7 @@ Domain SchoolCalendar
     documentation "The School Calendar domain represents the instructional days, sessions, and grading periods defined for a school year. The defined sessions for a school year are associated with the education organization (e.g., SEA, LEA) or school that defines the calendar."
     domain entity AcademicWeek
     descriptor AccreditationStatus
+    descriptor AddressType
     descriptor AdministrativeFundingControl
     domain entity Calendar
     domain entity CalendarDate
@@ -9,20 +10,39 @@ Domain SchoolCalendar
     descriptor CalendarType
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor CitizenshipStatus
+    descriptor Country
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor EducationPlan
+    descriptor EnrollmentType
+    descriptor EntryGradeLevelReason
+    descriptor EntryType
+    descriptor ExitWithdrawType
     descriptor FederalLocaleCode
     descriptor GradeLevel
-    domain entity GradingPeriod
     descriptor GradingPeriod
+    domain entity GradingPeriod
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
     descriptor InternetAccess
+    descriptor Locale
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor OperationalStatus
+    descriptor OtherNameType
+    descriptor ResidencyStatus
     domain entity School
     descriptor SchoolCategory
+    descriptor SchoolChoiceBasis
     descriptor SchoolType
     domain entity Session
+    descriptor Sex
+    descriptor StateAbbreviation
     domain entity Student
     association StudentSchoolAssociation
     descriptor Term
     descriptor TitleIPartASchoolDesignation
+    descriptor Visa
