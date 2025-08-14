@@ -22,7 +22,6 @@ Domain Staff
     domain entity StaffIdentity
     domain entity StateEducationAgency
     association StaffSchoolAssociation
-    association StaffEducationOrganizationContactAssociation
     domain entity StaffAbsenceEvent
     domain entity StaffLeave
     domain entity Person
