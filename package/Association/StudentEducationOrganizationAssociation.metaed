@@ -12,9 +12,6 @@ Association StudentEducationOrganizationAssociation [3052]
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race, as last reported to the education organization. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
         is optional
         is queryable field
-    common StudentCharacteristic [1702]
-        documentation "Reflects important characteristics of a student. If a student has a characteristic present, that characteristic is considered true or active for that student. If a characteristic is not present, no assumption is made as to the applicability of the characteristic, but local policy may dictate otherwise."
-        is optional collection
     common CohortYear [1683]
         documentation "The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade."
         is optional collection
