@@ -1,4 +1,4 @@
-Domain Entity CandidateIdentity
+Domain Entity CandidateIdentificationCode
 documentation "This entity holds different identity codes for a candidate."
     domain entity Candidate
         documentation "A reference to the candidate."
