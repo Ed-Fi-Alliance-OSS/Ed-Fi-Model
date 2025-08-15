@@ -1,4 +1,4 @@
-Domain Entity StaffIdentity
+Domain Entity StaffIdentificationCode
 documentation "This entity holds different identity codes for staff member."
     domain entity Staff 
         documentation "A reference to the staff member."

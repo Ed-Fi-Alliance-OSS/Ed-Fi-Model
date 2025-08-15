@@ -9,7 +9,7 @@ Interchange StaffAssociation [2523]
     domain entity Staff [2523-001]
     domain entity StaffDemographic
     domain entity StaffDirectory
-    domain entity StaffIdentity
+    domain entity StaffIdentificationCode
     association StaffEducationOrganizationEmploymentAssociation [2523-002]
     association StaffEducationOrganizationAssignmentAssociation [2523-003]
     association StaffSchoolAssociation [2523-004]

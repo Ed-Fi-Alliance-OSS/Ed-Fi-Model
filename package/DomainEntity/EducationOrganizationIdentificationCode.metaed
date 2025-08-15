@@ -1,4 +1,4 @@
-Domain Entity EducationOrganizationIdentity
+Domain Entity EducationOrganizationIdentificationCode
 documentation "This entity holds different identity codes for an education organization."
     domain entity EducationOrganization
         documentation "A reference to the education organization."
