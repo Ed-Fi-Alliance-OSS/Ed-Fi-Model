@@ -5,11 +5,11 @@ Domain StudentIdentificationAndDemographics
 * The Contact entity spans all variants of contact - parent, guardian, caretaker or other important contact.
 * The StudentParentAssociation links students and parents and indicates the relation."
     domain entity Contact
-    domain entity ContactIdentity  
+    domain entity ContactIdentificationCode 
     domain entity Student
     domain entity StudentDirectory
     domain entity StudentDemographic
-    domain entity StudentIdentity
+    domain entity StudentIdentificationCode
     domain entity Person
     association StudentContactAssociation
     association StudentEducationOrganizationAssociation

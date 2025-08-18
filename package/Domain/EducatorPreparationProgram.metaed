@@ -6,7 +6,7 @@ Domain EducatorPreparationProgram
 * A FieldworkExperience entity is to capture information about the field experience enrolled students have in a postsecondary instructional course."
 	domain entity Candidate
 	association CandidateEducatorPreparationProgramAssociation
-	domain entity CandidateIdentity
+	domain entity CandidateIdentificationCode
 	association CandidateRelationshipToStaffAssociation
 	domain entity EducatorPreparationProgram
 	domain entity FieldworkExperience

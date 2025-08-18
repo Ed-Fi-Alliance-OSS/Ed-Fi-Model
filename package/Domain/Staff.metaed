@@ -19,7 +19,7 @@ Domain Staff
     domain entity StaffDemographic
     association StaffEducationOrganizationAssignmentAssociation
     association StaffEducationOrganizationEmploymentAssociation
-    domain entity StaffIdentity
+    domain entity StaffIdentificationCode
     domain entity StateEducationAgency
     association StaffSchoolAssociation
     domain entity StaffAbsenceEvent
