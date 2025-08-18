@@ -17,10 +17,6 @@ Domain Entity Student [585]
         documentation "The set of elements that capture relevant data regarding a person's birth, including birth date and place of birth."
         is required
         is queryable field
-    inline common Citizenship [1682]
-        deprecated "This element is scheduled for removal by 2029. This element has been moved to StudentDemographics entity."
-        documentation "Contains information relative to U.S. citizenship status and its associated probationary documentation."
-        is optional
     domain entity EducationOrganization [2371]
         documentation "Provide user information to lookup and link to an existing educational organization record in the receiving system."
         is queryable only
