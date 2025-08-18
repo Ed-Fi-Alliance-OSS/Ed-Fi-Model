@@ -3,9 +3,6 @@ Domain Entity Candidate
   shared string CandidateIdentifier
       documentation "A unique alphanumeric code assigned to a candidate."
       is part of identity
-  common CandidateIdentificationCode
-      documentation "A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a candidate."
-      is optional collection
   inline common Name
       documentation "Full legal name of the person."
       is required
@@ -22,18 +19,15 @@ Domain Entity Candidate
       documentation "The set of elements that capture relevant data regarding a person's birth, including birth date and place of birth."
       is required
   common Address
-      deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateInformation entity."
       documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
       is optional collection
   common InternationalAddress
       documentation "The set of elements that describes an international address."
       is optional collection
   common Telephone
-      deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateInformation entity."
       documentation "The 10-digit telephone number, including the area code, for the person."
       is optional collection
   common ElectronicMail
-      deprecated "This element is scheduled for removal by 2029. This element has been moved to CandidateInformation entity."
       documentation "The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs."
       is optional collection
   shared string ProfileThumbnail
