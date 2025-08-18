@@ -25,7 +25,7 @@ documentation "A Course entity represents the definition of the course, its char
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
-    descriptor InstitutionTelephoneNumber
+    descriptor InstitutionTelephoneNumberType
     descriptor InternetAccess
     domain entity LearningStandard
     descriptor LearningStandardCategory
