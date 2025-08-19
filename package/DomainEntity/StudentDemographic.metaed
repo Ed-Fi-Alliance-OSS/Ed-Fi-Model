@@ -15,6 +15,9 @@ documentation "The demographic information associated to a student."
     common Disability
         documentation "The disability condition(s) that best describes an individual's impairment, as determined by evaluation(s) conducted by the education organization."
         is optional collection
+    descriptor EconomicDisadvantage
+        documentation "The indication of an inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy."
+        is optional
     shared string GenderIdentity
         documentation "The student's gender as last reported to the education organization."
         is optional
