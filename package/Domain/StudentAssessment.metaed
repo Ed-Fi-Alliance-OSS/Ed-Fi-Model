@@ -11,13 +11,25 @@ The student's assessment results follow a similar structure to the assessment me
 * StudentObjectiveAssessment optionally holds the student's score for individually scored results for a specific LearningStandards. If the assessment metadata includes ObjectiveAssessments, then there would be corresponding StudentObjectiveAssessments for each student.
 * StudentAssessmentItem optionally holds the student's score for individual AssessmentItems. If the assessment metadata includesAssessmentItems, then there would be corresponding StudentAssessmentItems for each student."
     descriptor Accommodation
-    descriptor AdministrativeEnvironment
+    descriptor AdministrationEnvironment
+    descriptor AssessmentItemResult
+    descriptor AssessmentPeriod
+    descriptor AssessmentReportingMethod
+    descriptor CitizenshipStatus
+    descriptor Country
     descriptor EventCircumstance
     descriptor GradeLevel
     descriptor Language
+    descriptor OtherNameType
+    descriptor PerformanceLevel
     descriptor PlatformType
     descriptor ReasonNotTested
+    descriptor ResponseIndicator
+    descriptor ResultDatatypeType
     descriptor RetestIndicator
+    descriptor Sex
+    descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAssessment
+    descriptor Visa
     position 3

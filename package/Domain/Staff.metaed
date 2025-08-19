@@ -7,21 +7,87 @@ Domain Staff
 * StaffEducationOrganizationAssignmentAssociation represents position assignments and roles. The employment and assignment associations are separated to accommodate a number of different types of situations. Staff may have multiple employment and assignment associations. Staff may be employed with one organization, like an LEA, whereas their assignments are at other organizations, specifically schools. If an assignment is directly tied to employment (i.e., the staff member's pay would differ based upon the assignments), then an association is used from theStaffEducationOrganizationAssignmentAssociation to the StaffEducationOrganizationEmploymentAssociation.
 * LeaveEvent tracks staff leave history.
 * OpenStaffPosition indicates the employment postings for an education organization and captures the result of that posting."
+    descriptor AbsenceEventCategory
+    descriptor AcademicSubject
+    descriptor AccreditationStatus
+    descriptor AddressType
+    descriptor AdministrativeFundingControl
+    descriptor AncestryEthnicOrigin
+    descriptor BackgroundCheckStatus
+    descriptor BackgroundCheckType
+    descriptor CertificationRoute
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
+    descriptor CitizenshipStatus
+    descriptor ContactType
+    descriptor Country
     domain entity Credential
+    descriptor CredentialField
+    descriptor CredentialStatus
+    descriptor CredentialType
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
     domain entity EducationServiceCenter
+    descriptor EducatorRole
+    descriptor ElectronicMailType
+    descriptor EmploymentStatus
+    descriptor FederalLocaleCode
+    descriptor FundingSource
+    descriptor GradeLevel
+    descriptor GunFreeSchoolsActReportingStatus
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor InternetAccess
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LengthOfContract
+    descriptor LevelOfEducation
+    descriptor Locale
     domain entity LocalEducationAgency
+    descriptor LocalEducationAgencyCategory
+    descriptor MagnetSpecialProgramEmphasisSchool
     domain entity OpenStaffPosition
     domain entity OpenStaffPositionEvent
+    descriptor OpenStaffPositionEventStatus
+    descriptor OpenStaffPositionEventType
+    descriptor OpenStaffPositionReason
+    descriptor OperationalStatus
+    descriptor OtherNameType
+    domain entity Person
+    descriptor PostingResult
+    descriptor ProgramAssignment
+    descriptor Race
+    descriptor RecognitionType
+    descriptor SalaryType
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolChoiceImplementStatus
+    descriptor SchoolType
+    descriptor Separation
+    descriptor SeparationReason
+    descriptor Sex
+    descriptor SourceSystem
     domain entity Staff
-    domain entity StaffDirectory
+    domain entity StaffAbsenceEvent
+    descriptor StaffClassification
     domain entity StaffDemographic
+    domain entity StaffDirectory
     association StaffEducationOrganizationAssignmentAssociation
     association StaffEducationOrganizationEmploymentAssociation
+    descriptor StaffIdentificationSystem
     domain entity StaffIdentity
-    domain entity StateEducationAgency
-    association StaffSchoolAssociation
-    domain entity StaffAbsenceEvent
     domain entity StaffLeave
-    domain entity Person
+    descriptor StaffLeaveEventCategory
+    association StaffSchoolAssociation
+    descriptor StateAbbreviation
+    domain entity StateEducationAgency
+    descriptor TeachingCredential
+    descriptor TeachingCredentialBasis
+    descriptor TelephoneNumberType
+    descriptor Term
+    descriptor TitleIPartASchoolDesignation
+    descriptor TribalAffiliation
+    descriptor Visa
