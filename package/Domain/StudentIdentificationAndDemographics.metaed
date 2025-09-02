@@ -17,6 +17,7 @@ Domain StudentIdentificationAndDemographics
     descriptor DisabilityDesignation
     descriptor DisabilityDeterminationSourceType
     descriptor DisplacedStudentStatus
+    descriptor EconomicDisadvantage
     descriptor ElectronicMailType
     descriptor InternetAccessTypeInResidence
     descriptor InternetPerformanceInResidence
