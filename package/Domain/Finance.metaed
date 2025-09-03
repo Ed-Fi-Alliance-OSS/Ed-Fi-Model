@@ -4,21 +4,49 @@ Domain Finance
 * The Fund from which monies are being expended.
 * The Program that is spending the funds.
 * The Function for which the funds are being spent."
+    descriptor AcademicSubject
+    descriptor AccountType
+    descriptor AddressType
+    descriptor AncestryEthnicOrigin
+    domain entity BalanceSheetDimension
+    domain entity ChartOfAccount
+    descriptor CitizenshipStatus
+    descriptor Country
+    domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor ElectronicMailType
+    descriptor FinancialCollection
+    domain entity FunctionDimension
+    domain entity FundDimension
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LevelOfEducation
     domain entity LocalAccount
     domain entity LocalActual
     domain entity LocalBudget
     domain entity LocalContractedStaff
+    descriptor Locale
     domain entity LocalEncumbrance
     domain entity LocalPayroll
-    domain entity EducationOrganization
-    domain entity Staff
-    domain entity ChartOfAccount
-    domain entity BalanceSheetDimension
-    domain entity FunctionDimension
-    domain entity FundDimension
     domain entity ObjectDimension
+    descriptor OperationalStatus
     domain entity OperationalUnitDimension
+    descriptor OtherNameType
     domain entity ProgramDimension
     domain entity ProjectDimension
+    descriptor Race
+    descriptor RecognitionType
+    descriptor ReportingTag
+    descriptor Sex
     domain entity SourceDimension
-    common ReportingTag
+    domain entity Staff
+    descriptor StaffIdentificationSystem
+    descriptor StateAbbreviation
+    descriptor TelephoneNumberType
+    descriptor TribalAffiliation
+    descriptor Visa

@@ -3,15 +3,63 @@ Domain StudentCohort
 "The Student Cohort domain represents a wide variety of collections of students that are distinct from class rosters or program participants. This could include students that are tagged for interventions or students tagged for the purposes of tracking or analysis, such as a school principal's ""watch list."" The StudentCohortAssociation captures the assignment of students to cohorts.
 
 Cohorts may be associated with programs and may have staff associated with the cohort who is providing services, oversight, or sponsorship. Cohorts are associated with Intervention entities via the StudentInterventionAssociation."
+    descriptor AcademicSubject
+    descriptor AddressType
+    descriptor AncestryEthnicOrigin
+    descriptor AttemptStatus
+    descriptor CitizenshipStatus
+    descriptor ClassroomPosition
     domain entity Cohort
+    descriptor CohortScope
+    descriptor CohortType
+    descriptor Country
+    descriptor CourseLevelCharacteristic
+    descriptor CreditType
+    descriptor DeliveryMethod
+    descriptor Diagnosis
+    descriptor DualCreditInstitution
+    descriptor DualCreditType
+    descriptor EducationalEnvironment
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor ElectronicMailType
+    descriptor GradeLevel
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
     domain entity Intervention
+    descriptor InterventionClass
+    descriptor InterventionEffectivenessRating
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LevelOfEducation
+    descriptor Locale
+    descriptor MediumOfInstruction
+    descriptor OperationalStatus
+    descriptor OtherNameType
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
+    descriptor Race
+    descriptor RecognitionType
+    descriptor RepeatIdentifier
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
+    descriptor Sex
     domain entity Staff
     association StaffCohortAssociation
+    descriptor StaffIdentificationSystem
     association StaffSectionAssociation
+    descriptor StateAbbreviation
     domain entity Student
     association StudentCohortAssociation
     association StudentInterventionAssociation
     association StudentSectionAssociation
+    descriptor TelephoneNumberType
+    descriptor TribalAffiliation
+    descriptor Visa

@@ -3,26 +3,72 @@ Domain Survey
     * Survey, SurveySection, and SurveyQuestion that describe the survey.
     * Survey responses that follow a parallel structure of SurveyResponse, SurveySectionResponse, and SurveyQuestionResponse.
     * Associations to tie Survey and SurveyResponse domain entities to Course, Section, Program, Target EducationOrganization, and Target Staff."
+    descriptor AcademicSubject
+    descriptor AddressType
+    descriptor AncestryEthnicOrigin
+    descriptor CareerPathway
+    descriptor CitizenshipStatus
+    descriptor CompetencyLevel
     domain entity Contact
+    descriptor Country
     domain entity Course
+    descriptor CourseDefinedBy
+    descriptor CourseGPAApplicability
+    descriptor CourseIdentificationSystem
+    descriptor CourseLevelCharacteristic
+    descriptor CreditType
+    descriptor EducationalEnvironment
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor ElectronicMailType
+    descriptor GradeLevel
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LevelOfEducation
+    descriptor Locale
+    descriptor MediumOfInstruction
+    descriptor OperationalStatus
+    descriptor OtherNameType
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
+    descriptor QuestionForm
+    descriptor Race
+    descriptor RecognitionType
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
     domain entity Session
+    descriptor Sex
     domain entity Staff
+    descriptor StaffIdentificationSystem
+    descriptor StateAbbreviation
     domain entity Student
     domain entity Survey
+    descriptor SurveyCategory
+    association SurveyCourseAssociation
+    descriptor SurveyLevel
+    association SurveyProgramAssociation
     domain entity SurveyQuestion
     domain entity SurveyQuestionResponse
     domain entity SurveyResponse
-    domain entity SurveySection
-    domain entity SurveySectionResponse
-    association SurveyCourseAssociation
-    association SurveySectionAssociation
-    association SurveyProgramAssociation
     association SurveyResponseEducationOrganizationTargetAssociation
     association SurveyResponsePersonTargetAssociation
     association SurveyResponseStaffTargetAssociation
+    domain entity SurveySection
+    association SurveySectionAssociation
+    domain entity SurveySectionResponse
     association SurveySectionResponseEducationOrganizationTargetAssociation
     association SurveySectionResponsePersonTargetAssociation
     association SurveySectionResponseStaffTargetAssociation
+    descriptor TelephoneNumberType
+    descriptor Term
+    descriptor TribalAffiliation
+    descriptor Visa

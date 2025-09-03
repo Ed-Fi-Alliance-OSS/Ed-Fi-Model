@@ -1,15 +1,57 @@
 Subdomain ReportCard of StudentAcademicRecord
     documentation "A Student has a ReportCard for each GradingPeriod. A Grade is associated with each Section. For early grade levels, a StudentCompetencyObjective is assigned to CompetencyObjectives, for example, assigning a ""Satisfactory"" for ""Participates in class discussions."""
+    descriptor AcademicSubject
+    descriptor AddressType
+    descriptor AttemptStatus
+    descriptor CitizenshipStatus
+    descriptor CompetencyLevel
     domain entity CompetencyObjective
+    descriptor Country
+    descriptor CourseLevelCharacteristic
+    descriptor CreditType
+    descriptor DualCreditInstitution
+    descriptor DualCreditType
+    descriptor EducationalEnvironment
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
     domain entity Grade
+    descriptor GradeLevel
+    descriptor GradePointAverageType
+    descriptor GradeType
+    descriptor GradingPeriod
     domain entity GradingPeriod
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor Language
     domain entity LearningStandard
+    descriptor LearningStandardCategory
+    descriptor LearningStandardScope
+    descriptor Locale
+    descriptor MediumOfInstruction
+    descriptor OperationalStatus
+    descriptor OtherNameType
+    descriptor PerformanceBaseConversion
+    descriptor PerformanceBasedConversion
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
+    descriptor PublicationStatus
+    descriptor RepeatIdentifier
     domain entity ReportCard
     domain entity Section
-    domain entity Student    
+    descriptor SectionCharacteristic
+    descriptor SectionType
+    descriptor Service
+    descriptor Sex
+    descriptor StateAbbreviation
+    domain entity Student
     domain entity StudentCompetencyObjective
     association StudentProgramAssociation
     association StudentSectionAssociation
+    descriptor Visa
     position 2

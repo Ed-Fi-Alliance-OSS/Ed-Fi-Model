@@ -1,22 +1,99 @@
 Subdomain SectionsAndPrograms of TeachingAndLearning
     documentation "A school will have one or more Sections for each CourseOffering. Students are enrolled in specific Sections. Each Section will have one or more assigned Staff, will typically meet in a specific location in the school, and be assigned a ClassPeriod for the Session."
+    descriptor AcademicHonorCategory
+    descriptor AcademicSubject
+    descriptor AccreditationStatus
+    descriptor AdditionalCreditType
+    descriptor AddressType
+    descriptor AdministrativeFundingControl
+    descriptor AncestryEthnicOrigin
+    descriptor AttemptStatus
+    descriptor CareerPathway
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
+    descriptor CitizenshipStatus
     domain entity ClassPeriod
+    descriptor ClassroomPosition
+    descriptor CompetencyLevel
+    descriptor Country
     domain entity Course
+    descriptor CourseAttemptResult
+    descriptor CourseDefinedBy
+    descriptor CourseGPAApplicability
+    descriptor CourseIdentificationSystem
+    descriptor CourseLevelCharacteristic
     domain entity CourseOffering
+    descriptor CourseRepeatCode
     domain entity CourseTranscript
+    descriptor CreditCategory
+    descriptor CreditType
+    descriptor CurriculumUsed
+    descriptor DiplomaLevel
+    descriptor DiplomaType
+    descriptor DualCreditInstitution
+    descriptor DualCreditType
+    descriptor EducationalEnvironment
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor EducationPlan
+    descriptor ElectronicMailType
+    descriptor EnrollmentType
+    descriptor EntryGradeLevelReason
+    descriptor EntryType
+    descriptor ExitWithdrawType
+    descriptor FederalLocaleCode
+    descriptor GradeLevel
+    descriptor GradePointAverageType
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor InternetAccess
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LevelOfEducation
+    descriptor Locale
     domain entity Location
+    descriptor MagnetSpecialProgramEmphasisSchool
+    descriptor MediumOfInstruction
+    descriptor MethodCreditEarned
+    descriptor OperationalStatus
+    descriptor OtherNameType
+    descriptor PopulationServed
     domain entity Program
+    descriptor ProgramAssignment
+    descriptor ProgramCharacteristic
+    descriptor ProgramSponsor
+    descriptor ProgramType
+    descriptor Race
+    descriptor RecognitionType
+    descriptor RepeatIdentifier
+    descriptor ResidencyStatus
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolChoiceBasis
+    descriptor SchoolType
     domain entity Section
+    descriptor SectionCharacteristic
+    descriptor SectionType
+    descriptor Service
     domain entity Session
+    descriptor Sex
     domain entity Staff
+    descriptor StaffIdentificationSystem
     association StaffProgramAssociation
     association StaffSchoolAssociation
     association StaffSectionAssociation
+    descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAcademicRecord
     association StudentProgramAssociation
     association StudentSchoolAssociation
     association StudentSectionAssociation
+    descriptor TelephoneNumberType
+    descriptor Term
+    descriptor TitleIPartASchoolDesignation
+    descriptor TribalAffiliation
+    descriptor Visa
     position 2

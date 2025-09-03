@@ -6,16 +6,33 @@ Domain PerformanceEvaluation
 * An EvaluationObjective entity is to record metadata for sub-components of an Evaluation where EvaluationObjectiveRating is to record scores at that level.
 * An EvaluationElement entity is for recording metadata for the most granular information about the performance evaluation where EvaluationElementRating entity is to record scores at that granularity level. An EvaluationElement can be associated with RubricDimension, or QuantitativeMeasure, or SurveySection, or neither of them.
 * A Goal entity is defined to record and track performance goals related to an EvaluationElement."
+	descriptor AcademicSubject
+	descriptor CoteachingStyleObserved
 	domain entity Evaluation
 	domain entity EvaluationElement
 	domain entity EvaluationElementRating
+	descriptor EvaluationElementRatingLevel
 	domain entity EvaluationObjective
 	domain entity EvaluationObjectiveRating
+	descriptor EvaluationPeriod
 	domain entity EvaluationRating
+	descriptor EvaluationRatingLevel
+	descriptor EvaluationRatingStatus
 	domain entity EvaluationRubricDimension
+	descriptor EvaluationType
 	domain entity Goal
+	descriptor GoalType
+	descriptor GradeLevel
+	descriptor ObjectiveRatingLevel
 	domain entity PerformanceEvaluation
+	descriptor PerformanceEvaluationType
 	domain entity PerformanceEvaluationRating
+	descriptor PerformanceEvaluationRatingLevel
 	domain entity QuantitativeMeasure
+	descriptor QuantitativeMeasureDatatype
+	descriptor QuantitativeMeasureType
 	domain entity QuantitativeMeasureScore
+	descriptor RatingLevel
+	descriptor ResultDatatypeType
 	domain entity SurveySectionAggregateResponse
+	descriptor Term

@@ -4,11 +4,46 @@ Domain EducatorPreparationProgram
 * A Candidate entity defines information for educator preparation programs, detailing personal identifiers, demographic data, contact information, educational background, and program participation details.
 * A EducatorPreparationProgram entity is for the details of the program and accreditation.
 * A FieldworkExperience entity is to capture information about the field experience enrolled students have in a postsecondary instructional course."
-	domain entity Candidate
-	association CandidateEducatorPreparationProgramAssociation
-	domain entity CandidateIdentity
-	association CandidateRelationshipToStaffAssociation
-	domain entity EducatorPreparationProgram
-	domain entity FieldworkExperience
-	association FieldworkExperienceSectionAssociation
-	association StaffEducatorPreparationProgramAssociation
+    descriptor AcademicSubject
+    descriptor AccreditationStatus
+    descriptor AddressType
+    descriptor BackgroundCheckStatus
+    descriptor BackgroundCheckType
+    domain entity Candidate
+    descriptor CandidateCharacteristic
+    association CandidateEducatorPreparationProgramAssociation
+    descriptor CandidateIdentificationSystem
+    domain entity CandidateIdentity
+    association CandidateRelationshipToStaffAssociation
+    descriptor CitizenshipStatus
+    descriptor CohortYearType
+    descriptor Country
+    descriptor Disability
+    descriptor DisabilityDesignation
+    descriptor DisabilityDeterminationSourceType
+    domain entity EducatorPreparationProgram
+    descriptor ElectronicMailType
+    descriptor EnglishLanguageExam
+    descriptor EPPDegreeType
+    descriptor EPPProgramPathway
+    domain entity FieldworkExperience
+    association FieldworkExperienceSectionAssociation
+    descriptor FieldworkType
+    descriptor GradeLevel
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LimitedEnglishProficiency
+    descriptor Locale
+    descriptor OtherNameType
+    descriptor PreviousCareer
+    descriptor ProgramType
+    descriptor Race
+    descriptor ReasonExited
+    descriptor Sex
+    association StaffEducatorPreparationProgramAssociation
+    descriptor StaffToCandidateRelationship
+    descriptor StateAbbreviation
+    descriptor StudentIdentificationSystem
+    descriptor TelephoneNumberType
+    descriptor Term
+    descriptor Visa

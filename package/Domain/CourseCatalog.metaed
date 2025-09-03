@@ -1,9 +1,44 @@
 Subdomain CourseCatalog of TeachingAndLearning
 documentation "A Course entity represents the definition of the course, its characteristics, and its mapping to LearningStandards. A course may be defined a state, LEA or school level. The CourseOffering entity represents a course that is offered by a school during a session. The CourseOffering will have a LocalCourseCode and may have a LocalCourseTitle."
+    descriptor AcademicSubject
+    descriptor AccreditationStatus
+    descriptor AddressType
+    descriptor AdministrativeFundingControl
+    descriptor CareerPathway
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
+    descriptor CompetencyLevel
+    descriptor Country
     domain entity Course
+    descriptor CourseDefinedBy
+    descriptor CourseGPAApplicability
+    descriptor CourseIdentificationSystem
+    descriptor CourseLevelCharacteristic
     domain entity CourseOffering
+    descriptor CreditType
+    descriptor CurriculumUsed
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
+    descriptor FederalLocaleCode
+    descriptor GradeLevel
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor InternetAccess
     domain entity LearningStandard
+    descriptor LearningStandardCategory
+    descriptor LearningStandardScope
+    descriptor Locale
+    descriptor MagnetSpecialProgramEmphasisSchool
+    descriptor OperationalStatus
+    descriptor PublicationStatus
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolType
     domain entity Session
+    descriptor StateAbbreviation
+    descriptor Term
+    descriptor TitleIPartASchoolDesignation
     position 1

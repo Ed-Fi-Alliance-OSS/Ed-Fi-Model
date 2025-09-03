@@ -8,20 +8,55 @@ Domain EducationOrganization
 * EducationOrganizationNetwork represents a self-organized membership network of peer-level schools or LEAs intended to provide shared services or collective purchasing.
 * AccountabilityRating holds education organization ratings assigned by an accountability system.
 * Community providers that are non-LEA can be represented by the CommunityProvider and CommunityOrganization entities."
+    descriptor AcademicSubject
     domain entity AccountabilityRating
+    descriptor AccreditationStatus
+    descriptor AddressType
+    descriptor AdministrativeFundingControl
+    descriptor CharterApprovalAgencyType
+    descriptor CharterStatus
     domain entity CommunityOrganization
     domain entity CommunityProvider
     domain entity CommunityProviderLicense
+    descriptor Country
     domain entity DescriptorMapping
     domain entity EducationOrganization
+    descriptor EducationOrganizationCategory
+    descriptor EducationOrganizationIdentificationSystem
     domain entity EducationOrganizationIdentity
     domain entity EducationOrganizationNetwork
     association EducationOrganizationNetworkAssociation
     association EducationOrganizationPeerAssociation
     domain entity EducationServiceCenter
+    descriptor FederalLocaleCode
     association FeederSchoolAssociation
+    descriptor GradeLevel
+    descriptor GunFreeSchoolsActReportingStatus
+    descriptor Indicator
+    descriptor IndicatorGroup
+    descriptor IndicatorLevel
+    descriptor InstitutionTelephoneNumberType
+    descriptor InternetAccess
+    descriptor LicenseStatus
+    descriptor LicenseType
+    descriptor Locale
     domain entity LocalEducationAgency
+    descriptor LocalEducationAgencyCategory
+    descriptor MagnetSpecialProgramEmphasisSchool
+    descriptor MediumOfInstruction
+    descriptor ModelEntity
+    descriptor NetworkPurpose
+    descriptor OperationalStatus
     domain entity OrganizationDepartment
     domain entity PostSecondaryInstitution
+    descriptor PostSecondaryInstitutionLevel
+    descriptor ProviderCategory
+    descriptor ProviderProfitability
+    descriptor ProviderStatus
     domain entity School
+    descriptor SchoolCategory
+    descriptor SchoolChoiceImplementStatus
+    descriptor SchoolType
+    descriptor StateAbbreviation
     domain entity StateEducationAgency
+    descriptor TitleIPartASchoolDesignation
