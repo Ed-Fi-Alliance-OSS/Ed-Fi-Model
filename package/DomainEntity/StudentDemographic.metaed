@@ -37,6 +37,9 @@ documentation "The demographic information associated to a student."
     descriptor Sex
         documentation "The student's birth sex as reported to the education organization."
         is optional
+    common StudentCharacteristic
+        documentation "Reflects important characteristics of a student. If a student has a characteristic present, that characteristic is considered true or active for that student. If a characteristic is not present, no assumption is made as to the applicability of the characteristic, but local policy may dictate otherwise."
+        is optional collection
     descriptor SupporterMilitaryConnection
         documentation "Military connection of the person/people whom the student is a dependent of."
         is optional
