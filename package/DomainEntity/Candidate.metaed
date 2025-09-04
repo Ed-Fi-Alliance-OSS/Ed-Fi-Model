@@ -3,9 +3,6 @@ Domain Entity Candidate
   shared string CandidateIdentifier
       documentation "A unique alphanumeric code assigned to a candidate."
       is part of identity
-  common CandidateIdentificationCode
-      documentation "A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a candidate."
-      is optional collection
   inline common Name
       documentation "Full legal name of the person."
       is required

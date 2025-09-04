@@ -5,5 +5,5 @@ Interchange Student [2525]
     domain entity Student [2525-001]
     domain entity StudentDemographic
     domain entity StudentDirectory
-    domain entity StudentIdentity
+    domain entity StudentIdentificationCode
     domain entity Person [2525-002]

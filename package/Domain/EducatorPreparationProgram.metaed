@@ -13,7 +13,7 @@ Domain EducatorPreparationProgram
     descriptor CandidateCharacteristic
     association CandidateEducatorPreparationProgramAssociation
     descriptor CandidateIdentificationSystem
-    domain entity CandidateIdentity
+    domain entity CandidateIdentificationCode
     association CandidateRelationshipToStaffAssociation
     descriptor CitizenshipStatus
     descriptor CohortYearType
