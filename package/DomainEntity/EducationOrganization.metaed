@@ -5,10 +5,6 @@ Abstract Entity EducationOrganization [556]
         is part of identity
         is queryable field
         min value big
-    common EducationOrganizationIdentificationCode [1383]
-        documentation "A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity."
-        is optional collection
-        is queryable field
     shared string NameOfInstitution [1386]
         documentation "The full, legally accepted name of the institution."
         is required

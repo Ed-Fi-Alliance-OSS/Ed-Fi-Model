@@ -23,7 +23,7 @@ Domain EducationOrganization
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
     descriptor EducationOrganizationIdentificationSystem
-    domain entity EducationOrganizationIdentity
+    domain entity EducationOrganizationIdentificationCode
     domain entity EducationOrganizationNetwork
     association EducationOrganizationNetworkAssociation
     association EducationOrganizationPeerAssociation

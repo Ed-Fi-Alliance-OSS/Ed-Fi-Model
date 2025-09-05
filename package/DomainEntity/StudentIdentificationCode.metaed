@@ -1,4 +1,4 @@
-    Domain Entity StudentIdentity
+    Domain Entity StudentIdentificationCode
     documentation "This entity holds different identity codes for a student"
     domain entity Student 
         documentation "A reference to the student"

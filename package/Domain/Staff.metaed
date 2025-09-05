@@ -78,7 +78,7 @@ Domain Staff
     association StaffEducationOrganizationAssignmentAssociation
     association StaffEducationOrganizationEmploymentAssociation
     descriptor StaffIdentificationSystem
-    domain entity StaffIdentity
+    domain entity StaffIdentificationCode
     domain entity StaffLeave
     descriptor StaffLeaveEventCategory
     association StaffSchoolAssociation

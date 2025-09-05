@@ -11,7 +11,7 @@ Domain StudentIdentificationAndDemographics
     descriptor CohortYearType
     domain entity Contact
     descriptor ContactIdentificationSystem
-    domain entity ContactIdentity
+    domain entity ContactIdentificationCode
     descriptor Country
     descriptor Disability
     descriptor DisabilityDesignation
@@ -43,7 +43,7 @@ Domain StudentIdentificationAndDemographics
     domain entity StudentDirectory
     association StudentEducationOrganizationAssociation
     descriptor StudentIdentificationSystem
-    domain entity StudentIdentity
+    domain entity StudentIdentificationCode
     descriptor SupporterMilitaryConnection
     descriptor TelephoneNumberType
     descriptor Term

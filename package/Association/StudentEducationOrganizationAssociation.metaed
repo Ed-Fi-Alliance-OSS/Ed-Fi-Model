@@ -7,11 +7,6 @@ Association StudentEducationOrganizationAssociation [3052]
     shared string ProfileThumbnail [1697]
         documentation "Locator reference for the student photo. The specification for that reference is left to local definition."
         is optional
-    bool HispanicLatinoEthnicity [1688]
-        deprecated "This element is scheduled for removal by 2029. Users of this element are advised to use Race instead."
-        documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race, as last reported to the education organization. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino."""
-        is optional
-        is queryable field
     common CohortYear [1683]
         documentation "The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade."
         is optional collection

@@ -1,4 +1,4 @@
-Domain Entity ContactIdentity
+Domain Entity ContactIdentificationCode
     documentation "This entity holds different identity codes for a contact."
     domain entity Contact 
         documentation "A reference to the contact."
