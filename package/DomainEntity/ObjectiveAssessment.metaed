@@ -30,7 +30,7 @@ Domain Entity ObjectiveAssessment [571]
         is optional collection
     domain entity ObjectiveAssessment [1543]
         documentation "Provide user information to lookup and link to the parent objective assessment containing this objective assessment."
-        is optional
+        is optional collection
         role name Parent
         merge ParentObjectiveAssessment.Assessment with Assessment
     domain entity Assessment [1536]
