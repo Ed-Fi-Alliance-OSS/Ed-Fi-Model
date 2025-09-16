@@ -32,6 +32,10 @@ Domain Entity StudentAssessment [587]
         documentation "A meaningful score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
         is optional collection
     descriptor GradeLevel [1742]
+        documentation "The grade level for which the test form was assessed for the student on this administration."
+        is optional
+        role name Assessed
+    descriptor GradeLevel [1742]
         documentation "The grade level of a student when assessed."
         is optional
         role name WhenAssessed
@@ -61,7 +65,7 @@ Domain Entity StudentAssessment [587]
 		merge StudentObjectiveAssessment.ObjectiveAssessment.Assessment with Assessment
     enumeration SchoolYear [2538]
         documentation "The school year for which the assessment was administered to a student. Among other uses, handles cases in which a student takes a prior-year exam in a subsequent school year during an exam re-test."
-        is optional
+        is required
     descriptor PlatformType [2922]
         documentation "The platform with which the assessment was delivered to the student during the assessment session."
         is optional
