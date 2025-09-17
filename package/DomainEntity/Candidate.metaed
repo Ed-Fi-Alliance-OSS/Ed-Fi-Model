@@ -43,7 +43,7 @@ Domain Entity Candidate
   inline common Citizenship
       documentation "Contains information relative to citizenship status and its associated probationary documentation."
       is optional
-  bool EconomicDisadvantaged
+  descriptor EconomicDisadvantage
       documentation "An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy."
       is optional
   common CandidateCharacteristic
