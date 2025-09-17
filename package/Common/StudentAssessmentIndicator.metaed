@@ -1,0 +1,14 @@
+Common StudentAssessmentIndicator [530]
+    documentation "This entity represents an indicator or metric for non-score attributes being sent current Assessment, for example for at-risk name."
+    string AssessmentIndicator
+        documentation "This represents an indicator or metric for non-score attributes being sent current Assessment, for example for at-risk name."
+        is part of identity
+        max length 100
+    string AssessmentIndicatorName
+        documentation "This represents an indicator or metric for non-score attributes being sent current Assessment, for example for at-risk name."
+        is part of identity
+        max length 100
+    string AssessmentIndicatorGroup
+        documentation "This represents an indicator or metric for non-score attributes being sent current Assessment, for example for at-risk name."
+        is optional
+        max length 100
