@@ -32,7 +32,7 @@ Domain Entity StudentAssessment [587]
         documentation "A meaningful score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc."
         is optional collection
     descriptor GradeLevel [1742]
-        documentation "The grade level for which the test form was assessed for the student on this administration."
+        documentation "The grade level for which the assessment form was evaluated for the student on this administration."
         is optional
         role name Assessed
     descriptor GradeLevel [1742]

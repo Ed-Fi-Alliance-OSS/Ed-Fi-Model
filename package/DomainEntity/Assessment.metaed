@@ -13,7 +13,7 @@ Domain Entity Assessment [540]
         documentation "The category of an assessment based on format and content."
         is optional
     descriptor AcademicSubject [1219]
-        documentation "The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment."
+        documentation "The description of the content or subject area (e.g., arts, mathematics, reading, stenography, a foreign language, or composite if multi-subject) of an assessment."
         is required
     descriptor GradeLevel [1220]
         documentation "The grade level(s) for which an assessment is designed. The semantics of null is assumed to mean that the assessment is not associated with any grade level."
