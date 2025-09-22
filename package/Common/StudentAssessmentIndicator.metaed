@@ -1,0 +1,11 @@
+Common StudentAssessmentIndicator 
+    documentation "This entity represents an indicator or metric for non-score attributes being sent current Assessment, for example for at-risk name."
+    shared string Indicator 
+        documentation "The value of the indicator or metric."
+        is part of identity
+    shared string IndicatorName 
+        documentation "The name of the indicator or metric."
+        is part of identity
+    shared string IndicatorName named IndicatorGroup
+        documentation "The name for a group of indicators."
+        is optional
