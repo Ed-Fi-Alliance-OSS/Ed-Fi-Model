@@ -198,6 +198,20 @@ jobs:
         ./ValidateSchema.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
       shell: pwsh
 
+    - name: Install sqlcmd
+      run: |
+        curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+        sudo apt-get update
+        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+        echo "/opt/mssql-tools/bin/" >> "$GITHUB_PATH"
+        
+    - name: Verify sqlcmd installation
+      run: |
+        echo $PATH
+        echo "Verifying sqlcmd..."
+        sqlcmd "-?" || { echo "sqlcmd not found in PATH"; exit 1; }
+        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || { echo "Failed to connect with sqlcmd"; exit 1; }
+
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
       run: |
