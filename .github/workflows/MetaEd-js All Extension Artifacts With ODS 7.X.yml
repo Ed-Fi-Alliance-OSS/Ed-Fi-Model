@@ -19,7 +19,7 @@ env:
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
   PROJECT_VERSION: "5.2.0"
   PROJECT_DESCRIPTION: "The Ed-Fi Data Model 5.2.0"
-  DATASTANDARD_VERSION:  ${{ github.event.repository.default_branch }}
+  DATASTANDARD_VERSION:  "DS-5.2.0-ME-3.0.1"
   TPDM_DATASTANDARD_VERSION: "Data-Standard-v5.2.0"
   DB_PASS: temporaryDbP@ssw0rd!
 
