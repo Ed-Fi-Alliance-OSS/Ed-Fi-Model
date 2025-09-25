@@ -133,22 +133,24 @@ jobs:
       shell: pwsh
       run: |
         Get-ChildItem MetaEdExtensionSource -Exclude Extensions | Remove-Item -Recurse -Force
-        Get-ChildItem MetaEdExtensionSource/Extensions/${{ env.PROJECT_VERSION }}/Homograph/ -Exclude HomographMetaEd | Remove-Item -Recurse -Force
-        Get-ChildItem MetaEdExtensionSource/Extensions/${{ env.PROJECT_VERSION }}/ -Exclude Homograph | Remove-Item -Recurse -Force
+        Get-ChildItem MetaEdExtensionSource/Extensions/5.2.0/Homograph/ -Exclude HomographMetaEd | Remove-Item -Recurse -Force
+        Get-ChildItem MetaEdExtensionSource/Extensions/5.2.0/ -Exclude Homograph | Remove-Item -Recurse -Force
+        Get-ChildItem MetaEdExtensionSource/Extensions/ -Exclude 5.2.0 | Remove-Item -Recurse -Force
 
-        cd MetaEdExtensionSource/Extensions/${{ env.PROJECT_VERSION }}/Homograph/HomographMetaEd
-        mv * ../../..
+        cd MetaEdExtensionSource/Extensions/5.2.0/Homograph/HomographMetaEd
+        mv * ../../../..
 
     - name: Clean up folders except SampleMetaEd for MetaEdExtensionSource
       if: matrix.EXTENSION_NAME == 'Sample'
       shell: pwsh
       run: |
         Get-ChildItem MetaEdExtensionSource -Exclude Extensions | Remove-Item -Recurse -Force
-        Get-ChildItem MetaEdExtensionSource/Extensions/${{ env.PROJECT_VERSION }}/Sample/ -Exclude SampleMetaEd | Remove-Item -Recurse -Force
-        Get-ChildItem MetaEdExtensionSource/Extensions/${{ env.PROJECT_VERSION }}/ -Exclude Sample | Remove-Item -Recurse -Force
+        Get-ChildItem MetaEdExtensionSource/Extensions/5.2.0/Sample/ -Exclude SampleMetaEd | Remove-Item -Recurse -Force
+        Get-ChildItem MetaEdExtensionSource/Extensions/5.2.0/ -Exclude Sample | Remove-Item -Recurse -Force
+        Get-ChildItem MetaEdExtensionSource/Extensions/ -Exclude 5.2.0 | Remove-Item -Recurse -Force
 
-        cd MetaEdExtensionSource/Extensions/${{ env.PROJECT_VERSION }}/Sample/SampleMetaEd
-        mv * ../../..
+        cd MetaEdExtensionSource/Extensions/5.2.0/Sample/SampleMetaEd
+        mv * ../../../..
 
     - name: Create MetaEdConfig
       working-directory: ./Ed-Fi-Model/    
