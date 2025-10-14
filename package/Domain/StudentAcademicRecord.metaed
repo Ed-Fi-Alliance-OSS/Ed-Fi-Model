@@ -46,6 +46,7 @@ Domain StudentAcademicRecord
     descriptor GradeLevel
     descriptor GradePointAverageType
     descriptor GradeType
+    descriptor GradingPeriod
     domain entity GradingPeriod
     descriptor Indicator
     descriptor IndicatorGroup
