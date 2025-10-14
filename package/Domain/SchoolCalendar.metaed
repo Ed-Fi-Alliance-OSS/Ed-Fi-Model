@@ -22,7 +22,6 @@ Domain SchoolCalendar
     descriptor ExitWithdrawType
     descriptor FederalLocaleCode
     descriptor GradeLevel
-    descriptor GradingPeriod
     domain entity GradingPeriod
     descriptor Indicator
     descriptor IndicatorGroup
