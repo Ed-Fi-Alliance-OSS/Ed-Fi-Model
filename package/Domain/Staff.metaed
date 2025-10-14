@@ -19,7 +19,6 @@ Domain Staff
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
     descriptor CitizenshipStatus
-    descriptor ContactType
     descriptor Country
     domain entity Credential
     descriptor CredentialField
