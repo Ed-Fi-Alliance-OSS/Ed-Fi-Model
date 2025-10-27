@@ -32,6 +32,8 @@ Domain RecruitingAndStaffing
     descriptor LanguageUse
     descriptor LevelOfEducation
     descriptor Locale
+    domain entity ProfessionalDevelopmentEvent
+    domain entity ProfessionalDevelopmentEventAttendance
     descriptor Race
     domain entity RecruitmentEvent
     domain entity RecruitmentEventAttendance
