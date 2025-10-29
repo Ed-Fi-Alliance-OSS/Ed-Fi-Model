@@ -18,7 +18,6 @@ Domain PerformanceEvaluation
 	domain entity EvaluationRating
 	descriptor EvaluationRatingLevel
 	descriptor EvaluationRatingStatus
-	domain entity EvaluationRubricDimension
 	descriptor EvaluationType
 	domain entity Goal
 	descriptor GoalType
@@ -34,5 +33,6 @@ Domain PerformanceEvaluation
 	domain entity QuantitativeMeasureScore
 	descriptor RatingLevel
 	descriptor ResultDatatypeType
+	domain entity RubricDimension
 	domain entity SurveySectionAggregateResponse
 	descriptor Term
