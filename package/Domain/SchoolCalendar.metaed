@@ -40,7 +40,6 @@ Domain SchoolCalendar
     descriptor SchoolChoiceBasis
     descriptor SchoolType
     domain entity Session
-    descriptor Sex
     descriptor StateAbbreviation
     domain entity Student
     association StudentSchoolAssociation
