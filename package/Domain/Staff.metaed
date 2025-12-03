@@ -27,7 +27,6 @@ Domain Staff
     descriptor CredentialType
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     domain entity EducationServiceCenter
     descriptor EducatorRole
     descriptor ElectronicMailType

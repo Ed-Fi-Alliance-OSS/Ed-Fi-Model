@@ -11,11 +11,9 @@ Domain SchoolCalendar
     descriptor CalendarType
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     descriptor Country
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor EducationPlan
     descriptor EnrollmentType
     descriptor EntryGradeLevelReason
@@ -40,10 +38,8 @@ Domain SchoolCalendar
     descriptor SchoolChoiceBasis
     descriptor SchoolType
     domain entity Session
-    descriptor Sex
     descriptor StateAbbreviation
     domain entity Student
     association StudentSchoolAssociation
     descriptor Term
     descriptor TitleIPartASchoolDesignation
-    descriptor Visa
