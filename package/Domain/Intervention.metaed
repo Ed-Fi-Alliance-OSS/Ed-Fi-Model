@@ -8,9 +8,7 @@ Domain Intervention
     descriptor AcademicSubject
     descriptor AddressCharacteristic
     descriptor AddressType
-    descriptor AncestryEthnicOrigin
     descriptor AttendanceEventCategory
-    descriptor CitizenshipStatus
     domain entity Cohort
     descriptor CohortScope
     descriptor CohortType
@@ -22,9 +20,7 @@ Domain Intervention
     domain entity EducationContent
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     association EducationOrganizationInterventionPrescriptionAssociation
-    descriptor ElectronicMailType
     descriptor GradeLevel
     descriptor Indicator
     descriptor IndicatorGroup
@@ -35,23 +31,16 @@ Domain Intervention
     descriptor InterventionEffectivenessRating
     domain entity InterventionPrescription
     domain entity InterventionStudy
-    descriptor Language
-    descriptor LanguageUse
     descriptor LevelOfEducation
     descriptor Locale
     descriptor OperationalStatus
     descriptor OtherNameType
     descriptor PopulationServed
-    descriptor Race
     descriptor RecognitionType
     descriptor Sex
     domain entity Staff
-    descriptor StaffIdentificationSystem
     descriptor StateAbbreviation
     domain entity Student
     association StudentCohortAssociation
     association StudentInterventionAssociation
     domain entity StudentInterventionAttendanceEvent
-    descriptor TelephoneNumberType
-    descriptor TribalAffiliation
-    descriptor Visa

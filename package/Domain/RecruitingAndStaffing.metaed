@@ -17,6 +17,7 @@ Domain RecruitingAndStaffing
     descriptor ApplicationSource
     descriptor ApplicationStatus
     descriptor AssessmentReportingMethod
+    descriptor AttendanceEventCategory
     descriptor BackgroundCheckStatus
     descriptor BackgroundCheckType
     descriptor CitizenshipStatus
@@ -34,6 +35,7 @@ Domain RecruitingAndStaffing
     descriptor LevelOfEducation
     descriptor Locale
     domain entity ProfessionalDevelopmentEvent
+    descriptor ProfessionalDevelopmentOfferedBy
     domain entity ProfessionalDevelopmentEventAttendance
     descriptor Race
     domain entity RecruitmentEvent

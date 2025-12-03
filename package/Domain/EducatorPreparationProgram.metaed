@@ -44,7 +44,6 @@ Domain EducatorPreparationProgram
     association StaffEducatorPreparationProgramAssociation
     descriptor StaffToCandidateRelationship
     descriptor StateAbbreviation
-    descriptor StudentIdentificationSystem
     descriptor TelephoneNumberType
     descriptor Term
     descriptor Visa
