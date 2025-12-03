@@ -30,7 +30,6 @@ Domain Discipline
     domain entity School
     descriptor SchoolCategory
     descriptor SchoolType
-    descriptor Sex
     domain entity Staff
     association StaffDisciplineIncidentAssociation
     descriptor StateAbbreviation

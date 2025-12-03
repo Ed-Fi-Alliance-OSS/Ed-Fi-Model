@@ -31,7 +31,6 @@ Domain Finance
     domain entity ObjectDimension
     descriptor OperationalStatus
     domain entity OperationalUnitDimension
-    descriptor OtherNameType
     domain entity ProgramDimension
     domain entity ProjectDimension
     descriptor RecognitionType
