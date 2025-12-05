@@ -16,7 +16,6 @@ Domain StudentAcademicRecord
     descriptor CareerPathway
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     descriptor CompetencyLevel
     domain entity CompetencyObjective
     descriptor Country
@@ -39,7 +38,6 @@ Domain StudentAcademicRecord
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor FederalLocaleCode
     domain entity Grade
     domain entity GradebookEntry

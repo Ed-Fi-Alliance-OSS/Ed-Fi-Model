@@ -1,7 +1,7 @@
 Common InternationalAddress [509]
     documentation "Addresses located outside of the United States."
     descriptor AddressType [841]
-        documentation "The type of address listed for an individual or organization. For example:  Physical Address, Mailing Address, Home Address, etc.)"
+        documentation "The type of address listed for an individual or organization. (For example:  Physical Address, Mailing Address, Home Address, etc.)"
         is part of identity
     shared string AddressLine named AddressLine1 [837]
         documentation "The first line of the address."
