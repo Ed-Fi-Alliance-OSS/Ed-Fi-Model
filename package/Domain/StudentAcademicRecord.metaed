@@ -80,7 +80,6 @@ Domain StudentAcademicRecord
     descriptor SectionType
     descriptor Service
     domain entity Session
-    descriptor Sex
     descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAcademicRecord
@@ -91,4 +90,3 @@ Domain StudentAcademicRecord
     descriptor SubmissionStatus
     descriptor Term
     descriptor TitleIPartASchoolDesignation
-    descriptor Visa
