@@ -6,9 +6,7 @@ Domain Survey
     descriptor AcademicSubject
     descriptor AddressCharacteristic
     descriptor AddressType
-    descriptor AncestryEthnicOrigin
     descriptor CareerPathway
-    descriptor CitizenshipStatus
     descriptor CompetencyLevel
     domain entity Contact
     descriptor Country
@@ -21,7 +19,6 @@ Domain Survey
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor ElectronicMailType
     descriptor GradeLevel
     descriptor Indicator
@@ -41,7 +38,6 @@ Domain Survey
     descriptor ProgramSponsor
     descriptor ProgramType
     descriptor QuestionForm
-    descriptor Race
     descriptor RecognitionType
     domain entity Section
     descriptor SectionCharacteristic
@@ -49,7 +45,6 @@ Domain Survey
     domain entity Session
     descriptor Sex
     domain entity Staff
-    descriptor StaffIdentificationSystem
     descriptor StateAbbreviation
     domain entity Student
     domain entity Survey
@@ -71,5 +66,3 @@ Domain Survey
     association SurveySectionResponseStaffTargetAssociation
     descriptor TelephoneNumberType
     descriptor Term
-    descriptor TribalAffiliation
-    descriptor Visa

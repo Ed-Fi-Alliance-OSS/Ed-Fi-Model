@@ -14,6 +14,7 @@ Domain StudentHealth
     descriptor NonMedicalImmunizationExemption
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor Sex
     descriptor StateAbbreviation
     domain entity Student
     domain entity StudentHealth

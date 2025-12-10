@@ -16,12 +16,10 @@ The model is based upon multiple levels of definition, as follows:
     descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
-    descriptor AncestryEthnicOrigin
     descriptor AttemptStatus
     descriptor CareerPathway
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     domain entity ClassPeriod
     descriptor ClassroomPosition
     descriptor CompetencyLevel
@@ -103,7 +101,6 @@ The model is based upon multiple levels of definition, as follows:
     domain entity Session
     descriptor Sex
     domain entity Staff
-    descriptor StaffIdentificationSystem
     association StaffProgramAssociation
     association StaffSchoolAssociation
     association StaffSectionAssociation
@@ -116,8 +113,5 @@ The model is based upon multiple levels of definition, as follows:
     domain entity StudentProgramEvaluation
     association StudentSchoolAssociation
     association StudentSectionAssociation
-    descriptor TelephoneNumberType
     descriptor Term
     descriptor TitleIPartASchoolDesignation
-    descriptor TribalAffiliation
-    descriptor Visa
