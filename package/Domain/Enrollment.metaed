@@ -65,6 +65,7 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor SchoolChoiceBasis
     descriptor SchoolChoiceImplementStatus
     descriptor SchoolType
+    descriptor Sex
     descriptor StateAbbreviation
     domain entity Student
     descriptor StudentCharacteristic

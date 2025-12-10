@@ -50,6 +50,7 @@ Domain Graduation
     descriptor SchoolCategory
     descriptor SchoolChoiceBasis
     descriptor SchoolType
+    descriptor Sex 
     descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAcademicRecord
