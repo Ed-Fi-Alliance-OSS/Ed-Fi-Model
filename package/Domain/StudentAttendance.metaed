@@ -29,7 +29,6 @@ Domain StudentAttendance
     descriptor ProgramCharacteristic
     descriptor ProgramSponsor
     descriptor ProgramType
-    descriptor Race
     descriptor RecognitionType
     descriptor RepeatIdentifier
     domain entity School
@@ -43,7 +42,6 @@ Domain StudentAttendance
     domain entity Session
     descriptor Sex
     domain entity Staff
-    descriptor StaffIdentificationSystem
     descriptor StateAbbreviation
     domain entity Student
     association StudentProgramAssociation
@@ -51,8 +49,5 @@ Domain StudentAttendance
     domain entity StudentSchoolAttendanceEvent
     association StudentSectionAssociation
     domain entity StudentSectionAttendanceEvent
-    descriptor TelephoneNumberType
     descriptor Term
     descriptor TitleIPartASchoolDesignation
-    descriptor TribalAffiliation
-    descriptor Visa
