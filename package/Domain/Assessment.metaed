@@ -16,7 +16,6 @@ Domain Assessment
     descriptor AssessmentPeriod
     descriptor AssessmentReportingMethod
     domain entity AssessmentScoreRangeLearningStandard
-    descriptor CitizenshipStatus
     descriptor Country
     descriptor CourseLevelCharacteristic
     descriptor CreditType
@@ -52,5 +51,4 @@ Domain Assessment
     descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAssessment
-    domain entity StudentAssessmentEducationOrganizationAssociation
-    descriptor Visa
+    association StudentAssessmentEducationOrganizationAssociation

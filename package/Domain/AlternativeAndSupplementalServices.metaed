@@ -9,12 +9,10 @@ Domain AlternativeAndSupplementalServices
     descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
-    descriptor AncestryEthnicOrigin
     descriptor AttemptStatus
     descriptor AttendanceEventCategory
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     descriptor ContinuationOfServicesReason
     descriptor Country
     descriptor CourseLevelCharacteristic
@@ -28,8 +26,6 @@ Domain AlternativeAndSupplementalServices
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
-    descriptor ElectronicMailType
     descriptor EligibilityDelayReason
     descriptor EligibilityEvaluationType
     descriptor EvaluationDelayReason
@@ -46,7 +42,6 @@ Domain AlternativeAndSupplementalServices
     descriptor InternetAccess
     descriptor Language
     descriptor LanguageInstructionProgramService
-    descriptor LanguageUse
     descriptor LevelOfEducation
     descriptor Locale
     descriptor MagnetSpecialProgramEmphasisSchool
@@ -67,7 +62,6 @@ Domain AlternativeAndSupplementalServices
     descriptor ProgramType
     descriptor Progress
     descriptor ProgressLevel
-    descriptor Race
     descriptor ReasonExited
     descriptor RecognitionType
     descriptor RepeatIdentifier
@@ -85,7 +79,6 @@ Domain AlternativeAndSupplementalServices
     descriptor SpecialEducationProgramService
     descriptor SpecialEducationSetting
     domain entity Staff
-    descriptor StaffIdentificationSystem
     association StaffProgramAssociation
     descriptor StateAbbreviation
     domain entity Student
@@ -105,12 +98,9 @@ Domain AlternativeAndSupplementalServices
     association StudentSpecialEducationProgramEligibilityAssociation
     association StudentTitleIPartAProgramAssociation
     descriptor TechnicalSkillsAssessment
-    descriptor TelephoneNumberType
     descriptor TitleIPartAParticipant
     descriptor TitleIPartAProgramService
     descriptor TitleIPartASchoolDesignation
-    descriptor TribalAffiliation
-    descriptor Visa
     footer documentation
 "# Alternative and Supplemental Services Subdomains
 
