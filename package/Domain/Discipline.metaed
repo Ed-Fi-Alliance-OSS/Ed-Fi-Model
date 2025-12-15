@@ -9,6 +9,7 @@ Domain Discipline
     descriptor Behavior
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor Country
     descriptor Discipline
     domain entity DisciplineAction
     descriptor DisciplineActionLengthDifferenceReason
