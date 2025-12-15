@@ -47,6 +47,7 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor LocalEducationAgencyCategory
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor OperationalStatus
+    descriptor OtherNameType
     descriptor PrimaryLearningDeviceAccess
     descriptor PrimaryLearningDeviceAwayFromSchool
     descriptor PrimaryLearningDeviceProvider
