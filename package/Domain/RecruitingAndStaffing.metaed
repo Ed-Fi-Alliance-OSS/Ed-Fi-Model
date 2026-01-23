@@ -25,6 +25,7 @@ Domain RecruitingAndStaffing
     descriptor Disability
     descriptor DisabilityDesignation
     descriptor DisabilityDeterminationSourceType
+    descriptor EconomicDisadvantage
     descriptor ElectronicMailType
     descriptor GradeLevel
     descriptor GradePointAverageType

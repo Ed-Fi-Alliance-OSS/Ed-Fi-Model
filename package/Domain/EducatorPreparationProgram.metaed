@@ -23,6 +23,7 @@ Domain EducatorPreparationProgram
     descriptor DisabilityDesignation
     descriptor DisabilityDeterminationSourceType
     domain entity EducatorPreparationProgram
+    descriptor EconomicDisadvantage
     descriptor ElectronicMailType
     descriptor EnglishLanguageExam
     descriptor EPPDegreeType
