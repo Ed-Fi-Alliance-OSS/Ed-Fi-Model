@@ -23,6 +23,7 @@ Domain Assessment
     descriptor EducationOrganizationAssociationType
     descriptor EventCircumstance
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Language
     domain entity LearningStandard
     descriptor LearningStandardCategory
@@ -33,6 +34,7 @@ Domain Assessment
     domain entity ObjectiveAssessment
     descriptor OtherNameType
     descriptor PerformanceLevel
+    descriptor PersonalInformationVerification
     descriptor PlatformType
     descriptor PopulationServed
     domain entity Program

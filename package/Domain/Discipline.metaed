@@ -5,6 +5,7 @@ Domain Discipline
 * A DisciplineAction represents the punitive or other actions taken against the students. One or more DisciplineActions may be applied to one DisciplineIncident(e.g., suspension plus after-school study hall). Alternatively, one DisciplineAction could have multiple Disciplines as an attribute to accomplish the same thing."
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AchievementCategory
     descriptor AdministrativeFundingControl
     descriptor Behavior
     descriptor CharterApprovalAgencyType
@@ -17,11 +18,13 @@ Domain Discipline
     descriptor DisciplineIncidentParticipationCode
     descriptor FederalLocaleCode
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor IncidentLocation
     descriptor InternetAccess
     descriptor LevelOfEducation
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor RecognitionType
     descriptor ReporterDescription
     domain entity School

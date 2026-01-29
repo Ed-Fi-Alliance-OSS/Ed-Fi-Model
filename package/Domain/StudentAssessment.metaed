@@ -15,13 +15,14 @@ The student's assessment results follow a similar structure to the assessment me
     descriptor AssessmentItemResult
     descriptor AssessmentPeriod
     descriptor AssessmentReportingMethod
-    descriptor CitizenshipStatus
     descriptor Country
     descriptor EventCircumstance
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Language
     descriptor OtherNameType
     descriptor PerformanceLevel
+    descriptor PersonalInformationVerification
     descriptor PlatformType
     descriptor ReasonNotTested
     descriptor ResponseIndicator
@@ -31,5 +32,4 @@ The student's assessment results follow a similar structure to the assessment me
     descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAssessment
-    descriptor Visa
     position 3

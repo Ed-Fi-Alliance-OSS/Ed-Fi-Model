@@ -4,7 +4,6 @@ Subdomain ReportCard of StudentAcademicRecord
     descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AttemptStatus
-    descriptor CitizenshipStatus
     descriptor CompetencyLevel
     domain entity CompetencyObjective
     descriptor Country
@@ -15,13 +14,13 @@ Subdomain ReportCard of StudentAcademicRecord
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     domain entity Grade
     descriptor GradeLevel
     descriptor GradePointAverageType
     descriptor GradeType
     descriptor GradingPeriod
     domain entity GradingPeriod
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -35,6 +34,7 @@ Subdomain ReportCard of StudentAcademicRecord
     descriptor OperationalStatus
     descriptor OtherNameType
     descriptor PerformanceBaseConversion
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic
@@ -53,5 +53,4 @@ Subdomain ReportCard of StudentAcademicRecord
     domain entity StudentCompetencyObjective
     association StudentProgramAssociation
     association StudentSectionAssociation
-    descriptor Visa
     position 2

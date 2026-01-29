@@ -3,16 +3,15 @@ Subdomain SectionsAndPrograms of TeachingAndLearning
     descriptor AcademicHonorCategory
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AchievementCategory
     descriptor AdditionalCreditType
     descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
-    descriptor AncestryEthnicOrigin
     descriptor AttemptStatus
     descriptor CareerPathway
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     domain entity ClassPeriod
     descriptor ClassroomPosition
     descriptor CompetencyLevel
@@ -36,9 +35,7 @@ Subdomain SectionsAndPrograms of TeachingAndLearning
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor EducationPlan
-    descriptor ElectronicMailType
     descriptor EnrollmentType
     descriptor EntryGradeLevelReason
     descriptor EntryType
@@ -46,13 +43,13 @@ Subdomain SectionsAndPrograms of TeachingAndLearning
     descriptor FederalLocaleCode
     descriptor GradeLevel
     descriptor GradePointAverageType
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
     descriptor InstitutionTelephoneNumberType
     descriptor InternetAccess
     descriptor Language
-    descriptor LanguageUse
     descriptor LevelOfEducation
     descriptor Locale
     domain entity Location
@@ -61,13 +58,13 @@ Subdomain SectionsAndPrograms of TeachingAndLearning
     descriptor MethodCreditEarned
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramAssignment
     descriptor ProgramCharacteristic
     descriptor ProgramSponsor
     descriptor ProgramType
-    descriptor Race
     descriptor RecognitionType
     descriptor RepeatIdentifier
     descriptor ResidencyStatus
@@ -82,7 +79,6 @@ Subdomain SectionsAndPrograms of TeachingAndLearning
     domain entity Session
     descriptor Sex
     domain entity Staff
-    descriptor StaffIdentificationSystem
     association StaffProgramAssociation
     association StaffSchoolAssociation
     association StaffSectionAssociation
@@ -92,9 +88,6 @@ Subdomain SectionsAndPrograms of TeachingAndLearning
     association StudentProgramAssociation
     association StudentSchoolAssociation
     association StudentSectionAssociation
-    descriptor TelephoneNumberType
     descriptor Term
     descriptor TitleIPartASchoolDesignation
-    descriptor TribalAffiliation
-    descriptor Visa
     position 2

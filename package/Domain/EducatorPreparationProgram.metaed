@@ -32,11 +32,13 @@ Domain EducatorPreparationProgram
     association FieldworkExperienceSectionAssociation
     descriptor FieldworkType
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Language
     descriptor LanguageUse
     descriptor LimitedEnglishProficiency
     descriptor Locale
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PreviousCareer
     descriptor ProgramType
     descriptor Race

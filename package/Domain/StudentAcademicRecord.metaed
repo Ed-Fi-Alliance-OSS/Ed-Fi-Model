@@ -7,6 +7,7 @@ Domain StudentAcademicRecord
     descriptor AcademicHonorCategory
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AchievementCategory
     descriptor AdditionalCreditType
     descriptor AddressCharacteristic
     descriptor AddressType
@@ -47,6 +48,7 @@ Domain StudentAcademicRecord
     descriptor GradeType
     descriptor GradingPeriod
     domain entity GradingPeriod
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -63,6 +65,7 @@ Domain StudentAcademicRecord
     descriptor OperationalStatus
     descriptor OtherNameType
     descriptor PerformanceBaseConversion
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic

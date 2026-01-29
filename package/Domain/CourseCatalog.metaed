@@ -20,7 +20,6 @@ documentation "A Course entity represents the definition of the course, its char
     descriptor CurriculumUsed
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor FederalLocaleCode
     descriptor GradeLevel
     descriptor Indicator

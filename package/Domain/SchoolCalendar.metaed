@@ -23,6 +23,7 @@ Domain SchoolCalendar
     descriptor GradeLevel
     descriptor GradingPeriod
     domain entity GradingPeriod
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -32,6 +33,7 @@ Domain SchoolCalendar
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor ResidencyStatus
     domain entity School
     descriptor SchoolCategory

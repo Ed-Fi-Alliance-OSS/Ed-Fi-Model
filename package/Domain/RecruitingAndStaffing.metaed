@@ -31,10 +31,12 @@ Domain RecruitingAndStaffing
     descriptor GradePointAverageType
     descriptor HireStatus
     descriptor HiringSource
+    descriptor IdentificationDocumentUse
     descriptor Language
     descriptor LanguageUse
     descriptor LevelOfEducation
     descriptor Locale
+    descriptor PersonalInformationVerification
     domain entity ProfessionalDevelopmentEvent
     descriptor ProfessionalDevelopmentOfferedBy
     domain entity ProfessionalDevelopmentEventAttendance

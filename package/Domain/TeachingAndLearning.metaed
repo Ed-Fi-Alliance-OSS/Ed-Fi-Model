@@ -12,6 +12,7 @@ The model is based upon multiple levels of definition, as follows:
     descriptor AcademicHonorCategory
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AchievementCategory
     descriptor AdditionalCreditType
     descriptor AddressCharacteristic
     descriptor AddressType
@@ -43,25 +44,22 @@ The model is based upon multiple levels of definition, as follows:
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor EducationPlan
-    descriptor ElectronicMailType
     descriptor EnrollmentType
     descriptor EntryGradeLevelReason
     descriptor EntryType
-    descriptor EvaluationRatingStatus
     domain entity EvaluationRubricDimension
     descriptor ExitWithdrawType
     descriptor FederalLocaleCode
     descriptor GradeLevel
     descriptor GradePointAverageType
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
     descriptor InstitutionTelephoneNumberType
     descriptor InternetAccess
     descriptor Language
-    descriptor LanguageUse
     domain entity LearningStandard
     descriptor LearningStandardCategory
     descriptor LearningStandardScope
@@ -73,6 +71,7 @@ The model is based upon multiple levels of definition, as follows:
     descriptor MethodCreditEarned
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramAssignment
@@ -85,7 +84,6 @@ The model is based upon multiple levels of definition, as follows:
     descriptor ProgramSponsor
     descriptor ProgramType
     descriptor PublicationStatus
-    descriptor Race
     descriptor RatingLevel
     descriptor RecognitionType
     descriptor RepeatIdentifier

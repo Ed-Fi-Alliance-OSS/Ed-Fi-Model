@@ -5,6 +5,7 @@ Domain StudentAttendance
 * ""Exception only"" reporting, providing attendance events only for absences and tardies"
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AchievementCategory
     descriptor AdministrativeFundingControl
     descriptor AttemptStatus
     descriptor AttendanceEventCategory
@@ -18,12 +19,14 @@ Domain StudentAttendance
     descriptor EducationalEnvironment
     descriptor FederalLocaleCode
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor InternetAccess
     descriptor Language
     descriptor LevelOfEducation
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor MediumOfInstruction
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic

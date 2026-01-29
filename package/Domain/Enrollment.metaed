@@ -9,12 +9,12 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AidType
+    descriptor AssessmentReportingMethod
     descriptor BarrierToInternetAccessInResidence
     descriptor BusRoute
     descriptor CertificationRoute
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     descriptor CohortYearType
     descriptor Country
     descriptor CreditCategory
@@ -35,6 +35,7 @@ For associations between a student and a school or LEA that is *not* enrollment(
     domain entity GraduationPlan
     descriptor GraduationPlanType
     descriptor GunFreeSchoolsActReportingStatus
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -48,11 +49,14 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PerformanceLevel
+    descriptor PersonalInformationVerification
     descriptor PrimaryLearningDeviceAccess
     descriptor PrimaryLearningDeviceAwayFromSchool
     descriptor PrimaryLearningDeviceProvider
     descriptor ResidencyStatus
     descriptor Responsibility
+    descriptor ResultDatatypeType
     domain entity School
     descriptor SchoolCategory
     descriptor SchoolChoiceBasis

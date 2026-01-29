@@ -5,6 +5,7 @@ Domain StudentHealth
     descriptor Country
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
+    descriptor IdentificationDocumentUse
     descriptor ImmunizationType
     descriptor Indicator
     descriptor IndicatorGroup
@@ -14,6 +15,7 @@ Domain StudentHealth
     descriptor NonMedicalImmunizationExemption
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor Sex
     descriptor StateAbbreviation
     domain entity Student
