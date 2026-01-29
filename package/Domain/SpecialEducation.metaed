@@ -4,14 +4,13 @@ Domain SpecialEducation
     descriptor AcademicSubject
     descriptor AccreditationStatus
     descriptor AddressCharacteristic
+    descriptor AchievementCategory
     descriptor AddressType
     descriptor AdministrativeFundingControl
-    descriptor AncestryEthnicOrigin
     descriptor AttemptStatus
     descriptor AttendanceEventCategory
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     descriptor ClassroomPosition
     descriptor Country
     descriptor CourseLevelCharacteristic
@@ -24,29 +23,27 @@ Domain SpecialEducation
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
-    descriptor ElectronicMailType
     descriptor FederalLocaleCode
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
     descriptor InstitutionTelephoneNumberType
     descriptor InternetAccess
     descriptor Language
-    descriptor LanguageUse
     descriptor LevelOfEducation
     descriptor Locale
     descriptor MagnetSpecialProgramEmphasisSchool
     descriptor MediumOfInstruction
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic
     descriptor ProgramSponsor
     descriptor ProgramType
-    descriptor Race
     descriptor RecognitionType
     descriptor RepeatIdentifier
     domain entity RestraintEvent
@@ -63,7 +60,6 @@ Domain SpecialEducation
     descriptor SpecialEducationProgramService
     descriptor SpecialEducationSetting
     domain entity Staff
-    descriptor StaffIdentificationSystem
     association StaffProgramAssociation
     association StaffSectionAssociation
     descriptor StateAbbreviation
@@ -74,7 +70,4 @@ Domain SpecialEducation
     association StudentSectionAssociation
     domain entity StudentSectionAttendanceEvent
     association StudentSpecialEducationProgramAssociation
-    descriptor TelephoneNumberType
     descriptor TitleIPartASchoolDesignation
-    descriptor TribalAffiliation
-    descriptor Visa

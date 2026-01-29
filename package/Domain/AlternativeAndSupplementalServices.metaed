@@ -7,6 +7,7 @@ Domain AlternativeAndSupplementalServices
     descriptor AcademicSubject
     descriptor AccreditationStatus
     descriptor AddressCharacteristic
+    descriptor AchievementCategory
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AttemptStatus
@@ -35,6 +36,7 @@ Domain AlternativeAndSupplementalServices
     descriptor HomelessPrimaryNighttimeResidence
     descriptor HomelessProgramService
     descriptor IDEAPart
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -54,6 +56,7 @@ Domain AlternativeAndSupplementalServices
     descriptor OtherNameType
     descriptor Participation
     descriptor ParticipationStatus
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     descriptor Proficiency
     domain entity Program

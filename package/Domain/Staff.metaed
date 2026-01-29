@@ -11,6 +11,7 @@ Domain Staff
     descriptor AcademicSubject
     descriptor AccreditationStatus
     descriptor AddressCharacteristic
+    descriptor AchievementCategory
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AncestryEthnicOrigin
@@ -35,6 +36,7 @@ Domain Staff
     descriptor FundingSource
     descriptor GradeLevel
     descriptor GunFreeSchoolsActReportingStatus
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -55,6 +57,7 @@ Domain Staff
     descriptor OpenStaffPositionReason
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     domain entity Person
     descriptor PostingResult
     descriptor ProgramAssignment

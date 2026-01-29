@@ -5,6 +5,7 @@ Domain Survey
     * Associations to tie Survey and SurveyResponse domain entities to Course, Section, Program, Target EducationOrganization, and Target Staff."
     descriptor AcademicSubject
     descriptor AddressCharacteristic
+    descriptor AchievementCategory
     descriptor AddressType
     descriptor CareerPathway
     descriptor CompetencyLevel
@@ -21,6 +22,7 @@ Domain Survey
     descriptor EducationOrganizationCategory
     descriptor ElectronicMailType
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -32,6 +34,7 @@ Domain Survey
     descriptor MediumOfInstruction
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic

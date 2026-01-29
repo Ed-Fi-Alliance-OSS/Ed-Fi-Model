@@ -16,7 +16,6 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor CertificationRoute
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     descriptor CohortYearType
     descriptor Country
     descriptor CreditCategory

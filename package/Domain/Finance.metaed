@@ -7,6 +7,7 @@ Domain Finance
     descriptor AcademicSubject
     descriptor AccountType
     descriptor AddressCharacteristic
+    descriptor AchievementCategory
     descriptor AddressType
     domain entity BalanceSheetDimension
     domain entity ChartOfAccount
@@ -16,6 +17,7 @@ Domain Finance
     descriptor FinancialCollection
     domain entity FunctionDimension
     domain entity FundDimension
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -32,6 +34,7 @@ Domain Finance
     descriptor OperationalStatus
     domain entity OperationalUnitDimension
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     domain entity ProgramDimension
     domain entity ProjectDimension
     descriptor RecognitionType

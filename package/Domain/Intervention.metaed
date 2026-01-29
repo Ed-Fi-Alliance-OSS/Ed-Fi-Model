@@ -7,6 +7,7 @@ Domain Intervention
 * StudentInterventionAssociation links Students to Interventions in which they participate. The effectiveness of an Intervention for a given Student is also captured. Data about a formal InterventionStudy for an InterventionPrescription may also be associated."
     descriptor AcademicSubject
     descriptor AddressCharacteristic
+    descriptor AchievementCategory
     descriptor AddressType
     descriptor AttendanceEventCategory
     domain entity Cohort
@@ -22,6 +23,7 @@ Domain Intervention
     descriptor EducationOrganizationCategory
     association EducationOrganizationInterventionPrescriptionAssociation
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -35,6 +37,7 @@ Domain Intervention
     descriptor Locale
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     descriptor RecognitionType
     descriptor Sex
