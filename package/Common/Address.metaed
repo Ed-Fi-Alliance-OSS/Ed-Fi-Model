@@ -47,4 +47,4 @@ Common Address
         is optional
     common AddressCharacteristic
         documentation "Reflects important characteristics of an Address."
-        is optional collection
+        is optional
