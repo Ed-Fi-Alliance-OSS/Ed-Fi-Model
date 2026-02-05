@@ -1,0 +1,2 @@
+Descriptor AddressCharacteristic [125]
+    documentation "This descriptor defines characteristics of an Address."
