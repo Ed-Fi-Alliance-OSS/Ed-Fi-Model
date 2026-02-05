@@ -34,7 +34,6 @@ Subdomain ReportCard of StudentAcademicRecord
     descriptor OperationalStatus
     descriptor OtherNameType
     descriptor PerformanceBaseConversion
-    descriptor PerformanceBasedConversion
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic
