@@ -6,6 +6,7 @@ Domain BellSchedule
 * The association between BellSchedule Date attribute indicates which days of the Session the BellSchedule was in effect. This allows the school to have a BellSchedule that is special for a specific day, such as for a testing day or a late-start day.
 * A School may have multiple BellSchedules defined, and may have different BellSchedules on the same calendar time period (e.g. for different grades)."
     descriptor AccreditationStatus
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
     domain entity BellSchedule

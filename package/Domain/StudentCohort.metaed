@@ -4,6 +4,7 @@ Domain StudentCohort
 
 Cohorts may be associated with programs and may have staff associated with the cohort who is providing services, oversight, or sponsorship. Cohorts are associated with Intervention entities via the StudentInterventionAssociation."
     descriptor AcademicSubject
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AncestryEthnicOrigin
     descriptor AttemptStatus

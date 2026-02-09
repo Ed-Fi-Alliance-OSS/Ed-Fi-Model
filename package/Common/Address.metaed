@@ -45,6 +45,6 @@ Common Address
     descriptor Locale
         documentation "A general geographic indicator that categorizes U.S. territory (e.g., City, Suburban)."
         is optional
-    common AddressCharacteristic
-        documentation "Reflects important characteristics of an Address."
-        is optional
+    descriptor AddressCharacteristic
+        documentation "The characteristic designated for the Address."
+        is optional collection

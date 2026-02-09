@@ -5,6 +5,7 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor AcademicSubject
     domain entity AccountabilityRating
     descriptor AccreditationStatus
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AidType

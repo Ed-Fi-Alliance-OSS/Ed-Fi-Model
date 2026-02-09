@@ -13,6 +13,7 @@ The model is based upon multiple levels of definition, as follows:
     descriptor AcademicSubject
     descriptor AccreditationStatus
     descriptor AdditionalCreditType
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AncestryEthnicOrigin
