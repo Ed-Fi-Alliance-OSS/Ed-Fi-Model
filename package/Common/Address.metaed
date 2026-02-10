@@ -46,5 +46,5 @@ Common Address
         documentation "A general geographic indicator that categorizes U.S. territory (e.g., City, Suburban)."
         is optional
     descriptor AddressCharacteristic
-        documentation "The characteristic designated for the Address."
+        documentation "The address characteristic mainly to reflect if Primary and type of communication to be sent, e.g.: Primary, Validated, Gets Copy of Report, Discipline Correspondence, etc.)"
         is optional collection
