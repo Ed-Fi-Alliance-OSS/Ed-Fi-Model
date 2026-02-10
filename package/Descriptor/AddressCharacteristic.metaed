@@ -1,2 +1,2 @@
 Descriptor AddressCharacteristic [125]
-    documentation "This descriptor defines characteristics of an Address."
+    documentation "TThe address characteristic mainly to reflect if Primary and type of communication to be sent, e.g.: Primary, Validated, Gets Copy of Report, Discipline Correspondence, etc.)"
