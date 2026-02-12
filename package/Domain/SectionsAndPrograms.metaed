@@ -4,6 +4,7 @@ Subdomain SectionsAndPrograms of TeachingAndLearning
     descriptor AcademicSubject
     descriptor AccreditationStatus
     descriptor AdditionalCreditType
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AncestryEthnicOrigin

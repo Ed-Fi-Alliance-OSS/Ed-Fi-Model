@@ -11,6 +11,7 @@ Domain EducationOrganization
     descriptor AcademicSubject
     domain entity AccountabilityRating
     descriptor AccreditationStatus
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor CharterApprovalAgencyType

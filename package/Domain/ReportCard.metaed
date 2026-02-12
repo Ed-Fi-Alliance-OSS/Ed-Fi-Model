@@ -1,6 +1,7 @@
 Subdomain ReportCard of StudentAcademicRecord
     documentation "A Student has a ReportCard for each GradingPeriod. A Grade is associated with each Section. For early grade levels, a StudentCompetencyObjective is assigned to CompetencyObjectives, for example, assigning a ""Satisfactory"" for ""Participates in class discussions."""
     descriptor AcademicSubject
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AttemptStatus
     descriptor CitizenshipStatus
@@ -34,7 +35,6 @@ Subdomain ReportCard of StudentAcademicRecord
     descriptor OperationalStatus
     descriptor OtherNameType
     descriptor PerformanceBaseConversion
-    descriptor PerformanceBasedConversion
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic

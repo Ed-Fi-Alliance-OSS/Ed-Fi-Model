@@ -8,6 +8,7 @@ Domain StudentAcademicRecord
     descriptor AcademicSubject
     descriptor AccreditationStatus
     descriptor AdditionalCreditType
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AssignmentLateStatus

@@ -10,6 +10,7 @@ Domain Staff
     descriptor AbsenceEventCategory
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AncestryEthnicOrigin

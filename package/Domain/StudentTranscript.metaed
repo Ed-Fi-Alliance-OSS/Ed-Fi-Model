@@ -3,6 +3,7 @@ Subdomain StudentTranscript of StudentAcademicRecord
     descriptor AcademicHonorCategory
     descriptor AcademicSubject
     descriptor AdditionalCreditType
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor CareerPathway
     descriptor CitizenshipStatus
