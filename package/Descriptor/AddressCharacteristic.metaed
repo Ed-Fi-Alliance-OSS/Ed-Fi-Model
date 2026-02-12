@@ -1,2 +1,2 @@
 Descriptor AddressCharacteristic [125]
-    documentation "The address characteristic mainly to reflect if Primary and type of communication to be receives, e.g.: Primary, Validated, Gets Copy of Report, Discipline Correspondence."
+    documentation "The address characteristic mainly to reflect if Primary and type of communication to be received, e.g.: Primary, Validated, Gets Copy of Report, Discipline Correspondence."
