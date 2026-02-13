@@ -25,8 +25,8 @@ For associations between a student and a school or LEA that is *not* enrollment(
     domain entity CrisisEvent
     descriptor CrisisType
     descriptor Disability
-    descriptor DisabilityDeterminationSourceType
     descriptor DisabilityDesignation
+    descriptor DisabilityDeterminationSourceType
     descriptor DisplacedStudentStatus
     descriptor EconomicDisadvantage
     domain entity EducationOrganization
