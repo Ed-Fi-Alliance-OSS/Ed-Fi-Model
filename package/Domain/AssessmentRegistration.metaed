@@ -12,8 +12,8 @@ Domain AssessmentRegistration
     descriptor CitizenshipStatus
     descriptor Country
     descriptor Disability
-    descriptor DisabilityDeterminationSourceType
     descriptor DisabilityDesignation
+    descriptor DisabilityDeterminationSourceType
     descriptor EconomicDisadvantage
     descriptor GradeLevel
     descriptor PlatformType
