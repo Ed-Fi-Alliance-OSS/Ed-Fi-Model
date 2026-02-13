@@ -84,14 +84,14 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor StudentIdentificationSystem
     domain entity StudentTransportation
     descriptor SupporterMilitaryConnection
-    descriptor Term
     descriptor TelephoneNumberType
+    descriptor Term
     descriptor TitleIPartASchoolDesignation
-    descriptor TribalAffiliation
     descriptor TransportationPublicExpenseEligibilityType
     descriptor TransportationType
     descriptor TravelDayofWeek
     descriptor TravelDirection
+    descriptor TribalAffiliation
     association StudentEducationOrganizationResponsibilityAssociation
     association StudentSchoolAssociation
     descriptor Visa
