@@ -4,6 +4,7 @@ Domain Enrollment
 For associations between a student and a school or LEA that is *not* enrollment(e.g., school of accountability), the StudentEducationOrganizationAssociation is defined."
     descriptor AcademicSubject
     domain entity AccountabilityRating
+    descriptor Accommodation
     descriptor AccreditationStatus
     descriptor AddressCharacteristic
     descriptor AddressType
@@ -16,17 +17,22 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor CertificationRoute
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor CitizenshipStatus
     descriptor CohortYearType
     descriptor Country
     descriptor CreditCategory
     descriptor CreditType
     domain entity CrisisEvent
     descriptor CrisisType
+    descriptor Disability
+    descriptor DisabilityDeterminationSourceType
+    descriptor DisabilityDesignation
     descriptor DisplacedStudentStatus
     descriptor EconomicDisadvantage
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
     descriptor EducationPlan
+    descriptor ElectronicMailType
     descriptor EnrollmentType
     descriptor EntryGradeLevelReason
     descriptor EntryType
@@ -45,6 +51,9 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor InternetAccess
     descriptor InternetAccessTypeInResidence
     descriptor InternetPerformanceInResidence
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LimitedEnglishProficiency
     descriptor Locale
     domain entity LocalEducationAgency
     descriptor LocalEducationAgencyCategory
@@ -56,6 +65,7 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor PrimaryLearningDeviceAccess
     descriptor PrimaryLearningDeviceAwayFromSchool
     descriptor PrimaryLearningDeviceProvider
+    descriptor Race
     descriptor ResidencyStatus
     descriptor Responsibility
     descriptor ResultDatatypeType
@@ -74,11 +84,15 @@ For associations between a student and a school or LEA that is *not* enrollment(
     domain entity StudentIdentificationCode
     descriptor StudentIdentificationSystem
     domain entity StudentTransportation
+    descriptor SupporterMilitaryConnection
     descriptor Term
+    descriptor TelephoneNumberType
     descriptor TitleIPartASchoolDesignation
+    descriptor TribalAffiliation
     descriptor TransportationPublicExpenseEligibilityType
     descriptor TransportationType
     descriptor TravelDayofWeek
     descriptor TravelDirection
     association StudentEducationOrganizationResponsibilityAssociation
     association StudentSchoolAssociation
+    descriptor Visa
