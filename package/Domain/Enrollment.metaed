@@ -4,7 +4,6 @@ Domain Enrollment
 For associations between a student and a school or LEA that is *not* enrollment(e.g., school of accountability), the StudentEducationOrganizationAssociation is defined."
     descriptor AcademicSubject
     domain entity AccountabilityRating
-    descriptor Accommodation
     descriptor AccreditationStatus
     descriptor AddressCharacteristic
     descriptor AddressType
