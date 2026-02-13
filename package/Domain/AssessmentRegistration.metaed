@@ -5,11 +5,30 @@ Domain AssessmentRegistration
 * AssessmentBatteryPart that are parts of the assessment for administering and later reporing composite scores.
 * StudentEducationOrganizationAssessmentAccommodation that describe special accommodation needs of student during the administration of assessment."
     descriptor Accommodation
+    descriptor AncestryEthnicOrigin
     domain entity AssessmentAdministration
     domain entity AssessmentAdministrationParticipation
-    domain entity StudentAssessmentRegistration
     domain entity AssessmentBatteryPart
-    domain entity StudentEducationOrganizationAssessmentAccommodation
-    association StudentAssessmentRegistrationBatteryPartAssociation
+    descriptor CitizenshipStatus
+    descriptor Country
+    descriptor Disability
+    descriptor DisabilityDeterminationSourceType
+    descriptor DisabilityDesignation
+    descriptor EconomicDisadvantage
     descriptor GradeLevel
     descriptor PlatformType
+    descriptor IdentificationDocumentUse
+    descriptor Language
+    descriptor LanguageUse
+    descriptor LimitedEnglishProficiency
+    descriptor PersonalInformationVerification
+    descriptor Race
+    descriptor Sex
+    domain entity StudentAssessmentRegistration
+    association StudentAssessmentRegistrationBatteryPartAssociation
+    descriptor StudentCharacteristic
+    domain entity StudentDemographic
+    domain entity StudentEducationOrganizationAssessmentAccommodation
+    descriptor SupporterMilitaryConnection
+    descriptor TribalAffiliation
+    descriptor Visa
