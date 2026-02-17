@@ -9,6 +9,7 @@ Domain Graduation
     descriptor AccreditationStatus
     descriptor AddressCharacteristic
     descriptor AchievementCategory
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
     descriptor AssessmentReportingMethod

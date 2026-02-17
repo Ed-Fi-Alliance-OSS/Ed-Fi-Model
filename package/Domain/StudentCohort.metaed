@@ -6,6 +6,7 @@ Cohorts may be associated with programs and may have staff associated with the c
     descriptor AcademicSubject
     descriptor AddressCharacteristic
     descriptor AchievementCategory
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AttemptStatus
     descriptor ClassroomPosition

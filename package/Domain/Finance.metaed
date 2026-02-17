@@ -8,6 +8,7 @@ Domain Finance
     descriptor AccountType
     descriptor AddressCharacteristic
     descriptor AchievementCategory
+    descriptor AddressCharacteristic
     descriptor AddressType
     domain entity BalanceSheetDimension
     domain entity ChartOfAccount

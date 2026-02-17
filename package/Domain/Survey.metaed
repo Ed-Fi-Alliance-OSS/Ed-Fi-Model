@@ -6,6 +6,7 @@ Domain Survey
     descriptor AcademicSubject
     descriptor AddressCharacteristic
     descriptor AchievementCategory
+    descriptor AddressCharacteristic
     descriptor AddressType
     descriptor CareerPathway
     descriptor CompetencyLevel
