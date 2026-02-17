@@ -6,7 +6,6 @@ Domain Finance
 * The Function for which the funds are being spent."
     descriptor AcademicSubject
     descriptor AccountType
-    descriptor AddressCharacteristic
     descriptor AchievementCategory
     descriptor AddressCharacteristic
     descriptor AddressType

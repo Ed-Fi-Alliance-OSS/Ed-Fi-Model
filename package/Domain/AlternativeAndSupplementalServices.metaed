@@ -6,7 +6,6 @@ Domain AlternativeAndSupplementalServices
 * A StaffProgramAssociation links Program entities to assigned staff."
     descriptor AcademicSubject
     descriptor AccreditationStatus
-    descriptor AddressCharacteristic
     descriptor AchievementCategory
     descriptor AddressCharacteristic
     descriptor AddressType

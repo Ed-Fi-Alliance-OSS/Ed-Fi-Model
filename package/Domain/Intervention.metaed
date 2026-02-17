@@ -6,7 +6,6 @@ Domain Intervention
 * EducationContent metadata may be linked to InterventionPrescriptions and/or Interventions. The EducationContent includes descriptive information about the content conforming to the Learning Resource MetadataInitiative (LRMI).
 * StudentInterventionAssociation links Students to Interventions in which they participate. The effectiveness of an Intervention for a given Student is also captured. Data about a formal InterventionStudy for an InterventionPrescription may also be associated."
     descriptor AcademicSubject
-    descriptor AddressCharacteristic
     descriptor AchievementCategory
     descriptor AddressCharacteristic
     descriptor AddressType
