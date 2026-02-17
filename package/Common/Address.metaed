@@ -45,3 +45,6 @@ Common Address [481]
     descriptor Locale [2710]
         documentation "A general geographic indicator that categorizes U.S. territory (e.g., City, Suburban)."
         is optional
+    descriptor AddressCharacteristic
+        documentation "The address characteristic mainly to reflect if Primary and type of communication to be received, e.g.: Primary, Validated, Gets Copy of Report, Discipline Correspondence."
+        is optional collection
