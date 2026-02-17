@@ -6,15 +6,14 @@ Domain AlternativeAndSupplementalServices
 * A StaffProgramAssociation links Program entities to assigned staff."
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AchievementCategory
     descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
-    descriptor AncestryEthnicOrigin
     descriptor AttemptStatus
     descriptor AttendanceEventCategory
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     descriptor ContinuationOfServicesReason
     descriptor Country
     descriptor CourseLevelCharacteristic
@@ -28,8 +27,6 @@ Domain AlternativeAndSupplementalServices
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
-    descriptor ElectronicMailType
     descriptor EligibilityDelayReason
     descriptor EligibilityEvaluationType
     descriptor EvaluationDelayReason
@@ -39,6 +36,7 @@ Domain AlternativeAndSupplementalServices
     descriptor HomelessPrimaryNighttimeResidence
     descriptor HomelessProgramService
     descriptor IDEAPart
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -46,7 +44,6 @@ Domain AlternativeAndSupplementalServices
     descriptor InternetAccess
     descriptor Language
     descriptor LanguageInstructionProgramService
-    descriptor LanguageUse
     descriptor LevelOfEducation
     descriptor Locale
     descriptor MagnetSpecialProgramEmphasisSchool
@@ -59,6 +56,7 @@ Domain AlternativeAndSupplementalServices
     descriptor OtherNameType
     descriptor Participation
     descriptor ParticipationStatus
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     descriptor Proficiency
     domain entity Program
@@ -67,7 +65,6 @@ Domain AlternativeAndSupplementalServices
     descriptor ProgramType
     descriptor Progress
     descriptor ProgressLevel
-    descriptor Race
     descriptor ReasonExited
     descriptor RecognitionType
     descriptor RepeatIdentifier
@@ -85,7 +82,6 @@ Domain AlternativeAndSupplementalServices
     descriptor SpecialEducationProgramService
     descriptor SpecialEducationSetting
     domain entity Staff
-    descriptor StaffIdentificationSystem
     association StaffProgramAssociation
     descriptor StateAbbreviation
     domain entity Student
@@ -105,12 +101,9 @@ Domain AlternativeAndSupplementalServices
     association StudentSpecialEducationProgramEligibilityAssociation
     association StudentTitleIPartAProgramAssociation
     descriptor TechnicalSkillsAssessment
-    descriptor TelephoneNumberType
     descriptor TitleIPartAParticipant
     descriptor TitleIPartAProgramService
     descriptor TitleIPartASchoolDesignation
-    descriptor TribalAffiliation
-    descriptor Visa
     footer documentation
 "# Alternative and Supplemental Services Subdomains
 

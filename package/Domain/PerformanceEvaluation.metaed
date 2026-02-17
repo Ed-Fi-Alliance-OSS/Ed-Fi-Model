@@ -31,8 +31,8 @@ Domain PerformanceEvaluation
 	descriptor QuantitativeMeasureDatatype
 	descriptor QuantitativeMeasureType
 	domain entity QuantitativeMeasureScore
-	descriptor RatingLevel
 	descriptor ResultDatatypeType
 	domain entity RubricDimension
+	descriptor RubricRatingLevel
 	domain entity SurveySectionAggregateResponse
 	descriptor Term

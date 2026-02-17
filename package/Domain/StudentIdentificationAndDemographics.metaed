@@ -20,6 +20,7 @@ Domain StudentIdentificationAndDemographics
     descriptor DisplacedStudentStatus
     descriptor EconomicDisadvantage
     descriptor ElectronicMailType
+    descriptor IdentificationDocumentUse
     descriptor InternetAccessTypeInResidence
     descriptor InternetPerformanceInResidence
     descriptor Language
@@ -29,6 +30,7 @@ Domain StudentIdentificationAndDemographics
     descriptor Locale
     descriptor OtherNameType
     domain entity Person
+    descriptor PersonalInformationVerification
     descriptor PrimaryLearningDeviceAccess
     descriptor PrimaryLearningDeviceAwayFromSchool
     descriptor PrimaryLearningDeviceProvider

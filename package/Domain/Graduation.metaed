@@ -7,13 +7,14 @@ Domain Graduation
     descriptor AcademicHonorCategory
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AchievementCategory
     descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
+    descriptor AssessmentReportingMethod
     descriptor CertificationRoute
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     descriptor Country
     descriptor CreditCategory
     descriptor CreditType
@@ -21,7 +22,6 @@ Domain Graduation
     descriptor DiplomaType
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor EducationPlan
     descriptor EnrollmentType
     descriptor EntryGradeLevelReason
@@ -32,6 +32,7 @@ Domain Graduation
     descriptor GradePointAverageType
     domain entity GraduationPlan
     descriptor GraduationPlanType
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -42,12 +43,15 @@ Domain Graduation
     descriptor MediumOfInstruction
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PerformanceLevel
+    descriptor PersonalInformationVerification
     domain entity PostSecondaryEvent
     descriptor PostSecondaryEventCategory
     domain entity PostSecondaryInstitution
     descriptor PostSecondaryInstitutionLevel
     descriptor RecognitionType
     descriptor ResidencyStatus
+    descriptor ResultDatatypeType
     domain entity School
     descriptor SchoolCategory
     descriptor SchoolChoiceBasis
@@ -59,4 +63,3 @@ Domain Graduation
     association StudentSchoolAssociation
     descriptor Term
     descriptor TitleIPartASchoolDesignation
-    descriptor Visa

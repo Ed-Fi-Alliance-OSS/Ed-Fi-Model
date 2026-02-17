@@ -6,11 +6,10 @@ Domain Intervention
 * EducationContent metadata may be linked to InterventionPrescriptions and/or Interventions. The EducationContent includes descriptive information about the content conforming to the Learning Resource MetadataInitiative (LRMI).
 * StudentInterventionAssociation links Students to Interventions in which they participate. The effectiveness of an Intervention for a given Student is also captured. Data about a formal InterventionStudy for an InterventionPrescription may also be associated."
     descriptor AcademicSubject
+    descriptor AchievementCategory
     descriptor AddressCharacteristic
     descriptor AddressType
-    descriptor AncestryEthnicOrigin
     descriptor AttendanceEventCategory
-    descriptor CitizenshipStatus
     domain entity Cohort
     descriptor CohortScope
     descriptor CohortType
@@ -22,10 +21,9 @@ Domain Intervention
     domain entity EducationContent
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     association EducationOrganizationInterventionPrescriptionAssociation
-    descriptor ElectronicMailType
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -35,23 +33,17 @@ Domain Intervention
     descriptor InterventionEffectivenessRating
     domain entity InterventionPrescription
     domain entity InterventionStudy
-    descriptor Language
-    descriptor LanguageUse
     descriptor LevelOfEducation
     descriptor Locale
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
-    descriptor Race
     descriptor RecognitionType
     descriptor Sex
     domain entity Staff
-    descriptor StaffIdentificationSystem
     descriptor StateAbbreviation
     domain entity Student
     association StudentCohortAssociation
     association StudentInterventionAssociation
     domain entity StudentInterventionAttendanceEvent
-    descriptor TelephoneNumberType
-    descriptor TribalAffiliation
-    descriptor Visa

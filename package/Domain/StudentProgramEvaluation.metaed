@@ -1,6 +1,5 @@
 Subdomain StudentProgramEvaluation of TeachingAndLearning
     documentation "The Student Program Evaluation subdomain is aimed at capturing students' performance in programs."
-    descriptor EvaluationRatingStatus
     domain entity EvaluationRubricDimension
     domain entity Program
     descriptor ProgramCharacteristic

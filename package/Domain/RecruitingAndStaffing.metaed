@@ -17,6 +17,7 @@ Domain RecruitingAndStaffing
     descriptor ApplicationSource
     descriptor ApplicationStatus
     descriptor AssessmentReportingMethod
+    descriptor AttendanceEventCategory
     descriptor BackgroundCheckStatus
     descriptor BackgroundCheckType
     descriptor CitizenshipStatus
@@ -24,16 +25,20 @@ Domain RecruitingAndStaffing
     descriptor Disability
     descriptor DisabilityDesignation
     descriptor DisabilityDeterminationSourceType
+    descriptor EconomicDisadvantage
     descriptor ElectronicMailType
     descriptor GradeLevel
     descriptor GradePointAverageType
     descriptor HireStatus
     descriptor HiringSource
+    descriptor IdentificationDocumentUse
     descriptor Language
     descriptor LanguageUse
     descriptor LevelOfEducation
     descriptor Locale
+    descriptor PersonalInformationVerification
     domain entity ProfessionalDevelopmentEvent
+    descriptor ProfessionalDevelopmentOfferedBy
     domain entity ProfessionalDevelopmentEventAttendance
     descriptor Race
     domain entity RecruitmentEvent

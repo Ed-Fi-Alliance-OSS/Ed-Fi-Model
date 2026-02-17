@@ -19,7 +19,6 @@ Domain BellSchedule
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor FederalLocaleCode
     descriptor GradeLevel
     descriptor Indicator

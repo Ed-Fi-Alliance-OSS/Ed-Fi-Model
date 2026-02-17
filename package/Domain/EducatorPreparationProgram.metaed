@@ -23,6 +23,7 @@ Domain EducatorPreparationProgram
     descriptor DisabilityDesignation
     descriptor DisabilityDeterminationSourceType
     domain entity EducatorPreparationProgram
+    descriptor EconomicDisadvantage
     descriptor ElectronicMailType
     descriptor EnglishLanguageExam
     descriptor EPPDegreeType
@@ -31,11 +32,13 @@ Domain EducatorPreparationProgram
     association FieldworkExperienceSectionAssociation
     descriptor FieldworkType
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Language
     descriptor LanguageUse
     descriptor LimitedEnglishProficiency
     descriptor Locale
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PreviousCareer
     descriptor ProgramType
     descriptor Race
@@ -44,7 +47,6 @@ Domain EducatorPreparationProgram
     association StaffEducatorPreparationProgramAssociation
     descriptor StaffToCandidateRelationship
     descriptor StateAbbreviation
-    descriptor StudentIdentificationSystem
     descriptor TelephoneNumberType
     descriptor Term
     descriptor Visa

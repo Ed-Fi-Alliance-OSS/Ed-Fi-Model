@@ -4,7 +4,6 @@ Subdomain Gradebook of StudentAcademicRecord
     descriptor AssignmentLateStatus
     descriptor AttemptStatus
     descriptor CareerPathway
-    descriptor CitizenshipStatus
     descriptor CompetencyLevel
     descriptor Country
     domain entity Course
@@ -19,12 +18,14 @@ Subdomain Gradebook of StudentAcademicRecord
     domain entity GradebookEntry
     descriptor GradebookEntryType
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Language
     domain entity LearningStandard
     descriptor LearningStandardCategory
     descriptor LearningStandardScope
     descriptor MediumOfInstruction
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     descriptor PublicationStatus
     descriptor RepeatIdentifier
@@ -37,5 +38,4 @@ Subdomain Gradebook of StudentAcademicRecord
     domain entity StudentGradebookEntry
     association StudentSectionAssociation
     descriptor SubmissionStatus
-    descriptor Visa
     position 3

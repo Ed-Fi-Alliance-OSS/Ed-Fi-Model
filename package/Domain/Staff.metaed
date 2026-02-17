@@ -10,6 +10,7 @@ Domain Staff
     descriptor AbsenceEventCategory
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AchievementCategory
     descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
@@ -27,7 +28,6 @@ Domain Staff
     descriptor CredentialType
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     domain entity EducationServiceCenter
     descriptor EducatorRole
     descriptor ElectronicMailType
@@ -36,6 +36,7 @@ Domain Staff
     descriptor FundingSource
     descriptor GradeLevel
     descriptor GunFreeSchoolsActReportingStatus
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -56,6 +57,7 @@ Domain Staff
     descriptor OpenStaffPositionReason
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     domain entity Person
     descriptor PostingResult
     descriptor ProgramAssignment

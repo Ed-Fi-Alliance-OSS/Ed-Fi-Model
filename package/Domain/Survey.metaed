@@ -4,11 +4,10 @@ Domain Survey
     * Survey responses that follow a parallel structure of SurveyResponse, SurveySectionResponse, and SurveyQuestionResponse.
     * Associations to tie Survey and SurveyResponse domain entities to Course, Section, Program, Target EducationOrganization, and Target Staff."
     descriptor AcademicSubject
+    descriptor AchievementCategory
     descriptor AddressCharacteristic
     descriptor AddressType
-    descriptor AncestryEthnicOrigin
     descriptor CareerPathway
-    descriptor CitizenshipStatus
     descriptor CompetencyLevel
     domain entity Contact
     descriptor Country
@@ -21,9 +20,9 @@ Domain Survey
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor ElectronicMailType
     descriptor GradeLevel
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -35,13 +34,13 @@ Domain Survey
     descriptor MediumOfInstruction
     descriptor OperationalStatus
     descriptor OtherNameType
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic
     descriptor ProgramSponsor
     descriptor ProgramType
     descriptor QuestionForm
-    descriptor Race
     descriptor RecognitionType
     domain entity Section
     descriptor SectionCharacteristic
@@ -49,7 +48,6 @@ Domain Survey
     domain entity Session
     descriptor Sex
     domain entity Staff
-    descriptor StaffIdentificationSystem
     descriptor StateAbbreviation
     domain entity Student
     domain entity Survey
@@ -71,5 +69,3 @@ Domain Survey
     association SurveySectionResponseStaffTargetAssociation
     descriptor TelephoneNumberType
     descriptor Term
-    descriptor TribalAffiliation
-    descriptor Visa

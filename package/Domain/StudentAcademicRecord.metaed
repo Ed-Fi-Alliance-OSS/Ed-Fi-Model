@@ -7,6 +7,7 @@ Domain StudentAcademicRecord
     descriptor AcademicHonorCategory
     descriptor AcademicSubject
     descriptor AccreditationStatus
+    descriptor AchievementCategory
     descriptor AdditionalCreditType
     descriptor AddressCharacteristic
     descriptor AddressType
@@ -16,7 +17,6 @@ Domain StudentAcademicRecord
     descriptor CareerPathway
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
-    descriptor CitizenshipStatus
     descriptor CompetencyLevel
     domain entity CompetencyObjective
     descriptor Country
@@ -39,7 +39,6 @@ Domain StudentAcademicRecord
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
-    descriptor EducationOrganizationIdentificationSystem
     descriptor FederalLocaleCode
     domain entity Grade
     domain entity GradebookEntry
@@ -49,6 +48,7 @@ Domain StudentAcademicRecord
     descriptor GradeType
     descriptor GradingPeriod
     domain entity GradingPeriod
+    descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -65,6 +65,7 @@ Domain StudentAcademicRecord
     descriptor OperationalStatus
     descriptor OtherNameType
     descriptor PerformanceBaseConversion
+    descriptor PersonalInformationVerification
     descriptor PopulationServed
     domain entity Program
     descriptor ProgramCharacteristic
@@ -93,4 +94,3 @@ Domain StudentAcademicRecord
     descriptor SubmissionStatus
     descriptor Term
     descriptor TitleIPartASchoolDesignation
-    descriptor Visa
