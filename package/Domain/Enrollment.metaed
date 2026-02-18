@@ -8,7 +8,6 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor AddressCharacteristic
     descriptor AddressType
     descriptor AdministrativeFundingControl
-    descriptor AidType
     descriptor AncestryEthnicOrigin
     descriptor AssessmentReportingMethod
     descriptor BarrierToInternetAccessInResidence
@@ -37,7 +36,6 @@ For associations between a student and a school or LEA that is *not* enrollment(
     descriptor EntryType
     descriptor ExitWithdrawType
     descriptor FederalLocaleCode
-    domain entity FinancialAid
     descriptor GradeLevel
     domain entity GraduationPlan
     descriptor GraduationPlanType
