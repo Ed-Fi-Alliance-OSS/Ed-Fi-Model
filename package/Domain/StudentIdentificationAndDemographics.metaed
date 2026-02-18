@@ -6,6 +6,7 @@ Domain StudentIdentificationAndDemographics
 * The StudentParentAssociation links students and parents and indicates the relation."
     descriptor AddressCharacteristic
     descriptor AddressType
+    descriptor AidType
     descriptor AncestryEthnicOrigin
     descriptor BarrierToInternetAccessInResidence
     descriptor CitizenshipStatus
@@ -20,6 +21,7 @@ Domain StudentIdentificationAndDemographics
     descriptor DisplacedStudentStatus
     descriptor EconomicDisadvantage
     descriptor ElectronicMailType
+    domain entity FinancialAid
     descriptor IdentificationDocumentUse
     descriptor InternetAccessTypeInResidence
     descriptor InternetPerformanceInResidence
