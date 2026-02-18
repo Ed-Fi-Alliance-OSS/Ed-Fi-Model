@@ -1,7 +1,7 @@
 {
-  "name": "@edfi/ed-fi-model-6.0",
-  "version": "3.0.0-pre.76",
-  "description": "The Ed-Fi Data Model 6.0",
+  "name": "@edfi/ed-fi-model-6.1",
+  "version": "3.0.0-pre.74",
+  "description": "The Ed-Fi Data Model 6.1",
   "repository": "https://github.com/Ed-Fi-Closed/Ed-Fi-Model",
   "license": "private",
   "publishConfig": {
@@ -9,6 +9,6 @@
   },
   "metaEdProject": {
     "projectName": "Ed-Fi",
-    "projectVersion": "6.0.0"
+    "projectVersion": "6.1.0"
   }
 }
