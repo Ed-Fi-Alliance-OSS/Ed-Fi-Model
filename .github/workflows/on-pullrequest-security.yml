@@ -8,7 +8,7 @@ name: On Pull Request - Security
 on:
   pull_request:
     branches:
-      - DS*
+      - DS-*
   workflow_dispatch:
 
 permissions: read-all
