@@ -3,14 +3,17 @@ Common Salary
   integer SalaryMinRange
     documentation "The minimum salary range for a staff."
     is optional
+    is sensitive data
   integer SalaryMaxRange
     documentation "The maximum salary range for a staff."
     is optional
+    is sensitive data
   descriptor SalaryType
     documentation "The type of salary that a staff member is receiving."
     is optional
   decimal SalaryAmount
     documentation "The salary of a staff member."
     is optional
+    is sensitive data
     total digits 19
     decimal places 4

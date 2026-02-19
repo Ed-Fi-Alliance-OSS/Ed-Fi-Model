@@ -9,12 +9,15 @@ Domain Entity ApplicantProfile
     descriptor Sex
         documentation "A person's birth sex."
         is optional
+        is sensitive data
     shared string GenderIdentity
         documentation "The gender the person identifies themselves as."
         is optional
+        is sensitive data
     date BirthDate
         documentation "The month, day, and year on which an individual was born."
         is optional
+        is sensitive data
     common Address
         documentation "The set of elements that describes an address, including the street address, city, state, and ZIP code."
         is optional collection
@@ -30,10 +33,10 @@ Domain Entity ApplicantProfile
     bool HispanicLatinoEthnicity
         deprecated "This element is scheduled for removal by 2029. Users of this element are advised to use Race instead."
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, ""Spanish origin,"" can be used in addition to ""Hispanic or Latino""."
-        is optional
-    descriptor Race
+        is optional        is sensitive data    descriptor Race
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The way this data element is listed, it must allow for multiple entries so that each individual can specify all appropriate races."
         is optional collection
+        is sensitive data
     inline common Citizenship
         documentation "Contains information relative to citizenship status and its associated probationary documentation."
         is optional
@@ -49,9 +52,11 @@ Domain Entity ApplicantProfile
     descriptor EconomicDisadvantage
       documentation "An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy."
       is optional
+      is sensitive data
     bool FirstGenerationStudent
       documentation "Indicator of whether individual is a first generation college student."
       is optional
+      is sensitive data
     common ApplicantCharacteristic
       documentation "Reflects important characteristics of the applicant's home situation."
       is optional collection

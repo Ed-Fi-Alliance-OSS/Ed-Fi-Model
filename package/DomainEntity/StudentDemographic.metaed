@@ -9,6 +9,7 @@ documentation "The demographic information associated to a student."
     descriptor AncestryEthnicOrigin
         documentation "The original peoples or cultures with which the individual identifies."
         is optional collection
+        is sensitive data
     inline common Citizenship
         documentation "Contains information relative to U.S. citizenship status and its associated probationary documentation."
         is optional
@@ -18,31 +19,37 @@ documentation "The demographic information associated to a student."
     descriptor EconomicDisadvantage
         documentation "The indication of an inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy."
         is optional
+        is sensitive data
     shared string GenderIdentity
         documentation "The student's gender as last reported to the education organization."
         is optional
+        is sensitive data
     bool HispanicLatinoEthnicity
         deprecated "This element is scheduled for removal by 2029. Users of this element are advised to use Race."
         documentation "An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race, as last reported to the education organization. The term ""Spanish origin"", can be used in addition to ""Hispanic or Latino""."
-        is optional
-    common Language
+        is optional        is sensitive data    common Language
         documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 languages codes."
         is optional collection
     descriptor LimitedEnglishProficiency
         documentation "An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient."
         is optional
+        is sensitive data
     descriptor Race
         documentation "The general racial category which most clearly reflects the individual's recognition of his or her community or with the which the individual most identifies as last reported to the education organization. The data model allows for multiple entries so that each individual can specify all appropriate races."
         is optional collection
+        is sensitive data
     descriptor Sex
         documentation "The student's birth sex as reported to the education organization."
         is optional
+        is sensitive data
     common StudentCharacteristic
         documentation "Reflects important characteristics of a student. If a student has a characteristic present, that characteristic is considered true or active for that student. If a characteristic is not present, no assumption is made as to the applicability of the characteristic, but local policy may dictate otherwise."
         is optional collection
     descriptor SupporterMilitaryConnection
         documentation "Military connection of the person/people whom the student is a dependent of."
         is optional
+        is sensitive data
     descriptor TribalAffiliation
         documentation "An American Indian tribe with which the student is affiliated as last reported to the education organization."
         is optional collection
+        is sensitive data

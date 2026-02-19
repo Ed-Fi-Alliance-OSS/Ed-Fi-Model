@@ -18,6 +18,8 @@ Domain Entity StudentHealth
     descriptor NonMedicalImmunizationExemption
         documentation "The type of nonmedical exemption from vaccination claimed by the student's parent or guardian."
         is optional
+        is sensitive data
     date NonMedicalImmunizationExemptionDate
         documentation "The year, month and day of the nonmedical exemption from vaccination claimed by the student's parent or guardian."
         is optional
+        is sensitive data

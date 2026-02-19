@@ -3,9 +3,11 @@ Common Reviewer
     shared string FirstName
         documentation "A name given to an individual at birth, baptism, or during another naming ceremony, or through legal change."
         is part of identity
+        is sensitive data
     shared string LastSurname
         documentation "The name borne in common by members of a family."
         is part of identity
+        is sensitive data
     common ReceivedTraining
         documentation "An indication that the person administering the performance evaluation has or has not received training on conducting performance measures."
         is optional

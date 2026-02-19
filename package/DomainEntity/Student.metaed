@@ -5,6 +5,7 @@ Domain Entity Student [585]
         is part of identity
         role name Student
         is queryable field
+        is sensitive data
     inline common Name [1694]
         documentation "Full legal name of the person."
         is required

@@ -3,9 +3,11 @@ Common Disability [502]
     descriptor Disability [809]
         documentation "A disability category that describes a individual's impairment."
         is part of identity
+        is sensitive data
     shared string DisabilityDiagnosis [810]
         documentation "A description of the disability diagnosis."
         is optional
+        is sensitive data
     integer OrderOfDisability [811]
         documentation "The order by severity of individual's disabilities: 1- Primary, 2 -  Secondary, 3 - Tertiary, etc."
         is optional

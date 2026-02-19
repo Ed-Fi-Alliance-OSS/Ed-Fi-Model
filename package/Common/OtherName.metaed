@@ -6,12 +6,15 @@ Common OtherName [518]
     shared string FirstName [882]
         documentation "A name given to an individual at birth, baptism, or during another naming ceremony, or through legal change."
         is required
+        is sensitive data
     shared string MiddleName [885]
         documentation "A secondary name given to an individual at birth, baptism, or during another naming ceremony."
         is optional
+        is sensitive data
     shared string LastSurname [884]
         documentation "The name borne in common by members of a family."
         is required
+        is sensitive data
     shared string GenerationCodeSuffix [883]
         documentation "An appendage, if any, used to denote an individual's generation in his family (e.g., Jr., Sr., III)."
         is optional

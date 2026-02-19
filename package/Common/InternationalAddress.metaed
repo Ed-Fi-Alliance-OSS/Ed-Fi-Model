@@ -6,24 +6,30 @@ Common InternationalAddress [509]
     shared string AddressLine named AddressLine1 [837]
         documentation "The first line of the address."
         is required
+        is sensitive data
     shared string AddressLine named AddressLine2 [838]
         documentation "The second line of the address."
         is optional
+        is sensitive data
     shared string AddressLine named AddressLine3 [839]
         documentation "The third line of the address."
         is optional
+        is sensitive data
     shared string AddressLine named AddressLine4 [840]
         documentation "The fourth line of the address."
         is optional
+        is sensitive data
     descriptor Country [843]
         documentation "The name of the country. It is strongly recommended that entries use only ISO 3166 2-letter country codes."
         is required
     shared string Coordinate named Latitude [845]
         documentation "The geographic latitude of the physical address."
         is optional
+        is sensitive data
     shared string Coordinate named Longitude [846]
         documentation "The geographic longitude of the physical address."
         is optional
+        is sensitive data
     date BeginDate [842]
         documentation "The first date the address is valid. For physical addresses, the date the individual moved to that address.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

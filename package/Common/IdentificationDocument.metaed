@@ -3,16 +3,19 @@ Common IdentificationDocument [491]
     shared string DocumentTitle [829]
         documentation "The title of the document given by the issuer."
         is optional
+        is sensitive data
     descriptor PersonalInformationVerification [834]
         documentation "The category of the document relative to its purpose."
         is part of identity
     date DocumentExpirationDate [828]
         documentation "The day when the document  expires, if null then never expires."
         is optional
+        is sensitive data
     shared string IdentificationCode [832]
         documentation "The unique identifier on the issuer's identification system."
         is optional
         role name IssuerDocument
+        is sensitive data
     shared string IssuerName [833]
         documentation "Name of the entity or institution that issued the document."
         is optional

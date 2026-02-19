@@ -7,3 +7,4 @@ Common AdditionalImmunization
     date ImmunizationDate
         documentation "The year, month and day of the related additional immunization."
         is optional collection
+        is sensitive data

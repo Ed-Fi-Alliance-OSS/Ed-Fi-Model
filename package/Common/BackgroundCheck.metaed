@@ -6,12 +6,16 @@ Common BackgroundCheck
     date BackgroundCheckRequestedDate
         documentation "The date the background check was requested."
         is required
+        is sensitive data
     descriptor BackgroundCheckStatus
         documentation "The status of the background check."
         is optional
+        is sensitive data
     date BackgroundCheckCompletedDate
         documentation "The date the background check was completed."
         is optional
+        is sensitive data
     bool Fingerprint
         documentation "Indicates that a person has or has not completed a fingerprint."
         is optional
+        is sensitive data
