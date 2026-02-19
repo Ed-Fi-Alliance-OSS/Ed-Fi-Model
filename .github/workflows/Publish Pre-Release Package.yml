@@ -75,7 +75,7 @@ jobs:
         git status
 
     - name: Commit new version number
-      uses: planetscale/ghcommit-action@c7915d6c18d5ce4eb42b0eff3f10a29fe0766e4c #v0.1.44
+      uses: planetscale/ghcommit-action@25309d8005ac7c3bcd61d3fe19b69e0fe47dbdde #v0.2.20
       if: steps.versions.outputs.update-required == 'true'
       with:
         commit_message: "${{steps.set-version.outputs.version}}"
