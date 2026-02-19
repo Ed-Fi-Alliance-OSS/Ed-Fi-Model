@@ -11,8 +11,7 @@ on:
       - DS*
   workflow_dispatch:
 
-permissions:
-  read-all
+permissions: read-all
 
 jobs:
   scan-actions-bidi:
