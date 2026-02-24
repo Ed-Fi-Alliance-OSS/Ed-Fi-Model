@@ -10,8 +10,8 @@ Common RequiredImmunization
     string MedicalExemption
         documentation "The medical condition identified by a physician that contraindicates the vaccine."
         is optional
-        max length 1024
         is sensitive data
+        max length 1024
     date MedicalExemptionDate
         documentation "The year, month, and day of the medical exemption by a physician."
         is optional

@@ -16,8 +16,8 @@
     string SpecialAccomodationRequirements
         documentation "Specific requirements needed to accommodate a student's physical needs which may include special equipment installed in a vehicle or a special arrangement for transportation."
         is optional
-        max length 1024
         is sensitive data
+        max length 1024
     common StudentBusDetails
         documentation "Stores details associated with student-bus assignment within a transportation system."
         is optional
