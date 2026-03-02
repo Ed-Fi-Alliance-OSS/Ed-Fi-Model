@@ -1,0 +1,2 @@
+Descriptor EventReason
+    documentation "The reason why the IDEA event occurred."

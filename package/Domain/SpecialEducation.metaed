@@ -23,9 +23,14 @@ Domain SpecialEducation
     descriptor EducationalEnvironment
     domain entity EducationOrganization
     descriptor EducationOrganizationCategory
+    descriptor EventCompliance
+    descriptor EventReason
     descriptor FederalLocaleCode
     descriptor GradeLevel
+    domain entity IDEAEvent
+    descriptor IDEAEvent
     descriptor IdentificationDocumentUse
+    descriptor IEPStatus
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
@@ -64,6 +69,7 @@ Domain SpecialEducation
     association StaffSectionAssociation
     descriptor StateAbbreviation
     domain entity Student
+    domain entity StudentIEP
     association StudentProgramAssociation
     domain entity StudentProgramAttendanceEvent
     domain entity StudentSchoolAttendanceEvent

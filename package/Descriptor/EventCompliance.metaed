@@ -1,0 +1,2 @@
+Descriptor EventCompliance
+    documentation "The type of compliance represented by this event."
