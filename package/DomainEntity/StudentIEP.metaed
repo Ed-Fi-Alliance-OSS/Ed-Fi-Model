@@ -6,15 +6,12 @@ documentation "This entity represents a Individual Education Plan (IEP) for a st
     domain entity Student
         documentation "A reference to the student."
         is part of identity
-    shared string StudentIEPIdentifier
+    shared string IdentificationCode named StudentIEPIdentifier
         documentation "A unique identifier assigned by the provider or source system of IEP services."
         is part of identity
     date IEPFinalizedDate
         documentation "The date the IEP was finalized. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    date IEPAmendedDate
-        documentation "The date when the IEP was last amended, if any. When amended, a new StudentIEP should be created with the amended data recorded. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
-        is optional
     date IEPBeginDate
         documentation "The effective start date the IEP. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
@@ -24,6 +21,9 @@ documentation "This entity represents a Individual Education Plan (IEP) for a st
     descriptor IEPStatus
         documentation "The current status of the IEP."
         is required
+    date IEPAmendedDate
+        documentation "The date when the IEP was last amended, if any. When amended, a new StudentIEP should be created with the amended data recorded. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
     descriptor Accommodation
         documentation "The special variation(s) to be used in how various services (in general) are presented, how they are administered, or how the student is allowed to respond. This generally refers to changes that do not substantially alter the content that the service renders. The proper use of accommodations does not substantially change academic level or performance criteria."
         is optional collection
@@ -41,7 +41,7 @@ documentation "This entity represents a Individual Education Plan (IEP) for a st
         documentation "Indicates whether the student receiving special education and related services has been designated as multiply disabled by the admission, review, and dismissal committee as aligned with federal requirements."
         is optional
     descriptor ReasonExited
-        documentation "The reason the student left the program within a school or district."
+        documentation "The reason why a person stops receiving special education services."
         is optional
     shared decimal HoursPerWeek named SchoolHoursPerWeek
         documentation "Indicate the total number of hours of instructional time per week for the school that the student attends."

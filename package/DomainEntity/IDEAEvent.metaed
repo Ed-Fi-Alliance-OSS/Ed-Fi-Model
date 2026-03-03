@@ -6,7 +6,7 @@ documentation "An IDEA related student event describing status, dates and narrat
     domain entity Student
         documentation "A reference to the student."
         is part of identity
-    shared string IDEAEventIdentifier
+    shared string IdentificationCode named IDEAEventIdentifier
         documentation "	A unique identifier for the event record as assigned by the provider of IEP services."
         is part of identity
     descriptor IDEAEvent

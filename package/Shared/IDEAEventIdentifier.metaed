@@ -1,3 +1,0 @@
-Shared String IDEAEventIdentifier
-    documentation "A unique identifier for the event record as assigned by the provider of IEP services."
-    max length 120
