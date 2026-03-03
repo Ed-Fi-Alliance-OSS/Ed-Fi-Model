@@ -1,3 +1,0 @@
-Shared String EventNarrative
-    documentation "Detailed and summary notes recorded during the event."
-    max length 2048

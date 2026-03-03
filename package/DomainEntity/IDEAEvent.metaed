@@ -21,7 +21,7 @@ documentation "An IDEA related student event describing status, dates and narrat
     descriptor EventCompliance
         documentation "The type of compliance represented by this event."
         is optional
-    shared string EventNarrative
+    shared string TextResponse named EventNarrative
         documentation "Detailed and summary notes recorded during the event."
         is optional
     descriptor EventReason
