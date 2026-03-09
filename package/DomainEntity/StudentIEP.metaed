@@ -13,7 +13,7 @@ documentation "This entity represents an Individualized Education Program (IEP) 
         documentation "The date the IEP was finalized. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
     date IEPBeginDate
-        documentation "The projected date for the beginning of special education and related services."
+        documentation "The projected date for the beginning of special education and related services. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     date IEPEndDate
         documentation "The effective end date of the IEP. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."

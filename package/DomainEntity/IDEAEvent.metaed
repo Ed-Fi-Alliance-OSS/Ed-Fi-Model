@@ -13,11 +13,11 @@ documentation "An IDEA related student event describing status, dates and narrat
         documentation "The IDEA event recorded for the student."
         is part of identity
     date BeginDate
-        documentation "The date when the IDEA related event started."
+        documentation "The date when the IDEA related event started. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
     date EndDate
-        documentation "The date when the IDEA related event concluded."
-        is required
+        documentation "The date when the IDEA related event concluded. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
     descriptor EventCompliance
         documentation "The type of compliance represented by this event."
         is optional
