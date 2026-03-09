@@ -1,0 +1,25 @@
+Domain Entity StudentIEPServiceDelivery
+    documentation "Services delivered to a student as prescribed by their Individual Education Program (IEP)."
+    domain entity StudentIEP
+        documentation "The student and IEP associated with the delivery of prescribed services."
+        is part of identity
+    shared string IdentificationCode named IEPServiceDeliveryIdentifier
+        documentation "A unique identifier assigned by the provider of IEP services for the delivery record."
+        is part of identity
+    descriptor ServiceDelivery 
+        documentation "The type of services delivered to the student."
+        is part of identity
+    date ServiceDeliveryDate 
+        documentation "The date when prescribed services were delivered for a student."
+        is part of identity
+    domain entity IDEAEvent
+        documentation "A reference to one or more student IDEA events."
+        is optional collection
+        merge IDEAEvent.Student with StudentIEP.Student
+    common Provider
+        documentation "The service provider that delivered the prescribed service to the student."
+        is optional collection
+    domain entity StudentIEPServicePrescription
+        documentation "Identifies the service prescribed for the student."
+        is optional
+        merge StudentIEPServicePrescription.StudentIEP.Student with StudentIEP.Student

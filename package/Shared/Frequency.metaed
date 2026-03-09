@@ -1,0 +1,4 @@
+Shared Decimal Frequency
+    documentation "The number of times the prescribed service is to be provided within the specified duration period."
+    total digits 9
+    decimal places 2
