@@ -1,0 +1,30 @@
+Domain Entity IDEAEvent
+documentation "An IDEA related student event describing status, dates and narrative."
+    domain entity Student
+        documentation "A reference to the student."
+        is part of identity
+    domain entity EducationOrganization
+        documentation "The identifier assigned to the education organization (usually District/LEA) providing IDEA Services."
+        is part of identity
+    shared string IdentificationCode named IDEAEventIdentifier
+        documentation "	A unique identifier for the event record as assigned by the provider of IEP services."
+        is part of identity
+    descriptor IDEAEvent
+        documentation "The IDEA event recorded for the student."
+        is part of identity
+    date BeginDate
+        documentation "The date when the IDEA related event started. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is required
+    date EndDate
+        documentation "The date when the IDEA related event concluded. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
+    descriptor EventCompliance
+        documentation "The type of compliance represented by this event."
+        is optional
+    shared string TextResponse named EventNarrative
+        documentation "Detailed and summary notes recorded during the event."
+        is optional
+    descriptor EventReason
+        documentation "The reason why the IDEA event occurred."
+        is optional
+    
