@@ -18,22 +18,22 @@ Domain Entity StudentIEPServicePrescription
     descriptor DurationInterval
         documentation "How often the prescribed service is to be provided within the specified duration period. Examples include: Per Session, Per Week, Per Month."
         is required
-    descriptor ServiceLocationType
-        documentation "The location type where the prescribed service is to be provided. Examples include: Home, Hospital, School."
-        is required
+    date EndDate
+        documentation "The effective date when the prescribed service ended. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
     shared decimal Frequency
         documentation "The number of times the prescribed service is to be provided within the specified duration period."
         is required
     descriptor FrequencyInterval
         documentation "How often the frequency should repeat for the prescribed service. Examples include: Session, Week, Month."
         is required     
-    date EndDate
-        documentation "The effective date when the prescribed service ended. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
-        is optional
     domain entity IDEAEvent
         documentation "A reference to one or more student IDEA events."
         is optional collection
         merge IDEAEvent.Student with StudentIEP.Student
+    descriptor ServiceLocationType
+        documentation "The location type where the prescribed service is to be provided. Examples include: Home, Hospital, School."
+        is required
     domain entity Staff
         documentation "A reference to the staff member(s) assigned to provide the prescribed service."
         is optional collection
