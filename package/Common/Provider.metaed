@@ -6,6 +6,9 @@ Common Provider
     shared string LastSurname
         documentation "The name borne in common by members of a family."
         is part of identity
+    shared string MiddleName
+        documentation "A secondary name given to an individual at birth, baptism, or during another naming ceremony."
+        is optional
     bool PrimaryProvider
         documentation "Indicates that this provider was the Primary Service Provider."
         is optional
