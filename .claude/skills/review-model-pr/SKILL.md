@@ -35,9 +35,9 @@ Review the pull request or staged changes using the Ed-Fi-Model checklist below.
 - [ ] Are descriptions broad enough? Avoid language that unnecessarily narrows the intended use (e.g., "in becoming an educator" vs. "in achieving an educational goal").
 
 ### 4. Key / Identity Ordering
-- [ ] In entities that involve a `Student`, does the Student key appear first in the natural key, before `EducationOrganization` or other references? (Drives handbook ordering.)
-- [ ] Is `is identity` applied to elements that form the natural key where required?
-- [ ] Is `required` vs. `optional` correct for each property? New identity/key fields are almost always `required`.
+- [ ] for new entities only we want identity fields listed first; if identity is based on Student, Staff, or Contact then list those identity elements first before those from other reference types. After identity fields, next list required elements in alphabetical order, and finally, list optional elements in alphabetical order. (Drives handbook ordering.)
+- [ ] Is `is part of identity` applied to elements that form the natural key where required?
+- [ ] Is `required` vs. `optional` correct for each property? If `required`, is there a documented reason for this?
 
 ### 5. Naming Conventions
 - [ ] Entity names are singular (MetaEd pluralizes at the API layer). Do not name an entity `StaffDemographics` — use `StaffDemographic`.
@@ -68,7 +68,6 @@ Review the pull request or staged changes using the Ed-Fi-Model checklist below.
 
 ### 11. Interchange Files
 - [ ] If new `DomainEntity` or `Association` types were added, are they referenced in the appropriate `Interchange` file(s)?
-- [ ] If new `Descriptor` types were added, are they included in the Descriptor interchange.
 
 ### 12. PR Hygiene
 - [ ] PR title should follow the pattern `DATASTD-XXXX Short description` — this becomes the default squash commit message.
