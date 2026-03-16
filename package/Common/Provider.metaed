@@ -1,0 +1,23 @@
+Common Provider
+    documentation "The student's special education service provider, either internal or external."
+    shared string FirstName
+        documentation "A name given to an individual at birth, baptism, or during another naming ceremony, or through legal change."
+        is part of identity
+    shared string LastSurname
+        documentation "The name borne in common by members of a family."
+        is part of identity
+    shared string MiddleName
+        documentation "A secondary name given to an individual at birth, baptism, or during another naming ceremony."
+        is optional
+    bool PrimaryProvider
+        documentation "Indicates that this provider was the Primary Service Provider."
+        is optional
+    shared string Code named ProviderCode
+        documentation "A code assigned to the service provider."
+        is optional
+    descriptor ServiceProviderType
+        documentation "Indicates service provider type, including specialist, internal staff, external staff, etc."
+        is optional
+    domain entity Staff
+        documentation "The staff member providing the service, if applicable."
+        is optional

@@ -1,0 +1,2 @@
+Descriptor DurationInterval
+    documentation "The frequency period for the prescribed service duration. Examples include: Per Session, Per Week, Per Month."

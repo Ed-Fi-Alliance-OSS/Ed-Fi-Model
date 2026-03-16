@@ -2,11 +2,19 @@ Domain SpecialEducationDataModel
     documentation
 "The Special Education Data Model represents key events in a student's special education journey. It captures IDEA-related events within an education organization and tracks associated Individualized Education Programs (IEPs), including the services provided, how they are delivered, and when they occur to support the student's educational goals."
     descriptor Accommodation
+    descriptor DurationInterval
     descriptor EventCompliance
     descriptor EventReason
+    descriptor FrequencyInterval
     domain entity IDEAEvent
     descriptor IDEAEvent
     descriptor IEPStatus
     descriptor ReasonExited
+    descriptor ServiceDelivery
+    descriptor ServiceLocationType
+    descriptor ServicePrescription
+    descriptor ServiceProviderType
     descriptor SpecialEducationSetting
     domain entity StudentIEP
+    domain entity StudentIEPServiceDelivery
+    domain entity StudentIEPServicePrescription

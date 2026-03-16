@@ -21,9 +21,6 @@ documentation "This entity represents an Individualized Education Program (IEP) 
     descriptor IEPStatus
         documentation "The current status of the IEP."
         is required
-    date IEPAmendedDate
-        documentation "The date when the IEP was last amended, if any. When amended, a new StudentIEP should be created with the amended data recorded. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
-        is optional
     descriptor Accommodation
         documentation "The special variation(s) to be used in how various services (in general) are presented, how they are administered, or how the student is allowed to respond. This generally refers to changes that do not substantially alter the content that the service renders. The proper use of accommodations does not substantially change academic level or performance criteria."
         is optional collection
@@ -34,6 +31,9 @@ documentation "This entity represents an Individualized Education Program (IEP) 
         documentation "A reference to the IDEA events associated with the student's IEP."
         is optional collection
         merge IDEAEvent.Student with Student
+    date IEPAmendedDate
+        documentation "The date when the IEP was last amended, if any. When amended, a new StudentIEP should be created with the amended data recorded. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
     bool MedicallyFragile
         documentation "Indicates whether the student receiving special education and related services is: 1) in the age range of birth to 22 years, and 2) has a serious, ongoing illness or a chronic condition that has lasted or is anticipated to last at least 12 or more months or has required at least one month of hospitalization, and that requires daily, ongoing medical treatments and monitoring by appropriately trained personnel which may include parents or other family members, and 3) requires the routine use of medical device or of assistive technology to compensate for the loss of usefulness of a body function needed to participate in activities of daily living, and 4) lives with ongoing threat to his or her continued well-being. Aligns with federal requirements."
         is optional
