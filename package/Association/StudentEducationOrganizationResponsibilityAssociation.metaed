@@ -1,15 +1,19 @@
-Association StudentEducationOrganizationResponsibilityAssociation [608]
+Association StudentEducationOrganizationResponsibilityAssociation
     documentation "This association indicates a relationship between a student and an education organization other than an enrollment relationship, and generally indicating some kind of responsibility of the education organization for the student. Enrollment relationship semantics are covered by StudentSchoolAssociation."
-    domain entity Student [1075]
+    domain entity Student
         documentation "A reference to the student."
-    domain entity EducationOrganization [1073]
+    domain entity EducationOrganization
         documentation "A reference to the education organization."
-    descriptor Responsibility [1074]
-        documentation "Indications of an education organization's responsibility for a student, such as accountability, attendance, funding, etc."
+    descriptor Responsibility
+        documentation "Indicates the Responsible's Education Organization's duties/responsibility for a student, such as accountability, attendance, funding, etc."
         is part of identity
-    date BeginDate [2554]
+    date BeginDate
         documentation "Month, day, and year of the start date of an education organization's responsibility for a student.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    date EndDate [2555]
+    date EndDate
         documentation "Month, day, and year of the end date of an education organization's responsibility for a student.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
+    domain entity EducationOrganization
+        documentation "The organization for which the responsibility relationship to the student exists."
+        is optional
+        role name Responsible
