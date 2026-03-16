@@ -9,6 +9,7 @@ Domain SpecialEducationDataModel
     domain entity IDEAEvent
     descriptor IDEAEvent
     descriptor IEPStatus
+    descriptor IEPGoalType
     descriptor ReasonExited
     descriptor ServiceDelivery
     descriptor ServiceLocationType
@@ -16,5 +17,6 @@ Domain SpecialEducationDataModel
     descriptor ServiceProviderType
     descriptor SpecialEducationSetting
     domain entity StudentIEP
+    domain entity StudentIEPGoal
     domain entity StudentIEPServiceDelivery
     domain entity StudentIEPServicePrescription
