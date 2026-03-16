@@ -1,0 +1,22 @@
+Domain Entity StudentIEPGoal
+    documentation "A goal prescribed to a student as part of their Individual Education Plan (IEP)."
+    domain entity StudentIEP
+        documentation "The student IEP for which the goal is prescribed."
+        is part of identity
+    shared string IdentificationCode named IEPGoalIdentifier
+        documentation "A unique identifier assigned by the provider of IEP services."
+        is part of identity
+    shared string TextResponse named IEPGoalDetails
+        documentation "Instructions or other details specific to the student and/or provider for achieving the stated goal."
+        is required
+    common Period 
+        documentation "The time period for which the goal is applicable or effective."
+        is optional
+        role name GoalAchievement
+    domain entity IDEAEvent
+        documentation "A reference to one or more student IDEA events."
+        is optional collection
+        merge IDEAEvent.Student with StudentIEP.Student
+    descriptor IEPGoalType
+        documentation "A focused goal prescribed as part of the IEP. Examples include Academic Goal, Behavioral Goal, Attendance Goal."
+        is required
