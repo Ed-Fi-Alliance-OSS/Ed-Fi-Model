@@ -10,7 +10,7 @@ Domain Entity StudentIEPGoal
         documentation "Instructions or other details specific to the student and/or provider for achieving the stated goal."
         is required
     descriptor IEPGoalType
-        documentation "A focused goal for an Individual Education Program (IEP). Examples include Academic Goal, Behavioral Goal, Attendance Goal."
+        documentation "A focused goal prescribed as part of the IEP. Examples include Academic Goal, Behavioral Goal, Attendance Goal."
         is required
     common Period 
         documentation "The time period for which the goal is applicable or effective."
