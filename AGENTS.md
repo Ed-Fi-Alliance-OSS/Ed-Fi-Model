@@ -1,4 +1,4 @@
-# Copilot instructions for Ed-Fi-Model
+# Agent instructions for Ed-Fi-Model
 
 This repo is **MetaEd source** for the Ed-Fi Data Standard. Most changes are edits to `package/**/*.metaed`, then validating by generating artifacts with `@edfi/metaed-console`.
 
@@ -76,7 +76,7 @@ Common constraint statements you’ll see:
 
 ### Common patterns you’ll encounter
 
-- `Inline Common ...` and `inline common ...` are used heavily to compose reusable structures under `package\\Common`.
+- `Common`, `Inline Common ...`, and `inline common ...` are used to compose reusable structures under `package\\Common`.
 - `descriptor ...` properties commonly participate in identity (`is part of identity`).
 - `shared string ...` is used for reused scalar concepts; `named` is used when a type needs a specific name (e.g., `shared string URI named ImageURL`).
 
