@@ -59,4 +59,7 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
         is optional
     shared string SpecialEducationExitExplained
         documentation "Explanation on why a person stops receiving special education services."
-        is optional 
+        is optional
+    common Language
+        documentation "The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-2 language codes."
+        is optional collection
