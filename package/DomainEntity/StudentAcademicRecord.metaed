@@ -37,9 +37,6 @@ Domain Entity StudentAcademicRecord
     common Diploma
         documentation "Diploma(s) earned by the student."
         is optional collection
-    common Recognition
-        documentation "Recognitions given to the student for accomplishments in a co-curricular or extracurricular activity."
-        is optional collection
     common GradePointAverage
         documentation "The grade point average for an individual computed as the grade points earned divided by the number of credits attempted."
         is optional collection
@@ -49,6 +46,9 @@ Domain Entity StudentAcademicRecord
     date ProjectedGraduationDate
         documentation "The month and year the student is projected to graduate."
         is optional
+    common Recognition
+        documentation "Recognitions given to the student for accomplishments in a co-curricular or extracurricular activity."
+        is optional collection
     domain entity ReportCard
         documentation "Report cards for the student."
         is optional collection
