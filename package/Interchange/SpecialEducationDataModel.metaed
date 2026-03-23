@@ -1,7 +1,6 @@
 Interchange SpecialEducationDataModel
-    documentation "The Special Education Data Model captures and organizes data pertaining to the individualized development plans, services, and educational goals of students enrolled in special education."
+    documentation "The Special Education Data Model captures and organizes data pertaining to the individualized educational programs, services, and educational goals of students enrolled in special education."
     use case documentation "Exchange Special Education information."
-    domain entity EducationOrganization
     domain entity IDEAEvent
     domain entity Staff
     domain entity Student
