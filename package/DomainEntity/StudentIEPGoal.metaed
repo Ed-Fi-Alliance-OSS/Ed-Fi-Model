@@ -1,5 +1,5 @@
 Domain Entity StudentIEPGoal
-    documentation "A goal prescribed to a student as part of their Individual Education Program (IEP)."
+    documentation "EARLY ACCESS: A goal prescribed to a student as part of their Individual Education Program (IEP)."
     domain entity StudentIEP
         documentation "The student IEP for which the goal is prescribed."
         is part of identity
