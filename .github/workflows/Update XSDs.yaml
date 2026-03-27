@@ -2,7 +2,7 @@ name: Update XSDs
 
 on:
   push:
-    branches: [ "DS-6.0.0-ME-3.0.0" ]
+    branches: [ "DS-6.1.0-ME-3.0.0" ]
   workflow_dispatch:
     inputs:
       pr_base_branch:
@@ -14,14 +14,14 @@ concurrency:
   cancel-in-progress: true
   
 env:
-  PROJECT_VERSION: "6.0.0"
-  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 6.0.0"
+  PROJECT_VERSION: "6.1.0"
+  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 6.1.0"
   TECHNOLOGY_VERSION: "7.3.0"
   REF_NAME: ${{ GITHUB.REF_NAME }}
 
   # Commits pushed to this branch (key) in the Ed-Fi-Model repo will use this base branch (value) for the PR in the Ed-Fi-Data-Standard repo:
   # Remember to also update the workflow's trigger above.
-  DS-6.0.0-ME-3.0.0: "v6.0.0"
+  DS-6.1.0-ME-3.0.0: "v6.1.0"
 
 jobs:
   Update-XSDs:
@@ -74,7 +74,7 @@ jobs:
 
     - name: Print MetaEdConfig
       run: |
-        $configFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ env.TECHNOLOGY_VERSION }}-DS-6.0.json"
+        $configFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ env.TECHNOLOGY_VERSION }}-DS-6.1.json"
         
         if (Test-Path $configFilePath) {
             $jsonContent = Get-Content -Path $configFilePath | Out-String
@@ -88,7 +88,7 @@ jobs:
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
-            node index.js --config ./MetaEdConfig-API-${{ env.TECHNOLOGY_VERSION }}-DS-6.0.json -a
+            node index.js --config ./MetaEdConfig-API-${{ env.TECHNOLOGY_VERSION }}-DS-6.1.json -a
 
             $fileCount = (Get-ChildItem "${{ github.workspace }}/MetaEdOutput" -ErrorAction SilentlyContinue | Measure-Object).Count
 
