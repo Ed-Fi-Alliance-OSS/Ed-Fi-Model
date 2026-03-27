@@ -1,5 +1,5 @@
 Domain Entity StudentIEPServicePrescription
-    documentation "The service prescribed to a student as part of their Individual Education Program (IEP)."
+    documentation "EARLY ACCESS: The service prescribed to a student as part of their Individual Education Program (IEP)."
     domain entity StudentIEP
         documentation "The IEP for which the service is prescribed."
         is part of identity

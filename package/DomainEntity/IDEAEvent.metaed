@@ -1,5 +1,5 @@
 Domain Entity IDEAEvent
-documentation "An IDEA related student event describing status, dates and narrative."
+documentation "EARLY ACCESS: An IDEA related student event describing status, dates and narrative."
     domain entity Student
         documentation "A reference to the student."
         is part of identity

@@ -1,5 +1,5 @@
 Domain Entity StudentIEP
-documentation "This entity represents an Individualized Education Program (IEP) for a student receiving special education services. The IEP is a legally required document that outlines a student's special education services."
+documentation "EARLY ACCESS: This entity represents an Individualized Education Program (IEP) for a student receiving special education services. The IEP is a legally required document that outlines a student's special education services."
     domain entity Student
         documentation "A reference to the student."
         is part of identity
