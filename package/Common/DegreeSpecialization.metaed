@@ -9,6 +9,7 @@ Common DegreeSpecialization
     date BeginDate
       documentation "The month, day, and year on which the teacher candidate first declared specialization. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
       is part of identity
+      role name Specialization
     date EndDate
       documentation "The month, day, and year on which the teacher candidate exited the declared specialization. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
       is optional
