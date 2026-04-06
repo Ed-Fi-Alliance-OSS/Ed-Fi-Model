@@ -10,7 +10,7 @@ Domain SpecialEducationDataModel
     descriptor EventReason
     descriptor FrequencyInterval
     domain entity IDEAEvent
-    descriptor IDEAEvent
+    descriptor IDEAEventType
     descriptor IEPStatus
     descriptor IEPGoalType
     descriptor ReasonExited
