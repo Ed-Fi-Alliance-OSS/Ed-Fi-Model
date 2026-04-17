@@ -12,7 +12,7 @@ Domain Entity StudentAcademicRecord
     descriptor Term
         documentation "The term for the session during the school year."
         is part of identity
-    common AcademicHonor
+    domain entity AcademicHonor
         documentation "Academic distinctions earned by or awarded to the student."
         is optional collection
     common ClassRanking
