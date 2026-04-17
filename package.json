@@ -10,9 +10,10 @@
   ],
   "type": "module",
   "dependencies": {
-    "@edfi/metaed-console": "dev"
+    "@edfi/metaed-console": "dev",
+    "cross-env": "^10.1.0"
   },
   "scripts": {
-    "start": "node node_modules/@edfi/metaed-console/dist/index.js -c ./config.json -a"
+    "start": "cross-env NODE_NO_WARNINGS=1 LOG_LEVEL=error node --no-deprecation node_modules/@edfi/metaed-console/dist/index.js -c ./config.json -a"
   }
 }
