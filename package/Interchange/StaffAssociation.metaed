@@ -21,5 +21,6 @@ Interchange StaffAssociation [2523]
     domain entity Credential [2523-011]
     domain entity Person [2523-012]
     domain entity OpenStaffPositionEvent
+    domain entity StaffRequisition
     association StaffEducatorPreparationProgramAssociation
     
