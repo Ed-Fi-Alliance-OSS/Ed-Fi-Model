@@ -1,0 +1,25 @@
+Domain Entity StaffRequisition
+    documentation "This entity represents the requisition to fill an open staff position within the education organization."
+    shared string RequisitionNumber
+        documentation "Identifier assigned to the position to be filled.  Typically a number assigned by Human Resources that is associated with the specific position." 
+        is part of identity
+    domain entity OpenStaffPosition
+        documentation "Reference to OpenStaffPosition the Education Organization is seeking to fill."
+        is part of identity
+    descriptor EmploymentStatus
+        documentation "Reflects the type of employment or contract desired for the position."
+        is required
+    date DatePosted
+        documentation "DatePosted indicates the date that the requisition was posted."
+        is required
+    date DatePostingClosed
+        documentation "The date the posting was removed or filled."
+        is optional
+    descriptor PostingClosedReason
+        documentation "PostingClosedReason indicates whether the position was filled or closed unfilled."
+        is optional
+    date HireDate
+        documentation "HireDate is the first day a staff member is employed at an educational organization."
+        is optional
+
+

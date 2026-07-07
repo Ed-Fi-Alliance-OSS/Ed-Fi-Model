@@ -35,12 +35,14 @@ Domain Staff
     descriptor FederalLocaleCode
     descriptor FundingSource
     descriptor GradeLevel
+    descriptor GradeLevelRange
     descriptor GunFreeSchoolsActReportingStatus
     descriptor IdentificationDocumentUse
     descriptor Indicator
     descriptor IndicatorGroup
     descriptor IndicatorLevel
     descriptor InstitutionTelephoneNumberType
+    descriptor InstructionalSubject
     descriptor InternetAccess
     descriptor Language
     descriptor LanguageUse
@@ -59,7 +61,7 @@ Domain Staff
     descriptor OtherNameType
     descriptor PersonalInformationVerification
     domain entity Person
-    descriptor PostingResult
+    descriptor PostingClosedReason
     descriptor ProgramAssignment
     descriptor Race
     descriptor RecognitionType
@@ -83,6 +85,7 @@ Domain Staff
     domain entity StaffIdentificationCode
     domain entity StaffLeave
     descriptor StaffLeaveEventCategory
+    domain entity StaffRequisition
     association StaffSchoolAssociation
     descriptor StateAbbreviation
     domain entity StateEducationAgency
@@ -92,4 +95,5 @@ Domain Staff
     descriptor Term
     descriptor TitleIPartASchoolDesignation
     descriptor TribalAffiliation
+    descriptor VacancyReason
     descriptor Visa
