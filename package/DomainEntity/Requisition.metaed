@@ -1,6 +1,6 @@
 Domain Entity Requisition
     documentation "This entity represents the requisition to fill an open staff position within the education organization."
-    shared string RequisitionNumber
+    shared string RequisitionIdentifier
         documentation "Identifier assigned to the position to be filled.  Typically a number assigned by Human Resources that is associated with the specific position." 
         is part of identity
     domain entity OpenStaffPosition

@@ -1,7 +1,7 @@
 Domain Entity OpenStaffPosition
     documentation "This entity represents an open staff position that the education organization is seeking to fill."
-    shared string PositionNumber
-        documentation "Identifier assigned to the position to be filled.  Typically a number assigned by Human Resources that is associated with the specific position." 
+    shared string PositionIdentifier
+            documentation "Identifier assigned to the position to be filled.  Typically a number assigned by Human Resources that is associated with the specific position." 
         is part of identity
     domain entity EducationOrganization
         documentation "The education organization with the open staff position."
