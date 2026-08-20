@@ -25,7 +25,7 @@ env:
 jobs:
   MetaEd-Js-All-Extension-Artifacts-With-ODS-7X:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     services:
       mssql:
@@ -181,10 +181,11 @@ jobs:
 
     - name: Install sqlcmd
       run: |
-        curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+        curl -sSL -O https://packages.microsoft.com/config/ubuntu/24.04/packages-microsoft-prod.deb
+        sudo dpkg -i packages-microsoft-prod.deb
         sudo apt-get update
-        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
-        echo "/opt/mssql-tools/bin/" >> "$GITHUB_PATH"
+        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools18 unixodbc-dev
+        echo "/opt/mssql-tools18/bin/" >> "$GITHUB_PATH"
 
     - name: Verify sqlcmd installation
       run: |
