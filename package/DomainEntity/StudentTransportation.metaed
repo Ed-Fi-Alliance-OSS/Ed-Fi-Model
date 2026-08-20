@@ -19,4 +19,4 @@
         max length 1024
     common StudentBusDetails
         documentation "Stores details associated with student-bus assignment within a transportation system."
-        is optional
+        is optional collection
