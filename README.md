@@ -105,4 +105,4 @@ Example output:
 
 ## Legal Information
 
-Copyright (C) 2025 Ed-Fi Alliance, LLC. All rights reserved.
+Copyright (C) 2026 Ed-Fi Alliance, LLC. All rights reserved.

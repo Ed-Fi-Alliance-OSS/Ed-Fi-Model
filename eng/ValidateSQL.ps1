@@ -13,7 +13,7 @@ param (
 
 function Test-SQL {
 
-    sqlcmd -S localhost -U sa -P $Password -Q "CREATE DATABASE MetaEd_SQL_Validation_Test" 
+    sqlcmd -S localhost -C -U sa -P $Password -Q "CREATE DATABASE MetaEd_SQL_Validation_Test" 
     $scripts = @()
 
     $basePath = Join-Path $Workspace 'MetaEdOutput'
@@ -82,7 +82,7 @@ function Test-SQL {
         try {
             $elapsed = Use-StopWatch {
                 Write-Host "`r`n Script Full Name is $script `r`n"
-                $sqlcmdOutput= sqlcmd -S localhost -U sa -P $Password -i $script.FullName
+                $sqlcmdOutput= sqlcmd -S localhost -C -U sa -P $Password -i $script.FullName
                 Write-Host $sqlcmdOutput
             }
             Write-Result $true $script.Name $elapsed

@@ -25,7 +25,7 @@ env:
 jobs:
   MetaEd-Js-All-Extension-Artifacts-With-ODS-7X:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     services:
       mssql:
@@ -50,7 +50,7 @@ jobs:
     steps:
 
     - name: Checkout Ed-Fi-Model
-      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         repository: Ed-Fi-Closed/Ed-Fi-Model
         path: Ed-Fi-Model/
@@ -63,14 +63,14 @@ jobs:
         ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "."
 
     - name: Checkout MetaEd-js
-      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         repository: Ed-Fi-Alliance-OSS/MetaEd-js
         path: MetaEd-js/
 
     - name: Checkout Ed-Fi-ODS-Implementation
       if: matrix.EXTENSION_NAME == 'Homograph'  || matrix.EXTENSION_NAME == 'Sample'
-      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         repository: Ed-Fi-Alliance-OSS/Ed-Fi-ODS-Implementation
         path: MetaEdExtensionSource/
@@ -84,7 +84,7 @@ jobs:
   
     - name: Checkout ODS
       if: matrix.EXTENSION_NAME == 'SampleStudentTranscript' || matrix.EXTENSION_NAME == 'SampleAlternativeEducationProgram'
-      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         repository: Ed-Fi-Alliance-OSS/Ed-Fi-ODS
         path: MetaEdExtensionSource
@@ -181,17 +181,18 @@ jobs:
 
     - name: Install sqlcmd
       run: |
-        curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+        curl -sSL -O https://packages.microsoft.com/config/ubuntu/24.04/packages-microsoft-prod.deb
+        sudo dpkg -i packages-microsoft-prod.deb
         sudo apt-get update
-        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
-        echo "/opt/mssql-tools/bin/" >> "$GITHUB_PATH"
+        sudo ACCEPT_EULA=Y apt-get install -y mssql-tools18 unixodbc-dev
+        echo "/opt/mssql-tools18/bin/" >> "$GITHUB_PATH"
 
     - name: Verify sqlcmd installation
       run: |
         echo $PATH      
         echo "Verifying sqlcmd..."
         sqlcmd "-?" || { echo "sqlcmd not found in PATH"; exit 1; }
-        sqlcmd -S localhost -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || { echo "Failed to connect with sqlcmd"; exit 1; }
+        sqlcmd -S localhost -C -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || { echo "Failed to connect with sqlcmd"; exit 1; }
 
     - name: Validate SQL 
       working-directory: ./Ed-Fi-Model/    
@@ -200,7 +201,7 @@ jobs:
       shell: pwsh
 
     - name: Upload MetaEd.Artifacts
-      uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b # v4.5
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
       with:
         name: MetaEdOutput-${{env.DATASTANDARD_VERSION}}-${{ matrix.TECHNOLOGY_VERSION }}- ${{ matrix.EXTENSION_NAME }}
         path: ${{ github.workspace }}/MetaEdOutput/**/*.*          
