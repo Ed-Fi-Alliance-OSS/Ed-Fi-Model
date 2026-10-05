@@ -1,0 +1,8 @@
+Common PositionVacancy
+    documentation "The set of elements that describe the reason for vacancy and the date of the vacancy."
+    date DatePositionVacant
+        documentation "DatePositionVacant indicates the date when the position becomes vacant. This should be the day after the final day of employment for the individual currently holding the position."
+        is required
+    descriptor VacancyReason
+        documentation "VacancyReason indicates the reason the position became vacant."
+        is required

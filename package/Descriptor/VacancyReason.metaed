@@ -1,0 +1,2 @@
+Descriptor VacancyReason
+    documentation "VacancyReason indicates the reason the position became vacant."
