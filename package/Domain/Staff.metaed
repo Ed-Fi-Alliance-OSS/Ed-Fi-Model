@@ -41,6 +41,7 @@ Domain Staff
     descriptor IndicatorGroup
     descriptor IndicatorLevel
     descriptor InstitutionTelephoneNumberType
+    descriptor InstructionalSubject
     descriptor InternetAccess
     descriptor Language
     descriptor LanguageUse
@@ -54,12 +55,10 @@ Domain Staff
     domain entity OpenStaffPositionEvent
     descriptor OpenStaffPositionEventStatus
     descriptor OpenStaffPositionEventType
-    descriptor OpenStaffPositionReason
     descriptor OperationalStatus
     descriptor OtherNameType
     descriptor PersonalInformationVerification
     domain entity Person
-    descriptor PostingResult
     descriptor ProgramAssignment
     descriptor Race
     descriptor RecognitionType
@@ -92,4 +91,5 @@ Domain Staff
     descriptor Term
     descriptor TitleIPartASchoolDesignation
     descriptor TribalAffiliation
+    descriptor VacancyReason
     descriptor Visa
