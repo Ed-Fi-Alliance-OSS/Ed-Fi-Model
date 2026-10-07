@@ -12,7 +12,7 @@ Domain Entity OpenStaffPosition
     common PositionVacancy
         documentation "The set of elements that describe the reason for vacancy and the date of the vacancy."
         is optional
-    descriptor SchoolCategory named InstructionalGradeRange
+    descriptor SchoolCategory
         documentation "The category of school levels of the teaching position. For example: High School, Middle School, Elementary School."
         is optional collection
     descriptor InstructionalSubject
