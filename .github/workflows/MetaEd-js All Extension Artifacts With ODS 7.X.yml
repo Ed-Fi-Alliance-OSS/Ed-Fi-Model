@@ -17,8 +17,8 @@ env:
   HEAD_REF:  ${{ GITHUB.HEAD_REF }}
   REF_NAME:  ${{ GITHUB.REF_NAME }}
   REPOSITORY_OWNER: ${{ GITHUB.REPOSITORY_OWNER }}
-  PROJECT_VERSION: "6.1.0"
-  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 6.1.0"
+  PROJECT_VERSION: "6.2.0"
+  PROJECT_DESCRIPTION: "The Ed-Fi Data Model 6.2.0"
   DATASTANDARD_VERSION:  ${{ github.event.repository.default_branch }}
   DB_PASS: temporaryDbP@ssw0rd!
 
@@ -146,11 +146,11 @@ jobs:
         ./eng/CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
       shell: pwsh
 
-    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.1.json content
+    - name: Print MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.2.json content
       shell: pwsh
       run: |
         # Define the path to the JSON file
-        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.1.json"
+        $jsonFilePath = "${{ github.workspace }}/MetaEd-js/build/MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.2.json"
 
         # Read the content of the JSON file
         $jsonContent = Get-Content -Path $jsonFilePath -Raw
@@ -164,7 +164,7 @@ jobs:
     - name: Build the model 
       working-directory: ./MetaEd-js/build/  
       run: |
-            node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.1.json -a
+            node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.2.json -a
 
             $fileCount = (Get-ChildItem "${{ github.workspace }}/MetaEdOutput" -ErrorAction SilentlyContinue | Measure-Object).Count
 
