@@ -1,14 +1,14 @@
-Common ContactResponsibility [526]
-    documentation "The student's program contact responsibility information."
-    descriptor ContactResponsibility [917]
-        documentation "Indicates the contact responsibility being provided to the student by the program."
+Common ContactResponsibility
+    documentation "The contact responsibility for the student."
+    descriptor ContactResponsibility
+        documentation "Indicates the contact responsibility being provided to the student."
         is part of identity
-    bool PrimaryIndicator [918]
+    bool PrimaryIndicator
         documentation "True if contact responsibility is a primary contact responsibility."
         is optional
-    date ContactResponsibilityBeginDate [919]
+    date ContactResponsibilityBeginDate
         documentation "First date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date ContactResponsibilityEndDate [920]
+    date ContactResponsibilityEndDate
         documentation "Last date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
