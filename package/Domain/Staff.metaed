@@ -59,6 +59,7 @@ Domain Staff
     descriptor OtherNameType
     descriptor PersonalInformationVerification
     domain entity Person
+    descriptor PostingClosedReason
     descriptor ProgramAssignment
     descriptor Race
     descriptor RecognitionType

@@ -1,0 +1,2 @@
+Descriptor PostingClosedReason
+        documentation "PostingClosedReason indicates whether the position was filled or closed unfilled."

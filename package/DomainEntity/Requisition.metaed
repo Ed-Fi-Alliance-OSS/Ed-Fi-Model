@@ -20,3 +20,4 @@ Domain Entity Requisition
         is optional
     date HireDate
         documentation "HireDate is the first day a staff member is employed at an educational organization."
+        is optional
