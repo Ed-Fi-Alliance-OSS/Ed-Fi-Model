@@ -1,2 +1,2 @@
 Descriptor ContactResponsibility [917]
-    documentation "Indicates the contact responsibility being provided to the student by the program."
+    documentation "Defines the type of responsibility a contact has for a specific student."

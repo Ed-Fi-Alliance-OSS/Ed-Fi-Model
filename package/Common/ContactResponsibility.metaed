@@ -1,14 +1,11 @@
 Common ContactResponsibility
-    documentation "The contact responsibility for the student."
+    documentation "The contact responsibility for the student, effective beginning on a specific date."
     descriptor ContactResponsibility
-        documentation "Indicates the contact responsibility being provided to the student."
+        documentation "Defines the type of responsibility a contact has for a specific student."
         is part of identity
-    bool PrimaryIndicator
-        documentation "True if contact responsibility is a primary contact responsibility."
-        is optional
     date ContactResponsibilityBeginDate
-        documentation "First date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
-        is optional
+        documentation "The date on which the specific contact responsibility for the student becomes effective. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is part of identity
     date ContactResponsibilityEndDate
-        documentation "Last date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        documentation "The date on which the specific contact responsibility for the student ends. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
