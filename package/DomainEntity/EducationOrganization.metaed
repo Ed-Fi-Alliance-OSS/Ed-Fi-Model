@@ -15,7 +15,7 @@ Abstract Entity EducationOrganization [556]
         role name Short
     descriptor EducationOrganizationCategory [1382]
         documentation "The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state."
-        is required collection
+        is optional collection
         is queryable field
     common Address [1381]
         documentation "The set of elements that describes an address for the education entity, including the street address, city, state, ZIP code, and ZIP code + 4."
