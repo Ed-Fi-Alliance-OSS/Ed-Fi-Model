@@ -1,4 +1,4 @@
-Interchange StudentAssessment [2526]
+Interchange StudentAssessment
     documentation "The Student Assessment interchange describes test scores, quiz results, and other information related to student assessments. The interchange schema can carry results for many students or a single student."
     extended documentation "This interchange schema supports the exchange of metadata for the following types of assessments:
     

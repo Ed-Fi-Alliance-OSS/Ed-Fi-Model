@@ -1,48 +1,48 @@
-Domain Entity GradebookEntry [560]
+Domain Entity GradebookEntry
     documentation "This entity represents an assignment, homework, or classroom assessment to be recorded in a gradebook."
     allow primary key updates
-    shared string GradebookEntryIdentifier [3243]
+    shared string GradebookEntryIdentifier
         documentation "A unique number or alphanumeric code assigned to a gradebook entry by the source system."
         is part of identity
-    shared string URI named Namespace [3244]
+    shared string URI named Namespace
         documentation "Namespace URI for the source of the gradebook entry."
         is part of identity
-    shared string SectionIdentifier [3245]
+    shared string SectionIdentifier
         documentation "The local identifier assigned to a section."
         is required
         role name Source
-    domain entity Section [1429]
+    domain entity Section
         documentation "The section associated with the gradebook entry."
         is optional
-    date DateAssigned [1422]
+    date DateAssigned
         documentation "The date the assignment, homework, or assessment was assigned or executed."
         is required
-    string Title [1424]
+    string Title
         documentation "The name or title of the activity to be recorded in the gradebook entry."
         is required
         max length 100
-    shared string Description [1423]
+    shared string Description
         documentation "A description of the assignment, homework, or classroom assessment."
         is optional
-    date DueDate [2845]
+    date DueDate
         documentation "The date the assignment, homework, or assessment is due."
         is optional
-    time DueTime [3246]
+    time DueTime
         documentation "The time the assignment, homework, or assessment is due."
         is optional
-    descriptor GradebookEntryType [1425]
+    descriptor GradebookEntryType
         documentation "The type of the gradebook entry."
         is optional
         is queryable field
-    shared decimal MaxPoints [3247]
+    shared decimal MaxPoints
         documentation "The maximum number of points  that can be earned for the submission."
         is optional
-    domain entity GradingPeriod [1426]
+    domain entity GradingPeriod
         documentation "Identifies the grading period for the gradebook entry."
         is optional
         is queryable field
         merge GradingPeriod.School with Section.CourseOffering.Session.School
         merge GradingPeriod.SchoolYear with Section.CourseOffering.Session.SchoolYear
-    domain entity LearningStandard [1428]
+    domain entity LearningStandard
         documentation "LearningStandard(s) associated with the gradebook entry."
         is optional collection

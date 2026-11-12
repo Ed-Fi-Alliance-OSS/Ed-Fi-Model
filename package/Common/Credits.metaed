@@ -1,11 +1,11 @@
-Inline Common Credits [497]
+Inline Common Credits
     documentation "Credits or units of value awarded for the completion of a course."
-    shared decimal CreditsValue named Credits [790]
+    shared decimal CreditsValue named Credits
         documentation "The value of credits or units of value awarded for the completion of a course."
         is required
-    descriptor CreditType [792]
+    descriptor CreditType
         documentation "The type of credits or units of value awarded for the completion of a course."
         is optional
-    shared decimal CreditConversion [791]
+    shared decimal CreditConversion
         documentation "Conversion factor that when multiplied by the number of credits is equivalent to Carnegie units."
         is optional

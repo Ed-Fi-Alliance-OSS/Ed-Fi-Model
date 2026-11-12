@@ -1,2 +1,2 @@
-Descriptor CitizenshipStatus [138]
+Descriptor CitizenshipStatus
     documentation "An indicator of whether or not the person is a U.S. citizen."

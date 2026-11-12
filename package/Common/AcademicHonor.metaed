@@ -1,17 +1,17 @@
-Common AcademicHonor [478]
+Common AcademicHonor
     documentation "Academic distinctions earned by or awarded to the individual."
-    inline common Achievement [701]
+    inline common Achievement
         documentation "The achievement earned by the individual upon fulfilling specified criteria."
         is required
-    descriptor AcademicHonorCategory [700]
+    descriptor AcademicHonorCategory
         documentation "A designation of the type of academic distinctions earned by or awarded to the individual."
         is part of identity
-    shared string HonorDescription [704]
+    shared string HonorDescription
         documentation "A description of the type of academic distinctions earned by or awarded to the individual."
         is part of identity
-    date HonorAwardDate [702]
+    date HonorAwardDate
         documentation "The date the honor was awarded.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date HonorAwardExpiresDate [703]
+    date HonorAwardExpiresDate
         documentation "Date on which the honor expires.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

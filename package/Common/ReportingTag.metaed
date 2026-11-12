@@ -1,8 +1,8 @@
-Common ReportingTag [3235]
+Common ReportingTag
     documentation "Optional tag for accountability reporting."
-    shared string TagValue [3236]
+    shared string TagValue
         documentation "The value associated with the reporting tag."
         is optional
-    descriptor ReportingTag [3237]
+    descriptor ReportingTag
         documentation "A descriptor used at the dimension and/or chart of account levels to demote specific state needs for reporting."
         is part of identity

@@ -1,2 +1,2 @@
-Descriptor CourseAttemptResult [148]
+Descriptor CourseAttemptResult
     documentation "The result from the student's attempt to take the course."

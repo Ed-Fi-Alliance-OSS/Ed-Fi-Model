@@ -1,17 +1,17 @@
-Common CTEProgramService [2719]
+Common CTEProgramService
     documentation "The student's CTE program service information."
-    descriptor CTEProgramService [2720]
+    descriptor CTEProgramService
         documentation "Indicates the service being provided to the student by the CTE program."
         is part of identity
-    bool PrimaryIndicator [2721]
+    bool PrimaryIndicator
         documentation "True if service is a primary service."
         is optional
-    date ServiceBeginDate [2722]
+    date ServiceBeginDate
         documentation "First date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
     date ServiceEndDate[2723]
         documentation "Last date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    shared string CIPCode [2724]
+    shared string CIPCode
         documentation "Number and description of the CIP code associated with the student's CTE program."
         is optional

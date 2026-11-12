@@ -1,3 +1,3 @@
-Shared String GradeEarnedDescription [3265]
+Shared String GradeEarnedDescription
     documentation "A description of the grade earned by the learner."
     max length 64

@@ -1,18 +1,18 @@
-Domain Entity LocalContractedStaff [3181]
+Domain Entity LocalContractedStaff
     documentation "The set of local education agency or charter management organization contracted staff amounts."
-    domain entity Staff [3182]
+    domain entity Staff
         documentation "References the staff with which the local contracted staff is associated."
         is part of identity
-    domain entity LocalAccount [3183]
+    domain entity LocalAccount
         documentation "References the local account with which the local contracted staff is associated."
         is part of identity
-    date AsOfDate [3184]
+    date AsOfDate
         documentation "The date of the reported amount for the account."
         is part of identity
         is queryable field
-    currency Amount [3185]
+    currency Amount
         documentation "Current balance for the account."
         is required
-    descriptor FinancialCollection [3186]
+    descriptor FinancialCollection
         documentation "The accounting period or grouping for which the amount is collected."
         is optional

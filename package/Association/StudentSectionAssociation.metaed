@@ -1,26 +1,26 @@
-Association StudentSectionAssociation [614]
+Association StudentSectionAssociation
     documentation "This association indicates the course sections to which a student is assigned."
     allow primary key updates
-    domain entity Student [1133]
+    domain entity Student
         documentation "The student enrolled in the section."
-    domain entity Section [1132]
+    domain entity Section
         documentation "The section the student is enrolled in."
-    date BeginDate [1128]
+    date BeginDate
         documentation "Month, day, and year of the student's entry or assignment to the section.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    date EndDate [1129]
+    date EndDate
         documentation "Month, day, and year of the withdrawal or exit of the student from the section.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    bool HomeroomIndicator [1130]
+    bool HomeroomIndicator
         documentation "Indicates the section is the student's homeroom. Homeroom period may the convention for taking daily attendance."
         is optional
-    descriptor RepeatIdentifier [1131]
+    descriptor RepeatIdentifier
         documentation "An indication as to whether a student has previously taken a given course."
         is optional
-    bool TeacherStudentDataLinkExclusion [1134]
+    bool TeacherStudentDataLinkExclusion
         documentation "Indicates that the student-section combination is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation."
         is optional
-    descriptor AttemptStatus [2806]
+    descriptor AttemptStatus
         documentation "An indication of the student's completion status for the section."
         is optional
     domain entity Program

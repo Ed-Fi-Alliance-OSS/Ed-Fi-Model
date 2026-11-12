@@ -1,4 +1,4 @@
-Descriptor AssessmentItemResult [131]
+Descriptor AssessmentItemResult
     documentation "The analyzed result of a student's response to an assessment item.. For example:
     Correct
     Incorrect

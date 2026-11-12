@@ -1,11 +1,11 @@
-Choice SurveyResponderChoice [2965]
+Choice SurveyResponderChoice
     documentation "Reference to either a student, contact, staff, or applicant - or none for anonymous survey."
-    domain entity Student [2966]
+    domain entity Student
         documentation "The student respondent for a survey."
         is required
-    domain entity Contact [2967]
+    domain entity Contact
         documentation "The contact respondent for a survey."
         is required
-    domain entity Staff [2968]
+    domain entity Staff
         documentation "The staff respondent for a survey."
         is required

@@ -1,2 +1,2 @@
-Descriptor PrimaryLearningDeviceProvider [3103]
+Descriptor PrimaryLearningDeviceProvider
     documentation "The provider of the primary learning device."

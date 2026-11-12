@@ -1,2 +1,2 @@
-Descriptor ReasonExited [215]
+Descriptor ReasonExited
     documentation "This descriptor defines the reason a student exited a program."

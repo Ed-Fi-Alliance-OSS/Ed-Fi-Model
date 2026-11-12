@@ -1,16 +1,16 @@
-Domain Entity SectionAttendanceTakenEvent [581]
+Domain Entity SectionAttendanceTakenEvent
     documentation "Captures attendance taken event for given section."
-    domain entity Section [1635]
+    domain entity Section
         documentation "The section for which attendance was taken."
         is part of identity
-    domain entity CalendarDate [2625]
+    domain entity CalendarDate
         documentation "Reference to the instructional day associated with section attendance event."
         is part of identity
         merge CalendarDate.Calendar.School with Section.CourseOffering.Session.School
         merge CalendarDate.Calendar.SchoolYear with Section.CourseOffering.Session.SchoolYear
-    date EventDate [1634]
+    date EventDate
         documentation "The date the section attendance taken event was submitted, which could be a different date than the instructional day."
         is required
-    domain entity Staff [1636]
+    domain entity Staff
         documentation "The staff responsible for taking attendance."
         is optional

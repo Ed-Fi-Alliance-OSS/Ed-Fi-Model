@@ -1,2 +1,2 @@
-Descriptor EventCircumstance [173]
+Descriptor EventCircumstance
     documentation "An unusual event occurred during the administration of the assessment. This could include fire alarm, student became ill, etc."

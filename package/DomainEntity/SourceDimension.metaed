@@ -1,14 +1,14 @@
-Domain Entity SourceDimension [3218]
+Domain Entity SourceDimension
     documentation "The NCES source dimension. This dimension is used to segregate costs by school and operational unit such as physical location, department, or other method."
-    shared string Code [3219]
+    shared string Code
         documentation "The code representation of the account source dimension."
         is part of identity
-    shared integer LocalFiscalYear named FiscalYear [3220]
+    shared integer LocalFiscalYear named FiscalYear
         documentation "The fiscal year for which the account source dimension is valid."
         is part of identity
-    shared string CodeName [3221]
+    shared string CodeName
         documentation "A description of the account source dimension."
         is optional
-    descriptor ReportingTag [3222]
+    descriptor ReportingTag
         documentation "Optional tag for accountability reporting."
         is optional collection

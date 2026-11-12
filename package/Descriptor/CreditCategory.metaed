@@ -1,2 +1,2 @@
-Descriptor CreditCategory [2928]
+Descriptor CreditCategory
     documentation "A categorization for the course transcript credits."

@@ -1,2 +1,2 @@
-Descriptor EducationOrganizationAssociationType [3125]
+Descriptor EducationOrganizationAssociationType
     documentation "The type of education organization association being represented."

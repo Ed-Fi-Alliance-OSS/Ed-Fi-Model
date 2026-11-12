@@ -1,4 +1,4 @@
-Shared Decimal FullTimeEquivalency [2872]
+Shared Decimal FullTimeEquivalency
     documentation "The full-time equivalent ratio."
     total digits 5
     decimal places 4

@@ -1,2 +1,2 @@
-Descriptor MethodCreditEarned [198]
+Descriptor MethodCreditEarned
     documentation "The method the credits were earned, for example:  Classroom, Examination, Transfer."

@@ -1,2 +1,2 @@
-Descriptor CohortScope [140]
+Descriptor CohortScope
     documentation "The scope of cohort (e.g., school, district, classroom)."

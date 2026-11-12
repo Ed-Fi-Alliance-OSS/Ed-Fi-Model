@@ -1,14 +1,14 @@
-Common TitleIPartAProgramService [2771]
+Common TitleIPartAProgramService
     documentation "The student's Title I Part A program service information."
-    descriptor TitleIPartAProgramService [2772]
+    descriptor TitleIPartAProgramService
         documentation "Indicates the service being provided to the student by the Title I Part A Program."
         is part of identity
-    bool PrimaryIndicator [2773]
+    bool PrimaryIndicator
         documentation "True if service is a primary service."
         is optional
-    date ServiceBeginDate [2774]
+    date ServiceBeginDate
         documentation "First date the Student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date ServiceEndDate [2775]
+    date ServiceEndDate
         documentation "Last date the Student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

@@ -1,4 +1,4 @@
-Interchange StudentEnrollment [2530]
+Interchange StudentEnrollment
     documentation "The Student Enrollment interchange describes student enrollments in schools and in sections."
     use case documentation "1. Exchange school or LEA student enrollment lists.
     2. Exchange school enrollment accountability information.

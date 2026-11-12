@@ -1,2 +1,2 @@
-Descriptor InternetAccess [186]
+Descriptor InternetAccess
     documentation "The type of Internet access available."

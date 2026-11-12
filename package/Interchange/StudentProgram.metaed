@@ -1,4 +1,4 @@
-Interchange StudentProgram [2534]
+Interchange StudentProgram
     documentation "This interchange loads students' participation in programs."
     use case documentation "1. Exchange School or Local Education Agency student lists of program participation.
     2. Exchange a program's services offered to students.

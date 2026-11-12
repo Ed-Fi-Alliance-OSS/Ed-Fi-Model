@@ -1,33 +1,33 @@
-Association StaffEducationOrganizationAssignmentAssociation [600]
+Association StaffEducationOrganizationAssignmentAssociation
     documentation "This association indicates the education organization to which a staff member provides services."
-    domain entity Staff [1027]
+    domain entity Staff
         documentation "The staff assigned to the education organization."
-    domain entity EducationOrganization [1021]
+    domain entity EducationOrganization
         documentation "The education organization to which the staff member provides services."
-    descriptor StaffClassification [1025]
+    descriptor StaffClassification
         documentation "The titles of employment, official status, or rank of education staff."
         is part of identity
-    shared string PositionTitle [1024]
+    shared string PositionTitle
         documentation "The descriptive name of an individual's position."
         is optional
-    date BeginDate [1020]
+    date BeginDate
         documentation "Month, day, and year of the start or effective date of a staff member's employment, contract, or relationship with the education organization.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    date EndDate [1022]
+    date EndDate
         documentation "Month, day, and year of the end or termination date of a staff member's employment, contract, or relationship with the education organization.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    integer OrderOfAssignment [1023]
+    integer OrderOfAssignment
         documentation "Describes whether the assignment is this the staff member's primary assignment, secondary assignment, etc."
         is optional
-    association StaffEducationOrganizationEmploymentAssociation [1026]
+    association StaffEducationOrganizationEmploymentAssociation
         documentation "A reference to the employment association."
         is optional
         role name StaffEducationOrganizationEmploymentAssociation shorten to Employment
         merge StaffEducationOrganizationEmploymentAssociation.Staff with Staff
-    domain entity Credential [2645]
+    domain entity Credential
         documentation "Reference to the credential that is the basis for this assignment."
         is optional
-    shared decimal FullTimeEquivalency [3100]
+    shared decimal FullTimeEquivalency
         documentation "The ratio between the hours of work expected in a position and the hours of work normally expected in a full-time position in the same setting."
         is optional
     shared decimal NumberOfYears named YearsOfExperienceAtCurrentEducationOrganization

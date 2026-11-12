@@ -1,20 +1,20 @@
-Common SurveyQuestionMatrixElementResponse [2983]
+Common SurveyQuestionMatrixElementResponse
     documentation "For matrix questions, the response for each row of the matrix."
-    shared string MatrixElement [2984]
+    shared string MatrixElement
         documentation "For matrix questions, the text identifying each row of the matrix."
         is part of identity
-    shared integer NumericResponse [2985]
+    shared integer NumericResponse
         documentation "The numeric response to the question."
         is optional
-    shared string TextResponse [2986]
+    shared string TextResponse
         documentation "The text response(s) for the question."
         is optional
-    bool NoResponse [2987]
+    bool NoResponse
         documentation "Indicates there was no response to the question."
         is optional
-    integer MinNumericResponse [2988]
+    integer MinNumericResponse
         documentation "The minimum score response to the question."
         is optional
-    integer MaxNumericResponse [2989]
+    integer MaxNumericResponse
         documentation "The maximum score response to the question."
         is optional

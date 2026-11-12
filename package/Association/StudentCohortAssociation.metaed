@@ -1,15 +1,15 @@
- Association StudentCohortAssociation [605]
+ Association StudentCohortAssociation
     documentation "This association represents the cohort(s) for which a student is designated."
-    domain entity Student [1059]
+    domain entity Student
         documentation "The student associated with the cohort."
-    domain entity Cohort [1056]
+    domain entity Cohort
         documentation "Reference to the cohort associated with the student."
-    date BeginDate [1055]
+    date BeginDate
         documentation "The month, day, and year on which the student was first identified as part of the cohort.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    date EndDate [1057]
+    date EndDate
         documentation "The month, day, and year on which the student was removed as part of the cohort.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    domain entity Section [1058]
+    domain entity Section
         documentation "The cohort representing the subdivision of students within one or more sections. For example, a group of students may be given additional instruction and tracked as a cohort."
         is optional collection

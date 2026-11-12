@@ -1,34 +1,34 @@
-Domain Entity AssessmentItem [542]
+Domain Entity AssessmentItem
     documentation "This entity represents one of many single measures that make up an assessment."
-    shared string IdentificationCode [1258]
+    shared string IdentificationCode
         documentation "A unique number or alphanumeric code assigned to a space, room, site, building, individual, organization, program, or institution by a school, school system, state, or other agency or entity."
         is part of identity
-    descriptor AssessmentItemCategory [1254]
+    descriptor AssessmentItemCategory
         documentation "Category or type of the assessment item."
         is optional
-    decimal MaxRawScore [1260]
+    decimal MaxRawScore
         documentation "The maximum raw score achievable across all assessment items that are correct and scored at the maximum."
         is optional
         total digits 15
         decimal places 5
-    shared string ItemText [2892]
+    shared string ItemText
         documentation "The text of the item."
         is optional
-    common PossibleResponse [2893]
+    common PossibleResponse
         documentation "A possible response to an assessment item."
         is optional collection
-    duration ExpectedTimeAssessed [1257]
+    duration ExpectedTimeAssessed
         documentation "The duration allotted for the assessment item expressed in minutes."
         is optional
-    shared string Nomenclature [1261]
+    shared string Nomenclature
         documentation "Reflects the specific nomenclature used for assessment item."
         is optional
-    domain entity LearningStandard [1259]
+    domain entity LearningStandard
         documentation "Learning standard tested by this item."
         is optional collection
-    domain entity Assessment [1255]
+    domain entity Assessment
         documentation "Relates the assessment item to an existing assessment."
         is part of identity
-    shared string URI named AssessmentItemURI [2537]
+    shared string URI named AssessmentItemURI
         documentation "The URI (typical a URL) pointing to the entry in an assessment item bank, which describes this content item."
         is optional

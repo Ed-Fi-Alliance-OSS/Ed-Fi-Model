@@ -1,2 +1,2 @@
-Descriptor AddressType [125]
+Descriptor AddressType
     documentation "The type of address listed for an individual or organization."

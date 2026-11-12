@@ -1,32 +1,32 @@
-Inline Common License [2564]
+Inline Common License
     documentation "The legal document showing proof of permission or authorization."
-    shared string LicenseIdentifier [2568]
+    shared string LicenseIdentifier
         documentation "The unique identifier issued by the licensing organization."
         is part of identity
-    shared string LicensingOrganization [2572]
+    shared string LicensingOrganization
         documentation "The organization issuing the license."
         is part of identity
-    date LicenseEffectiveDate [2566]
+    date LicenseEffectiveDate
         documentation "The month, day, and year on which a license is active or becomes effective.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
-    date LicenseExpirationDate [2567]
+    date LicenseExpirationDate
         documentation "The month, day, and year on which a license will expire.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date LicenseIssueDate [2569]
+    date LicenseIssueDate
         documentation "The month, day, and year on which an active license was issued."
         is optional
-    descriptor LicenseStatus [2570]
+    descriptor LicenseStatus
         documentation "An indication of the status of the license."
         is optional
-    descriptor LicenseType [2571]
+    descriptor LicenseType
         documentation "An indication of the category of the license."
         is required
-    shared integer Capacity named AuthorizedFacilityCapacity [2565]
+    shared integer Capacity named AuthorizedFacilityCapacity
         documentation "The maximum number that can be contained or accommodated which a provider is authorized or licensed to serve."
         is optional 
-    shared integer AgeAuthorizedToServe named OldestAgeAuthorizedToServe [2573]
+    shared integer AgeAuthorizedToServe named OldestAgeAuthorizedToServe
         documentation "The oldest age of children a provider is authorized or licensed to serve."
         is optional
-    shared integer AgeAuthorizedToServe named YoungestAgeAuthorizedToServe [2574]
+    shared integer AgeAuthorizedToServe named YoungestAgeAuthorizedToServe
         documentation "The youngest age of children a provider is authorized or licensed to serve."
         is optional

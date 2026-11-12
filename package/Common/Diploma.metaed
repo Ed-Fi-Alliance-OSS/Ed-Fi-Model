@@ -1,23 +1,23 @@
-Common Diploma [501]
+Common Diploma
     documentation "This educational entity represents the conferring or certification by an educational organization that the student has successfully completed a particular course of study. It represents the electronic version of its physical document counterpart."
-    inline common Achievement [714]
+    inline common Achievement
         documentation "An entity that includes information about achievement earned by a student upon fulfilling a specified criteria."
         is required
-    date DiplomaAwardDate [804]
+    date DiplomaAwardDate
         documentation "The month, day, and year on which the student met  graduation requirements and was awarded a diploma.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    descriptor DiplomaLevel [807]
+    descriptor DiplomaLevel
         documentation "The level of diploma/credential that is awarded to a student in recognition of completion of the curricular requirements."
         is optional
-    descriptor DiplomaType [808]
+    descriptor DiplomaType
         documentation "The type of diploma/credential that is awarded to a student in recognition of his/her completion of the curricular requirements."
         is part of identity
-    bool CTECompleter [803]
+    bool CTECompleter
         documentation "Indicated a student who reached a state-defined threshold of vocational education and who attained a high school diploma or its recognized state equivalent or GED."
         is optional
-    shared string DiplomaDescription [806]
+    shared string DiplomaDescription
         documentation "The description of the diploma given to the student for accomplishments."
         is optional
-    date DiplomaAwardExpiresDate [805]
+    date DiplomaAwardExpiresDate
         documentation "Date on which the diploma expires.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

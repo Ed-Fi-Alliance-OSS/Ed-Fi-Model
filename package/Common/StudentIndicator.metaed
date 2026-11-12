@@ -1,17 +1,17 @@
-Common StudentIndicator [533]
+Common StudentIndicator
     documentation "An indicator or metric computed for the student (e.g., at risk)."
-    shared string IndicatorName named IndicatorGroup [944]
+    shared string IndicatorName named IndicatorGroup
         documentation "The name for a group of indicators."
         is optional
-    shared string IndicatorName [945]
+    shared string IndicatorName
         documentation "The name of the indicator or metric."
         is part of identity
-    shared string Indicator [943]
+    shared string Indicator
         documentation "The value of the indicator or metric."
         is required
     common Period
         documentation "The time periods for which the indicator was effective."
         is optional collection
-    shared string DesignatedBy [941]
+    shared string DesignatedBy
         documentation "The person, organization, or department that designated the program association."
         is optional

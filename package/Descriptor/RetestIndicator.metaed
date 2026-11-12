@@ -1,2 +1,2 @@
-Descriptor RetestIndicator [226]
+Descriptor RetestIndicator
     documentation "Indicator if the test was retaken."

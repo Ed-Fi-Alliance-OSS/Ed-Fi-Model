@@ -1,8 +1,8 @@
-Common ServiceProvider [526]
+Common ServiceProvider
     documentation "The student's special education ServiceProvider."
-    domain entity Staff [918]
+    domain entity Staff
         documentation "Relates the ServiceProvider to the Staff."
         is part of identity
-    bool PrimaryProvider [917]
+    bool PrimaryProvider
         documentation "Primary ServiceProvider."
         is optional

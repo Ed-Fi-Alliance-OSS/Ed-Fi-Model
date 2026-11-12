@@ -1,20 +1,20 @@
-Domain Entity StaffLeave [568]
+Domain Entity StaffLeave
     documentation "This entity represents the recording of the dates of staff leave (e.g., sick leave, personal time, vacation)."
-    date BeginDate [2690]
+    date BeginDate
         documentation "The begin date of the staff leave.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    date EndDate [2691]
+    date EndDate
         documentation "The end date of the staff leave.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    descriptor StaffLeaveEventCategory [1508]
+    descriptor StaffLeaveEventCategory
         documentation "The code describing the type of leave taken."
         is part of identity
-    shared string Reason [1509]
+    shared string Reason
         documentation "Expanded reason for the staff leave."
         is optional
-    bool SubstituteAssigned [1511]
+    bool SubstituteAssigned
         documentation "Indicator of whether a substitute was assigned during the period of staff leave."
         is optional
-    domain entity Staff [1510]
+    domain entity Staff
         documentation "The staff associated with this leave event."
         is part of identity

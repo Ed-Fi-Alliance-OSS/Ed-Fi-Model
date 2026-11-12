@@ -1,32 +1,32 @@
-Common InternationalAddress [509]
+Common InternationalAddress
     documentation "Addresses located outside of the United States."
-    descriptor AddressType [841]
+    descriptor AddressType
         documentation "The type of address listed for an individual or organization. (For example:  Physical Address, Mailing Address, Home Address, etc.)"
         is part of identity
-    shared string AddressLine named AddressLine1 [837]
+    shared string AddressLine named AddressLine1
         documentation "The first line of the address."
         is required
-    shared string AddressLine named AddressLine2 [838]
+    shared string AddressLine named AddressLine2
         documentation "The second line of the address."
         is optional
-    shared string AddressLine named AddressLine3 [839]
+    shared string AddressLine named AddressLine3
         documentation "The third line of the address."
         is optional
-    shared string AddressLine named AddressLine4 [840]
+    shared string AddressLine named AddressLine4
         documentation "The fourth line of the address."
         is optional
-    descriptor Country [843]
+    descriptor Country
         documentation "The name of the country. It is strongly recommended that entries use only ISO 3166 2-letter country codes."
         is required
-    shared string Coordinate named Latitude [845]
+    shared string Coordinate named Latitude
         documentation "The geographic latitude of the physical address."
         is optional
-    shared string Coordinate named Longitude [846]
+    shared string Coordinate named Longitude
         documentation "The geographic longitude of the physical address."
         is optional
-    date BeginDate [842]
+    date BeginDate
         documentation "The first date the address is valid. For physical addresses, the date the individual moved to that address.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date EndDate [844]
+    date EndDate
         documentation "The last date the address is valid. For physical addresses, the date the individual moved from that address.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

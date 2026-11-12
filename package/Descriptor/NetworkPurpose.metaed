@@ -1,2 +1,2 @@
-Descriptor NetworkPurpose [199]
+Descriptor NetworkPurpose
     documentation "The purpose(s) of the network, e.g. shared services, collective procurement, etc."

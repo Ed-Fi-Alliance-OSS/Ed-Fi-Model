@@ -1,36 +1,36 @@
-Domain Entity Session [582]
+Domain Entity Session
     documentation "A specific designated unit of time during which instruction is provided, grades are reported and academic credits are awarded to students (whenever applicable). Sessions serve as organized segments of the academic year and can be interrupted by vacations or other events."
     allow primary key updates
-    shared string IdentificationCode named SessionName [1643]
+    shared string IdentificationCode named SessionName
         documentation "The identifier for the calendar for the academic session."
         is part of identity
         is queryable field
-    enumeration SchoolYear [1642]
+    enumeration SchoolYear
         documentation "The identifier for the school year."
         is part of identity
         is queryable field
-    date BeginDate [1638]
+    date BeginDate
         documentation "Month, day, and year of the first day of the session.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
-    date EndDate [1639]
+    date EndDate
         documentation "Month, day and year of the last day of the session.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
-    descriptor Term [1644]
+    descriptor Term
         documentation "A descriptor value to indicate the term that the session is associated with."
         is required
         is queryable field
-    shared integer TotalInstructionalDays [1645]
+    shared integer TotalInstructionalDays
         documentation "The total number of instructional days in the school calendar."
         is required
-    domain entity School [1641]
+    domain entity School
         documentation "Relates the session to the school."
         is part of identity
         is queryable field
-    domain entity GradingPeriod [1640]
+    domain entity GradingPeriod
         documentation "Grading periods associated with the session."
         is optional collection
         merge GradingPeriod.SchoolYear with SchoolYear
         merge GradingPeriod.School with School
-    domain entity AcademicWeek [1637]
+    domain entity AcademicWeek
         documentation "The academic weeks associated with the school year."
         is optional collection

@@ -1,30 +1,30 @@
-Domain Entity SurveyResponse [3024]
+Domain Entity SurveyResponse
     documentation "Responses to a Survey for named or anonymous persons."
-    shared string IdentificationCode named SurveyResponseIdentifier [3025]
+    shared string IdentificationCode named SurveyResponseIdentifier
         documentation "The identifier of the survey typically from the survey application."
         is part of identity
-    domain entity Survey [3026]
+    domain entity Survey
         documentation "The survey associated with the response."
         is part of identity
-    date ResponseDate [3027]
+    date ResponseDate
         documentation "Date of the survey response."
         is required
-    integer ResponseTime [3028]
+    integer ResponseTime
         documentation "The amount of time in seconds it took for the respondent to complete the survey."
         is optional
-    descriptor SurveyLevel [3029]
+    descriptor SurveyLevel
         documentation "Provides information about the respondents of a survey and how they can be grouped together."
         is optional collection
-    shared string ElectronicMailAddress [3030]
+    shared string ElectronicMailAddress
         documentation "Email address of the respondent."
         is optional
-    shared string FullName [3031]
+    shared string FullName
         documentation "Full name of the respondent."
         is optional
-    shared string Whereabouts named Location [3032]
+    shared string Whereabouts named Location
         documentation "Location of the respondent, often a city, district, or school."
         is optional
-    choice SurveyResponderChoice [3033]
+    choice SurveyResponderChoice
         documentation "Reference to either a student, contact, or staff - or none for anonymous survey."
         is optional
     domain entity Person

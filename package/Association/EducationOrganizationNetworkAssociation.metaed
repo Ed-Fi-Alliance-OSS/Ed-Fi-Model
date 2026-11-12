@@ -1,13 +1,13 @@
-Association EducationOrganizationNetworkAssociation [596]
+Association EducationOrganizationNetworkAssociation
     documentation "Properties of the association between the education organization and its network(s)."
-    domain entity EducationOrganizationNetwork [1005]
+    domain entity EducationOrganizationNetwork
         documentation "A reference to the education organization network to which this education organization is a member."
-    domain entity EducationOrganization [1007]
+    domain entity EducationOrganization
         documentation "The education organization member in the network."
         role name Member
-    date BeginDate [1004]
+    date BeginDate
         documentation "The date on which the education organization joined this network.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date EndDate [1006]
+    date EndDate
         documentation "The date on which the education organization left this network.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

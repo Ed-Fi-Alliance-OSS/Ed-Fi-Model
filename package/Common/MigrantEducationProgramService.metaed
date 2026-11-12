@@ -1,14 +1,14 @@
-Common MigrantEducationProgramService [2742]
+Common MigrantEducationProgramService
     documentation "The student's migrant education program service information."
-    descriptor MigrantEducationProgramService [2743]
+    descriptor MigrantEducationProgramService
         documentation "Indicates the service being provided to the student by the migrant education program."
         is part of identity
-    bool PrimaryIndicator [2744]
+    bool PrimaryIndicator
         documentation "True if service is a primary service."
         is optional
-    date ServiceBeginDate [2745]
+    date ServiceBeginDate
         documentation "First date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date ServiceEndDate [2746]
+    date ServiceEndDate
         documentation "Last date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

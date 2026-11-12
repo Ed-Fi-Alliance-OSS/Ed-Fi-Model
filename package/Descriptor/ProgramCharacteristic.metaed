@@ -1,2 +1,2 @@
-Descriptor ProgramCharacteristic [210]
+Descriptor ProgramCharacteristic
     documentation "This descriptor defines important characteristics of the Program, such as categories or particular indications."

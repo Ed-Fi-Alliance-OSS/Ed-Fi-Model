@@ -1,4 +1,4 @@
-Interchange StaffAssociation [2523]
+Interchange StaffAssociation
     documentation "This interchange defines staff and teacher information. It can be used to define employment, assignment, and teaching associations, as well as staff positions and staff leave events."
     use case documentation "1. Exchange staff demographics and contact information.
     2. Exchange staff experience and credential information.

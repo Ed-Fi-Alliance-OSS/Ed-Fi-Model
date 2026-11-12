@@ -1,11 +1,11 @@
-Common ResponseChoice [2979]
+Common ResponseChoice
     documentation "An individual choice within a list of possible responses to a survey question."
-    shared integer SortOrder [2980]
+    shared integer SortOrder
         documentation "Sort order of this ResponseChoice within the complete list of choices attached to a SurveyQuestion. If sort order doesn't apply, the value of NumericValue or a unique, possibly sequential numeric value."
         is part of identity
-    shared integer NumericValue [2981]
+    shared integer NumericValue
         documentation "A valid numeric response. If paired with a TextValue, the numeric equivalent of the TextValue."
         is optional
-    shared string TextValue [2982]
+    shared string TextValue
         documentation "A valid text response. If paired with a NumericValue, the text equivalent of the NumericValue."
         is optional

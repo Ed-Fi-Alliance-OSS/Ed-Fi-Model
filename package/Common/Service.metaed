@@ -1,14 +1,14 @@
-Common Service [525]
+Common Service
     documentation "The student's program service information."
-    descriptor Service [914]
+    descriptor Service
         documentation "Indicates the service being provided to the student by the program."
         is part of identity
-    bool PrimaryIndicator [913]
+    bool PrimaryIndicator
         documentation "True if service is a primary service."
         is optional
-    date ServiceBeginDate [915]
+    date ServiceBeginDate
         documentation "First date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date ServiceEndDate [916]
+    date ServiceEndDate
         documentation "Last date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

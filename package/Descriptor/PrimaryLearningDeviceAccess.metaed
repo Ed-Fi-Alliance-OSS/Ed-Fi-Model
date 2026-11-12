@@ -1,2 +1,2 @@
-Descriptor PrimaryLearningDeviceAccess [3102]
+Descriptor PrimaryLearningDeviceAccess
     documentation "An indication of whether the primary learning device is shared or not shared with another individual."

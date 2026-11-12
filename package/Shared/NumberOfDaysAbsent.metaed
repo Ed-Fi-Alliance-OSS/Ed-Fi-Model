@@ -1,4 +1,4 @@
-Shared Decimal NumberOfDaysAbsent [75]
+Shared Decimal NumberOfDaysAbsent
     documentation "The number of days an individual is absent when school is in session during a given reporting period."
     total digits 18
     decimal places 4
