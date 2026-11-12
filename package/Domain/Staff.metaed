@@ -63,6 +63,7 @@ Domain Staff
     descriptor ProgramAssignment
     descriptor Race
     descriptor RecognitionType
+    domain entity Requisition
     descriptor SalaryType
     domain entity School
     descriptor SchoolCategory
