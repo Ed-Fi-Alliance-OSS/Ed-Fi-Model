@@ -8,7 +8,7 @@ Common NeglectedOrDelinquentProgramService [2747]
         is optional
     date ServiceBeginDate [2750]
         documentation "First date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
-        is optional
+        is part of identity
     date ServiceEndDate [2751]
         documentation "Last date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
