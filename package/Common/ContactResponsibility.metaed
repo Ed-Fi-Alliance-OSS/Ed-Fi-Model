@@ -1,7 +1,7 @@
 Common ContactResponsibility
     documentation "The contact responsibility for the student, effective beginning on a specific date."
     domain entity Contact
-        documentation "Describes the relation of the contact to their responsibility"
+        documentation "A reference to the contact who has the specified responsibility for the student."
         is part of identity
     descriptor ContactResponsibility
         documentation "Defines the type of responsibility a contact has for a specific student."
