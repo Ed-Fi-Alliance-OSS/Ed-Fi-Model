@@ -1,0 +1,21 @@
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+indent_style = space
+trim_trailing_whitespace = true
+
+[**/*.md]
+trim_trailing_whitespace = false
+
+[*.{js,json,yml}]
+file_header_template = SPDX-License-Identifier: Apache-2.0\nLicensed to the Ed-Fi Alliance under one or more agreements.\nThe Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.\nSee the LICENSE and NOTICES files in the project root for more information.
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+
+[*.metaed]
+# For now, we are NOT putting the Apache license header in .metaed files
+indent_size = 4
