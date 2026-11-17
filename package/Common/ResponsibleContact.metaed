@@ -1,4 +1,4 @@
-Common ContactResponsibility
+Common ResponsibleContact
     documentation "The contact responsibility for the student, effective beginning on a specific date."
     domain entity Contact
         documentation "A reference to the contact who has the specified responsibility for the student."
