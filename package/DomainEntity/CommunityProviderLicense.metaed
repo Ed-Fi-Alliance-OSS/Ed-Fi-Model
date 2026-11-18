@@ -1,8 +1,8 @@
-Domain Entity CommunityProviderLicense [2590]
+Domain Entity CommunityProviderLicense
     documentation "The legal document held by the community provider that authorizes the holder to perform certain functions and or services."
-        domain entity CommunityProvider [2591]
+        domain entity CommunityProvider
         documentation "Relates the license to the community provider."
         is part of identity
-    inline common License [2592]
+    inline common License
         documentation "The legal document showing proof of permission or authorization."
         is required

@@ -1,17 +1,17 @@
-Domain Entity StaffAbsenceEvent [2695]
+Domain Entity StaffAbsenceEvent
     documentation "This event entity represents the recording of the dates of staff absence."
-    date EventDate [2696]
+    date EventDate
         documentation "Date for this leave event."
         is part of identity
-    descriptor AbsenceEventCategory [2697]
+    descriptor AbsenceEventCategory
         documentation "The code describing the type of absence."
         is part of identity
-    shared string Reason named AbsenceEventReason [2698]
+    shared string Reason named AbsenceEventReason
         documentation "Expanded reason for the staff absence."
         is optional
-    shared decimal HoursAbsent [2699]
+    shared decimal HoursAbsent
         documentation "The hours the staff was absent, if not the entire working day."
         is optional
-    domain entity Staff [2700]
+    domain entity Staff
         documentation "The staff associated with this absence event."
         is part of identity

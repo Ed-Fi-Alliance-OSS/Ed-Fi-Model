@@ -1,2 +1,2 @@
-Descriptor CharterStatus [137]
+Descriptor CharterStatus
     documentation "The category of charter school. For example: School Charter, Open Enrollment Charter."

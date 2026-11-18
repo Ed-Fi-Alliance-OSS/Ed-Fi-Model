@@ -1,2 +1,2 @@
-Descriptor DisciplineActionLengthDifferenceReason [163]
+Descriptor DisciplineActionLengthDifferenceReason
     documentation "Indicates the reason for the difference, if any, between the official and actual lengths of a student's disciplinary assignment."

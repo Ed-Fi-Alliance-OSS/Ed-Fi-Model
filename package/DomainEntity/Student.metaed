@@ -1,25 +1,25 @@
-Domain Entity Student [585]
+Domain Entity Student
     documentation "This entity represents an individual for whom instruction, services, and/or care are provided in an early childhood, elementary, or secondary educational program under the jurisdiction of a school, education agency or other institution or program. A student is a person who has been enrolled in a school or other educational institution."
-    shared string UniqueId [1705]
+    shared string UniqueId
         documentation "A unique alphanumeric code assigned to a student."
         is part of identity
         role name Student
         is queryable field
-    inline common Name [1694]
+    inline common Name
         documentation "Full legal name of the person."
         is required
         is queryable field
-    common OtherName [1696]
+    common OtherName
         documentation "Other names (e.g., alias, nickname, previous legal name) associated with a person."
         is optional collection
         is queryable field
-    inline common BirthData [1681]
+    inline common BirthData
         documentation "The set of elements that capture relevant data regarding a person's birth, including birth date and place of birth."
         is required
         is queryable field
-    domain entity EducationOrganization [2371]
+    domain entity EducationOrganization
         documentation "Provide user information to lookup and link to an existing educational organization record in the receiving system."
         is queryable only
-    domain entity Person [2944]
+    domain entity Person
         documentation "Relates the student to a generic person."
         is optional

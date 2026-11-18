@@ -1,2 +1,2 @@
-Descriptor AcademicSubject [121]
+Descriptor AcademicSubject
     documentation "This descriptor holds the description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language)."

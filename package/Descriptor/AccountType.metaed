@@ -1,2 +1,2 @@
-Descriptor AccountType [3131]
+Descriptor AccountType
     documentation "The type of account used in accounting such as revenue, expenditure, or balance sheet."

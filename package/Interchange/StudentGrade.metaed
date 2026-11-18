@@ -1,4 +1,4 @@
-Interchange StudentGrade [2531]
+Interchange StudentGrade
     documentation
 "This interchange defines grades for a grading period or group of grading periods. Grades are defined for groups of grading periods in the case where the grade is cumulative over a semester or academic year (also referred to as ""final grades"")."
     use case documentation

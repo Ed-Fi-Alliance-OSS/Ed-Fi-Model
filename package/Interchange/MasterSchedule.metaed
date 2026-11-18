@@ -1,4 +1,4 @@
-Interchange MasterSchedule [2520]
+Interchange MasterSchedule
     documentation "This interchange loads education course offerings and their schedule.
     The interchange can be used to exchange data regarding the course offerings, sections, and bell schedule for a school."
     use case documentation "1. Exchange the school's course catalog to be offered during a session.

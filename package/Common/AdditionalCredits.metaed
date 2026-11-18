@@ -1,8 +1,8 @@
-Common AdditionalCredits [480]
+Common AdditionalCredits
     documentation "Additional credits or units of value awarded for the completion of a course (e.g., AP, IB, Dual Credits)."
-    shared decimal CreditsValue named Credits [716]
+    shared decimal CreditsValue named Credits
         documentation "The value of credits or units of value awarded for the completion of a course"
         is required
-    descriptor AdditionalCreditType [715]
+    descriptor AdditionalCreditType
         documentation "The type of credits or units of value awarded for the completion of a course."
         is part of identity

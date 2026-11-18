@@ -1,24 +1,24 @@
-Association StaffSectionAssociation [604]
+Association StaffSectionAssociation
     documentation "This association indicates the class sections to which a staff member is assigned."
-    domain entity Staff [1053]
+    domain entity Staff
         documentation "The staff member assigned to the section."
-    domain entity Section [1052]
+    domain entity Section
         documentation "The section the staff member is assigned to."
-    descriptor ClassroomPosition [1048]
+    descriptor ClassroomPosition
         documentation "The type of position the staff member holds in the specific class/section."
         is required
-    date BeginDate [1047]
+    date BeginDate
         documentation "Month, day, and year of a teacher's assignment to the section.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    date EndDate [1049]
+    date EndDate
         documentation "Month, day, and year of the last day of a staff member's assignment to the section.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    bool HighlyQualifiedTeacher [1050]
+    bool HighlyQualifiedTeacher
         documentation "An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition. This attribute indicates the teacher is highly qualified for this section being taught."
         is optional
-    bool TeacherStudentDataLinkExclusion [1054]
+    bool TeacherStudentDataLinkExclusion
         documentation "Indicates that the entire section is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation."
         is optional
-    percent PercentageContribution [1051]
+    percent PercentageContribution
         documentation "Indicates the percentage of the total scheduled course time, academic standards, and/or learning activities delivered in this section by this staff member. A teacher of record designation may be based solely or partially on this contribution percentage."
         is optional

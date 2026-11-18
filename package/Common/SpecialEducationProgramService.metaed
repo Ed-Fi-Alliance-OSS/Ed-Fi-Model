@@ -1,17 +1,17 @@
-Common SpecialEducationProgramService [2765]
+Common SpecialEducationProgramService
     documentation "The student's special education program service information."
-    descriptor SpecialEducationProgramService [2766]
+    descriptor SpecialEducationProgramService
         documentation "Indicates the service being provided to the student by the special education program."
         is part of identity
-    bool PrimaryIndicator [2767]
+    bool PrimaryIndicator
         documentation "True if service is a primary service."
         is optional
-    date ServiceBeginDate [2768]
+    date ServiceBeginDate
         documentation "First date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date ServiceEndDate [2769]
+    date ServiceEndDate
         documentation "Last date the student was in this option for the current school year.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    common ServiceProvider [2895]
+    common ServiceProvider
         documentation "The staff providing the service to the student."
         is optional collection

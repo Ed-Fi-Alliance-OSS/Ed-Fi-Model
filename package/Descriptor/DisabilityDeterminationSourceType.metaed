@@ -1,2 +1,2 @@
-Descriptor DisabilityDeterminationSourceType [2421]
+Descriptor DisabilityDeterminationSourceType
     documentation "The source that provided the disability determination."

@@ -1,2 +1,2 @@
-Descriptor CohortType [141]
+Descriptor CohortType
     documentation "The type of the cohort (e.g., academic intervention, classroom breakout)."

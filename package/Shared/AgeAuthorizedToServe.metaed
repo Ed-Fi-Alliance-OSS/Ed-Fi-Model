@@ -1,2 +1,2 @@
-Shared Integer AgeAuthorizedToServe [2556]
+Shared Integer AgeAuthorizedToServe
     documentation "Age of children a provider is authorized or licensed to serve."

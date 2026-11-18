@@ -1,26 +1,26 @@
-Domain Entity Survey [3000]
+Domain Entity Survey
     documentation "A survey to identified or anonymous respondents."
-    shared string IdentificationCode named SurveyIdentifier [3001]
+    shared string IdentificationCode named SurveyIdentifier
         documentation "The unique survey identifier from the survey tool."
         is part of identity
-    shared string URI named Namespace [3002]
+    shared string URI named Namespace
         documentation "Namespace for the survey."
         is part of identity
-    domain entity EducationOrganization [3003]
+    domain entity EducationOrganization
         documentation "The education organization associated with the survey."
         is optional
-    shared string SurveyTitle [3004]
+    shared string SurveyTitle
         documentation "The title of the survey."
         is required
-    enumeration SchoolYear [3005]
+    enumeration SchoolYear
         documentation "The school year associated with the survey."
         is required
-    domain entity Session [3006]
+    domain entity Session
         documentation "The session associated with the survey."
         is optional
-    descriptor SurveyCategory [3007]
+    descriptor SurveyCategory
         documentation "The category or type of survey."
         is optional
-    integer NumberAdministered [3008]
+    integer NumberAdministered
         documentation "Number of persons to whom this survey was administered."
         is optional

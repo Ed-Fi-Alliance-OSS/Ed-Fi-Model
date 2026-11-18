@@ -1,4 +1,4 @@
-Interchange StudentAttendance [2527]
+Interchange StudentAttendance
     documentation "The Student Attendance interchange describes student attendance events. It can be used to exchange daily attendance or section-level attendance. It may be used in cases where only absences are reported (attendance is assumed if no absence is reported), or where both attendance and absences are reported."
     use case documentation "1. Exchange a school's or LEA's section (class), school (daily), intervention, or program attendance data.
     2. Exchange a school's or LEA's section attendance taken data.

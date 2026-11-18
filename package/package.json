@@ -2,7 +2,7 @@
   "name": "@edfi/ed-fi-model-6.2",
   "version": "3.0.0-pre.2",
   "description": "The Ed-Fi Data Model 6.2",
-  "repository": "https://github.com/Ed-Fi-Closed/Ed-Fi-Model",
+  "repository": "https://github.com/Ed-Fi-Alliance-OSS/Ed-Fi-Model",
   "license": "private",
   "publishConfig": {
     "registry": "https://pkgs.dev.azure.com/ed-fi-alliance/Ed-Fi-Alliance-OSS/_packaging/EdFi/npm/registry/"

@@ -1,2 +1,2 @@
-Descriptor CohortYearType [142]
+Descriptor CohortYearType
     documentation "The enumeration items for the set of cohort years."

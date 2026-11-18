@@ -1,14 +1,14 @@
-Common ProgramParticipationStatus [3089]
+Common ProgramParticipationStatus
     documentation "The status of the student's program participation."
-    descriptor ParticipationStatus [3090]
+    descriptor ParticipationStatus
         documentation "The student's program participation status."
         is part of identity
-    date StatusBeginDate [3091]
+    date StatusBeginDate
         documentation "The date the student's program participation status began.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is part of identity
-    date StatusEndDate [3092]
+    date StatusEndDate
         documentation "The date the student's program participation status ended.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    shared string DesignatedBy [3093]
+    shared string DesignatedBy
         documentation "The person, organization, or department that designated the participation status."
         is optional

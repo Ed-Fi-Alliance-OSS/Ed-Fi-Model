@@ -1,3 +1,3 @@
-Shared String ResponseDescription [2887]
+Shared String ResponseDescription
     documentation "Text provided to define a response value."
     max length 1024

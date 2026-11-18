@@ -1,6 +1,6 @@
-Association SurveyProgramAssociation [2947]
+Association SurveyProgramAssociation
   documentation "The program associated with the survey."
-  domain entity Survey [2948]
+  domain entity Survey
     documentation "Reference to survey."
-  domain entity Program [2949]
+  domain entity Program
     documentation "The program associated with the survey."

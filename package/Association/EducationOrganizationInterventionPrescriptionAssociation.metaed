@@ -1,13 +1,13 @@
-Association EducationOrganizationInterventionPrescriptionAssociation [595]
+Association EducationOrganizationInterventionPrescriptionAssociation
     documentation "This association indicates interventions made available by an education organization. Often, a district-level education organization purchases a set of intervention prescriptions and makes them available to its schools for use on demand."
-    domain entity EducationOrganization [1001]
+    domain entity EducationOrganization
         documentation "The education organization, often times a district, which is making the intervention prescription available to its hierarchy. In some cases, it may be an education organization network instead of a district."
-    domain entity InterventionPrescription [1003]
+    domain entity InterventionPrescription
         documentation "The intervention prescription being made available by the education organization."
         role name InterventionPrescription
-    date BeginDate [1000]
+    date BeginDate
         documentation "The begin date of the period during which the intervention prescription is available.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    date EndDate [1002]
+    date EndDate
         documentation "The end date of the period during which the intervention prescription is available.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional

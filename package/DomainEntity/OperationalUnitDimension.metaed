@@ -1,14 +1,14 @@
-Domain Entity OperationalUnitDimension [3203]
+Domain Entity OperationalUnitDimension
     documentation "The NCES operational unit accounting dimension. This dimension is used to segregate costs by school and operational unit such as physical location, department, or other method."
-    shared string Code [3204]
+    shared string Code
         documentation "The code representation of the account operational unit dimension."
         is part of identity
-    shared integer LocalFiscalYear named FiscalYear [3205]
+    shared integer LocalFiscalYear named FiscalYear
         documentation "The fiscal year for which the account operational unit dimension is valid."
         is part of identity
-    shared string CodeName [3206]
+    shared string CodeName
         documentation "A description of the account operational unit dimension."
         is optional
-    descriptor ReportingTag [3207]
+    descriptor ReportingTag
         documentation "Optional tag for accountability reporting."
         is optional collection

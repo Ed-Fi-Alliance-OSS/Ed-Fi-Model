@@ -1,8 +1,8 @@
-Common InstitutionTelephone [508]
+Common InstitutionTelephone
     documentation "The 10-digit telephone number, including the area code, for the organization."
-    shared string TelephoneNumber [836]
+    shared string TelephoneNumber
         documentation "The telephone number including the area code, and extension, if applicable."
         is required
-    descriptor InstitutionTelephoneNumberType [835]
+    descriptor InstitutionTelephoneNumberType
         documentation "The type of communication number listed for an individual or organization."
         is part of identity

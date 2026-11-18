@@ -1,9 +1,9 @@
-Association StudentDisciplineIncidentNonOffenderAssociation [3071]
+Association StudentDisciplineIncidentNonOffenderAssociation
     documentation "This association indicates those students who were involved and not perpetrators for a discipline incident."
-    domain entity Student [3072]
+    domain entity Student
         documentation "Relates the student associated with the discipline incident."
-    domain entity DisciplineIncident [3073]
+    domain entity DisciplineIncident
         documentation "Reference to the discipline incident associated with the student."
-    descriptor DisciplineIncidentParticipationCode [3096]
+    descriptor DisciplineIncidentParticipationCode
         documentation "The role or type of participation of a student in a discipline incident."
         is optional collection

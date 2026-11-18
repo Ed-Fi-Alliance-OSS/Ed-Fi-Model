@@ -1,20 +1,20 @@
-Common EducationOrganizationIndicator [2969]
+Common EducationOrganizationIndicator
     documentation "An indicator or metric of an Education Organization."
-    descriptor Indicator [2970]
+    descriptor Indicator
         documentation "The name or code for the indicator or metric."
         is part of identity
-    shared string DesignatedBy [2971]
+    shared string DesignatedBy
         documentation "The person, organization, or department that defined the metric."
         is optional
-    shared string Indicator named IndicatorValue [2972]
+    shared string Indicator named IndicatorValue
         documentation "The value of the indicator or metric. The semantics of an empty value is ""not submitted."""
         is optional
-    descriptor IndicatorLevel [3061]
+    descriptor IndicatorLevel
         documentation "The value of the indicator or metric, as a value from a controlled vocabulary. The semantics of an empty value is ""not submitted."""
         is optional
-    descriptor IndicatorGroup [2973]
+    descriptor IndicatorGroup
         documentation "The name for a group of indicators."
         is optional
-    common Period [2974]
+    common Period
         documentation "The time period or as-of date for the indicator."
         is optional collection

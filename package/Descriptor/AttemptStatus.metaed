@@ -1,2 +1,2 @@
-Descriptor AttemptStatus [2994]
+Descriptor AttemptStatus
     documentation "This descriptor describes a student's completion status for a section."

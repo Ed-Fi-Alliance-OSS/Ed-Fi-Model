@@ -1,9 +1,9 @@
-Common Behavior [487]
+Common Behavior
     documentation "Describes behavior by category and provides a detailed description."
-    shared string Description [751]
+    shared string Description
         documentation "Specifies a more granular level of detail of a behavior involved in the incident."
         is optional
         role name BehaviorDetailed
-    descriptor Behavior [750]
+    descriptor Behavior
         documentation "Describes behavior by category and provides a detailed description."
         is part of identity

@@ -1,22 +1,22 @@
-Association StaffSchoolAssociation [603]
+Association StaffSchoolAssociation
     documentation "This association indicates the school(s) to which a staff member provides instructional services."
-    domain entity Staff [1046]
+    domain entity Staff
         documentation "The staff member providing services to the school."
-    domain entity School [1044]
+    domain entity School
         documentation "The school where the staff member provides services."
-    enumeration SchoolYear [1045]
+    enumeration SchoolYear
         documentation "Identifier for a school year."
         is optional
-    descriptor ProgramAssignment [1043]
+    descriptor ProgramAssignment
         documentation "The name of the program for which the individual is assigned."
         is part of identity
-    descriptor GradeLevel [1042]
+    descriptor GradeLevel
         documentation "The grade levels the individual is eligible to teach."
         is optional collection
-    descriptor AcademicSubject [1041]
+    descriptor AcademicSubject
         documentation "The academic subjects the individual is eligible to teach."
         is optional collection
-    domain entity Calendar [2620]
+    domain entity Calendar
         documentation "Reference to the calendar associated with the staff school association."
         is optional
         merge Calendar.SchoolYear with SchoolYear

@@ -1,6 +1,6 @@
 // While this is listed as an enumeration, this is a special case and is handled with custom code
 // throughout both the MetaEd and API code.  This should not be removed or changed without careful review.
-Enumeration SchoolYear [231]
+Enumeration SchoolYear
     documentation "Identifier for a school year."
     item "1990-1991" [231-001]
     item "1991-1992" [231-002]

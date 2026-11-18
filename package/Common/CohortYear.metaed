@@ -1,11 +1,11 @@
-Common CohortYear [493]
+Common CohortYear
     documentation "The type and year of a cohort (e.g., 9th grade) the student belongs to."
-    enumeration SchoolYear [768]
+    enumeration SchoolYear
         documentation "The school year associated with the cohort; for example, the intended school year of graduation."
         is part of identity
-    descriptor CohortYearType [767]
+    descriptor CohortYearType
         documentation "The type of cohort year (9th grade, graduation)."
         is part of identity
-    descriptor Term [3130]
+    descriptor Term
         documentation "The term associated with the cohort year; for example, the intended term of graduation."
         is optional

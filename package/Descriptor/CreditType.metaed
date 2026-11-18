@@ -1,2 +1,2 @@
-Descriptor CreditType [155]
+Descriptor CreditType
     documentation "The type of credits or units of value awarded for the completion of a course."

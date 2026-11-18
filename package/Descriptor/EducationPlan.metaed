@@ -1,2 +1,2 @@
-Descriptor EducationPlan [168]
+Descriptor EducationPlan
     documentation "The type of education plan(s) the student is following, if appropriate."

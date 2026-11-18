@@ -1,2 +1,2 @@
-Shared Integer TotalInstructionalTime [2913]
+Shared Integer TotalInstructionalTime
     documentation "The total instructional time in minutes."

@@ -1,2 +1,2 @@
-Descriptor DisabilityDesignation [161]
+Descriptor DisabilityDesignation
     documentation "The type of disability designation (e.g., IDEA, Section 504)."

@@ -1,4 +1,4 @@
-Interchange Student [2525]
+Interchange Student
     documentation "This interchange defines students and contains all their identifying information."
     use case documentation "1. Exchange school or LEA roster of student information.
     2. Exchange new or updated student information."

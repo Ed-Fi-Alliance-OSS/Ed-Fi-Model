@@ -1,37 +1,37 @@
-Domain Entity OpenStaffPosition [572]
+Domain Entity OpenStaffPosition
     documentation "This entity represents an open staff position that the education organization is seeking to fill."
-    descriptor EmploymentStatus [1549]
+    descriptor EmploymentStatus
         documentation "Reflects the type of employment or contract desired for the position."
         is required
-    descriptor StaffClassification [1555]
+    descriptor StaffClassification
         documentation "The titles of employment, official status, or rank of education staff."
         is required
-    shared string PositionTitle [1551]
+    shared string PositionTitle
         documentation "The descriptive name of an individual's position."
         is optional
-    shared string RequisitionNumber [1554]
+    shared string RequisitionNumber
         documentation "The number or identifier assigned to an open staff position, typically a requisition number assigned by Human Resources."
         is part of identity
-    descriptor ProgramAssignment [1553]
+    descriptor ProgramAssignment
         documentation "The name of the program for which the open staff position will be assigned."
         is optional
-    descriptor GradeLevel [1550]
+    descriptor GradeLevel
         documentation "The set of grade levels for which the position's assignment is responsible."
         is optional collection
         role name Instructional
-    descriptor AcademicSubject [1545]
+    descriptor AcademicSubject
         documentation "The teaching field required for the open staff position."
         is optional collection
-    date DatePosted [1546]
+    date DatePosted
         documentation "Date the open staff position was posted.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is required
-    date DatePostingRemoved [1547]
+    date DatePostingRemoved
         documentation "The date the posting was removed or filled.  Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
         is optional
-    descriptor PostingResult [1552]
+    descriptor PostingResult
         documentation "Indication of whether the OpenStaffPosition was filled or retired without filling."
         is optional
-    domain entity EducationOrganization [1548]
+    domain entity EducationOrganization
         documentation "The education organization with the open staff position."
         is part of identity
     enumeration SchoolYear

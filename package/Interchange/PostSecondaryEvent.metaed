@@ -1,4 +1,4 @@
-Interchange PostSecondaryEvent [2522]
+Interchange PostSecondaryEvent
     documentation "This interchange loads student post-secondary institution events such as application, admission, and enrollment."
     use case documentation "1. Exchange information about a student's application to a postsecondary institution.
     2. Exchange student admission decisions by a postsecondary institution.

@@ -1,3 +1,3 @@
-Shared String Comment [3042]
+Shared String Comment
     documentation "Additional information provided by the responder about the question in the survey."
     max length 1024

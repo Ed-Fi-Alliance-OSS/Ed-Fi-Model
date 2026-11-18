@@ -1,2 +1,2 @@
-Descriptor RestraintEventReason [224]
+Descriptor RestraintEventReason
     documentation "The items of categorization of the circumstances or reason for the restraint."

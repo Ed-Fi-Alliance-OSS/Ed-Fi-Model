@@ -1,2 +1,2 @@
-Descriptor AssessmentItemCategory [130]
+Descriptor AssessmentItemCategory
     documentation "Category or type of the assessment item."

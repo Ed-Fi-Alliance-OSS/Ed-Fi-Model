@@ -1,2 +1,2 @@
-Descriptor DisciplineIncidentParticipationCode [2880]
+Descriptor DisciplineIncidentParticipationCode
     documentation "The role or type of participation of a person in a discipline incident; for example: Victim, Perpetrator, Witness, Reporter."

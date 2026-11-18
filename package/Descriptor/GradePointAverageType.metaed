@@ -1,2 +1,2 @@
-Descriptor GradePointAverageType [2936]
+Descriptor GradePointAverageType
     documentation "The system used for calculating the grade point average for an individual."

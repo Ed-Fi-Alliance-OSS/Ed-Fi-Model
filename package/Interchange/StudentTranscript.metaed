@@ -1,4 +1,4 @@
-Interchange StudentTranscript [2535]
+Interchange StudentTranscript
     documentation
 "This interchange defines transcript information for a course and student academic records for a given session. Course transcripts link to the student academic record for the session in which the course was taken."
     use case documentation

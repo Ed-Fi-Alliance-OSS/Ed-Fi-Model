@@ -1,2 +1,2 @@
-Descriptor PostSecondaryInstitutionLevel [208]
+Descriptor PostSecondaryInstitutionLevel
     documentation "A classification of a postsecondary institution's highest level of offering. Default values are based on the Carnegie Classifications."

@@ -1,4 +1,4 @@
-Interchange Finance [2519]
+Interchange Finance
     documentation "This interchange describes financial data related to an Education Organization."
     use case documentation "1. Exchange budget data for an education organization.
     2. Exchange actuals against a budget for an education organization.

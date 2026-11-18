@@ -1,2 +1,2 @@
-Descriptor AdministrationEnvironment [126]
+Descriptor AdministrationEnvironment
     documentation "The environment in which the test was administered."

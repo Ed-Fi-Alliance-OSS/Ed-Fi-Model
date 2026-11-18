@@ -1,2 +1,2 @@
-Descriptor AbsenceEventCategory [2701]
+Descriptor AbsenceEventCategory
     documentation "This descriptor describes the type of absence"

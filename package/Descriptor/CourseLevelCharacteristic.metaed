@@ -1,2 +1,2 @@
-Descriptor CourseLevelCharacteristic [152]
+Descriptor CourseLevelCharacteristic
     documentation "The item for indication of the nature and difficulty of instruction: Remedial, Basic, Honors, Ap, IB, Dual Credit, CTE. etc." 

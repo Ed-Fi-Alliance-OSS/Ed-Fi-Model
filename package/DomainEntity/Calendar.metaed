@@ -1,17 +1,17 @@
-Domain Entity Calendar [2600]
+Domain Entity Calendar
     documentation "A set of dates associated with an organization."
-    shared string IdentificationCode named CalendarCode [2601]
+    shared string IdentificationCode named CalendarCode
         documentation "The identifier for the calendar."
         is part of identity
-    descriptor CalendarType [2602]
+    descriptor CalendarType
         documentation "Indicates the type of calendar."
         is required
-    descriptor GradeLevel [2603]
+    descriptor GradeLevel
         documentation "Indicates the grade level associated with the calendar."
         is optional collection
-    domain entity School [2607]
+    domain entity School
         documentation "Reference to the school associated with the calendar."
         is part of identity
-    enumeration SchoolYear [2604]
+    enumeration SchoolYear
         documentation "The identifier for the school year associated with the calendar."
         is part of identity

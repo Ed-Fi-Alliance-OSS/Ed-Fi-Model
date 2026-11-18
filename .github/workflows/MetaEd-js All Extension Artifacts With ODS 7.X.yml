@@ -11,7 +11,7 @@ permissions: read-all
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
-  
+
 env:
   REPOSITORY_DISPATCH_BRANCH: ${{ github.event.client_payload.branch }}
   HEAD_REF:  ${{ GITHUB.HEAD_REF }}
@@ -36,15 +36,15 @@ jobs:
         ports:
           - 1433:1433
         options: >-
-          --health-cmd "exit 0" 
-          --health-interval 10s 
-          --health-timeout 5s 
+          --health-cmd "exit 0"
+          --health-interval 10s
+          --health-timeout 5s
           --health-retries 3
     strategy:
       fail-fast: false
       matrix:
         TECHNOLOGY_VERSION: ["7.3.0"]
-        EXTENSION_NAME: ["Homograph","SampleStudentTranscript","Sample","SampleAlternativeEducationProgram"]        
+        EXTENSION_NAME: ["Homograph","SampleStudentTranscript","Sample","SampleAlternativeEducationProgram"]
 
     name: MetaEd-js ${{ matrix.EXTENSION_NAME }} Extension Artifacts With ODS ${{ matrix.TECHNOLOGY_VERSION }}
     steps:
@@ -52,7 +52,7 @@ jobs:
     - name: Checkout Ed-Fi-Model
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
-        repository: Ed-Fi-Closed/Ed-Fi-Model
+        repository: Ed-Fi-Alliance-OSS/Ed-Fi-Model
         path: Ed-Fi-Model/
         ref: ${{env.DATASTANDARD_VERSION}}
 
@@ -80,8 +80,8 @@ jobs:
       shell: pwsh
       working-directory: ./Ed-Fi-Model/
       run: |
-        ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "../MetaEdExtensionSource" 
-  
+        ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "../MetaEdExtensionSource"
+
     - name: Checkout ODS
       if: matrix.EXTENSION_NAME == 'SampleStudentTranscript' || matrix.EXTENSION_NAME == 'SampleAlternativeEducationProgram'
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -94,10 +94,10 @@ jobs:
       shell: pwsh
       working-directory: ./Ed-Fi-Model/
       run: |
-        ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "../MetaEdExtensionSource" 
+        ./eng/build.githubactions.ps1 CheckoutBranch -RelativeRepoPath "../MetaEdExtensionSource"
 
     - name: Clean up folders except AlternativeEducationProgramMetaEd for MetaEdExtensionSource
-      if: matrix.EXTENSION_NAME == 'SampleAlternativeEducationProgram'    
+      if: matrix.EXTENSION_NAME == 'SampleAlternativeEducationProgram'
       shell: pwsh
       run: |
         Get-ChildItem MetaEdExtensionSource -Exclude Samples | Remove-Item -Recurse -Force
@@ -108,7 +108,7 @@ jobs:
         mv * ../../../..
 
     - name: Clean up folders except StudentTranscriptMetaEd for MetaEdExtensionSource
-      if: matrix.EXTENSION_NAME == 'SampleStudentTranscript'    
+      if: matrix.EXTENSION_NAME == 'SampleStudentTranscript'
       shell: pwsh
       run: |
         Get-ChildItem MetaEdExtensionSource -Exclude Samples | Remove-Item -Recurse -Force
@@ -119,7 +119,7 @@ jobs:
         mv * ../../../..
 
     - name: Clean up folders except HomographMetaEd for MetaEdExtensionSource
-      if: matrix.EXTENSION_NAME == 'Homograph'    
+      if: matrix.EXTENSION_NAME == 'Homograph'
       shell: pwsh
       run: |
         Get-ChildItem MetaEdExtensionSource -Exclude Extensions | Remove-Item -Recurse -Force
@@ -141,7 +141,7 @@ jobs:
         mv * ../../..
 
     - name: Create MetaEdConfig
-      working-directory: ./Ed-Fi-Model/    
+      working-directory: ./Ed-Fi-Model/
       run: |
         ./eng/CreateMetaEdConfig.ps1 -Workspace ${{ github.workspace }} -ProjectVersion ${{ env.PROJECT_VERSION }} -ProjectDescription ${{ env.PROJECT_DESCRIPTION }} -TechnologyVersion ${{ matrix.TECHNOLOGY_VERSION }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
       shell: pwsh
@@ -159,10 +159,10 @@ jobs:
         $jsonObject = $jsonContent | ConvertFrom-Json
 
         # Print the content of the JSON object
-        $jsonObject | Format-List -Property * 
-     
-    - name: Build the model 
-      working-directory: ./MetaEd-js/build/  
+        $jsonObject | Format-List -Property *
+
+    - name: Build the model
+      working-directory: ./MetaEd-js/build/
       run: |
             node index.js --config ./MetaEdConfig-API-${{ matrix.TECHNOLOGY_VERSION }}-DS-6.2.json -a
 
@@ -172,9 +172,9 @@ jobs:
                 throw "MetaEd build failed - there was no output. Review log above for more information."
             }
       shell: pwsh
-  
-    - name: Validate Schema 
-      working-directory: ./Ed-Fi-Model/    
+
+    - name: Validate Schema
+      working-directory: ./Ed-Fi-Model/
       run: |
         ./eng/ValidateSchema.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }}
       shell: pwsh
@@ -189,13 +189,13 @@ jobs:
 
     - name: Verify sqlcmd installation
       run: |
-        echo $PATH      
+        echo $PATH
         echo "Verifying sqlcmd..."
         sqlcmd "-?" || { echo "sqlcmd not found in PATH"; exit 1; }
         sqlcmd -S localhost -C -U sa -P "${{ env.DB_PASS }}" -Q "SELECT @@VERSION" || { echo "Failed to connect with sqlcmd"; exit 1; }
 
-    - name: Validate SQL 
-      working-directory: ./Ed-Fi-Model/    
+    - name: Validate SQL
+      working-directory: ./Ed-Fi-Model/
       run: |
         ./eng/ValidateSQL.ps1 -Workspace ${{ github.workspace }} -MetaEdExtensionName ${{ matrix.EXTENSION_NAME }} -Password ${{ env.DB_PASS }}
       shell: pwsh
@@ -204,7 +204,6 @@ jobs:
       uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
       with:
         name: MetaEdOutput-${{env.DATASTANDARD_VERSION}}-${{ matrix.TECHNOLOGY_VERSION }}- ${{ matrix.EXTENSION_NAME }}
-        path: ${{ github.workspace }}/MetaEdOutput/**/*.*          
+        path: ${{ github.workspace }}/MetaEdOutput/**/*.*
 
-        
- 
+
