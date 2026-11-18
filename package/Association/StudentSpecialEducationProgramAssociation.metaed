@@ -60,3 +60,6 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
     shared string SpecialEducationExitExplained
         documentation "Explanation on why a person stops receiving special education services."
         is optional 
+    common ResponsibleContact
+        documentation "Identifies a contact’s responsibility to the student in the special education program, effective as of the begin date."
+        is optional collection
