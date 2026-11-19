@@ -14,25 +14,25 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
         is optional
     shared decimal HoursPerWeek named SchoolHoursPerWeek
         documentation "Indicate the total number of hours of instructional time per week for the school that the student attends."
-        is optional    
+        is optional
     bool ShortenedSchoolDayIndicator
         documentation "Indicator that the student's IEP requires a shortened school day."
-        is optional    
+        is optional
     shared decimal HoursPerWeek named ReductionInHoursPerWeekComparedToPeers
-        documentation "Records the number of hours reduced for the shortened school day for the IEP student as compared to peers in regular education." 
-        is optional        
+        documentation "Records the number of hours reduced for the shortened school day for the IEP student as compared to peers in regular education."
+        is optional
     bool MultiplyDisabled
         documentation "Indicates whether the student receiving special education and related services has been designated as multiply disabled by the admission, review, and dismissal committee as aligned with federal requirements."
         is optional
     bool MedicallyFragile
         documentation "Indicates whether the student receiving special education and related services is: 1) in the age range of birth to 22 years, and 2) has a serious, ongoing illness or a chronic condition that has lasted or is anticipated to last at least 12 or more months or has required at least one month of hospitalization, and that requires daily, ongoing medical treatments and monitoring by appropriately trained personnel which may include parents or other family members, and 3) requires the routine use of medical device or of assistive technology to compensate for the loss of usefulness of a body function needed to participate in activities of daily living, and 4) lives with ongoing threat to his or her continued well-being. Aligns with federal requirements."
-        is optional        
+        is optional
     date IEPLastEvaluationDate
         documentation "The date of the last special education evaluation."
         is optional
     date IEPLastReviewDate
         documentation "The date of the last IEP review."
-        is optional        
+        is optional
     date IEPEvaluationDueDate
         documentation "The due date for the next special education evaluation."
         is optional
@@ -59,7 +59,7 @@ Association StudentSpecialEducationProgramAssociation based on GeneralStudentPro
         is optional
     shared string SpecialEducationExitExplained
         documentation "Explanation on why a person stops receiving special education services."
-        is optional 
+        is optional
     common ResponsibleContact
         documentation "Identifies a contact’s responsibility to the student in the special education program, effective as of the begin date."
         is optional collection

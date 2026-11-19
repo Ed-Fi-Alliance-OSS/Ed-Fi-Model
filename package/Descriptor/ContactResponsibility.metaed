@@ -1,2 +1,2 @@
-Descriptor ContactResponsibility [917]
+Descriptor ContactResponsibility
     documentation "Defines the type of responsibility a contact has for a specific student."
