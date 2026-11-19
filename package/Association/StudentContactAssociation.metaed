@@ -25,3 +25,6 @@ Association StudentContactAssociation
     bool LegalGuardian
         documentation "Indicator of whether the person is a legal guardian for the student."
         is optional
+    descriptor ContactResponsibility
+        documentation "Defines the type of responsibility a contact has for a specific student."
+        is optional collection
