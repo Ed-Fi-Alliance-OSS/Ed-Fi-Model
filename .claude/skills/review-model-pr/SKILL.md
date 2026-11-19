@@ -1,14 +1,20 @@
 ---
 name: review-model-pr
 description: Use when asked to review a pull request or MetaEd model changes for the Ed-Fi-Model repository. Triggers on tasks like "review this PR", "review my changes", "check my MetaEd files".
-allowed-tools: Bash(gh *), Read, Glob, Grep
+allowed-tools: Bash(gh *), Bash(git fetch *), Bash(git diff *), Bash(git remote show *), Bash(git ls-remote *), Bash(npm start), Read, Glob, Grep
 ---
 
-Review the pull request or staged changes using the Ed-Fi-Model checklist below. Run `gh pr diff` (or read changed files directly) to see what changed, then work through each category.
+Review the pull request or staged changes using the Ed-Fi-Model checklist below. Get the diff (see below), then work through each category.
 
 ## How to Review
 
-1. Get the diff: `gh pr diff <number>` or read changed `.metaed` files directly.
+1. Get the diff:
+   - Preferred: `gh pr diff <number>`.
+   - Fallback when `gh` is unavailable or unauthenticated (e.g., cloud environments):
+     1. Determine the base branch. Use the PR's target branch if known; otherwise use the repo default branch, found via `git remote show origin` (the `HEAD branch:` line) or `git ls-remote --symref origin HEAD`. Do not hard-code it (it is currently `DS-6.2-ME-3.x`, but that changes between releases).
+     2. `git fetch origin <base>`
+     3. `git diff origin/<base>...HEAD -- '*.metaed'` (drop the path filter to also review workflow or other non-MetaEd changes).
+   - For uncommitted work, also check `git diff` / `git diff --staged`, or read the changed `.metaed` files directly.
 2. Work through every checklist section below.
 3. Report findings grouped by category. Provide file + line context for each issue.
 4. Distinguish blocking issues (must fix) from suggestions (consider fixing).
@@ -18,7 +24,7 @@ Review the pull request or staged changes using the Ed-Fi-Model checklist below.
 ## Checklist
 
 ### 1. Build Validity — BLOCKING
-- [ ] Does the MetaEd model build without errors? If you can run `npx metaed build` locally, do so. Otherwise flag any syntax issues you can spot (missing quotes, unclosed strings, mismatched keywords).
+- [ ] Does the MetaEd model build without errors? If you can, run `npm start` from the repo root; its output is JSON lines, and any `"level":"error"` line is a build failure. Otherwise flag any syntax issues you can spot (missing quotes, unclosed strings, mismatched keywords).
 - [ ] Are all entity references in `.metaed` domain files actually defined somewhere in the model? (Missing references are a common build failure.)
 - [ ] Are all quoted strings properly closed?
 
@@ -35,7 +41,10 @@ Review the pull request or staged changes using the Ed-Fi-Model checklist below.
 - [ ] Are descriptions broad enough? Avoid language that unnecessarily narrows the intended use (e.g., "in becoming an educator" vs. "in achieving an educational goal").
 
 ### 4. Key / Identity Ordering
-- [ ] for new entities only we want identity fields listed first; if identity is based on Student, Staff, or Contact then list those identity elements first before those from other reference types. After identity fields, next list required elements in alphabetical order, and finally, list optional elements in alphabetical order. (Drives handbook ordering.)
+- [ ] For **new entities only**, properties are ordered as follows (this drives handbook ordering):
+  1. Identity properties (`is part of identity`) first. Within identity, Student, Staff, or Contact references come before references of other types.
+  2. Then required properties, in alphabetical order.
+  3. Then optional properties, in alphabetical order.
 - [ ] Is `is part of identity` applied to elements that form the natural key where required?
 - [ ] Is `required` vs. `optional` correct for each property? If `required`, is there a documented reason for this?
 

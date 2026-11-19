@@ -22,9 +22,9 @@ npm start
 ```
 
 What this does:
-- Runs `node node_modules/@edfi/metaed-console/dist/index.js -c .\\config.json -a`
+- Runs `cross-env NODE_NO_WARNINGS=1 LOG_LEVEL=error node --no-deprecation node_modules/@edfi/metaed-console/dist/index.js -c ./config.json -a` (see `scripts.start` in the root `package.json`)
 - Loads MetaEd projects from `config.json` (`projectPaths: ["package"]`)
-- Writes generated artifacts under: `package\\MetaEdOutput\\`
+- Writes generated artifacts under: `package\MetaEdOutput\`
 
 CLI help (when you need to confirm supported flags):
 
@@ -35,28 +35,23 @@ node node_modules/@edfi/metaed-console/dist/index.js --help
 Output format:
 - `npm start` logs are **JSON lines** (one JSON object per line). Treat any `{"level":"error"...}` lines as build failures.
 
-
 ### Optional validations (used in CI/eng scripts)
 
 Validate generated XSDs compile:
 
 ```powershell
-pwsh -File .\\eng\\ValidateSchema.ps1 -Workspace "$PWD\\package"
+pwsh -File .\eng\ValidateSchema.ps1 -Workspace "$PWD\package"
 ```
 
 Validate generated SQL scripts against a local SQL Server instance (requires `sqlcmd` + a local SQL Server; uses `sa` login):
 
 ```powershell
-pwsh -File .\\eng\\ValidateSQL.ps1 -Workspace "$PWD\\package" -Password "<sa-password>"
+pwsh -File .\eng\ValidateSQL.ps1 -Workspace "$PWD\package" -Password "<sa-password>"
 ```
-
-### After editing
-
-Run the `review-model-pr` skill (`/review-model-pr`) to get a review of your MetaEd changes.
 
 ## High-level architecture
 
-- **Source of truth**: `package/**/*.metaed` files (Domain Entities, Associations, Commons, Descriptors, etc.).
+- **Source of truth**: `package/**/*.metaed` files (Domain Entities, Associations, Commons, Descriptors, Choices, Enumerations, Shared types, etc.).
 - **Build driver**: root `npm start` runs `@edfi/metaed-console` using `config.json`.
 - **Generated artifacts**: `package/MetaEdOutput/` (XSDs, SQL, API schema artifacts, handbook/dictionaries, etc.). Treat this as build output; changes typically belong in `.metaed` inputs.
 - **Versioning metadata**: `package/package.json` contains `metaEdProject.projectVersion` for the model package; root `config.json` declares the Ed-Fi project(s) compiled.
@@ -76,9 +71,10 @@ Common constraint statements you’ll see:
 
 ### Common patterns you’ll encounter
 
-- `Common`, `Inline Common ...`, and `inline common ...` are used to compose reusable structures under `package\\Common`.
-- `descriptor ...` properties commonly participate in identity (`is part of identity`).
+- `Common`, `Inline Common ...`, and `inline common ...` are used to compose reusable structures under `package\Common`.
+- `descriptor ...` properties commonly participate in identity (`is part of identity`) and may use `role name` to disambiguate multiple descriptors of the same type.
 - `shared string ...` is used for reused scalar concepts; `named` is used when a type needs a specific name (e.g., `shared string URI named ImageURL`).
+- `allow primary key updates` appears on Associations that permit primary key (identity) mutation.
 
 ### Keep validation tight
 
@@ -87,4 +83,4 @@ Because this repo’s “tests” are essentially the artifact generator, the sa
 2. Run `npm start`
 3. Fix any JSON-line `error` messages and re-run
 
-(There’s also a `.claude` hook in this repo that runs `npm start` after edits in some Claude-based workflows; keeping `npm start` clean avoids tool friction.)
+(Claude Code users: a PostToolUse hook in `.claude/` runs `npm start` automatically after `.metaed` edits; keeping `npm start` clean avoids tool friction.)
