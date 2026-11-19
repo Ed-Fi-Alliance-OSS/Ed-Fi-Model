@@ -7,4 +7,4 @@ Guidance for Claude Code in this repository. Shared agent instructions live in `
 ## Claude Code-specific notes
 
 - **Auto-build hook**: a PostToolUse hook (`.claude/settings.json` -> `.claude/hooks/metaed-build.js`) runs `npm start` after edits to `.metaed` files and reports any `"level":"error"` lines back as build errors. Fix those before moving on.
-- **Review skill**: after editing, run the `review-model-pr` skill (`/review-model-pr`) to review your MetaEd changes against the Ed-Fi-Model checklist.
+- **Copilot parity**: `.github/hooks/metaed-build.js` is the GitHub Copilot copy of this hook. When you change one, update the other.

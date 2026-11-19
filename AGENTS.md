@@ -83,4 +83,10 @@ Because this repo’s “tests” are essentially the artifact generator, the sa
 2. Run `npm start`
 3. Fix any JSON-line `error` messages and re-run
 
-(Claude Code users: a PostToolUse hook in `.claude/` runs `npm start` automatically after `.metaed` edits; keeping `npm start` clean avoids tool friction.)
+Agent hooks run this build automatically, so keeping `npm start` clean avoids tool friction:
+- **Claude Code**: `.claude/hooks/metaed-build.js` runs after each `.metaed` edit and reports errors immediately.
+- **GitHub Copilot** (CLI / coding agent): `.github/hooks/metaed-build.json` notes `.metaed` edits and runs the build once when the agent is about to finish; it keeps the agent working until errors are fixed (up to three attempts).
+
+## After editing
+
+Run the `review-model-pr` skill (`/review-model-pr`) to review your MetaEd changes against the Ed-Fi-Model checklist. The skill lives in `.claude/skills/review-model-pr/`, which both Claude Code and GitHub Copilot load as a project skill.

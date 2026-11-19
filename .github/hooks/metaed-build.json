@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [
+      {
+        "type": "command",
+        "bash": "node .github/hooks/metaed-build.js post-tool-use",
+        "powershell": "node .github/hooks/metaed-build.js post-tool-use",
+        "cwd": ".",
+        "timeoutSec": 10
+      }
+    ],
+    "agentStop": [
+      {
+        "type": "command",
+        "bash": "node .github/hooks/metaed-build.js agent-stop",
+        "powershell": "node .github/hooks/metaed-build.js agent-stop",
+        "cwd": ".",
+        "timeoutSec": 120
+      }
+    ]
+  }
+}
