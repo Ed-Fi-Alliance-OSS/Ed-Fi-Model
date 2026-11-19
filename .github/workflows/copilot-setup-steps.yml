@@ -1,0 +1,56 @@
+# SPDX-License-Identifier: Apache-2.0
+# Licensed to the Ed-Fi Alliance under one or more agreements.
+# The Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.
+# See the LICENSE and NOTICES files in the project root for more information.
+
+# Prepares the GitHub Copilot coding agent's environment before it starts work.
+# Installs node_modules (notably @edfi/metaed-console) so that `npm start` and the
+# Copilot hook in .github/hooks/metaed-build.js can validate .metaed changes.
+# The @edfi scope is read anonymously from the Azure Artifacts feed in .npmrc;
+# no credentials are configured here.
+
+name: Copilot Setup Steps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+
+permissions:
+  contents: read
+
+jobs:
+  # The job MUST be named `copilot-setup-steps` or Copilot will not pick it up.
+  copilot-setup-steps:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+
+    permissions:
+      contents: read
+
+    steps:
+    - name: Checkout Ed-Fi-Model
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+    - name: Set up Node.js
+      # TODO: pin to SHA. actions/setup-node is not pinned anywhere else in this
+      # repo; replace the tag with the full commit SHA and a version comment.
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: npm
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Verify MetaEd console is installed
+      run: |
+        if [ ! -f node_modules/@edfi/metaed-console/dist/index.js ]; then
+          echo "::error::node_modules/@edfi/metaed-console is missing after npm ci"
+          exit 1
+        fi
+        echo "@edfi/metaed-console $(node -p "require('./node_modules/@edfi/metaed-console/package.json').version")"
