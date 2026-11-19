@@ -105,8 +105,6 @@ The model is based upon multiple levels of definition, as follows:
     descriptor StateAbbreviation
     domain entity Student
     domain entity StudentAcademicRecord
-    domain entity StudentEvaluationElement
-    domain entity StudentEvaluationObjective
     association StudentProgramAssociation
     domain entity StudentProgramEvaluation
     association StudentSchoolAssociation

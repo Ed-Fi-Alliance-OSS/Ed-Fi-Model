@@ -21,6 +21,7 @@ Review the pull request or staged changes using the Ed-Fi-Model checklist below.
 - [ ] Does the MetaEd model build without errors? If you can run `npx metaed build` locally, do so. Otherwise flag any syntax issues you can spot (missing quotes, unclosed strings, mismatched keywords).
 - [ ] Are all entity references in `.metaed` domain files actually defined somewhere in the model? (Missing references are a common build failure.)
 - [ ] Are all quoted strings properly closed?
+- [ ] Treat MetaEd warnings as findings, not only errors — mis-keyed domain items build successfully but warn.
 
 ### 2. Typos and Grammar — BLOCKING
 - [ ] Scan all `documentation` strings for typos (e.g., "TThe", "eleemnts", "to be receives").
@@ -42,7 +43,7 @@ Review the pull request or staged changes using the Ed-Fi-Model checklist below.
 ### 5. Naming Conventions
 - [ ] Entity names are singular (MetaEd pluralizes at the API layer). Do not name an entity `StaffDemographics` — use `StaffDemographic`.
 - [ ] Do not append "Information" to entity names unless there is a strong reason — the community prefers shorter names (e.g., `StudentDemographic` not `StudentDemographicInformation`).
-- [ ] Descriptor file names match the descriptor name exactly.
+- [ ] Every `.metaed` file name matches the name it declares exactly — Descriptors, Shared types, Commons, all entity types. Watch for typos (e.g. `PositionIdentfier.metaed`) and for renames that changed the declared name but not the file (e.g. `RequisitionNumber.metaed` declaring `RequisitionIdentifier`). Rename with `git mv`.
 
 ### 6. Deprecation Discipline
 - [ ] If replacing an existing field with a new entity/field, are the old fields marked `deprecated` rather than deleted outright? Prefer deprecation → future removal cycle.
@@ -51,6 +52,7 @@ Review the pull request or staged changes using the Ed-Fi-Model checklist below.
 
 ### 7. Domain Files
 - [ ] Are all new `DomainEntity`, `Association`, and `Descriptor` types listed in the appropriate `.metaed` domain file?
+- [ ] Each domain item's keyword matches the kind of entity it names: `domain entity` only for Domain Entities / Abstract Entities / subclasses, `association` for Associations, `descriptor` for Descriptors. Commons are not listed in domains — a Common listed as `domain entity` (e.g. `StudentEvaluationElement`) raises the MetaEd warning `DomainEntityDomainItemMustMatchTopLevelEntity`.
 - [ ] Within a subdomain list, are entries in alphabetical order (consistent with how other domains are maintained)?
 - [ ] Does the subdomain `position` value make sense relative to other subdomains?
 
