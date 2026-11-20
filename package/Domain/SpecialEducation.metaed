@@ -11,6 +11,7 @@ Domain SpecialEducation
     descriptor AttendanceEventCategory
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor ContactResponsibility
     descriptor ClassroomPosition
     descriptor Country
     descriptor CourseLevelCharacteristic

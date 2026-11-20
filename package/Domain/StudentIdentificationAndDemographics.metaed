@@ -14,6 +14,7 @@ Domain StudentIdentificationAndDemographics
     domain entity Contact
     descriptor ContactIdentificationSystem
     domain entity ContactIdentificationCode
+    descriptor ContactResponsibility
     descriptor Country
     descriptor Disability
     descriptor DisabilityDesignation
