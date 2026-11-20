@@ -1,0 +1,15 @@
+Association StudentIEPResponsibleContactAssociation
+    documentation "EARLY ACCESS: This association relates a contact to a student's Individualized Education Program (IEP) and identifies the responsibility the contact has for the student, effective beginning on a specific date."
+    domain entity StudentIEP
+        documentation "A reference to the student's IEP for which the contact has the specified responsibility."
+    domain entity Contact
+        documentation "A reference to the contact who has the specified responsibility for the student."
+    descriptor ContactResponsibility
+        documentation "Defines the type of responsibility a contact has for a specific student IEP. Examples include: IDEA Parent"
+        is part of identity
+    date ContactResponsibilityBeginDate
+        documentation "The date on which the specific contact responsibility for the student IEP becomes effective. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is part of identity
+    date ContactResponsibilityEndDate
+        documentation "The date on which the specific contact responsibility for the student IEP ends. Note: Date interpretation may vary. Ed-Fi recommends inclusive dates, but states may define dates as inclusive or exclusive. For calculations, align with local guidelines."
+        is optional
