@@ -1,6 +1,6 @@
 {
     "files.associations": {
-        "*.metaed": "csharp",
+        "*.metaed": "metaed",
         "*.yml": "yaml"
     },
     "psi-header.config": {
