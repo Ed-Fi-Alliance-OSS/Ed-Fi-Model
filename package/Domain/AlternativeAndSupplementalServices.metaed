@@ -14,6 +14,7 @@ Domain AlternativeAndSupplementalServices
     descriptor AttendanceEventCategory
     descriptor CharterApprovalAgencyType
     descriptor CharterStatus
+    descriptor ContactResponsibility
     descriptor ContinuationOfServicesReason
     descriptor Country
     descriptor CourseLevelCharacteristic
