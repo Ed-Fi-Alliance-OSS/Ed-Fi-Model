@@ -9,3 +9,6 @@ Common SurveyQuestionResponseValue
   shared string TextResponse
     documentation "A text response to the question."
     is optional
+  shared decimal DecimalResponse
+    documentation "A decimal response to the question."
+    is optional
