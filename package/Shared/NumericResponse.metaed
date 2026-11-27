@@ -1,2 +1,3 @@
+Shared Integer NumericResponse    
     documentation "The numeric response to the question."
     min value 0
